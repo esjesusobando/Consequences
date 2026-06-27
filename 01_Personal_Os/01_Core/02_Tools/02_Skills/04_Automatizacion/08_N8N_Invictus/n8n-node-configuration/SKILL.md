@@ -1,6 +1,7 @@
 ---
 name: n8n-node-configuration
 description: Operation-aware node configuration guidance. Use when configuring nodes, understanding property dependencies, determining required fields, choosing between get_node detail levels, or learning common configuration patterns by node type. Always use this skill when setting up node parameters — it explains which fields are required for each operation, how displayOptions control field visibility, and when to use patchNodeField for surgical edits vs full node updates.
+sota_upgraded: true
 ---
 
 # n8n Node Configuration
@@ -833,3 +834,17 @@ For comprehensive guides on specific topics:
 - **n8n Validation Expert** - Interpret validation errors
 - **n8n Expression Syntax** - Configure expression fields
 - **n8n Workflow Patterns** - Apply patterns with proper configuration
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

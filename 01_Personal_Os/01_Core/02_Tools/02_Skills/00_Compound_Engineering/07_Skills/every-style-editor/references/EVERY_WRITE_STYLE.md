@@ -527,3 +527,17 @@ Don't overuse "actually," "very," or "just" (they can almost always be deleted).
 #### Standard Terms
 
 add on (verb), add-on (noun, adjective), back end (noun), back-end (adjective), beta (lowercase unless it's part of a proper noun), cofounder, Covid-19, coworker, double-click, drop-down, e-commerce, front end (noun), front-end (adjective), geolocation, hashtag, homepage, large language model, login (noun, adjective), log in (verb), millennial, nonprofit, Online, open source, open-source software, opt in (verb), opt-in (noun, adjective), pop-up (noun, adjective), pop up (verb), signup (noun, adjective), sign up (verb), startup, sync, username, URL (always uppercase), web3, well-being, WiFi, workspace
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

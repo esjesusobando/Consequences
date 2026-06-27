@@ -378,3 +378,17 @@ bash convert-formats.sh input.mp4 --minterpolate
 - [ ] 涉及具体品牌（Stripe/Anthropic/Lovart/...）：走完了「品牌资产协议」（SKILL.md §1.a 五步）？有没有写 `brand-spec.md`？
 - [ ] 单文件交付的 HTML：`animations.jsx` 是内联的，不是 `src="..."`？（file:// 下 external .jsx 会 CORS 黑屏）
 - [ ] 跨 scene 出现的元素（chapter 标签/水印/scene 编号）没有硬编码颜色？在每个 scene 底色下都可见？
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

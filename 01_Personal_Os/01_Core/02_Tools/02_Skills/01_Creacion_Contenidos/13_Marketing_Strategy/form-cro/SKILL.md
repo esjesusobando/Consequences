@@ -2,6 +2,7 @@
 name: form-cro
 version: 1.0.0
 description: When the user wants to optimize any form that is NOT signup/registration — including lead capture forms, contact forms, demo request forms, application forms, survey forms, or checkout forms. Also use when the user mentions "form optimization," "lead form conversions," "form friction," "form fields," "form completion rate," or "contact form." For signup/registration forms, see signup-flow-cro. For popups containing forms, see popup-cro.
+sota_upgraded: true
 ---
 
 # Form CRO
@@ -431,3 +432,17 @@ Ideas to A/B test with expected outcomes
 - **popup-cro**: For forms inside popups/modals
 - **page-cro**: For the page containing the form
 - **ab-test-setup**: For testing form changes
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

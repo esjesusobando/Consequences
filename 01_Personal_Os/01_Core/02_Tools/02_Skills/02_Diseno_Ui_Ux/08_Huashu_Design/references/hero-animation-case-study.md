@@ -248,3 +248,17 @@ Gallery 阶段左上角有个 `HUASHU · DESIGN` 小标识，16% opacity 色值�
 - 音频配置（BGM + SFX 双轨）：[references/audio-design-rules.md](audio-design-rules.md)
 - Apple 画廊风格的横向参考：[references/apple-gallery-showcase.md](apple-gallery-showcase.md)
 - 源 HTML（v6 + 音频集成版）：`www.huasheng.ai/huashu-design-hero/index.html`
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

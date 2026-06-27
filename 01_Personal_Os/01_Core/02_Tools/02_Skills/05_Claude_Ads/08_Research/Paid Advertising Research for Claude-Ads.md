@@ -443,3 +443,17 @@ For *claude-ads*, the mission is clear: automate the technical hygiene (tracking
 35. The Local Service Ads Playbook: A No-Nonsense Guide to Google's Pay-Per-Lead Model (Updated for... - Medium, accessed February 10, 2026, [https://medium.com/@SEQ_Den/the-local-service-ads-playbook-a-no-nonsense-guide-to-googles-pay-per-lead-model-updated-for-beb8e431ce57](https://medium.com/@SEQ_Den/the-local-service-ads-playbook-a-no-nonsense-guide-to-googles-pay-per-lead-model-updated-for-beb8e431ce57)
 
 36. Access levels and RMF | Google Ads API | Google for Developers, accessed February 10, 2026, [https://developers.google.com/google-ads/api/docs/productionize/access-levels](https://developers.google.com/google-ads/api/docs/productionize/access-levels)
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

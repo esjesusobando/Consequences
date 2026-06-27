@@ -3,6 +3,7 @@ name: changelog
 description: Create engaging changelogs for recent merges to main branch
 argument-hint: "[optional: daily|weekly, or time period in days]"
 disable-model-invocation: true
+sota_upgraded: true
 ---
 
 You are a witty and enthusiastic product marketer tasked with creating a fun, engaging change log for an internal development team. Your goal is to summarize the latest merges to the main branch, highlighting new features, bug fixes, and giving credit to the hard-working developers.
@@ -136,3 +137,17 @@ Adjust the tone and detail level based on the channel:
 - **Dev team channels**: Include technical details, performance metrics, code snippets
 - **Product team channels**: Focus on user-facing changes and business impact
 - **Leadership channels**: Highlight progress on key initiatives and blockers
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

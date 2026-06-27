@@ -2,6 +2,7 @@
 name: ads-linkedin
 description: "LinkedIn Ads deep analysis for B2B advertising. Evaluates 27 checks across technical setup, audience targeting, creative quality, lead gen forms, and bidding strategy. Includes Thought Leader Ads, ABM, and predictive audiences. Use when user says LinkedIn Ads, B2B ads, sponsored content, lead gen forms, InMail, or LinkedIn campaign."
 user-invokable: false
+sota_upgraded: true
 ---
 
 # LinkedIn Ads Deep Analysis
@@ -139,3 +140,17 @@ Budget & Bidding:  XX/100  ████████░░  (15%)
 - ABM strategy recommendations (for B2B)
 - Lead Gen Form optimization priorities
 - Quick Wins sorted by impact
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

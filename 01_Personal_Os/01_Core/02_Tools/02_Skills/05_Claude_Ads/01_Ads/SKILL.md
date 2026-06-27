@@ -3,6 +3,7 @@ name: ads
 description: "Multi-platform paid advertising audit and optimization skill. Analyzes Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, and Apple Ads. 250+ checks with scoring, parallel agents, industry templates, and AI creative generation. Triggers on: /ads, audit, google, meta, youtube, linkedin, tiktok, microsoft, apple, creative, landing, budget, plan, competitor, create, generate, photoshoot, dna, math, test, report"
 argument-hint: "audit | google | meta | youtube | linkedin | tiktok | microsoft | apple | creative | landing | budget | plan <type> | competitor | dna <url> | create | generate | photoshoot"
 license: MIT
+sota_upgraded: true
 ---
 
 # Ads: Multi-Platform Paid Advertising Audit & Optimization
@@ -290,3 +291,17 @@ For parallel analysis during full audits:
 - `visual-designer`: Image generation with brand injection via generate_image.py (Sonnet, maxTurns: 30)
 - `copy-writer`: Headlines, CTAs, primary text within platform limits (Sonnet, maxTurns: 20)
 - `format-adapter`: Asset dimension validation and spec compliance reporting (Haiku, maxTurns: 15)
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

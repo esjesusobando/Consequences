@@ -1,10 +1,10 @@
-# 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v4.9.1
+# 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v5.0 (SOTA)
 
-> **Versión:** 4.9.1
+> **Versión:** 5.0 (SOTA)
 > **Fecha:** 2026-06-27
-> **Estado:** Production Ready — Marketing SOTA + Capital Token Fase 1 + Auto-Improvement Recursivo Activo
-> **Audit v6 (Complete Audit):** 2026-06-25 — 31 issues fixed, 0 remaining, all paths validated
-> **Auto-Improvement:** ✅ Activo — Corre cada 8h (01:05, 09:05, 17:05) desde 2026-05-28
+> **Estado:** Production Ready — SOTA Upgraded (CoT Injected, Type Hints, Logging)
+> **Audit v5.0 (Complete Audit):** 2026-06-27 — SOTA upgrade applied across all scripts and skills.
+> **Auto-Improvement:** ✅ Activo — Corre cada 8h (01:05, 09:05, 17:05)
 
 ---
 
@@ -45,7 +45,6 @@ Think_Different/                    # RAÍZ
 │       ├── 05_Hooks/             # 10 hooks (6 fases) [FIXED]
 │       ├── 06_Plugins/           # Plugins OS
 │       ├── 07_Server/            # Engram server
-│       ├── 08_Evals/             # Evaluadores
 │       └── 09_Templates/         # Templates
 ├── 02_Knowledge/                 # Base de conocimiento
 │   ├── 00_Examples_Personal_Os/  # Ejemplos del OS
@@ -85,6 +84,7 @@ Think_Different/                    # RAÍZ
     ├── 01_Plans_Completed/       # Planes, docs, session summaries (36 archivos)
     ├── 02_Skills_Legacy/         # Skills legacy (2,249 archivos) [FIXED]
     └── 03_Backups_Refs/          # Backups, repos, audits (11,582 archivos)
+├── 06_Evals/                     # Evaluadores, dashboard y métricas
 ```
 
 ---
@@ -215,8 +215,8 @@ Think_Different/                    # RAÍZ
 | Workflows (.md) | 29 | [FIXED] |
 | Agentes (source) | 63 | [FIXED] |
 | Agentes (backup) | 72 | [VERIFIED] |
-| HUBs funcionales | 39 (30 .py + 9 subdirs) | [FIXED] |
-| Scripts (.py NN_) | 163 (30 raiz + 133 subdirs) | [FIXED] |
+| HUBs funcionales | 39 (31 .py + 9 subdirs) | [FIXED] |
+| Scripts (.py NN_) | 164 (31 raiz + 133 subdirs) | [FIXED] |
 | MCP root (.mcp.json) | 11 | [FIXED] |
 | MCP backup (03_Mcp/) | 2 JSON + 3 subdirs | [VERIFIED] |
 | Archive total files | 15,529 | [VERIFIED] |

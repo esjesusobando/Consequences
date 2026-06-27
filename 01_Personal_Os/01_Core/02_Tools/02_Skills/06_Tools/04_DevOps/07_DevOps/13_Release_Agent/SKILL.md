@@ -2,6 +2,7 @@
 name: release-agent
 description: Agente de releases que combina las mejores prácticas de Anthropic (Agent Skills, safety-first, progressive disclosure) y Google (CI/CD, GitOps, canary deployments). Úsalo cuando necesites planificar, revisar o ejecutar un proceso de release de software con IA integrada. Triggers: "hacer un release", "pipeline CI/CD", "checklist de despliegue", "release seguro", "CI/CD con IA", "Pull Request review", "deploy a producción".
 allowed-tools: bash, file_create, str_replace, view, web_search
+sota_upgraded: true
 ---
 
 # Release Agent — Mejores Prácticas Anthropic + Google
@@ -209,3 +210,17 @@ Output: Activa canary al 5% → monitorea error rate 15 min → escala a 100% si
 - [Software Engineering at Google — CD](https://abseil.io/resources/swe-book/html/ch24.html)
 - [Anthropic Responsible Scaling Policy v3.0](https://www.anthropic.com/responsible-scaling-policy)
 - Ver `references/` para documentación extendida
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

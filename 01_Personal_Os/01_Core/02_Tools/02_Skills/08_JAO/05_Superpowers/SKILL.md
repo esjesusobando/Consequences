@@ -2,6 +2,7 @@
 name: superpowers
 description: >
   Activa un modo de trabajo riguroso y estructurado para proyectos complejos. Usa esta skill siempre que el usuario quiera crear, construir, modificar, diseñar o mejorar algo con varias partes — una aplicación, herramienta, automatización, sistema, documento complejo, estrategia o flujo de trabajo. También actívala cuando el usuario pida "hazlo todo" sin haber definido bien los requisitos, o cuando quiera revisar una solución antes de darla por terminada. Actívala especialmente con frases como "crea una app", "construye esto", "haz esta herramienta", "mejora este proyecto", "añade esta función", "arregla este problema", "diseña este sistema", "antes de construir piensa bien el plan". El objetivo es evitar que Claude se lance a ejecutar sin pensar: primero entender, planificar, detectar riesgos, definir criterios de calidad, y solo entonces construir. Si la tarea tiene más de un componente o podría salir mal de varias formas, usa esta skill.
+sota_upgraded: true
 ---
 
 # Superpowers
@@ -126,3 +127,17 @@ Cuando esta skill esté activa, responde siempre con esta estructura:
 - No uses lenguaje técnico excesivo si el usuario no lo necesita.
 - Prioriza claridad, fiabilidad y utilidad práctica por encima de elegancia o completitud exhaustiva.
 - Si la tarea es simple y de un solo paso, puedes reducir o comprimir las fases, pero no saltártelas por completo.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

@@ -4,6 +4,7 @@ description: >
   Tecnología de marketing — SEO, analytics, A/B testing, ads, esquemas
   estructurados. 10+ skills para el stack técnico de marketing. Triggers on:
   marketing technology, SEO tools, analytics setup, A/B testing, paid ads infrastructure
+sota_upgraded: true
 ---
 
 # Marketing Tech
@@ -53,3 +54,17 @@ Usar con `18_Marketing_Strategy/` para campañas completas: la tecnología ejecu
 ## 💾 State Persistence
 
 Esta skill es un directorio de sub-skills técnicas — no mantiene estado propio. Cada sub-skill (analytics, schema, A/B testing, SEO) es stateless e independiente. El orquestador debe gestionar el estado de las implementaciones (tracking IDs, schemas desplegados, tests activos) entre invocaciones.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

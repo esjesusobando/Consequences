@@ -1,6 +1,7 @@
 ---
 name: optimizador-prompts
 description: Transforma ideas desordenadas, prompts mal escritos, notas rápidas, dictados por voz o instrucciones incompletas en prompts claros, estructurados y listos para usar en herramientas de IA. Úsala siempre que el usuario quiera mejorar, ordenar, optimizar, reescribir o estructurar un prompt o una idea para convertirla en instrucción para una IA. Activa esta skill cuando el usuario diga cosas como "mejora este prompt", "conviértelo en un prompt", "ordena esta idea", "hazme un prompt para…", "optimiza esto para Claude / ChatGPT / Gemini / Midjourney / Sora / Claude Code / n8n / Make", "te voy a dictar una idea desordenada", o cualquier variante. No esperes que el usuario use la palabra exacta "prompt" — si hay una idea o instrucción que necesita ser estructurada para una IA, usa esta skill.
+sota_upgraded: true
 ---
 
 # Optimizador de Prompts
@@ -125,3 +126,17 @@ Devuelve **siempre** en este orden:
 - No des varias versiones salvo que el usuario lo pida explícitamente.
 - No expliques metodologías ni teorías sobre prompting si el usuario no lo ha pedido.
 - El resultado debe ser inmediatamente usable.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

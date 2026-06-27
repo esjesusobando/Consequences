@@ -1,6 +1,7 @@
 ---
 name: remotion-cards-showcase
 description: Build a CardsShowcase Remotion sequence (183 frames) with 3 phases: headline word-by-word reveal, platform cards with crop system, and LogoBurst finale. Triggers on: cards showcase animation, remotion cards sequence, platform cards animation, logo burst remotion, cards converge animation, remotion sequence step 2, step 3, step 4.
+sota_upgraded: true
 ---
 
 # Remotion — CardsShowcase Sequence
@@ -109,3 +110,17 @@ const glow3Scale = interpolate(f, [7, 32],  [0, 9],   { clamp: true, easing: Eas
 ### GOTCHA 4: STAGGER incorrecto desincroniza las 4 cards
 **Por qué:** Con STAGGER=8 las 4 cards entran en frames 58, 66, 74, 82 — cambiar STAGGER rompe el timing del gather.
 **Solución:** Si se ajusta STAGGER, recalcular HOLD_END y todo el timing subsiguiente.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

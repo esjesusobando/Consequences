@@ -2,6 +2,7 @@
 name: best-practices-researcher
 description: "Researches and synthesizes external best practices, documentation, and examples for any technology or framework. Use when you need industry standards, community conventions, or implementation guidance."
 model: inherit
+sota_upgraded: true
 ---
 
 <examples>
@@ -129,3 +130,17 @@ If you encounter conflicting advice, present the different viewpoints and explai
 **Tool Selection:** Use native file-search/glob (e.g., `Glob`), content-search (e.g., `Grep`), and file-read (e.g., `Read`) tools for repository exploration. Only use shell for commands with no native equivalent (e.g., `bundle show`), one command at a time.
 
 Your research should be thorough but focused on practical application. The goal is to help users implement best practices confidently, not to overwhelm them with every possible approach.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

@@ -1,6 +1,7 @@
 ---
 name: dumbledor-design
 description: "Design editorial de alto impacto con jerarquía visual de 3 niveles y contraste binario. Aplica principios de tipografía强硬 (Knockout HTF, Mark Pro), paleta Dominante-Acento, y tensión por contraste extremo. Para crear piezas que parecen 'caras y con intención' — diseño funcional, no decorativo. Triggers on: diseño editorial, alto impacto, contraste binario, tipografía bold, jerarquía visual editorial, paleta dominante-accento, diseño de presentaciones"
+sota_upgraded: true
 ---
 
 # Dumbledor Design
@@ -226,3 +227,17 @@ Si las fuentes originales no están disponibles:
 - **NO** persistir diseños completos — el output HTML es el source of truth
 - **SÍ** guardar la configuración de paleta (dominante + acento) para consistencia entre piezas
 - Las fuentes instaladas se verifican al inicio de cada sesión
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

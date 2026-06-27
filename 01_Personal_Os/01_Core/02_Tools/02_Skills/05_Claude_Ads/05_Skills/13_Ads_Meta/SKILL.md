@@ -2,6 +2,7 @@
 name: ads-meta
 description: "Meta Ads deep analysis covering Facebook and Instagram advertising. Evaluates 50 checks across Pixel/CAPI health, creative diversity and fatigue, account structure, and audience targeting. Includes Advantage+ assessment. Use when user says Meta Ads, Facebook Ads, Instagram Ads, Advantage+, or Meta campaign."
 user-invokable: false
+sota_upgraded: true
 ---
 
 # Meta Ads Deep Analysis
@@ -140,3 +141,17 @@ Currently ~0.04% of total spend. Emerging channel. Evaluate:
 - Is Threads placement enabled in Advantage+ Placements?
 - Monitor CPM and engagement vs other placements
 - Early-mover advantage for brands with active Threads presence
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

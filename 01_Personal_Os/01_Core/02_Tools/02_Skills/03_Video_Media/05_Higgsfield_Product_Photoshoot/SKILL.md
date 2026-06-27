@@ -20,6 +20,7 @@ description: |
   higgsfield-soul-id).
 argument-hint: "[--mode <mode>] [--count N] [prompt]"
 allowed-tools: Bash
+sota_upgraded: true
 ---
 
 # Product Photoshoot
@@ -213,3 +214,17 @@ Print the image URLs as a short bulleted list. No JSON, no IDs, no internal mode
 - Calling `higgsfield generate create gpt_image_2 --prompt ...` directly instead of `higgsfield product-photoshoot create` — bypasses the prompt enhancer and produces noticeably worse output.
 - Pasting the assembled prompt back to the user — they want the URLs.
 - Using a `--mode` value not in the table above.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

@@ -2,6 +2,7 @@
 name: verificador-datos
 description: >
   Revisa textos, posts, guiones, artículos, informes o respuestas de IA para comprobar si las afirmaciones son correctas, necesitan matiz o pueden ser falsas, exageradas o no verificables. Úsala cuando el usuario pida verificar, comprobar, fact-checkear, revisar datos, detectar errores o validar información. Actívala con frases como: "verifica este texto", "comprueba si esto es verdad", "revisa si hay errores", "pásalo por el verificador", "haz fact check", "comprueba las afirmaciones", "dime si esto está exagerado", "revisa este guion antes de publicarlo", "verifica este post antes de subirlo". Compatible con: posts de LinkedIn, guiones de YouTube, artículos, emails, informes, transcripciones, noticias, resúmenes de IA y documentos técnicos. No esperes palabras exactas — si hay un texto con afirmaciones que verificar antes de publicar o usar, activa esta skill.
+sota_upgraded: true
 ---
 
 # Verificador de Datos
@@ -118,3 +119,17 @@ El usuario puede pegar directamente el texto a verificar, o puede decir:
 - "Haz fact check de este email antes de enviarlo"
 
 En todos estos casos, sigue el proceso completo y devuelve el informe en el formato definido.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

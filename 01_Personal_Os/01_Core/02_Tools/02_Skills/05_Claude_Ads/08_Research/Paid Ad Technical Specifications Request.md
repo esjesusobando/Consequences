@@ -383,3 +383,17 @@ Data verified as of February 2026 against updated platform documentation from Go
 25. Microsoft Advertising multimedia ad settings - Adobe Experience League, accessed February 10, 2026, [https://experienceleague.adobe.com/en/docs/advertising/search-social-commerce/campaign-management/management/campaigns/ads/ad-settings-by-network/ad-settings-microsoft-multimedia](https://experienceleague.adobe.com/en/docs/advertising/search-social-commerce/campaign-management/management/campaigns/ads/ad-settings-by-network/ad-settings-microsoft-multimedia)
 26. Custom parameters - Microsoft Q&A, accessed February 10, 2026, [https://learn.microsoft.com/en-us/answers/questions/2288722/custom-parameters](https://learn.microsoft.com/en-us/answers/questions/2288722/custom-parameters)
 27. Multimedia ads - Microsoft Advertising Help Center, accessed February 10, 2026, [https://help.ads.microsoft.com/apex/index/3/en/60107](https://help.ads.microsoft.com/apex/index/3/en/60107)
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

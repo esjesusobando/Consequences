@@ -2,6 +2,7 @@
 name: todo-create
 description: Use when creating durable work items, managing todo lifecycle, or tracking findings across sessions in the file-based todo system
 disable-model-invocation: true
+sota_upgraded: true
 ---
 
 # File-Based Todo Tracking
@@ -142,3 +143,17 @@ To check blockers: search for `{dep_id}-complete-*.md` in both paths. Missing ma
 ## Key Distinction
 
 This skill manages **durable, cross-session work items** persisted as markdown files. For temporary in-session step tracking, use platform task tools (`TaskCreate`/`TaskUpdate` in Claude Code, `update_plan` in Codex) instead.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

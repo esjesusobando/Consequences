@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """
-recursive_improvement_engine.py — Auto-Improvement Engine (SOTA)
+recursive_improvement_engine.py — Auto-Improvement Engine (SOTA Update)
 Orquesta el ciclo completo: Detect → Analyze → Execute → Learn
 Ubicacion final: 01_Engine/ (junto a detector, analyzer, executor, learner)
+
+Mejoras SOTA: Type hints estrictos, logging estructurado.
 """
 
 import sys
 import json
+import logging
 from pathlib import Path
 from datetime import datetime
+from typing import Dict, List, Any, Optional
 
 # Los imports funcionan porque estamos en el mismo directorio que detector.py etc.
 from detector import Detector
@@ -16,6 +20,12 @@ from analyzer import Analyzer
 from executor import Executor
 from learner import Learner
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] AutoEngine: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
+logger = logging.getLogger("AutoEngine")
 
 class RecursiveImprovementEngine:
     """
@@ -27,10 +37,10 @@ class RecursiveImprovementEngine:
     """
 
     def __init__(self, root_path: str = ".", dry_run: bool = True):
-        self.root = root_path
-        self.dry_run = dry_run
-        self.iteration = 0
-        self.max_iterations = 5
+        self.root: str = root_path
+        self.dry_run: bool = dry_run
+        self.iteration: int = 0
+        self.max_iterations: int = 5
 
         # Componentes
         self.detector = Detector(root_path)
@@ -42,9 +52,9 @@ class RecursiveImprovementEngine:
     # Metodos publicos
     # ------------------------------------------------------------------
 
-    def run(self) -> dict:
+    def run(self) -> Dict[str, Any]:
         """Ejecuta el ciclo completo de mejora (todas las fases)"""
-        results = {
+        results: Dict[str, Any] = {
             "iterations": 0,
             "issues_detected": 0,
             "fixes_applied": 0,
@@ -52,37 +62,36 @@ class RecursiveImprovementEngine:
             "learnings": 0,
         }
 
-        print("=" * 60)
-        print("  AUTO-IMPROVEMENT ENGINE v2.0 (SOTA)")
-        print(f"  Modo: {'DRY RUN' if self.dry_run else 'LIVE'}")
-        print(f"  Root: {self.root}")
-        print("=" * 60)
+        logger.info("=" * 60)
+        logger.info("  AUTO-IMPROVEMENT ENGINE v2.0 (SOTA)")
+        logger.info(f"  Modo: {'DRY RUN' if self.dry_run else 'LIVE'}")
+        logger.info(f"  Root: {self.root}")
+        logger.info("=" * 60)
 
         while self.iteration < self.max_iterations:
             self.iteration += 1
-            print(f"\n--- Iteracion {self.iteration}/{self.max_iterations} ---")
+            logger.info(f"\n--- Iteracion {self.iteration}/{self.max_iterations} ---")
 
             # 1. Detect
-            print("[FASE 1] Detectando issues...")
+            logger.info("[FASE 1] Detectando issues...")
             issues = self.detector.scan()
             results["issues_detected"] += len(issues)
 
             if not issues:
-                print("  No se detectaron nuevos issues.")
+                logger.info("  No se detectaron nuevos issues.")
                 break
 
-            print(f"  Encontrados {len(issues)} issues")
+            logger.info(f"  Encontrados {len(issues)} issues")
 
             # 2. Analyze
-            print("[FASE 2] Analizando y priorizando...")
+            logger.info("[FASE 2] Analizando y priorizando...")
             analyzed = self.analyzer.analyze([i.__dict__ for i in issues])
             prioritized = self.analyzer.prioritize(analyzed)
-            print(f"  {len(prioritized)} issues priorizados")
+            logger.info(f"  {len(prioritized)} issues priorizados")
 
             # 3. Execute
-            print("[FASE 3] Ejecutando fixes...")
-            # Enriquecer cada issue con auto_fixable desde AnalyzedIssue
-            enriched_issues = []
+            logger.info("[FASE 3] Ejecutando fixes...")
+            enriched_issues: List[Dict[str, Any]] = []
             for a in prioritized:
                 issue = dict(a.original_issue)
                 issue["auto_fixable"] = a.auto_fixable
@@ -90,10 +99,10 @@ class RecursiveImprovementEngine:
             success, failed = self.executor.execute(enriched_issues)
             results["fixes_applied"] += success
             results["fixes_failed"] += failed
-            print(f"  Aplicados: {success} | Fallidos: {failed}")
+            logger.info(f"  Aplicados: {success} | Fallidos: {failed}")
 
             # 4. Learn
-            print("[FASE 4] Aprendiendo...")
+            logger.info("[FASE 4] Aprendiendo...")
             for issue in issues:
                 self.learner.record_fix(
                     issue.__dict__,
@@ -101,30 +110,27 @@ class RecursiveImprovementEngine:
                     method="auto"
                 )
             results["learnings"] += len(issues)
-            print(f"  {len(issues)} aprendizajes registrados")
+            logger.info(f"  {len(issues)} aprendizajes registrados")
 
-            # Si no se aplico nada, salir
             if success == 0 and failed == 0 and len(issues) > 0:
-                print("  Sin avance -- se detienen las iteraciones.")
+                logger.info("  Sin avance -- se detienen las iteraciones.")
                 break
 
-        # Resumen final
         results["iterations"] = self.iteration
-        print("\n" + "=" * 60)
-        print("  RESUMEN FINAL")
-        print("=" * 60)
-        print(f"  Iteraciones:      {results['iterations']}")
-        print(f"  Issues detectados: {results['issues_detected']}")
-        print(f"  Fixes aplicados:   {results['fixes_applied']}")
-        print(f"  Fixes fallidos:    {results['fixes_failed']}")
-        print(f"  Aprendizajes:      {results['learnings']}")
-        print("=" * 60)
+        logger.info("\n" + "=" * 60)
+        logger.info("  RESUMEN FINAL")
+        logger.info("=" * 60)
+        logger.info(f"  Iteraciones:      {results['iterations']}")
+        logger.info(f"  Issues detectados: {results['issues_detected']}")
+        logger.info(f"  Fixes aplicados:   {results['fixes_applied']}")
+        logger.info(f"  Fixes fallidos:    {results['fixes_failed']}")
+        logger.info(f"  Aprendizajes:      {results['learnings']}")
+        logger.info("=" * 60)
 
         return results
 
-    def scan_only(self) -> dict:
-        """Solo fase 1: detecta issues sin modificar nada."""
-        print("[MODO] Scan solamente (sin modificaciones)")
+    def scan_only(self) -> Dict[str, Any]:
+        logger.info("[MODO] Scan solamente (sin modificaciones)")
         issues = self.detector.scan()
         issues_data = [i.__dict__ for i in issues]
         return {
@@ -132,26 +138,20 @@ class RecursiveImprovementEngine:
             "issues": issues_data,
         }
 
-    def full_cycle(self) -> dict:
-        """Ciclo completo: detect -> analyze -> execute -> learn (alias de run)."""
+    def full_cycle(self) -> Dict[str, Any]:
         return self.run()
 
-    # Alias para compatibilidad con 11_Auto_Learn_Hub.py y manual_trigger.py
-    def run_quick_scan(self) -> dict:
-        """Alias: scan_only (compatibilidad con 11_Auto_Learn_Hub)."""
+    def run_quick_scan(self) -> Dict[str, Any]:
         return self.scan_only()
 
-    def run_full_cycle(self) -> dict:
-        """Alias: full_cycle (compatibilidad con 11_Auto_Learn_Hub)."""
+    def run_full_cycle(self) -> Dict[str, Any]:
         return self.full_cycle()
 
-    def run_learn_only(self) -> dict:
-        """Alias: learn_only (compatibilidad con 11_Auto_Learn_Hub)."""
+    def run_learn_only(self) -> Dict[str, Any]:
         return self.learn_only()
 
-    def learn_only(self) -> dict:
-        """Solo fase 4: procesa aprendizajes de ejecuciones anteriores."""
-        print("[MODO] Learn solamente")
+    def learn_only(self) -> Dict[str, Any]:
+        logger.info("[MODO] Learn solamente")
         stats = self.learner.get_stats()
         suggestions = self.learner.evolve_rules([])
         return {
@@ -160,8 +160,7 @@ class RecursiveImprovementEngine:
         }
 
     def generate_report(self) -> str:
-        """Genera reporte completo de estado del sistema."""
-        parts = [
+        parts: List[str] = [
             f"# Auto-Improvement Report",
             f"**Fecha:** {datetime.now().strftime('%Y-%m-%d %H:%M')}",
             f"**Root:** {self.root}",
@@ -175,8 +174,7 @@ class RecursiveImprovementEngine:
         ]
         return "\n".join(parts)
 
-    def export_results(self, results: dict, output_path: str = None) -> str:
-        """Exporta resultados a JSON."""
+    def export_results(self, results: Dict[str, Any], output_path: Optional[str] = None) -> str:
         if output_path is None:
             output_path = str(Path(self.root) / "04_Operations" / "01_Auto_Improvement" / "03_Metrics" / "last_run.json")
         path = Path(output_path)
@@ -186,11 +184,11 @@ class RecursiveImprovementEngine:
             "results": results,
         }
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-        print(f"  Resultados exportados a: {path}")
+        logger.info(f"Resultados exportados a: {path}")
         return str(path)
 
 
-def main():
+def main() -> int:
     import argparse
 
     parser = argparse.ArgumentParser(description="Auto-Improvement Engine (SOTA)")
@@ -213,10 +211,9 @@ def main():
     engine.max_iterations = args.iterations
 
     if args.smoke:
-        print("=" * 60)
-        print("  SMOKE TEST MODE")
-        print("=" * 60)
-        # Usar issues de prueba del executor (auto_fixable=True)
+        logger.info("=" * 60)
+        logger.info("  SMOKE TEST MODE")
+        logger.info("=" * 60)
         from executor import Executor
         test_executor = Executor(args.path, dry_run=not args.live)
         test_issues = [
@@ -236,17 +233,16 @@ def main():
             },
         ]
         success, failed = test_executor.execute(test_issues)
-        print()
-        print(test_executor.report())
+        logger.info("")
+        logger.info(test_executor.report())
         mode = "LIVE" if args.live else "DRY RUN"
-        print(f"\n[SMOKE] [{mode}] {success} OK, {failed} FAILED")
+        logger.info(f"\n[SMOKE] [{mode}] {success} OK, {failed} FAILED")
         if not args.live:
-            print("[SMOKE] Para aplicar fixes reales, ejecuta con --live")
-        # Limpiar directorio de prueba si se creó
+            logger.info("[SMOKE] Para aplicar fixes reales, ejecuta con --live")
         smoke_dir = Path(args.path) / "04_Operations" / "01_Auto_Improvement" / "00_Smoke_Test_Dir"
         if smoke_dir.exists() and args.live:
             smoke_dir.rmdir()
-            print(f"[SMOKE] Limpiado directorio de prueba: {smoke_dir}")
+            logger.info(f"[SMOKE] Limpiado directorio de prueba: {smoke_dir}")
         return 0 if failed == 0 else 1
 
     if args.scan:
@@ -254,7 +250,7 @@ def main():
     elif args.learn:
         result = engine.learn_only()
     elif args.report:
-        print(engine.generate_report())
+        logger.info(engine.generate_report())
         return 0
     else:
         result = engine.full_cycle()
@@ -266,4 +262,4 @@ def main():
 
 
 if __name__ == "__main__":
-    exit(main())
+    sys.exit(main())

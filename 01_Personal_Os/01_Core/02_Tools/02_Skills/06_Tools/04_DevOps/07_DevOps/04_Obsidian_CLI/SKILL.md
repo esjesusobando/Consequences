@@ -1,6 +1,7 @@
 ---
 name: obsidian-cli
 description: Interactuar con bóvedas de Obsidian mediante la Obsidian CLI para leer, crear, buscar y gestionar notas, daily notes, tareas, propiedades, etiquetas y backlinks desde la terminal. Usar esta skill siempre que el usuario pida operar sobre su vault de Obsidian - leer una nota, añadir contenido, capturar algo en la daily note, buscar texto en el vault, listar o actualizar tareas, modificar propiedades del frontmatter, consultar backlinks, etiquetas o aliases - incluso si no menciona explícitamente "CLI" o "Obsidian CLI". También aplica cuando el usuario diga "agrega esto a mi vault", "anota en Obsidian", "qué tengo sobre X en mis notas", o similares.
+sota_upgraded: true
 ---
 
 # Obsidian CLI
@@ -183,3 +184,17 @@ obsidian open name="Proyectos/Alpha" focus=true
 3. **Carpetas automáticas**: Si la carpeta no existe, la crea automáticamente.
 4. **Extensión .md**: No incluir la extensión en el `name`; Obsidian la añade automáticamente.
 5. **Obsidian debe estar abierto**: La CLI requiere que Obsidian esté en ejecución con la opción Command line interface habilitada en Settings > Options > Command line interface.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

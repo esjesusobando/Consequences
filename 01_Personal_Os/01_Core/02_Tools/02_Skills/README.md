@@ -1,6 +1,6 @@
-# 🛠️ Skills — Sistema SOTA de Skills v4.9 Consequences
+# 🛠️ Skills — Sistema SOTA de Skills v5.0 Consequences
 
-**Versión:** 4.9.1 — SOTA
+**Versión:** 5.0 — SOTA
 **Última actualización:** 2026-06-27
 **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA

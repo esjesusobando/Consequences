@@ -2,6 +2,7 @@
 name: content-ideation
 version: 1.0.0
 description: Extrae temas, historias y ángulos de tu marca, los puntos de dolor de tu audiencia y las conversaciones tendencia en tu nicho — y los convierte en una lista de ideas de contenido lista para ejecutar. Usa esta skill cuando el usuario diga cosas como "no sé qué publicar", "dame ideas de contenido", "se me acabaron las ideas", "¿qué debería hacer esta semana?", "plan de contenido", "lluvia de ideas", "¿qué temas debería cubrir?", "necesito un calendario de contenido", "ayúdame a generar ideas", o cuando se sienta bloqueado antes de crear cualquier cosa. También activa cuando el usuario comparte su nicho, audiencia o marca y quiere una dirección estratégica de contenido. Esta es la capa de pensamiento — úsala siempre antes de que se haga cualquier guion, visual o post. Triggers on: "no sé qué publicar", "dame ideas", "se me acabaron las ideas", "plan de contenido", "lluvia de ideas".
+sota_upgraded: true
 ---
 
 # Ideación de Contenido
@@ -235,3 +236,17 @@ NOTAS
 
 Ideas generadas se pueden guardar en:
 - `02_Knowledge/04_Content/{brand}-ideas.md`
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

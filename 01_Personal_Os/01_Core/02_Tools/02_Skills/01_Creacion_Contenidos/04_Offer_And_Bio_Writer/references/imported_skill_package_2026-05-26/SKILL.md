@@ -1,6 +1,7 @@
 ---
 name: offer-and-bio-writer
 description: Escribe e itera bios de Instagram/LinkedIn, páginas de link en bio, copy de landing pages y guiones de DM — todo alineado al posicionamiento de la marca y diseñado para convertir atención en acción. Usa esta skill cuando el usuario diga cosas como "escribe mi bio", "arregla mi bio de Instagram", "mi bio no convierte", "escribe una landing page", "ayúdame a escribir mi link en bio", "escribe un guion de DM", "cómo presento mi oferta", "escribe mi oferta", "necesito copy para mi página", "ayúdame a posicionarme", o cualquier cosa que involucre cómo se muestra cuando alguien hace clic en su perfil. También activa cuando el usuario esté lanzando una nueva oferta, servicio o producto y necesite palabras que hagan que la gente quiera comprar, agendar o enviar un DM. Esta skill convierte a desconocidos en leads.
+sota_upgraded: true
 ---
 
 # Redactor de Ofertas y Bio
@@ -180,3 +181,17 @@ Antes de entregar cualquier copy, ejecuta esto:
 - [ ] ¿La última línea da ganas de tomar acción?
 
 Si algún punto falla — reescribe antes de entregar.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

@@ -1,6 +1,7 @@
 ---
 name: entrevistador-procesos
 description: Entrevista al usuario para definir con claridad un proceso, workflow, automatización, skill, sistema o proyecto antes de construirlo. Úsala siempre que el usuario quiera planificar, diseñar, construir, crear, automatizar, documentar o mejorar algo complejo — antes de ponerte a ejecutar. También debe activarse cuando el usuario quiera crear una skill nueva, preparar un workflow, definir una estrategia, diseñar un sistema interno, estructurar un proyecto o convertir una tarea repetitiva en un proceso reutilizable. Si el usuario dice "quiero crear X", "necesito automatizar Y", "ayúdame a definir Z" o cualquier variante donde el proceso todavía no está completamente claro, activa esta skill en lugar de empezar a construir directamente.
+sota_upgraded: true
 ---
 
 # Entrevistador de Procesos
@@ -131,3 +132,17 @@ Una buena entrevista termina cuando:
 - Los criterios de calidad del resultado están definidos.
 - No quedan decisiones importantes sin tomar.
 - El resumen final podría entregarse a otra persona y esta sabría exactamente qué construir.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

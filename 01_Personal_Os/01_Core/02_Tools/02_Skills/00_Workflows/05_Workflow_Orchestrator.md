@@ -2,6 +2,7 @@
 name: Workflow Orchestrator
 description: Coordinador del flujo TDD completo en 7 fases. Orquesta agentes especializados secuencialmente con checkpoints de validación. Usar para desarrollo de features complejas que requieren arquitectura, tests, implementación, seguridad y PR.
 model: claude-opus-4-6
+sota_upgraded: true
 ---
 
 # Workflow Orchestrator — Agente 10
@@ -55,3 +56,17 @@ git commit -m "feat(a11y): improve WCAG compliance"     # FASE 7 (si aplica)
 - Este orquestador coordina los agentes 01-07 de `01_Core/04_Agents/`
 - Reglas del proyecto: `01_Core/01_Rules/`
 - Ritual de validación: `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py`
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

@@ -2,6 +2,7 @@
 name: claude-permissions-optimizer
 context: fork
 description: Optimize Claude Code permissions by finding safe Bash commands from session history and auto-applying them to settings.json. Can run from any coding agent but targets Claude Code specifically. Use when experiencing permission fatigue, too many permission prompts, wanting to optimize permissions, or needing to set up allowlists. Triggers on "optimize permissions", "reduce permission prompts", "allowlist commands", "too many permission prompts", "permission fatigue", "permission setup", or complaints about clicking approve too often.
+sota_upgraded: true
 ---
 
 # Claude Permissions Optimizer
@@ -158,3 +159,17 @@ If `.claude/settings.json` was modified and is tracked by git, mention that comm
 - **No project context** (running outside a project): Only offer user-level settings as write target.
 - **Settings file doesn't exist**: Create it with `{ "permissions": { "allow": [] } }`. For `.claude/settings.json`, also create the `.claude/` directory if needed.
 - **Deny rules**: If a deny rule already blocks a command, warn rather than adding an allow rule (deny takes precedence in Claude Code).
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

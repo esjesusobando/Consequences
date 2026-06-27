@@ -2,6 +2,7 @@
 name: deepen-plan
 description: "Stress-test an existing implementation plan and selectively strengthen weak sections with targeted research. Use when a plan needs more confidence around decisions, sequencing, system-wide impact, risks, or verification. Best for Standard or Deep plans, or high-risk topics such as auth, payments, migrations, external APIs, and security. For structural or clarity improvements, prefer document-review instead."
 argument-hint: "[path to plan file]"
+sota_upgraded: true
 ---
 
 # Deepen Plan
@@ -407,3 +408,17 @@ If no substantive changes were warranted:
 - Offer the `document-review` skill or `/ce:work` as the next step instead
 
 NEVER CODE! Research, challenge, and strengthen the plan.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

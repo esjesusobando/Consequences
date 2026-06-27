@@ -2,6 +2,7 @@
 name: feature-video
 description: Record a video walkthrough of a feature and add it to the PR description. Use when a PR needs a visual demo for reviewers, when the user asks to demo a feature, create a PR video, record a walkthrough, show what changed visually, or add a video to a pull request.
 argument-hint: "[PR number or 'current' or path/to/video.mp4] [optional: base URL, default localhost:3000]"
+sota_upgraded: true
 ---
 
 # Feature Video Walkthrough
@@ -380,3 +381,17 @@ PR description updated with demo section.
 | `gh pr view` fails                                                                      | No PR for current branch                                                            | Step 1 handles this -- choose to create a draft PR or record-only mode                                                                           |
 | Video file too large for upload                                                         | Exceeds GitHub's 10MB (free) or 100MB (paid) limit                                  | Re-encode: lower framerate (`-framerate 0.33`), reduce resolution (`scale=960:-2`), or increase CRF (`-crf 28`)                                  |
 | Upload URL does not contain `user-attachments/assets/`                                  | Wrong upload method or GitHub change                                                | Verify the file input selector is still correct by inspecting the PR page                                                                        |
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

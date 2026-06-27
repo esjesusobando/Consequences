@@ -1,6 +1,7 @@
 ---
 name: dieter-rams-design
 description: Audita diseños basándose en los 10 principios de Dieter Rams. Triggers on: dieter rams, design audit, simplicity, less but better, essential design, honest design.
+sota_upgraded: true
 ---
 
 # Dieter Rams Design Validator
@@ -108,3 +109,17 @@ O simplemente realiza el análisis tú mismo (Claude) basándote en la lógica d
 
 Si el score es bajo (<50), califícalo como "Anti-Rams" y sugiere una simplificación radical.
 Si el score es alto (>85), felicita al usuario por un diseño "Rams-certified".
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

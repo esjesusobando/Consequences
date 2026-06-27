@@ -2,6 +2,7 @@
 name: ads-youtube
 description: "YouTube Ads specific analysis covering campaign types, creative quality, audience targeting, and measurement. Evaluates video ad performance across skippable, non-skippable, bumper, Shorts, Demand Gen, and Connected TV formats. Covers VAC→Demand Gen migration, Shorts creative requirements, and CTV shoppable ads. Use when user says YouTube Ads, video ads, pre-roll, bumper ads, YouTube campaign, Shorts ads, or CTV ads."
 user-invokable: false
+sota_upgraded: true
 ---
 
 # YouTube Ads Analysis
@@ -193,3 +194,17 @@ Measurement:        █████░░░░░  Attribution and tracking
 - **Overlay ads**: Discontinued April 6, 2023
 - **Rule-based attribution** (first click, linear, time decay, position-based): All auto-upgraded to DDA
 - **DV360 lifetime frequency caps**: Max period now 30 days (changed Feb 28, 2025)
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

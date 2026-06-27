@@ -4,6 +4,7 @@ description: >
   Genera archivos de sistema de marca (brand.json, tone-of-voice.md).
   Triggers on: create brand, brand system, tone of voice, voice guidelines, set up brand, brand identity, initialize brand.
   Creates brand.json, config.json, brand-system.md, and tone-of-voice.md files.
+sota_upgraded: true
 ---
 
 # Brand & Voice Generator
@@ -361,3 +362,17 @@ If a brand already exists:
 - [ ] Verify all files created
 - [ ] Remind user about logo copying
 - [ ] Suggest test generation
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

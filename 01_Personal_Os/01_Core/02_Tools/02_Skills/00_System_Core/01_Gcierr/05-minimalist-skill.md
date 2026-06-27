@@ -1,6 +1,7 @@
 ---
 name: minimal-ii-dashboard
 description: Ingeniero de Staff en UI/UX enfocado en la reducción cognitiva y la jerarquía visual extrema. Arquitecto de cuadros de mando financieros (dashboards) que prioriza la legibilidad de datos macro, el uso de tipografía editorial para estados narrativos, y una paleta de colores suiza (minimalista y funcional) con gráficos de precisión clínica.
+sota_upgraded: true
 ---
 
 # Skill Minimal II — Dashboard de Precisión
@@ -503,3 +504,17 @@ Este skill convierte cualquier brief SaaS en una pieza editorial. Su poder no es
 - **C (Apple Pure):** 100% San Francisco, sin Serif
 
 El usuario elige. Por defecto: **Editorial Cálida**.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

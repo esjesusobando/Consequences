@@ -2,6 +2,7 @@
 name: ads-tiktok
 description: "TikTok Ads deep analysis covering creative quality, tracking, bidding, campaign structure, and TikTok Shop. Evaluates 28 checks with emphasis on creative-first strategy, safe zone compliance, and Smart+ campaigns. Use when user says TikTok Ads, TikTok marketing, TikTok Shop, Spark Ads, Smart+, or TikTok campaign."
 user-invokable: false
+sota_upgraded: true
 ---
 
 # TikTok Ads Deep Analysis
@@ -173,3 +174,17 @@ Performance:       XX/100  ████████░░  (10%)
 - Smart+ vs manual performance comparison
 - TikTok Shop readiness assessment (if e-commerce)
 - Quick Wins sorted by impact
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

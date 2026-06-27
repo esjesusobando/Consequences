@@ -504,3 +504,17 @@ Three structural forces define the paid advertising landscape the CLI tool must 
 The audit scoring system should weight conversion tracking infrastructure heaviest (20-25% of score) because every other optimization depends on accurate measurement. The 70-item Google checklist and 42-item Meta checklist provide complete pass/fail criteria with specific numeric thresholds derived from 2025 benchmark data. The GAQL queries and API endpoints documented above enable programmatic access to approximately 70% of these audit items, with the remainder requiring heuristic analysis of the retrieved data.
 
 The most actionable finding for the tool's users: **CPCs rose for the fifth consecutive year, but conversion rates improved for 65% of industries** -- the accounts losing money are not victims of platform economics but of poor fundamentals that systematic auditing can catch and fix.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

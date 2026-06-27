@@ -19,6 +19,7 @@ triggers:
   - "off-page SEO"
   - "backlinks"
   - "SEO metrics"
+sota_upgraded: true
 ---
 
 # SEO SOTA Master
@@ -727,3 +728,17 @@ This skill makes you a **Silicon Valley-grade SEO expert**:
 
 - **Por qué**: Cada herramienta tiene sesgos. Search Console no muestra competidores. Ahrefs/SEMrush tienen datos estimados. Una sola fuente da una visión incompleta.
 - **Solución**: Triangular datos de mínimo 3 fuentes (Search Console + GA4 + herramienta de rankings) antes de hacer una recomendación.
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*
