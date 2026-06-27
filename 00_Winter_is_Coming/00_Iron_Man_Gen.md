@@ -57,7 +57,7 @@ Think_Different/
 │   │       ├── 02_Skills/       # 392 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
-│   │       ├── 05_Hooks/        # 10 hooks (6 fases)
+│   │       ├── 05_Hooks/        # 11 hooks (6 fases) [FIXED]
 │   │       ├── 06_Plugins/      # Plugins OS
 │   │       ├── 07_Server/       # Engram server
 │   │       ├── 08_Evals/        # Evaluadores
@@ -68,7 +68,7 @@ Think_Different/
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 30 HUBs + 163 scripts total
+│       ├── 03_Scripts_Os/       # 22 HUBs + ~266 scripts total [MAY DRIFT]
 │       ├── 04_Installer/        # Scripts de instalación
 │       ├── 05_Projects/         # Proyectos activos
 │       ├── 06_SOTA_Features/    # Features SOTA
