@@ -2,17 +2,28 @@
 """
 35_SOTA_Skill_Modernizer.py
 Recorre los SKILLS y les añade capacidades SOTA de Prompting (CoT, System Constraints).
+Mejoras SOTA: Type hints estrictos, logging estructurado, manejo de excepciones defensivo.
 """
 import os
 import re
+import logging
 from pathlib import Path
 from datetime import datetime
+from typing import List, Tuple
+
+# Configuración de Logging SOTA
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
+logger = logging.getLogger("SkillModernizer")
 
 # Rutas
-REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
-SKILLS_DIR = REPO_ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
+REPO_ROOT: Path = Path(__file__).resolve().parent.parent.parent.parent
+SKILLS_DIR: Path = REPO_ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
 
-SOTA_APPENDIX = """
+SOTA_APPENDIX: str = """
 
 ---
 ## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
@@ -29,9 +40,11 @@ SOTA_APPENDIX = """
 """
 
 def process_skill(path: Path) -> bool:
+    """Procesa un skill para inyectar reglas SOTA si no están presentes."""
     try:
-        content = path.read_text(encoding="utf-8")
-    except Exception:
+        content: str = path.read_text(encoding="utf-8")
+    except Exception as e:
+        logger.error(f"Error leyendo {path.name}: {e}")
         return False
 
     if "SOTA Upgrade: Chain of Thought & System Constraints" in content:
@@ -41,7 +54,7 @@ def process_skill(path: Path) -> bool:
     if content.startswith("---"):
         parts = content.split("---", 2)
         if len(parts) >= 3:
-            frontmatter = parts[1]
+            frontmatter: str = parts[1]
             if "sota_upgraded: true" not in frontmatter:
                 new_frontmatter = frontmatter.rstrip() + "\nsota_upgraded: true\n"
                 content = f"---{new_frontmatter}---{parts[2]}"
@@ -52,23 +65,29 @@ def process_skill(path: Path) -> bool:
     try:
         path.write_text(content, encoding="utf-8")
         return True
-    except Exception:
+    except Exception as e:
+        logger.error(f"Error escribiendo {path.name}: {e}")
         return False
 
-def main():
-    print("Iniciando SOTA Upgrade de Skills...")
-    upgraded = 0
-    skipped = 0
+def main() -> None:
+    logger.info("Iniciando SOTA Upgrade de Skills...")
+    upgraded: int = 0
+    skipped: int = 0
+    
+    if not SKILLS_DIR.exists():
+        logger.error(f"El directorio de skills no existe: {SKILLS_DIR}")
+        return
+
     for root, _, files in os.walk(SKILLS_DIR):
         for f in files:
             if f.endswith(".md") and f not in ("README.md", "INDEX_AREA_FUNCTIONAL.md", "MAPA_MIGRACION.md", "TOP_20_SKILLS.md"):
-                path = Path(root) / f
+                path: Path = Path(root) / f
                 if process_skill(path):
                     upgraded += 1
                 else:
                     skipped += 1
                     
-    print(f"SOTA Upgrade completado. Skills actualizados: {upgraded}. Skipped (ya actualizados o error): {skipped}.")
+    logger.info(f"SOTA Upgrade completado. Skills actualizados: {upgraded}. Skipped (ya actualizados o error): {skipped}.")
 
 if __name__ == "__main__":
     main()

@@ -1,19 +1,22 @@
+# ===================================================================
+# SOTA Requirements - Think Different PersonalOS v5.0
+# ===================================================================
+
+# Core AI & LLM integration
 mcp>=1.26.0
-pyyaml>=6.0.3
 anthropic>=0.84.0
+
+# Data & Environment
+pyyaml>=6.0.3
 python-dotenv>=1.0.1
-
-# Notificaciones y sonido
-winsound>=0.1  # Windows sound (built-in on Windows, pip install for others)
-
-# HTTP requests
-requests>=2.32.0
-
-# Date utilities
-python-dateutil>=2.9.0
-
-# JSON schema validation
 jsonschema>=4.23.0
 
-# Testing
+# HTTP & Network
+requests>=2.32.0
+
+# OS & Utilities
+python-dateutil>=2.9.0
+winsound>=0.1  # Windows sound (built-in on Windows)
+
+# Testing & QA
 pytest>=8.3.2

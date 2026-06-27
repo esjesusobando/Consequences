@@ -1,16 +1,16 @@
-# HUB Catalog — generated 2026-06-27T13:19:18
+# HUB Catalog — generated 2026-06-27T15:40:03
 
 version: v3.0
-generated: "2026-06-27T13:19:18"
+generated: "2026-06-27T15:40:03"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 42
-  hubs_scripts_raiz: 33
+  hubs: 43
+  hubs_scripts_raiz: 34
   hubs_directorios: 9
   scripts: 133
-  hubs_numerados: 33
-  hubs_con_interfaz: 33
-  scripts_totales: 166
+  hubs_numerados: 34
+  hubs_con_interfaz: 34
+  scripts_totales: 167
   scripts_no_hub: 133
 hubs:
   - name: 00_Sound_Engine
@@ -240,6 +240,13 @@ hubs:
   - name: 35_SOTA_Skill_Modernizer
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
+    interfaz:
+      has_main: True
+      has_args: False
+      is_numerado: True
+  - name: 36_README_Table_Beautifier
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/36_README_Table_Beautifier.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/36_README_Table_Beautifier.py
     interfaz:
       has_main: True
       has_args: False

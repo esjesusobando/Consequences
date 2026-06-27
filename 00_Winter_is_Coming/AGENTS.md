@@ -1,12 +1,12 @@
-# AGENTS.md — Think Different PersonalOS v4.9.1
+# AGENTS.md — Think Different PersonalOS v5.0.1
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-06-27 (v4.9.1 — Documentation Ground Truth Sync)
+**Última actualización:** 2026-06-27 (v5.0.1 — Documentation Ground Truth Sync)
 
 ---
 
-## 🚀 MÁQUINA DE GUERRA — Think Different v4.9.1
+## 🚀 MÁQUINA DE GUERRA — Think Different v5.0.1
 
 Integrated stack: PersonalOS + SDD + Compound Engineering + Gentleman Skills + GGA + Engram + Auto-Improvement Engine
 
@@ -168,10 +168,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-comp
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (v4.9.1 — 2026-06-27)
+### Workspace Shape (v5.0.1 — 2026-06-27)
 
 ```
-Think_Different/                           # v4.9.1 — 4 carpetas raíz
+Think_Different/                           # v5.0.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
@@ -581,4 +581,4 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
 
 ---
 
-_Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation + Documentation Ground Truth Sync (2026-06-27)_
+_Think Different PersonalOS v5.0.1 — Marketing SOTA + Archive Consolidation + Documentation Ground Truth Sync (2026-06-27)_
