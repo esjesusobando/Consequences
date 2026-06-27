@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.9.1** | 2026-06-25
+**v4.9.2** | 2026-06-27
 
 ---
 
@@ -8,26 +8,35 @@
 
 | Componente                          | Total                                                                  | Estado                                       |
 |------------------------------------|-----------------------------------------------------------------------|---------------------------------------------|
+| Auto-Improvement                    | 🔄 Activo cada 8h (Task Scheduler)                                     | ✅ 20+ días autónomo — 6 fixers              |
+| Capital Token                       | 🌕 Fase 1 Foundation — 10_Shared_Org/                                  | ✅ 1 playbook, 1 ADR, 3 agent templates       |
 | MCPs Claude Code                    | **36**                                                                 | ✅ SYNCED — drift 0                           |
 | Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
-| Skills                              | **392** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **61** (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)      | ✅ SYNCED                                     |
+| Skills                              | **396** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
+| Agentes                             | **71** (24 Root + 6 Dream + 23 Specialists + 5 Growth + 13 otras categorías) | ✅ SYNCED                                     |
 | HUBs                                | **30** scripts (`*_Hub.py` + auxiliares)                               | ✅ VERIFIED                                   |
 | Scripts totales                     | **163** (30 raíz + 133 en subdirectorios)                              | ✅ DOCUMENTED                                 |
 | Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-25 — v4.9.1 — Marketing SOTA + Archive Consolidation
-> Skills: 392. HUBs: 30. Workflows: 28. Rules: 14. Scripts: 163. Agentes: 62 (6 Dream Team).
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.2 — Capital Token F1 + Auto-Improvement validado
+> Skills: 396. HUBs: 30. Workflows: 28. Rules: 14. Scripts: 163. Agentes: 71.
 
 ---
 
-## 🆕 v4.9 Changes
+## 🆕 v4.9.2 Changes (2026-06-27)
 
-1. **Skills auditadas**: 392 SKILL.md activas en 15 áreas funcionales
-2. **Agentes expandidos**: 61 agentes total (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
+1. **🌕 Capital Token Fase 1**: `10_Shared_Org/` en Knowledge — 1 playbook, 1 ADR, 3 agent templates, MCP Bridge v0.1
+2. **🔄 Auto-Improvement validado**: 20+ días autónomo, Task Scheduler cada 8h, 6 fixers reales
+3. **Documentación actualizada**: Structure_v5.0.md, README.md, OS_DIRECTORY.md — cross-refs entre sistemas
+4. **Cross-reference documentada**: Cada sistema sabe que el otro existe y cómo se complementan
+
+## 🆕 v4.9.1 Changes
+
+1. **Skills auditadas**: 396 SKILL.md activas en 15 áreas funcionales
+2. **Agentes expandidos**: 71 agentes total (24 Root + 6 Dream + 23 Specialists + 5 Growth + 13 otras categorías)
 3. **Workflows**: 28 activos en 7 categorías
 4. **Scripts**: 163 .py scripts totales (30 raíz + 133 subdirectorios)
 5. **HUBs**: 30 total (numerados + HUB_SOTA + auxiliares)
@@ -78,10 +87,10 @@ Think_Different/
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
-│   │   ├── 01_Rules/           ✅ 13 reglas .mdc
+│   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 61 agentes
-│   │       ├── 02_Skills/         ✅ 392 skills (15 áreas)
+│   │       ├── 01_Agents/         ✅ 71 agentes
+│   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
@@ -89,7 +98,7 @@ Think_Different/
 │   │       ├── 07_Server/         ✅ Engram server
 │   │       ├── 08_Evals/          ✅ Evaluadores
 │   │       └── 09_Templates/      ✅ Templates
-│   ├── 02_Knowledge/              ✅ Base de conocimiento
+│   ├── 02_Knowledge/              ✅ Base de conocimiento (10_Shared_Org/ — Capital Token F1)
 │   ├── 03_Task/                   ✅ Tareas activas
 │   └── 04_Operations/             ✅ Motor operativo
 │       ├── 00_Context_LLM/        ✅ Memoria LLM
@@ -115,25 +124,27 @@ Think_Different/
 
 ---
 
-## 🧠 SKILLS — 15 ÁREAS FUNCIONALES (392 skills)
+## 🧠 SKILLS — 15 ÁREAS FUNCIONALES (396 skills)
 
 | Área                                         | Descripción                                               | Skills  |
 |---------------------------------------------|----------------------------------------------------------|--------|
-| 00_Agent_Teams_Lite                          | SDD sub-agentes + JARVIS manifests                        | 13      |
+| 00_Agent_Teams_Lite                          | SDD sub-agentes + JARVIS manifests                        | 14      |
 | 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                      | 63      |
-| 00_Personal_Os                               | Life OS, Hillary, Rituales                                | 32      |
+| 00_Personal_Os                               | Life OS, Hillary, Rituales                                | 24      |
 | 00_Skill_Auditor                             | Auditoría de skills                                       | 1       |
 | 00_System_Core                               | Stack base OS + Gcierr                                    | 1       |
-| 00_Workflows                                 | Workflows OS                                              | 43      |
-| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Marketing — 16 sub-áreas             | 47      |
+| 00_Workflows                                 | Workflows OS                                              | 39      |
+| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Marketing — 16 sub-áreas             | 52      |
 | 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 34      |
-| 03_Video_Media                               | Video Intel, James Cameron                                | 7       |
-| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 24      |
+| 03_Video_Media                               | Video Intel, James Cameron                                | 11      |
+| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 27      |
 | 05_Claude_Ads                                | Claude Ads & Promoted Content                             | 21      |
 | 06_Tools                                     | Skill Creator, Testing, DevOps, Data                      | 83      |
-| 07_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 15      |
-| 08_JAO                                       | Entrevistador, Humanizador, Optimizador, Superpowers      | 6       |
+| 07_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 18      |
+| 08_JAO                                       | Entrevistador, Humanizador, Optimizador, Superpowers      | 7       |
 | 10_Laia_Learning                             | Sistema de aprendizaje personal                           | 1       |
+
+> **Skill global destacada:** `claude-seo-ai` (Hainrixz) — `~/.config/opencode/skills/claude-seo-ai/` — 5 sub-skills: audit, fix, geo, score, seo-orchestrator. Auditoría SEO + AI Visibility.
 
 ---
 
@@ -156,15 +167,17 @@ Think_Different/
 
 ---
 
-## ⚡ AGENTES — 62 CONFIGURADOS
+## ⚡ AGENTES — 71 CONFIGURADOS
 
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
-| Root (Orchestrator + Template)          | 26                        | Raíz `01_Agents/` (00_Orchestrator → 13_Hillary + 14-19 Specialists)         |
+| Root (Orchestrator + Template)          | 24                        | Raíz `01_Agents/` (00_Template, 00_Orchestrator, 01-22)                     |
 | Dream Team                              | 6                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform, Orchestrator) |
 | Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                         |
 | Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                                |
-| Other (Context/Marca/Templates)         | 3                         | `04_Contexto/`, `05_Marca/`, `06_Plantillas/` (documentación, no agentes)    |
+| OS Conductor                            | 3                         | `00_OS_Conductor/` (SKILL.md, registry, unified registry)                    |
+| ATL Gen                                 | 9                         | `07_Agent_Teams_Lite_Gen/` (SDD sub-agentes 01-09)                           |
+| Agent Teams Lite                        | 1                         | `00_Agent_Teams_Lite/skills/sdd-apply/`                                      |
 
 ---
 
@@ -246,4 +259,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-25 | PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation | 392 skills | 62 agents | 30 HUBs | 28 workflows | 14 rules*
+*Actualizado: 2026-06-27 | PersonalOS v4.9.2 — Capital Token F1 + Auto-Improvement validado | 396 skills | 71 agents | 30 HUBs | 28 workflows | 14 rules*

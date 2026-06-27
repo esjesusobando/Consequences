@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-06-01 (v4.9.1 — Judgment Day v4 — Post-Audit Fixes)
+**Última actualización:** 2026-06-27 (v4.9.1 — Documentation Ground Truth Sync)
 
 ---
 
@@ -41,16 +41,16 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (392, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (396, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (62)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (30 HUBs — 163 scripts totales)            | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 163 scripts totales                       |
-| **MCPs** (7 root + 38 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **Agentes** (~58)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (22 HUBs — ~266 scripts) [MAY DRIFT]      | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — ~266 scripts totales                      |
+| **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 28 workflows en 7 categorías                                       |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 29 workflows en 7 categorías [MAY DRIFT]                           |
 
 ---
 
@@ -79,7 +79,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
                     └─────────────────────┘
 ```
 
-### Dream Team (5 Especialistas)
+### Dream Team (6 Especialistas)
 
 📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`
 
@@ -159,18 +159,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-comp
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (v4.9.1 — 2026-06-25)
+### Workspace Shape (v4.9.1 — 2026-06-27)
 
 ```
 Think_Different/                           # v4.9.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 28 Workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías) [MAY DRIFT]
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 61 agentes (referencia al manifest)
-│   │       ├── 02_Skills/                # 392 skills (15 áreas)
+│   │       ├── 01_Agents/               # ~58 agentes (referencia al manifest) [MAY DRIFT]
+│   │       ├── 02_Skills/                # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -185,7 +185,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 30 HUBs — 163 scripts totales (133 en subdirectorios)
+│       ├── 03_Scripts_Os/               # 22 HUBs — ~266 scripts totales [MAY DRIFT]
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte
@@ -292,7 +292,7 @@ For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Work
 ### SDD Skills Location
 
 - **Global:** `~/.config/opencode/skills/sdd-*`
-- **Local:** `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/`
+- **Local:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
 - **Memory backend:** Engram MCP
 
 ---
@@ -355,9 +355,9 @@ Code review con IA.
 
 ---
 
-## 6. MCP SERVERS — Active (36 Servers)
+## 6. MCP SERVERS — Active (11 root + 4 backup)
 
-Configured in `.mcp.json` (raíz del proyecto):
+Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos** (+ 4 backup JSON en `03_Mcp/`).
 
 | Category                               | MCPs                                                                                                                                               |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -376,7 +376,7 @@ Configured in `.mcp.json` (raíz del proyecto):
 
 ---
 
-## 7. HUB SCRIPTS (30 activos)
+## 7. HUB SCRIPTS (22 activos) [MAY DRIFT]
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -444,6 +444,7 @@ gr --agents    # Solo 3 agents
 | `/dw`                            | Dynamic Workflows — pipeline completo (vía skill())                          |
 | `/sdd-*`                         | SDD Workflow (init, explore, propose, spec, etc.)                            |
 | `/ce:*`                          | Compound Engineering (ideate, brainstorm, plan, etc.)                        |
+| `/claude-seo-ai:*`               | SEO + AI-search audit & fix (audit, geo, score, fix)                         |
 
 ---
 
@@ -468,7 +469,7 @@ gr --agents    # Solo 3 agents
 
 ---
 
-## 12. WORKFLOWS (28 — 7 categorías)
+## 12. WORKFLOWS (29 — 7 categorías) [MAY DRIFT]
 
 📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 
@@ -560,4 +561,4 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
 
 ---
 
-_Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation (2026-06-25)_
+_Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation + Documentation Ground Truth Sync (2026-06-27)_

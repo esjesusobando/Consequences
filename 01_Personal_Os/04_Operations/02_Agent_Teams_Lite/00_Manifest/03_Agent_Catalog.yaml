@@ -8,17 +8,18 @@ policy:
   backup: .agent/01_Agents/
   sync_direction: source -> backup (uni-directional)
 totals:
-  source: 63
+  source: 71
   backup: 72
-  in_sync: 63
+  in_sync: 71
   drift: 9
 by_category:
+  root: 24
   dream_team: 6
-  growth: 5
-  individual: 0
-  other: 3
-  root: 26
   specialists: 23
+  growth: 5
+  os_conductor: 3
+  atl_gen: 9
+  agent_teams_lite: 1
 drift_files:
   - 04_Contexto/03_Contexto/00_estrategia.md
   - 04_Contexto/03_Contexto/01_conocimiento.md

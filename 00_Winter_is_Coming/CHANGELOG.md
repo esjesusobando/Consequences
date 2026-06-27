@@ -262,7 +262,7 @@
 | **Hooks**                                | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`                                  | 🔴 Pendiente                              |
 | **Hooks**                                | SubagentStop documentado pero NO configurado                                                                 | 🔴 Pendiente                              |
 | **Hooks**                                | 5/8 hooks documentados sin wirear (04_Sound, 05_Harness, 06_Post_Hulk_Compound)                              | 🟠 Pendiente                              |
-| **Agentes**                              | Contaje inconsistente: docs dicen 14/18/71, real son 48                                                      | 🟡 Pendiente                              |
+| **Agentes**                              | Contaje inconsistente: docs dicen 14/18/71, real son 71                                                      | ✅ CORREGIDO (2026-06-27)                |
 | **MCPs**                                 | Docs dicen 27/29, real son 36 servidores                                                                     | 🟡 Pendiente                              |
 | **Naming**                               | GGA/Gentleman/Guardian Angel sin estandarizar                                                                | 🟡 Pendiente                              |
 

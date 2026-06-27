@@ -1,14 +1,16 @@
 # 🛠️ Skills — Sistema SOTA de Skills v4.9 Consequences
 
-**Versión:** 4.9 Consequences
-**Última actualización:** 2026-05-31
+**Versión:** 4.9.1 — SOTA
+**Última actualización:** 2026-06-27
 **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
-**Estado:** ✅ PURE GREEN — 74 skills validadas contra filesystem
+**Estado:** ✅ PURE GREEN — 396 skills validadas contra filesystem (15 áreas funcionales)
+
+> ⚠️ **Nota:** El conteo de "74 skills" del 2026-05-31 correspondía al antiguo sistema de skill-registry. El sistema actual opera con SKILL.md independientes por skill. Ver `Context_Memory.md` para desglose completo.
 
 ---
 
-## 📂 Estructura v4.9 — 12 Áreas Canónicas (74 skills validadas)
+## 📂 Estructura v4.9.1 — 15 Áreas Funcionales (396 skills)
 
 ```
 02_Skills/
@@ -161,6 +163,9 @@
 
 - **Índice navegable:** `INDEX_AREA_FUNCTIONAL.md`
 - **Sistema OS:** `01_Personal_Os/04_Operations/`
-- **Auditoría vigente:** `01_Personal_Os/04_Operations/00_Context_LLM/08_Auditorias/HEALTH_CHECK_2026-05-03.md`
+- **Context Memory:** `01_Personal_Os/04_Operations/00_Context_LLM/Context_Memory.md`
+- **Skills globales (OpenCode):** `~/.config/opencode/skills/` — incluye `claude-seo-ai/` (SEO + AI-Search)
+- **claude-seo-ai source:** https://github.com/Hainrixz/claude-seo-ai
+- **Auditoría vigente:** `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/40_NP_Auditoria_Completa_Estado_del_Arte_2026_06_27.md`
 
-*PersonalOS v4.9 Consequences — 2026-05-26*
+*PersonalOS v4.9.1 — 2026-06-27 — Audit: 396 skills, 15 áreas, claude-seo-ai integrado*

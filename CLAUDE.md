@@ -89,7 +89,7 @@ TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN R
 5. **Arquitectura:** Mantenla estructurada y reportada.
 6. **Zero Hallucinations:** Basado exclusivamente en respuestas de herramientas (Read, Bash).
 7. **Inventariado (Logs):** Todo nuevo código va al inventario.
-8. **Integridad Severa:** No borres información sin permiso del usuario.
+8. **Integridad Severa:** No borres información sin permiso del usuario. Excepción: se permite corregir datos factuales obsoletos (conteos de agentes, skills, áreas funcionales) en documentación activa sin permiso explícito. Esto NO autoriza modificar contenido arquitectónico, histórico o de diseño.
 9. **Respeto Estructural:** Respeta indexación de carpetas.
 10. **Procesos en Lista:** Presenta lógicas en listas numeradas.
 11. **Minimalismo en Carpetas:** Solo crealas si la arquitectura las exige.
@@ -169,8 +169,8 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Workflows_Os/      ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/        ✅ 61 agentes (6 categorías)
-│   │       ├── 02_Skills/        ✅ 392 skills (15 áreas funcionales)
+│   │       ├── 01_Agents/        ✅ 71 agentes (7 categorías)
+│   │       ├── 02_Skills/        ✅ 396 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup configs MCP
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -203,11 +203,11 @@ Think_Different/                           # RAÍZ
 └── README.md                     ✅ Documentación principal
 ```
 
-### 2. AGENTS (63 — 6 categorías funcionales — 2026-06-25)
+### 2. AGENTS (71 — 7 categorías funcionales — 2026-06-27)
 
-> ⚠️ Source: 63 agentes total (26 root-level .md + 6 Dream Team + 23 Specialists + 5 Growth + 3 other). Dream Team 06 = Marketing Orchestrator.
+> ⚠️ Source: 71 agentes total (24 root + 6 Dream Team + 23 Specialists + 5 Growth + 3 OS Conductor + 9 ATL Gen + 1 Agent Teams Lite). Ver desglose en Context_Memory.md. Audit 2026-06-27: conteos actualizados.
 
-### 3. SKILLS (392 — 15 áreas funcionales)
+### 3. SKILLS (396 — 15 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -229,7 +229,7 @@ Think_Different/                           # RAÍZ
 | 08_JAO                                         | 08_JAO/                       | Entrevistador, Humanizador, Superpowers                         |
 | 10_Laia_Learning                             | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-06-01: 15 áreas activas, 392 skills (SKILL.md) verificados contra disco
+> ⚠️ Audit 2026-06-27: 15 áreas activas, 396 skills (SKILL.md) verificados contra disco (+4 desde última auditoría)
 
 ### 4. JARVIS 4.9 — MANIFEST SYSTEM
 
@@ -237,8 +237,8 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
-├── 03_Agent_Catalog.yaml    # 61 agentes source (referencia al manifest)
-├── 04_Skill_Index.json      # 392 skills en 15 áreas (updated 2026-06-01)
+├── 03_Agent_Catalog.yaml    # 71 agentes source (referencia al manifest)
+├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
 ├── 05_HUB_Catalog.yaml     # HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
 ├── 06_Workflow_Graph.yaml   # 28 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías)
@@ -264,6 +264,12 @@ Think_Different/                           # RAÍZ
 - `.agent/05_GGA/bin/gga run` (Revisar archivos staged).
 - `.agent/05_GGA/bin/gga install` (Instala pre-commit hook).
 
+**Claude SEO AI (SEO + AI-Search):**
+- `/claude-seo-ai:audit <url>` (Auditoría SEO + AI Visibility completa).
+- `/claude-seo-ai:geo <url>` (Solo AI visibility score).
+- `/claude-seo-ai:score` (Recalcular scores desde findings previos).
+- `/claude-seo-ai:fix` (Aplicar fixes con dry-run).
+
 **JARVIS 4.0 HUBs Canónicos:**
 ```bash
 python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
@@ -281,8 +287,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-06-01 — Docs audit DONE                                      |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                                |
-| Skills (392, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — referencia al manifest                             |
-| Agent Matrix                      | ✅ SYNCED                   | 63 agentes (26 root + 6 Dream + 23 Spec + 5 Growth + 3 other)            |
+| Skills (396, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — +4 desde última auditoría                          |
+| Agent Matrix                      | ✅ SYNCED                   | 71 agentes (24 root + 6 Dream + 23 Spec + 5 Growth + 13 otras categorías) |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 Claude / 45 OpenCode)    | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
@@ -315,6 +321,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 | Dream Team                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                                  |
 | Specialists                                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                        |
 | Gentleman GGA                               | `.agent/05_GGA/`                                                                            |
+| Claude SEO AI (Hainrixz)                    | `~/.config/opencode/skills/claude-seo-ai/`                                                  |
 
 ### Configuración MCP (dual)
 
@@ -350,7 +357,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
 > ✅ **Judgment Day v3 2026-05-31:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
-> ✅ **Audit 2026-06-01:** SSOT Unification v4.9. Counts actualizados: Rules 14, HUBs 30, Workflows 28, Skills 392 (15 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
+> ✅ **[HISTORICAL] Audit 2026-06-01:** SSOT Unification v4.9. Counts actualizados: Rules 14, HUBs 30, Workflows 28, Skills 392 (15 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
 > ✅ **2026-06-25 v4.9.1:** Marketing agents SOTA upgrade (SDD pipeline), Dream Team 06 Orchestrator, archive 9→3 categories, Graphify_Out moved to 02_Playground/.
 
 © 2026 PersonalOS v4.9 Consequences Production Ready

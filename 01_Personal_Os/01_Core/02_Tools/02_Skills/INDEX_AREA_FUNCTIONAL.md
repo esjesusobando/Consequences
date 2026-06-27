@@ -228,4 +228,4 @@
 
 > ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
-*PersonalOS v4.9 Consequences — 2026-06-01 | 14 áreas funcionales | Skills: 392 activas + 17 Anthropic + ~490 legacy*
+*PersonalOS v4.9 Consequences — 2026-06-01 | 15 áreas funcionales | Skills: 396 activas + 17 Anthropic + ~490 legacy*

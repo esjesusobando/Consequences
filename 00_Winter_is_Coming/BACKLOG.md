@@ -2,6 +2,75 @@
 
 *Última actualización: 2026-06-27*
 
+
+No. Hay más. Aquí el diagnóstico completo, ordenado por impacto real sobre tus objetivos.
+
+---
+
+## 1. Desconexión entre sistema y resultados externos
+
+Tu Q2 tiene 15 checkmarks. Todos son mejoras internas del OS: scripts renombrados, archivos consolidados, agentes actualizados. El único output externo visible es el portfolio en Vercel.
+
+El sistema mide su propia salud con precisión. No mide lo que produce hacia afuera. No hay ninguna métrica de contenido publicado, usuarios alcanzados, ni ingresos generados en el tracking de GOALS.md. Eso no es un problema de herramientas —es un problema de qué se considera "hecho".
+
+---
+
+## 2. Fricción de arranque excesiva
+
+El boot protocol obliga a leer 6 archivos antes de responder cualquier cosa. En sesiones cortas —una pregunta rápida, una tarea de 10 minutos— ese costo de inicio consume la energía que debería ir al trabajo.
+
+Un sistema diseñado para sesiones largas de ingeniería no es el mismo que necesitas para capturar una idea en 3 minutos o publicar un hilo en 20.
+
+---
+
+## 3. 392 skills sin mecanismo de descubrimiento práctico
+
+El `.atl/skill-registry.md` existe. Pero cuando estás frente a una tarea concreta, ¿cómo sabes cuál de las 392 skills aplica? Si la respuesta es "buscar manualmente", el costo de encontrar el skill puede superar el de hacer la tarea sin él.
+
+Falta un sistema de lookup rápido: dado un objetivo concreto, qué skill ejecutar, sin leer 15 archivos para saberlo.
+
+---
+
+## 4. Monetización sin sistema
+
+Los goals dicen "Generate first income stream from AI/Design Skills beyond current role." Pero en los 63 agentes, 28 workflows y 47 skills de contenido no existe ningún componente orientado a ese objetivo. No hay pipeline de propuestas, no hay tracking de oportunidades, no hay workflow de conversión.
+
+Es el objetivo con mayor impacto en tu vida y el único sin ningún soporte en el OS.
+
+---
+
+## 5. Inglés como objetivo flotante
+
+"Inglés" aparece marcado como "En Progreso" desde Q2. Sin skill específico. Sin workflow. Sin práctica sistematizada. Sin métricas de avance. Es un objetivo en el backlog disfrazado de objetivo en curso.
+
+---
+
+## 6. Dependencia total de Engram para la memoria
+
+Si Engram falla, es compactado o pierde contexto, el orquestador arranca ciego. El protocolo de recuperación existe (`mem_session_summary`) pero es reactivo. No hay estado persistente alternativo que funcione de manera independiente a ese único MCP.
+
+---
+
+## 7. El dream team no tiene evals
+
+63 agentes definidos con roles claros. Pero `08_Evals/` aparece listado en la estructura sin ninguna evidencia de evals ejecutados en los goals o el changelog. Sabes que los agentes existen. No sabes si producen outputs de calidad.
+
+---
+
+## 8. La democratización del OS no tiene onboarding
+
+El objetivo explícito es "que cualquier persona pueda ejecutar cualquier tarea con el OS". Pero para operar el sistema actual necesitas conocer la diferencia entre SDD y CE, qué HUB usar para cada operación, y navegar 15 áreas de skills. No existe un modo simplificado ni una ruta de entrada para alguien externo.
+
+---
+
+## 9. Sin feedback loop externo
+
+El sistema tiene GGA para código y Watchdog para salud interna. No hay ningún mecanismo para capturar señales del mundo real —engagement de audiencia, comentarios, resultados de clientes— y retroalimentar el OS. El sistema aprende de sí mismo, no de sus resultados.
+
+---
+
+**El patrón que une todo esto:** construiste un sistema de primer nivel para ejecutar trabajo complejo. El problema es que el 90% de su energía va a mantenerse a sí mismo. El output real —contenido publicado, clientes, ingresos, inglés hablado— no tiene el mismo nivel de soporte sistémico que tiene el OS.
+
 ---
 
 ## P0 — CRÍTICO
@@ -14,11 +83,8 @@
 
 - [ ] **Elite Portfolio** — Rediseñar con Exaggerated Minimalism (sección por sección)
 - [ ] **OIM Website** — Verificación visual en browser (servidor parado)
-- [ ] https://reactbits.dev/?fbclid=PAVERFWASrX45leHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacWJqI-iZIQQJdOXq6Yc73U0TBTxfsCKk_LK5Lj4aGTUCVNsO4UtM7UUAS2Ug_aem_ValVWW5la8dbteKdVuvJhg
-Prompts: https://docs.google.com/document/d/1-vFY5kNELu_K7dUwOCZE3koZ0kN_dnei32BPLjP8ob4/edit?usp=sharing
-
-
-
+- [ ] **CAPITAL_TOKEN_PLAN.md** — Decidir e implementar Option C (híbrido)
+- [ ] **Actualizar Personal OS repo** — Sincronizar con 18_Personal_Os_Main desde GitHub
 
 ---
 
@@ -30,22 +96,11 @@ Prompts: https://docs.google.com/document/d/1-vFY5kNELu_K7dUwOCZE3koZ0kN_dnei32B
 - [ ] **Marketing Agency Fase 2.3** — MCPs Setup: investigar y configurar Make, YouTube Data API, LinkedIn API
 - [ ] **Marketing Agency Fase 2.4** — Dashboard de Métricas: template HTML para reportes de rendimiento
 - [ ] **Marketing Agency Fase 2.5** — Automated Feedback Loop: Analista→Estratega sin intervención humana
-- [ ] **CAPITAL_TOKEN_PLAN.md** — Decidir e implementar Option C (híbrido)
-- [ ] **Actualizar Personal OS repo** — Sincronizar con 18_Personal_Os_Main desde GitHub
-- [ ] **Playground Agent Configuration (SDD Fase 6)** — Configurar agentes en playground
-- [ ] **Integrar MCP server** — core/mcp/server.py del repo original
+- [ ] **Integrar MCP server** — core/mcp/server.py del repo original como tool activo
 - [ ] **Testing end-to-end** — Probar workflow completo post-SDD
 - [ ] **Voice Guide** — Crear Knowledge/voice-guide.md
 - [ ] **Weekly Review automation** — Script para generar reporte semanal automático
-- [ ] Pre-commit hook para detectar API keys en archivos staged
-- [ ] Documentar proceso de onboarding para nueva máquina
-- [ ] **Corregir System Mapper Hub**: Agent Catalog cuenta 58 vs 48 real. Mapper cuenta mal (incluye READMEs o subdirectorios)
-- [ ] **GGA Pre-commit hook**: Instalar `gga install` en repo (listo en `.agent/05_GGA/`)
-- [ ] **Revisar Metodología Hillary**: Workflow `04_Hillary/`, integración con Life OS
-- [ ] **Revisar Metodología Learning Always**: Workflow `00_Learning_Always/`, verificar operativos
-- [ ] **Revisar Supercampeones Protocol**: Agent Teams en `09_Agent_Teams_Protocol.mdc`, integración SDD
-- [ ] **Revisar Octopus Framework**: Skills en `06_Tools/08_Octopus/`, estado y utilidad
-- [ ] **Revisar Los 4 Fantásticos**: Skills en `00_Personal_Os/03_Fantasticos/`, contexto y propósito
+- [ ] **Playground Agent Configuration (SDD Fase 6)** — Configurar agentes en playground
 
 ---
 
@@ -54,36 +109,40 @@ Prompts: https://docs.google.com/document/d/1-vFY5kNELu_K7dUwOCZE3koZ0kN_dnei32B
 - [ ] **Marketing Agency Fase 3** — Multi-cliente, reporting, lead gen, orquestador (tareas 3.1-3.8)
 - [ ] **Marketing Agency Fase 4** — SOTA: compound learning, design system v2, A/B testing, case studies (tareas 4.1-4.7)
 - [ ] Automatizar generación de `04_Operations/07_Reports/` con `01_Auditor_Hub.py`
-- [ ] **Revisar y ejecutar**: Workflows Marvel (01_Iron_Man_Gen, 04_Vision_Review, 05_Thor_Work, 06_Hulk_Compound) — verificar que estén actualizados y operativos
-- [ ] **Revisar y ejecutar**: Ritual de Cierre (`05_Ritual_Cierre_Protocol.md` + `04_Ritual_Hub.py`) — verificar pasos automatizados
+- [ ] **Revisar y ejecutar**: Workflows Marvel — verificar que estén actualizados y operativos
+- [ ] **Revisar y ejecutar**: Ritual de Cierre — verificar pasos automatizados
 - [ ] **Evaluar Avengers Plan**: Definir si ejecutar, actualizar o archivar
-- [ ] **33_Backlog_Processor_Hub.py** — Wrapper MCP server para backlog processor (opcional)
 
 ---
 
 ## ✅ Completados (2026-06-25)
 
-- [x] **Marketing Agents SOTA Upgrade**: SDD pipeline completo — 3 agentes (15, 16, 17) + Dream Team 06 Orchestrator
-- [x] **CLAUDE.marketing.md**: Template de contexto para sesiones de marketing
-- [x] **linkedin-content-flow skill**: SKILL.md 4-stage pipeline
-- [x] **MARKETING_PIPELINE.md**: Comprehensive workflow guide
-- [x] **READMEs actualizados**: 01_Agents/ + Dream Team (5→6 jugadores)
-- [x] **Judgment Day v4**: 1 CRITICAL fix (`对` → `comparar`), 1 WARNING fix (skill path), re-judge aprobado
-- [x] **git rebase**: API key commit d438b6cac dropped del historial, push exitoso
-- [x] **Graphify_Out/ movido**: Root → 02_Playground/Graphify_Out/. 7 archivos con referencias actualizadas
-- [x] **Settings Drawer SDD archivado**: `04_Docs/SDD/settings-drawer-improvements/` → `05_Legacy_SDDAudits/`
-- [x] **Agent Sync Hub restored**: 9 files restaurados via git restore
-- [x] **Learning Always**: RE + Learning del video vINrPqUxnho (7 setup pieces)
+- [x] Marketing Agents SOTA Upgrade (3 agents + Dream Team 06)
+- [x] CLAUDE.marketing.md + linkedin-content-flow + MARKETING_PIPELINE.md
+- [x] READMEs actualizados (01_Agents + Dream Team 5→6)
+- [x] Judgment Day v4 (1 CRITICAL + 1 WARNING fixed)
+- [x] git rebase (API key commit dropped)
+- [x] Graphify_Out movido a 02_Playground/
+- [x] Settings Drawer SDD archivado
+- [x] Agent Sync Hub restored (9 files)
+- [x] Learning Always (RE + Learning vINrPqUxnho)
+- [x] Backlog Processor SKILL completa (4 workflows + script enhanced)
+- [x] Audit completa (31 issues fixed, 0 remaining)
+- [x] Archive consolidation (9→3 categories, 14,769 files)
+- [x] Capital Token plan creado
+- [x] Reference repos updated (Every CE, Gentle AI, Engram)
+- [x] YAML frontmatter compliance 100%
+- [x] Root docs actualizados (Structure, README, OS_DIRECTORY, CLAUDE)
 
 ## ✅ Completados (2026-05-29)
 
-- [x] **Revisar Metodología Learning Always**: Workflow actualizado a v1.1 — paths corregidos, modo rápido como default, `_transcripts/` para VTT, Engram save obligatorio. Sync a .agent mirror.
-- [x] **Corregir System Mapper Hub**: Agent Catalog ahora excluye README.md, LEEME.md, SKILL.md, registry.md y dirs `references/`. Count bajó de 73 a 55 agentes reales.
-- [x] **GGA Pre-commit hook**: Ya instalado (secret scanner + gga run en `.git/hooks/pre-commit`). Verificado operativo.
-- [x] **Revisar Metodología Hillary**: Duplicado `04_Hillary.md` archivado. Paths corregidos en workflow (`07_Personal_Os` → `00_Personal_Os`). Workflow bump v1.1.0. Sync a .agent.
-- [x] **Revisar Supercampeones Protocol**: `09_Agent_Teams_Protocol.mdc` actualizado con nota de compatibilidad OpenCode (task_id vs fork subagent).
-- [x] **Mover VTT legacy**: `Creé un equipo de Marketing...vtt` y `Por Qué La Suerte...vtt` movidos de `03_Resultado/05_JAO/` a `01_Research_Os/_transcripts/`.
+- [x] Learning Always workflow v1.1
+- [x] System Mapper Hub corregido
+- [x] GGA Pre-commit hook instalado
+- [x] Hillary workflow corregido
+- [x] Supercampeones Protocol actualizado
+- [x] VTT legacy movidos
 
 ---
 
-*Sistema en estado PURE GREEN — 2026-06-01*
+*Sistema en estado PURE GREEN — 2026-06-27*
