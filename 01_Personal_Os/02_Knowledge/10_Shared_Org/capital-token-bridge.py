@@ -128,13 +128,13 @@ def _get_preview(content: str, query: str, context_chars: int = 100) -> str:
 def serve():
     """Modo servidor — escucha consultas (stdin JSON-RPC estilo MCP)."""
     index = build_index()
-    print(f"🌕 Capital Token MCP Bridge v0.1", file=sys.stderr)
-    print(f"📂 Shared Org: {index.get('path', 'N/A')}", file=sys.stderr)
-    print(f"📚 Playbooks: {len(index.get('playbooks', []))}", file=sys.stderr)
-    print(f"📝 Decisiones: {len(index.get('decisions', []))}", file=sys.stderr)
-    print(f"⚙️  Procesos: {len(index.get('processes', []))}", file=sys.stderr)
-    print(f"🤖 Agentes: {len(index.get('agents', []))}", file=sys.stderr)
-    print(f"🚀 Esperando consultas... (lee stdin, formato JSON)", file=sys.stderr)
+    print(f"[CT] Capital Token MCP Bridge v0.1", file=sys.stderr)
+    print(f"[i] Shared Org: {index.get('path', 'N/A')}", file=sys.stderr)
+    print(f"[i] Playbooks: {len(index.get('playbooks', []))}", file=sys.stderr)
+    print(f"[i] Decisiones: {len(index.get('decisions', []))}", file=sys.stderr)
+    print(f"[i] Procesos: {len(index.get('processes', []))}", file=sys.stderr)
+    print(f"[i] Agentes: {len(index.get('agents', []))}", file=sys.stderr)
+    print(f"[i] Esperando consultas... (lee stdin, formato JSON)", file=sys.stderr)
 
     for line in sys.stdin:
         try:
@@ -165,7 +165,7 @@ def serve():
 
 def interactive_query():
     """Modo interactivo para consultar el shared context."""
-    print("🌕 Capital Token — Consulta Interactiva")
+    print("[CT] Capital Token — Consulta Interactiva")
     print("Comandos: /index, /query <texto>, /get <path>, /help, /exit")
     print()
 
@@ -182,7 +182,7 @@ def interactive_query():
             break
         if line == "/help":
             print("Comandos:")
-            print("  /index              — mostrar índice del shared org")
+            print("  /index              — mostrar indice del shared org")
             print("  /query <texto>      — buscar en shared context")
             print("  /get <path>         — leer archivo completo")
             print("  /help               — esta ayuda")
@@ -201,7 +201,7 @@ def interactive_query():
             query = line[7:]
             results = query_shared_context(query)
             if results:
-                print(f"🔍 {len(results)} resultados para '{query}':")
+                print(f"Buscar: {len(results)} resultados para '{query}':")
                 for r in results:
                     print(f"  [{r['category']}] {r['file']}")
                     print(f"    ...{r['match_preview']}...")
@@ -212,27 +212,27 @@ def interactive_query():
             path = line[5:]
             full_path = get_shared_org_path() / path
             if full_path.exists() and full_path.is_file():
-                print(f"📄 {path}:")
+                print(f"Archivo: {path}:")
                 print(full_path.read_text(encoding="utf-8"))
             else:
                 print(f"Archivo no encontrado: {path}")
             continue
 
-        print(f"Comando desconocido: {line}. Escribí /help para ayuda.")
+        print(f"Comando desconocido: {line}. Escribi /help para ayuda.")
 
 
 def sync_to_engram():
     """Sincroniza el shared context con Engram Memory."""
-    print("🌕 Sincronizando Shared Context con Engram...")
+    print("[CT] Sincronizando Shared Context con Engram...")
     index = build_index()
 
     total = sum(len(v) for k, v in index.items() if isinstance(v, list))
     print(f"  {total} archivos encontrados en shared org")
 
     # Cada playbook/agente se guarda como observación separada
-    # Esta función es un stub — la implementación real usa el MCP de Engram
-    print("  ✅ Sincronización completada (stub)")
-    print("  ℹ️  Para sync real: engram_mem_save(topic_key='shared-org/<id>')")
+    # Esta funcion es un stub — la implementacion real usa el MCP de Engram
+    print("  [OK] Sincronizacion completada (stub)")
+    print("  [i] Para sync real: engram_mem_save(topic_key='shared-org/<id>')")
 
 
 def main():

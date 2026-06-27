@@ -23,14 +23,32 @@ Acá vive el conocimiento organizacional que trasciende al individuo:
 
 ```
 10_Shared_Org/
-├── README.md              # Este archivo
-├── playbooks/             # Procesos repetitivos documentados
-├── decisions/             # ADRs — Architectural Decision Records
-├── processes/             # SOPs — Standard Operating Procedures
-├── agents/                # Templates de agentes por rol
-├── metrics/               # Tracking del Capital Token
-└── context/               # Contexto compartido para equipos
+├── README.md                 # Este archivo
+├── capital-token-bridge.py   # MCP Bridge — consulta el shared org desde CLI/IA
+├── playbooks/                # Procesos repetitivos documentados
+├── decisions/                # ADRs — Architectural Decision Records
+├── processes/                # SOPs — Standard Operating Procedures
+├── agents/                   # Templates de agentes por rol + configs reales
+├── metrics/                  # Tracking del Capital Token
+└── context/                  # Contexto compartido para equipos
 ```
+
+---
+
+## 🟢 Relacion con Auto-Improvement
+
+> `Capital Token` + `Auto-Improvement` = Conocimiento que se acumula + Infraestructura saludable
+
+| Sistema | Rol | Que hace | Donde vive |
+|---------|-----|----------|------------|
+| 🌕 **Capital Token** | Biblioteca | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/` |
+| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto | `04_Operations/01_Auto_Improvement/` |
+
+**Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.
+**Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.
+**Juntos:** el sistema no solo funciona — MEJORA con cada uso.
+
+> ✅ Auto-Improvement activo desde 28 MAY 2026 — corre cada 8h via Windows Task Scheduler
 
 ---
 
@@ -57,9 +75,89 @@ Acá vive el conocimiento organizacional que trasciende al individuo:
 
 | Métrica | Target | Actual |
 |---------|--------|--------|
-| Playbooks documentados | 20+ | 0 |
-| Decisiones registradas | 10+ | 0 |
-| Procesos documentados | 5+ | 0 |
-| Agentes template | 3+ | 0 |
+| Playbooks documentados | 20+ | 2 |
+| Decisiones registradas | 10+ | 2 |
+| Procesos documentados | 5+ | 2 |
+| Agentes template | 3+ | 3 |
+| Agentes configurados | 3+ | 1 |
+| Shared Context files | 5+ | 1 |
+| Bridge funcional | v1.0 | v0.1 |
 
-*Actualizado: 2026-06-27*
+---
+
+## CLI: Capital Token Bridge
+
+El `capital-token-bridge.py` permite consultar el Shared Org desde la terminal o desde un agente. Funciona en 4 modos:
+
+### 1. Indice
+```bash
+python capital-token-bridge.py --index
+```
+Muestra un JSON con todos los archivos del Shared Org organizados por categoria (playbooks, decisions, processes, agents, context, metrics).
+
+### 2. Busqueda
+```bash
+python capital-token-bridge.py --query "texto a buscar"
+```
+Busca en todos los archivos del Shared Org y devuelve resultados con preview del contexto. Busca case-insensitive en el contenido completo de los archivos.
+
+### 3. Sincronizacion con Engram
+```bash
+python capital-token-bridge.py --sync
+```
+Sincroniza el indice del Shared Org con Engram Memory. (Modo stub actual — la integracion real requiere conexion MCP con Engram.)
+
+### 4. Modo Interactivo
+```bash
+python capital-token-bridge.py
+```
+Sin argumentos, arranca una consola interactiva con estos comandos:
+
+| Comando | Descripcion |
+|---------|-------------|
+| `/index` | Mostrar indice del Shared Org |
+| `/query <texto>` | Buscar en shared context |
+| `/get <path>` | Leer archivo completo (ej: `/get playbooks/01-onboarding-nuevo-cliente.md`) |
+| `/help` | Mostrar ayuda |
+| `/exit` | Salir |
+
+### Integracion con Agentes
+
+Los agentes pueden usar el bridge en modo JSON-RPC via `--serve` para consultar el Shared Org:
+```json
+{"action": "index"}
+{"action": "query", "query": "onboarding"}
+{"action": "get", "path": "playbooks/01-onboarding-nuevo-cliente.md"}
+```
+
+### Requisitos
+
+- Python 3.x (sin dependencias externas — solo usa la stdlib)
+- Ejecutar desde el directorio `10_Shared_Org/` o desde cualquier subdirectorio del proyecto
+
+---
+
+## 🔄 Sistemas Hermanos
+
+Este sistema se complementa con el **Auto-Improvement** (`01_Personal_Os/04_Operations/01_Auto_Improvement/`):
+
+```
+🌕 Capital Token  (captura el valor ORGANIZACIONAL)
+         │
+         ▼  Playbooks, ADRs, procesos, agent templates
+         │
+🔄 Auto-Improvement (mantiene la INFRAESTRUCTURA saludable)
+         │
+         ▼  Código limpio, estructura ordenada, naming consistente
+```
+
+| Sistema | Rol | Scope | Frecuencia |
+|---------|-----|-------|------------|
+| 🌕 Capital Token | Captura de conocimiento organizacional | Procesos, ADRs, playbooks, agent templates | Manual (on-demand) |
+| 🔄 Auto-Improvement | Mantenimiento técnico recursivo | Código, estructura, naming, docs | Automático cada 8h |
+
+**Capital Token** documenta lo que sabes hacer. **Auto-Improvement** mantiene el sistema funcionando para que puedas hacerlo. Ambos se necesitan: sin Capital Token el conocimiento se pierde, sin Auto-Improvement el código se degrada.
+
+---
+
+*Actualizado: 2026-06-27 — Fase 1 Foundation + Cross-ref Auto-Improvement*

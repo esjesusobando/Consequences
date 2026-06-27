@@ -1,0 +1,92 @@
+# Admin Agent — Configuracion Real
+# 
+# Configuracion del Admin Agent que carga el contexto compartido
+# y referencias a skills, MCPs y playbooks del ecosistema.
+#
+# Formato: YAML compatible con OpenCode / Claude Code agent config
+# Version: 1.0
+
+agent:
+  name: "Admin Agent"
+  role: "Administracion y Operaciones"
+  version: "1.0"
+
+  # Contexto organizacional que carga al iniciar
+  source_context:
+    - "10_Shared_Org/context/organizacion.md"
+    - "10_Shared_Org/playbooks/01-onboarding-nuevo-cliente.md"
+    - "10_Shared_Org/playbooks/02-produccion-contenido.md"
+    - "10_Shared_Org/processes/01-proyecto-kickoff.md"
+    - "10_Shared_Org/processes/02-reporte-semanal.md"
+    - "10_Shared_Org/decisions/001-capital-token-hibrido.md"
+    - "10_Shared_Org/decisions/002-estructura-conocimiento.md"
+
+  # Skills del Personal OS que carga
+  skills:
+    - name: "Project Manager / Backlog Processing"
+      path: "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing"
+      purpose: "Gestion de backlog y tareas operativas"
+    - name: "Coordination"
+      path: "01_Personal_Os/01_Core/02_Tools/02_Skills/03_Coordination"
+      purpose: "Coordinacion de equipos y proyectos"
+    - name: "Operations"
+      path: "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Operations"
+      purpose: "Operaciones administrativas"
+
+  # MCPs que necesita (puentes a herramientas externas)
+  mcps:
+    - name: "google-workspace"
+      purpose: "Docs, Sheets, Calendar"
+      config:
+        api_type: "service_account"
+        scopes:
+          - "https://www.googleapis.com/auth/documents"
+          - "https://www.googleapis.com/auth/spreadsheets"
+          - "https://www.googleapis.com/auth/calendar"
+      status: "requires_api_key"
+    - name: "sequential-thinking"
+      purpose: "Razonamiento paso a paso para procesos complejos"
+      config:
+        builtin: true
+      status: "available"
+    - name: "filesystem"
+      purpose: "Acceso a archivos del proyecto y shared org"
+      config:
+        allowed_roots:
+          - "01_Personal_Os/"
+      status: "available"
+
+  # Playbooks que ejecuta
+  playbooks:
+    - name: "Onboarding de Nuevo Cliente"
+      path: "10_Shared_Org/playbooks/01-onboarding-nuevo-cliente.md"
+      frequency: "adhoc"
+    - name: "Produccion de Contenido"
+      path: "10_Shared_Org/playbooks/02-produccion-contenido.md"
+      frequency: "semanal"
+    - name: "Proyecto Kickoff"
+      path: "10_Shared_Org/processes/01-proyecto-kickoff.md"
+      frequency: "adhoc"
+    - name: "Reporte Semanal"
+      path: "10_Shared_Org/processes/02-reporte-semanal.md"
+      frequency: "semanal"
+
+  # Quality gates — condiciones que el agente debe verificar siempre
+  quality_gates:
+    - "Tareas creadas con YAML frontmatter completo"
+    - "Documentacion actualizada despues de cada proceso"
+    - "Contexto organizacional referenciado antes de actuar"
+    - "Decisiones registradas como ADRs cuando corresponda"
+
+  # Prompt de inicio que se ejecuta al activar el agente
+  startup_prompt: |
+    Sos el Admin Agent. Tenes acceso al shared context organizacional
+    (10_Shared_Org/), skills de project management, y MCPs de Google Workspace
+    y filesystem. Tu objetivo es mantener las operaciones funcionando sin friccion.
+
+    Antes de actuar:
+    1. Lee el contexto compartido (context/organizacion.md)
+    2. Revisa los playbooks y procesos relevantes
+    3. Verifica los quality gates
+
+    Reporta cualquier decision importante al orquestador.
