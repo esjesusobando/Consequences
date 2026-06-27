@@ -169,7 +169,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 │   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías) [MAY DRIFT]
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # ~58 agentes (referencia al manifest) [MAY DRIFT]
+│   │       ├── 01_Agents/               # 71 agentes (referencia al manifest)
 │   │       ├── 02_Skills/                # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
@@ -185,7 +185,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 22 HUBs — ~266 scripts totales [MAY DRIFT]
+│       ├── 03_Scripts_Os/               # 30 HUBs — 163 scripts totales
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte
