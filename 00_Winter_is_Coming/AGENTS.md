@@ -50,7 +50,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 29 workflows en 7 categorías [MAY DRIFT]                           |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 29 workflows en 7 categorías                                      |
 
 ---
 
@@ -166,7 +166,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías) [MAY DRIFT]
+│   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 01_Agents/               # 71 agentes (referencia al manifest)
@@ -469,7 +469,7 @@ gr --agents    # Solo 3 agents
 
 ---
 
-## 12. WORKFLOWS (29 — 7 categorías) [MAY DRIFT]
+## 12. WORKFLOWS (29 — 7 categorías)
 
 📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 
