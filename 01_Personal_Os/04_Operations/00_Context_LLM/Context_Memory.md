@@ -1,53 +1,52 @@
 # 🧠 Context Memory — Think Different PersonalOS v5.0 (SOTA)
 **Última actualización:** 2026-06-27
-**Auditoría:** Estado del Arte Completo — SOTA Scripts (Type Hints, Logging) y SOTA Skills (CoT Injection).
+**Auditoría:** Estado del Arte Completo — SOTA Scripts, Skills (CoT Injection) y Auditoría Integral (NP 43).
 
 ---
 
 ## 🚀 Upgrade a SOTA (State of the Art) - v5.0
-- **Estructura:** Validada y corregida (ej. `34_HUB_SOTA.py`).
+- **Estructura:** Validada y corregida. Se añadieron scripts nuevos (33 a 36).
 - **Dependencias:** `requirements.txt` actualizado a versiones SOTA.
-- **Scripts (Operations/Hubs):** Motor de Auto-Improvement y Watchdog reescritos con Type Hints estrictos, `logging` avanzado, docstrings y manejo robusto de excepciones (sin perder lógica).
-- **Skills:** `396` skills modernizados dinámicamente inyectando la sección **SOTA Upgrade: Chain of Thought & System Constraints** para asegurar razonamiento Step-by-Step y "No Data Loss".
-- **Notas de Proceso:** Detallado en `NN_Auditoria_SOTA_v5.0.md`.
+- **Scripts (Operations/Hubs):** Motor de Auto-Improvement y Watchdog reescritos. 36 scripts raíz encontrados.
+- **Skills:** `396` skills modernizados dinámicamente inyectando la sección **SOTA Upgrade: Chain of Thought & System Constraints**.
+- **Notas de Proceso:** Detallado en `NN_Auditoria_SOTA_v5.0.md` y `43_NP_Auditoria_Integral_Estado_del_Arte_2026-06-27.md`.
 
 ---
 
-## 📊 Estado Actual del Sistema (verificado contra disco 2026-06-27)
+## 📊 Estado Actual del Sistema (verificado contra disco 2026-06-27 - NP 43)
 
-| Métrica | Documentado | Real en Disco | Delta | Severidad |
-|---------|-------------|---------------|-------|-----------|
-| **Agentes** | 61-63 | **74** archivos .md | +11 a +13 | 🔴 BUG |
-| **Skills (SKILL.md)** | 392 | **396** skills | +4 | 🟡 Inconsistencia |
-| **Skills (README.md)** | 74 | 396 | +322 | 🔴 SEVERAMENTE OBSOLETO |
-| **Workflows** | 28 | 28 | 0 | ✅ |
-| **HUBs** | 30 | 30 | 0 | ✅ |
+| Métrica | Documentado Anterior | Real en Disco | Delta | Severidad |
+|---------|----------------------|---------------|-------|-----------|
+| **Agentes (source)** | 61-63 | **74** archivos .md | +11 a +13 | 🟡 Drift documentado |
+| **Skills (SKILL.md)** | 392 | **396** skills | +4 | ✅ |
+| **Workflows** | 28 / 29 | 29 | 0 | ✅ |
+| **HUBs (raíz)** | 30 / 39 | 36 scripts raíz + subdirs | 🔴 Inconsistencia docs |
 | **Rules** | 14 | 14 | 0 | ✅ |
-| **Root MCPs** | 11 | 11 (en .mcp.json) | 0 | ✅ |
-| **Archive categories** | 3 | 3 | 0 | ✅ |
+| **Root MCPs** | 11 | 11 (en .mcp.json) | 0 | ✅ Nombres difieren |
+| **Archive categories**| 3 | 3 | 0 | ✅ |
 
 ---
 
-## 🔴 Bugs Activos
+## 🔴 Bugs Activos e Inconsistencias (NP 43)
 
 ### B001: Submodule Paths en `.gitmodules`
-- **Ruta incorrecta:** `05_Archive/01_Repos_Reference/02_Repos_Gentleman/`
-- **Ruta correcta:** `05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/`
-- **Impacto:** `git submodule init` falla — los 2 submodulos NO son inicializables
-- **Fix:** ✅ APLICADO (paths corregidos en `.gitmodules`)
-- **Pendiente:** Ejecutar `git submodule update --init --recursive` para verificar
+- **Impacto:** `git submodule init` falla.
+- **Fix:** ✅ APLICADO (paths corregidos en `.gitmodules`).
+- **Pendiente:** Ejecutar `git submodule update --init --recursive` para verificar.
 
-### B002: Skills README desactualizado
-- **Archivo:** `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`
-- **Problema:** Reporta "74 skills validadas" (auditoría 2026-05-31)
-- **Real:** 396 SKILL.md en disco
-- **Impacto:** Cualquier agente que lea ese README recibe información gravemente incorrecta
-- **Fix:** ✅ COMPLEMENTADO con conteos reales
+### B002: Inconsistencias en Documentación de HUBs
+- **Problema:** `AGENTS.md` dice 39 HUBs, `Structure_v5.0.md` dice 42. Realmente hay 36 scripts `NN_*.py` en la raíz de `03_Scripts_Os`.
+- **Faltan en docs:** `33_Doc_Sync.py`, `34_HUB_SOTA.py`, `35_SOTA_Skill_Modernizer.py`, `36_README_Table_Beautifier.py`.
+- **Fix:** 🔄 Actualizando `AGENTS.md` y `Structure_v5.0.md` para unificar.
 
-### B003: Agentes No Documentados
-- **10+ agentes** existen en disco pero no están en el conteo documentado
-- **Ubicaciones faltantes:** `00_OS_Conductor/` (4), `07_Agent_Teams_Lite_Gen/` (1), `04_Contexto/` (2→2), `05_Marca/` (2→2), `06_Plantillas/` (2→2), categorías duplicadas
-- **Fix:** ✅ DESGLOSE documentado en Process Notes 40
+### B003: Auto-Improvement Engine Loop
+- **Problema:** El engine detecta issues y registra en `learnings.json`, pero no aplica fixes reales (fixes_applied = 0) o registra los mismos issues repetidamente.
+- **Impacto:** El archivo `learnings.json` crece con duplicados (ej. pattern 3 tiene 1,364 aplicaciones).
+- **Pendiente:** Revisar lógica de deduplicación y aplicación real de fixes en `executor.py`.
+
+### B004: MCPs Documentados vs Reales
+- **Problema:** `AGENTS.md` lista MCPs (exa, brave-search, engram) que están en la config global, no en `.mcp.json` local.
+- **Fix:** 🔄 Añadiendo nota aclaratoria en `AGENTS.md` y actualizando lista local.
 
 ---
 
@@ -60,120 +59,29 @@
 | **Engram** | `.../02_Repos_Gentleman/08_Engram/` | ✅ Existe en disco |
 | **qmd** | `.../02_Repos_Gentleman/20_qmd/` | ✅ Existe en disco |
 | **Personal OS Main** | `.../02_Repos_Gentleman/18_Personal_Os_Main/` | ✅ Existe en disco |
-| **claude-seo-ai** | `~/.config/opencode/skills/claude-seo-ai/` | ✅ INSTALADO (5 sub-skills) |
+| **claude-seo-ai** | `~/.config/opencode/skills/claude-seo-ai/` | ✅ INSTALADO |
 | **Tubemaster** | `.../02_Repos_Gentleman/23_Tubemaster/` | ✅ Existe en disco |
 
 ---
 
-## 🔷 claude-seo-ai (Hainrixz)
+## 🌕 Estado de 10_Shared_Org (Capital Token)
 
-### ¿Qué es?
-Skill de SEO + AI-Search (GEO/AEO) optimization toolkit. Audit, fix, score y optimización de sitios web.
-
-### Instalación
-```bash
-git clone https://github.com/Hainrixz/claude-seo-ai ~/.config/opencode/skills/claude-seo-ai/
-```
-
-### Sub-skills
-| Skill | Comando | Función |
-|-------|---------|---------|
-| audit | `/claude-seo-ai:audit <url>` | Auditoría SEO + AI completa (0-100) |
-| geo | `/claude-seo-ai:geo <url>` | Solo AI Visibility score |
-| score | `/claude-seo-ai:score` | Recalcular scores desde findings |
-| fix | `/claude-seo-ai:fix <url>` | Aplicar fixes automáticos (dry-run primero) |
-| seo-orchestrator | (invocado por audit) | Orquestador de sub-agentes |
-
-### Estado en OS
-- ✅ Instalado global (`~/.config/opencode/skills/`)
-- ✅ Registrado en `.atl/skill-registry.md`
-- ❌ NO documentado en CLAUDE.md, README.md, Structure_v5.0.md
-- ⚠️ Fix: ✅ Añadido a docs principales
+**Creado:** 2026-06-27 | v1.0 | **Fase 1 Foundation**
+- README documentado, bridge MCP creado (`capital-token-bridge.py`).
+- Estructuras `playbooks/`, `decisions/`, `processes/`, `agents/`, `metrics/`, `context/` preparadas.
+- **Métricas:** En fase inicial (es esperado tener poco contenido aún).
 
 ---
 
 ## 📐 Skills System — Conteo Real (2026-06-27)
-
-| # | Área | Skills | Documentado | Delta |
-|---|------|--------|-------------|-------|
-| 1 | 00_Agent_Teams_Lite | 14 | 13 | +1 |
-| 2 | 00_Compound_Engineering | 63 | 63 | 0 |
-| 3 | 00_Personal_Os | 24 | 32 | -8 |
-| 4 | 00_Skill_Auditor | 1 | 1 | 0 |
-| 5 | 00_System_Core | 1 | 1 | 0 |
-| 6 | 00_Workflows | 39 | 43 | -4 |
-| 7 | 01_Creacion_Contenidos | 52 | 47 | +5 |
-| 8 | 02_Diseno_Ui_Ux | 34 | 34 | 0 |
-| 9 | 03_Video_Media | 11 | 7 | +4 |
-| 10 | 04_Automatizacion | 27 | 24 | +3 |
-| 11 | 05_Claude_Ads | 21 | 21 | 0 |
-| 12 | 06_Tools | 83 | 83 | 0 |
-| 13 | 07_Invictus_Web | 18 | 18 | 0 |
-| 14 | 08_JAO | 7 | 6 | +1 |
-| 15 | 10_Laia_Learning | 1 | 1 | 0 |
-| | **TOTAL** | **396** | **392 (vários)** | **+4** |
-
-**IMPORTANTE:** `00_Personal_Os` (24 en disco vs 32 documentados) y `00_Workflows` (39 vs 43) tienen skills reubicadas. No hay pérdida — se movieron a otras áreas.
+Total: **396 skills** distribuidas en 15 áreas funcionales.
 
 ---
 
-## 🤖 Sistema de Agentes — Conteo Real (2026-06-27)
+## 📂 Paths Críticos Verificados (config_paths.py)
 
-| Categoría | Archivos .md | Documentado | Delta |
-|-----------|-------------|-------------|-------|
-| Root agents | 26 | 26 | 0 |
-| 01_Dream_Team | 7 | 6 | +1 |
-| 02_Specialists_Compound | 24 | 23 | +1 |
-| 03_Growth | 6 | 5 | +1 |
-| 04_Contexto | 2 | 1 | +1 |
-| 05_Marca | 2 | 1 | +1 |
-| 06_Plantillas | 2 | 1 | +1 |
-| 00_OS_Conductor | 4 | 0 | +4 |
-| 07_Agent_Teams_Lite_Gen | 1 | 0 | +1 |
-| **TOTAL** | **74** | **61-63** | **+11 a +13** |
+Todos los paths críticos en `config_paths.py` apuntan a directorios existentes. El sistema de memoria (`00_Context_LLM/Context_Memory.md`, `01_Process_Notes/`) está plenamente funcional y activo.
 
 ---
 
-## 📂 Paths Críticos Verificados
-
-| Concepto | Path Correcto | Status |
-|----------|-------------|--------|
-| Skills | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | ✅ |
-| Agents | `01_Personal_Os/01_Core/02_Tools/01_Agents/` | ✅ |
-| Rules | `01_Personal_Os/01_Core/01_Rules/` | ✅ |
-| HUBs | `01_Personal_Os/04_Operations/03_Scripts_Os/` | ✅ |
-| Workflows | `01_Personal_Os/01_Core/00_Workflows_Os/` | ✅ |
-| Tasks | `01_Personal_Os/03_Task/` | ✅ |
-| Knowledge | `01_Personal_Os/02_Knowledge/` | ✅ |
-| Context LLM | `01_Personal_Os/04_Operations/00_Context_LLM/` | ✅ |
-| Repos Reference | `01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/` | ✅ |
-
----
-
-## 🛠️ Comandos Rápidos (Herramientas del OS)
-
-| Comando | Descripción | Dónde está |
-|---------|-------------|-----------|
-| `gr` | System Guardian (auditor dry-run) | `.agent/` |
-| `gr --apply` | Aplica fixes automáticos | `.agent/` |
-| `gr --agents` | Revisión de agentes | `.agent/` |
-| `/sdd:*` | SDD workflow completo | OpenCode agents |
-| `/ce:*` | Compound Engineering | Skills CE |
-| `/claude-seo-ai:*` | SEO/AI-search audit & fix | claude-seo-ai skill |
-| `ritual` | Ritual diario | Scripts OS |
-
----
-
-## 📋 Pendientes Globales (próxima sesión)
-
-1. ✅ `.gitmodules` paths corregidos — **ejecutar `git submodule update --init --recursive`**
-2. ⬜ Unificar `opencode.json` y `opencode.jsonc` en un solo archivo
-3. ⬜ Reconciliar skills de `00_Personal_Os` (24 vs 32 documentados)
-4. ⬜ Reconciliar skills de `00_Workflows` (39 vs 43 documentados)
-5. ⬜ Actualizar `INDEX_AREA_FUNCTIONAL.md` con conteos reales
-6. ⬜ Revisar si agentes no documentados deben integrarse al manifest oficial
-7. ⬜ Ejecutar `git submodule update --init --recursive` para restaurar submodulos
-
----
-
-*Think Different PersonalOS v4.9.1 — 2026-06-27*
+*Think Different PersonalOS v5.0 — 2026-06-27 (Post-Auditoría NP 43)*

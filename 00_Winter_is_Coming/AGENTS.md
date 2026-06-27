@@ -50,8 +50,8 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **Skills** (396, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
 | **Agentes** (63 source | 72 backup) [FIXED]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (39 HUBs — 163 scripts) [FIXED]        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 167 scripts totales                       |
-| **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **HUBs** (36 HUBs — 168 scripts)            | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 168 scripts totales                       |
+| **MCPs** (11 root + configs globales)              | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **Adaptive Boot**                                  | `01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py`             | Carga condicional de contexto (60-70% ahorro tokens)              |
@@ -364,28 +364,27 @@ Code review con IA.
 
 ---
 
-## 6. MCP SERVERS — Active (11 root + 4 backup)
+## 6. MCP SERVERS — Active (11 root)
 
-Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos** (+ 4 backup JSON en `03_Mcp/`).
+Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos**.
+*Nota: Algunos servidores como exa, brave-search, engram, Notion, Playwright pueden estar configurados globalmente en `~/.config/opencode/opencode.json` y no en el `.mcp.json` local del proyecto.*
 
-| Category                               | MCPs                                                                                                                                               |
+| Category                               | MCPs (Ejemplos Locales y Globales)                                                                                                 |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 🔍 Search                               | exa, brave-search, stackoverflow                                                                                                                   |
 | 🧠 Memory                               | engram, aim-memory-bank, notebooklm                                                                                                                |
-| 📝 Notes                                | Notion, mcp-obsidian, obsidian-api                                                                                                                 |
-| 🌐 Browser                              | Playwright, chrome-devtools, eagle-mcp                                                                                                             |
-| 🤖 AI & Code                            | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                                                                               |
-| 📊 Data                                 | supabase, Amplitude, supadata                                                                                                                      |
-| 🔄 Workflow                             | n8n-mcp, Linear                                                                                                                                    |
+| 📝 Notes                                | Notion, mcp-obsidian, obsidian-mcp                                                                                                                 |
+| 🌐 Browser                              | Playwright, chrome-devtools, eagle                                                                                                             |
+| 🤖 AI & Code                            | context7, github, @magicuidesign/mcp, sequential-thinking                                                                               |
+| 📊 Data                                 | supabase                                                                                                                      |
+| 🔄 Workflow                             | n8n-mcp                                                                                                                                    |
 | 💬 Communication                        | fireflies, google-workspace                                                                                                                        |
-| 📐 Design                               | excalidraw-yctimlin, pencil                                                                                                                        |
+| 🎨 Design / Media                       | excalidraw-yctimlin, higgsfield, magnific, heygen, mobbin                                                                                                                        |
 | 🛠️ DevOps                              | docker, filesystem                                                                                                                                 |
-| 🚀 Deploy                               | vercel, recall, TestSprite                                                                                                                         |
-| 🧩 Chain                                | sequential-thinking, nanobanana, qmd                                                                                                               |
 
 ---
 
-## 7. HUB SCRIPTS (39 activos — 163 scripts totales) [FIXED]
+## 7. HUB SCRIPTS (36 raíz activos — 168 scripts totales)
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -424,6 +423,10 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 | **30_path_replacement.py**                          | Reemplazo masivo de paths en skills legacy                                 |
 | **31_Graphify_Hub.py**                              | Indexación y consulta del grafo de conocimiento del proyecto               |
 | **32_Graphify_Update.py**                           | Actualización incremental del grafo de conocimiento                        |
+| **33_Doc_Sync.py**                                  | Sincronización de documentos                                               |
+| **34_HUB_SOTA.py**                                  | State of the Art upgrades                                                  |
+| **35_SOTA_Skill_Modernizer.py**                     | CoT injection en skills                                                    |
+| **36_README_Table_Beautifier.py**                   | Embellecedor de tablas README                                              |
 
 > ⚠️ Nota: No todos los números consecutivos están usados (ej: 12=Auditors_Os, 13=Legacy, sin 03-13 como HUBs únicos). Hay gaps intencionales para mantener compatibilidad con números legacy.
 
