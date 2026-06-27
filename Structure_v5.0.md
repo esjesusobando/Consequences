@@ -211,19 +211,20 @@ Think_Different/                    # RAÍZ
 |---------|-----------------|-------------|
 | Skills (SKILL.md) | 396 | [FIXED] |
 | Reglas (.mdc) | 14 | [FIXED] |
-| Hooks (.py) | 9 | [MAY DRIFT] |
-| Workflows (.md) | 30 | [VERIFIED] |
-| Agentes (.md depth≤2) | 76 | [MAY DRIFT] |
-| HUBs (directorios) | 32 | [VERIFIED] |
-| Scripts totales (.py) | 167 | [MAY DRIFT] |
+| Hooks (.py + .ps1) | 10 | [FIXED] |
+| Workflows (.md) | 29 | [FIXED] |
+| Agentes (source) | 63 | [FIXED] |
+| Agentes (backup) | 72 | [VERIFIED] |
+| HUBs funcionales | 39 (30 .py + 9 subdirs) | [FIXED] |
+| Scripts (.py NN_) | 163 (30 raiz + 133 subdirs) | [FIXED] |
 | MCP root (.mcp.json) | 11 | [FIXED] |
 | MCP backup (03_Mcp/) | 2 JSON + 3 subdirs | [VERIFIED] |
 | Archive total files | 15,529 | [VERIFIED] |
 | Plans_Completed | 36 | [VERIFIED] |
 | Skills_Legacy | 2,249 | [FIXED] |
-| Backups_Refs | 11,582 | [VERIFIED] | |
+| Backups_Refs | 11,582 | [VERIFIED] |
 
-> **Nota sobre agentes (76):** Conteo de archivos .md de definición de agentes en `01_Personal_Os/01_Core/02_Tools/01_Agents/` y subdirectorios (profundidad ≤2). El conteo incluye README.md y LEEME.md dentro de las carpetas de categoría. Categorías: Root 26, Dream Team 7, Specialists 24, Growth 6, OS Conductor 9, ATL Gen 13, ATL 3, Legacy 5. El número exacto puede drift con el tiempo. Verificado 2026-06-27.
+> **Nota sobre agentes (63 source):** Conteo de archivos .md de definición de agentes (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Categorías: Root 25, Dream Team 6, Specialists 23, Growth 5, OS Conductor 1, ATL Gen 3, Agent Teams Lite 0. Drift 9 vs backup. Verificado 2026-06-27 por System Mapper.
 
 ---
 
