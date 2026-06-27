@@ -7,21 +7,21 @@
       ],
       "issue_count": 1,
       "quality_score": 90,
-      "last_checked": "2026-06-27T12:13:46.966350"
+      "last_checked": "2026-06-27T12:20:01.884899"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\agents\\02-finance-agent.md",
       "issues": [],
       "issue_count": 0,
       "quality_score": 100,
-      "last_checked": "2026-06-27T12:13:46.968201"
+      "last_checked": "2026-06-27T12:20:01.885505"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\agents\\03-hr-agent.md",
       "issues": [],
       "issue_count": 0,
       "quality_score": 100,
-      "last_checked": "2026-06-27T12:13:46.971515"
+      "last_checked": "2026-06-27T12:20:01.885966"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\context\\organizacion.md",
@@ -30,7 +30,7 @@
       ],
       "issue_count": 1,
       "quality_score": 90,
-      "last_checked": "2026-06-27T12:13:46.974011"
+      "last_checked": "2026-06-27T12:20:01.886388"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\decisions\\00-template.md",
@@ -54,21 +54,21 @@
       ],
       "issue_count": 16,
       "quality_score": 0,
-      "last_checked": "2026-06-27T12:13:46.989425"
+      "last_checked": "2026-06-27T12:20:01.886794"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\decisions\\001-capital-token-hibrido.md",
       "issues": [],
       "issue_count": 0,
       "quality_score": 100,
-      "last_checked": "2026-06-27T12:13:47.008221"
+      "last_checked": "2026-06-27T12:20:01.887173"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\decisions\\002-estructura-conocimiento.md",
       "issues": [],
       "issue_count": 0,
       "quality_score": 100,
-      "last_checked": "2026-06-27T12:13:47.010311"
+      "last_checked": "2026-06-27T12:20:01.887789"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\metrics\\capital-token-dashboard.md",
@@ -81,7 +81,7 @@
       ],
       "issue_count": 5,
       "quality_score": 50,
-      "last_checked": "2026-06-27T12:13:47.012945"
+      "last_checked": "2026-06-27T12:20:01.888766"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\playbooks\\00-template.md",
@@ -126,7 +126,7 @@
       ],
       "issue_count": 37,
       "quality_score": 0,
-      "last_checked": "2026-06-27T12:13:47.015319"
+      "last_checked": "2026-06-27T12:20:01.889381"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\playbooks\\01-onboarding-nuevo-cliente.md",
@@ -144,7 +144,7 @@
       ],
       "issue_count": 10,
       "quality_score": 0,
-      "last_checked": "2026-06-27T12:13:47.019349"
+      "last_checked": "2026-06-27T12:20:01.890253"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\playbooks\\02-produccion-contenido.md",
@@ -165,7 +165,7 @@
       ],
       "issue_count": 13,
       "quality_score": 0,
-      "last_checked": "2026-06-27T12:13:47.021124"
+      "last_checked": "2026-06-27T12:20:01.890897"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\processes\\00-template.md",
@@ -195,7 +195,7 @@
       ],
       "issue_count": 22,
       "quality_score": 0,
-      "last_checked": "2026-06-27T12:13:47.023662"
+      "last_checked": "2026-06-27T12:20:01.891444"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\processes\\01-proyecto-kickoff.md",
@@ -205,14 +205,14 @@
       ],
       "issue_count": 2,
       "quality_score": 80,
-      "last_checked": "2026-06-27T12:13:47.043094"
+      "last_checked": "2026-06-27T12:20:01.892145"
     },
     {
       "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\processes\\02-reporte-semanal.md",
       "issues": [],
       "issue_count": 0,
       "quality_score": 100,
-      "last_checked": "2026-06-27T12:13:47.046724"
+      "last_checked": "2026-06-27T12:20:01.892531"
     }
   ],
   "summary": {
@@ -221,5 +221,5 @@
     "total_issues": 107,
     "avg_quality_score": 57.9
   },
-  "last_updated": "2026-06-27T12:13:46.950686"
+  "last_updated": "2026-06-27T12:20:01.880028"
 }

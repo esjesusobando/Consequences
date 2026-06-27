@@ -14,12 +14,12 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 
 | Métrica | Valor | Última verificación |
 |---------|-------|---------------------|
-| **HUBs** | **30** | 2026-06-01 ✅ |
+| **HUBs** | **39** | 2026-06-01 ✅ |
 | **Scripts** | **163** (133 en subdirectorios) | 2026-06-01 ✅ |
-| **Skills** | **392** (15 áreas funcionales) | 2026-06-01 ✅ |
+| **Skills** | **396** (15 áreas funcionales) | 2026-06-01 ✅ |
 | **MCPs** | **8 (Claude) + 43 (Opencode)** | 2026-06-01 ✅ |
-| **Agentes source** | **61** | 2026-06-01 ✅ |
-| **Workflows** | **28** (7 categorías) | 2026-06-01 ✅ |
+| **Agentes source** | **63** | 2026-06-01 ✅ |
+| **Workflows** | **29** (7 categorías) | 2026-06-01 ✅ |
 | **Hooks** | **10** (6 fases) | 2026-06-01 ✅ |
 
 ## Archivos que Deben Estar Sync

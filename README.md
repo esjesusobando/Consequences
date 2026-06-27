@@ -22,7 +22,7 @@
 | **Rules** | **14** (.mdc) [FIXED] |
 | **MCPs** | **11** root + **4** backup (2 JSON + 3 subdirs) |
 | **HUBs** | **32** HUBs + **167** scripts [MAY DRIFT] |
-| **Agentes** | **76** (8 categorías) [MAY DRIFT] |
+| **Agentes**. **63** (source) | **72** (backup) (8 categorías) [MAY DRIFT] |
 | **Workflows** | **30** (7 categorías) [VERIFIED] |
 | **Archive** | **3** categories (15,529 files) |
 
@@ -35,13 +35,13 @@ Think_Different/
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/       ✅ 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/       ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/              ✅ 14 reglas .mdc
 │   │   └── 02_Tools/              ✅ Herramientas
-│   │       ├── 01_Agents/         ✅ 76 agentes (8 categorías) [MAY DRIFT]
+│   │       ├── 01_Agents/         ✅ 63 agentes (9 categorías) [FIXED]
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
 │   │       ├── 03_Mcp/            ✅ Backup MCP configs (2 JSON + 3 subdirs)
-│   │       ├── 05_Hooks/          ✅ 9 hooks (6 fases) [MAY DRIFT]
+│   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases) [FIXED]
 │   │       ├── 06_Plugins/        ✅ Plugins OS
 │   │       └── 07_Server/         ✅ Engram server
 │   ├── 02_Knowledge/              ✅ Base de conocimiento
@@ -50,7 +50,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/        ✅ Memoria LLM
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora (cada 8h)
 │   │   ├── 02_Agent_Teams_Lite/   ✅ SDD + JARVIS manifests
-│   │   └── 03_Scripts_Os/         ✅ 32 HUBs — 167 scripts [MAY DRIFT]
+│   │   └── 03_Scripts_Os/         ✅ 39 HUBs funcionales — 163 scripts [FIXED]
 │   └── 05_Archive/                ✅ 3 categories (15,529 files)
 ├── 02_Playground/                  ✅ Zona de pruebas
 │   └── Graphify_Out/              ✅ Knowledge graph
@@ -82,20 +82,20 @@ Think_Different/
 
 ---
 
-## 🤖 Agentes (76 total — 8 categorías)
+## 🤖 Agentes (63 total — 9 categorías) [FIXED]
 
 | Categoría | Cantidad | Ubicación |
 |-----------|----------|-----------|
-| Root (agent .md files) | 26 | `01_Agents/` (root level) |
-| Dream Team | 7 | `01_Dream_Team/` |
-| Specialists Compound | 24 | `02_Specialists_Compound/` |
-| Growth | 6 | `03_Growth/` |
-| OS Conductor | 9 | `00_OS_Conductor/` |
-| ATL Gen | 13 | `07_Agent_Teams_Lite_Gen/` |
-| Agent Teams Lite | 3 | `00_Agent_Teams_Lite/` |
-| Legacy/Other | 5 | `04_Contexto/, 05_Marca/, 06_Plantillas/` |
+| Root (agent .md files) | 25 | `01_Agents/` (root level, excluye README/AGENTS/SKILL) |
+| Dream Team | 6 | `01_Dream_Team/` |
+| Specialists Compound | 23 | `02_Specialists_Compound/` |
+| Growth | 5 | `03_Growth/` |
+| OS Conductor | 1 | `00_OS_Conductor/` |
+| ATL Gen | 3 | `07_Agent_Teams_Lite_Gen/00_Shared/` |
+| Agent Teams Lite | 0 | `00_Agent_Teams_Lite/` (AGENTS/SKILL/README excluidos) |
+| Legacy (Contexto/Marca/Plantillas) | 0 | `04_Contexto/, 05_Marca/, 06_Plantillas/` (LEEME excluidos) |
 
-> ⚠️ Conteo incluye todos los .md hasta profundidad 2. [MAY DRIFT] |
+> ⚠️ Conteo source = 63 (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Backup = 72. Drift = 9 archivos. Verificado 2026-06-27 por System Mapper. |
 
 ---
 

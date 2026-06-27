@@ -27,6 +27,12 @@ cat 00_Winter_is_Coming/BACKLOG.md
 # 3. Cargar skill registry (compact rules para sub-agentes)
 cat .atl/skill-registry.md
 
+# 3.5. Adaptive Boot — Carga condicional de contexto (NUEVO)
+# Detecta tipo de agente y carga solo contexto relevante
+python 01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py --agent "$AGENT_NAME" --json
+# Si el agente es desconocido, fallback a carga completa (comportamiento actual)
+# Ahorra 60-70% de tokens por boot
+
 # 4. Verificar Hillary Inbox (tareas personales pendientes)
 ls 01_Personal_Os/03_Task/02_Hillary_Inbox/  # SI hay archivos .md → procesar con Hillary antes de continuar
 
@@ -48,6 +54,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
+| **Adaptive Boot**                                  | `01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py`             | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
 | **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                      |

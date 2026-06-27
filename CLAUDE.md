@@ -166,10 +166,10 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/        ✅ 76 agentes (8 categorías) [MAY DRIFT]
+│   │       ├── 01_Agents/        ✅ 63 agentes (9 categorías) [FIXED]
 │   │       ├── 02_Skills/        ✅ 396 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup configs MCP (2 JSON + 3 subdirs)
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
@@ -184,7 +184,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Context_LLM/       ✅ Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/  ✅ Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 JARVIS manifests
-│   │   ├── 03_Scripts_Os/        ✅ HUBs: 32 — scripts: 167 totales (135 en subdirectorios)
+│   │   ├── 03_Scripts_Os/        ✅ HUBs: 39 — scripts: 163 totales (133 en subdirectorios)
 │   │   ├── 04_Installer/         ✅ Instalador del OS
 │   │   ├── 05_Projects/          ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -237,10 +237,10 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
-├── 03_Agent_Catalog.yaml    # 76 agentes source (referencia al manifest) [MAY DRIFT]
+├── 03_Agent_Catalog.yaml    # 63 agentes source (referencia al manifest) [FIXED]
 ├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
-├── 05_HUB_Catalog.yaml     # HUBs: 32 — scripts: 167 totales [MAY DRIFT]
-├── 06_Workflow_Graph.yaml   # 30 workflows
+├── 05_HUB_Catalog.yaml     # HUBs: 39 — scripts: 163 totales [FIXED]
+├── 06_Workflow_Graph.yaml   # 29 workflows
 └── 07_Hook_Registry.yaml    # 9 hooks (6 categorías) [MAY DRIFT]
 ```
 
@@ -288,7 +288,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                           |
 | Skills (396, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — +4 desde última auditoría                          |
-| Agent Matrix                      | ✅ SYNCED                   | 76 agentes (8 categorías) [MAY DRIFT] |
+| Agent Matrix                      | ✅ SYNCED                   | 63 agentes (9 categorías) [FIXED] |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |

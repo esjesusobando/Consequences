@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-06-27T12:18:04.015652",
+  "results": {
+    "admin": {
+      "agent": "admin",
+      "agent_name": "Admin Agent",
+      "timestamp": "2026-06-27T12:18:02.805372",
+      "scenarios": [
+        {
+          "scenario_id": "admin_01",
+          "scenario_name": "Client Onboarding Workflow",
+          "response_time": 0.077,
+          "token_usage": 1098,
+          "context_accuracy": 100,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "admin_02",
+          "scenario_name": "Invoice Processing",
+          "response_time": 0.064,
+          "token_usage": 1045,
+          "context_accuracy": 100,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "admin_03",
+          "scenario_name": "Team Coordination",
+          "response_time": 0.066,
+          "token_usage": 1052,
+          "context_accuracy": 100,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.069,
+        "token_usage": 1065,
+        "context_accuracy": 100.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 97.7
+    },
+    "finance": {
+      "agent": "finance",
+      "agent_name": "Finance Agent",
+      "timestamp": "2026-06-27T12:18:03.021235",
+      "scenarios": [
+        {
+          "scenario_id": "finance_01",
+          "scenario_name": "Budget Tracking",
+          "response_time": 0.073,
+          "token_usage": 194,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "finance_02",
+          "scenario_name": "Financial Reporting",
+          "response_time": 0.066,
+          "token_usage": 203,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "finance_03",
+          "scenario_name": "Cost Analysis",
+          "response_time": 0.07,
+          "token_usage": 202,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.07,
+        "token_usage": 199,
+        "context_accuracy": 70.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 90.5
+    },
+    "hr": {
+      "agent": "hr",
+      "agent_name": "HR Agent",
+      "timestamp": "2026-06-27T12:18:03.244755",
+      "scenarios": [
+        {
+          "scenario_id": "hr_01",
+          "scenario_name": "Employee Onboarding",
+          "response_time": 0.071,
+          "token_usage": 211,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "hr_02",
+          "scenario_name": "Performance Review",
+          "response_time": 0.092,
+          "token_usage": 278,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "hr_03",
+          "scenario_name": "Policy Documentation",
+          "response_time": 0.075,
+          "token_usage": 224,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.079,
+        "token_usage": 237,
+        "context_accuracy": 70.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 90.4
+    },
+    "marketing_strategist": {
+      "agent": "marketing_strategist",
+      "agent_name": "Marketing Strategist",
+      "timestamp": "2026-06-27T12:18:03.490915",
+      "scenarios": [
+        {
+          "scenario_id": "marketing_01",
+          "scenario_name": "Brand Voice Setup",
+          "response_time": 0.095,
+          "token_usage": 305,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "marketing_02",
+          "scenario_name": "Content Strategy",
+          "response_time": 0.086,
+          "token_usage": 277,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "marketing_03",
+          "scenario_name": "Campaign Planning",
+          "response_time": 0.088,
+          "token_usage": 289,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.09,
+        "token_usage": 290,
+        "context_accuracy": 70.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 90.2
+    },
+    "content_creator": {
+      "agent": "content_creator",
+      "agent_name": "Content Creator",
+      "timestamp": "2026-06-27T12:18:03.766184",
+      "scenarios": [
+        {
+          "scenario_id": "content_01",
+          "scenario_name": "LinkedIn Post",
+          "response_time": 0.075,
+          "token_usage": 235,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "content_02",
+          "scenario_name": "Newsletter Draft",
+          "response_time": 0.083,
+          "token_usage": 242,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "content_03",
+          "scenario_name": "Blog Article",
+          "response_time": 0.089,
+          "token_usage": 294,
+          "context_accuracy": 70,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.082,
+        "token_usage": 257,
+        "context_accuracy": 70.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 90.3
+    }
+  }
+}

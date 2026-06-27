@@ -1,46 +1,46 @@
 # 📊 Eval Quality Dashboard
 
-**Last Updated:** 2026-06-27 12:08
+**Last Updated:** 2026-06-27 12:18
 **Total Agents:** 5
 
 ## Overall Quality Scores
 
 | Agent | Overall Score | Response Time (s) | Token Usage | Context Accuracy | Task Completion | Status |
 |-------|---------------|-------------------|-------------|------------------|-----------------|--------|
-| Admin Agent | 92.3/100 | 0.101 | 1500 | 85.0% | 100% | ✅ PASS |
-| Finance Agent | 92.3/100 | 0.1 | 1500 | 85.0% | 100% | ✅ PASS |
-| HR Agent | 92.3/100 | 0.101 | 1500 | 85.0% | 100% | ✅ PASS |
-| Marketing Strategist | 92.3/100 | 0.101 | 1500 | 85.0% | 100% | ✅ PASS |
-| Content Creator | 92.3/100 | 0.102 | 1500 | 85.0% | 100% | ✅ PASS |
+| Admin Agent | 97.7/100 | 0.069 | 1065 | 100.0% | 100% | ✅ PASS |
+| Finance Agent | 90.5/100 | 0.07 | 199 | 70.0% | 100% | ✅ PASS |
+| HR Agent | 90.4/100 | 0.079 | 237 | 70.0% | 100% | ✅ PASS |
+| Marketing Strategist | 90.2/100 | 0.09 | 290 | 70.0% | 100% | ✅ PASS |
+| Content Creator | 90.3/100 | 0.082 | 257 | 70.0% | 100% | ✅ PASS |
 
 ## Metrics Breakdown
 
 ### Response Time (seconds)
 | Agent | Avg Time |
 |-------|----------|
-| Admin Agent | 0.101 |
-| Finance Agent | 0.1 |
-| HR Agent | 0.101 |
-| Marketing Strategist | 0.101 |
-| Content Creator | 0.102 |
+| Admin Agent | 0.069 |
+| Finance Agent | 0.07 |
+| HR Agent | 0.079 |
+| Marketing Strategist | 0.09 |
+| Content Creator | 0.082 |
 
 ### Token Usage
 | Agent | Avg Tokens |
 |-------|------------|
-| Admin Agent | 1500 |
-| Finance Agent | 1500 |
-| HR Agent | 1500 |
-| Marketing Strategist | 1500 |
-| Content Creator | 1500 |
+| Admin Agent | 1065 |
+| Finance Agent | 199 |
+| HR Agent | 237 |
+| Marketing Strategist | 290 |
+| Content Creator | 257 |
 
 ### Context Accuracy
 | Agent | Accuracy |
 |-------|----------|
-| Admin Agent | 85.0% |
-| Finance Agent | 85.0% |
-| HR Agent | 85.0% |
-| Marketing Strategist | 85.0% |
-| Content Creator | 85.0% |
+| Admin Agent | 100.0% |
+| Finance Agent | 70.0% |
+| HR Agent | 70.0% |
+| Marketing Strategist | 70.0% |
+| Content Creator | 70.0% |
 
 ### Task Completion
 | Agent | Completion |

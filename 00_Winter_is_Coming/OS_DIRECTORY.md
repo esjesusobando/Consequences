@@ -15,17 +15,17 @@
 | Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
 | Skills                              | **396** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **76** (8 categorías) [MAY DRIFT]                                      | ✅ SYNCED                                     |
-| HUBs                                | **32** directorios                                                     | ✅ VERIFIED                                   |
+| Agentes | **63** (source) | **72** (backup) [FIXED] (8 categorías) [MAY DRIFT]                                      | ✅ SYNCED                                     |
+| HUBs | **39** funcionales [FIXED] directorios                                                     | ✅ VERIFIED                                   |
 | Scripts totales                     | **167** (.py en Scripts_Os/ y subdirs)                                 | ✅ DOCUMENTED                                 |
-| Workflows                           | **30** (8 categorías)                                                  | ✅ VERIFIED                                   |
+| Workflows | **29** (7 categorías) [FIXED] (8 categorías)                                                  | ✅ VERIFIED                                   |
 | Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
 | Hooks                               | **9** (.py en 05_Hooks/) [MAY DRIFT]                                  | ✅ ACTIVE                                     |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.1 — Full Project Audit + Count Corrections
-> Skills: 396. HUBs: 32. Workflows: 30. Rules: 14. Scripts: 167. Agentes: 76. Hooks: 9.
+> Skills: 396. HUBs: 39. Workflows: 29. Rules: 14. Scripts: 163. Agentes: 63. Hooks: 10.
 
 ---
 
@@ -33,7 +33,7 @@
 
 1. **🌕 Capital Token Fase 1**: `10_Shared_Org/` en Knowledge — 1 playbook, 1 ADR, 3 agent templates, MCP Bridge v0.1
 2. **🔄 Auto-Improvement validado**: 29+ días autónomo, Task Scheduler cada 8h, 6 fixers reales
-3. **Full Project Audit**: Conteo completo de agentes (76), workflows (30), HUBs (32), scripts (167), hooks (9)
+3. **Full Project Audit**: Conteo completo de agentes (63 source | 72 backup), workflows (29), HUBs (39), scripts (163), hooks (10)
 4. **Count Corrections**: Todos los docs actualizados con valores verificados contra disco
 5. **Skills verified**: 396 SKILL.md activas en 15 áreas funcionales — 0 sin frontmatter
 
@@ -82,7 +82,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 30 workflows (8 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 76 agentes (8 categorías) [MAY DRIFT]
@@ -100,7 +100,7 @@ Think_Different/
 │       ├── 00_Context_LLM/        ✅ Memoria LLM
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 32 HUBs — 167 scripts [MAY DRIFT]
+│       ├── 03_Scripts_Os/         ✅ 39 HUBs — 163 scripts [FIXED]
 │       ├── 04_Installer/          ✅ Scripts de instalación
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       └── 06_SOTA_Features/     ✅ Features SOTA
@@ -260,4 +260,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-27 | PersonalOS v4.9.1 — Full Project Audit + Count Corrections | 396 skills | 76 agents [MAY DRIFT] | 32 HUBs | 30 workflows | 14 rules | 9 hooks [MAY DRIFT]*
+*Actualizado: 2026-06-27 | PersonalOS v4.9.1 — Full Project Audit + Count Corrections | 396 skills | 63 agents source | 72 backup | 39 HUBs | 29 workflows | 14 rules | 10 hooks [FIXED] [MAY DRIFT]*
