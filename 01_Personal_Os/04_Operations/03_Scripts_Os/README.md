@@ -1,8 +1,9 @@
 # 📁 03_Scripts_Os — Scripts del Sistema
 
-> **Versión**: v1.0 ALFA
-> **Fecha**: 2026-04-20
-> **Estado**: ✅ PRODUCCIÓN
+> **Versión**: v5.0 SOTA
+> **Fecha**: 2026-06-27
+> **Estado**: ✅ PRODUCCIÓN — 42 HUBs funcionales, 166 scripts (33 root NN_ + 133 subdirs)
+> **Fuente**: `20_System_Mapper_Hub.py --scan` — 2026-06-27T13:19:17
 
 ---
 

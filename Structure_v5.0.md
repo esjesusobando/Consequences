@@ -75,7 +75,7 @@ Think_Different/                    # RAÍZ
 │   │   ├── recursive_improvement_engine.py  # Orquestador del pipeline
 │   │   └── learnings.json        # 130+ fixes aplicados históricamente
 │   ├── 02_Agent_Teams_Lite/      # SDD registry + 7 manifests JARVIS
-│   ├── 03_Scripts_Os/            # 39 HUBs funcionales — 163 scripts (30 .py raiz + 133 subdirs)
+│   ├── 03_Scripts_Os/            # 42 HUBs funcionales — 166 scripts (33 .py raiz + 133 subdirs)
 │   ├── 04_Installer/             # Scripts de instalación
 │   ├── 05_Projects/              # Proyectos activos
 │   ├── 06_SOTA_Features/         # Features estado-del-arte
@@ -129,7 +129,7 @@ Think_Different/                    # RAÍZ
 ├── AGENTS.md                      # Core — Reglas del sistema (Matrix)
 ├── BACKLOG.md                     # Tareas pendientes
 ├── GOALS.md                       # Metas estratégicas
-├── CHANGELOG.md                   # Historial de cambios (v4.9.1)
+├── CHANGELOG.md                   # Historial de cambios (v5.0)
 ├── OS_DIRECTORY.md                # Directorio JARVIS
 ├── COMPLETION_SUMMARY.md          # Resumen de completados
 ├── 00_Iron_Man_Gen.md             # Workflow Génesis
@@ -205,24 +205,23 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## ✅ Ground Truth (verificado 2026-06-27)
+## ✅ Ground Truth (verificado 2026-06-27 — System Mapper v5.0)
+
+> Fuente: `20_System_Mapper_Hub.py --scan` ejecutado en vivo el 2026-06-27T13:19:17
 
 | Métrica | Valor verificado | Volatilidad |
 |---------|-----------------|-------------|
-| Skills (SKILL.md) | 396 | [FIXED] |
+| Skills (SKILL.md) | 396 (15 áreas) | [FIXED] |
 | Reglas (.mdc) | 14 | [FIXED] |
-| Hooks (.py + .ps1) | 10 | [FIXED] |
-| Workflows (.md) | 29 | [FIXED] |
+| Hooks (.py + .ps1) | 10 (6 fases) | [FIXED] |
+| Workflows (.md) | 29 (7 categorías) | [FIXED] |
 | Agentes (source) | 63 | [FIXED] |
-| Agentes (backup) | 72 | [VERIFIED] |
-| HUBs funcionales | 39 (31 .py + 9 subdirs) | [FIXED] |
-| Scripts (.py NN_) | 164 (31 raiz + 133 subdirs) | [FIXED] |
-| MCP root (.mcp.json) | 11 | [FIXED] |
-| MCP backup (03_Mcp/) | 2 JSON + 3 subdirs | [VERIFIED] |
-| Archive total files | 15,529 | [VERIFIED] |
-| Plans_Completed | 36 | [VERIFIED] |
-| Skills_Legacy | 2,249 | [FIXED] |
-| Backups_Refs | 11,582 | [VERIFIED] |
+| Agentes (backup) | 72 (drift: 9) | [VERIFIED] |
+| HUBs funcionales | 42 (33 .py + 9 subdirs) | [FIXED] |
+| Scripts totales | 166 (33 raiz + 133 subdirs) | [FIXED] |
+| MCP Claude (root) | 11 | [FIXED] |
+| MCP OpenCode | 45 | [VERIFIED] |
+| Integraciones | 2 (Fireflies, Granola) | [VERIFIED] |
 
 > **Nota sobre agentes (63 source):** Conteo de archivos .md de definición de agentes (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Categorías: Root 25, Dream Team 6, Specialists 23, Growth 5, OS Conductor 1, ATL Gen 3, Agent Teams Lite 0. Drift 9 vs backup. Verificado 2026-06-27 por System Mapper.
 
@@ -287,4 +286,4 @@ Runner: run_scheduled.bat → cron_trigger.py --once --apply (LIVE)
 | `_fix_duplicate_scripts` | structure | Archiva scripts duplicados |
 | `_fix_requirements_txt` | deps | Estandariza constraints |
 
-*Structure v4.9.1 — 2026-06-27 — Think Different PersonalOS*
+*Structure v5.0 — 2026-06-27 — Think Different PersonalOS (SOTA) — Ground Truth: System Mapper scan*

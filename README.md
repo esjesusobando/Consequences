@@ -1,30 +1,32 @@
-# Think Different PersonalOS v4.9.1 — Production Ready
+# Think Different PersonalOS v5.0 — SOTA Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-4.9.1-00FF00)]()
+[![Version](https://img.shields.io/badge/Version-5.0-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--4.9.1-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--5.0--SOTA-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 396 skills SOTA, 63 agentes (source) | 72 backup, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 396 skills SOTA (CoT injected), 63 agentes (source) | 72 backup, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v4.9.1 — 2026-06-27)
+## 📊 Estado del Sistema (v5.0 — 2026-06-27)
 
-> 🟢 **PRODUCTION READY** — Marketing SOTA + Archive Consolidation + Audit Complete
+> 🟢 **PRODUCTION READY** — SOTA v5.0 Upgrade: CoT Skills + Type Hints Scripts + Ground Truth Sync
+
+> Fuente: `20_System_Mapper_Hub.py --scan` — 2026-06-27T13:19:17
 
 | Métrica | Valor |
 |---------|-------|
 | **Overall Health** | **100%** 🟢 |
 | **Every CE** | v3.8.4 ✅ |
 | **gentle-ai** | v1.30.6 ✅ |
-| **Skills** | **396** (15 áreas funcionales, +4 desde v4.9.0) |
-| **Rules** | **14** (.mdc) [FIXED] |
-| **MCPs** | **11** root + **4** backup (2 JSON + 3 subdirs) |
-| **HUBs** | **32** HUBs + **167** scripts [MAY DRIFT] |
-| **Agentes**. **63** (source) | **72** (backup) (8 categorías) [MAY DRIFT] |
-| **Workflows** | **30** (7 categorías) [VERIFIED] |
-| **Archive** | **3** categories (15,529 files) |
+| **Skills** | **396** (15 áreas funcionales, CoT injected) |
+| **Rules** | **14** (.mdc) |
+| **MCPs** | **11** root Claude + **45** OpenCode |
+| **HUBs** | **42** HUBs + **166** scripts totales |
+| **Agentes** | **63** (source) + **72** (backup) — drift 9 |
+| **Workflows** | **29** (7 categorías) |
+| **Hooks** | **10** (6 fases) |
 
 ---
 
@@ -50,7 +52,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/        ✅ Memoria LLM
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora (cada 8h)
 │   │   ├── 02_Agent_Teams_Lite/   ✅ SDD + JARVIS manifests
-│   │   └── 03_Scripts_Os/         ✅ 39 HUBs funcionales — 163 scripts [FIXED]
+│   │   └── 03_Scripts_Os/         ✅ 42 HUBs funcionales — 166 scripts [FIXED]
 │   └── 05_Archive/                ✅ 3 categories (15,529 files)
 ├── 02_Playground/                  ✅ Zona de pruebas
 │   └── Graphify_Out/              ✅ Knowledge graph
@@ -154,7 +156,7 @@ Think_Different/
 | **OS_DIRECTORY.md** | `00_Winter_is_Coming/OS_DIRECTORY.md` |
 | **AGENTS.md** | `00_Winter_is_Coming/AGENTS.md` |
 | **CLAUDE.md** | Raíz — Config IAs |
-| **Capital Token Plan** | `00_Capital_Token_Plan.md` |
+| **Capital Token Plan** | `02_Playground/00_Capital_Token_Plan.md` |
 | **Capital Token README** | `01_Personal_Os/02_Knowledge/10_Shared_Org/README.md` |
 | **Auto-Improvement README** | `01_Personal_Os/04_Operations/01_Auto_Improvement/README.md` |
 | **Session Summary** | `01_Personal_Os/05_Archive/01_Plans_Completed/03_Session_Summaries/` |
@@ -177,5 +179,5 @@ CC BY-NC-SA 4.0 — Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v4.9.1 — Production Ready ✅ — 2026-06-27_
-_Marketing SOTA + Archive Consolidation + Audit Complete + Documentation Ground Truth Sync_
+_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-27_
+_SOTA v5.0: CoT Skills Injection + Type Hints Scripts + Ground Truth Sync (System Mapper)_

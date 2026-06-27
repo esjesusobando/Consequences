@@ -1,6 +1,6 @@
 {
   "version": "v4.9",
-  "generated": "2026-06-27T12:11:24",
+  "generated": "2026-06-27T13:19:17",
   "source": "20_System_Mapper_Hub.py --scan",
   "personal_os": {
     "name": "PersonalOS",
@@ -14,7 +14,7 @@
     "skill_areas": 15,
     "agents_source": 63,
     "agents_backup": 72,
-    "hubs": 39,
+    "hubs": 42,
     "scripts": 133,
     "workflows": 29,
     "workflow_categories": 7,
@@ -42,12 +42,12 @@
   },
   "hubs": {
     "definition_hub": "scripts en 03_Scripts_Os/ (raiz numerados + subdirectorios funcionales)",
-    "hubs": 39,
-    "hubs_scripts_raiz": 30,
+    "hubs": 42,
+    "hubs_scripts_raiz": 33,
     "hubs_directorios": 9,
-    "hubs_numerados": 30,
-    "hubs_con_interfaz": 30,
-    "scripts_totales": 163,
+    "hubs_numerados": 33,
+    "hubs_con_interfaz": 33,
+    "scripts_totales": 166,
     "scripts_no_hub": 133
   },
   "skills_totals": {

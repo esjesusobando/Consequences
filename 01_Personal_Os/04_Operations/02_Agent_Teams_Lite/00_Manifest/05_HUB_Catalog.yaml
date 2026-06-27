@@ -1,16 +1,16 @@
-# HUB Catalog — generated 2026-06-27T12:11:25
+# HUB Catalog — generated 2026-06-27T13:19:18
 
 version: v3.0
-generated: "2026-06-27T12:11:25"
+generated: "2026-06-27T13:19:18"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 39
-  hubs_scripts_raiz: 30
+  hubs: 42
+  hubs_scripts_raiz: 33
   hubs_directorios: 9
   scripts: 133
-  hubs_numerados: 30
-  hubs_con_interfaz: 30
-  scripts_totales: 163
+  hubs_numerados: 33
+  hubs_con_interfaz: 33
+  scripts_totales: 166
   scripts_no_hub: 133
 hubs:
   - name: 00_Sound_Engine
@@ -219,6 +219,27 @@ hubs:
   - name: 32_Graphify_Update
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/32_Graphify_Update.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/32_Graphify_Update.py
+    interfaz:
+      has_main: True
+      has_args: False
+      is_numerado: True
+  - name: 33_Doc_Sync
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/33_Doc_Sync.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/33_Doc_Sync.py
+    interfaz:
+      has_main: True
+      has_args: True
+      is_numerado: True
+  - name: 34_HUB_SOTA
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/34_HUB_SOTA.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/34_HUB_SOTA.py
+    interfaz:
+      has_main: True
+      has_args: True
+      is_numerado: True
+  - name: 35_SOTA_Skill_Modernizer
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
     interfaz:
       has_main: True
       has_args: False

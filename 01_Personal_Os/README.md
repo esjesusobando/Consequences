@@ -1,7 +1,7 @@
 # 01_Personal_Os — Personal Operating System
 
-> **Versión:** v4.9 Consequences
-> **Última actualización:** 2026-05-26
+> **Versión:** v5.0 SOTA
+> **Última actualización:** 2026-06-27
 
 ---
 
@@ -18,24 +18,28 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 ├── 01_Core/               ✅ Motor del OS — Reglas, Agents, Skills, MCPs, Hooks, Plugins
 ├── 02_Knowledge/         ✅ Base de conocimiento — Docs, recursos, sistem knowledge
 ├── 03_Task/               ✅ Tareas activas — Workflows, sprints, tracking
-├── 04_Operations/         ✅ Operaciones — Scripts, MCPs, Projects, Installer
-└── 05_Archive/           ✅ Archivo — Legacy docs, repos de referencia
+├── 04_Operations/         ✅ Operaciones — Scripts (42 HUBs), MCPs, Projects, Installer
+├── 05_Archive/           ✅ Archivo — Legacy docs, repos de referencia
+└── 06_Evals/             ✅ Evaluadores — Escenarios, dashboard y métricas
 ```
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-05-26)
+## 📊 ESTADO DEL SISTEMA (v5.0 SOTA — 2026-06-27)
+
+> Fuente: `20_System_Mapper_Hub.py --scan` — 2026-06-27T13:19:17
 
 | Componente     | Total| Estado                           |
 |---------------|-----|---------------------------------|
-| Agents         | 46   | ✅ SYNCED — 46↔46                 |
-| Skills         | 385  | ✅ VERIFIED — 14 áreas funcionales|
-| MCPs           | 36   | ✅ SYNCED — drift 0               |
-| HUBs           | 19   | ✅ ACTIVE                         |
-| Scripts totales| 284  | ✅ DOCUMENTED — recursivo         |
-| Workflows      | 30   | ✅ ACTIVE — 7 categorías          |
+| Skills         | 396  | ✅ SOTA — CoT injected (15 áreas)  |
+| Agents (source)| 63   | ✅ VERIFIED — backup 72 (drift 9) |
+| MCPs Claude    | 11   | ✅ ACTIVE                          |
+| MCPs OpenCode  | 45   | ✅ ACTIVE                          |
+| HUBs           | 42   | ✅ ACTIVE (33 .py + 9 dirs)        |
+| Scripts totales| 166  | ✅ DOCUMENTED                      |
+| Workflows      | 29   | ✅ ACTIVE — 7 categorías           |
 | Hooks          | 10   | ✅ ACTIVE — 6 fases               |
-| Rules          | 12   | ✅ DEFINED                        |
+| Rules          | 14   | ✅ DEFINED (.mdc)                  |
 
 ---
 
@@ -78,4 +82,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 ---
 
-*Think Different PersonalOS v4.9 Consequences — Pure Green State*
+*Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — Ground Truth: System Mapper scan*
