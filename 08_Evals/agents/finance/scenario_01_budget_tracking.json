@@ -1,0 +1,25 @@
+{
+  "id": "finance_01",
+  "name": "Budget Tracking",
+  "description": "Track project budget against actual spend, identify variances",
+  "input": {
+    "project": "Client Alpha Campaign",
+    "budget_allocated": 50000,
+    "actual_spend": 32500,
+    "line_items": [
+      {"category": "Ad Spend", "budget": 25000, "actual": 18000},
+      {"category": "Content Production", "budget": 15000, "actual": 9500},
+      {"category": "Tools", "budget": 10000, "actual": 5000}
+    ]
+  },
+  "expected_output": {
+    "variance_percent": 35,
+    "alerts": [],
+    "forecast": "On track"
+  },
+  "metrics": {
+    "expected_response_time": 4,
+    "expected_tokens": 1500,
+    "min_context_accuracy": 90
+  }
+}

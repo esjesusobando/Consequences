@@ -1,0 +1,21 @@
+{
+  "id": "admin_03",
+  "name": "Team Coordination",
+  "description": "Coordinate weekly team sync, assign tasks, and track deliverables",
+  "input": {
+    "team_members": ["Strategist", "Creator", "Analyst"],
+    "current_sprint": "Sprint 12",
+    "blockers": ["Waiting on client feedback"],
+    "priorities": ["Deliver content plan", "Review analytics"]
+  },
+  "expected_output": {
+    "tasks_assigned": 3,
+    "blockers_addressed": 1,
+    "next_sync_scheduled": "2026-07-05"
+  },
+  "metrics": {
+    "expected_response_time": 2,
+    "expected_tokens": 800,
+    "min_context_accuracy": 85
+  }
+}

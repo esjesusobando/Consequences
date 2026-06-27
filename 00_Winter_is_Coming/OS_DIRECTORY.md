@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.9.2** | 2026-06-27
+**v4.9.1** | 2026-06-27
 
 ---
 
@@ -8,38 +8,34 @@
 
 | Componente                          | Total                                                                  | Estado                                       |
 |------------------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| Auto-Improvement                    | 🔄 Activo cada 8h (Task Scheduler)                                     | ✅ 20+ días autónomo — 6 fixers              |
+| Auto-Improvement                    | 🔄 Activo cada 8h (Task Scheduler)                                     | ✅ 29+ días autónomo — 6 fixers              |
 | Capital Token                       | 🌕 Fase 1 Foundation — 10_Shared_Org/                                  | ✅ 1 playbook, 1 ADR, 3 agent templates       |
-| MCPs Claude Code                    | **36**                                                                 | ✅ SYNCED — drift 0                           |
+| MCPs root                           | **11** (en .mcp.json)                                                  | ✅ SYNCED — drift 0                           |
+| MCPs backup                         | **4** (2 JSON + 3 subdirs en 03_Mcp/)                                 | ✅ VERIFIED                                   |
 | Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
 | Skills                              | **396** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **71** (24 Root + 6 Dream + 23 Specialists + 5 Growth + 13 otras categorías) | ✅ SYNCED                                     |
-| HUBs                                | **30** scripts (`*_Hub.py` + auxiliares)                               | ✅ VERIFIED                                   |
-| Scripts totales                     | **163** (30 raíz + 133 en subdirectorios)                              | ✅ DOCUMENTED                                 |
+| Agentes                             | **76** (8 categorías) [MAY DRIFT]                                      | ✅ SYNCED                                     |
+| HUBs                                | **32** directorios                                                     | ✅ VERIFIED                                   |
+| Scripts totales                     | **167** (.py en Scripts_Os/ y subdirs)                                 | ✅ DOCUMENTED                                 |
+| Workflows                           | **30** (8 categorías)                                                  | ✅ VERIFIED                                   |
 | Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
+| Hooks                               | **9** (.py en 05_Hooks/) [MAY DRIFT]                                  | ✅ ACTIVE                                     |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.2 — Capital Token F1 + Auto-Improvement validado
-> Skills: 396. HUBs: 30. Workflows: 28. Rules: 14. Scripts: 163. Agentes: 71.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.1 — Full Project Audit + Count Corrections
+> Skills: 396. HUBs: 32. Workflows: 30. Rules: 14. Scripts: 167. Agentes: 76. Hooks: 9.
 
 ---
 
-## 🆕 v4.9.2 Changes (2026-06-27)
+## 🆕 v4.9.1 Changes (2026-06-27)
 
 1. **🌕 Capital Token Fase 1**: `10_Shared_Org/` en Knowledge — 1 playbook, 1 ADR, 3 agent templates, MCP Bridge v0.1
-2. **🔄 Auto-Improvement validado**: 20+ días autónomo, Task Scheduler cada 8h, 6 fixers reales
-3. **Documentación actualizada**: Structure_v5.0.md, README.md, OS_DIRECTORY.md — cross-refs entre sistemas
-4. **Cross-reference documentada**: Cada sistema sabe que el otro existe y cómo se complementan
-
-## 🆕 v4.9.1 Changes
-
-1. **Skills auditadas**: 396 SKILL.md activas en 15 áreas funcionales
-2. **Agentes expandidos**: 71 agentes total (24 Root + 6 Dream + 23 Specialists + 5 Growth + 13 otras categorías)
-3. **Workflows**: 28 activos en 7 categorías
-4. **Scripts**: 163 .py scripts totales (30 raíz + 133 subdirectorios)
-5. **HUBs**: 30 total (numerados + HUB_SOTA + auxiliares)
+2. **🔄 Auto-Improvement validado**: 29+ días autónomo, Task Scheduler cada 8h, 6 fixers reales
+3. **Full Project Audit**: Conteo completo de agentes (76), workflows (30), HUBs (32), scripts (167), hooks (9)
+4. **Count Corrections**: Todos los docs actualizados con valores verificados contra disco
+5. **Skills verified**: 396 SKILL.md activas en 15 áreas funcionales — 0 sin frontmatter
 
 ---
 
@@ -86,14 +82,14 @@ Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 30 workflows (8 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 71 agentes
+│   │       ├── 01_Agents/         ✅ 76 agentes (8 categorías) [MAY DRIFT]
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
-│   │       ├── 03_Mcp/           ✅ Backup MCP configs
+│   │       ├── 03_Mcp/           ✅ Backup MCP (2 JSON + 3 subdirs)
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
-│   │       ├── 05_Hooks/          ✅ 11 hooks (6 fases) [FIXED]
+│   │       ├── 05_Hooks/          ✅ 9 hooks (6 fases) [MAY DRIFT]
 │   │       ├── 06_Plugins/        ✅ Plugins OS
 │   │       ├── 07_Server/         ✅ Engram server
 │   │       ├── 08_Evals/          ✅ Evaluadores
@@ -104,7 +100,7 @@ Think_Different/
 │       ├── 00_Context_LLM/        ✅ Memoria LLM
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 20 HUBs + scripts
+│       ├── 03_Scripts_Os/         ✅ 32 HUBs — 167 scripts [MAY DRIFT]
 │       ├── 04_Installer/          ✅ Scripts de instalación
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       └── 06_SOTA_Features/     ✅ Features SOTA
@@ -115,7 +111,7 @@ Think_Different/
 ├── .atl/                         ✅ SDD Registry + openspec/
 ├── .claude/                      ✅ Config Claude Code + rules
 ├── .opencode/                    ✅ Config OpenCode + skills locales
-├── .mcp.json                     ✅ 36 MCPs Claude Code activos
+├── .mcp.json                     ✅ 11 MCPs root activos (ver 03_Mcp/ para backup)
 ├── OS_DIRECTORY.md               ✅ Este archivo — JARVIS discovery
 ├── AGENTS.md                    ✅ GGA Pre-Commit entry
 ├── CLAUDE.md                    ✅ Config IAs (FUENTE)
@@ -148,40 +144,45 @@ Think_Different/
 
 ---
 
-## 📊 MCPs — 36 SERVIDORES ACTIVOS (Claude Code)
+## 📊 MCPs — 11 SERVIDORES ROOT ACTIVOS
+
+Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos** + 4 configs de backup en `03_Mcp/`.
 
 | Categoría                      | Servidores                                                                          |
 |-------------------------------|------------------------------------------------------------------------------------|
-| 🔍 Search                       | exa, brave-search, stackoverflow                                                    |
-| 🧠 Memory                       | engram, aim-memory-bank, notebooklm                                                 |
-| 📝 Notes                        | Notion, mcp-obsidian, obsidian-api, obsidian-mcp                                    |
-| 🌐 Browser                      | Playwright, chrome-devtools                                                         |
-| 🤖 AI & Code                    | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                |
-| 📊 Data                         | supabase, Amplitude, supadata                                                       |
-| 🔄 Workflow                     | n8n-mcp, Linear                                                                     |
-| 💬 Communication                | fireflies, google-workspace                                                         |
-| 📐 Design                       | excalidraw-yctimlin, pencil                                                         |
-| 🛠️ DevOps                      | docker, filesystem                                                                  |
-| 🚀 Deploy                       | vercel, recall, TestSprite                                                          |
-| 🧩 Chain                        | sequential-thinking, nanobanana, qmd                                                |
+| 🔍 Research                    | context7                                                                            |
+| 🧠 Memory                       | aim-memory-bank                                                                     |
+| 📝 Notes                        | obsidian-mcp                                                                        |
+| 🌐 Browser                      | (via Playwright en .opencode/)                                                      |
+| 🤖 AI & Code                    | @magicuidesign/mcp                                                                  |
+| 🖼️ Image                        | higgsfield, magnific                                                                |
+| 🎬 Video                        | heygen                                                                              |
+| 📐 Design                       | mobbin                                                                              |
+| 💬 Communication                | google-workspace                                                                    |
+| 🔗 Integration                  | eagle                                                                               |
+
+> **Nota:** La lista anterior de 36 MCPs incluía MCPs configurados en `~/.config/opencode/opencode.json` (OpenCode), no solo los del proyecto. Los 11 activos en `.mcp.json` son los de este proyecto específico.
 
 ---
 
-## ⚡ AGENTES — 71 CONFIGURADOS
+## ⚡ AGENTES — 76 CONFIGURADOS (8 categorías) [MAY DRIFT]
 
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
-| Root (Orchestrator + Template)          | 24                        | Raíz `01_Agents/` (00_Template, 00_Orchestrator, 01-22)                     |
-| Dream Team                              | 6                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform, Orchestrator) |
-| Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                         |
-| Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                                |
-| OS Conductor                            | 3                         | `00_OS_Conductor/` (SKILL.md, registry, unified registry)                    |
-| ATL Gen                                 | 9                         | `07_Agent_Teams_Lite_Gen/` (SDD sub-agentes 01-09)                           |
-| Agent Teams Lite                        | 1                         | `00_Agent_Teams_Lite/skills/sdd-apply/`                                      |
+| Root (Orchestrator + Template)          | 26                        | Raíz `01_Agents/` (00_Template, 00_Orchestrator, 01-22 + README)            |
+| Dream Team                              | 7                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform + README)      |
+| Specialists Compound                    | 24                        | `02_Specialists_Compound/` (24 archivos .md + README)                        |
+| Growth                                  | 6                         | `03_Growth/` (Content Transformer → Carousel + README)                       |
+| OS Conductor                            | 9                         | `00_OS_Conductor/` (SKILL.md, registry, unified registry + 6 refs)           |
+| ATL Gen                                 | 13                        | `07_Agent_Teams_Lite_Gen/` (SDD sub-agentes 01-09 + 4 shared)                |
+| Agent Teams Lite                        | 3                         | `00_Agent_Teams_Lite/` (AGENTS.md, README.md, skills/sdd-apply/)             |
+| Legacy (Contexto/Marca/Plantillas)      | 5                         | `04_Contexto/, 05_Marca/, 06_Plantillas/` (LEEME + README)                   |
+
+> ⚠️ Conteo incluye todos los .md hasta profundidad 2, incluyendo README/LEEME. El número exacto puede variar. Verificado 2026-06-27.
 
 ---
 
-## 🎯 HUBs — 30 SCRIPTS TOTALES (numerados + HUB_SOTA + auxiliares)
+## 🎯 HUBs — 32 SCRIPTS/DIRECTORIOS TOTALES
 
 ### HUBs Principales (en raíz de 03_Scripts_Os/)
 
@@ -259,4 +260,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-27 | PersonalOS v4.9.2 — Capital Token F1 + Auto-Improvement validado | 396 skills | 71 agents | 30 HUBs | 29 workflows | 14 rules*
+*Actualizado: 2026-06-27 | PersonalOS v4.9.1 — Full Project Audit + Count Corrections | 396 skills | 76 agents [MAY DRIFT] | 32 HUBs | 30 workflows | 14 rules | 9 hooks [MAY DRIFT]*

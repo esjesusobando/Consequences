@@ -1,0 +1,23 @@
+{
+  "id": "content_01",
+  "name": "LinkedIn Post",
+  "description": "Write engaging LinkedIn post for thought leadership",
+  "input": {
+    "topic": "AI in Marketing: Beyond the Hype",
+    "target_audience": "Marketing leaders",
+    "client": "TechStart Inc",
+    "brand_voice": "Authoritative but accessible",
+    "cta": "Read full article"
+  },
+  "expected_output": {
+    "hook": "Most companies waste 60% of their AI budget...",
+    "structure": ["Hook", "Insight", "Example", "Takeaway", "CTA"],
+    "hashtags": ["#AI", "#Marketing", "#Leadership"],
+    "character_count": 1300
+  },
+  "metrics": {
+    "expected_response_time": 3,
+    "expected_tokens": 1200,
+    "min_context_accuracy": 85
+  }
+}

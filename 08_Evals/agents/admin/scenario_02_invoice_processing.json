@@ -1,0 +1,22 @@
+{
+  "id": "admin_02",
+  "name": "Invoice Processing",
+  "description": "Process incoming invoice, validate against purchase order, and update tracking",
+  "input": {
+    "invoice_number": "INV-2026-001",
+    "vendor": "CloudServices Inc",
+    "amount": 5000,
+    "purchase_order": "PO-2026-045",
+    "due_date": "2026-07-15"
+  },
+  "expected_output": {
+    "validation": "passed",
+    "tracking_updated": true,
+    "payment_scheduled": "2026-07-10"
+  },
+  "metrics": {
+    "expected_response_time": 3,
+    "expected_tokens": 1000,
+    "min_context_accuracy": 90
+  }
+}

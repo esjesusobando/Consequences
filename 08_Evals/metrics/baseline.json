@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "created": "2026-06-27",
+  "description": "Baseline scores for agent quality evaluation",
+  "agents": {
+    "admin": {
+      "overall_score": 70,
+      "response_time": 70,
+      "token_usage": 70,
+      "context_accuracy": 70,
+      "task_completion": 70
+    },
+"finance": {
+      "overall_score": 70,
+      "response_time": 70,
+      "token_usage": 70,
+      "context_accuracy": 70,
+      "task_completion": 70
+    },
+    "hr": {
+      "overall_score": 70,
+      "response_time": 70,
+      "token_usage": 70,
+      "context_accuracy": 70,
+      "task_completion": 70
+    },
+    "marketing_strategist": {
+      "overall_score": 70,
+      "response_time": 70,
+      "token_usage": 70,
+      "context_accuracy": 70,
+      "task_completion": 70
+    },
+    "content_creator": {
+      "overall_score": 70,
+      "response_time": 70,
+      "token_usage": 70,
+      "context_accuracy": 70,
+      "task_completion": 70
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "admin_01",
+  "name": "Client Onboarding Workflow",
+  "description": "Execute the full client onboarding playbook from brief intake to content delivery",
+  "input": {
+    "client_name": "TestCorp",
+    "industry": "SaaS",
+    "objectives": ["Brand awareness", "Lead generation"],
+    "audience": "B2B decision makers",
+    "tone": "professional",
+    "kpis": ["LinkedIn engagement", "Website traffic"]
+  },
+  "expected_output": {
+    "deliverables": ["content_plan", "agent_config", "quality_gates"],
+    "quality_checks": ["brief_validated", "brand_voice_defined", "agents_configured"]
+  },
+  "metrics": {
+    "expected_response_time": 5,
+    "expected_tokens": 2000,
+    "min_context_accuracy": 80
+  }
+}

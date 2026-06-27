@@ -1,0 +1,21 @@
+{
+  "id": "finance_03",
+  "name": "Cost Analysis",
+  "description": "Analyze cost per acquisition across channels and recommend optimizations",
+  "input": {
+    "channels": ["LinkedIn Ads", "Google Ads", "Organic", "Referral"],
+    "spend": [5000, 3000, 0, 0],
+    "acquisitions": [12, 8, 5, 3],
+    "target_cpa": 400
+  },
+  "expected_output": {
+    "cpa_by_channel": [417, 375, 0, 0],
+    "recommendations": ["Increase Google Ads", "Scale referral program"],
+    "optimization_priority": "Google Ads"
+  },
+  "metrics": {
+    "expected_response_time": 4,
+    "expected_tokens": 1800,
+    "min_context_accuracy": 85
+  }
+}

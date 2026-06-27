@@ -25,7 +25,7 @@ Un sistema diseñado para sesiones largas de ingeniería no es el mismo que nece
 
 ## 3. 392 skills sin mecanismo de descubrimiento práctico
 
-El `.atl/skill-registry.md` existe. Pero cuando estás frente a una tarea concreta, ¿cómo sabes cuál de las 392 skills aplica? Si la respuesta es "buscar manualmente", el costo de encontrar el skill puede superar el de hacer la tarea sin él.
+El `.atl/skill-registry.md` existe. Pero cuando estás frente a una tarea concreta, ¿cómo sabes cuál de las 396 skills aplica? Si la respuesta es "buscar manualmente", el costo de encontrar el skill puede superar el de hacer la tarea sin él.
 
 Falta un sistema de lookup rápido: dado un objetivo concreto, qué skill ejecutar, sin leer 15 archivos para saberlo.
 

@@ -1,0 +1,23 @@
+{
+  "id": "content_03",
+  "name": "Blog Article",
+  "description": "Write deep-dive blog article with SEO optimization",
+  "input": {
+    "topic": "How to Scale Content Production Without Losing Quality",
+    "target_keyword": "content production scaling",
+    "client": "TechStart Inc",
+    "word_count_target": 2000,
+    "audience": "Content managers, Marketing directors"
+  },
+  "expected_output": {
+    "title": "Scaling Content Production: The Framework Top Teams Use",
+    "structure": ["Introduction", "Problem", "Framework", "Case Study", "Implementation", "Conclusion"],
+    "seo_elements": ["H1, H2, H3 structure", "Keyword in first 100 words", "Internal links", "Meta description"],
+    "word_count": 2100
+  },
+  "metrics": {
+    "expected_response_time": 5,
+    "expected_tokens": 3500,
+    "min_context_accuracy": 75
+  }
+}

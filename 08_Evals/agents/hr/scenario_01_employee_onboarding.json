@@ -1,0 +1,23 @@
+{
+  "id": "hr_01",
+  "name": "Employee Onboarding",
+  "description": "Execute new hire onboarding from offer acceptance to day 30 check-in",
+  "input": {
+    "employee_name": "Maria Gonzalez",
+    "role": "Content Creator",
+    "start_date": "2026-07-15",
+    "team": "Marketing",
+    "equipment_needed": ["Laptop", "Monitor", "Software licenses"]
+  },
+  "expected_output": {
+    "onboarding_checklist_completed": true,
+    "equipment_delivered": "2026-07-14",
+    "day_30_review_scheduled": "2026-08-14",
+    "buddy_assigned": "Juan Perez"
+  },
+  "metrics": {
+    "expected_response_time": 4,
+    "expected_tokens": 1500,
+    "min_context_accuracy": 90
+  }
+}

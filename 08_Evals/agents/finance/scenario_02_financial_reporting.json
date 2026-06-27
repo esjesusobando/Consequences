@@ -1,0 +1,22 @@
+{
+  "id": "finance_02",
+  "name": "Financial Reporting",
+  "description": "Generate weekly financial report with KPIs and forecasts",
+  "input": {
+    "period": "Week 27",
+    "revenue": 45000,
+    "expenses": 28000,
+    "cash_flow": 17000,
+    "pending_invoices": 12000
+  },
+  "expected_output": {
+    "report_sections": ["P&L", "Cash Flow", "AR/AP", "Forecast"],
+    "kpi_summary": {"gross_margin": 38, "burn_rate": 4000},
+    "action_items": ["Follow up on pending invoices"]
+  },
+  "metrics": {
+    "expected_response_time": 5,
+    "expected_tokens": 2000,
+    "min_context_accuracy": 85
+  }
+}

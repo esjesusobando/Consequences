@@ -166,12 +166,12 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/        ✅ 71 agentes (7 categorías)
+│   │       ├── 01_Agents/        ✅ 76 agentes (8 categorías) [MAY DRIFT]
 │   │       ├── 02_Skills/        ✅ 396 skills (15 áreas funcionales)
-│   │       ├── 03_Mcp/           ✅ Backup configs MCP
+│   │       ├── 03_Mcp/           ✅ Backup configs MCP (2 JSON + 3 subdirs)
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ Pre/Post/Lifecycle/Sound/Harness
 │   │       ├── 06_Plugins/       ✅ Plugins OS
@@ -184,7 +184,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Context_LLM/       ✅ Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/  ✅ Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 JARVIS manifests
-│   │   ├── 03_Scripts_Os/        ✅ HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
+│   │   ├── 03_Scripts_Os/        ✅ HUBs: 32 — scripts: 167 totales (135 en subdirectorios)
 │   │   ├── 04_Installer/         ✅ Instalador del OS
 │   │   ├── 05_Projects/          ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -196,8 +196,8 @@ Think_Different/                           # RAÍZ
 ├── .atl/                         ✅ SDD Registry + openspec
 ├── .claude/                      ✅ Config Claude Code + rules
 ├── .opencode/                    ✅ Config OpenCode + skills locales
-├── .mcp.json                     ✅ MCPs activos (7 Claude + 38 backup)
-├── OS_DIRECTORY.md               ✅ JARVIS discovery
+├── .mcp.json                     ✅ MCPs activos (11 root)
+├── OS_DIRECTORY.md               ✅ JARVIS discovery (en 00_Winter_is_Coming/)
 ├── AGENTS.md                     ✅ Root entry (GGA Pre-Commit)
 ├── CLAUDE.md                     ✅ Config Oficial para IAs (ESTE)
 └── README.md                     ✅ Documentación principal
@@ -205,7 +205,7 @@ Think_Different/                           # RAÍZ
 
 ### 2. AGENTS (71 — 7 categorías funcionales — 2026-06-27)
 
-> ⚠️ Source: 71 agentes total (24 root + 6 Dream Team + 23 Specialists + 5 Growth + 3 OS Conductor + 9 ATL Gen + 1 Agent Teams Lite). Ver desglose en 03_Agent_Catalog.yaml. Audit 2026-06-27: conteos actualizados.
+> ⚠️ Source: 76 agentes total (.md files depth ≤2: 26 root + 7 Dream + 24 Spec + 6 Growth + 9 OS Cond + 13 ATL Gen + 3 ATL + 5 Legacy). El conteo incluye README/LEEME en subdirectorios. [MAY DRIFT] Audit 2026-06-27.
 
 ### 3. SKILLS (396 — 15 áreas funcionales)
 
@@ -237,11 +237,11 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
-├── 03_Agent_Catalog.yaml    # 71 agentes source (referencia al manifest)
+├── 03_Agent_Catalog.yaml    # 76 agentes source (referencia al manifest) [MAY DRIFT]
 ├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
-├── 05_HUB_Catalog.yaml     # HUBs: 30 — scripts: 163 totales
-├── 06_Workflow_Graph.yaml   # 29 workflows
-└── 07_Hook_Registry.yaml    # 11 hooks (6 categorías) [FIXED]
+├── 05_HUB_Catalog.yaml     # HUBs: 32 — scripts: 167 totales [MAY DRIFT]
+├── 06_Workflow_Graph.yaml   # 30 workflows
+└── 07_Hook_Registry.yaml    # 9 hooks (6 categorías) [MAY DRIFT]
 ```
 
 ---
@@ -288,12 +288,12 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                           |
 | Skills (396, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — +4 desde última auditoría                          |
-| Agent Matrix                      | ✅ SYNCED                   | 71 agentes (24 root + 6 Dream + 23 Spec + 5 Growth + 13 otras categorías) |
+| Agent Matrix                      | ✅ SYNCED                   | 76 agentes (8 categorías) [MAY DRIFT] |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
 | Workflows (29)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os (1+10+8+2+2+4+1)                        |
-| Hooks (11, 6 fases) [FIXED]       | ✅ ACTIVE                   | 05_Hooks/                                                                |
+| Hooks (9, 6 fases) [MAY DRIFT]    | ✅ ACTIVE                   | 05_Hooks/                                                                |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                          |
 
 ---

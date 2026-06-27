@@ -1,0 +1,25 @@
+{
+  "id": "content_02",
+  "name": "Newsletter Draft",
+  "description": "Write weekly newsletter with curated insights and client updates",
+  "input": {
+    "edition": "Week 27",
+    "theme": "Scaling Content Operations",
+    "sections": ["Client Win", "Industry Insight", "Tool Tip", "Upcoming"],
+    "client_updates": [
+      {"client": "EcoHome", "update": "Campaign launched, 2.3% CTR"},
+      {"client": "TechStart", "update": "Blog series publishing next week"}
+    ]
+  },
+  "expected_output": {
+    "subject_line": "Scaling Content: How EcoHome 3x'd Engagement",
+    "word_count": 800,
+    "sections": 4,
+    "cta": "Reply with your biggest content challenge"
+  },
+  "metrics": {
+    "expected_response_time": 4,
+    "expected_tokens": 2000,
+    "min_context_accuracy": 80
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "marketing_03",
+  "name": "Campaign Planning",
+  "description": "Plan product launch campaign with timeline, assets, and metrics",
+  "input": {
+    "product": "AI-Powered Analytics Dashboard",
+    "launch_date": "2026-09-01",
+    "target": "SaaS companies 50-500 employees",
+    "budget": 25000,
+    "channels": ["LinkedIn Ads", "Content Marketing", "Webinar", "Email"]
+  },
+  "expected_output": {
+    "phases": ["Teaser", "Launch", "Sustain"],
+    "timeline": {"Teaser": "Aug 1-15", "Launch": "Sep 1-15", "Sustain": "Sep 16-30"},
+    "assets_needed": ["Landing page", "Demo video", "Case study", "Email sequence"],
+    "success_metrics": ["MQLs: 100", "Demo requests: 20", "Pipeline: $500k"]
+  },
+  "metrics": {
+    "expected_response_time": 6,
+    "expected_tokens": 3000,
+    "min_context_accuracy": 75
+  }
+}

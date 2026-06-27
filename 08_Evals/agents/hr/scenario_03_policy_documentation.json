@@ -1,0 +1,21 @@
+{
+  "id": "hr_03",
+  "name": "Policy Documentation",
+  "description": "Document and update HR policy for remote work with clear guidelines",
+  "input": {
+    "policy_name": "Remote Work Policy v2.1",
+    "changes": ["Flexible hours core 10-15", "Quarterly office days", "Equipment stipend $500/year"],
+    "affects": ["All full-time employees"],
+    "effective_date": "2026-08-01"
+  },
+  "expected_output": {
+    "document_sections": ["Eligibility", "Schedule", "Equipment", "Communication", "Security"],
+    "review_cycle": "Annual",
+    "distribution": "All-hands + Notion"
+  },
+  "metrics": {
+    "expected_response_time": 4,
+    "expected_tokens": 1800,
+    "min_context_accuracy": 85
+  }
+}

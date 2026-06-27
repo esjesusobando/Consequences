@@ -1,0 +1,23 @@
+{
+  "id": "marketing_01",
+  "name": "Brand Voice Setup",
+  "description": "Define brand voice, tone, and messaging pillars for new client",
+  "input": {
+    "client": "EcoHome Solutions",
+    "industry": "Sustainable Home Products",
+    "target_audience": "Eco-conscious homeowners 30-50",
+    "brand_values": ["Sustainability", "Quality", "Transparency"],
+    "competitors": ["GreenHome", "EcoLiving"]
+  },
+  "expected_output": {
+    "voice_attributes": ["Warm", "Authoritative", "Educational"],
+    "tone_examples": ["Do: 'Discover how...'", "Don't: 'Buy now!'"],
+    "messaging_pillars": ["Sustainability made simple", "Quality you trust", "Transparent pricing"],
+    "do_dont_list": [{"do": "Use specific data", "dont": "Make vague claims"}]
+  },
+  "metrics": {
+    "expected_response_time": 5,
+    "expected_tokens": 2500,
+    "min_context_accuracy": 80
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hr_02",
+  "name": "Performance Review",
+  "description": "Conduct quarterly performance review with goal tracking and feedback",
+  "input": {
+    "employee": "Carlos Ruiz",
+    "role": "Marketing Strategist",
+    "period": "Q2 2026",
+    "goals": [
+      {"goal": "Increase client retention", "target": 85, "actual": 88},
+      {"goal": "Launch 2 new campaigns", "target": 2, "actual": 3},
+      {"goal": "Mentor junior strategist", "target": 1, "actual": 1}
+    ],
+    "feedback": "Exceeds expectations on campaigns"
+  },
+  "expected_output": {
+    "rating": "Exceeds Expectations",
+    "strengths": ["Campaign execution", "Mentoring"],
+    "development_areas": ["Cross-functional collaboration"],
+    "next_goals": ["Lead enterprise client", "Speak at conference"]
+  },
+  "metrics": {
+    "expected_response_time": 5,
+    "expected_tokens": 2000,
+    "min_context_accuracy": 85
+  }
+}

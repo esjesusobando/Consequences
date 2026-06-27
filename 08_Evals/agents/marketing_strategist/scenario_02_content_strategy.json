@@ -1,0 +1,23 @@
+{
+  "id": "marketing_02",
+  "name": "Content Strategy",
+  "description": "Develop quarterly content strategy with themes, channels, and calendar",
+  "input": {
+    "client": "TechStart Inc",
+    "quarter": "Q3 2026",
+    "objectives": ["Thought leadership", "Lead generation", "Brand awareness"],
+    "channels": ["LinkedIn", "Blog", "Newsletter", "Twitter"],
+    "budget": 15000
+  },
+  "expected_output": {
+    "themes": ["AI in Business", "Scaling Startups", "Team Culture"],
+    "content_mix": {"LinkedIn": 40, "Blog": 30, "Newsletter": 20, "Twitter": 10},
+    "calendar": {"July": 12, "August": 12, "September": 12},
+    "kpis": ["Leads: 50", "Engagement: 5%", "Traffic: +20%"]
+  },
+  "metrics": {
+    "expected_response_time": 6,
+    "expected_tokens": 3000,
+    "min_context_accuracy": 75
+  }
+}

@@ -35,14 +35,14 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 01_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
+│   ├── 00_Workflows_Os/          # 30 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
-│       ├── 01_Agents/            # 71 agentes (7 categorías)
+│       ├── 01_Agents/            # 76 agentes (8 categorías) [MAY DRIFT]
 │       ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
-│       ├── 03_Mcp/               # Backup MCP configs (4 JSON)
+│       ├── 03_Mcp/               # Backup MCP configs (2 JSON + 3 subdirs)
 │       ├── 04_Integrations/      # Fireflies, Granola
-│       ├── 05_Hooks/             # 11 hooks (6 fases) [FIXED]
+│       ├── 05_Hooks/             # 9 hooks (6 fases) [MAY DRIFT]
 │       ├── 06_Plugins/           # Plugins OS
 │       ├── 07_Server/            # Engram server
 │       ├── 08_Evals/             # Evaluadores
@@ -76,7 +76,7 @@ Think_Different/                    # RAÍZ
 │   │   ├── recursive_improvement_engine.py  # Orquestador del pipeline
 │   │   └── learnings.json        # 130+ fixes aplicados históricamente
 │   ├── 02_Agent_Teams_Lite/      # SDD registry + 7 manifests JARVIS
-│   ├── 03_Scripts_Os/            # 30 HUBs — 163 scripts
+│   ├── 03_Scripts_Os/            # 32 HUBs — 167 scripts [MAY DRIFT]
 │   ├── 04_Installer/             # Scripts de instalación
 │   ├── 05_Projects/              # Proyectos activos
 │   ├── 06_SOTA_Features/         # Features estado-del-arte
@@ -161,21 +161,24 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## 🤖 AGENTES (71 total)
+## 🤖 AGENTES (76 total — 8 categorías)
 
 | Categoría | Cantidad | Ubicación |
 |-----------|----------|-----------|
-| Root | 24 | `01_Agents/` |
-| Dream Team | 6 | `01_Dream_Team/` |
-| Specialists Compound | 23 | `02_Specialists_Compound/` |
-| Growth | 5 | `03_Growth/` |
-| OS Conductor | 3 | `00_OS_Conductor/` |
-| ATL Gen | 9 | `07_Agent_Teams_Lite_Gen/` |
-| Agent Teams Lite | 1 | `00_Agent_Teams_Lite/skills/sdd-apply/` |
+| Root (agent .md files) | 26 | `01_Agents/` (root level) |
+| Dream Team | 7 | `01_Dream_Team/` |
+| Specialists Compound | 24 | `02_Specialists_Compound/` |
+| Growth | 6 | `03_Growth/` |
+| OS Conductor | 9 | `00_OS_Conductor/` |
+| ATL Gen | 13 | `07_Agent_Teams_Lite_Gen/` |
+| Agent Teams Lite | 3 | `00_Agent_Teams_Lite/` |
+| Legacy/Other | 5 | `04_Contexto/, 05_Marca/, 06_Plantillas/` |
+
+> ⚠️ Conteo incluye todos los .md en subdirectorios hasta profundidad 2. El número exacto puede variar según cuántos README/LEEME se excluyan. Categorización actualizada 2026-06-27. |
 
 ---
 
-## 🔧 HUBs (30 HUBs — 163 scripts)
+## 🔧 HUBs (32 HUBs — 167 scripts)
 
 | Hub | Propósito |
 |-----|-----------|
@@ -208,19 +211,19 @@ Think_Different/                    # RAÍZ
 |---------|-----------------|-------------|
 | Skills (SKILL.md) | 396 | [FIXED] |
 | Reglas (.mdc) | 14 | [FIXED] |
-| Hooks | 11 | [FIXED] |
-| Workflows (.md) | 29 | [VERIFIED] |
-| Agentes (def files) | 71 | [VERIFIED] |
-| HUBs | 30 | [VERIFIED] |
-| Scripts totales | 163 | [VERIFIED] |
+| Hooks (.py) | 9 | [MAY DRIFT] |
+| Workflows (.md) | 30 | [VERIFIED] |
+| Agentes (.md depth≤2) | 76 | [MAY DRIFT] |
+| HUBs (directorios) | 32 | [VERIFIED] |
+| Scripts totales (.py) | 167 | [MAY DRIFT] |
 | MCP root (.mcp.json) | 11 | [FIXED] |
-| MCP backup (03_Mcp/) | 4 | [FIXED] |
+| MCP backup (03_Mcp/) | 2 JSON + 3 subdirs | [VERIFIED] |
 | Archive total files | 15,529 | [VERIFIED] |
 | Plans_Completed | 36 | [VERIFIED] |
 | Skills_Legacy | 2,249 | [FIXED] |
-| Backups_Refs | 11,582 | [VERIFIED] |
+| Backups_Refs | 11,582 | [VERIFIED] | |
 
-> **Nota sobre agentes (71):** Conteo de archivos .md de definición de agentes en `01_Personal_Os/01_Core/02_Tools/01_Agents/` y subdirectorios. El conteo incluye todas las categorías (Root 24, Dream Team 6, Specialists 23, Growth 5, OS Conductor 3, ATL Gen 9, Agent Teams Lite 1). Verificado 2026-06-27.
+> **Nota sobre agentes (76):** Conteo de archivos .md de definición de agentes en `01_Personal_Os/01_Core/02_Tools/01_Agents/` y subdirectorios (profundidad ≤2). El conteo incluye README.md y LEEME.md dentro de las carpetas de categoría. Categorías: Root 26, Dream Team 7, Specialists 24, Growth 6, OS Conductor 9, ATL Gen 13, ATL 3, Legacy 5. El número exacto puede drift con el tiempo. Verificado 2026-06-27.
 
 ---
 

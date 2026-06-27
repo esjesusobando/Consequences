@@ -43,14 +43,14 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **Skills** (396, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (71)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (30 HUBs — 163 scripts)                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 163 scripts totales                       |
+| **Agentes** (76) [MAY DRIFT]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (32 HUBs — 167 scripts) [MAY DRIFT]        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 167 scripts totales                       |
 | **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 29 workflows en 7 categorías                                      |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                      |
 
 ---
 
@@ -79,7 +79,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
                     └─────────────────────┘
 ```
 
-### Dream Team (6 Especialistas)
+### Dream Team (7 Especialistas)
 
 📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`
 
@@ -91,9 +91,11 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **Design Ops**                               | `04_Design_Ops.md`                               | Diseño, visual systems                        | 04_Product_Design                                     |
 | **Platform Engineer**                        | `05_Platform_Engineer.md`                        | Infra, DevOps, CI/CD                          | 07_DevOps · 05_Mcp                                    |
 
-### Especialistas Compound (23)
+### Especialistas Compound (24)
 
 📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`
+
+> ⚠️ Tabla muestra los principales. Hay 24 especialistas en total incluyendo: Agent-Native-Reviewer, Ankane-Readme-Writer, Architecture-Strategist, Best-Practices-Researcher, Code-Simplicity-Reviewer, Data-Integrity-Guardian, Data-Migration-Expert, Deployment-Verification-Agent, Design-Implementation-Reviewer, Design-Iterator, Dhh-Rails-Reviewer, Figma-Design-Sync, Framework-Docs-Researcher, Git-History-Analyzer, Julik-Frontend-Races-Reviewer, Kieran-Python-Reviewer, Kieran-Rails-Reviewer, Kieran-Typescript-Reviewer, Learnings-Researcher, Pattern-Recognition-Specialist, Performance-Oracle, Repo-research-Analyst, Security-Sentinel. Ver desglose completo en manifest.
 
 | Especialista                                         | Archivo                                               | Cuándo invocar                                    |
 |-----------------------------------------------------|------------------------------------------------------|--------------------------------------------------|
@@ -166,10 +168,10 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/              # 30 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 71 agentes (referencia al manifest)
+│   │       ├── 01_Agents/               # 76 agentes (referencia al manifest) [MAY DRIFT]
 │   │       ├── 02_Skills/                # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
@@ -185,7 +187,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 30 HUBs — 163 scripts totales
+│       ├── 03_Scripts_Os/               # 32 HUBs — 167 scripts totales [MAY DRIFT]
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte
@@ -376,7 +378,7 @@ Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos** (
 
 ---
 
-## 7. HUB SCRIPTS (30 activos)
+## 7. HUB SCRIPTS (32 activos — 167 scripts totales)
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -394,6 +396,8 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 | **09_Data_Hub.py**                                  | Data processing and analytics                                              |
 | **10_General_Hub.py**                               | General utilities                                                          |
 | **11_Auto_Learn_Hub.py**                            | Motor de automejora y aprendizaje                                          |
+| **12_Auditors_Os/**                                 | Auditoría de OS (subdirectorio con auditores especializados)                |
+| **13_Legacy/**                                      | Scripts legacy para compatibilidad                                         |
 | **14_Health_Metrics_Hub.py**                        | Health metrics y reportes                                                  |
 | **15_MCP_Sync_Hub.py**                              | Detecta y sincroniza drift Claude↔OpenCode                                 |
 | **16_Agent_Mirror_Hub.py**                          | Mirror agentes source → backup                                             |
@@ -403,6 +407,7 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 | **20_System_Mapper_Hub.py**                         | Genera 7 manifests JARVIS                                                  |
 | **21_Legacy_Path_Cleanup.py**                       | Limpia paths legacy                                                        |
 | **22_Validate_Skill_Frontmatter.py**                | Detecta skills sin frontmatter YAML                                        |
+| **23_Preview_Generator.js**                         | Generador de previews (JavaScript)                                         |
 | **24_mass_path_migration.py**                       | Migración masiva de paths legacy                                           |
 | **25_Minimax_Optimizer_Hub.py**                     | Optimización Minimax de recursos del sistema                               |
 | **26_Parallel_Audit_Pro.py**                        | Auditoría paralela avanzada                                                |
@@ -412,6 +417,8 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 | **30_path_replacement.py**                          | Reemplazo masivo de paths en skills legacy                                 |
 | **31_Graphify_Hub.py**                              | Indexación y consulta del grafo de conocimiento del proyecto               |
 | **32_Graphify_Update.py**                           | Actualización incremental del grafo de conocimiento                        |
+
+> ⚠️ Nota: No todos los números consecutivos están usados (ej: 12=Auditors_Os, 13=Legacy, sin 03-13 como HUBs únicos). Hay gaps intencionales para mantener compatibilidad con números legacy.
 
 ### Dynamic Paths
 
@@ -469,17 +476,20 @@ gr --agents    # Solo 3 agents
 
 ---
 
-## 12. WORKFLOWS (29 — 7 categorías)
+## 12. WORKFLOWS (30 — 8 categorías)
 
 📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 
 | Categoría                                   | Path                                         | Workflows                                       |
 |--------------------------------------------|---------------------------------------------|------------------------------------------------|
-| Personal OS                                 | `01_Personal_Os/`                            | Morning, Backlog, Content, Weekly               |
-| Marvel                                      | `02_Marvel/`                                 | Marvel-related                                  |
-| Gentleman                                   | `03_Gentleman/`                              | Gentleman standards                             |
-| Hillary                                     | `04_Hillary/`                                | Hillary Life OS                                 |
-| Compound Engineering                        | `05_Compound_Engineering/`                   | CE workflows                                    |
+| Learning Always                             | `00_Learning_Always/`                        | 1 workflow                                      |
+| Personal OS                                 | `01_Personal_Os/`                            | 10 workflows (Morning, Backlog, Content, etc.)  |
+| Marvel                                      | `02_Marvel/`                                 | 8 workflows (Iron Man, Spider, Thor, etc.)      |
+| Gentleman                                   | `03_Gentleman/`                              | 2 workflows (Frontend, Docs)                    |
+| Hillary                                     | `04_Hillary/`                                | 2 workflows (Captura, Life OS)                  |
+| Compound Engineering                        | `05_Compound_Engineering/`                   | 4 workflows (Deep Work, Ship It, etc.)          |
+| Youtube Full Video                          | `06_Youtube_Full_Video/`                     | 1 workflow                                      |
+| README only                                 | (root)                                       | 1 (README.md — no workflow)                     |
 
 ---
 
