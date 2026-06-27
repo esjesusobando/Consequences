@@ -1,11 +1,11 @@
 schema: spec-driven
 
 context: |
-  Tech stack: Python (scripts, HUBs), Node.js (OpenCode + plugins MCP, .mcp.json 33 servers)
+  Tech stack: Python (scripts, HUBs), Node.js (OpenCode + plugins MCP, .mcp.json 11 servers)
   Architecture: Multi-agent PersonalOS with skills, HUBs, Agent Teams, SDD workflow, GGA code review
   Testing: None — no test runner detected (documentation-heavy project)
   Style: Conventional commits, no linter/formatter at project root
-  Version: v3.0 Consequences (2026-04-26)
+  Version: v4.9.1 Documentation Ground Truth Sync (2026-06-27)
 
 strict_tdd: false
 

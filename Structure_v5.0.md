@@ -38,7 +38,7 @@ Think_Different/                    # RAÍZ
 │   ├── 00_Workflows_Os/          # 29 workflows (7 categorías) [MAY DRIFT]
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
-│       ├── 01_Agents/            # ~58 agentes (7 categorías) [MAY DRIFT]
+│       ├── 01_Agents/            # 71 agentes (7 categorías)
 │       ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
 │       ├── 03_Mcp/               # Backup MCP configs (4 JSON)
 │       ├── 04_Integrations/      # Fireflies, Granola
@@ -161,21 +161,21 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## 🤖 AGENTES (~58 total) [MAY DRIFT]
+## 🤖 AGENTES (71 total)
 
 | Categoría | Cantidad | Ubicación |
 |-----------|----------|-----------|
-| Root | ~24 | `01_Agents/` |
-| Dream Team | ~6 | `01_Dream_Team/` (+ 06 Marketing Orchestrator) |
-| Specialists Compound | ~23 | `02_Specialists_Compound/` |
-| Growth | ~5 | `03_Growth/` |
-| OS Conductor | ~3 | `00_OS_Conductor/` |
-| ATL Gen | ~9 | `07_Agent_Teams_Lite_Gen/` |
-| Agent Teams Lite | ~1 | `00_Agent_Teams_Lite/skills/sdd-apply/` |
+| Root | 24 | `01_Agents/` |
+| Dream Team | 6 | `01_Dream_Team/` |
+| Specialists Compound | 23 | `02_Specialists_Compound/` |
+| Growth | 5 | `03_Growth/` |
+| OS Conductor | 3 | `00_OS_Conductor/` |
+| ATL Gen | 9 | `07_Agent_Teams_Lite_Gen/` |
+| Agent Teams Lite | 1 | `00_Agent_Teams_Lite/skills/sdd-apply/` |
 
 ---
 
-## 🔧 HUBs (22 HUBs — ~266 scripts) [MAY DRIFT]
+## 🔧 HUBs (30 HUBs — 163 scripts)
 
 | Hub | Propósito |
 |-----|-----------|
