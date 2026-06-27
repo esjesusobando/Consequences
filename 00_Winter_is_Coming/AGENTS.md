@@ -49,15 +49,15 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **Skills** (396, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (76) [MAY DRIFT]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (32 HUBs — 167 scripts) [MAY DRIFT]        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 167 scripts totales                       |
+| **Agentes** (63 source | 72 backup) [FIXED]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (39 HUBs — 163 scripts) [FIXED]        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 167 scripts totales                       |
 | **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **Adaptive Boot**                                  | `01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py`             | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                      |
+| **Workflows** | **29** (7 categorías) [FIXED] en 7 categorías                                      |
 
 ---
 
@@ -175,10 +175,10 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 30 Workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 76 agentes (referencia al manifest) [MAY DRIFT]
+│   │       ├── 01_Agents/               # 63 agentes (referencia al manifest) [FIXED]
 │   │       ├── 02_Skills/                # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
@@ -194,7 +194,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 32 HUBs — 167 scripts totales [MAY DRIFT]
+│       ├── 03_Scripts_Os/               # 39 HUBs — 163 scripts totales [FIXED]
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte
@@ -385,7 +385,7 @@ Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos** (
 
 ---
 
-## 7. HUB SCRIPTS (32 activos — 167 scripts totales)
+## 7. HUB SCRIPTS (39 activos — 163 scripts totales) [FIXED]
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 

@@ -15,14 +15,14 @@
 | Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
 | Skills                              | **396** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes | **63** (source) | **72** (backup) [FIXED] (8 categorías) [MAY DRIFT]                                      | ✅ SYNCED                                     |
-| HUBs | **39** funcionales [FIXED] directorios                                                     | ✅ VERIFIED                                   |
+| Agentes | **63** (source) | **72** (backup) [FIXED]                                      | ✅ SYNCED                                     |
+| HUBs | **39** funcionales [FIXED]                                                     | ✅ VERIFIED                                   |
 | Scripts totales                     | **167** (.py en Scripts_Os/ y subdirs)                                 | ✅ DOCUMENTED                                 |
-| Workflows | **29** (7 categorías) [FIXED] (8 categorías)                                                  | ✅ VERIFIED                                   |
+| Workflows | **29** (7 categorías) [FIXED]                                                  | ✅ VERIFIED                                   |
 | Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
 | Hooks                               | **9** (.py en 05_Hooks/) [MAY DRIFT]                                  | ✅ ACTIVE                                     |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
-| Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
+| Open Design                         | 62 creative skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.1 — Full Project Audit + Count Corrections
 > Skills: 396. HUBs: 39. Workflows: 29. Rules: 14. Scripts: 163. Agentes: 63. Hooks: 10.
@@ -85,11 +85,11 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 76 agentes (8 categorías) [MAY DRIFT]
+│   │       ├── 01_Agents/         ✅ 63 agentes (9 categorías) [FIXED]
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP (2 JSON + 3 subdirs)
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
-│   │       ├── 05_Hooks/          ✅ 9 hooks (6 fases) [MAY DRIFT]
+│   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases) [FIXED]
 │   │       ├── 06_Plugins/        ✅ Plugins OS
 │   │       ├── 07_Server/         ✅ Engram server
 │   │       ├── 08_Evals/          ✅ Evaluadores
