@@ -222,3 +222,5 @@ out/
 03_Resultado/16_Side Project/            # LEGACY: dir no longer exists, kept for reference
 02_Playground/04_Side Project/
 .atl/
+!.atl/*.md
+!.atl/openspec/
