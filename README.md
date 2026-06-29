@@ -17,9 +17,9 @@
 
 | Métrica            | Valor                                        |
 | ------------------ | -------------------------------------------- |
-| **Overall Health** | **100%** 🟢                                   |
-| **Every CE**       | v3.8.4 ✅                                     |
-| **gentle-ai**      | v1.30.6 ✅                                    |
+| **Overall Health** | **100%** 🟢                                  |
+| **Every CE**       | v3.8.4 ✅                                    |
+| **gentle-ai**      | v1.30.6 ✅                                   |
 | **Skills**         | **396** (15 áreas funcionales, CoT injected) |
 | **Rules**          | **14** (.mdc)                                |
 | **MCPs**           | **11** root Claude + **45** OpenCode         |
@@ -64,9 +64,9 @@ Think_Different/
 │   │   └── 01_Installer/          ✅ Instalador del OS
 │   ├── 06_Projects/               ✅ Proyectos activos
 │   └── 07_Archive/                ✅ Backups, snapshots, históricos
-├── 02_Playground/                ✅ Zona de pruebas
+├── 02_Playground/                 ✅ Zona de pruebas
 │   └── Graphify_Out/              ✅ Knowledge graph
-├── 03_Resultado/                   ✅ Outputs de proyectos
+├── 03_Resultado/                  ✅ Outputs de proyectos
 ├── .agent/                        ✅ Backup estratégico
 ├── .atl/                          ✅ SDD Registry
 ├── .claude/                       ✅ Config Claude Code
