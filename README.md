@@ -60,11 +60,11 @@ Think_Different/
 │   │   └── 04_Telemetry/          ✅ Telemetría y monitoreo
 │   ├── 04_Tasks/                  ✅ Tareas activas (YAML 100%)
 │   ├── 05_Scripts/                ✅ Scripts operativos
-│   │   ├── 00_HUBs/              ✅ 42 HUBs funcionales — 166 scripts [FIXED]
-│   │   └── 01_Installer/         ✅ Instalador del OS
+│   │   ├── 00_HUBs/               ✅ 42 HUBs funcionales — 166 scripts [FIXED]
+│   │   └── 01_Installer/          ✅ Instalador del OS
 │   ├── 06_Projects/               ✅ Proyectos activos
 │   └── 07_Archive/                ✅ Backups, snapshots, históricos
-├── 02_Playground/                  ✅ Zona de pruebas
+├── 02_Playground/                ✅ Zona de pruebas
 │   └── Graphify_Out/              ✅ Knowledge graph
 ├── 03_Resultado/                   ✅ Outputs de proyectos
 ├── .agent/                        ✅ Backup estratégico
