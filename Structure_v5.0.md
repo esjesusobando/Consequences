@@ -1,9 +1,9 @@
 # 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v5.0 (SOTA)
 
 > **Versión:** 5.0 (SOTA)
-> **Fecha:** 2026-06-28
+> **Fecha:** 2026-06-29
 > **Estado:** Production Ready — SOTA Upgraded (CoT Injected, Type Hints, Logging)
-> **Audit v5.0 (Complete Audit):** 2026-06-27 — SOTA upgrade applied across all scripts and skills.
+> **Audit v5.0 (Complete Audit):** 2026-06-29 — SOTA upgrade + Playground organizado + 393 READMEs beautificados.
 > **Auto-Improvement:** ✅ Activo — Corre cada 8h (01:05, 09:05, 17:05)
 
 ---
@@ -96,11 +96,14 @@ Think_Different/                    # RAÍZ
 ├── 00_Testing_Youtube/            # YouTube testing
 ├── 01_Branders_Skills/            # Branding skills
 ├── 02_Workflow_N8N/               # N8N workflows
-├── 03_Reports/                    # Test reports
+├── 03_Reports/                    # Reportes, sesiones, diagnósticos, walkthroughs
 ├── 04_Testing_Legacy/             # Legacy testing
 ├── 05_Obanlover/                  # Obanlover experiments
 ├── 06_JAO/                        # JAO experiments
-└── 07_Zero_Consequences/          # Consequences DS + Magnific
+├── 07_Zero_Consequences/          # Consequences DS + Magnific
+├── 08_Plans_and_Docs/             # Planes estratégicos, tasks, implementation plans [NEW 2026-06-29]
+├── 09_Skills_Drafts/              # Borradores de skills y kits de diseño [NEW 2026-06-29]
+└── 10_Scripts_and_Logs/           # Scripts operativos y logs del Playground [NEW 2026-06-29]
 ```
 
 ---
