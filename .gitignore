@@ -10,18 +10,21 @@
 # PERSONAL OS CORE
 # =============================================================================
 
-# Personal task files
-03_Task/*.md
-!03_Task/.gitkeep
-!03_Task/README.md
+# Personal task files (path: 01_Personal_Os/03_Task/)
+01_Personal_Os/03_Task/*.md
+!01_Personal_Os/03_Task/.gitkeep
+!01_Personal_Os/03_Task/README.md
 
 # Matrix files (personal)
 00_Winter_is_Coming/BACKLOG.md
 
-# Personal knowledge files
+# Personal knowledge files (personal notes ignored; templates/shared tracked)
 01_Personal_Os/02_Knowledge/*.md
 !01_Personal_Os/02_Knowledge/.gitkeep
 !01_Personal_Os/02_Knowledge/README.md
+# Shared Org content is tracked (not personal)
+!01_Personal_Os/02_Knowledge/10_Shared_Org/**/*.md
+!01_Personal_Os/02_Knowledge/08_Templates/**/*.md
 
 # Keep templates and examples
 !config.example.yaml

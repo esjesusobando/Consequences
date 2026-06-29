@@ -1,0 +1,55 @@
+import logging
+import typing
+
+logging.basicConfig(level=logging.INFO)
+#!/usr/bin/env python3
+import os
+import subprocess
+import sys
+
+
+def sync_repo(repo_path):
+    """Realiza fetch y pull si hay cambios en el repo."""
+    print(f"Auditorando: {repo_path}")
+    try:
+        # Fetch remoto
+        subprocess.run(["git", "fetch"], cwd=repo_path, check=True, capture_output=True)
+        # Verificar si hay cambios
+        status = subprocess.run(
+            ["git", "rev-list", "HEAD..origin/main", "--count"],
+            cwd=repo_path,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+
+        count = int(status.stdout.strip())
+        if count > 0:
+            print(f"  -> Cambios detectados ({count} commits). Actualizando...")
+            subprocess.run(["git", "pull"], cwd=repo_path, check=True)
+            return True
+        else:
+            print("  -> Ecosistema al día.")
+            return False
+    except Exception as e:
+        print(f"  -> [ERR] Fallo al sincronizar {repo_path}: {e}")
+        return False
+
+
+def main():
+    # Ruta absoluta desde la ubicación del script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.abspath(os.path.join(script_dir, "..", "..", "..", ".."))
+    base_dir = os.path.join(root_dir, "01_Personal_Os", "07_Archive", "03_Backups_Refs", "01_Repos_Reference", "02_Repos_Gentleman")
+    if not os.path.exists(base_dir):
+        print(f"Directorio de respaldo no encontrado: {base_dir}")
+        sys.exit(0)
+
+    for repo in os.listdir(base_dir):
+        repo_path = os.path.join(base_dir, repo)
+        if os.path.isdir(os.path.join(repo_path, ".git")):
+            sync_repo(repo_path)
+
+
+if __name__ == "__main__":
+    main()

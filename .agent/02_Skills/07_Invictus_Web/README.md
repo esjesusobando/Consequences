@@ -8,11 +8,11 @@
 
 ## Navegacion Rapida
 
-| #  | Directorio            | Skill           | Descripcion                                |
+| #   | Directorio            | Skill           | Descripcion                                |
 | --- | --------------------- | --------------- | ------------------------------------------ |
-| 01 | `01_Superpowers/`     | Superpowers     | Superpoderes del sistema Invictus Web      |
-| 02 | `02_Buscador_Skills/` | Buscador Skills | Buscador inteligente de skills del sistema |
-| 03 | `03_Playwright/`      | Playwright      | Automatizacion de navegador con Playwright |
+| 01  | `01_Superpowers/`     | Superpowers     | Superpoderes del sistema Invictus Web      |
+| 02  | `02_Buscador_Skills/` | Buscador Skills | Buscador inteligente de skills del sistema |
+| 03  | `03_Playwright/`      | Playwright      | Automatizacion de navegador con Playwright |
 
 ---
 

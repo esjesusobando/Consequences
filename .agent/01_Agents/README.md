@@ -74,31 +74,31 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 ### Agentes Principales
 
-| #  | Agente                    | Dominio                                       | Prioridad   | Estado |
+| #   | Agente                    | Dominio                                       | Prioridad   | Estado |
 | --- | ------------------------- | --------------------------------------------- | ----------- | ------ |
-| 00 | 🧠 **OS Conductor v2.0**   | **Entry point único — Anthropic 2.0 Harness** | **CRÍTICA** | ✅ 🆕    |
-| 01 | Scope Rule Architect      | Arquitectura                                  | CRÍTICA     | ✅      |
-| 02 | TDD Test-First            | Tests (RED)                                   | ALTA        | ✅      |
-| 03 | Growth (Marketing Tech)   | Growth/Marketing                              | ALTA        | ✅      |
-| 04 | React Mentor              | Refactor                                      | MEDIA       | ✅      |
-| 05 | Security Auditor          | Seguridad                                     | CRÍTICA     | ✅      |
-| 06 | Git Workflow Manager      | Pull Request                                  | ALTA        | ✅      |
-| 07 | Accessibility Auditor     | Accesibilidad                                 | MEDIA       | ✅      |
-| 08 | PRD Dashboard Template    | Producto                                      | BAJA        | ✅      |
-| 09 | Design SOP Document       | Producto                                      | BAJA        | ✅      |
-| 10 | Workflow Orchestrator     | Orquestación                                  | CRÍTICA     | ✅      |
-| 11 | AIPM Judge                | Calidad/Auditoría                             | ALTA        | ✅      |
-| 12 | LFG Autonomous Engine     | Autonomía                                     | ALTA        | ✅      |
-| 13 | Hillary Specialist        | Life OS                                       | ALTA        | ✅      |
-| 14 | Laia Learning             | Aprendizaje y conocimiento                    | MEDIA       | ✅      |
-| 15 | **Marketing Estratega** 🌟 | Estrategia y briefs de contenido              | ALTA        | ✅ 🆕    |
-| 16 | **Marketing Creador** 🌟   | Producción multicanal (YT/LI/NL)              | ALTA        | ✅ 🆕    |
-| 17 | **Marketing Analista** 🌟  | Métricas y optimización                       | ALTA        | ✅ 🆕    |
-| 18 | Workflow YouTube          | Pipeline YouTube end-to-end                   | MEDIA       | ✅      |
-| 19 | Workflow LinkedIn         | Pipeline LinkedIn end-to-end                  | MEDIA       | ✅      |
-| 20 | Workflow Newsletter       | Pipeline Newsletter end-to-end                | MEDIA       | ✅      |
-| 21 | Learning Always           | Aprendizaje continuo                          | MEDIA       | ✅      |
-| 22 | Dynamic Workflows         | Workflows multi-agente dinámicos              | MEDIA       | ✅ 🆕    |
+| 00  | 🧠 **OS Conductor v2.0**   | **Entry point único — Anthropic 2.0 Harness** | **CRÍTICA** | ✅ 🆕    |
+| 01  | Scope Rule Architect      | Arquitectura                                  | CRÍTICA     | ✅      |
+| 02  | TDD Test-First            | Tests (RED)                                   | ALTA        | ✅      |
+| 03  | Growth (Marketing Tech)   | Growth/Marketing                              | ALTA        | ✅      |
+| 04  | React Mentor              | Refactor                                      | MEDIA       | ✅      |
+| 05  | Security Auditor          | Seguridad                                     | CRÍTICA     | ✅      |
+| 06  | Git Workflow Manager      | Pull Request                                  | ALTA        | ✅      |
+| 07  | Accessibility Auditor     | Accesibilidad                                 | MEDIA       | ✅      |
+| 08  | PRD Dashboard Template    | Producto                                      | BAJA        | ✅      |
+| 09  | Design SOP Document       | Producto                                      | BAJA        | ✅      |
+| 10  | Workflow Orchestrator     | Orquestación                                  | CRÍTICA     | ✅      |
+| 11  | AIPM Judge                | Calidad/Auditoría                             | ALTA        | ✅      |
+| 12  | LFG Autonomous Engine     | Autonomía                                     | ALTA        | ✅      |
+| 13  | Hillary Specialist        | Life OS                                       | ALTA        | ✅      |
+| 14  | Laia Learning             | Aprendizaje y conocimiento                    | MEDIA       | ✅      |
+| 15  | **Marketing Estratega** 🌟 | Estrategia y briefs de contenido              | ALTA        | ✅ 🆕    |
+| 16  | **Marketing Creador** 🌟   | Producción multicanal (YT/LI/NL)              | ALTA        | ✅ 🆕    |
+| 17  | **Marketing Analista** 🌟  | Métricas y optimización                       | ALTA        | ✅ 🆕    |
+| 18  | Workflow YouTube          | Pipeline YouTube end-to-end                   | MEDIA       | ✅      |
+| 19  | Workflow LinkedIn         | Pipeline LinkedIn end-to-end                  | MEDIA       | ✅      |
+| 20  | Workflow Newsletter       | Pipeline Newsletter end-to-end                | MEDIA       | ✅      |
+| 21  | Learning Always           | Aprendizaje continuo                          | MEDIA       | ✅      |
+| 22  | Dynamic Workflows         | Workflows multi-agente dinámicos              | MEDIA       | ✅ 🆕    |
 
 ---
 

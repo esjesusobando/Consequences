@@ -1,0 +1,110 @@
+import logging
+import typing
+
+logging.basicConfig(level=logging.INFO)
+import sys
+from pathlib import Path
+
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+import sys
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
+PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+ROOT = PERSONAL_OS.parent  # Project root
+
+sys.path.insert(0, str(SCRIPTS_OS))
+from config_paths import *
+
+import os
+import re
+import json
+import subprocess
+
+def validate():
+    # 1. Validate scripts in 08_Scripts_Os/
+    engine_dir = ENGINE_DIR
+    script_pattern = re.compile(r"^\d{2}_[a-zA-Z0-9_]+\.py$")
+    all_ok = True
+
+    print("[INFO] Validating scripts in 08_Scripts_Os/...")
+    for filename in os.listdir(engine_dir):
+        if filename == "60_Fast_Vision.py":
+            continue
+        # Excepciones: config_paths.py es backwards compatibility
+        if filename == "config_paths.py":
+            print(f"[OK] Script matches pattern: {filename} (backwards compatibility)")
+            continue
+        filepath = os.path.join(engine_dir, filename)
+        if os.path.isfile(filepath) and filename.endswith(".py"):
+            if not script_pattern.match(filename):
+                print(f"[FAIL] Script does not match pattern: {filename}")
+                all_ok = False
+            else:
+                print(f"[OK] Script matches pattern: {filename}")
+
+    # 2. Verify 05_System/04_Env/Requirements.txt
+    req_file = ROOT_DIR / "00_Core" / "Requirements.txt"
+    if req_file.exists():
+        print(f"[OK] Requirements file exists: {req_file}")
+    else:
+        print(f"[FAIL] Requirements file missing: {req_file}")
+        all_ok = False
+
+    # 3. Scan mcp-config.json
+    mcp_files = [
+        ROOT_DIR / ".mcp.json",
+    ]
+
+    for mcp_file in mcp_files:
+        if mcp_file.exists():
+            print(f"[INFO] Scanning {mcp_file}...")
+            with open(mcp_file, "r") as f:
+                try:
+                    data = json.load(f)
+
+                    # Simple scan for absolute paths starting with /
+                    def check_paths(obj):
+                        if isinstance(obj, str):
+                            if obj.startswith("/"):
+                                print(
+                                    f"[WARN] Absolute path found in {mcp_file}: {obj}"
+                                )
+                        elif isinstance(obj, dict):
+                            for v in obj.values():
+                                check_paths(v)
+                        elif isinstance(obj, list):
+                            for v in obj:
+                                check_paths(v)
+
+                    check_paths(data)
+                except Exception as e:
+                    print(f"[FAIL] Error parsing {mcp_file}: {e}")
+                    all_ok = False
+        else:
+            print(f"[FAIL] MCP config file not found: {mcp_file}")
+            all_ok = False
+
+    # 4. Invoke hook
+    print("[INFO] Invoking Notify_System.py...")
+    try:
+        subprocess.run(
+            ["python", str(ENGINE_DIR / "08_General" / "77_Notify_System.py")], check=True
+        )
+        print("[OK] Notify_System.py invoked successfully.")
+    except Exception as e:
+        print(f"[FAIL] Notify_System.py failed: {e}")
+        all_ok = False
+
+    if not all_ok:
+        print("[FAIL] Issues detected. Check output.")
+        exit(1)
+    else:
+        print("[OK] Fast Vision check passed.")
+        exit(0)
+
+
+if __name__ == "__main__":
+    validate()

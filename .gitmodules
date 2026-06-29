@@ -1,6 +1,8 @@
-[submodule "01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster"]
-	path = 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster
-	url = https://github.com/Gentleman-Programming/tubemaster.git
-[submodule "01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/engram"]
-	path = 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/engram
-	url = https://github.com/Gentleman-Programming/engram.git
+# Submodules — reference repos
+# NOTE: These are reference copies. Clone manually if needed:
+#   git clone https://github.com/Gentleman-Programming/tubemaster.git
+#   git clone https://github.com/Gentleman-Programming/engram.git
+#
+# Currently deactivated — the directories exist as plain folders in
+# 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
+# but are NOT active submodules. They are .gitignored.

@@ -20,11 +20,11 @@ Validar que el **Content Generation workflow** produce contenido alineado con la
 > 4. Preserva los conceptos clave del research (10/100/1000/10000, proceso invisible, cantidad > calidad)
 
 ### Inputs
-| Input      | Fuente                                      | Path                                                                   |
-|-----------|--------------------------------------------|-----------------------------------------------------------------------|
-| Research LA| Video "Por Qué La Suerte No Existe"         | `02_Knowledge/01_Research_Os/2026-05-31_Learning_Luck_Is_Repetition.md`|
-| Tono       | Rioplatense natural, coloquial pero con peso| Voice Guide (ver sección)                                              |
-| Formato    | LinkedIn post (~800-1200 chars)             | Estándar de la plataforma                                              |
+| Input       | Fuente                                       | Path                                                                    |
+| ----------- | -------------------------------------------- | ----------------------------------------------------------------------- |
+| Research LA | Video "Por Qué La Suerte No Existe"          | `02_Knowledge/01_Research_Os/2026-05-31_Learning_Luck_Is_Repetition.md` |
+| Tono        | Rioplatense natural, coloquial pero con peso | Voice Guide (ver sección)                                               |
+| Formato     | LinkedIn post (~800-1200 chars)              | Estándar de la plataforma                                               |
 
 ### Voice Guide Aplicada
 Basada en samples del OS (AGENTS.md, GOALS.md, conversation history):
@@ -60,27 +60,27 @@ Basada en samples del OS (AGENTS.md, GOALS.md, conversation history):
 
 ## ✅ Criterios de Éxito
 
-| #  | Criterio                                          | Peso  | Resultado  |
-|---|--------------------------------------------------|------|-----------|
-| 1  | Hook que engancha en línea 1                      | Alto  |            |
-| 2  | Framework 10/100/1000/10000 explicado claramente  | Alto  |            |
-| 3  | Conexión con filosofía Consequences               | Medio |            |
-| 4  | Sin clichés AI ("key insight", "here's the thing")| Alto  |            |
-| 5  | Tono consistente (rioplatense natural)            | Medio |            |
-| 6  | Longitud adecuada para LinkedIn (~800-1200 chars) | Medio |            |
-| 7  | Call-to-action claro                              | Bajo  |            |
-| 8  | Se lee como humano, no como AI                    | Alto  |            |
+| #   | Criterio                                           | Peso   | Resultado   |
+| --- | -------------------------------------------------- | ------ | ----------- |
+| 1   | Hook que engancha en línea 1                       | Alto   |             |
+| 2   | Framework 10/100/1000/10000 explicado claramente   | Alto   |             |
+| 3   | Conexión con filosofía Consequences                | Medio  |             |
+| 4   | Sin clichés AI ("key insight", "here's the thing") | Alto   |             |
+| 5   | Tono consistente (rioplatense natural)             | Medio  |             |
+| 6   | Longitud adecuada para LinkedIn (~800-1200 chars)  | Medio  |             |
+| 7   | Call-to-action claro                               | Bajo   |             |
+| 8   | Se lee como humano, no como AI                     | Alto   |             |
 
 ---
 
 ## 📊 Resultados
 
-| Métrica                 | Valor                                    |
-|------------------------|-----------------------------------------|
-| Post generado           | `02_Outputs/linkedin-post.md`            |
-| Evaluación              | `02_Outputs/evaluacion.md`               |
-| Workflow steps cumplidos| 4/5 (Step 5 queda a criterio del usuario)|
-| Tiempo de ejecución     | ~15min                                   |
+| Métrica                  | Valor                                     |
+| ------------------------ | ----------------------------------------- |
+| Post generado            | `02_Outputs/linkedin-post.md`             |
+| Evaluación               | `02_Outputs/evaluacion.md`                |
+| Workflow steps cumplidos | 4/5 (Step 5 queda a criterio del usuario) |
+| Tiempo de ejecución      | ~15min                                    |
 
 ---
 

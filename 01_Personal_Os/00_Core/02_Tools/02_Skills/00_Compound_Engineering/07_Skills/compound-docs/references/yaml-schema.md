@@ -1,0 +1,79 @@
+# YAML Frontmatter Schema
+
+**See `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/schema.yaml` for the complete schema specification.**
+
+## Required Fields
+
+- **module** (string): Module name (e.g., "EmailProcessing") or "System" for system-wide issues
+- **date** (string): ISO 8601 date (YYYY-MM-DD)
+- **problem_type** (enum): One of [build_error, test_failure, runtime_error, performance_issue, database_issue, security_issue, ui_bug, integration_issue, logic_error, developer_experience, workflow_issue, best_practice, documentation_gap]
+- **component** (enum): One of [rails_model, rails_controller, rails_view, service_object, background_job, database, frontend_stimulus, hotwire_turbo, email_processing, brief_system, assistant, authentication, payments, development_workflow, testing_framework, documentation, tooling]
+- **symptoms** (array): 1-5 specific observable symptoms
+- **root_cause** (enum): One of [missing_association, missing_include, missing_index, wrong_api, scope_issue, thread_violation, async_timing, memory_leak, config_error, logic_error, test_isolation, missing_validation, missing_permission, missing_workflow_step, inadequate_documentation, missing_tooling, incomplete_setup]
+- **resolution_type** (enum): One of [code_fix, migration, config_change, test_fix, dependency_update, environment_setup, workflow_improvement, documentation_update, tooling_addition, seed_data_update]
+- **severity** (enum): One of [critical, high, medium, low]
+
+## Optional Fields
+
+- **rails_version** (string): Rails version in X.Y.Z format
+- **tags** (array): Searchable keywords (lowercase, hyphen-separated)
+
+## Validation Rules
+
+1. All required fields must be present
+2. Enum fields must match allowed values exactly (case-sensitive)
+3. symptoms must be YAML array with 1-5 items
+4. date must match YYYY-MM-DD format
+5. rails_version (if provided) must match X.Y.Z format
+6. tags should be lowercase, hyphen-separated
+
+## Example
+
+```yaml
+---
+module: Email Processing
+date: 2025-11-12
+problem_type: performance_issue
+component: rails_model
+symptoms:
+  - "N+1 query when loading email threads"
+  - "Brief generation taking >5 seconds"
+root_cause: missing_include
+rails_version: 7.1.2
+resolution_type: code_fix
+severity: high
+tags: [n-plus-one, eager-loading, performance]
+---
+```
+
+## Category Mapping
+
+Based on `problem_type`, documentation is filed in:
+
+- **build_error** → `05_Scripts/06_Solutions/build-errors/`
+- **test_failure** → `05_Scripts/06_Solutions/test-failures/`
+- **runtime_error** → `05_Scripts/06_Solutions/runtime-errors/`
+- **performance_issue** → `05_Scripts/06_Solutions/performance-issues/`
+- **database_issue** → `05_Scripts/06_Solutions/database-issues/`
+- **security_issue** → `05_Scripts/06_Solutions/security-issues/`
+- **ui_bug** → `05_Scripts/06_Solutions/ui-bugs/`
+- **integration_issue** → `05_Scripts/06_Solutions/integration-issues/`
+- **logic_error** → `05_Scripts/06_Solutions/logic-errors/`
+- **developer_experience** → `05_Scripts/06_Solutions/developer-experience/`
+- **workflow_issue** → `05_Scripts/06_Solutions/workflow-issues/`
+- **best_practice** → `05_Scripts/06_Solutions/best-practices/`
+- **documentation_gap** → `05_Scripts/06_Solutions/documentation-gaps/`
+
+
+---
+## 🧠 SOTA Upgrade: Chain of Thought & System Constraints (v5.0)
+
+> [!IMPORTANT]
+> **Auto-Injected SOTA Rules:** Para asegurar un performance de estado del arte (SOTA), el Agente debe seguir estas directrices al ejecutar este skill:
+
+1. **Plan-First (CoT)**: Antes de generar código o respuestas definitivas, debes explicar tu lógica paso a paso. Piensa en voz alta.
+2. **No Data Loss**: Nunca elimines información valiosa al modificar archivos. Si refactorizas, documenta o comenta lo que quitas si tiene valor semántico.
+3. **Strict Validation**: Verifica que el resultado final cumple con todas las validaciones de tipos y convenciones de este OS (ej. `Snake_Case`, Type Hints en Python).
+4. **Context Awareness**: Asegúrate de mantener la coherencia con `Context_Memory.md` y `task.md`.
+
+*Upgraded by 35_SOTA_Skill_Modernizer.py on 2026-06-27*

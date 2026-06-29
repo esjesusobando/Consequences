@@ -9,7 +9,7 @@
 
 ---
 
-## 📊 Estado del Sistema (v5.0 — 2026-06-27)
+## 📊 Estado del Sistema (v5.0 — 2026-06-28)
 
 > 🟢 **PRODUCTION READY** — SOTA v5.0 Upgrade: CoT Skills + Type Hints Scripts + Ground Truth Sync
 
@@ -36,24 +36,34 @@
 Think_Different/
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/                   ✅ Motor del OS
+│   ├── 00_Core/                   ✅ Motor del OS
 │   │   ├── 00_Workflows_Os/       ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/              ✅ 14 reglas .mdc
 │   │   └── 02_Tools/              ✅ Herramientas
+│   │       ├── 00_SDD/            ✅ SDD Registry + JARVIS manifests
 │   │       ├── 01_Agents/         ✅ 63 agentes (9 categorías) [FIXED]
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
-│   │       ├── 03_Mcp/            ✅ Backup MCP configs (2 JSON + 3 subdirs)
+│   │       ├── 03_Mcp/            ✅ Backup MCP configs
+│   │       ├── 04_Integrations/   ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases) [FIXED]
 │   │       ├── 06_Plugins/        ✅ Plugins OS
-│   │       └── 07_Server/         ✅ Engram server
-│   ├── 02_Knowledge/              ✅ Base de conocimiento
-│   ├── 03_Task/                   ✅ Tareas activas (YAML 100%)
-│   ├── 04_Operations/             ✅ Motor operativo
-│   │   ├── 00_Context_LLM/        ✅ Memoria LLM
+│   │       ├── 07_Server/         ✅ MCP Server
+│   │       ├── 08_Evals/          ✅ Evaluadores
+│   │       └── 09_Templates/      ✅ Templates
+│   ├── 01_Memory/                 ✅ Memoria LLM, Process Notes
+│   ├── 02_Knowledge/              ✅ Base de conocimiento (estática)
+│   ├── 03_Learning/               ✅ Conocimiento activo
+│   │   ├── 00_Shared_Org/         ✅ Capital Token
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora (cada 8h)
-│   │   ├── 02_Agent_Teams_Lite/   ✅ SDD + JARVIS manifests
-│   │   └── 03_Scripts_Os/         ✅ 42 HUBs funcionales — 166 scripts [FIXED]
-│   └── 05_Archive/                ✅ 3 categories (15,529 files)
+│   │   ├── 02_Learning_Always/    ✅ Aprendizaje continuo
+│   │   ├── 03_Content/            ✅ Creación de contenido
+│   │   └── 04_Telemetry/          ✅ Telemetría y monitoreo
+│   ├── 04_Tasks/                  ✅ Tareas activas (YAML 100%)
+│   ├── 05_Scripts/                ✅ Scripts operativos
+│   │   ├── 00_HUBs/              ✅ 42 HUBs funcionales — 166 scripts [FIXED]
+│   │   └── 01_Installer/         ✅ Instalador del OS
+│   ├── 06_Projects/               ✅ Proyectos activos
+│   └── 07_Archive/                ✅ Backups, snapshots, históricos
 ├── 02_Playground/                  ✅ Zona de pruebas
 │   └── Graphify_Out/              ✅ Knowledge graph
 ├── 03_Resultado/                   ✅ Outputs de proyectos
@@ -122,7 +132,7 @@ Think_Different/
 > *Fase 1 Foundation completada — 2026-06-27*
 
 ```
-10_Shared_Org/ (en Knowledge)
+00_Shared_Org/ (en 03_Learning/)
 ├── playbooks/        # 1 listo — Onboarding Nuevo Cliente
 ├── decisions/        # 1 registrado — ADR-001 Opción C Híbrido
 ├── agents/           # 3 templates — Admin, Finance, HR
@@ -139,7 +149,7 @@ Think_Different/
 > **Pipeline:** Detectar → Analizar → Fix → Aprender
 
 ```bash
-# Ubicación: 01_Personal_Os/04_Operations/01_Auto_Improvement/
+# Ubicación: 01_Personal_Os/03_Learning/01_Auto_Improvement/
 # Runner: Windows Task Scheduler (01:05, 09:05, 17:05)
 # Última ejecución: 2026-06-27 01:05 ✅
 ```
@@ -157,9 +167,9 @@ Think_Different/
 | **AGENTS.md**               | `00_Winter_is_Coming/AGENTS.md`                                      |
 | **CLAUDE.md**               | Raíz — Config IAs                                                    |
 | **Capital Token Plan**      | `02_Playground/00_Capital_Token_Plan.md`                             |
-| **Capital Token README**    | `01_Personal_Os/02_Knowledge/10_Shared_Org/README.md`                |
-| **Auto-Improvement README** | `01_Personal_Os/04_Operations/01_Auto_Improvement/README.md`         |
-| **Session Summary**         | `01_Personal_Os/05_Archive/01_Plans_Completed/03_Session_Summaries/` |
+| **Capital Token README**    | `01_Personal_Os/03_Learning/00_Shared_Org/README.md`                 |
+| **Auto-Improvement README** | `01_Personal_Os/03_Learning/01_Auto_Improvement/README.md`           |
+| **Session Summary**         | `01_Personal_Os/07_Archive/01_Plans_Completed/03_Session_Summaries/` |
 
 ---
 
@@ -179,5 +189,5 @@ CC BY-NC-SA 4.0 — Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-27_
-_SOTA v5.0: CoT Skills Injection + Type Hints Scripts + Ground Truth Sync (System Mapper)_
+_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-28_
+_SOTA v5.0: CoT Skills Injection + Type Hints Scripts + Ground Truth Sync — Structure: 00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive_

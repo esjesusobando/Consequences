@@ -1,0 +1,143 @@
+import logging
+import typing
+
+logging.basicConfig(level=logging.INFO)
+#!/usr/bin/env python3
+"""
+09_Data_Hub.py — Data Processing & Analytics Hub
+==================================================
+PersonalOS v6.1 | Think Different
+
+Procesa y analiza datos del OS: métricas de sesiones, consumo de tokens,
+performance de skills, reportes de auditoría y visualización de tendencias.
+Genera outputs en `05_Scripts/07_Reports/` para revisión manual o automatizada.
+
+Uso:
+    python 09_Data_Hub.py --help
+    python 09_Data_Hub.py analyze
+    python 09_Data_Hub.py report --period week
+    python 09_Data_Hub.py export --format csv
+"""
+import argparse
+import subprocess
+import sys
+from pathlib import Path
+
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
+PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+ROOT = PERSONAL_OS.parent  # Project root
+
+sys.path.insert(0, str(SCRIPTS_OS))
+from config_paths import *
+
+# === COLOR SETUP ===
+try:
+    from colorama import init, Fore, Style
+    init(autoreset=True)
+except ImportError:
+    class Fore: GREEN = YELLOW = RED = CYAN = MAGENTA = BLUE = ""
+    class Style: RESET_ALL = ""
+
+# Fix Windows console encoding
+if sys.platform == "win32":
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+
+
+def print_banner():
+    banner = rf"""
+{Fore.BLUE}    ###########################################################################
+    #                                                                         #
+    #      _____  _____ _____  ______ _    _                                    #
+    #     |  __ \|  __ \_   _| |  __ \ |  | |                                   #
+    #     | |  | | |  | | |   | |  | | |__| |                                   #
+    #     | |  | | |  | | |   | |  | |  __  |                                   #
+    #     | |__| | |__| |_|   | |__| | |  | |                                   #
+    #     |_____/|_____/|_|   |_____/|_|  |_|                                   #
+    #                                                                         #
+    #                        D A T A   H U B                                  #
+    #                       P E R S O N A L   O S                             #
+    ###########################################################################{Style.RESET_ALL}
+"""
+    print(banner)
+
+
+def dynamic_speak(text):
+    print(f"{Fore.MAGENTA}[VOICE]: {text}{Style.RESET_ALL}")
+
+
+def run_script(script_name):
+    # Los scripts de Datos migraron a 08_Data/ con nueva numeración
+    # Mapa de nombres legacy → nuevos en 08_Data/
+    data_rename_map = {
+        "84_Batch_Parser.py": "01_Batch_Parser.py",
+        "85_Resumen_Extractor.py": "02_Resumen_Extractor.py",
+        "86_Universal_Parser.py": "03_Universal_Parser.py",
+        "20_Master_Analytics_Factory.py": "00_Master_Analytics_Factory.py",
+    }
+    data_name = data_rename_map.get(script_name, script_name)
+    
+    script_path = ENGINE_DIR / "08_Data" / data_name
+    if not script_path.exists():
+        # Fallback a 13_Legacy para scripts no migrados (ej: 19_Generate_Progress.py)
+        script_path = ENGINE_DIR / "13_Legacy" / script_name
+        if not script_path.exists():
+            print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
+            return
+
+    print(f"{Fore.YELLOW}[RUNNING] Ejecutando: {script_name}...{Style.RESET_ALL}")
+    scripts_dir = str(Path(__file__).parent)
+    env = {**__import__("os").environ, "PYTHONPATH": scripts_dir}
+    subprocess.run([sys.executable, str(script_path)], cwd=scripts_dir, env=env)
+
+
+def main():
+    print_banner()
+    parser = argparse.ArgumentParser(
+        description="Hub centralizador de Datos y Reportes."
+    )
+    subparsers = parser.add_subparsers(dest="command", help="Comandos de Datos")
+
+    # Definir subcomandos — nombres actualizados a numeración v4.9
+    subparsers.add_parser(
+        "progress",
+        help="Generación de reportes de progreso (reutiliza 19_Generate_Progress.py en 13_Legacy)",
+    )
+    subparsers.add_parser(
+        "analytics",
+        help="Fábrica de analítica maestra (reutiliza 00_Master_Analytics_Factory.py en 08_Data)",
+    )
+    subparsers.add_parser(
+        "parser", help="Parser universal (reutiliza 03_Universal_Parser.py en 08_Data)"
+    )
+    subparsers.add_parser(
+        "extract", help="Extractor de resúmenes (reutiliza 02_Resumen_Extractor.py en 08_Data)"
+    )
+    subparsers.add_parser(
+        "batch", help="Parser por lotes (reutiliza 01_Batch_Parser.py en 08_Data)"
+    )
+
+    args = parser.parse_args()
+
+    # Mapeo de comandos
+    cmd_map = {
+        "progress": "19_Generate_Progress.py",
+        "analytics": "20_Master_Analytics_Factory.py",
+        "parser": "86_Universal_Parser.py",
+        "extract": "85_Resumen_Extractor.py",
+        "batch": "84_Batch_Parser.py",
+    }
+
+    if args.command in cmd_map:
+        dynamic_speak(f"Ejecutando comando de datos: {args.command}")
+        run_script(cmd_map[args.command])
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()

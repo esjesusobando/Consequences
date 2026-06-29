@@ -43,12 +43,12 @@
 
 | Recurso                               | Path                                                                           |
 |--------------------------------------|-------------------------------------------------------------------------------|
-| **Skills (Sistema)**                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                   |
-| **Agents**                            | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                                   |
-| **Rules**                             | `01_Personal_Os/01_Core/01_Rules/`                                             |
-| **HUBs**                              | `01_Personal_Os/04_Operations/03_Scripts_Os/`                                  |
-| **Manifests**                         | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`                |
-| **Workflows**                         | `01_Personal_Os/01_Core/00_Workflows_Os/`                                      |
+| **Skills (Sistema)**                  | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                                   |
+| **Agents**                            | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                                   |
+| **Rules**                             | `01_Personal_Os/00_Core/01_Rules/`                                             |
+| **HUBs**                              | `01_Personal_Os/05_Scripts/00_HUBs/`                                           |
+| **Manifests**                         | `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/`                          |
+| **Workflows**                         | `01_Personal_Os/00_Core/00_Workflows_Os/`                                      |
 | **Skills Globales**                   | `~/.config/opencode/skills/`                                                   |
 | **Skills Locales**                    | `.opencode/skills/`                                                            |
 
@@ -58,52 +58,57 @@
 
 ```bash
 # regenerar 7 manifests JARVIS
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan
 
 # health check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/17_Watchdog_Hub.py
 
 # stats ASCII
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/05_Scripts/00_HUBs/18_Telemetry_Hub.py --dashboard
 
 # MCP drift
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 
 # sync de agentes
-python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/19_Agent_Sync_Hub.py
 ```
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.9
+## 🗂️ ESTRUCTURA COMPLETA v5.0
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
+│   ├── 00_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
+│   │       ├── 00_SDD/          ✅ SDD Registry + JARVIS manifests
 │   │       ├── 01_Agents/         ✅ 63 agentes (9 categorías) [FIXED]
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
-│   │       ├── 03_Mcp/           ✅ Backup MCP (2 JSON + 3 subdirs)
+│   │       ├── 03_Mcp/           ✅ Backup MCP
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases) [FIXED]
 │   │       ├── 06_Plugins/        ✅ Plugins OS
-│   │       ├── 07_Server/         ✅ Engram server
+│   │       ├── 07_Server/         ✅ MCP Server
 │   │       ├── 08_Evals/          ✅ Evaluadores
 │   │       └── 09_Templates/      ✅ Templates
-│   ├── 02_Knowledge/              ✅ Base de conocimiento (10_Shared_Org/ — Capital Token F1)
-│   ├── 03_Task/                   ✅ Tareas activas
-│   └── 04_Operations/             ✅ Motor operativo
-│       ├── 00_Context_LLM/        ✅ Memoria LLM
-│       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
-│       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 39 HUBs — 163 scripts [FIXED]
-│       ├── 04_Installer/          ✅ Scripts de instalación
-│       ├── 05_Projects/          ✅ Proyectos activos
-│       └── 06_SOTA_Features/     ✅ Features SOTA
+│   ├── 01_Memory/                  ✅ Memoria LLM, Process Notes
+│   ├── 02_Knowledge/              ✅ Base de conocimiento (estática)
+│   ├── 03_Learning/               ✅ Conocimiento activo
+│   │   ├── 00_Shared_Org/        ✅ Capital Token F1
+│   │   ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
+│   │   ├── 02_Learning_Always/   ✅ Aprendizaje continuo
+│   │   ├── 03_Content/           ✅ Creación de contenido
+│   │   └── 04_Telemetry/         ✅ Telemetría y monitoreo
+│   ├── 04_Tasks/                   ✅ Tareas activas (YAML 100%)
+│   ├── 05_Scripts/                 ✅ Scripts operativos
+│   │   ├── 00_HUBs/              ✅ 39 HUBs — 163 scripts [FIXED]
+│   │   └── 01_Installer/         ✅ Instalador del OS
+│   ├── 06_Projects/                ✅ Proyectos activos
+│   └── 07_Archive/                 ✅ Backups, snapshots, históricos
 ├── 02_Playground/                ✅ Zona de pruebas
 │   └── Graphify_Out/            ✅ Knowledge graph (god nodes, communities)
 ├── 03_Resultado/                 ✅ Outputs de proyectos
@@ -111,7 +116,7 @@ Think_Different/
 ├── .atl/                         ✅ SDD Registry + openspec/
 ├── .claude/                      ✅ Config Claude Code + rules
 ├── .opencode/                    ✅ Config OpenCode + skills locales
-├── .mcp.json                     ✅ 11 MCPs root activos (ver 03_Mcp/ para backup)
+├── .mcp.json                     ✅ 11 MCPs root activos (ver 00_Core/02_Tools/03_Mcp/ para backup)
 ├── OS_DIRECTORY.md               ✅ Este archivo — JARVIS discovery
 ├── AGENTS.md                    ✅ GGA Pre-Commit entry
 ├── CLAUDE.md                    ✅ Config IAs (FUENTE)
@@ -184,7 +189,7 @@ Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos**
 
 ## 🎯 HUBs — 32 SCRIPTS/DIRECTORIOS TOTALES
 
-### HUBs Principales (en raíz de 03_Scripts_Os/)
+### HUBs Principales (en raíz de 05_Scripts/00_HUBs/)
 
 | #   | Hub                                      | Script                                                         | Propósito                                             |
 |----|-----------------------------------------|---------------------------------------------------------------|------------------------------------------------------|
@@ -205,7 +210,7 @@ Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos**
 | 16  | Agent Mirror                             | `16_Agent_Mirror_Hub.py`                                       | Mirror agentes source → backup                        |
 | 17  | Watchdog ★                               | `17_Watchdog_Hub.py`                                           | Health watchdog                                       |
 | 18  | Telemetry ★                              | `18_Telemetry_Hub.py`                                          | Dashboard de métricas                                 |
-| 19  | Agent Sync                               | `19_Agent_Sync_Hub.py`                                         | Sync .agent ↔ 01_Core                                 |
+| 19  | Agent Sync                               | `19_Agent_Sync_Hub.py`                                         | Sync .agent ↔ 00_Core                                 |
 | 20  | System Mapper ★                          | `20_System_Mapper_Hub.py`                                      | Genera 7 manifests JARVIS                             |
 | 25  | Minimax Optimizer                        | `25_Minimax_Optimizer_Hub.py`                                  | Optimización MiniMax                                  |
 | —   | HUB SOTA                                 | `HUB_SOTA.py`                                                  | HUB de HUBs SOTA                                      |
@@ -234,16 +239,16 @@ Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos**
 cat OS_DIRECTORY.md
 
 # HUBs canónicos JARVIS
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/00_HUBs/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 
 # Skill registry
 cat .atl/skill-registry.md
 
 # JARVIS manifests
-ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
+ls 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
 ```
 
 ---
@@ -260,4 +265,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-27 | PersonalOS v4.9.1 — Full Project Audit + Count Corrections | 396 skills | 63 agents source | 72 backup | 39 HUBs | 29 workflows | 14 rules | 10 hooks [FIXED] [MAY DRIFT]*
+*Actualizado: 2026-06-28 | PersonalOS v5.0 — Paths updated to new layout (00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive) | 396 skills | 63 agents source | 72 backup | 39 HUBs | 29 workflows | 14 rules | 10 hooks [FIXED] [MAY DRIFT]*

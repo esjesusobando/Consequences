@@ -27,9 +27,3 @@ Reference materials for the SDD Verify phase.
 | Rust         | `Cargo.toml` exists               | `cargo test`             |
 
 ## Build Commands
-
-| Project Type | Detection              | Command           |
-| ------------ | ---------------------- | ----------------- |
-| Go           | `go.mod` exists        | `go build ./...`  |
-| Node.js + TS | `tsconfig.json` exists | `tsc --noEmit`    |
-| Python       | `pyproject.toml`       | `python -m build` |

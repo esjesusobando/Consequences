@@ -7,11 +7,11 @@
 
 ## Skills en esta categoría
 
-| #  | Skill                                                 | Script                    | Propósito                           |
+| #   | Skill                                                 | Script                    | Propósito                           |
 | --- | ----------------------------------------------------- | ------------------------- | ----------------------------------- |
-| 01 | [01_Universal_Doc_Reader](./01_Universal_Doc_Reader/) | `83_Universal_Parser.py`  | Extracción individual de archivos   |
-| 02 | [02_Batch_Doc_Processor](./02_Batch_Doc_Processor/)   | `84_Batch_Parser.py`      | Procesamiento masivo de directorios |
-| 03 | [03_Resumen_Extractor](./03_Resumen_Extractor/)       | `85_Resumen_Extractor.py` | Extracción de CVs y resúmenes       |
+| 01  | [01_Universal_Doc_Reader](./01_Universal_Doc_Reader/) | `83_Universal_Parser.py`  | Extracción individual de archivos   |
+| 02  | [02_Batch_Doc_Processor](./02_Batch_Doc_Processor/)   | `84_Batch_Parser.py`      | Procesamiento masivo de directorios |
+| 03  | [03_Resumen_Extractor](./03_Resumen_Extractor/)       | `85_Resumen_Extractor.py` | Extracción de CVs y resúmenes       |
 
 ---
 

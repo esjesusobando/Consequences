@@ -1,7 +1,7 @@
 # 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v5.0 (SOTA)
 
 > **Versión:** 5.0 (SOTA)
-> **Fecha:** 2026-06-27
+> **Fecha:** 2026-06-28
 > **Estado:** Production Ready — SOTA Upgraded (CoT Injected, Type Hints, Logging)
 > **Audit v5.0 (Complete Audit):** 2026-06-27 — SOTA upgrade applied across all scripts and skills.
 > **Auto-Improvement:** ✅ Activo — Corre cada 8h (01:05, 09:05, 17:05)
@@ -34,10 +34,11 @@ Think_Different/                    # RAÍZ
 
 ```
 01_Personal_Os/
-├── 01_Core/                       # MOTOR DEL OS
+├── 00_Core/                       # MOTOR DEL OS
 │   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
+│       ├── 00_SDD/               # SDD registry + JARVIS manifests
 │       ├── 01_Agents/            # 63 agentes source (9 categorías) [FIXED]
 │       ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
 │       ├── 03_Mcp/               # Backup MCP configs (2 JSON + 3 subdirs)
@@ -45,28 +46,24 @@ Think_Different/                    # RAÍZ
 │       ├── 05_Hooks/             # 10 hooks (6 fases) [FIXED]
 │       ├── 06_Plugins/           # Plugins OS
 │       ├── 07_Server/            # Engram server
+│       ├── 08_Evals/             # Evaluadores, dashboard y métricas
 │       └── 09_Templates/         # Templates
-├── 02_Knowledge/                 # Base de conocimiento
+├── 01_Memory/                    # Memoria LLM (CTX + Process Notes)
+├── 02_Knowledge/                 # Base de conocimiento (estática)
 │   ├── 00_Examples_Personal_Os/  # Ejemplos del OS
-│   ├── 01_Research_Os/           # Investigaciones y transcripts
-│   ├── 02_Research/              # Investigación general
-│   ├── 03_Writing_Content/       # Redacción y contenido
-│   ├── 04_Docs/                  # Documentación técnica
-│   ├── 05_Aipm/                  # AI Performance Monitoring
+│   ├── 01_Research/              # Investigaciones (consolidado)
+│   ├── 02_Docs/                  # Documentación técnica
 │   ├── 06_Unicorn/               # Unicorn content
 │   ├── 07_Invictus/              # Invictus project
-│   ├── 08_Templates/             # Templates reutilizables
-│   ├── 09_Anthropic/             # Anthropic references
-│   └── 10_Shared_Org/            # 🌕 Capital Token — Conocimiento organizacional compartido
-│       ├── playbooks/            # Procesos repetitivos documentados
-│       ├── decisions/            # ADRs — Architectural Decision Records
-│       ├── processes/            # SOPs operativos
-│       ├── agents/               # Templates de agentes por rol
-│       ├── context/              # Contexto organizacional compartido
-│       └── metrics/              # Dashboard y tracking del Capital Token
-├── 03_Task/                      # Tareas activas (YAML frontmatter 100%)
-├── 04_Operations/                # Motor operativo
-│   ├── 00_Context_LLM/           # Memoria LLM (CTX + Process Notes)
+│   └── 09_Anthropic/             # Anthropic references
+├── 03_Learning/                  # Conocimiento activo
+│   ├── 00_Shared_Org/            # 🌕 Capital Token — Conocimiento organizacional
+│   │   ├── playbooks/            # Procesos repetitivos documentados
+│   │   ├── decisions/            # ADRs — Architectural Decision Records
+│   │   ├── processes/            # SOPs operativos
+│   │   ├── agents/               # Templates de agentes por rol
+│   │   ├── context/              # Contexto organizacional compartido
+│   │   └── metrics/              # Dashboard y tracking del Capital Token
 │   ├── 01_Auto_Improvement/      # 🔄 Motor auto-mejora recursiva (ACTIVO — cada 8h)
 │   │   ├── 01_Engine/            # Pipeline: detector → analyzer → executor → learner
 │   │   ├── 02_Rules/             # Reglas de detección y auto-fix
@@ -74,17 +71,18 @@ Think_Different/                    # RAÍZ
 │   │   ├── 04_Triggers/          # Task Scheduler (setup + cron)
 │   │   ├── recursive_improvement_engine.py  # Orquestador del pipeline
 │   │   └── learnings.json        # 130+ fixes aplicados históricamente
-│   ├── 02_Agent_Teams_Lite/      # SDD registry + 7 manifests JARVIS
-│   ├── 03_Scripts_Os/            # 42 HUBs funcionales — 166 scripts (33 .py raiz + 133 subdirs)
-│   ├── 04_Installer/             # Scripts de instalación
-│   ├── 05_Projects/              # Proyectos activos
-│   ├── 06_SOTA_Features/         # Features estado-del-arte
-│   └── 07_Reports/               # Reportes generados
-├── 05_Archive/                   # Backups, snapshots, históricos
-│   ├── 01_Plans_Completed/       # Planes, docs, session summaries (36 archivos)
-│   ├── 02_Skills_Legacy/         # Skills legacy (2,249 archivos) [FIXED]
-│   └── 03_Backups_Refs/          # Backups, repos, audits (11,582 archivos)
-└── 06_Evals/                     # Evaluadores, dashboard y métricas
+│   ├── 02_Learning_Always/       # Aprendizaje continuo
+│   ├── 03_Content/               # Creación de contenido (ex Writing_Content)
+│   └── 04_Telemetry/             # Telemetría y monitoreo (ex Aipm)
+├── 04_Tasks/                     # Tareas activas (YAML frontmatter 100%)
+├── 05_Scripts/                   # Scripts operativos
+│   ├── 00_HUBs/                  # HUBs funcionales — scripts del sistema
+│   └── 01_Installer/             # Scripts de instalación
+├── 06_Projects/                  # Proyectos activos
+└── 07_Archive/                   # Backups, snapshots, históricos
+    ├── 01_Plans_Completed/       # Planes, docs, session summaries
+    ├── 02_Skills_Legacy/         # Skills legacy [FIXED]
+    └── 03_Backups_Refs/          # Backups, repos, audits
 ```
 
 ---
@@ -210,7 +208,7 @@ Think_Different/                    # RAÍZ
 
 ## ✅ Ground Truth (verificado 2026-06-27 — System Mapper v5.0)
 
-> Fuente: `20_System_Mapper_Hub.py --scan` ejecutado en vivo el 2026-06-27T13:19:17
+> Fuente: `python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan` ejecutado en vivo el 2026-06-27T13:19:17
 
 | Métrica               | Valor verificado               | Volatilidad  |
 |-----------------------|--------------------------------|--------------|
@@ -248,11 +246,12 @@ Think_Different/                    # RAÍZ
 
 ## 🌕 CAPITAL TOKEN — Shared Organization Knowledge
 
+> **Ubicación:** `01_Personal_Os/03_Learning/00_Shared_Org/`
 > **Opción C — Híbrido**: Personal OS como core + capa compartida para el equipo.
 > *Implementado: 2026-06-27 | Fase 1 Foundation*
 
 ```
-10_Shared_Org/ (en Knowledge)
+00_Shared_Org/ (en 03_Learning/)
 ├── playbooks/          # Procesos repetitivos documentados (1 listo)
 ├── decisions/          # ADRs — Architectural Decision Records (1 registrado)
 ├── processes/          # SOPs — Standard Operating Procedures (template listo)
@@ -272,10 +271,11 @@ Think_Different/                    # RAÍZ
 > **Pipeline:** Detectar → Analizar → Fix → Aprender
 
 ```
+Ubicación: 01_Personal_Os/03_Learning/01_Auto_Improvement/
 Windows Task Scheduler: "AutoImprovementPersonalOS"
 Schedule: Cada 8h (01:05, 09:05, 17:05)
 Runner: run_scheduled.bat → cron_trigger.py --once --apply (LIVE)
-Última ejecución: 2026-06-27 01:05 ✅ (47 issues detectados)
+Última ejecución: 2026-06-28 ✅
 ```
 
 | Fixer                      | Categoría | Qué hace                            |
@@ -289,4 +289,4 @@ Runner: run_scheduled.bat → cron_trigger.py --once --apply (LIVE)
 
 ---
 
-*Structure v5.0 — 2026-06-27 — Think Different PersonalOS (SOTA) — Ground Truth: System Mapper scan*
+*Structure v5.0 — 2026-06-28 — Think Different PersonalOS (SOTA) — Restructured: 00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive*

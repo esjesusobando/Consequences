@@ -8,10 +8,10 @@
 
 ## Navegacion Rapida
 
-| #  | Directorio          | Skill         | Descripcion                            |
+| #   | Directorio          | Skill         | Descripcion                            |
 | --- | ------------------- | ------------- | -------------------------------------- |
-| 01 | `01_Video_Intel/`   | Video Intel   | Investigacion e inteligencia de video  |
-| 02 | `02_James_Cameron/` | James Cameron | Produccion cinematografica y narrative |
+| 01  | `01_Video_Intel/`   | Video Intel   | Investigacion e inteligencia de video  |
+| 02  | `02_James_Cameron/` | James Cameron | Produccion cinematografica y narrative |
 
 ---
 

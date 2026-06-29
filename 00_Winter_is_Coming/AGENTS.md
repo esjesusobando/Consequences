@@ -29,34 +29,34 @@ cat .atl/skill-registry.md
 
 # 3.5. Adaptive Boot — Carga condicional de contexto (NUEVO)
 # Detecta tipo de agente y carga solo contexto relevante
-python 01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py --agent "$AGENT_NAME" --json
+python 01_Personal_Os/01_Memory/adaptive_boot.py --agent "$AGENT_NAME" --json
 # Si el agente es desconocido, fallback a carga completa (comportamiento actual)
 # Ahorra 60-70% de tokens por boot
 
 # 4. Verificar Hillary Inbox (tareas personales pendientes)
-ls 01_Personal_Os/03_Task/02_Hillary_Inbox/  # SI hay archivos .md → procesar con Hillary antes de continuar
+ls 01_Personal_Os/04_Tasks/02_Hillary_Inbox/  # SI hay archivos .md → procesar con Hillary antes de continuar
 
 # 5. Si hay trabajo en curso, verificar estado
-cat 01_Personal_Os/03_Task/  # tareas activas
+cat 01_Personal_Os/04_Tasks/  # tareas activas
 
 # 6. Consultar reference repos para metodología upstream
-ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
+ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
 ```
 
 ### Mapa de Recursos del Orquestador
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (396, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
-| **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (63 source | 72 backup) [FIXED]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (36 HUBs — 168 scripts)            | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 168 scripts totales                       |
+| **Skills** (396, 15 áreas)                         | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Reglas** (14 .mdc)                               | `01_Personal_Os/00_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
+| **Agentes** (63 source | 72 backup) [FIXED]                       | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (36 HUBs — 168 scripts)            | `01_Personal_Os/05_Scripts/00_HUBs/`                                       | Operaciones de sistema — 168 scripts totales                       |
 | **MCPs** (11 root + configs globales)              | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
-| **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
+| **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
-| **Adaptive Boot**                                  | `01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py`             | Carga condicional de contexto (60-70% ahorro tokens)              |
+| **Adaptive Boot**                                  | `01_Personal_Os/01_Memory/adaptive_boot.py`                                | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
-| **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
+| **Auto-Improvement**                               | `01_Personal_Os/03_Learning/01_Auto_Improvement/`                          | Detección y fix recursivo de issues                                |
 | **Workflows** | **29** (7 categorías) [FIXED] en 7 categorías                                      |
 
 ---
@@ -88,7 +88,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 ### Dream Team (7 Especialistas)
 
-📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`
+📁 `01_Personal_Os/00_Core/02_Tools/01_Agents/01_Dream_Team/`
 
 | Agente                                       | Archivo                                          | Rol                                           | Skills que usa                                        |
 |---------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------------------|
@@ -100,7 +100,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 ### Especialistas Compound (24)
 
-📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`
+📁 `01_Personal_Os/00_Core/02_Tools/01_Agents/02_Specialists_Compound/`
 
 > ⚠️ Tabla muestra los principales. Hay 24 especialistas en total incluyendo: Agent-Native-Reviewer, Ankane-Readme-Writer, Architecture-Strategist, Best-Practices-Researcher, Code-Simplicity-Reviewer, Data-Integrity-Guardian, Data-Migration-Expert, Deployment-Verification-Agent, Design-Implementation-Reviewer, Design-Iterator, Dhh-Rails-Reviewer, Figma-Design-Sync, Framework-Docs-Researcher, Git-History-Analyzer, Julik-Frontend-Races-Reviewer, Kieran-Python-Reviewer, Kieran-Rails-Reviewer, Kieran-Typescript-Reviewer, Learnings-Researcher, Pattern-Recognition-Specialist, Performance-Oracle, Repo-research-Analyst, Security-Sentinel. Ver desglose completo en manifest.
 
@@ -133,7 +133,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 | Herramienta                                 | Ubicación                                                                              | Función                                                       |
 |--------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **Notifier**                                | `01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py`                        | Sonido al completar tareas ✅                                  |
+| **Notifier**                                | `01_Personal_Os/05_Scripts/00_HUBs/00_Sound_Engine.py`                        | Sonido al completar tareas ✅                                  |
 
 ---
 
@@ -143,7 +143,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 After completing each task in TodoWrite, ALWAYS execute:
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-complete
+python 01_Personal_Os/05_Scripts/00_HUBs/00_Sound_Engine.py --task-complete
 ```
 
 ### Sonido siempre activo
@@ -155,29 +155,30 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-comp
 
 ## 💾 .agent — BACKUP ESTRATÉGICO
 
-> **.agent/** es el backup estratégico de 01_Core/. La fuente de verdad es **01_Personal_Os/01_Core/**.
+> **.agent/** es el backup estratégico de 00_Core/. La fuente de verdad es **01_Personal_Os/00_Core/**.
 
 | Contenido Sincronizado                                          | Origen (Fuente)                                                    |
 |----------------------------------------------------------------|-------------------------------------------------------------------|
-| `.agent/00_Rules/`                                              | `01_Personal_Os/01_Core/01_Rules/`                                 |
-| `.agent/01_Agents/`                                             | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                       |
-| `.agent/02_Skills/`                                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                       |
-| `.agent/03_Workflows/`                                          | `01_Personal_Os/01_Core/00_Workflows_Os/`                          |
+| `.agent/00_Rules/`                                              | `01_Personal_Os/00_Core/01_Rules/`                                 |
+| `.agent/01_Agents/`                                             | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                       |
+| `.agent/02_Skills/`                                             | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                       |
+| `.agent/03_Workflows/`                                          | `01_Personal_Os/00_Core/00_Workflows_Os/`                          |
 
 ---
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (v5.0.1 — 2026-06-27)
+### Workspace Shape (v5.0.1 — 2026-06-28)
 
 ```
 Think_Different/                           # v5.0.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/                           # Motor del OS
+│   ├── 00_Core/                           # Motor del OS
 │   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
+│   │       ├── 00_SDD/                   # SDD registry + JARVIS manifests
 │   │       ├── 01_Agents/               # 63 agentes (referencia al manifest) [FIXED]
 │   │       ├── 02_Skills/                # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
@@ -187,18 +188,20 @@ Think_Different/                           # v5.0.1 — 4 carpetas raíz
 │   │       ├── 07_Server/                # MCP Server
 │   │       ├── 08_Evals/                 # Evaluadores
 │   │       └── 09_Templates/            # Templates
-│   ├── 02_Knowledge/                     # 📚 Base de conocimiento
-│   ├── 03_Task/                          # Tareas activas
-│   ├── 05_Archive/                       # 📦 Backups, snapshots, históricos
-│   └── 04_Operations/                    # Todo lo operativo
-│       ├── 00_Context_LLM/              # Memoria LLM
-│       ├── 01_Auto_Improvement/         # Motor auto-mejora
-│       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 39 HUBs — 163 scripts totales [FIXED]
-│       ├── 04_Installer/                # Installer
-│       ├── 05_Projects/                 # Proyectos activos
-│       ├── 06_SOTA_Features/            # Features estado-del-arte
-│       └── 07_Reports/                  # Reportes generados
+│   ├── 01_Memory/                        # 🧠 Memoria LLM, Process Notes
+│   ├── 02_Knowledge/                     # 📚 Base de conocimiento (estática)
+│   ├── 03_Learning/                      # 📖 Conocimiento activo
+│   │   ├── 00_Shared_Org/               # 🌕 Capital Token
+│   │   ├── 01_Auto_Improvement/         # Motor auto-mejora recursiva
+│   │   ├── 02_Learning_Always/          # Aprendizaje continuo
+│   │   ├── 03_Content/                  # Creación de contenido
+│   │   └── 04_Telemetry/                # Telemetría y monitoreo
+│   ├── 04_Tasks/                         # 📋 Tareas activas
+│   ├── 05_Scripts/                       # ⚡ Scripts operativos
+│   │   ├── 00_HUBs/                     # HUBs del sistema
+│   │   └── 01_Installer/                # Instalador del OS
+│   ├── 06_Projects/                      # 🏗️ Proyectos activos
+│   └── 07_Archive/                       # 📦 Backups, snapshots, históricos
 ├── 02_Playground/                        # Zona de pruebas
 ├── 03_Resultado/                        # Outputs proyectos
 ├── .agent/                              # 💾 BACKUP ESTRATÉGICO
@@ -213,7 +216,7 @@ When the user says "clear my backlog", "process backlog", or similar:
 1. Read `00_Winter_is_Coming/BACKLOG.md` and extract every actionable item.
 2. Look through `01_Personal_Os/02_Knowledge/` for context.
 3. If an item lacks context, priority, or a clear next step, STOP and ask for clarification.
-4. Create or update task files under `01_Personal_Os/03_Task/` with YAML frontmatter.
+4. Create or update task files under `01_Personal_Os/04_Tasks/` with YAML frontmatter.
 5. Present a concise summary of new tasks, then clear `00_Winter_is_Coming/BACKLOG.md`.
 
 ### Task Template
@@ -271,14 +274,14 @@ Tie to goals and reference material.
 
 ### Specialized Workflows
 
-For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Workflows_Os/`.
+For complex tasks, delegate to workflow files in `01_Personal_Os/00_Core/00_Workflows_Os/`.
 
 | Trigger                                   | Workflow                                                                                      | Cuándo usar                               |
 |------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------|
-| Content generation                        | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`              | Writing, marketing                        |
-| Morning planning                          | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/01_Morning_Standup.md`                 | Daily focus                               |
-| Processing backlog                        | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`              | Backlog flow                              |
-| Weekly reflection                         | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/04_Weekly_Review.md`                   | Weekly review                             |
+| Content generation                        | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`              | Writing, marketing                        |
+| Morning planning                          | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/01_Morning_Standup.md`                 | Daily focus                               |
+| Processing backlog                        | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`              | Backlog flow                              |
+| Weekly reflection                         | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/04_Weekly_Review.md`                   | Weekly review                             |
 
 ---
 
@@ -301,7 +304,7 @@ For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Work
 ### SDD Skills Location
 
 - **Global:** `~/.config/opencode/skills/sdd-*`
-- **Local:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
+- **Local:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
 - **Memory backend:** Engram MCP
 
 ---
@@ -330,7 +333,7 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 ### CE Skills Location
 
 - **Global:** `~/.config/opencode/skills/gentleman/06_Compound_Engineering/`
-- **Local:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`
+- **Local:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/`
 
 ---
 
@@ -386,7 +389,7 @@ Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos**.
 
 ## 7. HUB SCRIPTS (36 raíz activos — 168 scripts totales)
 
-Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
+Centralized HUBs in `01_Personal_Os/05_Scripts/00_HUBs/`:
 
 | Hub                                                 | Propósito                                                                  |
 |----------------------------------------------------|---------------------------------------------------------------------------|
@@ -488,7 +491,7 @@ gr --agents    # Solo 3 agents
 
 ## 12. WORKFLOWS (30 — 8 categorías)
 
-📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
+📁 `01_Personal_Os/00_Core/00_Workflows_Os/`
 
 | Categoría                                   | Path                                         | Workflows                                       |
 |--------------------------------------------|---------------------------------------------|------------------------------------------------|
@@ -518,12 +521,12 @@ gr --agents    # Solo 3 agents
 2. **Leer Contexto Estratégico** (en este orden):
    - `00_Winter_is_Coming/GOALS.md` → Objetivos estratégicos
    - `00_Winter_is_Coming/BACKLOG.md` → Tareas pendientes
-   - `01_Personal_Os/01_Core/` → Estructura de skills, agents, MCPs
-   - `01_Personal_Os/04_Operations/00_Context_LLM/` → Base de conocimiento
+   - `01_Personal_Os/00_Core/` → Estructura de skills, agents, MCPs
+   - `01_Personal_Os/01_Memory/` → Memoria LLM, Process Notes
 
 3. **Entender Estructura del Proyecto**:
    - Revisar `00_Winter_is_Coming/AGENTS.md` para reglas del sistema
-   - Verificar `01_Personal_Os/03_Task/` para tareas activas
+   - Verificar `01_Personal_Os/04_Tasks/` para tareas activas
    - Consultar `01_Personal_Os/02_Knowledge/` para contexto relevante
 
 4. **Esperar Instrucción del Orquestador**:
@@ -573,12 +576,12 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
                   → ¿Items sin procesar > 48h? → Alertar al usuario
 ```
 
-**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/`
-**Skill principal:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/07_Hillary/SKILL.md`
-**Agente:** `01_Personal_Os/01_Core/02_Tools/01_Agents/13_Hillary.md`
-**Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
+**Skills location:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/`
+**Skill principal:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/07_Hillary/SKILL.md`
+**Agente:** `01_Personal_Os/00_Core/02_Tools/01_Agents/13_Hillary.md`
+**Inbox:** `01_Personal_Os/04_Tasks/02_Hillary_Inbox/`
 **RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 
 ---
 
-_Think Different PersonalOS v5.0.1 — Marketing SOTA + Archive Consolidation + Documentation Ground Truth Sync (2026-06-27)_
+_Think Different PersonalOS v5.0.1 — Marketing SOTA + Archive Consolidation + Documentation Ground Truth Sync — Paths updated to new layout (2026-06-28)_

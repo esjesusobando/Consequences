@@ -31,18 +31,18 @@ Este directorio contiene los agentes especializados del sistema Think Different 
 
 ### Agentes Principales
 
-| #  | Agente                 | Dominio        | Prioridad | Estado |
+| #   | Agente                 | Dominio        | Prioridad | Estado |
 | --- | ---------------------- | -------------- | --------- | ------ |
-| 01 | Scope Rule Architect   | Arquitectura   | CRÍTICA   | ✅      |
-| 02 | TDD Test-First         | Tests (RED)    | ALTA      | ✅      |
-| 14 | React Test Implementer | Código (GREEN) | ALTA      | ✅      |
-| 04 | React Mentor           | Refactor       | MEDIA     | ✅      |
-| 05 | Security Auditor       | Seguridad      | CRÍTICA   | ✅      |
-| 06 | Git Workflow Manager   | Pull Request   | ALTA      | ✅      |
-| 07 | Accessibility Auditor  | Accesibilidad  | MEDIA     | ✅      |
-| 08 | PRD Dashboard Template | Producto       | BAJA      | ✅      |
-| 09 | Design SOP Document    | Producto       | BAJA      | ✅      |
-| 10 | Workflow Orchestrator  | Orquestación   | CRÍTICA   | ✅      |
+| 01  | Scope Rule Architect   | Arquitectura   | CRÍTICA   | ✅      |
+| 02  | TDD Test-First         | Tests (RED)    | ALTA      | ✅      |
+| 14  | React Test Implementer | Código (GREEN) | ALTA      | ✅      |
+| 04  | React Mentor           | Refactor       | MEDIA     | ✅      |
+| 05  | Security Auditor       | Seguridad      | CRÍTICA   | ✅      |
+| 06  | Git Workflow Manager   | Pull Request   | ALTA      | ✅      |
+| 07  | Accessibility Auditor  | Accesibilidad  | MEDIA     | ✅      |
+| 08  | PRD Dashboard Template | Producto       | BAJA      | ✅      |
+| 09  | Design SOP Document    | Producto       | BAJA      | ✅      |
+| 10  | Workflow Orchestrator  | Orquestación   | CRÍTICA   | ✅      |
 
 ### Specialists Squad
 

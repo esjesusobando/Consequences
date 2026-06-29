@@ -8,18 +8,18 @@
 
 ## Navegacion Rapida
 
-| #  | Directorio                            | Skill                     | Descripcion                                                 |
+| #   | Directorio                            | Skill                     | Descripcion                                                 |
 | --- | ------------------------------------- | ------------------------- | ----------------------------------------------------------- |
-| 01 | `01_Life_OS`                          | Life OS                   | Sistema operativo personal: habitos, rutinas, productividad |
-| 02 | `02_Personal_Os`                      | Personal OS               | Configuracion central del PersonalOS                        |
-| 03 | `03_Fantasticos`                      | Fantasticos               | Principios y mindset del ecosistema                         |
-| 04 | `04_Contexto`                         | Contexto                  | Sistema de contexto y memoria                               |
-| 05 | `05_Marca`                            | Marca                     | Identidad y marca personal                                  |
-| 06 | `06_Plantillas`                       | Plantillas                | Plantillas reutilizables para documentos                    |
-| 07 | `07_Hillary`                          | Hillary                   | Asistente personal Hillary                                  |
-| 08 | `08_Learning_Always`                  | LA Legacy (URL→Knowledge) | Pipeline URL → 8 deliverables                               |
-| 09 | `09_Workflow_Os/01_Learning_Always`   | Learning Always           | Metodología de aprendizaje continuo                         |
-| 10 | `09_Workflow_Os/02_Dynamic_Workflows` | Dynamic Workflows         | Pipeline completo de ejecución                              |
+| 01  | `01_Life_OS`                          | Life OS                   | Sistema operativo personal: habitos, rutinas, productividad |
+| 02  | `02_Personal_Os`                      | Personal OS               | Configuracion central del PersonalOS                        |
+| 03  | `03_Fantasticos`                      | Fantasticos               | Principios y mindset del ecosistema                         |
+| 04  | `04_Contexto`                         | Contexto                  | Sistema de contexto y memoria                               |
+| 05  | `05_Marca`                            | Marca                     | Identidad y marca personal                                  |
+| 06  | `06_Plantillas`                       | Plantillas                | Plantillas reutilizables para documentos                    |
+| 07  | `07_Hillary`                          | Hillary                   | Asistente personal Hillary                                  |
+| 08  | `08_Learning_Always`                  | LA Legacy (URL→Knowledge) | Pipeline URL → 8 deliverables                               |
+| 09  | `09_Workflow_Os/01_Learning_Always`   | Learning Always           | Metodología de aprendizaje continuo                         |
+| 10  | `09_Workflow_Os/02_Dynamic_Workflows` | Dynamic Workflows         | Pipeline completo de ejecución                              |
 
 ### Archivos de Referencia
 

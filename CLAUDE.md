@@ -31,7 +31,7 @@
 ⏱️ **Tiempo estimado para terminar:** ~X minutos
 ```
 
-      Y ejecutar: `python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --notify "Progreso: X%"`
+      Y ejecutar: `python 01_Personal_Os/05_Scripts/00_HUBs/00_Sound_Engine.py --notify "Progreso: X%"`
   </language_protocol>
 </system_directives>
 
@@ -45,16 +45,16 @@ Al iniciar sesión, la IA ejecuta EXACTAMENTE este bucle ANTES de actuar:
    - `00_Winter_is_Coming/AGENTS.md` — Asignación GGA
    - `00_Winter_is_Coming/GOALS.md` — Goals del día
    - `00_Winter_is_Coming/BACKLOG.md` — Backlog pendiente
-   - `01_Personal_Os/01_Core/01_Rules/` — Reglas vigentes (cualquiera con alwaysApply: true)
+    - `01_Personal_Os/00_Core/01_Rules/` — Reglas vigentes (cualquiera con alwaysApply: true)
    - `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` — Workflow Génesis (ESTE)
 
 2. **[MEMORIA]** Ejecutar `engram_mem_context(limit=10)` para recuperar trazas de sesión previa.
    - Si memoria fue compactada: usar `engram_mem_session_summary()`.
 
 3. **[CONTEXTO LLM]** Leer archivos recientes en:
-   - `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/`
+   - `01_Personal_Os/01_Memory/01_Process_Notes/`
 
-4. **[TAREAS]** Leer `01_Personal_Os/03_Task/` — identificar:
+4. **[TAREAS]** Leer `01_Personal_Os/04_Tasks/` — identificar:
    - status: s (en progreso)
    - status: b (bloqueadas)
    - P0/P1 prioritarios
@@ -70,12 +70,13 @@ Al iniciar sesión, la IA ejecuta EXACTAMENTE este bucle ANTES de actuar:
 
 ---
 
-## 📋 REGLA: PLANES PARA USUARIO EN RAÍZ
+## 📋 REGLA: PLANES PARA USUARIO
 <root_plan_rule>
-TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN RAÍZ del proyecto.
-- NO crear en subcarpetas profundas
-- NO buscar en subcarpetas - siempre raíz
-- El usuario lee desde raíz siempre
+TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN `00_Winter_is_Coming/` (estratégico) o raíz del proyecto (temporal).
+- Documentos estratégicos: `00_Winter_is_Coming/` (BACKLOG.md, GOALS.md, CHANGELOG.md)
+- Documentos temporales/para revisión: raíz del proyecto
+- NO crear en subcarpetas profundas (profundidad > 2)
+- El usuario revisa desde raíz o `00_Winter_is_Coming/`
 </root_plan_rule>
 
 ---
@@ -165,10 +166,11 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
 Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías) (7 categorías)
+│   ├── 00_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
+│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
+│   │       ├── 00_SDD/           ✅ SDD registry + JARVIS manifests
 │   │       ├── 01_Agents/        ✅ 63 agentes (9 categorías) [FIXED]
 │   │       ├── 02_Skills/        ✅ 396 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup configs MCP (2 JSON + 3 subdirs)
@@ -178,20 +180,23 @@ Think_Different/                           # RAÍZ
 │   │       ├── 07_Server/        ✅ MCP Server
 │   │       ├── 08_Evals/         ✅ Evaluadores
 │   │       └── 09_Templates/     ✅ Templates
-│   ├── 02_Knowledge/             ✅ Base de conocimiento
-│   ├── 03_Task/                  ✅ Tareas activas
-│   ├── 04_Operations/            ✅ Todo lo operativo
-│   │   ├── 00_Context_LLM/       ✅ Memoria, notas, knowledge brain
-│   │   ├── 01_Auto_Improvement/  ✅ Motor auto-mejora
-│   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 JARVIS manifests
-│   │   ├── 03_Scripts_Os/        ✅ HUBs: 39 — scripts: 163 totales (133 en subdirectorios)
-│   │   ├── 04_Installer/         ✅ Instalador del OS
-│   │   ├── 05_Projects/          ✅ Proyectos activos
-│   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
-│   │   └── 07_Reports/           ✅ Reportes generados
-│   └── 05_Archive/               ✅ Backups, snapshots, archivos históricos
+│   ├── 01_Memory/                ✅ Memoria LLM, Process Notes, Context
+│   ├── 02_Knowledge/             ✅ Base de conocimiento (estática: research, docs, refs)
+│   ├── 03_Learning/              ✅ Conocimiento activo (Shared Org, Auto-Improvement, Content, Telemetry)
+│   │   ├── 00_Shared_Org/        ✅ 🌕 Capital Token
+│   │   ├── 01_Auto_Improvement/  ✅ Motor auto-mejora recursiva
+│   │   ├── 02_Learning_Always/   ✅ Aprendizaje continuo
+│   │   ├── 03_Content/           ✅ Creación de contenido
+│   │   └── 04_Telemetry/         ✅ Telemetría y monitoreo
+│   ├── 04_Tasks/                 ✅ Tareas activas
+│   ├── 05_Scripts/               ✅ Scripts operativos
+│   │   ├── 00_HUBs/              ✅ HUBs: scripts del sistema
+│   │   └── 01_Installer/         ✅ Instalador del OS
+│   ├── 06_Projects/              ✅ Proyectos activos
+│   └── 07_Archive/               ✅ Backups, snapshots, archivos históricos
 ├── 02_Playground/                ✅ Zona de pruebas (no contamina el OS)
-├── 03_Resultado/                 ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
+├── 03_Resultado/                 ✅ Outputs de proyectos
+│   └── 07_Reports/               ✅ Reportes generados
 ├── .agent/                       ✅ Backup estratégico
 ├── .atl/                         ✅ SDD Registry + openspec
 ├── .claude/                      ✅ Config Claude Code + rules
@@ -209,7 +214,7 @@ Think_Different/                           # RAÍZ
 
 ### 3. SKILLS (396 — 15 áreas funcionales)
 
-> **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+> **Ruta base:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 | Área                                             | Carpeta                     | Descripción                                                   |
 |-------------------------------------------------|----------------------------|--------------------------------------------------------------|
@@ -234,12 +239,12 @@ Think_Different/                           # RAÍZ
 ### 4. JARVIS 4.9 — MANIFEST SYSTEM
 
 ```text
-01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
+01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
 ├── 03_Agent_Catalog.yaml    # 63 agentes source (referencia al manifest) [FIXED]
 ├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
-├── 05_HUB_Catalog.yaml     # HUBs: 39 — scripts: 163 totales [FIXED]
+├── 05_HUB_Catalog.yaml     # HUBs: scripts totales
 ├── 06_Workflow_Graph.yaml   # 29 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías) [FIXED]
 ```
@@ -270,12 +275,12 @@ Think_Different/                           # RAÍZ
 - `/claude-seo-ai:score` (Recalcular scores desde findings previos).
 - `/claude-seo-ai:fix` (Aplicar fixes con dry-run).
 
-**JARVIS 4.0 HUBs Canónicos:**
+**JARVIS 5.0 HUBs Canónicos:**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py               # health check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard   # stats ASCII
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report      # MCP drift
+python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
+python 01_Personal_Os/05_Scripts/00_HUBs/17_Watchdog_Hub.py                # health check
+python 01_Personal_Os/05_Scripts/00_HUBs/18_Telemetry_Hub.py --dashboard   # stats ASCII
+python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report      # MCP drift
 ```
 
 ---
@@ -306,10 +311,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 cat OS_DIRECTORY.md
 
 # HUBs principales JARVIS
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/00_HUBs/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 ```
 
 ### Ecosistemas Integrados
@@ -317,9 +322,9 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 | Ecosistema                                  | Ubicación                                                                                   |
 |--------------------------------------------|--------------------------------------------------------------------------------------------|
 | Personal OS Core                            | `00_Winter_is_Coming/AGENTS.md`                                                             |
-| Compound Engineering                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`                        |
-| Dream Team                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                                  |
-| Specialists                                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                        |
+| Compound Engineering                        | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/`                        |
+| Dream Team                                  | `01_Personal_Os/00_Core/02_Tools/01_Agents/01_Dream_Team/`                                  |
+| Specialists                                 | `01_Personal_Os/00_Core/02_Tools/01_Agents/02_Specialists_Compound/`                        |
 | Gentleman GGA                               | `.agent/05_GGA/`                                                                            |
 | Claude SEO AI (Hainrixz)                    | `~/.config/opencode/skills/claude-seo-ai/`                                                  |
 
@@ -327,8 +332,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 | Herramienta                                | Config activa                                                 | Source (backup)                                             |
 |-------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------|
-| **Claude Code**                            | `.mcp.json` (raíz del proyecto)                               | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                   |
-| **OpenCode**                               | `~/.config/opencode/opencode.json`                            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                   |
+| **Claude Code**                            | `.mcp.json` (raíz del proyecto)                               | `01_Personal_Os/00_Core/02_Tools/03_Mcp/`                   |
+| **OpenCode**                               | `~/.config/opencode/opencode.json`                            | `01_Personal_Os/00_Core/02_Tools/03_Mcp/`                   |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 
@@ -338,14 +343,16 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 | Recurso                                   | Path CORRECTO                                                                  |
 |------------------------------------------|-------------------------------------------------------------------------------|
-| Skills                                    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                   |
-| Agents                                    | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                                   |
-| Rules                                     | `01_Personal_Os/01_Core/01_Rules/`                                             |
-| HUBs                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/`                                  |
-| Workflows                                 | `01_Personal_Os/01_Core/00_Workflows_Os/`                                      |
-| Tasks                                     | `01_Personal_Os/03_Task/`                                                      |
+| Skills                                    | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                                   |
+| Agents                                    | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                                   |
+| Rules                                     | `01_Personal_Os/00_Core/01_Rules/`                                             |
+| HUBs                                      | `01_Personal_Os/05_Scripts/00_HUBs/`                                           |
+| Workflows                                 | `01_Personal_Os/00_Core/00_Workflows_Os/`                                      |
+| Tasks                                     | `01_Personal_Os/04_Tasks/`                                                     |
 | Knowledge                                 | `01_Personal_Os/02_Knowledge/`                                                 |
-| Context LLM                               | `01_Personal_Os/04_Operations/00_Context_LLM/`                                 |
+| Memory LLM                                | `01_Personal_Os/01_Memory/`                                                    |
+| Learning                                  | `01_Personal_Os/03_Learning/`                                                  |
+| SDD Registry                              | `01_Personal_Os/00_Core/02_Tools/00_SDD/`                                      |
 
 > ⚠️ NO usar rutas legacy v1.x; usar únicamente las rutas canónicas listadas arriba.
 

@@ -1,0 +1,28 @@
+import logging
+import typing
+
+logging.basicConfig(level=logging.INFO)
+import os, sys, io
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+parent = os.path.abspath(os.path.join(script_dir, ".."))
+sys.path.insert(0, parent)
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+from config_paths import ROOT_DIR, CORE_DIR, BRAIN_DIR, OPERATIONS_DIR, KNOWLEDGE_DIR, ENGINE_DIR as ED, SYSTEM_DIR, ARCHIVE_DIR
+print(f"SCRIPT_PATH: {script_path}")
+print(f"SCRIPT_DIR: {script_dir}")
+print(f"PARENT (sys.path): {parent}")
+print(f"ROOT_DIR: {ROOT_DIR}")
+print(f"CORE_DIR: {CORE_DIR}")
+print(f"CORE_DIR exists: {os.path.exists(CORE_DIR)}")
+print(f"BRAIN_DIR: {BRAIN_DIR}")
+print(f"BRAIN_DIR exists: {os.path.exists(BRAIN_DIR)}")
+print(f"OPERATIONS_DIR: {OPERATIONS_DIR}")
+print(f"OPERATIONS_DIR exists: {os.path.exists(OPERATIONS_DIR)}")
+print(f"KNOWNGE_DIR: {KNOWLEDGE_DIR}")
+print(f"ENGINE_DIR (config): {ED}")
+print(f"ENGINE_DIR exists: {os.path.exists(ED)}")
+print(f"SYSTEM_DIR: {SYSTEM_DIR}")
+print(f"SYSTEM_DIR exists: {os.path.exists(SYSTEM_DIR)}")
+print(f"ARCHIVE_DIR: {ARCHIVE_DIR}")
+print(f"ARCHIVE_DIR exists: {os.path.exists(ARCHIVE_DIR)}")

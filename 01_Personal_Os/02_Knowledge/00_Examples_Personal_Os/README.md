@@ -27,9 +27,3 @@ Deep dives into how PersonalOS and AI agents work together.
 ## Templates
 
 Reference files for structuring your own content.
-
-| File                                                         | Description                              |
-| ------------------------------------------------------------ | ---------------------------------------- |
-| [`example_task.md`](example_files/example_task.md)           | Task file template with YAML frontmatter |
-| [`example_knowledge.md`](example_files/example_knowledge.md) | Knowledge document template              |
-| [`BACKLOG_example.md`](example_files/BACKLOG_example.md)     | Example backlog entries                  |

@@ -14,14 +14,14 @@ Almacenar TODO el conocimiento SOTA de las 6 áreas del Unicorn Engineering para
 
 ## Las 6 Áreas
 
-| # | Área                  | Descripción                                       |
+| #   | Área                  | Descripción                                       |
 | --- | --------------------- | ------------------------------------------------- |
-| 1 | **01_Pm**             | Project Management - Delivery, timeline, recursos |
-| 2 | **02_Pdm**            | Product Management - Estrategia, users, metrics   |
-| 3 | **03_Product_Design** | Product Design - UX, wireframes, Design Sprint    |
-| 4 | **04_Art_Director**   | Art Director - Visual, branding, design system    |
-| 5 | **05_Aipm**           | AI Product Manager - AI, prompts, agents          |
-| 6 | **06_Engineering**    | Engineering - Full-stack, arquitectura, código    |
+| 1   | **01_Pm**             | Project Management - Delivery, timeline, recursos |
+| 2   | **02_Pdm**            | Product Management - Estrategia, users, metrics   |
+| 3   | **03_Product_Design** | Product Design - UX, wireframes, Design Sprint    |
+| 4   | **04_Art_Director**   | Art Director - Visual, branding, design system    |
+| 5   | **05_Aipm**           | AI Product Manager - AI, prompts, agents          |
+| 6   | **06_Engineering**    | Engineering - Full-stack, arquitectura, código    |
 
 ---
 

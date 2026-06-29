@@ -9,27 +9,27 @@ Contexto: Think Different PersonalOS - AI Operating System
 
 ## Tabla de Skills
 
-| #  | Skill                                | Score   | Descripción                         |
+| #   | Skill                                | Score   | Descripción                         |
 | --- | ------------------------------------ | ------- | ----------------------------------- |
-| 01 | [ads-audit](#01-ads-audit)           | 100/100 | Auditoría multi-plataforma completa |
-| 02 | [ads-google](#02-ads-google)         | 100/100 | Google Ads deep analysis            |
-| 03 | [ads-meta](#03-ads-meta)             | 100/100 | Meta Ads (Facebook/Instagram)       |
-| 04 | [ads-plan](#04-ads-plan)             | 100/100 | Estrategia y planificación          |
-| 05 | [ads-creative](#05-ads-creative)     | 100/100 | Evaluación de creativos             |
-| 06 | [ads-landing](#06-ads-landing)       | 100/100 | Análisis de landing pages           |
-| 07 | [ads-budget](#07-ads-budget)         | 100/100 | Budget y bidding strategy           |
-| 08 | [ads-math](#08-ads-math)             | 100/100 | Matemáticas publicitarias           |
-| 09 | [ads-dna](#09-ads-dna)               | 100/100 | Brand DNA extraction                |
-| 10 | [ads-competitor](#10-ads-competitor) | 100/100 | Análisis competitivo                |
-| 11 | [ads-youtube](#11-ads-youtube)       | 100/100 | YouTube Ads                         |
-| 12 | [ads-tiktok](#12-ads-tiktok)         | 100/100 | TikTok Ads                          |
-| 13 | [ads-apple](#13-ads-apple)           | 100/100 | Apple Search Ads                    |
-| 14 | [ads-create](#14-ads-create)         | 100/100 | Campaign brief generator            |
-| 15 | [ads-generate](#15-ads-generate)     | 100/100 | AI image generation                 |
-| 16 | [ads-linkedin](#16-ads-linkedin)     | 100/100 | LinkedIn Ads B2B                    |
-| 17 | [ads-microsoft](#17-ads-microsoft)   | 100/100 | Microsoft/Bing Ads                  |
-| 18 | [ads-photoshoot](#18-ads-photoshoot) | 100/100 | AI product photography              |
-| 19 | [ads-test](#19-ads-test)             | 100/100 | A/B test design                     |
+| 01  | [ads-audit](#01-ads-audit)           | 100/100 | Auditoría multi-plataforma completa |
+| 02  | [ads-google](#02-ads-google)         | 100/100 | Google Ads deep analysis            |
+| 03  | [ads-meta](#03-ads-meta)             | 100/100 | Meta Ads (Facebook/Instagram)       |
+| 04  | [ads-plan](#04-ads-plan)             | 100/100 | Estrategia y planificación          |
+| 05  | [ads-creative](#05-ads-creative)     | 100/100 | Evaluación de creativos             |
+| 06  | [ads-landing](#06-ads-landing)       | 100/100 | Análisis de landing pages           |
+| 07  | [ads-budget](#07-ads-budget)         | 100/100 | Budget y bidding strategy           |
+| 08  | [ads-math](#08-ads-math)             | 100/100 | Matemáticas publicitarias           |
+| 09  | [ads-dna](#09-ads-dna)               | 100/100 | Brand DNA extraction                |
+| 10  | [ads-competitor](#10-ads-competitor) | 100/100 | Análisis competitivo                |
+| 11  | [ads-youtube](#11-ads-youtube)       | 100/100 | YouTube Ads                         |
+| 12  | [ads-tiktok](#12-ads-tiktok)         | 100/100 | TikTok Ads                          |
+| 13  | [ads-apple](#13-ads-apple)           | 100/100 | Apple Search Ads                    |
+| 14  | [ads-create](#14-ads-create)         | 100/100 | Campaign brief generator            |
+| 15  | [ads-generate](#15-ads-generate)     | 100/100 | AI image generation                 |
+| 16  | [ads-linkedin](#16-ads-linkedin)     | 100/100 | LinkedIn Ads B2B                    |
+| 17  | [ads-microsoft](#17-ads-microsoft)   | 100/100 | Microsoft/Bing Ads                  |
+| 18  | [ads-photoshoot](#18-ads-photoshoot) | 100/100 | AI product photography              |
+| 19  | [ads-test](#19-ads-test)             | 100/100 | A/B test design                     |
 
 ---
 

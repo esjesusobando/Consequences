@@ -27,17 +27,17 @@ print(results.volumetrics)
 
 ## Estructura
 
-| Módulo           | Descripción                               | Referencia  |
-|-----------------|------------------------------------------|------------|
-| `volumetrics.py` | Capacidades, volúmenes anulares           | API RP 13B  |
-| `rheology.py`    | Bingham, Power Law, Herschel-Bulkley      | API RP 13B-1|
-| `pressures.py`   | Pore, fracture, mud window, Monte Carlo   | WCI / IADC  |
-| `hydraulics.py`  | Velocidades, ECD, HHP, nozzle optimization| API RP 13D  |
-| `pump.py`        | Output, flow rate, HHP                    | IADC Manual |
-| `circulation.py` | Lag time, bottoms up                      | IADC Manual |
-| `directional.py` | Mínima curvatura, survey 3D               | SPE         |
-| `cementing.py`   | Slurry yield, displacement                | API RP 10B  |
-| `well_control.py`| Kill sheet, Driller/W&W                   | IWCF / IADC |
+| Módulo            | Descripción                                | Referencia   |
+| ----------------- | ------------------------------------------ | ------------ |
+| `volumetrics.py`  | Capacidades, volúmenes anulares            | API RP 13B   |
+| `rheology.py`     | Bingham, Power Law, Herschel-Bulkley       | API RP 13B-1 |
+| `pressures.py`    | Pore, fracture, mud window, Monte Carlo    | WCI / IADC   |
+| `hydraulics.py`   | Velocidades, ECD, HHP, nozzle optimization | API RP 13D   |
+| `pump.py`         | Output, flow rate, HHP                     | IADC Manual  |
+| `circulation.py`  | Lag time, bottoms up                       | IADC Manual  |
+| `directional.py`  | Mínima curvatura, survey 3D                | SPE          |
+| `cementing.py`    | Slurry yield, displacement                 | API RP 10B   |
+| `well_control.py` | Kill sheet, Driller/W&W                    | IWCF / IADC  |
 
 ## Tests
 
