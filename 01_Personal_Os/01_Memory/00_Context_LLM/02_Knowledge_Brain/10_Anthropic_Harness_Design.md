@@ -170,9 +170,9 @@ Los 5 perfiles creados ya tienen estructura base. Agregar:
 4. **Progressive disclosure** de complexity según modelo
 
 ### Skills Related
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/E2E_Testing/` - Playwright
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/Integration_Testing/`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/Test_Coverage/`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Testing/E2E_Testing/` - Playwright
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Testing/Integration_Testing/`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Testing/Test_Coverage/`
 
 ---
 

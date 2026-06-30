@@ -16,9 +16,9 @@
 ## Análisis
 
 ### What
-- Consolidar 29 carpetas dispersas de `01_Personal_Os/01_Core/02_Tools/02_Skills/` en 8 áreas funcionales
+- Consolidar 29 carpetas dispersas de `01_Personal_Os/00_Core/02_Tools/02_Skills/` en 8 áreas funcionales
 - Crear script mapeador de referencias antes de mover
-- Completar homologación de agents entre `.agent/` y `01_Core/04_Agents/`
+- Completar homologación de agents entre `.agent/` y `00_Core/04_Agents/`
 
 ### Why
 - Evitar colapsos cuando hay muchas skills
@@ -26,7 +26,7 @@
 - Crear meta-versos de escenarios resolubles automáticamente
 
 ### Where
-- **Origen**: `01_Personal_Os/01_Core/02_Tools/02_Skills/` (29 carpetas actuales)
+- **Origen**: `01_Personal_Os/00_Core/02_Tools/02_Skills/` (29 carpetas actuales)
 - **Destino**: 8 nuevas áreas funcionales
 - **Docs**: Este plan + Engram
 

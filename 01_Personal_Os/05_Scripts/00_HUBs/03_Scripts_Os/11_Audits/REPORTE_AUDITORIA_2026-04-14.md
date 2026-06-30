@@ -56,13 +56,13 @@
 
 ## 🗂️ ESTADO DE RUTAS LEGACY
 
-### Referencias `01_Personal_Os/01_Core/02_Tools/02_Skills/` en Documentación
+### Referencias `01_Personal_Os/00_Core/02_Tools/02_Skills/` en Documentación
 - **Total encontradas:** ~210 menciones en archivos .md
 - **Tipo:** Mayormente textual (no rompe funcionalidad)
 - **Estado:** Documentación histórica (aceptable)
-- **Nota:** La ruta canónica actual es `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- **Nota:** La ruta canónica actual es `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
-### Referencias `01_Personal_Os/01_Core/02_Tools/02_Skills/` en Python
+### Referencias `01_Personal_Os/00_Core/02_Tools/02_Skills/` en Python
 - **Total encontradas:** 10 menciones
 - **Scripts afectados:**
   - `12_Audits/audit_skills_routes.py` (auditoría, intentional)
@@ -106,7 +106,7 @@
    - Los de `03_Validator/` y `10_Legacy/` son backup
 
 3. **Actualizar documentación** (bajo demanda):
-   - Las 210 referencias a `01_Personal_Os/01_Core/02_Tools/02_Skills/` son históricas
+   - Las 210 referencias a `01_Personal_Os/00_Core/02_Tools/02_Skills/` son históricas
    - Solo actualizar si hay confusión
 
 ---

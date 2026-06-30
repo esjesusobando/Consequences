@@ -2,7 +2,7 @@
 
 **Versión:** 4.9
 **Última actualización:** 2026-06-09
-**Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
+**Ubicación:** `01_Personal_Os/00_Core/01_Rules/`
 **Framework:** Anthropic SOTA 2026 + PersonalOS v4.9 Consequences
 
 ---
@@ -13,7 +13,7 @@
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
 ├── 01_Personal_Os/         # El Sistema Operativo
-│   ├── 01_Core/01_Rules/  # ← AQUÍ: 13 reglas .mdc
+│   ├── 00_Core/01_Rules/  # ← AQUÍ: 13 reglas .mdc
 │   └── ...
 ├── 02_Playground/         # Zona de pruebas
 └── 03_Resultado/          # Outputs de proyectos
@@ -77,7 +77,7 @@ Think_Different/
 
 ## 🗂️ Skills System (Referencia v4.0)
 
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 ### 11 Áreas Funcionales
 

@@ -5,7 +5,7 @@ priority: P2
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py
+  - 01_Personal_Os/00_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py
 ---
 
 # Task: Pre-commit Hook — Staged API Keys Scanner
@@ -31,7 +31,7 @@ resource_refs:
 Se encontraron estos archivos con contenido relevante para API keys:
 
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/09_Claude_Ads/07_Scripts/generate_image.py
+01_Personal_Os/00_Core/02_Tools/02_Skills/09_Claude_Ads/07_Scripts/generate_image.py
 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/skill_security_scan.py

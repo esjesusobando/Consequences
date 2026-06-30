@@ -107,7 +107,7 @@ Auditoría integral del proyecto Think_Different: revisar todo sin eliminar info
 
 | Archivo                                                       | Tamaño          | Diferencia     |
 |--------------------------------------------------------------|----------------|---------------|
-| Source: `01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md`| **10,984 bytes**| Más actualizado|
+| Source: `00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md`| **10,984 bytes**| Más actualizado|
 | Backup: `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md`    | **10,979 bytes**| 5 bytes menos  |
 
 **Causa:** El source fue actualizado ligeramente pero el backup no se sincronizó.
@@ -250,9 +250,9 @@ Elementos que parecen bugs pero están correctos:
 .mcp.json
 00_Winter_is_Coming/BACKLOG.md
 00_Winter_is_Coming/GOALS.md
-01_Personal_Os/01_Core/01_Rules/ (13 reglas)
-01_Personal_Os/01_Core/02_Tools/01_Agents/ (directorio + subdirs)
-01_Personal_Os/01_Core/00_Workflows_Os/ (7 categorías)
+01_Personal_Os/00_Core/01_Rules/ (13 reglas)
+01_Personal_Os/00_Core/02_Tools/01_Agents/ (directorio + subdirs)
+01_Personal_Os/00_Core/00_Workflows/ (7 categorías)
 01_Personal_Os/04_Operations/00_Context_LLM/ (Context_Memory + Process_Notes)
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/ (7 manifests)
 01_Personal_Os/04_Operations/03_Scripts_Os/ (41 archivos raíz + 16 subdirs)

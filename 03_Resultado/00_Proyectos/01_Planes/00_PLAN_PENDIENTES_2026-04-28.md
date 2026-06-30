@@ -15,7 +15,7 @@
 
 | Tarea                                                                                             | Commit                                    | Estado                |
 |--------------------------------------------------------------------------------------------------|------------------------------------------|----------------------|
-| 4 archivos 01_Core/ actualizados (Comandos, Inventario, Dream Team, INVENTARIO_CORE)              | `f4ecd531` (sesión anterior)              | ✅                     |
+| 4 archivos 00_Core/ actualizados (Comandos, Inventario, Dream Team, INVENTARIO_CORE)              | `f4ecd531` (sesión anterior)              | ✅                     |
 | `.agent/README.md`: 9 → 11 áreas, 14 → 23 HUBs                                                    | `0fe81612`                                | ✅                     |
 | `.gitignore`: reglas binarios (*.exe, PDFs, imágenes grandes)                                     | `0fe81612`                                | ✅                     |
 | `INDEX_AREA_FUNCTIONAL.md`: removido ÁREA 09, footer 11 áreas                                     | `0fe81612`                                | ✅                     |
@@ -43,8 +43,8 @@
 - **Archivos clave a revisar manualmente:**
   - `README.md` (raíz)
   - `.agent/README.md`
-  - `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`
-  - `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`
+  - `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`
+  - `01_Personal_Os/00_Core/01_Rules/RULES_INDEX.md`
 
 ### 2. Disco lleno — .git tiene 392MB ⚠️ (C: liberado ~40GB hoy, pero .git history pesa)
 
@@ -83,7 +83,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 - `04_Skill_Index.json`: actualizar a 11 áreas (sin Legacy Archive)
 - `05_HUB_Catalog.yaml`: actualizar a 23 scripts
 
-### 4. Sincronizar .agent/ con 01_Core/ (Agent Mirror)
+### 4. Sincronizar .agent/ con 00_Core/ (Agent Mirror)
 
 ```bash
 python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py

@@ -35,7 +35,7 @@ Error renombrando:
 
 ### 2. Actualizar 10_Git_Directions.mdc (ALTA)
 
-El archivo en `01_Personal_Os/01_Core/01_Rules/10_Git_Directions.mdc` no tiene la referencia completa de Valeria como proyecto separado.
+El archivo en `01_Personal_Os/00_Core/01_Rules/10_Git_Directions.mdc` no tiene la referencia completa de Valeria como proyecto separado.
 
 **Debe incluir:**
 ```
@@ -62,7 +62,7 @@ El archivo `Honores_Grado_Noel.html` con el fix de particulas esta guardado en:
 
 El sistema tiene las skills de Huashu para crear presentaciones HTML:
 - **Demos disponibles:** c2-slides-pptx.html (EN/ES)
-- **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/demos/`
+- **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/demos/`
 - **Documentacion:** `references/slide-decks.md`
 
 **Pasos para usar:**

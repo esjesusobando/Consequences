@@ -9,7 +9,7 @@
   - [ ] Auditar `01_Personal_Os/04_Operations/01_Auto_Improvement`
   - [ ] Refactorizar con Clean Code, Type Hints, manejo de excepciones (sin eliminar lógica)
 - [ ] Fase 3: Modernización de Skills
-  - [ ] Auditar `01_Personal_Os/01_Core/02_Tools/02_Skills`
+  - [ ] Auditar `01_Personal_Os/00_Core/02_Tools/02_Skills`
   - [ ] Aplicar CoT, Few-Shot, y restricciones de SOTA
 - [ ] Fase 4: Documentación y Cuadro Comparativo
   - [ ] Crear nota de proceso en `01_Process_Notes`

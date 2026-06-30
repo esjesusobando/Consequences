@@ -17,7 +17,7 @@ El usuario pidió auditar carpeta por carpeta (00 a 08) usando el framework "Sup
 ## Carpetas a Auditar
 
 1. **00_Winter_is_Coming/** - Goals, Backlog, Memoria Estratégica
-2. **01_Core/** - Motor: Skills, Agents, MCPs, Workflows
+2. **00_Core/** - Motor: Skills, Agents, MCPs, Workflows
 3. **02_Knowledge/** - Documentación, Research, Notas
 4. **03_Tasks/** - Tareas activas
 5. **04_Operations/** - Memoria, Brain, Notas

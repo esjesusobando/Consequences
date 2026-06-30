@@ -179,7 +179,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 - **Backend:** Python, FastAPI
 - **Frontend:** React, Next.js
 - **Automatización:** Make, Zapier
-- **MCP:** Implementación de protocolo personalizado (vía `01_Personal_Os/01_Core/02_Tools/07_Server/`)
+- **MCP:** Implementación de protocolo personalizado (vía `01_Personal_Os/00_Core/02_Tools/07_Server/`)
 - **Scripts de Motor:** `01_Personal_Os/04_Operations/03_Scripts_Os/` — Scripts HUB de automatización para operaciones del OS
 
 ## 7. Tracking Metrics
@@ -229,7 +229,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 
 ## 10. Workflows (30 — 8 categorías)
 
-📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
+📁 `01_Personal_Os/00_Core/00_Workflows/`
 
 | Categoría                                   | Ruta                                         | Workflows                                       |
 |--------------------------------------------|---------------------------------------------|------------------------------------------------|
@@ -250,13 +250,13 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 #### Pasos Obligatorios al Iniciar Subagente:
 
 1. **Activar Workflow Genesis**:
-   - Leer `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` (si existe)
+   - Leer `01_Personal_Os/00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md` (si existe)
    - Alternativamente: seguir protocolo de inicialización abajo
 
 2. **Leer Contexto Estratégico** (en este orden):
    - `00_Winter_is_Coming/GOALS.md` → Objetivos estratégicos
    - `00_Winter_is_Coming/BACKLOG.md` → Tareas pendientes
-   - `01_Personal_Os/01_Core/` → Estructura de skills, agents, MCPs
+   - `01_Personal_Os/00_Core/` → Estructura de skills, agents, MCPs
    - `01_Personal_Os/04_Operations/00_Context_LLM/` → Base de conocimiento
 
 3. **Entender Estructura del Proyecto**:
@@ -290,7 +290,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 | "daily notes", "log this", "registro"                                     | `03_Daily_Notes`                            | Workflows en 04_Hillary/                       |
 | "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
 
-**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/`
+**Skills location:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/`
 **Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
 **RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 

@@ -125,7 +125,7 @@ PATCHING:    ⚠️  Mixed — surgical fixes are fast, complex rewrites are slo
 
 ## How It Maps to This Project's Skill Auditor
 
-This project's **Skill Auditor** (`01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/SKILL.md`) already audits skills against Anthropic SOTA v5.1 standards. The find-and-fix loop maps directly:
+This project's **Skill Auditor** (`01_Personal_Os/00_Core/02_Tools/02_Skills/00_Skill_Auditor/SKILL.md`) already audits skills against Anthropic SOTA v5.1 standards. The find-and-fix loop maps directly:
 
 | Anthropic Step  | Skill Auditor Equivalent                                                                         |
 |----------------|-------------------------------------------------------------------------------------------------|

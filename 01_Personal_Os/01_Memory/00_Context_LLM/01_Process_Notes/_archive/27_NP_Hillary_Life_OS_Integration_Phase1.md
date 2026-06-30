@@ -16,8 +16,8 @@
 4.  Implementar el módulo de Captura Rápida (Quick Capture).
 
 ## 🚀 Acciones Realizadas
-- **Identidad**: Creado `01_Core/04_Agents/Hillary.md`. Rol: "Mano derecha de Gentleman".
-- **Skills**: Desarrollado `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md`.
+- **Identidad**: Creado `00_Core/04_Agents/Hillary.md`. Rol: "Mano derecha de Gentleman".
+- **Skills**: Desarrollado `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md`.
 ## Decisiones de Arquitectura v6.1
 
 1.  **Fuente Única de Verdad (`03_Tasks/`)**: Se ha redirigido la salida de los 5 módulos del Life OS (Capture, Plan, Notes, Record, Returns) hacia la carpeta `03_Tasks/`. Se conservan las carpetas originales como legado técnico (`no-delete` policy).

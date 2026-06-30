@@ -236,7 +236,7 @@ Estadísticas finales:
 ## 📝 Próximos Pasos
 
 ### Acciones Inmediatas
-- [ ] Revisar skills existentes en `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- [ ] Revisar skills existentes en `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 - [ ] Identificar 3-5 skills críticas para评测
 - [ ] Crear plantillas de evals.json
 - [ ] Integrar flujo de testing en creación de skills

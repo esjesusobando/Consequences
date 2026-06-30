@@ -16,7 +16,7 @@ Integrar formalmente el ecosistema **Hillary Life OS** en la arquitectura de pro
 ## 🛠️ Acciones de Integración Core
 
 1.  **Formalización del Agente**:
-    - Creación de `@13_Hillary.md` en `01_Core/04_Agents/`.
+    - Creación de `@13_Hillary.md` en `00_Core/04_Agents/`.
     - Definición de rol: Proactiva, centrada en higiene de vida y gestión de rutinas.
     - Protocolo: Reporta directamente a @gentleman mediante el Context Memory.
 

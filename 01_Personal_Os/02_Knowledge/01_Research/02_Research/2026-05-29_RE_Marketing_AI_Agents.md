@@ -93,7 +93,7 @@ No hay frameworks, no hay código, no hay configuración compleja. Solo carpetas
 ## Patrones Aplicables al Personal OS
 
 ### Patrón 1: Marketing Agent Definitions
-Crear agentes especializados de marketing en `01_Personal_Os/01_Core/02_Tools/01_Agents/`:
+Crear agentes especializados de marketing en `01_Personal_Os/00_Core/02_Tools/01_Agents/`:
 
 ```
 01_Agents/

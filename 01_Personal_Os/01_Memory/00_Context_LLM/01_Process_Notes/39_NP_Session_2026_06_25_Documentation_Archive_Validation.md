@@ -29,7 +29,7 @@ Ver CTX_2026_06_25_Session.md para detalle completo de fases 1-6.
 
 | # | Issue | Fix |
 |---|-------|-----|
-| 1 | Broken path `01_Core/04_Rules/` | → `01_Core/01_Rules/` (2 archivos) |
+| 1 | Broken path `00_Core/04_Rules/` | → `00_Core/01_Rules/` (2 archivos) |
 | 2 | Duplicate nested dir `02_Project_Manager/02_Project_Manager/` | Eliminado (30 archivos) |
 | 3 | Script sin shebang `config_paths.py` | Shebang agregado |
 | 4 | 20 agents sin YAML frontmatter | YAML completo agregado |

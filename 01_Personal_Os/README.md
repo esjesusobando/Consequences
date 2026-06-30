@@ -15,7 +15,7 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 
 ```
 01_Personal_Os/
-├── 01_Core/               ✅ Motor del OS — Reglas, Agents, Skills, MCPs, Hooks, Plugins
+├── 00_Core/               ✅ Motor del OS — Reglas, Agents, Skills, MCPs, Hooks, Plugins
 ├── 02_Knowledge/          ✅ Base de conocimiento — Docs, recursos, system knowledge
 ├── 03_Task/               ✅ Tareas activas — Workflows, sprints, tracking
 ├── 04_Operations/         ✅ Operaciones — Scripts (42 HUBs), MCPs, Projects, Installer
@@ -65,7 +65,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 | Recurso                   | Descripción                      |
 | ------------------------- | -------------------------------- |
-| `01_Core/README.md`       | Motor del OS — herramientas core |
+| `00_Core/README.md`       | Motor del OS — herramientas core |
 | `02_Knowledge/README.md`  | Base de conocimiento             |
 | `03_Task/README.md`       | Gestión de tareas                |
 | `04_Operations/README.md` | Scripts y operaciones            |
@@ -76,7 +76,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 ## 🔗 RELACIONES
 
-- **Source of Truth:** `01_Core/01_Rules/` para reglas del sistema
+- **Source of Truth:** `00_Core/01_Rules/` para reglas del sistema
 - **Backup:** `.agent/01_Agents/` sincronizado con source
 - **Config MCP:** `.mcp.json` en raíz del proyecto
 - **Memory:** `04_Operations/00_Context_LLM/`

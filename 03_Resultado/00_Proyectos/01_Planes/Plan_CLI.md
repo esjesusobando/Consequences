@@ -48,7 +48,7 @@ Este plan detalla las acciones necesarias para corregir los errores de Claude Co
 
 #### [MODIFY] Sincronización de Reglas (.mdc)
 - Unificar el naming convention a `hyphens` (ej: `05_ritual-integrity.mdc`) en todos los directorios.
-- Sincronizar las reglas faltantes (23, 24, 25) desde `01_Core/01_Rules/` hacia `.claude/02_Rules/` y `.agent/00_Rules/`.
+- Sincronizar las reglas faltantes (23, 24, 25) desde `00_Core/01_Rules/` hacia `.claude/02_Rules/` y `.agent/00_Rules/`.
 - *Opcional:* Se puede automatizar esta sincronización vía el `01_Auditor_Hub.py` en el futuro.
 
 ## Open Questions

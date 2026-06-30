@@ -124,9 +124,9 @@ Reemplazadas referencias a paths obsoletos con estructura v2.0:
 - **20 carpetas** de skills
 - **296 archivos SKILL.md**
 
-### 5.2 Estructura de 01_Personal_Os/01_Core/02_Tools/02_Skills/
+### 5.2 Estructura de 01_Personal_Os/00_Core/02_Tools/02_Skills/
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/
 ├── 00_TypeScript/          (13 archivos)
 ├── 01_React_19/            (4 archivos)
 ├── 02_Angular/            (7 archivos)
@@ -152,10 +152,10 @@ Reemplazadas referencias a paths obsoletos con estructura v2.0:
 ## 6. Rules — Estado Final
 
 ### 6.1 Total
-- **10 archivos .mdc** en `01_Core/01_Rules/`
+- **10 archivos .mdc** en `00_Core/01_Rules/`
 
 ### 6.2 Sincronización
-- `.agent/00_Rules/` sincronizado con `01_Core/01_Rules/`
+- `.agent/00_Rules/` sincronizado con `00_Core/01_Rules/`
 - Misma estructura, mismo contenido
 
 ---
@@ -218,7 +218,7 @@ feat(ops): auditoría integral del PersonalOS Think_Different v1.2
 - Migra contenido de 09_Marketing → 01_Creacion_Contenidos/
 - Implementa Auto-Improvement Engine en 04_Operations/01_Auto_Improvement/
 - Actualiza README.md, CLAUDE.md, RULES_INDEX.md a v1.2
-- Sincroniza .agent/00_Rules/ con 01_Core/01_Rules/
+- Sincroniza .agent/00_Rules/ con 00_Core/01_Rules/
 - Valida 100% en 8 checks de salud
 ```
 

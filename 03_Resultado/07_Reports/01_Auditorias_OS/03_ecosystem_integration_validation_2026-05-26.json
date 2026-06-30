@@ -1,0 +1,41 @@
+{
+  "date": "2026-05-26",
+  "scope": "Think_Different whole-project active docs + Gentleman/Every CE integration validation",
+  "local_tools": {
+    "opencode": "1.15.10",
+    "claude_code": "2.1.119",
+    "codex_cli": "0.130.0",
+    "gentle_ai": "1.30.10",
+    "engram": "1.15.15",
+    "gga": "2.8.1",
+    "jq": "1.8.1",
+    "pi_cli": "0.74.0"
+  },
+  "remote_latest": {
+    "compound_engineering": "compound-engineering-v3.8.4",
+    "gentle_ai": "v1.30.10",
+    "engram": "v1.15.15",
+    "gentleman_guardian_angel": "v2.8.1",
+    "agent_teams_lite": "v4.4.1",
+    "gentle_pi_repo": "v0.3.10"
+  },
+  "integrations": {
+    "opencode_sdd_agents": 10,
+    "opencode_sdd_commands": 13,
+    "opencode_ce_agents_detected": 43,
+    "codex_ce_skills_detected": 37,
+    "claude_compound_plugin_version": "3.8.4"
+  },
+  "fixes_applied": [
+    "Synced active docs/rules/workflows/skills to PersonalOS v4.8 markers",
+    "Corrected core hooks documentation from stale 01_Core/07_Hooks to 01_Personal_Os/01_Core/02_Tools/05_Hooks and runtime mirror .agent/04_Extensions/01_Hooks",
+    "Updated config_paths.py HOOKS_DIR to .agent/04_Extensions/01_Hooks",
+    "Added Windows shims for gga and jq availability in cmd/PowerShell",
+    "Installed jq 1.8.1 via winget and copied jq.exe into user local bin for current-shell availability"
+  ],
+  "preserved": [
+    "Historical v4.7 audit/process/context notes preserved",
+    "Legacy/backup script references preserved unless active runtime labels were stale",
+    "OS_DIRECTORY audit log v4.7 findings preserved as history"
+  ]
+}

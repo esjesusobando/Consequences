@@ -2,7 +2,7 @@
 
 **Versión:** 1.1
 **Última actualización:** 2026-05-26
-**Fuente de verdad:** `01_Personal_Os/01_Core/02_Tools/05_Hooks/`
+**Fuente de verdad:** `01_Personal_Os/00_Core/02_Tools/05_Hooks/`
 **Backup:** `.agent/04_Extensions/01_Hooks/`
 
 ---
@@ -106,10 +106,10 @@ Post-Compound Engineering:
 
 **Flags disponibles:**
 ```bash
-python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete
-python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --success
-python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --error
-python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --notify "Progreso: 45%"
+python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete
+python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --success
+python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --error
+python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --notify "Progreso: 45%"
 ```
 
 ---
@@ -177,16 +177,16 @@ Los hooks están configurados en `C:\Users\sebas\.claude\settings.json` con path
 {
   "hooks": {
     "PreToolUse": [{
-      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/pre_tool_use.py"
+      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/00_Core/02_Tools/05_Hooks/01_Pre_Tool/pre_tool_use.py"
     }],
     "PostToolUse": [{
-      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/02_Post_Tool/post_tool_use.py"
+      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/00_Core/02_Tools/05_Hooks/02_Post_Tool/post_tool_use.py"
     }],
     "Stop": [{
-      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/03_Lifecycle/stop.py"
+      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/00_Core/02_Tools/05_Hooks/03_Lifecycle/stop.py"
     }],
     "SubagentStop": [{
-      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/03_Lifecycle/subagent_stop.py"
+      "command": "python C:/Users/sebas/.../Think_Different/01_Personal_Os/00_Core/02_Tools/05_Hooks/03_Lifecycle/subagent_stop.py"
     }]
   }
 }
@@ -198,11 +198,11 @@ Los hooks están configurados en `C:\Users\sebas\.claude\settings.json` con path
 
 ## 🔄 Sincronización con Backup
 
-El runtime mirror en `.agent/04_Extensions/01_Hooks/` debe estar sincronizado con `01_Personal_Os/01_Core/02_Tools/05_Hooks/`.
+El runtime mirror en `.agent/04_Extensions/01_Hooks/` debe estar sincronizado con `01_Personal_Os/00_Core/02_Tools/05_Hooks/`.
 
-**Fuente de verdad:** `01_Personal_Os/01_Core/02_Tools/05_Hooks/` (aquí)
+**Fuente de verdad:** `01_Personal_Os/00_Core/02_Tools/05_Hooks/` (aquí)
 **Backup:** `.agent/04_Extensions/01_Hooks/`
 
-> ✅ Importante: la configuración de Claude puede apuntar al runtime mirror `.agent/04_Extensions/01_Hooks/`; por eso este directorio y `01_Personal_Os/01_Core/02_Tools/05_Hooks/` deben mantenerse sincronizados.
+> ✅ Importante: la configuración de Claude puede apuntar al runtime mirror `.agent/04_Extensions/01_Hooks/`; por eso este directorio y `01_Personal_Os/00_Core/02_Tools/05_Hooks/` deben mantenerse sincronizados.
 
 Al modificar un hook, actualizar AMBOS directorios y revalidar `.claude/settings.json` / `.claude/settings.local.json`.

@@ -17,9 +17,9 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 | ID               | Config                        | Path                                                           | Servers              | Auth Type                        | Status              |
 |-----------------|------------------------------|---------------------------------------------------------------|---------------------|---------------------------------|--------------------|
 | **A**            | Root                          | `.mcp.json`                                                    | 38                   | `${VAR}` placeholders            | ✅ ACTIVO            |
-| **B**            | Backup Claude Code            | `01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`              | 30                   | HARDCODED                        | 🔴 BACKUP            |
+| **B**            | Backup Claude Code            | `00_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`              | 30                   | HARDCODED                        | 🔴 BACKUP            |
 | **C**            | OpenCode Global               | `~/.config/opencode/opencode.json`                             | 36                   | HARDCODED                        | 🔴 BACKUP            |
-| **D**            | OpenCode Project              | `01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`            | 36                   | HARDCODED                        | 🔴 BACKUP            |
+| **D**            | OpenCode Project              | `00_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`            | 36                   | HARDCODED                        | 🔴 BACKUP            |
 
 ---
 
@@ -178,7 +178,7 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 ## 🔗 Referencias
 
 - Root config: `.mcp.json`
-- Backup configs: `01_Personal_Os/01_Core/02_Tools/03_Mcp/`
+- Backup configs: `01_Personal_Os/00_Core/02_Tools/03_Mcp/`
 - Skills lock: `.claude/skills-lock.json`
 
 ---

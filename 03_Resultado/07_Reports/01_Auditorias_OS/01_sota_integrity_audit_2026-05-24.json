@@ -1,0 +1,1228 @@
+{
+  "timestamp": "2026-05-24T08:27:09.167351",
+  "root": "C:\\Users\\sebas\\Downloads\\01 Revisar\\09 Versiones\\00 Respaldo PC Sebas\\01 Github\\personal-os\\Think_Different",
+  "scoped_file_count": 22134,
+  "skill_count": 2404,
+  "registry_missing_count": 0,
+  "registry_desktop_refs": [],
+  "stale_hits": {
+    "old_v41": [
+      "00_Winter_is_Coming/AGENTS.md",
+      "00_Winter_is_Coming/OS_DIRECTORY.md",
+      "01_Personal_Os/README.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/README.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/07_Hillary/SKILL.md",
+      "01_Personal_Os/03_Task/09_Plan_Seguir_2026-05-22.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/15_NP_Session_2026-05-19.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/16_NP_Session_Auditoria_Integral_2026-05-20.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/13_NP_Session_Submodules_QMD_TasteSkills_DigitalGarden.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/02_Knowledge_Brain/03_Anthropic_Skills_Framework.md",
+      "01_Personal_Os/04_Operations/02_Agent_Teams_Lite/README.md",
+      "01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/MCP_SYNC_FIX.md",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/README_Structure.md",
+      "01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/03_Side_Project_Backup/Oil/drilling-calculator/integrity-report.txt",
+      "01_Personal_Os/04_Operations/06_SOTA_Features/README.md",
+      "01_Personal_Os/05_Archive/README.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/EXTERNAL_REPOS.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/02_Agent_Teams_Lite/docs/changelog.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/17_Open_Design/craft/accessibility-baseline.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/README.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/02_Auditorias/AUDITORIA_INTEGRAL_2026-05-20.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/02_Auditorias/AUDIT_REPORT_v4.1_HISTORICO.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/02_Auditorias/AUDIT_REPORT_v4.5_ARCHIVE.md",
+      "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/craft/accessibility-baseline.md",
+      ".agent/02_Skills/README.md",
+      ".agent/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      ".agent/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      ".agent/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      ".agent/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      ".agent/02_Skills/07_Personal_Os/07_Hillary/SKILL.md",
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      ".claude/04_Skills/02_High_Value/20_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      ".claude/04_Skills/02_High_Value/20_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      ".claude/04_Skills/02_High_Value/20_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      ".claude/04_Skills/02_High_Value/20_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      ".claude/04_Skills/05_Gentleman/20_Health_Data_Analyst/examples/01_Salud/analyze_salud.py",
+      ".claude/04_Skills/05_Gentleman/20_Health_Data_Analyst/examples/02_Ventas/analyze_ventas.py",
+      ".claude/04_Skills/05_Gentleman/20_Health_Data_Analyst/examples/03_Marketing/analyze_marketing.py",
+      ".claude/04_Skills/05_Gentleman/20_Health_Data_Analyst/examples/04_General/analyze_general.py",
+      ".claude/memory/audit-2026-05-20.md",
+      "OS_DIRECTORY.md"
+    ],
+    "root_03_skills": [
+      "00_Winter_is_Coming/CHANGELOG.md",
+      "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/23_Skill_System_SOTA.mdc",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/01_Scripts/audit-loop.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/01_Scripts/audit-skills.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/01_Scripts/fix-missing.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/01_Scripts/validate-essence.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context/examples/run_all_tests.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context/examples/stress_test_5_agents.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context/examples/stress_test_5_distinct_agents.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/COMPATIBILITY_FIX_AND_TEST_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/FINAL_VALIDATION_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/SESSION_SUMMARY_FINAL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/MULTI_AGENT_ORCHESTRATION_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/session_summary_v1.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/test-fork-terminal.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/run_all_tests.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_agents.py",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_distinct_agents.py",
+      "01_Personal_Os/02_Knowledge/06_Unicorn/video_analysis_registry.md",
+      "01_Personal_Os/03_Task/00_P0_Auditoria.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/22_CTX_Session_2026-05-22_Plan_Resolution.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/_archive/02_CTX_Sistema_SOTA_Skills_v2.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/06_NP_Auditoria_Estabilizacion_v1_1_Alpha_2026-04-23.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/07_NP_Migracion_v2_Consequences_Cierre_2026-04-24.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/02_NP_Report_Status_v6.1.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/06_Solutions/system-maintenance/os-path-migration-v6.1.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/02_Plan_Auditoria_Super_Campeon.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/HEALTH_CHECK_2026-05-03.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/HEALTH_CHECK_2026-05-10.md",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/99_Utils/AUDIT_REPORT_SDD_2026-03-30.md",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/99_Utils/fix_all_paths.py",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/99_Utils/fix_remaining_paths.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/34_Skill_Auditor.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/.backup/10_Legacy_backup_20260420/34_Skill_Auditor.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/.backup/10_Legacy_backup_20260420/config_paths.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/34_Skill_Auditor.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/config_paths.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/12_Audits/audit_skills_routes.ps1",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/12_Audits/audit_skills_routes.py",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/12_Audits/migrate_skills_routes.ps1",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-14.md",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/skills_mapper.py",
+      "01_Personal_Os/04_Operations/05_Projects/00_Context/00_Learning_Always/02_LA_Recall_2.0/09_OS_Mejoras/09_OS_Mejoras.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/04_Plans_Completed/20260420_plans/Avengers_Plan.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/docs/plans/2026-03-03-feat-sync-claude-mcp-all-supported-providers-plan.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/docs/solutions/adding-converter-target-providers.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/docs/solutions/codex-skill-prompt-entrypoints.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/docs/specs/claude-code.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/16_N8n_Skills/n8n-skills-main/docs/INSTALLATION.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/19_Pi_Vs_Claude_Code/pi-vs-claude-code-main/COMPARISON.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/03_OpenSpec_Archive/openspec/changes/archive/2026-04-03-video-intel-skill/design.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/03_OpenSpec_Archive/openspec/changes/archive/2026-04-03-video-intel-skill/tasks.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/03_OpenSpec_Archive/openspec/changes/archive/2026-04-03-video-intel-skill/verify-report.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/02_Docs_All/03_Audit_Reports_2026/AUDITORIA_COMPLETA_v3_0_2026-04-26.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/03_Planes_Estrategicos/Plan_Claude_2026-04-20.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/05_Docs_Legacy/01_Planes/01_Sota_Implementation_Plan.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/05_Docs_Legacy/02_Auditorias/01_Auditoria.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/01_Raiz_Archive/System_Tree_Audit_v6.1.txt",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/07_Snapshots/2026-04-25_pre_consequences_3.0/AGENTS.md",
+      "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy/README.md",
+      "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2/README.md",
+      ".atl/openspec/changes/video-intel-skill/design.md",
+      ".atl/openspec/changes/video-intel-skill/tasks.md",
+      ".atl/openspec/changes/video-intel-skill/verify-report.md",
+      ".agent/02_Skills/00_Skill_Auditor/01_Scripts/audit-loop.py",
+      ".agent/02_Skills/00_Skill_Auditor/01_Scripts/audit-skills.py",
+      ".agent/02_Skills/00_Skill_Auditor/01_Scripts/fix-missing.py",
+      ".agent/02_Skills/00_Skill_Auditor/01_Scripts/validate-essence.py",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context/examples/run_all_tests.py",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context/examples/stress_test_5_agents.py",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context/examples/stress_test_5_distinct_agents.py",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/COMPATIBILITY_FIX_AND_TEST_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/FINAL_VALIDATION_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/SESSION_SUMMARY_FINAL.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/MULTI_AGENT_ORCHESTRATION_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/session_summary_v1.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/test-fork-terminal.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/run_all_tests.py",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_agents.py",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_distinct_agents.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/context/examples/run_all_tests.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/context/examples/stress_test_5_agents.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/context/examples/stress_test_5_distinct_agents.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/run_all_tests.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_agents.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_distinct_agents.py",
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/SKILL.md",
+      ".agent/02_Skills/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
+      ".agent/02_Skills/21_Skill_Template/SKILL_TEMPLATE/README.md",
+      ".opencode/skills/README.md",
+      ".claude/03_Agents/README.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/SKILL.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/command/prime.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/docs/ADVANCED_TESTS.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/docs/EXECUTIVE_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/docs/INDEX.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/docs/README.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/examples/run_all_tests.py",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/examples/stress_test_5_agents.py",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/examples/stress_test_5_distinct_agents.py",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/scenarios/marketing-seo.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/cookbook/claude-code.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/cookbook/cli-command.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/cookbook/codex-cli.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/cookbook/gemini-cli.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/COMPATIBILITY_FIX_AND_TEST_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/FINAL_VALIDATION_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/SESSION_SUMMARY_FINAL.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/history/MULTI_AGENT_ORCHESTRATION_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/history/session_summary_v1.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/history/test-fork-terminal.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/SKILL.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/docs/ADVANCED_TESTS.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/docs/EXECUTIVE_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/docs/INDEX.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/docs/README.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/examples/run_all_tests.py",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_agents.py",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/examples/stress_test_5_distinct_agents.py",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/scenarios/marketing-seo.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/cookbook/claude-code.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/cookbook/cli-command.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/cookbook/codex-cli.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/cookbook/gemini-cli.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/parallel-orchestration/SKILL.md",
+      ".claude/04_Skills/01_Core/02_Parallel_Orchestration/SKILL.md",
+      ".claude/04_Skills/02_High_Value/17_Brand_Voice_Generator/SKILL.md",
+      ".claude/04_Skills/02_High_Value/18_Mcp_Client/SKILL.md",
+      ".claude/04_Skills/03_Utilities/05_E2b_Sandbox/resources/EB2 Skill Doc.md",
+      ".claude/04_Skills/03_Utilities/12_Pptx_Generator/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/00_Core_Sdd/01_Skill_Registry/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/05_E2b_Sandbox/resources/EB2 Skill Doc.md",
+      ".claude/04_Skills/05_Gentleman/12_Pptx_Generator/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/17_Brand_Voice_Generator/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/18_Mcp_Client/SKILL.md"
+    ],
+    "root_01_core": [
+      "00_Winter_is_Coming/CHANGELOG.md",
+      "01_Personal_Os/README.md",
+      "01_Personal_Os/01_Core/01_Inventario_Total.md",
+      "01_Personal_Os/01_Core/02_Dream_Team.md",
+      "01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/05_Ritual_Cierre_Protocol.md",
+      "01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/06_Validar_Reglas.md",
+      "01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/07_System_Health_Audit.md",
+      "01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/08_Context_Recovery.md",
+      "01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/07_AntMan_Lfg_Lite.md",
+      "01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/08_Doc_Strange_Lfg.md",
+      "01_Personal_Os/01_Core/01_Rules/07_Docs_Guias.mdc",
+      "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/01_Context_Protocol.mdc",
+      "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/17_Genesis.mdc",
+      "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/21_Gentleman_Framework.mdc",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/10_Workflow_Orchestrator.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/11_AIPM_Judge.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/12_LFG_Autonomous_Engine.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/01_Product_Builder.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/02_Data_Engineer.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/03_Marketing_Tech.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/04_Design_Ops.md",
+      "01_Personal_Os/01_Core/02_Tools/01_Agents/05_Marca/README.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/01_Video_Intel/19_Video_Intel/exploration.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/15_Os_Self_Improvement/references/references.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/16_Os_Self_Improvement/references/references.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/05_Workflow_Orchestrator.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/06_LFG_Engine.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/README.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/07_Data_Visualization/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/README.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/COMPATIBILITY_FIX_AND_TEST_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/FINAL_VALIDATION_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/MULTI_AGENT_ORCHESTRATION_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/03_System_Guardian/SKILL.md",
+      "01_Personal_Os/01_Core/02_Tools/03_Mcp/MCP_CONFIG_AUDIT.md",
+      "01_Personal_Os/01_Core/02_Tools/03_Mcp/00_Config_Mcp/MCP_CATALOG.md",
+      "01_Personal_Os/01_Core/02_Tools/03_Mcp/00_Config_Mcp/mcp-tools/README.md",
+      "01_Personal_Os/01_Core/02_Tools/05_Hooks/README.md",
+      "01_Personal_Os/01_Core/02_Tools/06_Plugins/01_Staff_Claude_Code/plugins/skill-creator/README.md",
+      "01_Personal_Os/02_Knowledge/00_Examples_Personal_Os/Workflows/02_Morning_Standup.md",
+      "01_Personal_Os/02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md",
+      "01_Personal_Os/02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md",
+      "01_Personal_Os/02_Knowledge/04_Docs/OS_Integration_Audit_v6.1.md",
+      "01_Personal_Os/02_Knowledge/04_Docs/README.md",
+      "01_Personal_Os/02_Knowledge/04_Docs/03_ATL/skill-registry.md",
+      "01_Personal_Os/02_Knowledge/06_Unicorn/01_Pm/video_analysis_Ariel_PM_Agentes.md",
+      "01_Personal_Os/03_Task/01_P0_System_Guardian_Test.md",
+      "01_Personal_Os/03_Task/00_Templates/README.md",
+      "01_Personal_Os/03_Task/01_Tasks_Done/00_Plan_Integration_Hillary.md",
+      "01_Personal_Os/03_Task/02_Hillary_Inbox/README.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/01_CTX_System_Architecture_Foundations.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/22_CTX_Session_2026-05-22_Plan_Resolution.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/_archive/01_Sesion_Template.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/_archive/02_CTX_Sistema_SOTA_Skills_v2.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/_archive/17_CTX_OIM_Vite_Fallback_Opencode_Repair.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/_archive/19_CTX_Hillary_Integration_Master.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/_archive/19_CTX_Hillary_System_Mapping.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/07_NP_Migracion_v2_Consequences_Cierre_2026-04-24.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/15_NP_Session_2026-05-19.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/16_NP_Session_Auditoria_Integral_2026-05-20.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/02_NP_Report_Status_v6.1.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/14_NP_Session_Sistema_SOTA_Skills.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/23_NP_Migracion_Rutas_v6.1.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/27_NP_Hillary_Core_Integration.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/_archive/27_NP_Hillary_Life_OS_Integration_Phase1.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/02_Knowledge_Brain/12_Estado_Del_Arte.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/03_Memory_Brain/00_Active/01_Reglas_Sistema.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/03_Memory_Brain/01_Mapeos/01_System_Map_2026-03-24.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/03_Memory_Brain/03_Archive_Memory/2026-03-21/00_Super_Reporte_Sistema.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/03_Memory_Brain/03_Archive_Memory/2026-03-24/14_Skills_Audit_Summary_2026-03-24.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/06_Solutions/system-maintenance/dual-config-mcp-opencode-fix.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/06_Solutions/system-maintenance/os-path-migration-v6.1.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/06_Solutions/system-reorg/20260421_Reorg_Workflows_Agents.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/02_Plan_Auditoria_Super_Campeon.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/HEALTH_CHECK_2026-05-03.md",
+      "01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/HEALTH_CHECK_2026-05-10.md",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/NOTAS_DE_PROCESO.md",
+      "01_Personal_Os/04_Operations/01_Auto_Improvement/99_Utils/AUDIT_REPORT_SDD_2026-03-30.md",
+      "01_Personal_Os/04_Operations/02_Agent_Teams_Lite/README.md",
+      "01_Personal_Os/04_Operations/03_Scripts_Os/REPORTE_AUDITORIA_INTEGRAL_2026-04-21.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/10_Workflow_Orchestrator.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/11_AIPM_Judge.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/12_LFG_Autonomous_Engine.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/README.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/01_Dream_Team/01_Product_Builder.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/01_Dream_Team/02_Data_Engineer.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/01_Dream_Team/03_Marketing_Tech.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/01_Dream_Team/04_Design_Ops.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/02_Backup_Agents/01_Dream_Team/05_Platform_Engineer.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/01_Iron_Man_Gen.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/07_AntMan_Lfg_Lite.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/08_Doc_Strange_Lfg.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/09_Validar_Reglas.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/12_Ritual_Cierre_Protocol.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/13_Context_Recovery.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/03_Backup_Workflows/14_System_Health_Audit.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/04_Plans_Completed/01_Reorg_Workflow_Agent/Sesion_Workflows_Walkthrough.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/04_Plans_Completed/01_Reorg_Workflow_Agent/task.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/04_Plans_Completed/01_Reorg_Workflow_Agent/walkthrough.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/04_Plans_Completed/20260420_plans/Avengers_Plan.md",
+      "01_Personal_Os/05_Archive/00_Backup_Os/04_Plans_Completed/20260420_plans/Plan_Rules.md",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/docs/specs/claude-code.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/01_Planes_Legacy/2026-03-30/2026-03-30-001-fix-system-guardian-integration-plan.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/02_Docs_All/03_Audit_Reports_2026/AUDITORIA_COMPLETA_v3_0_2026-04-26.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/02_Docs_All/03_Audit_Reports_2026/PLAN_MEDICION_DANOS_V2.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/02_Docs_All/03_Audit_Reports_2026/SEQUENCE_VALIDATION.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/02_Docs_All/03_Audit_Reports_2026/SEQUENCE_VALIDATION_FINAL.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/03_Planes_Estrategicos/2026-03-19-refactor-config-paths-tests-plan.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/03_Planes_Estrategicos/Plan_Claude_2026-04-20.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/03_Planes_Estrategicos/Momentum_2026-03-19/Momentum_Report_2026-03-19.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/05_Docs_Legacy/01_Planes/04_Task_Restauracion_Opencode.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/05_Docs_Legacy/01_Planes/03_OpenCode_Restoration/02_Task.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/05_Docs_Legacy/02_Auditorias/01_Auditoria.md",
+      "01_Personal_Os/05_Archive/02_Legacy_Content/05_Docs_Legacy/02_Auditorias/02_Auditoria_Final_v6.1.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/10_Workflow_Orchestrator.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/11_AIPM_Judge.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/12_LFG_Autonomous_Engine.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/README.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/01_Dream_Team/01_Product_Builder.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/01_Dream_Team/02_Data_Engineer.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/01_Dream_Team/03_Marketing_Tech.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/01_Dream_Team/04_Design_Ops.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/02_Backup_Agents/01_Dream_Team/05_Platform_Engineer.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/01_Iron_Man_Gen.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/07_AntMan_Lfg_Lite.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/08_Doc_Strange_Lfg.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/09_Validar_Reglas.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/12_Ritual_Cierre_Protocol.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/13_Context_Recovery.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/03_Backup_Workflows/14_System_Health_Audit.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/01_Reorg_Workflow_Agent/Sesion_Workflows_Walkthrough.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/01_Reorg_Workflow_Agent/task.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/01_Reorg_Workflow_Agent/walkthrough.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Plan_Rules.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/10_Workflow_Orchestrator.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/11_AIPM_Judge.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/12_LFG_Autonomous_Engine.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/README.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/01_Dream_Team/01_Product_Builder.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/01_Dream_Team/02_Data_Engineer.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/01_Dream_Team/03_Marketing_Tech.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/01_Dream_Team/04_Design_Ops.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/02_Backup_Agents/01_Dream_Team/05_Platform_Engineer.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/01_Iron_Man_Gen.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/07_AntMan_Lfg_Lite.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/08_Doc_Strange_Lfg.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/09_Validar_Reglas.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/12_Ritual_Cierre_Protocol.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/13_Context_Recovery.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/14_System_Health_Audit.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/01_Reorg_Workflow_Agent/Sesion_Workflows_Walkthrough.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/01_Reorg_Workflow_Agent/task.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/01_Reorg_Workflow_Agent/walkthrough.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Plan_Rules.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/07_Snapshots/2026-04-25_pre_consequences_3.0/AGENTS.md",
+      "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy/README.md",
+      "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2/README.md",
+      ".atl/README.md",
+      ".atl/openspec/changes/sound-hooks-opencode/proposal.md",
+      ".agent/00_Rules/07_Docs_Guias.mdc",
+      ".agent/01_Agents/10_Workflow_Orchestrator.md",
+      ".agent/01_Agents/11_AIPM_Judge.md",
+      ".agent/01_Agents/12_LFG_Autonomous_Engine.md",
+      ".agent/01_Agents/01_Dream_Team/01_Product_Builder.md",
+      ".agent/01_Agents/01_Dream_Team/02_Data_Engineer.md",
+      ".agent/01_Agents/01_Dream_Team/03_Marketing_Tech.md",
+      ".agent/01_Agents/01_Dream_Team/04_Design_Ops.md",
+      ".agent/01_Agents/05_Marca/README.md",
+      ".agent/02_Skills/03_Video_Media/01_Video_Intel/19_Video_Intel/exploration.md",
+      ".agent/02_Skills/04_Automatizacion/15_Os_Self_Improvement/references/references.md",
+      ".agent/02_Skills/04_Automatizacion/16_Os_Self_Improvement/references/references.md",
+      ".agent/02_Skills/05_Workflows/05_Workflow_Orchestrator.md",
+      ".agent/02_Skills/05_Workflows/06_LFG_Engine.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/README.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/07_Data_Visualization/SKILL.md",
+      ".agent/02_Skills/07_DevOps/07_Data_Visualization/SKILL.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/README.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/COMPATIBILITY_FIX_AND_TEST_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/FINAL_VALIDATION_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/MULTI_AGENT_ORCHESTRATION_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/03_System_Guardian/SKILL.md",
+      ".agent/02_Skills/08_Personal_Os/README.md",
+      ".agent/02_Skills/08_Personal_Os/03_System_Guardian/SKILL.md",
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/03_Data_Visualization/SKILL.md",
+      ".agent/02_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/README.md",
+      ".agent/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+      ".agent/02_Skills/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+      ".agent/02_Skills/19_Video_Intel/exploration.md",
+      ".agent/03_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol.md",
+      ".agent/03_Workflows/01_Personal_Os/06_Validar_Reglas.md",
+      ".agent/03_Workflows/01_Personal_Os/07_System_Health_Audit.md",
+      ".agent/03_Workflows/01_Personal_Os/08_Context_Recovery.md",
+      ".agent/03_Workflows/02_Marvel/07_AntMan_Lfg_Lite.md",
+      ".agent/03_Workflows/02_Marvel/08_Doc_Strange_Lfg.md",
+      ".opencode/skills/README.md",
+      ".claude/02_Rules/01_Context_Protocol.mdc",
+      ".claude/02_Rules/17_Genesis.mdc",
+      ".claude/03_Agents/10_Workflow_Orchestrator.md",
+      ".claude/03_Agents/11_AIPM_Judge.md",
+      ".claude/03_Agents/12_LFG_Autonomous_Engine.md",
+      ".claude/03_Agents/aipm-judge.md",
+      ".claude/03_Agents/lfg.md",
+      ".claude/03_Agents/README.md",
+      ".claude/03_Agents/workflow-orchestrator.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/SKILL.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/context/docs/EXECUTIVE_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/COMPATIBILITY_FIX_AND_TEST_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/FINAL_VALIDATION_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/history/MULTI_AGENT_ORCHESTRATION_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/reports/history/ORCHESTRATION_CONFIG_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/SKILL.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/fork-terminal/context/docs/EXECUTIVE_REPORT.md",
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/skills/parallel-orchestration/SKILL.md",
+      ".claude/04_Skills/01_Core/02_Parallel_Orchestration/SKILL.md",
+      ".claude/04_Skills/02_High_Value/17_Brand_Voice_Generator/SKILL.md",
+      ".claude/04_Skills/02_High_Value/18_Mcp_Client/SKILL.md",
+      ".claude/04_Skills/03_Utilities/05_E2b_Sandbox/resources/EB2 Skill Doc.md",
+      ".claude/04_Skills/03_Utilities/12_Pptx_Generator/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/05_E2b_Sandbox/resources/EB2 Skill Doc.md",
+      ".claude/04_Skills/05_Gentleman/08_Nos_Vamos_A_Casa/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/12_Pptx_Generator/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/17_Brand_Voice_Generator/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/18_Mcp_Client/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/19_Frictionless_Capture/SKILL.md",
+      ".claude/04_Skills/05_Gentleman/27_Nos_Vamos_A_Casa/SKILL.md",
+      "README.md"
+    ],
+    "gemini_antigravity": [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/02_Agent_Teams_Lite/scripts/install.ps1",
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/13_Gentleman_Skills/README.md"
+    ],
+    "desktop_root": [
+      "01_Personal_Os/05_Archive/03_Backups_Audits/02_Auditorias/AUDIT_REPORT_v4.1_HISTORICO.md",
+      "01_Personal_Os/05_Archive/03_Backups_Audits/04_v4p7_Consequences/SDD_PLAN_PROBAR_FASES_2026-05-22.md"
+    ]
+  },
+  "invalid_skill_frontmatter": [
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/07_Compound_Engine/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/02_Supabase_Integration/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/03_MCP_Integration/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/05_Seo_Audit/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/06_Seo_Optimization/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/07_Data_Visualization/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/04_Test_Resource_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/15_Shellcheck/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/17_Testing_Coverage/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/13_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/13_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/13_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/15_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/15_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/15_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/16_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/16_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/16_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/07_Csv_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/tests/fixtures/custom-paths/custom-skills/custom-skill/SKILL.md",
+      "missing description:"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/tests/fixtures/custom-paths/skills/default-skill/SKILL.md",
+      "missing description:"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/09_Frontend_Slides/plugins/frontend-slides/skills/frontend-slides/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/12_Gentleman_Guardian_Angel/skills/branch-pr/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/12_Gentleman_Guardian_Angel/skills/commit-hygiene/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/12_Gentleman_Guardian_Angel/skills/docs-alignment/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/12_Gentleman_Guardian_Angel/skills/issue-creation/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/12_Gentleman_Guardian_Angel/skills/shellcheck-standards/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/12_Gentleman_Guardian_Angel/skills/testing-coverage/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/02_Legacy_Content/02_Docs_All/01_Legacy_Skills/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/05_Archive/02_Legacy_Content/04_Legacy_Skills_Archive/SKILL.md",
+      "missing name:"
+    ],
+    [
+      "01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/plugins/frontend-slides/skills/frontend-slides/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/plugins/_official/scenarios/od-design-refine/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/plugins/_official/scenarios/od-nextjs-export/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/plugins/_official/scenarios/od-react-export/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/plugins/_official/scenarios/od-vue-export/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/01_Creacion_Contenidos/07_Compound_Engine/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/01_Creacion_Contenidos/09_Compound_Engine/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/02_Project_Manager/01_Morning_Standup/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/02_Project_Manager/02_Backlog_Processing/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/03_Product_Manager/03_Executing_Plans/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/04_Product_Design/05_Output_Skill/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/04_Product_Design/08_Brand_Voice_Generator/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/05_Vibe_Coding/10_Mcp_Client/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Testing/04_Test_Resource_Management/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/06_Testing/15_Shellcheck/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/06_Testing/17_Testing_Coverage/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/02_Supabase_Integration/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/03_MCP_Integration/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/05_Seo_Audit/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/06_Seo_Optimization/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/07_Data_Visualization/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/06_Testing/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/06_Testing/04_Test_Resource_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/06_Testing/15_Shellcheck/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/06_Testing/17_Testing_Coverage/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/13_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/13_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/13_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/15_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/15_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/15_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/16_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/16_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/06_Tools/16_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/07_DevOps/01_Vercel_Deploy/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/07_DevOps/02_Supabase_Integration/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/07_DevOps/03_MCP_Integration/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/07_DevOps/05_Seo_Audit/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/07_DevOps/06_Seo_Optimization/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/07_DevOps/07_Data_Visualization/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/07_Csv_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/03_System_Guardian/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/07_Csv_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".agent/02_Skills/08_Personal_Os/11_Weekly_Review/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/09_Marketing/03_Compound_Engine/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/09_Marketing/07_Pptx_Generator/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/09_Marketing/14_UI_UX_Pro_Max/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/06_Firecrawl/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/08_Brand_Voice_Generator/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/11_Compound_Engine/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/01_Supabase_Integration/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/02_Seo_Audit/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/03_Data_Visualization/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/04_Vercel_Deploy/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/05_MCP_Integration/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/17_Brand_Voice_Generator/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/03_High_Value_Remaining/31_Compound_Engine/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/04_Utilities_Remaining/23_Supabase_Integration/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/04_Utilities_Remaining/24_Seo_Audit/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/04_Utilities_Remaining/25_Data_Visualization/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/04_Utilities_Remaining/26_Vercel_Deploy/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".agent/02_Skills/10_Backup/04_Utilities_Remaining/30_Firecrawl/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/11_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/11_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/11_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/18_Personal_Life_OS/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/18_Personal_Life_OS/01_Quick_Capture/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/18_Personal_Life_OS/02_Plan_My_Day/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/18_Personal_Life_OS/03_Daily_Notes/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/18_Personal_Life_OS/04_Recording_Mode/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/18_Personal_Life_OS/05_Returns_Tracker/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/02_Skills/19_Video_Intel/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/05_GGA/skills/branch-pr/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/05_GGA/skills/commit-hygiene/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/05_GGA/skills/docs-alignment/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/05_GGA/skills/issue-creation/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/05_GGA/skills/shellcheck-standards/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".agent/05_GGA/skills/testing-coverage/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/01_Core/01_Fork_Terminal/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/01_Core/02_Parallel_Orchestration/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/02_High_Value/24_Test_Resource_Management/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/02_High_Value/26_Deep_Research/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/02_High_Value/31_Compound_Engine/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/02_High_Value/35_Pencil_Design_Studio/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/01_Seo_Optimization/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/04_Csv_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/23_Supabase_Integration/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/24_Seo_Audit/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/25_Data_Visualization/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/26_Vercel_Deploy/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/03_Utilities/30_Firecrawl/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/01_Seo_Optimization/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/04_Csv_Management/SKILL.md",
+      "missing name:"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/23_Supabase_Integration/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/24_Seo_Audit/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/24_Test_Resource_Management/SKILL.md",
+      "missing frontmatter"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/25_Data_Visualization/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/26_Vercel_Deploy/SKILL.md",
+      "missing description:"
+    ],
+    [
+      ".claude/04_Skills/05_Gentleman/30_Firecrawl/SKILL.md",
+      "missing frontmatter"
+    ]
+  ]
+}

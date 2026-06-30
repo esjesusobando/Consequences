@@ -11,8 +11,8 @@
 | Aspecto                                           | Detalle                                                                                                 |
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | **Origen**                                        | `06_Playground/Hillary_Life_OS/`                                                                        |
-| **Destination**                                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/` (ÚLTIMO NÚMERO DISPONIBLE)             |
-| **Workflow**                                      | `01_Core/00_Workflows/24_Hillary_Life_OS.md` (NÚMERO SIGUIENTE DISPONIBLE)                              |
+| **Destination**                                   | `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/` (ÚLTIMO NÚMERO DISPONIBLE)             |
+| **Workflow**                                      | `00_Core/00_Workflows/24_Hillary_Life_OS.md` (NÚMERO SIGUIENTE DISPONIBLE)                              |
 | **Skills a integrar**                             | 5 (Quick Capture, Plan My Day, Daily Notes, Recording Mode, Returns Tracker)                            |
 | **Impacto en sistema**                            | 0% — solo se agrega, no se modifica nada existente                                                      |
 | **Riesgo**                                        | Mínimo — se integra como nueva categoría                                                                |
@@ -21,7 +21,7 @@
 
 ## 🔢 VERIFICACIÓN DE NUMERACIONES
 
-### Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/)
+### Skills (01_Personal_Os/00_Core/02_Tools/02_Skills/)
 
 | #                                 | Categoría                                              | Estado                                           |
 |----------------------------------|-------------------------------------------------------|-------------------------------------------------|
@@ -49,7 +49,7 @@
 
 **Total actual:** 22 skills (0-17) → **18 será el siguiente**
 
-### Workflows (01_Core/00_Workflows/)
+### Workflows (00_Core/00_Workflows/)
 
 | #                                 | Estado                                           |
 |----------------------------------|-------------------------------------------------|
@@ -88,10 +88,10 @@
 
 ## 📋 ANÁLISIS DE INTEGRACIÓN
 
-### 1. Skills Existentes en 01_Personal_Os/01_Core/02_Tools/02_Skills/
+### 1. Skills Existentes en 01_Personal_Os/00_Core/02_Tools/02_Skills/
 
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/
 ├── 00_Compound_Engineering
 ├── 00_Personal_Os_Stack
 ├── 00_Skill_Auditor
@@ -138,19 +138,19 @@
 06_Playground/Hillary_Life_OS/
 │
 ├── 01_Quick_Capture/
-│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/01_Quick_Capture/
+│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/01_Quick_Capture/
 │
 ├── 02_Plan_My_Day/
-│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/02_Plan_My_Day/
+│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/02_Plan_My_Day/
 │
 ├── 03_Daily_Notes/
-│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/03_Daily_Notes/
+│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/03_Daily_Notes/
 │
 ├── 04_Recording_Mode/
-│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/04_Recording_Mode/
+│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/04_Recording_Mode/
 │
 ├── 05_Returns_Tracker/
-│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/05_Returns_Tracker/
+│   └── SKILL.md ──────────────────────────▶ 01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/05_Returns_Tracker/
 │
 ├── RUNBOOK.md ────────────────────────────▶ 02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md
 └── SESSION_SUMMARY.md ──────────────────────▶ 02_Knowledge/04_Docs/Hillary_Life_OS_SUMMARY.md
@@ -164,7 +164,7 @@
 
 | #                              | Tarea                                             | Archivo/Path                                                                | Estado                              |
 |-------------------------------|--------------------------------------------------|----------------------------------------------------------------------------|------------------------------------|
-| 1.1                            | Crear carpeta destino                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/`            | ⏳                                   |
+| 1.1                            | Crear carpeta destino                             | `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/`            | ⏳                                   |
 | 1.2                            | Copiar Quick Capture                              | De Playground a 01_Core                                                     | ⏳                                   |
 | 1.3                            | Copiar Plan My Day                                | De Playground a 01_Core                                                     | ⏳                                   |
 | 1.4                            | Copiar Daily Notes                                | De Playground a 01_Core                                                     | ⏳                                   |
@@ -189,7 +189,7 @@
 
 | #                              | Tarea                                                 | Archivo/Path                                                              | Estado                              |
 |-------------------------------|------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------|
-| 3.1                            | Crear workflow orquestador                            | `01_Core/00_Workflows/24_Hillary_Life_OS.md`                              | ⏳                                   |
+| 3.1                            | Crear workflow orquestador                            | `00_Core/00_Workflows/24_Hillary_Life_OS.md`                              | ⏳                                   |
 | 3.2                            | Definir triggers                                      | "/hillary", "life os", "personal productivity"                            | ⏳                                   |
 | 3.3                            | Vincular a CE commands                                | En 01_Personal_Os/11_AGENTS.md                                            | ⏳                                   |
 
@@ -222,13 +222,13 @@
 
 | Archivo                                                                                                | Propósito                                         |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/01_Quick_Capture/SKILL.md`              | Skill Quick Capture                               |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/02_Plan_My_Day/SKILL.md`                | Skill Plan My Day                                 |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/03_Daily_Notes/SKILL.md`                | Skill Daily Notes                                 |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/04_Recording_Mode/SKILL.md`             | Skill Recording Mode                              |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/05_Returns_Tracker/SKILL.md`            | Skill Returns Tracker                             |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/README.md`                              | Índice de la categoría                            |
-| `01_Core/00_Workflows/24_Hillary_Life_OS.md`                                                           | Workflow orquestador                              |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/01_Quick_Capture/SKILL.md`              | Skill Quick Capture                               |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/02_Plan_My_Day/SKILL.md`                | Skill Plan My Day                                 |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/03_Daily_Notes/SKILL.md`                | Skill Daily Notes                                 |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/04_Recording_Mode/SKILL.md`             | Skill Recording Mode                              |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/05_Returns_Tracker/SKILL.md`            | Skill Returns Tracker                             |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/README.md`                              | Índice de la categoría                            |
+| `00_Core/00_Workflows/24_Hillary_Life_OS.md`                                                           | Workflow orquestador                              |
 | `02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`                                                      | RUNBOOK movido                                    |
 | `PLAN_HILLARY_INTEGRATION.md`                                                                          | Este archivo                                      |
 
@@ -330,8 +330,8 @@ Una vez integrado, los skills se invocarán con:
 
 - **Repo origen:** `06_Playground/Hillary_Life_OS/`
 - **Docs destino:** `02_Knowledge/04_Docs/`
-- **Skills destino:** `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/`
-- **Workflow destino:** `01_Core/00_Workflows/24_Hillary_Life_OS.md`
+- **Skills destino:** `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/`
+- **Workflow destino:** `00_Core/00_Workflows/24_Hillary_Life_OS.md`
 
 ---
 

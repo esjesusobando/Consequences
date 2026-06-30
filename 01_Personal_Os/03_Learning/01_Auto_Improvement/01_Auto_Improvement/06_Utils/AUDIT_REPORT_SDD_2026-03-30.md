@@ -78,7 +78,7 @@
 
 ---
 
-### 1.5 Path: `01_Core/03_Skills` (Should be `.agent/` or `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
+### 1.5 Path: `00_Core/03_Skills` (Should be `.agent/` or `01_Personal_Os/00_Core/02_Tools/02_Skills/`)
 
 | Metric                                         | Value                                                                   |
 |-----------------------------------------------|------------------------------------------------------------------------|
@@ -86,14 +86,14 @@
 | **Status**                                     | ❌ CRITICAL - Old OpenCode/Cody skills path                              |
 
 **Common References:**
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/` → Should be in skills registry
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/` → Needs migration
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/pptx-generator/` → Needs migration
-- Legacy backup skills in `01_Personal_Os/01_Core/02_Tools/02_Skills/` and `.agent/10_Backup/`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/mcp-client/` → Should be in skills registry
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/fork-terminal/` → Needs migration
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/pptx-generator/` → Needs migration
+- Legacy backup skills in `01_Personal_Os/00_Core/02_Tools/02_Skills/` and `.agent/10_Backup/`
 
 ---
 
-### 1.6 Path: `.agent/01_Agents` (Should be `.agent/01_Agents/` or `01_Core/04_Agents/`)
+### 1.6 Path: `.agent/01_Agents` (Should be `.agent/01_Agents/` or `00_Core/04_Agents/`)
 
 | Metric                                         | Value                                                       |
 |-----------------------------------------------|------------------------------------------------------------|
@@ -158,7 +158,7 @@
 
 | Directory                                     | Expected Path                                                     | Status                                |
 |----------------------------------------------|------------------------------------------------------------------|--------------------------------------|
-| Skills                                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                      | ✅ EXISTS                              |
+| Skills                                        | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                      | ✅ EXISTS                              |
 | Auto-Improvement                              | `04_Operations/01_Auto_Improvement/`                              | ✅ EXISTS                              |
 | Scripts OS                                    | `03_Scripts_Os/`                                                  | ✅ EXISTS                              |
 | Tasks                                         | `03_Tasks/`                                                       | ✅ EXISTS                              |
@@ -189,10 +189,10 @@ Output:
    - Risk: Broken imports, failed scripts
    - Recommendation: Run migration script
 
-2. **Skills Path Fragmentation: `01_Core/03_Skills`**
+2. **Skills Path Fragmentation: `00_Core/03_Skills`**
    - 881 references to old skills location
    - Risk: Skills not loading, broken tool references
-   - Recommendation: Migrate to `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+   - Recommendation: Migrate to `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 ### ⚠️ MEDIUM ISSUES
 
@@ -210,7 +210,7 @@ Output:
 
 ### Priority 1 (Critical)
 - [ ] Run `04_Operations/01_Auto_Improvement/99_Utils/update_workflows.py` to fix `04_Operations` → `04_Operations`
-- [ ] Audit and migrate `01_Core/03_Skills` references
+- [ ] Audit and migrate `00_Core/03_Skills` references
 
 ### Priority 2 (Important)
 - [ ] Update all scripts referencing `04_Operations` → `04_Operations`

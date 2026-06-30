@@ -6,8 +6,8 @@ description: "Agent: 21_Learning_Always"
 # 🧪 21_Learning_Always — Metodología de Aprendizaje Continuo
 
 > **Status:** Semi-Autonomous — Se activa cuando el usuario quiere aprender, investigar o deep-dive en un tema
-> **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/01_Learning_Always/`
-> **Skills:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/01_Learning_Always/SKILL.md`
+> **Source of Truth:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/01_Learning_Always/`
+> **Skills:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/01_Learning_Always/SKILL.md`
 > **Dependencias:** World Class Research (research/), Documentación Externa (web), README scanning
 
 ---

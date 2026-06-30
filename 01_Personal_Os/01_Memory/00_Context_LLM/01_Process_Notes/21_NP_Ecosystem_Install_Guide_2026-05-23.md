@@ -223,7 +223,7 @@ qwen extensions install EveryInc/compound-engineering-plugin:compound-engineerin
 
 El OS ya tiene CE instalado en:
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/
+01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/
 ├── 01_Agents_Review/
 ├── 02_Agents_DocReview/
 ├── 03_Agents_Design/
@@ -256,7 +256,7 @@ bunx @every-env/compound-plugin cleanup --target qwen
 | **gentle-ai**       | v1.30.8      | ✅ ACTUALIZADO | Go bin en `~/go/bin/gentle-ai.exe` + AppData            |
 | **gentle-pi**       | —            | ❌ NO INSTALADO| oh-my-pi no está instalado                              |
 | **CE Plugin**       | v3.8.3 (bun) | ✅ DISPONIBLE  | Instalación Bun disponible, no nativa                   |
-| **CE Skills**       | v3.x         | ✅ ACTIVO      | En `01_Core/02_Tools/02_Skills/00_Compound_Engineering/`|
+| **CE Skills**       | v3.x         | ✅ ACTIVO      | En `00_Core/02_Tools/02_Skills/00_Compound_Engineering/`|
 | **Agent Teams Lite**| v2.0 (legacy)| 🗄️ LEGACY     | Archivo → reemplazado por gentle-ai                     |
 | **Engram**          | v1.15.15     | ✅ ACTIVO      | Memoria persistente                                     |
 | **GGA**             | v2.8.1       | ✅ ACTIVO      | Code Review pre-commit                                  |

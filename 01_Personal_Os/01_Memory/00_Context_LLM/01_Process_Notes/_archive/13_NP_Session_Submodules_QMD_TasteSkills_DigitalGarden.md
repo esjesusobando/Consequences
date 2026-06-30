@@ -225,7 +225,7 @@ Colección de **5 skills** que mejoran cómo la IA genera código frontend. En v
 
 ```
 .cursor/02_Skills/11_Taste_Skills/
-01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/11_Taste_Skills/
 ├── taste-skill/SKILL.md
 ├── soft-skill/SKILL.md
 ├── minimalist-skill/SKILL.md
@@ -491,7 +491,7 @@ npm run build  # deploy
 | `03_Scripts_Os/qmd.sh`                                                                        | Creado                                                   | Wrapper para QMD                                                                       |
 | `03_Scripts_Os/56_Update_QMD_Index.py`                                                        | Creado                                                   | Script de update QMD                                                                   |
 | `.cursor/02_Skills/11_Taste_Skills/`                                                          | Creado                                                   | 5 taste-skills                                                                         |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`                                  | Creado                                                   | 5 taste-skills                                                                         |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/11_Taste_Skills/`                                  | Creado                                                   | 5 taste-skills                                                                         |
 | `.agent/03_Workflows/09_Frontend_Premium.md`                                                  | Creado                                                   | Workflow frontend                                                                      |
 | `06_Archive/05_Digital_Garden/`                                                               | Creado                                                   | Vault DigitalGarden                                                                    |
 | `Reporte_Submodules_2026-03-19.md`                                                            | Creado                                                   | Reporte de submodules                                                                  |
@@ -528,7 +528,7 @@ npm run build  # deploy
 ## 15. RECURSOS
 
 - QMD: https://github.com/tobi/qmd
-- Taste-Skills: `.cursor/02_Skills/11_Taste_Skills/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`
+- Taste-Skills: `.cursor/02_Skills/11_Taste_Skills/` y `01_Personal_Os/00_Core/02_Tools/02_Skills/11_Taste_Skills/`
 - DigitalGarden: `06_Archive/05_Digital_Garden/`
 - Gentleman-Programming: https://github.com/Gentleman-Programming
 

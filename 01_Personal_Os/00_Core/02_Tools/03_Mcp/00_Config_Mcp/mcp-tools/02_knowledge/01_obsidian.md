@@ -14,7 +14,7 @@ Integración con Obsidian para gestión de notas locales.
 search: "architecture decisions"
 
 # Leer nota
-path: "01_Core/01_Rules/tech-stack.md"
+path: "00_Core/01_Rules/tech-stack.md"
 ```
 
 ## Configuración

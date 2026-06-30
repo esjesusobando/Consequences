@@ -152,8 +152,8 @@ Las skills van de `21_Skill_Template` a `25_Octopus`, saltando **22, 23, 24**:
 ```
  D 03_Scripts_Os/04_Workflow/01_Spider_Brainstorm.py    # borrado del working tree
  D 03_Scripts_Os/04_Workflow/02_Professor_X_Plan.py     # borrado del working tree
-?? 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/scripts/    # nuevo, no tracked
-?? 01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/scripts/        # nuevo, no tracked
+?? 01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/scripts/    # nuevo, no tracked
+?? 01_Personal_Os/00_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/scripts/        # nuevo, no tracked
 ```
 
 Los scripts fueron migrados a Skills pero **sin hacer commit**. Hay que completar la migración formalmente.
@@ -177,7 +177,7 @@ El directorio `Now/` contiene:
 
 ### 11. Workflows — Workflow #26 Faltante
 
-`Learning_Always.md` documenta un Workflow #26 (`Learning_Always`) pero **no existe** en `01_Core/00_Workflows/` (que termina en `04_Hillary/25_Hillary_Life_OS.md`).
+`Learning_Always.md` documenta un Workflow #26 (`Learning_Always`) pero **no existe** en `00_Core/00_Workflows/` (que termina en `04_Hillary/25_Hillary_Life_OS.md`).
 
 ### 12. `05_Archive/10_To_Delete` — Pendiente de Eliminar
 
@@ -228,7 +228,7 @@ El directorio existe pero su contenido está marcado para eliminación. Verifica
 ### P2 — Media Prioridad (esta semana / siguiente)
 
 - [ ] **GOALS.md:** Actualizar a Q2 2026 con nuevos objetivos
-- [ ] **Workflow #26:** Crear `26_Learning_Always.md` en `01_Core/00_Workflows/`
+- [ ] **Workflow #26:** Crear `26_Learning_Always.md` en `00_Core/00_Workflows/`
 - [ ] **CHANGELOG.md:** Documentar cambios desde v1.8.0 hasta estado actual
 - [ ] **excalidraw.log:** Añadir a `.gitignore`
 - [ ] **05_Archive/10_To_Delete:** Verificar contenido y eliminar
@@ -239,7 +239,7 @@ El directorio existe pero su contenido está marcado para eliminación. Verifica
 
 - [ ] Documentar el sistema de numeración de skills (política de gaps)
 - [ ] Agregar sección "CHANGELOG" al Skills README para nuevas skills
-- [ ] Verificar paridad `01_Personal_Os/01_Core/02_Tools/02_Skills/` ↔ `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- [ ] Verificar paridad `01_Personal_Os/00_Core/02_Tools/02_Skills/` ↔ `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 - [ ] Auditar contenido real de 71 agentes declarados
 
 ---

@@ -77,7 +77,7 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 | 4                            | Scripts NO migration a skills                                | ⚠️ PENDIENTE - CRÍTICO                                             |
 
 **Pendiente de Optimizar_Scripts_Skills.md:**
-- [ ] Mover scripts de `03_Scripts_Os/01_Ritual/` → habilidades en `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- [ ] Mover scripts de `03_Scripts_Os/01_Ritual/` → habilidades en `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 - [ ] Mover scripts de `03_Scripts_Os/04_Workflow/` → habilidades
 - [ ] Mover scripts de `03_Scripts_Os/06_Auditor/` → habilidades
 - [ ] Crear función `get_skill_script()` en `config_paths.py`
@@ -110,7 +110,7 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 ├── 06_Auditor/     ⚠️ NO migrado a skills
 └── 10_Legacy/     ❌ NO EXISTE (ya fue movido?)
 
-01_Personal_Os/01_Core/02_Tools/02_Skills/ con scripts/ subfolders:
+01_Personal_Os/00_Core/02_Tools/02_Skills/ con scripts/ subfolders:
 └── (NINGUNO)       ❌ No hay skills con subcarpeta scripts/
 ```
 

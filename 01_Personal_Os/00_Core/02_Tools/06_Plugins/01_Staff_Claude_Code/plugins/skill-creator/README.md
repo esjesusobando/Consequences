@@ -35,11 +35,11 @@ skill-creator/
 ## 📍 Ubicaciones en PersonalOS
 
 ### Plugin (para Claude Code)
-- **Ruta**: `01_Core/08_Plugins/skill-creator/`
+- **Ruta**: `00_Core/08_Plugins/skill-creator/`
 - **Activación**: Requiere Claude Code con login
 
 ### Skill (para uso directo)
-- **Ruta**: `01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Official/`
+- **Ruta**: `01_Personal_Os/00_Core/02_Tools/02_Skills/15_Skill_Creator_Official/`
 - **Uso**: Disponible inmediatamente
 
 ## 🔧 Uso Recomendado
@@ -47,7 +47,7 @@ skill-creator/
 ### Para Crear Nuevas Skills
 ```bash
 # 1. Activar skill creator
-Usar el skill en 01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Official/
+Usar el skill en 01_Personal_Os/00_Core/02_Tools/02_Skills/15_Skill_Creator_Official/
 
 # 2. Seguir flujo v2.0
 Definir → Crear evals → Ejecutar tests → Benchmark → Iterar

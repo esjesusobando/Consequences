@@ -31,7 +31,7 @@ Esta deuda es de **bajo riesgo** y **bajo retorno inmediato** — no bloquea nad
 
 ```
 03_Scripts_Os/  →  01_Personal_Os/04_Operations/03_Scripts_Os/
-01_Personal_Os/01_Core/02_Tools/02_Skills/  →  01_Personal_Os/01_Core/02_Tools/02_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/  →  01_Personal_Os/00_Core/02_Tools/02_Skills/
 06_Playground/  →  02_Playground/
 ```
 

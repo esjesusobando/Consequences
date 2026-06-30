@@ -11,7 +11,7 @@
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
-├── 01_Core/               # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
+├── 00_Core/               # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
 ├── 02_Knowledge/          # Base de Conocimiento, Research y Documentación
 ├── 03_Tasks/              # Gestión de Tareas Activas
 ├── 04_Operations/         # Cerebro Operativo y Automatización

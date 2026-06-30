@@ -24,13 +24,13 @@ agent:
   # Skills del Personal OS que carga
   skills:
     - name: "Project Manager / Backlog Processing"
-      path: "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing"
+      path: "01_Personal_Os/00_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing"
       purpose: "Gestion de backlog y tareas operativas"
     - name: "Coordination"
-      path: "01_Personal_Os/01_Core/02_Tools/02_Skills/03_Coordination"
+      path: "01_Personal_Os/00_Core/02_Tools/02_Skills/03_Coordination"
       purpose: "Coordinacion de equipos y proyectos"
     - name: "Operations"
-      path: "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Operations"
+      path: "01_Personal_Os/00_Core/02_Tools/02_Skills/07_Operations"
       purpose: "Operaciones administrativas"
 
   # MCPs que necesita (puentes a herramientas externas)

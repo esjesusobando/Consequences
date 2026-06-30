@@ -63,10 +63,10 @@ Auditoría full del proyecto Think_Different v4.9. Se identificaron **2 bugs cr�
 
 | Categoría         | Cantidad | Ubicación                                                  |
 |-------------------|----------|------------------------------------------------------------|
-| Root level        | 25       | `01_Core/02_Tools/01_Agents/*.md`                          |
-| Dream Team        | 5        | `01_Core/02_Tools/01_Agents/01_Dream_Team/`               |
-| Specialists       | 23       | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`     |
-| Growth            | 5        | `01_Core/02_Tools/01_Agents/03_Growth/`                   |
+| Root level        | 25       | `00_Core/02_Tools/01_Agents/*.md`                          |
+| Dream Team        | 5        | `00_Core/02_Tools/01_Agents/01_Dream_Team/`               |
+| Specialists       | 23       | `00_Core/02_Tools/01_Agents/02_Specialists_Compound/`     |
+| Growth            | 5        | `00_Core/02_Tools/01_Agents/03_Growth/`                   |
 | Individual agents | 24       | Root level (00-22)                                         |
 
 ### Desglose de Skills (392 SKILL.md en 14 áreas)
@@ -107,7 +107,7 @@ Auditoría full del proyecto Think_Different v4.9. Se identificaron **2 bugs cr�
 
 ### Estado Actual
 
-| Característica          | Source (`01_Core/02_Tools/02_Skills/`) | Backup (`.agent/02_Skills/`) |
+| Característica          | Source (`00_Core/02_Tools/02_Skills/`) | Backup (`.agent/02_Skills/`) |
 |-------------------------|----------------------------------------|------------------------------|
 | Áreas funcionales       | 15 directorios (14 funcionales, 1 Archive excluido) | 13 (estructura pre-migración) |
 | SKILL.md total          | 392                                    | 404                          |
@@ -123,7 +123,7 @@ El backup `.agent/02_Skills/` NO refleja la estructura actual del source. Las á
 | Componente    | Path                                                       | Estado |
 |---------------|------------------------------------------------------------|--------|
 | Sound Engine  | `01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py` | ✅ OK  |
-| Sound Hook    | `01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py` | ✅ OK  |
+| Sound Hook    | `01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py` | ✅ OK  |
 | Claude Hooks  | `.claude/settings.json` → `.agent/04_Extensions/01_Hooks/`        | ✅ OK  |
 | Codex Hooks   | `.codex/hooks.json` → `.agent/04_Extensions/01_Hooks/` (FIXED)   | ✅ OK  |
 | OpenCode SDD  | `.opencode/opencode.jsonc` → SDD sub-agents configurados          | ✅ OK  |
@@ -137,7 +137,7 @@ El backup `.agent/02_Skills/` NO refleja la estructura actual del source. Las á
 2. **`CLAUDE.md`** — Conteos actualizados (Rules 14, HUBs 22, Workflows 28, Skills 392, Agents 82)
 3. **`00_Winter_is_Coming/AGENTS.md`** — Conteos actualizados
 4. **`OS_DIRECTORY.md`** — Conteos actualizados + audit date
-5. **`01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`** — Áreas 08_JAO y 10_Laia_Learning añadidas
+5. **`01_Personal_Os/00_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`** — Áreas 08_JAO y 10_Laia_Learning añadidas
 
 ---
 

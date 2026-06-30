@@ -12,7 +12,7 @@
 Think_Different/
 ├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
 ├── 01_Personal_Os/
-│   ├── 01_Core/          # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
+│   ├── 00_Core/          # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
 │   ├── 02_Knowledge/     # Base de Conocimiento, Research y Documentación
 │   ├── 03_Task/          # Gestión de Tareas Activas (Hillary)
 │   ├── 05_Archive/       # Backups, snapshots, históricos
@@ -27,7 +27,7 @@ Think_Different/
 
 | #   | Carpeta            | Contenido                                   | Estado |
 | --- | ------------------ | ------------------------------------------- | ------ |
-| 01  | `00_Workflows_Os/` | 28 workflows (7 categorías)                 | ✅      |
+| 01  | `00_Workflows/` | 28 workflows (7 categorías)                 | ✅      |
 | 02  | `01_Rules/`        | 14 reglas .mdc (00-13)                      | ✅      |
 | 03  | `02_Tools/`        | Agents, Skills, MCPs, Hooks, Plugins, Evals | ✅      |
 
@@ -72,7 +72,7 @@ Think_Different/
 | Dream Team       | `02_Dream_Team.md`          |
 | Inventario Total | `01_Inventario_Total.md`    |
 | Inventario Core  | `03_Inventario_Core.md`     |
-| Workflows        | `00_Workflows_Os/README.md` |
+| Workflows        | `00_Workflows/README.md` |
 | Comandos         | `00_Comandos_Workflows.md`  |
 
 ---

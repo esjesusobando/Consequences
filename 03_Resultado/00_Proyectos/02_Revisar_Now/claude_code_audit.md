@@ -89,7 +89,7 @@ git commit -m "fix: remove orphan submodule entries from .gitmodules"
 ### El Problema
 Las reglas `.mdc` existen en **tres** lugares con variaciones:
 
-| #                           | `.claude/02_Rules/`                            | `.agent/00_Rules/`                                | `01_Core/01_Rules/`                                  | Estado                                      |
+| #                           | `.claude/02_Rules/`                            | `.agent/00_Rules/`                                | `00_Core/01_Rules/`                                  | Estado                                      |
 |----------------------------|-----------------------------------------------|--------------------------------------------------|-----------------------------------------------------|--------------------------------------------|
 | 01-04                       | ✅                                              | ✅                                                 | ✅                                                    | Triple redundancia                          |
 | **05**                      | `05_ritual-integrity.mdc`                      | `05_Ritual_Integrity.mdc`                         | `05_ritual-integrity.mdc`                            | ⚠️ **Naming mismatch**                      |
@@ -101,12 +101,12 @@ Las reglas `.mdc` existen en **tres** lugares con variaciones:
 | **25**                      | ❌                                              | ❌                                                 | ✅ `25_Agent_Teams_Protocol.mdc`                      | ⚠️ Solo en Core                             |
 
 ### Issues Específicos
-1. **Naming inconsistente**: `.agent/` usa `Underscores` mientras `.claude/` y `01_Core/` usan `hyphens` para las reglas 05 y 12
+1. **Naming inconsistente**: `.agent/` usa `Underscores` mientras `.claude/` y `00_Core/` usan `hyphens` para las reglas 05 y 12
 2. **Desincronización**: Las reglas 23, 24, 25 no están en todos los directorios
 3. **Redundancia masiva**: 22 archivos duplicados en 3 directorios = ~66 archivos donde deberían ser ~25
 
 ### Fix Recomendado
-Definir **un solo source of truth** (sugerido: `01_Core/01_Rules/`) y hacer que `.claude/02_Rules/` y `.agent/00_Rules/` sean symlinks o se generen automáticamente.
+Definir **un solo source of truth** (sugerido: `00_Core/01_Rules/`) y hacer que `.claude/02_Rules/` y `.agent/00_Rules/` sean symlinks o se generen automáticamente.
 
 ---
 
@@ -217,7 +217,7 @@ Mover todas las keys a variables de entorno o a un `.env` file que esté en `.gi
 | Todos los Hook scripts                                               | ✅ Existen y accesibles                                         |
 | Documentos del sistema (GOALS, BACKLOG, AGENTS)                      | ✅ Completos                                                    |
 | Hub Scripts (00-05)                                                  | ✅ Todos presentes                                              |
-| Skills del Core (01_Core/03_Skills)                                  | ✅ Operativos                                                   |
+| Skills del Core (00_Core/03_Skills)                                  | ✅ Operativos                                                   |
 | Submodules en `05_Archive/07_Repos_Gentleman/`                       | ✅ Todos (8/8) presentes                                        |
 | MCP binaries: engram, qmd, npx, openpencil                           | ✅ Disponibles                                                  |
 | Obsidian & Excalidraw vaults                                         | ✅ Accesibles                                                   |

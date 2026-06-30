@@ -2,7 +2,7 @@
 
 version: v3.0
 generated: "2026-06-27T15:40:03"
-base_path: 01_Personal_Os/01_Core/02_Tools/05_Hooks/
+base_path: 01_Personal_Os/00_Core/02_Tools/05_Hooks/
 totals:
   phases: 6
   hooks: 10

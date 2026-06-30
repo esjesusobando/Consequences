@@ -69,7 +69,7 @@ URL input
 **Beneficio:** Visualizar cómo se conectan los proyectos, skills, y documentación.
 
 **Data sources:**
-- 01_Core/03_Skills - todas las skill definitions
+- 00_Core/03_Skills - todas las skill definitions
 - 02_Knowledge - toda la documentación
 - 03_Tasks - tareas activas
 - 03_Scripts_Os - todos los HUBs
@@ -85,7 +85,7 @@ URL input
 **Beneficio:** Transformar consumo pasivo → aprendizaje activo.
 
 **Implementación:**
-- Nueva regla en 01_Core/01_Rules/
+- Nueva regla en 00_Core/01_Rules/
 - Template de quiz por defecto
 - Integration con workflow de Learning Always
 

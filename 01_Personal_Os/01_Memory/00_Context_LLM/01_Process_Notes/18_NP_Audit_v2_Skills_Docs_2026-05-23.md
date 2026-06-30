@@ -61,12 +61,12 @@ Estado post-sync: **394 skills | 82 agents | 30 workflows | 19 HUBs | 284 script
 
 | Directorio                                  | SKILL.md| Estado                       |
 |--------------------------------------------|--------|-----------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`| 394     | ✅ Fuente de verdad (12 áreas)|
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`| 394     | ✅ Fuente de verdad (12 áreas)|
 | `.agent/02_Skills/`                         | 734     | 📋 Legacy copy-not-cut de v3.1|
 
 **Causa raíz:** Migración v3.1 que consolidó skills de ~34 directorios legacy en 12 áreas funcionales. La operación fue **copy, no cut**. `.agent` conserva los 22 directorios pre-consolidación + `10_Backup/` (205 skills de sistema Gentleman anterior).
 
-**Impacto en runtime:** NULO. Las skills se cargan desde `~/.config/opencode/skills/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/`, no desde `.agent/02_Skills/`.
+**Impacto en runtime:** NULO. Las skills se cargan desde `~/.config/opencode/skills/` y `01_Personal_Os/00_Core/02_Tools/02_Skills/`, no desde `.agent/02_Skills/`.
 
 **Recomendación:** Ignorar — no es bug. No eliminar por directiva del usuario. Documentado en CLAUDE.md.
 

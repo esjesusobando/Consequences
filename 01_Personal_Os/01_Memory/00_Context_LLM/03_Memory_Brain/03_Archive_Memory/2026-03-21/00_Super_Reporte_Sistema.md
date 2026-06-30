@@ -13,17 +13,17 @@
 | Cambio                                                                   | Descripción                                                                                                 | Estado                                                    |
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | Skills System v2.0 Complete                                              | 99 skills en 9 perfiles + 10_Backup                                                                         | ✅ Completado                                              |
-| Canonical Source                                                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/` es fuente canónica                                             | ✅ Completado                                              |
+| Canonical Source                                                         | `01_Personal_Os/00_Core/02_Tools/02_Skills/` es fuente canónica                                             | ✅ Completado                                              |
 | Cursor Mirror                                                            | `.cursor/02_Skills/` es espejo (README only)                                                                | ✅ Completado                                              |
 | Context Memory Cleanup                                                   | 08_Context_Memory y Context_Memory eliminadas                                                               | ✅ Completado                                              |
-| Backup Central Created                                                   | 01_Core/06_Backup_Central/ creado                                                                           | ✅ Completado                                              |
+| Backup Central Created                                                   | 00_Core/06_Backup_Central/ creado                                                                           | ✅ Completado                                              |
 | Documentation Beautified                                                 | 85+ documentos beautificados con pixel-perfect tables                                                       | ✅ Completado                                              |
 | Inventory Complete                                                       | 04_Inventario.md con inventario completo del sistema                                                        | ✅ Completado                                              |
 | 01_Brain Sequence                                                        | Completo: 01, 02, 03, 04, 05, 06, 07, 09                                                                    | ✅ Completado                                              |
 
 ### Skills System v2.0 - Detalles
 
-- **Canonical Source**: `01_Personal_Os/01_Core/02_Tools/02_Skills/` (fuente oficial)
+- **Canonical Source**: `01_Personal_Os/00_Core/02_Tools/02_Skills/` (fuente oficial)
 - **Mirror**: `.cursor/02_Skills/` (README de solo lectura, sincronizado)
 - **99 skills activas** organizadas en 9 perfiles funcionales
 - **~200 skills en backup** en 10_Backup/
@@ -44,7 +44,7 @@
 
 - **99 skills organizadas** en 9 perfiles + 10_Backup
 - READMEs agregados a cada perfil
-- Canonical source: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- Canonical source: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 - Mirror: `.cursor/02_Skills/` (pendiente de sincronizar)
 
 ### 2. Context Memory Cleanup
@@ -56,10 +56,10 @@
 
 ### 3. Backup Central Created
 
-Nueva estructura en `01_Core/06_Backup_Central/`:
+Nueva estructura en `00_Core/06_Backup_Central/`:
 
 ```
-01_Core/06_Backup_Central/
+00_Core/06_Backup_Central/
 ├── 01_Config/
 ├── 02_Mcp/
 ├── 03_Agents/
@@ -135,7 +135,7 @@ Think Different AI es un **Personal Operating System (PersonalOS)** que integra 
 ### Estructura Final (Post-Migración SOTA)
 
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/
 ├── 01_Agent_Teams_Lite/    (10 skills) ← SDD Workflow
 ├── 02_Project_Manager/      (8 skills) ← Rituales, tracking
 ├── 03_Product_Manager/      (8 skills) ← Estrategia, vision
@@ -405,7 +405,7 @@ PASO 9: 3 AGENTS + JUDGE
 Think_Different/
 ├── 00_Core/          # ADN: 01_Personal_Os/11_AGENTS.md, GOALS.md, BACKLOG.md
 
-├── 01_Core/         # Mapa: Context_Memory, Knowledge_Brain, Rules/
+├── 00_Core/         # Mapa: Context_Memory, Knowledge_Brain, Rules/
 
 │   └── 07_Memory_Brain/  # ESTE REPORTE
 

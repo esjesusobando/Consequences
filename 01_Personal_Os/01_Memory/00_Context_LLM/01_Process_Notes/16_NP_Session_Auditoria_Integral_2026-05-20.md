@@ -40,7 +40,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
 ### 2. Agent Sync — Fix Drift
 
 **Problema identificado:**
-- Source (01_Core/): 58 agents
+- Source (00_Core/): 58 agents
 - Backup (.agent/): 81 agents
 - Drift: 25 archivos fuera de sync
 
@@ -87,7 +87,7 @@ python 19_Agent_Sync_Hub.py --apply
 - `01_Personal_Os/README.md`
 - `03_Resultado/README.md`
 - `.claude/README.md`
-- `01_Core/02_Tools/README.md`
+- `00_Core/02_Tools/README.md`
 - `02_Tools/03_Mcp/README.md`
 - `02_Tools/06_Plugins/README.md`
 - `02_Tools/09_Templates/README.md`

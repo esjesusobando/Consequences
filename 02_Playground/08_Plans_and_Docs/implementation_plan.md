@@ -5,7 +5,7 @@ Este plan de implementación aborda la revisión integral, corrección de errore
 ## 🎯 Objetivos Principales
 
 1. **Revisión Integral & Identificación de Errores**: Auditar rutas, dependencias, referencias cruzadas y posibles bugs en toda la estructura del proyecto.
-2. **Actualización al Estado del Arte (SOTA)**: Mejorar y complementar (sin eliminar) los scripts y skills (`01_Core/02_Tools/02_Skills` y `04_Operations/03_Scripts_Os`).
+2. **Actualización al Estado del Arte (SOTA)**: Mejorar y complementar (sin eliminar) los scripts y skills (`00_Core/02_Tools/02_Skills` y `04_Operations/03_Scripts_Os`).
 3. **Optimización de Estructuras**: Validar que la estructura de carpetas coincida con `Structure_v5.0.md` y corregir desviaciones.
 4. **Documentación Completa**: Registrar todos los hallazgos y acciones en `Context_Memory.md` y la carpeta `01_Process_Notes`.
 5. **Cuadro Comparativo**: Generar un reporte final mostrando el *Antes* y el *Después* de las mejoras.
@@ -24,7 +24,7 @@ Este plan de implementación aborda la revisión integral, corrección de errore
 - **Regla Estricta**: Ninguna lógica funcional será removida, solo se envolverá en código más robusto (SOTA).
 
 ### Fase 3: Modernización de Skills (Prompts & Workflows)
-- Inspeccionar `01_Personal_Os/01_Core/02_Tools/02_Skills`.
+- Inspeccionar `01_Personal_Os/00_Core/02_Tools/02_Skills`.
 - Mejorar los prompts para alinearse con modelos LLM recientes (Claude 3.5 Sonnet / GPT-4o / Gemini 1.5 Pro).
 - Incorporar técnicas de *Chain of Thought (CoT)*, *Few-Shot Prompting*, y *System Constraints* explícitos.
 - Asegurar que el formato de salida sea consistente (JSON/Markdown).

@@ -22,7 +22,7 @@ Plugins del sistema operativo PersonalOS. Extensiones que agregan funcionalidad 
 
 ## 🔗 RELACIONES
 
-- **Source:** `01_Personal_Os/01_Core/02_Tools/06_Plugins/`
+- **Source:** `01_Personal_Os/00_Core/02_Tools/06_Plugins/`
 - **Integración:** `05_Hooks/` para hooks de plugins
 - **Config:** `07_Server/` para MCP server
 

@@ -1,0 +1,191 @@
+📂 Categorías detectadas: ['00_Agent_Teams_Lite', '00_Compound_Engineering', '00_Personal_Os', '00_Skill_Auditor', '00_System_Core', '00_Workflows', '01_Creacion_Contenidos', '02_Diseno_Ui_Ux', '03_Video_Media', '04_Automatizacion', '05_Claude_Ads', '06_Tools', '07_Invictus_Web', '11_Laia_Learning']
+
+📂 Analizando Categoría: 00_Agent_Teams_Lite
+   ✅ 01_Shared
+   ✅ 02_Sdd_Init
+   ✅ 03_Sdd_Explore
+   ✅ 04_Sdd_Propose
+   ✅ 05_Sdd_Spec
+   ✅ 06_Sdd_Design
+   ✅ 07_Sdd_Tasks
+   ✅ 08_Sdd_Apply
+   ✅ 09_Sdd_Verify
+   ✅ 10_Sdd_Archive
+   ✅ 11_Judgment_Day
+   ✅ 12_Go_Testing
+   ✅ 13_Branch_Pr
+   ✅ 14_Issue_Creation
+
+📂 Analizando Categoría: 00_Compound_Engineering
+   ✅ 01_Agents_Review
+   ⚠️ Conflicto: 02_Agents_Docreview ya existe. Saltando renombre de 02_Agents_DocReview
+   ✅ 03_Agents_Design
+   ✅ 04_Agents_Research
+   ✅ 05_Agents_Workflow
+   ✅ 06_Agents_Docs
+   ✅ 07_Skills
+   ✅ 08_Mcp
+   ✅ 09_Scripts
+
+📂 Analizando Categoría: 00_Personal_Os
+   ⚠️ Conflicto: 01_Life_Os ya existe. Saltando renombre de 01_Life_OS
+   ✅ 02_Personal_Os
+   ✅ 03_Fantasticos
+   ✅ 04_Contexto
+   ✅ 05_Marca
+   ✅ 06_Plantillas
+   ✅ 07_Hillary
+   ✅ 08_Learning_Always
+
+📂 Analizando Categoría: 00_Skill_Auditor
+   ✅ 01_Scripts
+   ✅ 02_References
+   ✅ 03_Scripts
+
+📂 Analizando Categoría: 00_System_Core
+   ✅ 01_Gcierr
+   ✅ 02_Hooks
+
+📂 Analizando Categoría: 00_Workflows
+   ✅ 01_Agent_Teams_Lite
+   ✅ 02_Project_Manager
+   ✅ 03_Product_Manager
+   ⚠️ Conflicto: 04_Pm_Orchestrator ya existe. Saltando renombre de 04_PM_Orchestrator
+   🔧 04_Super_Campeones -> 05_Super_Campeones
+
+📂 Analizando Categoría: 01_Creacion_Contenidos
+   🔧 00_Imported_Packages -> 01_Imported_Packages
+   🔧 01_Brand_Voice -> 02_Brand_Voice
+   🔧 02_Content_Ideation -> 03_Content_Ideation
+   🔧 03_Content_Transformer -> 04_Content_Transformer
+   🔧 04_Offer_And_Bio_Writer -> 05_Offer_And_Bio_Writer
+   🔧 05_Youtube_Script_Writer -> 06_Youtube_Script_Writer
+   🔧 06_Youtube_Title_Generator -> 07_Youtube_Title_Generator
+   🔧 07_Youtube_Thumbnail_Prompter -> 08_Youtube_Thumbnail_Prompter
+   🔧 08_Youtube_Full_Video -> 09_Youtube_Full_Video
+   🔧 09_Video_Prompt_Builder -> 10_Video_Prompt_Builder
+   🔧 10_Video_Visuals_Producer -> 11_Video_Visuals_Producer
+   🔧 11_Premium_Image_Studio -> 12_Premium_Image_Studio
+   🔧 12_Carousel_Master -> 13_Carousel_Master
+   🔧 13_Seo_Sota_Master -> 14_Seo_Sota_Master
+   🔧 14_Remotion_Video_Creator -> 15_Remotion_Video_Creator
+   🔧 15_Remotion_Best_Practices -> 16_Remotion_Best_Practices
+   🔧 16_Ai_Agents -> 17_Ai_Agents
+   🔧 17_Compound_Engine -> 18_Compound_Engine
+   🔧 18_Marketing_Strategy -> 19_Marketing_Strategy
+   🔧 19_Marketing_Tech -> 20_Marketing_Tech
+   🔧 20_Marketing_Scripts -> 21_Marketing_Scripts
+
+📂 Analizando Categoría: 02_Diseno_Ui_Ux
+   ✅ 01_Product_Design
+   ✅ 02_Taste_Skills
+   ✅ 03_Diseno_Minimalista
+   ✅ 04_Directrices_Marca
+   ✅ 05_Excalidraw_Flowchart
+   ✅ 06_Design_Sota
+   ✅ 07_Ui_Ux_Pro_Max
+   ✅ 08_Huashu_Design
+   ✅ 09_Dumbledor_Design
+   ✅ 10_Design_Systems
+   ✅ 11_Marvel_Avengers
+
+📂 Analizando Categoría: 03_Video_Media
+   ✅ 01_Video_Intel
+   ✅ 02_James_Cameron
+
+📂 Analizando Categoría: 04_Automatizacion
+   ⚠️ Conflicto: 01_N8n_Js ya existe. Saltando renombre de 01_N8N_JS
+   ⚠️ Conflicto: 02_N8n_Python ya existe. Saltando renombre de 02_N8N_Python
+   ⚠️ Conflicto: 03_N8n_Expressions ya existe. Saltando renombre de 03_N8N_Expressions
+   ⚠️ Conflicto: 04_N8n_Mcp ya existe. Saltando renombre de 04_N8N_MCP
+   ⚠️ Conflicto: 05_N8n_Nodes ya existe. Saltando renombre de 05_N8N_Nodes
+   ⚠️ Conflicto: 06_N8n_Validation ya existe. Saltando renombre de 06_N8N_Validation
+   ⚠️ Conflicto: 07_N8n_Workflows ya existe. Saltando renombre de 07_N8N_Workflows
+   ⚠️ Conflicto: 08_Ai_News_Weekly ya existe. Saltando renombre de 08_AI_News_Weekly
+   🔧 08_N8N_Invictus -> 09_N8n_Invictus
+   🔧 09_Firecrawl -> 10_Firecrawl
+   ⚠️ Conflicto: 11_Gws_Client ya existe. Saltando renombre de 10_GWS_Client
+   🔧 11_Gcierr -> 12_Gcierr
+   🔧 11_Gws_Client -> 13_Gws_Client
+   🔧 12_N8N -> 14_N8n
+   🔧 13_Content_From_Url -> 15_Content_From_Url
+   🔧 14_Compound_Knowledge -> 16_Compound_Knowledge
+   🔧 15_Os_Self_Improvement -> 17_Os_Self_Improvement
+   🔧 16_Reverse_Engineering -> 18_Reverse_Engineering
+   🔧 17_Learning_Url_To_Knowledge -> 19_Learning_Url_To_Knowledge
+
+📂 Analizando Categoría: 05_Claude_Ads
+   ✅ 01_Ads
+   ✅ 02_Evals
+   ✅ 03_Agents
+   ✅ 04_Assets
+   ✅ 05_Skills
+   ✅ 06_.github
+   ✅ 07_Scripts
+   ✅ 08_Research
+   ✅ 09_.claude_Plugin
+
+📂 Analizando Categoría: 06_Tools
+   ✅ 01_Skill_Creator
+   ✅ 02_Skill_Template
+   ✅ 03_Anthropic_Harness
+   ⚠️ Conflicto: 04_Devops ya existe. Saltando renombre de 04_DevOps
+   ✅ 05_Vibe_Coding
+   ✅ 06_Testing
+   ✅ 07_Performance
+   ✅ 08_Skill_Creator_Invictus
+   ✅ 09_Accessibility
+   ✅ 10_Octopus
+   ✅ 11_Doc_Processing
+   ✅ 12_Qmd
+   ✅ 13_System_Master
+   ✅ 14_Silicon_Valley_Data_Analyst
+   ✅ 15_Ai_News_Weekly_Report
+
+📂 Analizando Categoría: 07_Invictus_Web
+   ✅ 01_Superpowers
+   ✅ 02_Buscador_Skills
+   ✅ 03_Playwright
+
+📂 Analizando Categoría: 11_Laia_Learning
+   ✅ 01_Context_Canonical
+   ✅ 02_Prompts
+   ✅ 03_Workflows
+   🔧 references -> 04_References
+
+⚡ Aplicando cambios...
+   Renombrado: 04_Super_Campeones -> 05_Super_Campeones
+   Renombrado: 00_Imported_Packages -> 01_Imported_Packages
+   ❌ Error renombrando 01_Brand_Voice: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\01_Brand_Voice' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\02_Brand_Voice'
+   ❌ Error renombrando 02_Content_Ideation: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\02_Content_Ideation' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\03_Content_Ideation'
+   Renombrado: 03_Content_Transformer -> 04_Content_Transformer
+   ❌ Error renombrando 04_Offer_And_Bio_Writer: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\04_Offer_And_Bio_Writer' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\05_Offer_And_Bio_Writer'
+   Renombrado: 05_Youtube_Script_Writer -> 06_Youtube_Script_Writer
+   Renombrado: 06_Youtube_Title_Generator -> 07_Youtube_Title_Generator
+   Renombrado: 07_Youtube_Thumbnail_Prompter -> 08_Youtube_Thumbnail_Prompter
+   ❌ Error renombrando 08_Youtube_Full_Video: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\08_Youtube_Full_Video' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\09_Youtube_Full_Video'
+   Renombrado: 09_Video_Prompt_Builder -> 10_Video_Prompt_Builder
+   Renombrado: 10_Video_Visuals_Producer -> 11_Video_Visuals_Producer
+   Renombrado: 11_Premium_Image_Studio -> 12_Premium_Image_Studio
+   ❌ Error renombrando 12_Carousel_Master: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\12_Carousel_Master' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\13_Carousel_Master'
+   ❌ Error renombrando 13_Seo_Sota_Master: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\13_Seo_Sota_Master' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\14_Seo_Sota_Master'
+   ❌ Error renombrando 14_Remotion_Video_Creator: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\14_Remotion_Video_Creator' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\15_Remotion_Video_Creator'
+   ❌ Error renombrando 15_Remotion_Best_Practices: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\15_Remotion_Best_Practices' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\16_Remotion_Best_Practices'
+   ❌ Error renombrando 16_Ai_Agents: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\16_Ai_Agents' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\17_Ai_Agents'
+   Renombrado: 17_Compound_Engine -> 18_Compound_Engine
+   ❌ Error renombrando 18_Marketing_Strategy: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\18_Marketing_Strategy' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\19_Marketing_Strategy'
+   ❌ Error renombrando 19_Marketing_Tech: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\19_Marketing_Tech' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\01_Creacion_Contenidos\\20_Marketing_Tech'
+   Renombrado: 20_Marketing_Scripts -> 21_Marketing_Scripts
+   ❌ Error renombrando 08_N8N_Invictus: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\08_N8N_Invictus' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\09_N8n_Invictus'
+   Renombrado: 09_Firecrawl -> 10_Firecrawl
+   ❌ Error renombrando 11_Gcierr: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\11_Gcierr' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\12_Gcierr'
+   ❌ Error renombrando 11_Gws_Client: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\11_Gws_Client' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\13_Gws_Client'
+   Renombrado: 12_N8N -> 14_N8n
+   ❌ Error renombrando 13_Content_From_Url: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\13_Content_From_Url' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\15_Content_From_Url'
+   ❌ Error renombrando 14_Compound_Knowledge: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\14_Compound_Knowledge' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\16_Compound_Knowledge'
+   ❌ Error renombrando 15_Os_Self_Improvement: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\15_Os_Self_Improvement' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\17_Os_Self_Improvement'
+   ❌ Error renombrando 16_Reverse_Engineering: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\16_Reverse_Engineering' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\18_Reverse_Engineering'
+   ❌ Error renombrando 17_Learning_Url_To_Knowledge: [WinError 5] Acceso denegado: 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\17_Learning_Url_To_Knowledge' -> 'C:\\Users\\sebas\\Desktop\\Think_Different\\01_Personal_Os\\01_Core\\02_Tools\\02_Skills\\04_Automatizacion\\19_Learning_Url_To_Knowledge'
+   Renombrado: references -> 04_References
+
+✨ Auditoría y corrección de numeración completada.

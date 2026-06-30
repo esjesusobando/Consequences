@@ -17,7 +17,7 @@ Agregar al final de `~/.bashrc`:
 
 ```bash
 # Think Different PersonalOS aliases
-source ~/Think_Different/01_Core/09_Server/00_Config_Aliases/aliases.sh
+source ~/Think_Different/00_Core/09_Server/00_Config_Aliases/aliases.sh
 ```
 
 ## Aliases Disponibles

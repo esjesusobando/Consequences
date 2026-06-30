@@ -7,7 +7,7 @@ created_date: 2026-03-27
 estimated_time: 60
 resource_refs:
   - 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md
-  - 01_Core/README.md
+  - 00_Core/README.md
 ---
 
 # Actualizar Documentación del Sistema OS

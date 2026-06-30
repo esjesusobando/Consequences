@@ -230,7 +230,7 @@ Son skills válidos (SDD flow: init, explore, propose, spec, design, tasks, appl
 
 ### Decisión
 Estos skills existen SOLO en .agent. Pueden ser:
-- **Opción A (sync a main)**: Copiarlos a `01_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
+- **Opción A (sync a main)**: Copiarlos a `00_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
 - **Opción B (document drift)**: Documentar que .agent tiene skills extras intencionales para el ecosistema OpenCode
 
 **Recomendación**: Opción A — sync para mantener consistencia. Los skills SDD son funcionales y deberían estar disponibles desde el árbol principal.

@@ -41,8 +41,8 @@ Framework operativo personal que integra agents, skills, workflows, y automatiza
 ### Arquitectura Actual
 ```
 01_Personal_Os/
-├── 01_Core/
-│   ├── 00_Workflows_Os/     ← Workflows Marvel + Personal
+├── 00_Core/
+│   ├── 00_Workflows/     ← Workflows Marvel + Personal
 │   ├── 01_Rules/            ← 10 archivos .mdc
 │   └── 02_Tools/
 │       ├── 01_Agents/        ← 35+ agents
@@ -167,7 +167,7 @@ Sistema de ingeniería compuesta con agents especializados para reviews, archite
 
 ### Arquitectura en PersonalOS
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/
+01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/
 ├── SKILL.md                          ← Main entry
 ├── 01_Agents_Review/                 ← 23 agents code review
 ├── 02_Agents_DocReview/              ← 6 agents doc review
@@ -312,8 +312,8 @@ Sistema de captura, clasificación y procesamiento de tareas con inbox y templat
 ### Skills Hillary
 | Skill                             | Path                                                                                                                              | Función                           |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Task Classifier                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/10_Classify_Task/`                | Clasifica incoming                |
-| Backlog Processing                | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`                                                  | Process inbox                     |
+| Task Classifier                   | `01_Personal_Os/00_Core/02_Tools/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/10_Classify_Task/`                | Clasifica incoming                |
+| Backlog Processing                | `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/02_Backlog_Processing.md`                                                  | Process inbox                     |
 
 ### Workflows Hillary
 | Workflow                          | File                                      | Función                         |
@@ -436,12 +436,12 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 | Skill                                 | Path                                                                                          | Función                                |
 |--------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------|
 | learnings-researcher                  | `00_Compound_Engineering/04_Agents_Research/`                                                 | Busca en docs/solutions                |
-| engram-memory-protocol                | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/`                | Engram protocol                        |
+| engram-memory-protocol                | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/`                | Engram protocol                        |
 | Auto-Learn Hub                        | `03_Scripts_Os/11_Auto_Learn_Hub.py`                                                          | Orchestrator                           |
 
 ### Componentes Engram (Integrados)
 ```
-01_Personal_Os/01_Core/02_Tools/07_Server/Engram/
+01_Personal_Os/00_Core/02_Tools/07_Server/Engram/
 ├── skills/                        ← Engram skills
 │   ├── memory-protocol/          ← Save/Context/Search
 │   ├── architecture-guardrails/
@@ -559,7 +559,7 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 
 ## INVENTARIO COMPLETO DE SKILLS
 
-### Por Área (01_Personal_Os/01_Core/02_Tools/02_Skills/)
+### Por Área (01_Personal_Os/00_Core/02_Tools/02_Skills/)
 
 | Área                                   | Count                  | Skills                                      |
 |---------------------------------------|-----------------------|--------------------------------------------|
@@ -578,7 +578,7 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 
 | Metodología                         | Skills                  | Ubicación                                                 |
 |------------------------------------|------------------------|----------------------------------------------------------|
-| Personal OS Core                    | 6                       | 01_Core/02_Tools/02_Skills/*                              |
+| Personal OS Core                    | 6                       | 00_Core/02_Tools/02_Skills/*                              |
 | Compound Engineering                | 35+                     | 00_Compound_Engineering/*_Agents_*                        |
 | SDD Workflow                        | 14                      | 05_Workflows/01_Agent_Teams_Lite/*                        |
 | Hillary                             | 2                       | 05_Workflows, 03_Task                                     |
@@ -595,7 +595,7 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 |------------------------------------|------------------------|----------------------------------------|
 | Skills (100+)                       | ✅                       | Todas con SKILL.md                      |
 | Agents (35+)                        | ✅                       | Todos documentados                      |
-| Workflows (20+)                     | ✅                       | Todos en 00_Workflows_Os                |
+| Workflows (20+)                     | ✅                       | Todos en 00_Workflows                |
 | Compound Engineering                | ✅                       | 6 sub-árboles activos                   |
 | Gentleman                           | ✅                       | 6 skills integradas                     |
 | Hillary                             | ✅                       | 6 templates + inbox                     |
@@ -609,10 +609,10 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 | Archivo                                                                                           | Contenido                                  |
 |--------------------------------------------------------------------------------------------------|-------------------------------------------|
 | `00_Winter_is_Coming/AGENTS.md`                                                                   | Sistema operativo principal                |
-| `01_Personal_Os/01_Core/01_Rules/*.mdc`                                                           | 10 rules de calidad                        |
+| `01_Personal_Os/00_Core/01_Rules/*.mdc`                                                           | 10 rules de calidad                        |
 | `01_Personal_Os/04_Operations/01_Auto_Improvement/recursive_improvement_engine.py`                | Motor recursivo                            |
 | `01_Personal_Os/03_Task/README.md`                                                                | Sistema Hillary                            |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/SKILL.md`                      | Compound main                              |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/SKILL.md`                      | Compound main                              |
 | `01_Personal_Os/05_Archive/07_Repos_Gentleman/`                                                   | Bases originales                           |
 
 ---

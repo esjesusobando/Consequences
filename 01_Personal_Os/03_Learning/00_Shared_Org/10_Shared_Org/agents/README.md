@@ -29,7 +29,7 @@ Cada template es un archivo YAML + markdown que define:
 
 ## Cómo Usar
 
-1. Copiar el template correspondiente a `01_Personal_Os/01_Core/02_Tools/01_Agents/`
+1. Copiar el template correspondiente a `01_Personal_Os/00_Core/02_Tools/01_Agents/`
 2. Personalizar contexto, skills y MCPs según el equipo específico
 3. Agregar playbooks relevantes de `10_Shared_Org/playbooks/`
 4. Configurar en el workspace compartido del equipo

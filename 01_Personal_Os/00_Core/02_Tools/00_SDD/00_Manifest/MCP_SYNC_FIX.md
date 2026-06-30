@@ -43,7 +43,7 @@ Editá `~/.config/opencode/opencode.json` y agregá después de la sección `mcp
 
 El proyecto ya tiene backup en:
 ```
-01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json
+01_Personal_Os/00_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json
 ```
 
 Para usar una config local, crear `opencode.local.json` en raíz con los MCPs adicionales.

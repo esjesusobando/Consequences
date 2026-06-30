@@ -22,7 +22,7 @@
 | #                 | Severity              | Issue                                                                                                  | Status                  | Fix Applied                                                           |
 |------------------|----------------------|-------------------------------------------------------------------------------------------------------|------------------------|----------------------------------------------------------------------|
 | **P1**            | 🔴 CRITICAL            | Typo path en `.claude/settings.json` línea 48: `PC Sebas-01-Github`                                    | ✅ FIXED                 | Corregido a `PC Sebas/01 Github`                                      |
-| **P2**            | 🔴 CRITICAL            | Old paths mkdir en permissions (líneas 58-65): `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | ✅ FIXED                 | Actualizado a `01_Personal_Os/01_Core/02_Tools/02_Skills/`            |
+| **P2**            | 🔴 CRITICAL            | Old paths mkdir en permissions (líneas 58-65): `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | ✅ FIXED                 | Actualizado a `01_Personal_Os/00_Core/02_Tools/02_Skills/`            |
 | **P3**            | 🟡 MEDIUM              | Comment en `34_Skill_Auditor.py` referencing old path                                                  | ✅ FIXED                 | Actualizado a nuevo path                                              |
 | **P4**            | 🟡 MEDIUM              | `HUB_CATALOG.yaml` con números incorrectos (15b→19, 16a→20)                                            | ✅ FIXED                 | Corregidos + categorizados utilities                                  |
 | **P5**            | 🟡 MEDIUM              | MCP config drift documentado                                                                           | ✅ DOCUMENTED            | Creado `MCP_CONFIG_AUDIT.md`                                          |
@@ -74,8 +74,8 @@ MCP_CONFIG_AUDIT.md                       # Drift de configs MCP
 
 | Path Antiguo                    | Path Nuevo                                              | Archivos              |
 |--------------------------------|--------------------------------------------------------|----------------------|
-| `01_Core/03_Skills/`            | `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | 42+                   |
-| `.agent/02_Skills/`             | `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | 32+                   |
+| `00_Core/03_Skills/`            | `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | 42+                   |
+| `.agent/02_Skills/`             | `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | 32+                   |
 
 ### Áreas Actualizadas
 
@@ -92,7 +92,7 @@ MCP_CONFIG_AUDIT.md                       # Drift de configs MCP
 ## 🎯 Estado SOTA Alcanzado
 
 ### ✅ Skills System
-- **Ruta canónica:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` — 11 áreas funcionales
+- **Ruta canónica:** `01_Personal_Os/00_Core/02_Tools/02_Skills/` — 11 áreas funcionales
 - **Skills count:** 299+
 - **Zero old path references** en documentación activa
 

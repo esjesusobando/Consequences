@@ -2,7 +2,7 @@
 
 version: v3.0
 generated: "2026-06-27T15:40:03"
-base_path: 01_Personal_Os/01_Core/00_Workflows_Os/
+base_path: 01_Personal_Os/00_Core/00_Workflows/
 totals:
   categories: 7
   workflows: 29

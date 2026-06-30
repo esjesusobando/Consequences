@@ -98,7 +98,7 @@ Auditoría integral del proyecto Think_Different que cubrió:
 |-----------|-------|---------|------------|
 | `03_Reports/` | 3 archivos | 1 archivo | `00_SALUD_REPORTS.md`, `OS_Health_2026-05-20_12-24-20.txt` |
 | `11_Reports/` | 3 archivos + subdir | 1 archivo | `health_history.csv`, `legacy_health_logs/` |
-| `03_Reportes/` | 20+ archivos | 2 archivos | 18+ duplicados |
+| `07_Reports/` | 20+ archivos | 2 archivos | 18+ duplicados |
 
 ### 2.4 Skills Instalados
 

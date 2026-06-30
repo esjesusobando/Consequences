@@ -60,8 +60,8 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 
 | Path Obsoleto                                         | Nuevo Path                                                 | Estado                                    |
 |------------------------------------------------------|-----------------------------------------------------------|------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | ✅ CORREGIDO                               |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | ⚠️ Documentación actualizada              |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`          | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               | ✅ CORREGIDO                               |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`          | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               | ⚠️ Documentación actualizada              |
 | `03_Scripts_Os/`                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/`              | ✅ CORREGIDO en plugin.json                |
 
 ### Archivos Actualizados
@@ -110,7 +110,7 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 1. **MCP DRIFT** — Claude Code (33) vs OpenCode (18) → 16 MCPs faltan en OpenCode.
 2. **453+ refs legacy v1.x rastreros**:
    - 223 archivos con `03_Scripts_Os/`
-   - 230 archivos con `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+   - 230 archivos con `01_Personal_Os/00_Core/02_Tools/02_Skills/`
    - 34 archivos con `06_Playground/`
 3. **SPOF crítico** — `config_paths.py` tiene **207 scripts dependientes**. Sin backup automático.
 4. **Agentes ciegos** — 50/52 agentes (96%) NO saben que existen los 14 HUBs.
@@ -254,7 +254,7 @@ python 15_MCP_Sync_Hub.py --validate                      # verifica sincronía
 ### 2.2 — Agent Mirror (.agent ↔ core) [15 min]
 
 > **DECISIÓN ARQUITECTÓNICA CONFIRMADA (2026-04-25):**
-> - **`01_Personal_Os/01_Core/02_Tools/01_Agents/` = FUENTE DE VERDAD** ✅
+> - **`01_Personal_Os/00_Core/02_Tools/01_Agents/` = FUENTE DE VERDAD** ✅
 > - **`.agent/01_Agents/` = RESPALDO** (recovery / fallback en caso de error) 🛡️
 > - **Política**: Cambios SIEMPRE en `01_Agents` (source). Sync hacia `.agent` (backup) automático.
 
@@ -263,7 +263,7 @@ python 15_MCP_Sync_Hub.py --validate                      # verifica sincronía
 - [ ] Comparar checksums de los 52 archivos en ambas ubicaciones (verificar paridad).
 - [ ] Documentar política en `00_Manifest/03_Agent_Catalog.yaml`:
   ```yaml
-  source_of_truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
+  source_of_truth: 01_Personal_Os/00_Core/02_Tools/01_Agents/
   backup: .agent/01_Agents/
   sync_direction: source -> backup (uni-directional)
   ```
@@ -347,7 +347,7 @@ Documento ÚNICO, **<2KB**, que cada agente lee al boot.
 
 ### 3.2 — Auto-Discovery Hook
 
-Hook `SessionStart` (`01_Personal_Os/01_Core/02_Tools/05_Hooks/03_Lifecycle/`):
+Hook `SessionStart` (`01_Personal_Os/00_Core/02_Tools/05_Hooks/03_Lifecycle/`):
 - Lee `OS_DIRECTORY.md`
 - Lo inyecta en contexto del agente al iniciar
 - Cada agente sabe automáticamente qué tools tiene disponibles
@@ -404,7 +404,7 @@ Subagentes que **heredan el contexto completo del padre** (system prompt, tools,
   { "forkSubagent": true }
   ```
 - [ ] Validar que `/fork` aparece como slash command activo.
-- [ ] Documentar política en `01_Personal_Os/01_Core/01_Rules/09_Agent_Teams_Protocol.mdc`:
+- [ ] Documentar política en `01_Personal_Os/00_Core/01_Rules/09_Agent_Teams_Protocol.mdc`:
   - Cuándo usar fork (continuación de contexto) vs cuándo usar subagent tipado (tarea aislada).
   - Pre-fork: "limpieza" de contexto si está contaminado.
 - [ ] Actualizar Compound Engineering workflows (`05_Compound_Engineering/`) para usar forks en fase Work.

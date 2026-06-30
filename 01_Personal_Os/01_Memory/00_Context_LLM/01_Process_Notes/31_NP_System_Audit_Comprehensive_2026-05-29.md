@@ -118,8 +118,8 @@ Lancé 4 exploraciones paralelas (sdd-explore) para cubrir:
 - `00_Winter_is_Coming/AGENTS.md` — count actualizado
 - `README.md` — badges + counts actualizados
 - `.agent/CLAUDE.md` — counts actualizados
-- `01_Personal_Os/01_Core/README.md` — counts actualizados
-- `01_Personal_Os/01_Core/02_Tools/README.md` — counts actualizados
+- `01_Personal_Os/00_Core/README.md` — counts actualizados
+- `01_Personal_Os/00_Core/02_Tools/README.md` — counts actualizados
 
 ### Nuevos (2)
 - `.agent/03_Workflows/01_Personal_Os/00_Genesis_Workflow.md` — creado

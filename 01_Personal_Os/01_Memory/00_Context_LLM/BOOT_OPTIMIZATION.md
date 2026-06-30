@@ -24,7 +24,7 @@ The system detects agent type from:
 
 ## Context Profiles
 
-Defined in `01_Personal_Os/01_Core/01_Rules/context_profiles.yaml`
+Defined in `01_Personal_Os/00_Core/01_Rules/context_profiles.yaml`
 
 Each profile specifies:
 - **required**: Always loaded for this agent type
@@ -77,7 +77,7 @@ stats = get_cache_stats()
 
 ## Adding New Agent Types
 
-1. Edit `01_Personal_Os/01_Core/01_Rules/context_profiles.yaml`
+1. Edit `01_Personal_Os/00_Core/01_Rules/context_profiles.yaml`
 2. Add new entry under agent profiles
 3. Specify required, optional, and excluded files
 4. Test with `adaptive_boot.py --agent "New Agent"`

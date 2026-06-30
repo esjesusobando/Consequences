@@ -95,7 +95,7 @@ Decidir si `02_Playground/reports/` debe seguir existiendo o eliminarse.
 Script grep en todo el repo (excluir `05_Archive`, `04_Maerks`):
 - `03_Scripts_Os` (sin prefijo correcto)
 - `04_Engine` huérfano
-- `01_Core/03_Skills` (sin `02_Tools/`)
+- `00_Core/03_Skills` (sin `02_Tools/`)
 - `06_Playground` → `02_Playground`
 - `07_Projects` → `04_Operations/05_Projects`
 - `03_Tasks` → `03_Task` (singular)
@@ -166,7 +166,7 @@ done
 
 **C.1 — Inventario completo**
 ```bash
-find 01_Personal_Os/01_Core/02_Tools/02_Skills/ -name "SKILL.md" | wc -l
+find 01_Personal_Os/00_Core/02_Tools/02_Skills/ -name "SKILL.md" | wc -l
 # Expected: 297 (o más, no menos)
 ```
 
@@ -253,7 +253,7 @@ Cuando detecto cualquiera de estos contextos, leo INMEDIATAMENTE el SKILL.md ANT
 Script Python que lee TODOS los `SKILL.md`, extrae `description` y `triggers` del frontmatter, genera la tabla.
 
 **E.3 — Pre-Tool hook para auto-loading**
-Crear hook en `01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/skill_autoloader.py`:
+Crear hook en `01_Personal_Os/00_Core/02_Tools/05_Hooks/01_Pre_Tool/skill_autoloader.py`:
 - Lee el prompt actual del usuario
 - Match contra triggers de skill-registry
 - Inyecta el contenido del SKILL.md relevante en el contexto

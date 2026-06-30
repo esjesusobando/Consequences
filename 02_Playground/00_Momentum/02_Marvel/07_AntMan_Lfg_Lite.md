@@ -10,7 +10,7 @@ Ciclo de ingeniería autónomo para tareas cotidianas. Completa desde análisis 
 
 ## 📋 Pasos de Ejecución
 
-1. **Cargar contexto**: Leer `AGENTS.md` + `01_Core/01_Rules/` + **Engram**
+1. **Cargar contexto**: Leer `AGENTS.md` + `00_Core/01_Rules/` + **Engram**
 2. **Entender estado actual**: `git status` + revisar tareas activas en `03_Tasks/`
 3. **Analizar impacto**: Identificar archivos y módulos afectados por `$ARGUMENTS`
 4. **Reproducir bug** *(solo si es bug)*: Documentar pasos mínimos para reproducir + logs

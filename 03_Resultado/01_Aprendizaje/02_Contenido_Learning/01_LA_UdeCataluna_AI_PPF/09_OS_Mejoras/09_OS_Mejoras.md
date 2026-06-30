@@ -5,7 +5,7 @@
 ### 1. Integrar Más Contenido de Universidad
 **Observación**: El webinar de UdeCataluña tenía buena estructura pero tecnología básica.
 **Acción**: Crear un sistem de "Level" para contenido - básico (universidad) vs avanzado (práctica real).
-**Ubicación**: Agregar a `01_Personal_Os/01_Core/01_Rules/`
+**Ubicación**: Agregar a `01_Personal_Os/00_Core/01_Rules/`
 
 ---
 
@@ -28,7 +28,7 @@
 **Acción**: Actualizar `learning-url-to-knowledge/SKILL.md` para indicar:
   - YouTube → usar youtube-transcript-api o web_search_exa
   - No confiar en transcript para contenido exacto
-**Ubicación**: `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/learning-url-to-knowledge/SKILL.md`
+**Ubicación**: `01_Personal_Os/00_Core/02_Tools/02_Skills/04_Automatizacion/learning-url-to-knowledge/SKILL.md`
 
 ---
 

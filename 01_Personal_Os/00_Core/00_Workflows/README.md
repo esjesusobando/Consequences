@@ -2,7 +2,7 @@
 
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 
-**Ruta:** `01_Personal_Os/00_Core/00_Workflows_Os/`
+**Ruta:** `01_Personal_Os/00_Core/00_Workflows/`
 **Total:** 27 workflows en 7 categorías
 
 ---

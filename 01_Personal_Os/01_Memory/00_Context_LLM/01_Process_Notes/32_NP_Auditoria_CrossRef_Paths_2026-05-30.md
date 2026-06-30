@@ -14,7 +14,7 @@
 ---
 
 ## Objetivo
-Auditar TODO el proyecto Think_Different PersonalOS — identificar errores, paths rotos, estructura inconsistente, referencias obsoletas, y corregir el drift entre backup (`.agent/`) y source (`01_Personal_Os/01_Core/`). Sin eliminar información existente — solo corregir, complementar y mejorar.
+Auditar TODO el proyecto Think_Different PersonalOS — identificar errores, paths rotos, estructura inconsistente, referencias obsoletas, y corregir el drift entre backup (`.agent/`) y source (`01_Personal_Os/00_Core/`). Sin eliminar información existente — solo corregir, complementar y mejorar.
 
 ---
 

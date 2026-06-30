@@ -22,7 +22,7 @@ El usuario reportó cambios en `03_Resultado/` y solicitó actualizar toda la do
 | `05_Documentacion/`         | Listada                           | ❌ NO EXISTE — ahora es `04_Documentacion/`     | Renumerada en docs          |
 | `09_World_OIM/`             | Listada como "⚠️ DUPLICADO"       | ❌ NO EXISTE (ya eliminado)                     | Eliminada de docs           |
 | `08_Suerte_Repeticion_Test/`| No documentada                    | ✅ EXISTE con 01_Inputs/, 02_Outputs/, README.md| Añadida a docs              |
-| `03_Reportes/`              | Sin detalle de contenido          | 1 subdir + 22 archivos (audits, watchdog, SOTA)| Expandida con detalle       |
+| `07_Reports/`              | Sin detalle de contenido          | 1 subdir + 22 archivos (audits, watchdog, SOTA)| Expandida con detalle       |
 
 ## 3. Resolución de 3 Pendientes de NP_34
 

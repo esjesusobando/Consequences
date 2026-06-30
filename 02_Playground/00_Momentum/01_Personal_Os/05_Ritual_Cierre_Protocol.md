@@ -25,8 +25,8 @@ Ejecutar al finalizar cada sesión de trabajo. Garantiza que el sistema quede en
 
 ### 2. Actualizar Inventario (si aplica)
 
-1. ¿Se crearon scripts nuevos en `03_Scripts_Os/`? → Registrar en `01_Core/01_Inventario_Total.md`
-2. ¿Se crearon Skills o Workflows nuevos? → Registrar en `01_Core/01_Inventario_Total.md` + actualizar `README.md` del directorio
+1. ¿Se crearon scripts nuevos en `03_Scripts_Os/`? → Registrar en `00_Core/01_Inventario_Total.md`
+2. ¿Se crearon Skills o Workflows nuevos? → Registrar en `00_Core/01_Inventario_Total.md` + actualizar `README.md` del directorio
 
 ### 3. Guardar Notas de Proceso
 

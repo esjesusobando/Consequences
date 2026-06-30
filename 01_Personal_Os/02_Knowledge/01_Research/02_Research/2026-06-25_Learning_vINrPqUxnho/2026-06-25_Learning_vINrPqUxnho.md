@@ -103,7 +103,7 @@ Setup completo de Claude Code estructurado en 7 piezas: Instalación → Estruct
 ### Lo que ya tenemos bien
 - Estructura de proyecto organizada (Zero Consequences con subsistemas)
 - Tools para Higgsfield (imagen/video) ya separadas por responsabilidad
-- Skills organizados por categoría en `01_Core/02_Tools/02_Skills/`
+- Skills organizados por categoría en `00_Core/02_Tools/02_Skills/`
 
 ### Lo que podemos mejorar
 1. **Crear agents de marketing** — Research, Content, Publishing, Brand agents con contexto y tools específicos

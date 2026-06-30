@@ -39,6 +39,6 @@ Basado en el SDD provisto, genera un checklist paso a paso para implementar la f
 
 A partir del análisis total del sistema operativo local (`Think_Different`), el video propone la delegación agente-PM que encaja perfectamente en:
 
-- **1. Hook de Sincronización PM (`01_Personal_Os/01_Core/02_Tools/05_Hooks`):** Crear un hook `sdd_to_tasks.sh` que lea automáticamente archivos de diseño (`.md` en Unicorn) e inicialice los subagentes en `03_Tasks/` con checklists pre-aprobados.
-- **2. Agente de Evaluación (`01_Core/04_Agents`):** Un agente "ProductReviewer" que tome un diff del código implementado y lo confronte contra el archivo de especificaciones inicial escrito por el PM para verificar su cumplimiento semántico.
-- **3. Flujo Standup Diario (`01_Core/00_Workflows/`):** El "Morning Standup" ahora puede extraer automáticamente la "Mentalidad de Negocio" en el briefing diario utilizando los reportes alojados en esta carpeta `06_Unicorn/01_Pm`.
+- **1. Hook de Sincronización PM (`01_Personal_Os/00_Core/02_Tools/05_Hooks`):** Crear un hook `sdd_to_tasks.sh` que lea automáticamente archivos de diseño (`.md` en Unicorn) e inicialice los subagentes en `03_Tasks/` con checklists pre-aprobados.
+- **2. Agente de Evaluación (`00_Core/04_Agents`):** Un agente "ProductReviewer" que tome un diff del código implementado y lo confronte contra el archivo de especificaciones inicial escrito por el PM para verificar su cumplimiento semántico.
+- **3. Flujo Standup Diario (`00_Core/00_Workflows/`):** El "Morning Standup" ahora puede extraer automáticamente la "Mentalidad de Negocio" en el briefing diario utilizando los reportes alojados en esta carpeta `06_Unicorn/01_Pm`.

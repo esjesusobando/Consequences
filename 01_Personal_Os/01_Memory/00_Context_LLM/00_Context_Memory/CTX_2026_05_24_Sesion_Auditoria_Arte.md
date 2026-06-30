@@ -7,7 +7,7 @@
 - Actualizado a estado de arte v4.7 sin pérdida de información histórica
 
 ### Cambios Clave:
-1. Rutas de skills actualizadas: 01_Core/03_Skills → 01_Core/02_Tools/02_Skills
+1. Rutas de skills actualizadas: 00_Core/03_Skills → 00_Core/02_Tools/02_Skills
 2. Estructura de carpetas modernizada: 00_Personal_Os_Stack → 00_System_Core
 3. Scripts raíz con shebangs apropiados
 4. Plugins esenciales instalados y verificados

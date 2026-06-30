@@ -31,8 +31,8 @@ Resolve all pending phases (A→F) from PLAN_SEGUIR_2026-05-22.md and push to re
 
 ### Phase D: Legacy Routes Audit
 - **463 stale references** across 99 files
-- Legacy paths: `01_Core/03_Skills/`, `.agent/02_Skills/`, `01_Personal_Os/01_Core/03_Skills/`
-- Canonical path: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- Legacy paths: `00_Core/03_Skills/`, `.agent/02_Skills/`, `01_Personal_Os/00_Core/03_Skills/`
+- Canonical path: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 ### Phase E: Backlog Items
 | Item               | Status                                                                                 |

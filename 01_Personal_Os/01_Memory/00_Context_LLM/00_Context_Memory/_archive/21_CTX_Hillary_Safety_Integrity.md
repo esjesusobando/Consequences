@@ -12,7 +12,7 @@ La integración de Hillary se ha realizado bajo el principio de **"Aislamiento d
 3.  **Higiene de Numeración**: La resolución del choque entre Hillary y el AIPM Judge (#11) asegura que las herramientas de auditoría automática sigan funcionando sin errores.
 
 ## 🚩 Consideraciones Técnicas
-- **Legacy Path Support**: Se mantienen las carpetas antiguas en `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/` para compatibilidad con datos históricos si el usuario decide migrarlos manualmente a `03_Tasks`.
+- **Legacy Path Support**: Se mantienen las carpetas antiguas en `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/` para compatibilidad con datos históricos si el usuario decide migrarlos manualmente a `03_Tasks`.
 - **SSOT**: Única fuente de verdad validada en `03_Tasks/`. Cualquier tarea fuera de esta ruta se considera "ruido de sistema" y debe ser triagiada por Hillary hacia el inbox.
 
 ## ✅ Estado de Salud Final (Final Audit)

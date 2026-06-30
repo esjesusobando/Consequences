@@ -92,8 +92,8 @@ Archivo: `03_Resultado/04_Reportes/SEQUENCE_INVENTORY.md`
 |-------------------------|------------------------------------------------|-------------------------------------|
 | 🔴 ALTA                   | `01_Personal_Os/04_Operations/`                 | HUBs + Scripts críticos              |
 | 🔴 ALTA                   | `01_Personal_Os/03_Task/`                       | Tareas activas                       |
-| 🟡 MEDIA                  | `01_Personal_Os/01_Core/02_Tools/`              | Skills + Agents                      |
-| 🟡 MEDIA                  | `01_Personal_Os/01_Core/01_Rules/`              | Reglas del sistema                   |
+| 🟡 MEDIA                  | `01_Personal_Os/00_Core/02_Tools/`              | Skills + Agents                      |
+| 🟡 MEDIA                  | `01_Personal_Os/00_Core/01_Rules/`              | Reglas del sistema                   |
 | 🟡 MEDIA                  | `02_Playground/`                                | Zones de prueba                      |
 | 🟡 MEDIA                  | `03_Resultado/`                                 | Planes y reportes                    |
 

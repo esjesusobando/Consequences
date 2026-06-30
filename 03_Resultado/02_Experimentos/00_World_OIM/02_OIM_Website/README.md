@@ -29,7 +29,7 @@
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/     ✅ Goals, Backlog, AGENTS.md (ESTRATÉGICO)
-├── 01_Core/                 ✅ Motor: Skills (22 cats), Rules (25), MCPs, Agents (71)
+├── 00_Core/                 ✅ Motor: Skills (22 cats), Rules (25), MCPs, Agents (71)
 │   ├── 01_Rules/            # 24 reglas del sistema
 │   ├── 03_Skills/           # 160+ skills en 22 categorías
 │   ├── 05_Mcp/              # Configuración MCP (Claude Code + OpenCode)
@@ -131,7 +131,7 @@ Think_Different/
 | 🛠️ DevOps                               | docker, sentry*, filesystem                                                                  |
 | 🚀 Deploy                                | vercel, TestSprite                                                                           |
 
-> `*` = requiere credenciales reales. Presentes como templates en `01_Core/05_Mcp/01_Claude_Code/mcp.json`.
+> `*` = requiere credenciales reales. Presentes como templates en `00_Core/05_Mcp/01_Claude_Code/mcp.json`.
 
 **Configs activas:**
 - Claude Code → `.mcp.json` (raíz del proyecto)
@@ -207,7 +207,7 @@ Code review automático integrado:
 
 | Tipo                                  | Patrón                                      | Ejemplo                                            |
 | ------------------------------------- | ------------------------------------------- | -------------------------------------------------- |
-| **Directorios**                       | `XX_Nombre/`                                | `01_Core/`, `04_Operations/`                       |
+| **Directorios**                       | `XX_Nombre/`                                | `00_Core/`, `04_Operations/`                       |
 | **Archivos**                          | `XX_Nombre.ext`                             | `01_Report_Status.md`                              |
 | **Scripts**                           | `##_Nombre_Script.py`                       | `01_Auditor_Hub.py`                                |
 | **Skills**                            | `SKILL.md`                                  | En cada skill                                      |
@@ -219,8 +219,8 @@ Code review automático integrado:
 | Documento                                      | Ubicación                                                                   |
 | ---------------------------------------------- | --------------------------------------------------------------------------- |
 | **AGENTS.md**                                  | `00_Winter_is_Coming/AGENTS.md`                                             |
-| **RULES_INDEX**                                | `01_Core/01_Rules/RULES_INDEX.md`                                           |
-| **Skills README**                              | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                       |
+| **RULES_INDEX**                                | `00_Core/01_Rules/RULES_INDEX.md`                                           |
+| **Skills README**                              | `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`                       |
 | **Scripts INDEX**                              | `04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                              |
 | **OS Integration Audit**                       | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                         |
 | **Edge Cases**                                 | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`                            |

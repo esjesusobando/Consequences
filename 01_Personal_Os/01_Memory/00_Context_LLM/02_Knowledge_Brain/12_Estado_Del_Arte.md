@@ -44,9 +44,9 @@
 | **Playwright QA**                                   | `03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                                             | Testing interactivo                                   |
 
 **Skills Anthropic:**
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management/`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management/`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/`
 
 **Workflow:**
 - `.agent/03_Workflows/17_Anthropic_Harness.md`
@@ -59,7 +59,7 @@
 Think_Different_AI/
 ├── 00_Core/              # ADN: 01_Personal_Os/11_AGENTS.md, GOALS.md, BACKLOG.md, PROGRESS.md
 │
-├── 01_Core/             # Cerebro: Memoria, Conocimiento, Reglas
+├── 00_Core/             # Cerebro: Memoria, Conocimiento, Reglas
 │   ├── 01_Context_Memory/    # Memoria a largo plazo
 │   ├── 02_Knowledge_Brain/  # Base de conocimiento (+ 11_System_Mapping.md)
 │   ├── 03_Process_Notes/     # Notas de sesiones
@@ -181,7 +181,7 @@ Ubicación: `.agent/01_Agents/Perfiles/`
 
 ## 🛠️ SKILLS (128+)
 
-### Por Categoría (01_Personal_Os/01_Core/02_Tools/02_Skills/)
+### Por Categoría (01_Personal_Os/00_Core/02_Tools/02_Skills/)
 
 | Categoría                                           | Skills                                  | Estado                                      |
 |----------------------------------------------------|----------------------------------------|--------------------------------------------|
@@ -309,7 +309,7 @@ Ubicación: `.agent/04_Extensions/01_Hooks/`
 
 ## 📊 MAPA COMPLETO
 
-**Documento detallado:** `01_Core/02_Knowledge_Brain/11_System_Mapping.md`
+**Documento detallado:** `00_Core/02_Knowledge_Brain/11_System_Mapping.md`
 
 ---
 

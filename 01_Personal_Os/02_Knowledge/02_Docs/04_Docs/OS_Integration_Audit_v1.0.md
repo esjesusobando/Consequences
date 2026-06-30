@@ -32,7 +32,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | Carpeta                                         | Existe                            | Documentada                                                 | Estado                            |
 |------------------------------------------------|----------------------------------|------------------------------------------------------------|----------------------------------|
 | `00_Winter_is_Coming/`                          | ✅                                 | ✅ 01_Personal_Os/11_AGENTS.md v1.0                          | PASS                              |
-| `01_Core/`                                      | ✅                                 | ✅ Skills/Rules/MCPs/Hooks                                   | PASS                              |
+| `00_Core/`                                      | ✅                                 | ✅ Skills/Rules/MCPs/Hooks                                   | PASS                              |
 | `02_Knowledge/`                                 | ✅                                 | ✅ Audit + Edge Cases                                        | PASS                              |
 | `03_Tasks/`                                     | ✅                                 | ✅ Templates + YAML                                          | PASS                              |
 | `04_Operations/`                                | ✅                                 | ✅ Auto-Improvement Engine                                   | PASS                              |
@@ -43,7 +43,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 
 ---
 
-## 2. Sistema de Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/)
+## 2. Sistema de Skills (01_Personal_Os/00_Core/02_Tools/02_Skills/)
 
 **Total:** 24 directorios (22 categorías core + 2 sistema)
 **SKILL.md:** ✅ 100% — todos los directorios tienen SKILL.md
@@ -78,7 +78,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 
 ---
 
-## 3. Sistema de Reglas (01_Core/01_Rules/)
+## 3. Sistema de Reglas (00_Core/01_Rules/)
 
 **Total:** 24 reglas + RULES_INDEX.md
 
@@ -120,7 +120,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | ❌ Sin configurar                                                | 2                                   |
 
 **MCPs críticos (P0):** engram, context7, github, filesystem ✅ todos activos
-**Ver catálogo completo:** `01_Core/05_Mcp/00_Config_Mcp/MCP_CATALOG.md`
+**Ver catálogo completo:** `00_Core/05_Mcp/00_Config_Mcp/MCP_CATALOG.md`
 
 ---
 
@@ -151,7 +151,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | Post-CE                                   | `06_Post_Hulk_Compound/post_hulk_compound.py`                          | ✅                                 |
 
 **Configuración:** Paths absolutos en `C:\Users\sebas\.claude\settings.json`
-**Documentación:** `01_Personal_Os/01_Core/02_Tools/05_Hooks/README.md` ✅
+**Documentación:** `01_Personal_Os/00_Core/02_Tools/05_Hooks/README.md` ✅
 
 ---
 
@@ -197,10 +197,10 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | `CLAUDE.md` (raíz)                                                     | ✅ v1.0                                                  | 2026-04-18                          |
 | `01_Personal_Os/11_AGENTS.md`                                          | ✅ v1.0 + Orchestrator Manifest                          | 2026-04-18                          |
 | `Plan_Claude.md`                                                       | ✅ Plan activo de auditoría                              | 2026-04-18                          |
-| `01_Core/01_Rules/RULES_INDEX.md`                                      | ✅ v1.0                                                  | 2026-04-18                          |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                  | ✅ v1.0                                                  | 2026-04-18                          |
-| `01_Core/05_Mcp/00_Config_Mcp/MCP_CATALOG.md`                          | ✅ Creado                                                | 2026-04-18                          |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/README.md`                   | ✅ Creado                                                | 2026-04-18                          |
+| `00_Core/01_Rules/RULES_INDEX.md`                                      | ✅ v1.0                                                  | 2026-04-18                          |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`                  | ✅ v1.0                                                  | 2026-04-18                          |
+| `00_Core/05_Mcp/00_Config_Mcp/MCP_CATALOG.md`                          | ✅ Creado                                                | 2026-04-18                          |
+| `01_Personal_Os/00_Core/02_Tools/05_Hooks/README.md`                   | ✅ Creado                                                | 2026-04-18                          |
 
 ---
 

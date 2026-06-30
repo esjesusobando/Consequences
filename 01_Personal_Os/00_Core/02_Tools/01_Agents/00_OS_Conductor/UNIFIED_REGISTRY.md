@@ -1,6 +1,6 @@
 # 📋 UNIFIED REGISTRY — Poder Total del PersonalOS
 
-> **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/`
+> **Source of Truth:** `01_Personal_Os/00_Core/02_Tools/`
 > **Actualizado:** 2026-05-31 (v4.9 Consequences — Post Judgment Day)
 > **Cobertura:** Skills · Agentes · MCPs · Comandos · Hooks
 

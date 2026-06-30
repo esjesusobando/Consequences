@@ -8,24 +8,24 @@ Reorganización completa del sistema de PersonalOS.
 
 | Nivel                                     | Ubicación                                               | Propósito                                                           |
 |------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------|
-| **Proyecto**                              | `01_Core/`                                              | Fuente de verdad para TODO el proyecto                              |
-| **Skills**                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | 160+ skills específicas                                             |
+| **Proyecto**                              | `00_Core/`                                              | Fuente de verdad para TODO el proyecto                              |
+| **Skills**                                | `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | 160+ skills específicas                                             |
 
-> ⚠️ **IMPORTANTE:** Para OpenCode, `01_Core/` es la carpeta raíz. Las skills están en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
+> ⚠️ **IMPORTANTE:** Para OpenCode, `00_Core/` es la carpeta raíz. Las skills están en `01_Personal_Os/00_Core/02_Tools/02_Skills/`.
 
 - --
 
 ## Arquitectura
 
 ```
-01_Core/                    (MAESTRO - Todo el sistema)
+00_Core/                    (MAESTRO - Todo el sistema)
 ├── 03_Skills/             (160+ skills organizadas)
 ├── 03_Agents/             (Dream Team + Specialists)
 ├── 00_Workflows/          (26 workflows)
 └── 05_Mcp/                (27 MCPs configurados)
 ```
 
-### Estructura Actual de Skills (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
+### Estructura Actual de Skills (`01_Personal_Os/00_Core/02_Tools/02_Skills/`)
 
 | #                                 | Carpeta                                                | Skills                                    | Propósito                                         |
 |----------------------------------|-------------------------------------------------------|------------------------------------------|--------------------------------------------------|
@@ -52,8 +52,8 @@ Reorganización completa del sistema de PersonalOS.
 
 ## 📋 REGLA DEL SISTEMA
 
-> **Para OpenCode:** `01_Core/` es la fuente de verdad del proyecto.
-> **Para Skills específicamente:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+> **Para OpenCode:** `00_Core/` es la fuente de verdad del proyecto.
+> **Para Skills específicamente:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 - --
 
@@ -64,4 +64,4 @@ Reorganización completa del sistema de PersonalOS.
 
 - --
 
-*Actualizado: 2026-03-27 — Corregido para usar 01_Core/ como fuente de verdad*
+*Actualizado: 2026-03-27 — Corregido para usar 00_Core/ como fuente de verdad*

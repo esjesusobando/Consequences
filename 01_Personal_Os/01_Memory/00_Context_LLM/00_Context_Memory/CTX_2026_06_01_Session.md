@@ -21,7 +21,7 @@ Se realizó una doble tarea:
 | **05_Documentacion/**         | Listada                           | Renumerada → `04_Documentacion/`         |
 | **09_World_OIM/**             | Marcada "⚠️ DUPLICADO"            | Eliminada (ya no existe en disco)        |
 | **08_Suerte_Repeticion_Test/**| No documentada                    | ✅ Añadida en `02_Experimentos/`          |
-| **03_Reportes/** detalle      | Sin desglose                      | Desglose completo: 1 subdir + 22 archivos|
+| **07_Reports/** detalle      | Sin desglose                      | Desglose completo: 1 subdir + 22 archivos|
 | **README.md**                 | 32 líneas, sin tabla de contenido | Reescrito con tabla por área y conteos   |
 
 ### Pendientes Auditoría NP_34 — MCPs
@@ -43,6 +43,6 @@ Se realizó una doble tarea:
 
 ## 4. Implicaciones para Futuros Agentes
 
-- `03_Resultado/` tiene 5 áreas: `00_Proyectos`, `01_Aprendizaje`, `02_Experimentos`, `03_Reportes`, `04_Documentacion`
+- `03_Resultado/` tiene áreas: `00_Proyectos`, `01_Aprendizaje`, `02_Experimentos`, `07_Reports`, `04_Documentacion`
 - NO existe `04_Reportes/`, `05_Documentacion/` ni `09_World_OIM/` — son fantasmas de versiones anteriores
 - Los MCPs root son **8**, no 7 — `eagle` (asset management local) y `higgsfield` (AI image gen) fueron añadidos

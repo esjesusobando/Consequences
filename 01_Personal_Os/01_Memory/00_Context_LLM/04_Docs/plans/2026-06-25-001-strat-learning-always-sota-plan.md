@@ -120,10 +120,10 @@ Esta es la parte que más quiero que entiendas, porque justifica CADA hora inver
 Aplicando a lo que acabamos de aprender del video vINrPqUxnho, estos son los cambios concretos:
 
 ### Unidad 1: Crear el Marketing Agent
-**Qué:** Crear un agente especializado en marketing con contexto, tools y skills en `.agent/01_Agents/` y `01_Personal_Os/01_Core/02_Tools/01_Agents/`
+**Qué:** Crear un agente especializado en marketing con contexto, tools y skills en `.agent/01_Agents/` y `01_Personal_Os/00_Core/02_Tools/01_Agents/`
 
 **Archivos:**
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists/12_Marketing_Agent/SKILL.md`
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/02_Specialists/12_Marketing_Agent/SKILL.md`
 - `.agent/01_Agents/02_Specialists/12_Marketing_Agent/SKILL.md` (mirror)
 
 **Qué debe incluir:**
@@ -138,7 +138,7 @@ Aplicando a lo que acabamos de aprender del video vINrPqUxnho, estos son los cam
 **Qué:** Los flujos actuales de Zero Consequences (tools sueltas) se transforman en skills YAML que orquestan agents
 
 **Archivos:**
-- Skills bajo `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/` (varios skills)
+- Skills bajo `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/` (varios skills)
 
 **Formato objetivo:**
 ```yaml

@@ -58,11 +58,11 @@ Verifica dependencias y que los scripts están presentes.
 python 03_Scripts_Os/05_Validator_Hub.py --rules
 ```
 
-Confirma que todos los `.mdc` en `01_Core/01_Rules/` tienen estructura válida.
+Confirma que todos los `.mdc` en `00_Core/01_Rules/` tienen estructura válida.
 
 ### 6. Revisar Inventario
 
-- Abrir `01_Core/01_Inventario_Total.md`
+- Abrir `00_Core/01_Inventario_Total.md`
 - Confirmar que el número de scripts en `03_Scripts_Os/` coincide con el inventario
 - Confirmar que nuevas Skills/Workflows están registradas
 

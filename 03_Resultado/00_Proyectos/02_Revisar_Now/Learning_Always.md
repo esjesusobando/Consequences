@@ -6,7 +6,7 @@
 
 # 🧠 LearningAlways Methodology [ARCHIVED]
 
-> ⚠️ **DOCUMENTO ARCHIVADO (v1.1):** Este doc fue reemplazado por el workflow oficial en `01_Personal_Os/01_Core/00_Workflows_Os/00_Learning_Always/00_Learning_Always.md`. La estructura de carpetas vigente es `03_Resultado/10_Contenido_Learning/XX_LA_[Nombre]/`.
+> ⚠️ **DOCUMENTO ARCHIVADO (v1.1):** Este doc fue reemplazado por el workflow oficial en `01_Personal_Os/00_Core/00_Workflows/00_Learning_Always/00_Learning_Always.md`. La estructura de carpetas vigente es `03_Resultado/10_Contenido_Learning/XX_LA_[Nombre]/`.
 
 ---
 
@@ -66,13 +66,13 @@ OUTPUT: 8 deliverable por cada URL
 
 | #                           | Perfil                                 | Ubicación en Skills                                                      |
 |----------------------------|---------------------------------------|-------------------------------------------------------------------------|
-| 01                          | Project Manager                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/`          |
-| 02                          | Product Manager                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/`          |
-| 03                          | Product Design                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/`           |
-| 04                          | Vibe Coding                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/`              |
-| 05                          | Testing                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/`                  |
-| 06                          | DevOps                                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/`                   |
-| 07                          | Marketing                              | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/`                |
+| 01                          | Project Manager                        | `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Project_Manager/`          |
+| 02                          | Product Manager                        | `01_Personal_Os/00_Core/02_Tools/02_Skills/03_Product_Manager/`          |
+| 03                          | Product Design                         | `01_Personal_Os/00_Core/02_Tools/02_Skills/04_Product_Design/`           |
+| 04                          | Vibe Coding                            | `01_Personal_Os/00_Core/02_Tools/02_Skills/05_Vibe_Coding/`              |
+| 05                          | Testing                                | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Testing/`                  |
+| 06                          | DevOps                                 | `01_Personal_Os/00_Core/02_Tools/02_Skills/07_DevOps/`                   |
+| 07                          | Marketing                              | `01_Personal_Os/00_Core/02_Tools/02_Skills/09_Marketing/`                |
 
 ---
 
@@ -226,7 +226,7 @@ Basado en eldoc, estos topics generarían skills de alto valor:
 ## 📌 Próximos pasos recomendados (OBSOLETOS)
 
 > ⚠️ **Estas recomendaciones están obsoletas.** El workflow Learning Always ya existe en:
-> `01_Personal_Os/01_Core/00_Workflows_Os/00_Learning_Always/00_Learning_Always.md`
+> `01_Personal_Os/00_Core/00_Workflows/00_Learning_Always/00_Learning_Always.md`
 
 1. El skill `/learning` ya está implementado como workflow activo ✅
 2. La integración con Engram ya está configurada ✅

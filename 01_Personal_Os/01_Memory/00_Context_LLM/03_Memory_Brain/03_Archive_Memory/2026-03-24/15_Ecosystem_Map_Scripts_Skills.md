@@ -2,11 +2,11 @@
 
 **Fecha:** 2026-03-25
 **Auditor:** Opencode Agent
-**Propósito:** Documentar la relación entre Skills (`01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/`) y Scripts (`03_Scripts_Os/`) con workflows correspondientes.
+**Propósito:** Documentar la relación entre Skills (`01_Personal_Os/00_Core/02_Tools/02_Skills/08_Personal_Os/`) y Scripts (`03_Scripts_Os/`) con workflows correspondientes.
 
 ---
 
-## 📋 1. Skills de PersonalOS (`01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/`)
+## 📋 1. Skills de PersonalOS (`01_Personal_Os/00_Core/02_Tools/02_Skills/08_Personal_Os/`)
 
 | #                                  | Nombre                                                         | Descripción                                                                                                                                                                | Trigger                                                         | Archivos Clave                                                                                                           | Workflow Asociado                                  |
 |-----------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -211,7 +211,7 @@
 
 | Ruta                                                                     | Propósito                                                     |
 |-------------------------------------------------------------------------|--------------------------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/`              | Skills del sistema PersonalOS                                 |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/08_Personal_Os/`              | Skills del sistema PersonalOS                                 |
 | `03_Scripts_Os/`                                                         | Scripts de automatización                                     |
 | `.agent/03_Workflows/`                                                   | Workflows predefinidos                                        |
 | `03_Scripts_Os/config_paths.py`                                          | Configuración central de rutas                                |

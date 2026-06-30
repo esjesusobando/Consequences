@@ -41,12 +41,12 @@ Se realizó una auditoría completa del respaldo PersonalOS v6.1 y se aplicaron 
 
 | #                              | Problema                                                                    | Archivo                                                 | Cambio                                                                       |
 |-------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------|
-| 1                              | `plugin.json` referenciaba carpeta incorrecta                               | `.claude-plugin/plugin.json`                            | `01_Core/03_Agents` → `01_Core/04_Agents`                                    |
+| 1                              | `plugin.json` referenciaba carpeta incorrecta                               | `.claude-plugin/plugin.json`                            | `00_Core/03_Agents` → `00_Core/04_Agents`                                    |
 | 2                              | Colisión de numeración `01_Context_Usage_Bar.py`                            | `03_Scripts_Os/`                                        | Renombrado → `12_Context_Usage_Bar.py`                                       |
 | 3                              | Colisión de numeración `02_Beautify_Tables.py`                              | `03_Scripts_Os/`                                        | Renombrado → `13_Beautify_Tables.py`                                         |
 | 4                              | Colisión de numeración `03_Beauty_Doc.py`                                   | `03_Scripts_Os/`                                        | Renombrado → `14_Beauty_Doc.py`                                              |
 | 5                              | Plugins OpenCode desactivados                                               | `.opencode/opencode.jsonc`                              | Descomentado `notify.ts` + `sound-on-complete.ts`                            |
-| 6                              | `Requirements.txt` sin dependencia crítica                                  | `01_Core/Requirements.txt`                              | Agregado `colorama>=0.4.6`                                                   |
+| 6                              | `Requirements.txt` sin dependencia crítica                                  | `00_Core/Requirements.txt`                              | Agregado `colorama>=0.4.6`                                                   |
 
 ### Importantes
 
@@ -91,7 +91,7 @@ Se realizó una auditoría completa del respaldo PersonalOS v6.1 y se aplicaron 
 | `03_Scripts_Os/` Hubs (00-14)                               | ✅ Sin colisiones                                    |
 | `.claude-plugin/plugin.json`                                | ✅ Rutas correctas                                   |
 | `.opencode/opencode.jsonc`                                  | ✅ Plugins activos                                   |
-| `01_Core/Requirements.txt`                                  | ✅ Dependencias completas                            |
+| `00_Core/Requirements.txt`                                  | ✅ Dependencias completas                            |
 | `.claude/02_Rules/`                                         | ✅ Sin duplicados                                    |
 | `.claude/settings.local.json`                               | ✅ Permisos operativos                               |
 | `00_Winter_is_Coming/BACKLOG.md`                            | ✅ Al día                                            |

@@ -204,7 +204,7 @@ class DiskScanner:
     
     def scan_workflows(self) -> int:
         """Count workflow .md files"""
-        workflows_dir = CORE_DIR / "00_Workflows_Os"
+        workflows_dir = CORE_DIR / "00_Workflows"
         if not workflows_dir.exists():
             return 0
         

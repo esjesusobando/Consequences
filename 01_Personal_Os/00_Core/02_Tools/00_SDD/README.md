@@ -85,7 +85,7 @@ gentle-ai skill-registry refresh   # Refrescar registry de skills
 | -------------------------------- | ------------------------------------------------- | ------------------------------------ |
 | **gentle-ai (SDD Orchestrator)** | Global (brew/scoop)                               | ✅ ACTIVO — reemplaza ATL             |
 | **Manifests JARVIS**             | `02_Agent_Teams_Lite/00_Manifest/`                | ✅ ACTIVO — fuente de verdad          |
-| **Agentes pipeline**             | `01_Core/02_Tools/01_Agents/`                     | ✅ ACTIVOS — #01→#07                  |
+| **Agentes pipeline**             | `00_Core/02_Tools/01_Agents/`                     | ✅ ACTIVOS — #01→#07                  |
 | **HUBs**                         | `03_Scripts_Os/`                                  | ✅ ACTIVOS                            |
 | **Skills ATL (legacy)**          | `02_Agent_Teams_Lite/01_Agent_Teams_Lite/skills/` | 🗄️ LEGACY — mantener como referencia |
 

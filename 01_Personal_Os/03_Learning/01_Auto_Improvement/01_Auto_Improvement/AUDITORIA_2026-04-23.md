@@ -48,7 +48,7 @@
 
 - Think_Different/
 - ├── 00_Winter_is_Coming/     # 🔮 ESTRATÉGICO
-- ├── 01_Core/                 # 🧠 MOTOR
+- ├── 00_Core/                 # 🧠 MOTOR
 - │   ├── 00_Workflows/       # 26+ workflows  ❌ NO EXISTE
 - │   ├── 01_Rules/           # 22+ reglas ❌ SON 25 .mdc
 - │   ├── 02_Dream_Team.md    # ❌ NO EXISTE COMO .md
@@ -79,14 +79,14 @@
 
 **Archivo:** `.atl/skill-registry.md`
 
-El registry menciona 22 categorías pero la estructura real de `01_Personal_Os/01_Core/02_Tools/02_Skills/` tiene 25 directorios:
+El registry menciona 22 categorías pero la estructura real de `01_Personal_Os/00_Core/02_Tools/02_Skills/` tiene 25 directorios:
 
 **Categorías en skill-registry.md:**
 ```
 00-21 (22 categorías)
 ```
 
-**Estructura real 01_Personal_Os/01_Core/02_Tools/02_Skills/:**
+**Estructura real 01_Personal_Os/00_Core/02_Tools/02_Skills/:**
 ```
 00_Compound_Engineering/
 00_Gcierr/              ← No en registry
@@ -123,7 +123,7 @@ El registry menciona 22 categorías pero la estructura real de `01_Personal_Os/0
 ui-ux-pro-max/
 ```
 
-**Esperado:** Debería tener skills linkeadas desde `01_Personal_Os/01_Core/02_Tools/02_Skills/` o al menos las skills globales como `gentleman/*`.
+**Esperado:** Debería tener skills linkeadas desde `01_Personal_Os/00_Core/02_Tools/02_Skills/` o al menos las skills globales como `gentleman/*`.
 
 **Impacto:** Las skills referenciadas en `~/.config/opencode/skills/` pueden no estar disponibles localmente.
 
@@ -142,11 +142,11 @@ ui-ux-pro-max/
 ### 6. BUG: Hooks Path Incorrecto en AGENTS.md
 
 ```diff
-- python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete
+- python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete
 + python 03_Scripts_Os/00_Sound_Engine.py --task-complete
 ```
 
-El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Personal_Os/01_Core/02_Tools/05_Hooks/`.
+El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Personal_Os/00_Core/02_Tools/05_Hooks/`.
 
 ---
 
@@ -156,14 +156,14 @@ El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Person
 
 | Path en Docs                                                | Estado Real                                                                                               |
 |------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| `01_Core/00_Workflows/`                                     | ❌ NO EXISTE - Los workflows están en `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/`            |
-| `01_Core/02_Dream_Team.md`                                  | ❌ NO EXISTE como .md - Existe `01_Core/02_Dream_Team.md`?                                                 |
+| `00_Core/00_Workflows/`                                     | ❌ NO EXISTE - Los workflows están en `01_Personal_Os/00_Core/02_Tools/02_Skills/05_Workflows/`            |
+| `00_Core/02_Dream_Team.md`                                  | ❌ NO EXISTE como .md - Existe `00_Core/02_Dream_Team.md`?                                                 |
 | `03_Knowledge/`                                             | ❌ NO EXISTE - Es `02_Knowledge/`                                                                          |
 | `04_Docs/`                                                  | ❌ DEPRECATED - Es `02_Knowledge/04_Docs/`                                                                 |
 | `04_Operations/01_Auto_Improvement/`                        | ❌ NO EXISTE - Creado ahora                                                                                |
 | `04_Operations/02_Knowledge_Brain/`                         | ❌ NO EXISTE                                                                                               |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                | ✅ EXISTE - Es backup de `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                      |
-| `.agent/03_Workflows/`                                      | ⚠️ DUPLICADO - `01_Core/00_Workflows/` no existe                                                          |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`                | ✅ EXISTE - Es backup de `01_Personal_Os/00_Core/02_Tools/02_Skills/`                                      |
+| `.agent/03_Workflows/`                                      | ⚠️ DUPLICADO - `00_Core/00_Workflows/` no existe                                                          |
 
 ---
 

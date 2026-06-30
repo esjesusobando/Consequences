@@ -50,7 +50,7 @@ registry:
 python scripts/update_registry.py
 
 # Buscar skill
-grep -r "skill-name" 01_Personal_Os/01_Core/02_Tools/02_Skills/
+grep -r "skill-name" 01_Personal_Os/00_Core/02_Tools/02_Skills/
 ```
 
 ## Examples

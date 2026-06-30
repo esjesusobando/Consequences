@@ -1,0 +1,18 @@
+======================================================================
+  SYSTEM MAPPER — Consequences 3.0 — 20260627_123105
+======================================================================
+
+GROUND TRUTH INVENTORY
+----------------------------------------------------------------------
+  MCPs Claude Code:    11
+  MCPs OpenCode:       45
+  Skills:              396 en 15 áreas
+  Agentes (source):    63
+  Agentes (backup):    72
+  HUBs:                39 funcionales (30 scripts + 9 dir)
+  Workflows:           29 en 7 categorías
+  Hooks:               10 en 6 fases
+  Rules:               14
+  Integrations:        2 (01_Fireflies, 02_Granola)
+
+======================================================================

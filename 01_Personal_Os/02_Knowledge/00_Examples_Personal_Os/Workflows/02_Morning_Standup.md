@@ -141,7 +141,7 @@ What action items did I commit to in my recent meetings?
 
 | File                                              | Location                                                                                              |
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Fireflies Tool Guide                              | `01_Core/05_Mcp/00_Config_Mcp/mcp-tools/06_productivity/02_fireflies.md`                              |
+| Fireflies Tool Guide                              | `00_Core/05_Mcp/00_Config_Mcp/mcp-tools/06_productivity/02_fireflies.md`                              |
 | Goals                                             | `00_Winter_is_Coming/GOALS.md`                                                                        |
 | Tasks                                             | `03_Tasks/*.md`                                                                                       |
 | Meeting Transcripts                               | `03_Knowledge/Transcripts/`                                                                           |

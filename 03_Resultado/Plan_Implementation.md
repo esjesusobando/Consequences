@@ -99,10 +99,10 @@ Se genera README.md en `00_Manifest/` con tabla de counts, ground truth, y refer
 | `README.md` | Status table + counts + skills table sync |
 | `00_Winter_is_Coming/README.md` | Counts sync |
 | `00_Winter_is_Coming/00_Iron_Man_Gen.md` | Tree + footer sync |
-| `01_Personal_Os/01_Core/README.md` | Counts sync |
-| `01_Personal_Os/01_Core/01_Inventario_Core.md` | Counts sync |
-| `01_Personal_Os/01_Core/02_Tools/README.md` | Agent/skill tree + table update |
-| `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` | Tree + footer sync |
+| `01_Personal_Os/00_Core/README.md` | Counts sync |
+| `01_Personal_Os/00_Core/01_Inventario_Core.md` | Counts sync |
+| `01_Personal_Os/00_Core/02_Tools/README.md` | Agent/skill tree + table update |
+| `01_Personal_Os/00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md` | Tree + footer sync |
 | `01_Personal_Os/04_Operations/README.md` | Agent count sync |
 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/README.md` | JARVIS tree + manifest table |
 | `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md` | Counts + table entries |

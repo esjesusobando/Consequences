@@ -50,7 +50,7 @@
 
 - **UltraThink FASE 1**: Eliminados duplicados `53_Structure_Auditor.py` (2 copies en 05_Scripts + 06_Scripts)
 - **Path hardcoded corregido**: `57_Repo_Sync_Auditor.py` — `03_Knowledge/10_Repos_Gentleman` → `05_Archive/07_Repos_Gentleman`
-- **34_Skill_Auditor.py**: Corregido path `01_Core/03_Skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills`
+- **34_Skill_Auditor.py**: Corregido path `00_Core/03_Skills` → `01_Personal_Os/00_Core/02_Tools/02_Skills`
 - **Cache cleanup**: `~/.cache/` liberado ~1.9GB (codex-runtimes 766MB, opencode 416MB, qmd 385MB, chroma 167MB)
 - **GOALS.md**: Beautified tables, versión v4.0对齐
 - **BACKLOG.md**: Actualizado a v4.0 Consequences
@@ -178,13 +178,13 @@
 - **CLAUDE.md inventario actualizado**: Tabla de HUBs expandida a 15-23 con todos los scripts reales
 - **Skills frontmatter**: Verificado — 298 skills con frontmatter, 0 sin frontmatter (ya resuelto)
 - **GGA pre-commit**: Verificado instalado y activo en `.git/hooks/pre-commit` con secret scanner
-- **Secret scanner**: Verificado en `01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py` (P2 BACKLOG resuelto)
+- **Secret scanner**: Verificado en `00_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py` (P2 BACKLOG resuelto)
 
 ### Verified OK (no action needed)
 
 - 7 manifests JARVIS en `02_Agent_Teams_Lite/00_Manifest/` — todos presentes
-- 10 reglas `.mdc` en `01_Core/01_Rules/` — completas (+ 1 .md extra)
-- 49 agentes en `01_Core/02_Tools/01_Agents/`
+- 10 reglas `.mdc` en `00_Core/01_Rules/` — completas (+ 1 .md extra)
+- 49 agentes en `00_Core/02_Tools/01_Agents/`
 - Hooks `04_Sound/notification.py` y `task-complete-sound.ps1` — existen
 
 - **Git reparado**: 52 tags corruptas eliminadas (SHAs de otro repo copiados por backup) — git gc, fsck y reflog 100% limpios
@@ -218,7 +218,7 @@
 - **`18_Validate_Skill_Frontmatter.py`**: Detecta 32 skills sin frontmatter YAML
 - **`02_Agent_Teams_Lite/00_Manifest/`**: 7 manifests generados — OS_Inventory, MCP_Registry, Agent_Catalog, Skill_Index, HUB_Catalog, Workflow_Graph, Hook_Registry
 - **`.atl/agent-skill-matrix.yaml`**: Matrix de 52 agentes × skills × HUBs × MCPs
-- **`01_Core/01_Rules/09_Agent_Teams_Protocol.mdc`**: Protocolo Forked Subagents documentado
+- **`00_Core/01_Rules/09_Agent_Teams_Protocol.mdc`**: Protocolo Forked Subagents documentado
 
 ### Changed
 
@@ -250,7 +250,7 @@
 
 ### Fixed — Full System Audit & Documentation Update
 
-- **`01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`**: Actualizado a v1.1
+- **`01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`**: Actualizado a v1.1
   - Agregadas carpetas 24-28 a estructura documentada: `24_PM_Agent_Orchestrator`, `25_Octopus`, `26_Fantasticos`, `27_Qmd`, `28_Carousel_Master`
   - Nota agregada: numeración no secuencial (22-23 no existen)
   - Total actualizado: 29 categorías (24 core + 5 extensiones)
@@ -259,7 +259,7 @@
 
 | Área                                     | Issue                                                                                                        | Estado                                   |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| **Hooks**                                | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`                                  | 🔴 Pendiente                              |
+| **Hooks**                                | settings.json usa `.agent/04_Extensions/hooks/` vs docs `00_Core/07_Hooks/`                                  | 🔴 Pendiente                              |
 | **Hooks**                                | SubagentStop documentado pero NO configurado                                                                 | 🔴 Pendiente                              |
 | **Hooks**                                | 5/8 hooks documentados sin wirear (04_Sound, 05_Harness, 06_Post_Hulk_Compound)                              | 🟠 Pendiente                              |
 | **Agentes**                              | Contaje inconsistente: docs dicen 14/18/71, real son 71                                                      | ✅ CORREGIDO (2026-06-27)                |
@@ -276,14 +276,14 @@
 ## 1.8.0 - 2026-04-10
 
 ### Added — Skills & Video Intelligence
-- **`01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/`**: 5 nuevos skills para productividad personal:
+- **`01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/`**: 5 nuevos skills para productividad personal:
   - Quick_Capture: Captura rápida de ideas y tareas
   - Plan_My_Day: Planificación diaria
   - Daily_Notes: Notas diarias estructuradas
   - Recording_Mode: Modo de grabación/transcripción
   - Returns_Tracker: Seguimiento de devoluciones
-- **`01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel copy/`**: Sistema completo de análisis de video con IA
-- **`01_Personal_Os/01_Core/02_Tools/02_Skills/20_Skill_Template/`**: Template reusable para crear nuevos skills
+- **`01_Personal_Os/00_Core/02_Tools/02_Skills/19_Video_Intel copy/`**: Sistema completo de análisis de video con IA
+- **`01_Personal_Os/00_Core/02_Tools/02_Skills/20_Skill_Template/`**: Template reusable para crear nuevos skills
 - **`05_Archive/03_Docs_Legacy/`**: Documentación legacy reorganizada
 
 ### Fixed — VPN & Network Investigation
@@ -305,7 +305,7 @@
 ### Fixed — OpenCode terminal launch errors
 
 - **`~/.config/opencode/opencode.json`**: Renombrado campo `env` → `environment` en 7 MCPs (`exa`, `Notion`, `task-master-ai`, `supadata`, `zai-mcp-server`, `excalidraw-yctimlin`, `firecrawl-mcp`). OpenCode v1.3.13 cambió su schema: `env` ya no es un campo válido en `McpLocalConfig`, el correcto es `environment`. Error: `Configuration is invalid ↳ Invalid input mcp.exa` (x7).
-- **`01_Core/05_Mcp/02_OpenCode/opencode.json`**: Mismo fix aplicado para mantener sync con el config activo.
+- **`00_Core/05_Mcp/02_OpenCode/opencode.json`**: Mismo fix aplicado para mantener sync con el config activo.
 
 **Root cause:** Ruptura de schema en OpenCode v1.3.13 — `additionalProperties: false` en `McpLocalConfig` rechaza el campo `env` que era válido en versiones anteriores.
 
@@ -315,10 +315,10 @@
 
 ### Fixed — MCP Integration & Documentation Audit
 
-- **`.mcp.json`** (raíz): Creado por primera vez. Claude Code no cargaba ningún MCP — el archivo fuente `01_Core/05_Mcp/01_Claude_Code/mcp.json` era solo backup documental. Ahora Claude Code tiene 29 MCPs activos.
-- **`pencil` MCP**: Ruta rota `./05_System/09_Bin/.bin/openpencil-mcp.cmd` → corregida a `openpencil-mcp.cmd` (instalado globalmente en npm). Actualizado en: `.mcp.json`, `01_Core/05_Mcp/01_Claude_Code/mcp.json`, `01_Core/05_Mcp/02_OpenCode/opencode.json` y `~/.config/opencode/opencode.json`.
+- **`.mcp.json`** (raíz): Creado por primera vez. Claude Code no cargaba ningún MCP — el archivo fuente `00_Core/05_Mcp/01_Claude_Code/mcp.json` era solo backup documental. Ahora Claude Code tiene 29 MCPs activos.
+- **`pencil` MCP**: Ruta rota `./05_System/09_Bin/.bin/openpencil-mcp.cmd` → corregida a `openpencil-mcp.cmd` (instalado globalmente en npm). Actualizado en: `.mcp.json`, `00_Core/05_Mcp/01_Claude_Code/mcp.json`, `00_Core/05_Mcp/02_OpenCode/opencode.json` y `~/.config/opencode/opencode.json`.
 - **`00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`**: Secciones 9-12 duplicadas eliminadas (Slash Commands, Memory & Search, Rules, Git History).
-- **`01_Core/05_Mcp/00_Config_Mcp/mcp-tools/README.md`**: Referencia incorrecta `.claude/mcp.json` → tabla con rutas reales (Claude Code + OpenCode).
+- **`00_Core/05_Mcp/00_Config_Mcp/mcp-tools/README.md`**: Referencia incorrecta `.claude/mcp.json` → tabla con rutas reales (Claude Code + OpenCode).
 - **`CLAUDE.md`**: Estado del sistema actualizado — tabla dual de config MCP, MCPs corregido a 29 activos.
 
 ### Notes
@@ -350,8 +350,8 @@ MCPs excluidos del `.mcp.json` activo por falta de credenciales (son templates e
 - **`03_Task_Restauracion_Opencode.md`**: Checklist de ejecución para restauración de OpenCode
 
 ### Fixed
-- **`01_Core/05_Mcp/01_Claude_Code/mcp.json`**: TestSprite migrado a path absoluto + env var `TESTSPRITE_PRIMARY`; notebooklm actualizado a `npx -y notebooklm-mcp@latest`
-- **`01_Core/05_Mcp/02_OpenCode/opencode.json`**: Migración de `npx.cmd` → `npx` en todos los servidores MCP (cross-platform); eliminada clave inválida `plugins`; restaurados servidores exa, Notion, firecrawl, task-master-ai, supadata, zai-mcp-server, excalidraw
+- **`00_Core/05_Mcp/01_Claude_Code/mcp.json`**: TestSprite migrado a path absoluto + env var `TESTSPRITE_PRIMARY`; notebooklm actualizado a `npx -y notebooklm-mcp@latest`
+- **`00_Core/05_Mcp/02_OpenCode/opencode.json`**: Migración de `npx.cmd` → `npx` en todos los servidores MCP (cross-platform); eliminada clave inválida `plugins`; restaurados servidores exa, Notion, firecrawl, task-master-ai, supadata, zai-mcp-server, excalidraw
 - **`README.md`**: Corregidos paths obsoletos `Validator_Fixed/` → `03_Validator/` y `Tool_Fixed/` → `02_Tool/`
 
 ### Removed
@@ -373,13 +373,13 @@ MCPs excluidos del `.mcp.json` activo por falta de credenciales (son templates e
   - `General_Fixed` → `08_General`
   - `Integration_Fixed` → `09_Integration`
   - `Legacy_Backup` → `10_Legacy`
-- **`01_Core/07_Hooks/`**: `05_Post_Hulk_Compound` → `06_Post_Hulk_Compound` (prefijo duplicado resuelto)
-- **`01_Core/09_Server/00_Env/config_paths.py`**: DIMENSIONS actualizadas a v6.1 (9 dimensiones correctas), ENGINE_DIR corregido a `03_Scripts_Os`
-- **`01_Core/Requirements.txt`**: Unificado con versiones actuales (`mcp>=1.26.0`, `anthropic>=0.84.0`, `python-dotenv>=1.0.0`, `colorama>=0.4.6`)
-- **`01_Core/09_Server/00_Env/Requirements.txt`**: Sincronizado con fuente de verdad (agregado `colorama>=0.4.6`)
-- **`01_Core/09_Server/00_Config_Aliases/aliases.sh`**: Agregados aliases para hubs 11-14 (`auto-learn`, `context-bar`, `beautify`, `beauty-doc`), rutas absolutas via `$PERSONAL_OS_ROOT`, auto-detección de raíz
+- **`00_Core/07_Hooks/`**: `05_Post_Hulk_Compound` → `06_Post_Hulk_Compound` (prefijo duplicado resuelto)
+- **`00_Core/09_Server/00_Env/config_paths.py`**: DIMENSIONS actualizadas a v6.1 (9 dimensiones correctas), ENGINE_DIR corregido a `03_Scripts_Os`
+- **`00_Core/Requirements.txt`**: Unificado con versiones actuales (`mcp>=1.26.0`, `anthropic>=0.84.0`, `python-dotenv>=1.0.0`, `colorama>=0.4.6`)
+- **`00_Core/09_Server/00_Env/Requirements.txt`**: Sincronizado con fuente de verdad (agregado `colorama>=0.4.6`)
+- **`00_Core/09_Server/00_Config_Aliases/aliases.sh`**: Agregados aliases para hubs 11-14 (`auto-learn`, `context-bar`, `beautify`, `beauty-doc`), rutas absolutas via `$PERSONAL_OS_ROOT`, auto-detección de raíz
 - **`.claude/01_Commands/genesis.md`**: Corregido script invocado (`04_Ritual_Hub.py --mode genesis` en vez de `08_Ritual_Cierre.py`)
-- **`01_Core/07_Hooks/06_Post_Hulk_Compound/post_hulk_compound.py`**: Corregido `project_root` (era `_ext_root.parent.parent` → ahora `_ext_root.parent`) y ruta a `56_Organize_Solutions.py`
+- **`00_Core/07_Hooks/06_Post_Hulk_Compound/post_hulk_compound.py`**: Corregido `project_root` (era `_ext_root.parent.parent` → ahora `_ext_root.parent`) y ruta a `56_Organize_Solutions.py`
 - **Documentación**: Actualizadas referencias en `CLAUDE.md`, `01_Personal_Os/11_AGENTS.md`, `03_Scripts_Os/README.md`, `03_Scripts_Os/SCRIPTS_INDEX.md`
 
 ---
@@ -409,8 +409,8 @@ MCPs excluidos del `.mcp.json` activo por falta de credenciales (son templates e
 - **08_Ritual_Cierre.py**: `sys.path` apuntaba a PROJECT_ROOT en vez de `03_Scripts_Os/`
 - **14_Morning_Standup.py**: `sys.path` apuntaba a `Legacy_Backup/` inexistente
 - **02_Git_Hub.py**: ARMOR LAYER movido antes del import de `config_paths`
-- **`.claude/rules/*.md`**: Todas las rutas apuntaban a `01_Core/04_Rules/` (inexistente) → corregido a `01_Core/01_Rules/` con nombres `.mdc` correctos
-- **`.claude/settings.local.json`**: Hooks actualizados para usar `01_Core/07_Hooks/04_Sound/notification.py` (script correcto con sonido real)
+- **`.claude/rules/*.md`**: Todas las rutas apuntaban a `00_Core/04_Rules/` (inexistente) → corregido a `00_Core/01_Rules/` con nombres `.mdc` correctos
+- **`.claude/settings.local.json`**: Hooks actualizados para usar `00_Core/07_Hooks/04_Sound/notification.py` (script correcto con sonido real)
 - **post_tool_use.py**: Beep silenciado → ahora loguea éxito o error
 
 ### Added
@@ -422,7 +422,7 @@ MCPs excluidos del `.mcp.json` activo por falta de credenciales (son templates e
 ### Verified
 - Auditor Hub: `=== ESTATUS: SALUDABLE ===` (todas las dimensiones OK)
 - Structure Auditor: 9 dimensiones v6.1 validadas
-- `.claude/rules` carga reglas reales desde `01_Core/01_Rules/`
+- `.claude/rules` carga reglas reales desde `00_Core/01_Rules/`
 
 ---
 

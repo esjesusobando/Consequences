@@ -18,8 +18,8 @@
 Think_Different/ (RAÍZ)
 ├── 00_Winter_is_Coming/          # ⚠️ SIN CAMBIOS - Reglas de Oro
 ├── 01_Personal_Os/               # 🆕 EL SISTEMA OPERATIVO
-│   ├── 01_Core/
-│   │   ├── 00_Workflows_Os/
+│   ├── 00_Core/
+│   │   ├── 00_Workflows/
 │   │   ├── 01_Rules/
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/        # 🆕 (antes 04_Agents)
@@ -56,7 +56,7 @@ Think_Different/ (RAÍZ)
 
 | ANTIGUO (v1.x)                | NUEVO (v2.0)                                               |
 |------------------------------|-----------------------------------------------------------|
-| `01_Core/`                    | `01_Personal_Os/01_Core/`                                  |
+| `00_Core/`                    | `01_Personal_Os/00_Core/`                                  |
 | `02_Knowledge/`               | `01_Personal_Os/02_Knowledge/`                             |
 | `03_Tasks/`                   | `01_Personal_Os/03_Task/`                                  |
 | `04_Operations/`              | `01_Personal_Os/04_Operations/`                            |
@@ -70,17 +70,17 @@ Think_Different/ (RAÍZ)
 
 | ANTIGUO                                               | NUEVO                                                           |
 |------------------------------------------------------|----------------------------------------------------------------|
-| `01_Core/00_Workflows/`                               | `01_Personal_Os/01_Core/00_Workflows_Os/`                       |
-| `01_Core/01_Rules/`                                   | `01_Personal_Os/01_Core/01_Rules/`                              |
-| `01_Core/02_Evals/`                                   | `01_Personal_Os/01_Core/02_Tools/08_Evals/`                     |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                    |
-| `01_Core/04_Agents/`                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                    |
-| `01_Core/05_Mcp/`                                     | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                       |
-| `01_Core/06_Integrations/`                            | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`              |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/`           | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |
-| `01_Core/08_Plugins/`                                 | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`                   |
-| `01_Core/09_Server/`                                  | `01_Personal_Os/01_Core/02_Tools/07_Server/`                    |
-| `01_Core/10_Templates/`                               | `01_Personal_Os/01_Core/02_Tools/09_Templates/`                 |
+| `00_Core/00_Workflows/`                               | `01_Personal_Os/00_Core/00_Workflows/`                       |
+| `00_Core/01_Rules/`                                   | `01_Personal_Os/00_Core/01_Rules/`                              |
+| `00_Core/02_Evals/`                                   | `01_Personal_Os/00_Core/02_Tools/08_Evals/`                     |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`          | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                    |
+| `00_Core/04_Agents/`                                  | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                    |
+| `00_Core/05_Mcp/`                                     | `01_Personal_Os/00_Core/02_Tools/03_Mcp/`                       |
+| `00_Core/06_Integrations/`                            | `01_Personal_Os/00_Core/02_Tools/04_Integrations/`              |
+| `01_Personal_Os/00_Core/02_Tools/05_Hooks/`           | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                     |
+| `00_Core/08_Plugins/`                                 | `01_Personal_Os/00_Core/02_Tools/06_Plugins/`                   |
+| `00_Core/09_Server/`                                  | `01_Personal_Os/00_Core/02_Tools/07_Server/`                    |
+| `00_Core/10_Templates/`                               | `01_Personal_Os/00_Core/02_Tools/09_Templates/`                 |
 
 ---
 
@@ -96,8 +96,8 @@ Think_Different/ (RAÍZ)
 - [ ] `.agent/WORKSPACE.md` - Estructura
 
 ### 01_Personal_Os
-- [ ] `01_Core/README.md` - Múltiples referencias
-- [ ] `01_Core/01_Rules/RULES_INDEX.md` - Paths
+- [ ] `00_Core/README.md` - Múltiples referencias
+- [ ] `00_Core/01_Rules/RULES_INDEX.md` - Paths
 - [ ] `02_Knowledge/README.md` - Estructura
 - [ ] `03_Task/README.md` - Estructura
 - [ ] `04_Operations/README.md` - Múltiples refs
@@ -113,7 +113,7 @@ Think_Different/ (RAÍZ)
 | Script                                        | Path a Buscar                                                             | Acción                 |
 |----------------------------------------------|--------------------------------------------------------------------------|-----------------------|
 | `config_paths.py`                             | ✅ YA ACTUALIZADO                                                          | Listo                  |
-| Buscar en docs: `01_Core/`                    | Reemplazar por `01_Personal_Os/01_Core/`                                  | Pendiente              |
+| Buscar en docs: `00_Core/`                    | Reemplazar por `01_Personal_Os/00_Core/`                                  | Pendiente              |
 | Buscar en docs: `02_Knowledge/`               | Reemplazar por `01_Personal_Os/02_Knowledge/`                             | Pendiente              |
 | Buscar en docs: `04_Operations/`              | Reemplazar por `01_Personal_Os/04_Operations/`                            | Pendiente              |
 | Buscar en docs: `06_Playground/`              | Reemplazar por `02_Playground/`                                           | Pendiente              |
@@ -125,7 +125,7 @@ Think_Different/ (RAÍZ)
 
 ```bash
 # Buscar rutas antiguas en todos los .md
-grep -r "01_Core/" --include="*.md" .
+grep -r "00_Core/" --include="*.md" .
 grep -r "02_Knowledge/" --include="*.md" .
 grep -r "04_Operations/" --include="*.md" .
 grep -r "06_Playground/" --include="*.md" .

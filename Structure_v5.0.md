@@ -35,7 +35,7 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 00_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
+│   ├── 00_Workflows/          # 29 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
 │       ├── 00_SDD/               # SDD registry + JARVIS manifests
@@ -115,7 +115,7 @@ Think_Different/                    # RAÍZ
 ├── 00_Proyectos/                  # Planes, revisiones, side projects
 ├── 01_Aprendizaje/                # Skills output, fundamentos, referencias
 ├── 02_Experimentos/               # World OIM, ejercicios, sesiones
-├── 03_Reportes/                   # Auditorías y reportes
+├── 07_Reports/                   # Auditorías y reportes
 ├── 04_Documentacion/              # Documentación general
 ├── 05_Testing_Skills/             # Pruebas controladas
 └── 06_Testing_Travel/             # Testing de travel

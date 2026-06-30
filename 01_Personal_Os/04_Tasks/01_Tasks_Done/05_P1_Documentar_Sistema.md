@@ -7,7 +7,7 @@ created_date: 2026-03-27
 completed_date: 2026-04-25
 resource_refs:
   - 00_Winter_is_Coming/AGENTS.md
-  - 01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md
+  - 01_Personal_Os/00_Core/01_Rules/RULES_INDEX.md
   - 03_Resultado/04_Reportes/PLAN_MEDICION_DANOS_V2.md
 ---
 

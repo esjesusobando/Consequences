@@ -413,7 +413,7 @@ grep -oP '`[^`]+`' 15_Marketing_Estratega.md | grep -v "^/" | while read skill; 
 done
 
 # 4. Verificar mirror sync
-diff -rq 01_Personal_Os/01_Core/02_Tools/01_Agents/ .agent/01_Agents/ | grep -v "Only in"
+diff -rq 01_Personal_Os/00_Core/02_Tools/01_Agents/ .agent/01_Agents/ | grep -v "Only in"
 
 # 5. Verificar MCPs configurados
 grep -E "google-workspace|higgsfield|heygen" .mcp.json

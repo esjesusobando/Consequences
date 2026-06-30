@@ -19,7 +19,7 @@ Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
 Antes de responder, leer en este orden:
 
 ### 1. Reglas de Sesión
-   - Leer `01_Personal_Os/01_Core/01_Rules/` — cualquier regla con `alwaysApply: true`
+   - Leer `01_Personal_Os/00_Core/01_Rules/` — cualquier regla con `alwaysApply: true`
    - Especial atención a: `00_Core_Protocol.mdc`, `06_Contexto_Gestion.mdc`, `09_Agent_Teams_Protocol.mdc`
 
 ### 2. Memoria Persistente (Engram)
@@ -49,8 +49,8 @@ Antes de responder, leer en este orden:
 Think_Different/
 ├── 00_Winter_is_Coming/          # ESTRATÉGICO: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
-│   ├── 01_Core/                  # MOTOR DEL OS
-│   │   ├── 00_Workflows_Os/     # 29 workflows (7 categorías)
+│   ├── 00_Core/                  # MOTOR DEL OS
+│   │   ├── 00_Workflows/     # 29 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 14 reglas .mdc (00-13)
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/       # 63 agentes (26 Root + 6 Dream + 23 Specialists + 5 Growth + 3 other)
@@ -75,7 +75,7 @@ Think_Different/
 │       └── 07_Reports/          # Reportes consolidados (10_Reports eliminado en v4.7)
 ├── 02_Playground/               # Zona de pruebas
 ├── 03_Resultado/                # Outputs de proyectos
-├── .agent/                      # Backup estratégico (sync con 01_Core/)
+├── .agent/                      # Backup estratégico (sync con 00_Core/)
 ├── .atl/                        # SDD Registry + openspec/
 ├── .claude/                     # Config Claude Code + rules
 ├── .mcp.json                    # 11 MCPs activos
@@ -90,12 +90,12 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (15 áreas, 392)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
-| **Reglas** (14 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
-| **Agentes** (63)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
+| **Skills** (15 áreas, 392)     | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Reglas** (14 .mdc)           | `01_Personal_Os/00_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
+| **Agentes** (63)               | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
 | **HUBs** (30)                  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
 | **MCPs** (11)                  | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
-| **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
+| **Hooks** (10)                 | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
 | **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
@@ -204,7 +204,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 - [ ] `engram_mem_context()` — memoria reciente
 - [ ] `00_Winter_is_Coming/GOALS.md` — metas activas
 - [ ] `00_Winter_is_Coming/BACKLOG.md` — items pendientes
-- [ ] `01_Personal_Os/01_Core/01_Rules/` — reglas activas
+- [ ] `01_Personal_Os/00_Core/01_Rules/` — reglas activas
 - [ ] `01_Personal_Os/03_Task/` — tareas en progreso/bloqueadas
 - [ ] `.atl/skill-registry.md` — compact rules (si hay SDD)
 - [ ] Reportar resumen al chat antes de actuar

@@ -13,20 +13,20 @@
 1. **opencode.json corregido** — todos los MCPs con formato viejo (`transport/command/args`) migrados a formato nuevo (`type: local/remote`, `command: [array]`, `enabled: true`)
 2. **Auditoría completa del proyecto** — ver reporte en `03_Resultado/04_Reportes/AUDITORIA_COMPLETA_v3_0_2026-04-26.md`
 3. **HUB_Catalog.yaml corregido** — sufijos `15a/15b/16a/16b` cambiados a nombres reales `15_/16_` (sin sufijos). Archivo modificado pero NO commiteado.
-4. **Bulk replace parcial** — `04_Operations/03_Scripts_Os` → `03_Scripts_Os` en archivos `.md` de `01_Personal_Os/01_Core/02_Tools/02_Skills/` y `01_Personal_Os/01_Core/`. **Aún quedan ~120 archivos** en otras rutas (tasks, context_memory, hooks .py, scripts .py).
+4. **Bulk replace parcial** — `04_Operations/03_Scripts_Os` → `03_Scripts_Os` en archivos `.md` de `01_Personal_Os/00_Core/02_Tools/02_Skills/` y `01_Personal_Os/00_Core/`. **Aún quedan ~120 archivos** en otras rutas (tasks, context_memory, hooks .py, scripts .py).
 
 ### ❌ PENDIENTE — COMMITS POR FASES
 
 #### FASE 1 — Skill Huashu-Design (310 archivos staged, BLOQUEADOS)
 **Problema:** El GGA (pre-commit hook) falla con `Argument list too long` en Windows cuando hay muchos `.jsx/.js` en un commit. Exit code 126.
 **Solución:** El GGA tiene una variable `GGA_SKIP` o se puede deshabilitar temporalmente para este commit de assets. Revisar `.agent/05_GGA/bin/gga` — buscar si acepta `GGA_SKIP=1 git commit` o equivalente.
-**Archivos staged:** 310 archivos en `01_Personal_Os/01_Core/02_Tools/02_Skills/22_Huashu_Design/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/` + `.atl/skill-registry.md` + reporte auditoría.
+**Archivos staged:** 310 archivos en `01_Personal_Os/00_Core/02_Tools/02_Skills/22_Huashu_Design/` y `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/` + `.atl/skill-registry.md` + reporte auditoría.
 **Mensaje de commit sugerido:**
 ```
 feat(skills): add 花叔Design (Huashu-Design) skill v1.0
 
-- 01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/
-- 01_Personal_Os/01_Core/02_Tools/02_Skills/22_Huashu_Design/ (backup estratégico)
+- 01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/
+- 01_Personal_Os/00_Core/02_Tools/02_Skills/22_Huashu_Design/ (backup estratégico)
 - .atl/skill-registry.md actualizado
 HTML prototipos alta fidelidad, slides, animaciones, diseño de marca.
 ```
@@ -43,11 +43,11 @@ did not match actual filenames on disk (no a/b suffix). Fixed to match reality.
 ```
 
 #### FASE 3 — Bulk replace 04_Operations/03_Scripts_Os → 03_Scripts_Os (INCOMPLETO)
-**Estado:** El replace se hizo en `01_Personal_Os/01_Core/02_Tools/02_Skills/` y parte de `01_Personal_Os/` pero quedan ~120 archivos en:
+**Estado:** El replace se hizo en `01_Personal_Os/00_Core/02_Tools/02_Skills/` y parte de `01_Personal_Os/` pero quedan ~120 archivos en:
 - `01_Personal_Os/03_Task/` (tasks activas)
 - `01_Personal_Os/04_Operations/00_Context_LLM/` (context memory)
 - `.agent/04_Extensions/01_Hooks/` (hooks .py)
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/` (scripts .py de skills)
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/` (scripts .py de skills)
 - `01_Personal_Os/02_Knowledge/` (lessons)
 
 **Comando para completar:**

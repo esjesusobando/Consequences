@@ -89,7 +89,7 @@ pytest 04_Operations/05_Tests/ -v
 
 ## Referencias
 
-- **Nota de proceso:** `01_Core/03_Process_Notes/14_Sesion_System_Guardian_Integracion_2026-03-20.md`
+- **Nota de proceso:** `00_Core/03_Process_Notes/14_Sesion_System_Guardian_Integracion_2026-03-20.md`
 - **Super Report:** `04_ENGINE/06_Reports/04_Super_Report_System_Guardian_2026-03-20.md`
 - **Script principal:** `04_ENGINE/03_Scripts_Os/79_System_Guardian.py`
 

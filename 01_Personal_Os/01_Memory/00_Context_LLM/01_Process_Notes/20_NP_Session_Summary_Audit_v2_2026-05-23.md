@@ -23,7 +23,7 @@
 
 ### 2. `01_Personal_Os/` — Full Audit v2 Cleanup
 - **23 duplicate agents DELETED** from `02_Specialists_Compound/` (unnamed copies treading over skills, workflows, specs)
-- **`01_Core/README.md`** fully rewritten with real numbers: 46 agents, 394 skills, 30 workflows
+- **`00_Core/README.md`** fully rewritten with real numbers: 46 agents, 394 skills, 30 workflows
 - **`03_Inventario_Core.md`** created with precise agent/skill/workflow counts
 - **`01_Iron_Man_Gen.md`**: agent count fix, version bump
 - **`10_Git_Directions.mdc`**: typos fixed

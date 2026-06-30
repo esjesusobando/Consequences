@@ -34,10 +34,10 @@ Usar cuando el contexto de la sesión está degradado: respuestas incoherentes, 
 
 1. Abrir nueva conversación en Claude/OpenCode
 2. Ejecutar el Workflow Génesis (`01_Iron_Man_Gen.md`) completo:
-   - `01_Core/01_Rules/`
+   - `00_Core/01_Rules/`
    - `04_Operations/00_Context_Memory/` (último archivo)
    - `04_Operations/03_Process_Notes/` (último archivo)
-   - `01_Core/01_Inventario_Total.md`
+   - `00_Core/01_Inventario_Total.md`
    - **Engram**: `mem_search()` + `mem_context()`
 3. Leer `AGENTS.md` — constitución del sistema
 4. Reportar contexto cargado antes de continuar
@@ -62,7 +62,7 @@ Solo si A y B fallan:
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/  # GOALS, BACKLOG, AGENTS
-├── 01_Core/              # Inventario, Rules, Config
+├── 00_Core/              # Inventario, Rules, Config
 ├── 02_Knowledge/         # Examples, Resources
 ├── 03_Tasks/             # Tareas activas
 ├── 04_Operations/        # Context_Memory, Process_Notes, Memory_Brain, Plans, Solutions

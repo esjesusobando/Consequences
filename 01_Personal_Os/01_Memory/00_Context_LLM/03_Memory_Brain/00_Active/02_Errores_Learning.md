@@ -12,7 +12,7 @@
 
 | Aspecto                                                                 | Antes                                                                       | Después                                                                   |
 |------------------------------------------------------------------------|----------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Canonical Source                                                        | Confuso (múltiples ubicaciones)                                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              |
+| Canonical Source                                                        | Confuso (múltiples ubicaciones)                                             | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                              |
 | Cursor Skills                                                           | Sincronizado manualmente                                                    | README only (espejo)                                                      |
 | Context Memory                                                          | Duplicado (08_Context_Memory)                                               | Solo 01_Context_Memory/                                                   |
 | Numeración                                                              | Rotas (huecos, duplicados)                                                  | PERFECTA (01-09 secuencial)                                               |
@@ -42,7 +42,7 @@ Reorganización completa del sistema ejecutada exitosamente:
 1. **Skills Reorganization**
    - 99 skills organizadas en 9 perfiles (01-09) + 10_Backup
    - READMEs agregados a cada perfil
-   - Canonical source: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+   - Canonical source: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 2. **Context Memory Cleanup**
    - Removidas carpetas duplicadas (08_Context_Memory, Context_Memory)

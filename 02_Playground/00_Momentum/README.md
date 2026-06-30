@@ -69,7 +69,7 @@ Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los f
 Los workflows están integrados con el sistema de skills en:
 
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/
 ├── 05_Workflows/
 │   ├── 01_Agent_Teams_Lite/    # SDD + Agent Teams
 │   ├── 02_Project_Manager/     # PM workflows

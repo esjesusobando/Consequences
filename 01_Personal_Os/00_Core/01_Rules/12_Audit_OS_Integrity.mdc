@@ -40,7 +40,7 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 ### Workflows (boot + marvel)
 - `00_Winter_is_Coming/GOALS.md` — section N
 - `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` — boot protocol
-- `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` — boot protocol source
+- `01_Personal_Os/00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md` — boot protocol source
 
 ## Árboles de Directorios Duplicados
 

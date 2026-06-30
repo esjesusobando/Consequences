@@ -28,7 +28,7 @@ Dejar el sistema **Think Different v1.1 Alpha** impecable:
 
 ```
 Think_Different/                    # Root (detected by 01_Core presence)
-├── 01_Core/
+├── 00_Core/
 │   ├── 01_Rules/                   # 10 rules (.mdc)
 │   └── 03_Skills/                  # 25 categorías, 504 SKILL.md en subcarpetas
 ├── 03_Scripts_Os/                  # 11 HUBs + auditores + validators

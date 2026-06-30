@@ -65,12 +65,12 @@ Elevar todas las skills al estándar Anthropic con **Esencia Original** real (no
 | Archivo                                                       | Cambios                                                                                         |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | `CLAUDE.md`                                                   | Protocolo Génesis con Engram (mem_context + mem_session_summary)                                |
-| `01_Core/01_Context_Memory/`                                  | Reenumeración cronológica (01-11) con nombres descriptivos                                      |
-| `01_Core/02_Knowledge_Brain/`                                 | Reenumeración 01-21, sin duplicados, README creado                                              |
-| `01_Core/08_Audit_Sota/`                                      | REPAIR_ files → 11_, 12_                                                                        |
-| `01_Core/09_Momentum_Os/`                                     | Reenumeración + eliminación de duplicados                                                       |
+| `00_Core/01_Context_Memory/`                                  | Reenumeración cronológica (01-11) con nombres descriptivos                                      |
+| `00_Core/02_Knowledge_Brain/`                                 | Reenumeración 01-21, sin duplicados, README creado                                              |
+| `00_Core/08_Audit_Sota/`                                      | REPAIR_ files → 11_, 12_                                                                        |
+| `00_Core/09_Momentum_Os/`                                     | Reenumeración + eliminación de duplicados                                                       |
 | `06_Archive/`                                                 | README/tree actualizado con 00_Backups y 13_Script_Aud_Perfiles                                 |
-| `01_Core/tree.txt`                                            | Actualizado con nuevas estructuras                                                              |
+| `00_Core/tree.txt`                                            | Actualizado con nuevas estructuras                                                              |
 
 ---
 
@@ -90,7 +90,7 @@ Elevar todas las skills al estándar Anthropic con **Esencia Original** real (no
 ## 📁 ESTRUCTURA FINAL DE 01_Brain
 
 ```
-01_Core/
+00_Core/
 ├── 01_Context_Memory/      # ✅ Reenumerado (01-11 + _jsons)
 ├── 02_Knowledge_Brain/     # ✅ Reenumerado (01-21 + README)
 ├── 03_Process_Notes/       # ✅ OK

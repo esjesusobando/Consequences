@@ -322,7 +322,7 @@ gra
 | **CLAUDE.md**                      | Raíz del proyecto                                          | Reglas del sistema                      |
 | **OS_DIRECTORY.md**                | Raíz del proyecto                                          | JARVIS discovery                        |
 | **HUBs**                           | 01_Personal_Os/04_Operations/03_Scripts_Os/                | Automatizaciones                        |
-| **Skills**                         | 01_Personal_Os/01_Core/02_Tools/02_Skills/                 | 299+ skills (14 áreas)                  |
+| **Skills**                         | 01_Personal_Os/00_Core/02_Tools/02_Skills/                 | 299+ skills (14 áreas)                  |
 
 ---
 

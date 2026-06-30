@@ -148,18 +148,18 @@ Este perfil construye la infraestructura y herramientas que hacen posible el des
 ### Skills Anthropic
 | Skill                                                   | Ubicación                                                                                                           | Uso                                                          |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| **Evaluator Pattern**                                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`                     | Cómo hacer adversarial eval                                  |
-| **Context Management**                                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`                    | Reset vs compaction                                          |
-| **Sprint Contract**                                     | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`                       | Generator + Evaluator                                        |
+| **Evaluator Pattern**                                   | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`                     | Cómo hacer adversarial eval                                  |
+| **Context Management**                                  | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`                    | Reset vs compaction                                          |
+| **Sprint Contract**                                     | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`                       | Generator + Evaluator                                        |
 
 ### Workflow
-- `01_Personal_Os/01_Core/00_Workflows_Os/05_Compound_Engineering/17_Anthropic_Harness.md` — Workflow completo de 3 agentes
+- `01_Personal_Os/00_Core/00_Workflows/05_Compound_Engineering/17_Anthropic_Harness.md` — Workflow completo de 3 agentes
 
 ### Skills Base (Platform)
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/` — 12 skills DevOps
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/07_System_Master/` — Configuración sistema
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/10_Mcp_Client/` — Integraciones MCP
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/04_DevOps/` — 12 skills DevOps
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/07_System_Master/` — Configuración sistema
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/10_Mcp_Client/` — Integraciones MCP
 
 ### Specialists
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Performance-Oracle.md`
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Security-Sentinel.md`
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/02_Specialists_Compound/Performance-Oracle.md`
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/02_Specialists_Compound/Security-Sentinel.md`

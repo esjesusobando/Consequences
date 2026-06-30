@@ -13,7 +13,7 @@ sota_upgraded: true
 Generate written content that sounds like the user, not generic AI.
 
 > ⚠️ **This is a workflow skill.** The full playbook lives in:
-> `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`
+> `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/03_Content_Generation.md`
 > — load that file and follow its steps.
 
 ## When to Activate
@@ -36,7 +36,7 @@ Generate written content that sounds like the user, not generic AI.
 
 ### 1. Load the Playbook
 ```yaml
-file: 01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md
+file: 01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/03_Content_Generation.md
 action: follow each step sequentially
 ```
 
@@ -76,7 +76,7 @@ Show draft with adjustment options (tone, length, structure).
 
 ## Related
 
-- **Workflow full playbook**: `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`
+- **Workflow full playbook**: `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/03_Content_Generation.md`
 - **Voice training**: `<project-root>/Knowledge/voice-samples/` + `<project-root>/Knowledge/voice-guide.md`
 - **Related skills**: Brand Voice, Content Transformer, Marketing Strategy
 

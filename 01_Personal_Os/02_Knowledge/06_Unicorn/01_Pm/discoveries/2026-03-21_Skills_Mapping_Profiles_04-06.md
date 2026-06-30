@@ -9,15 +9,15 @@ tags: [skills-mapping, profiles, project-manager, ux-ui, testing]
 ## Skills Mapping: Profiles 04-06
 
 ### Context
-Complete mapping of skills from profiles 04_Project_Manager, 05_UX_UI, and 06_Testing_QA in `01_Personal_Os/01_Core/02_Tools/02_Skills/Profiles/`
+Complete mapping of skills from profiles 04_Project_Manager, 05_UX_UI, and 06_Testing_QA in `01_Personal_Os/00_Core/02_Tools/02_Skills/Profiles/`
 
 ### Summary
 
 | Profile                                           | Skills                              | Location                                                                            |
 |--------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------|
-| **04_Project_Manager**                            | 12                                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/Profiles/04_Project_Manager/`            |
-| **05_UX_UI**                                      | 4                                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/Profiles/05_UX_UI/`                      |
-| **06_Testing_QA**                                 | 15                                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/Profiles/06_Testing_QA/`                 |
+| **04_Project_Manager**                            | 12                                  | `01_Personal_Os/00_Core/02_Tools/02_Skills/Profiles/04_Project_Manager/`            |
+| **05_UX_UI**                                      | 4                                   | `01_Personal_Os/00_Core/02_Tools/02_Skills/Profiles/05_UX_UI/`                      |
+| **06_Testing_QA**                                 | 15                                  | `01_Personal_Os/00_Core/02_Tools/02_Skills/Profiles/06_Testing_QA/`                 |
 | **TOTAL**                                         | **31**                              |                                                                                     |
 
 ---
@@ -99,4 +99,4 @@ pr-review ──→ pr-review-deep
 - 7 skills have Spanish triggers
 
 ### Location
-`01_Personal_Os/01_Core/02_Tools/02_Skills/Profiles/`
+`01_Personal_Os/00_Core/02_Tools/02_Skills/Profiles/`

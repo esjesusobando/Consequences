@@ -38,14 +38,14 @@
 
 | Subdirectory                                | Files                                                      | Status                                     |
 |--------------------------------------------|-----------------------------------------------------------|-------------------------------------------|
-| 00_Rules/                                   | Synced from 01_Core/01_Rules/                              | ✅ SYNCED                                   |
+| 00_Rules/                                   | Synced from 00_Core/01_Rules/                              | ✅ SYNCED                                   |
 | 01_Agents/                                  | External agents                                            | ✅ DEFINED                                  |
 | 02_Skills/                                  | Legacy backup                                              | ✅ BACKUP                                   |
 | 03_Workflows/                               | 26+ workflows                                              | ✅ ACTIVE                                   |
 | 04_Extensions/                              | Hooks + Utils                                              | ✅ OPERATIONAL                              |
 | 05_GGA/                                     | Guardian Angel                                             | ✅ INSTALLED                                |
 
-**Note:** `.agent/` is marked as **STRATEGIC BACKUP** of `01_Core/`. Source of truth is `01_Core/`.
+**Note:** `.agent/` is marked as **STRATEGIC BACKUP** of `00_Core/`. Source of truth is `00_Core/`.
 
 ### ✅ 1.3 Agent Teams Lite (01_Agent_Teams_Lite)
 
@@ -71,7 +71,7 @@
 
 ## 2. SKILLS SYSTEM
 
-### ✅ 2.1 01_Personal_Os/01_Core/02_Tools/02_Skills/ Directory
+### ✅ 2.1 01_Personal_Os/00_Core/02_Tools/02_Skills/ Directory
 
 **19 Skill Categories:**
 
@@ -167,7 +167,7 @@
 
 ## 4. RULES & GOVERNANCE
 
-### ✅ 4.1 01_Core/01_Rules/ - All 23 Rules Present
+### ✅ 4.1 00_Core/01_Rules/ - All 23 Rules Present
 
 | Rule                                | Name                                               | File                                                            | Status                                     |
 |------------------------------------|---------------------------------------------------|----------------------------------------------------------------|-------------------------------------------|
@@ -197,7 +197,7 @@
 
 ### ✅ 4.2 RULES_INDEX.md
 
-- **Location:** 01_Core/01_Rules/RULES_INDEX.md
+- **Location:** 00_Core/01_Rules/RULES_INDEX.md
 - **Total Rules:** 23 ✅
 - **Last Updated:** 2026-03-29 ✅
 
@@ -213,7 +213,7 @@
 
 ## 5. HOOKS & AUTOMATION
 
-### ✅ 5.1 Hooks Structure (01_Core/02_Tools/05_Hooks/)
+### ✅ 5.1 Hooks Structure (00_Core/02_Tools/05_Hooks/)
 
 | Hook Type                                  | Location                                            | Files                                                            | Status                                |
 |-------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------|--------------------------------------|
@@ -265,9 +265,9 @@
 | Location                                             | Status                                             |
 |-----------------------------------------------------|---------------------------------------------------|
 | Root .mcp.json                                       | ❌ NOT FOUND                                        |
-| 01_Core/05_Mcp/mcp.json                              | ✅ PRESENT (311 lines)                              |
+| 00_Core/05_Mcp/mcp.json                              | ✅ PRESENT (311 lines)                              |
 
-**Note:** MCP configuration is in `01_Core/05_Mcp/` not root. This aligns with source of truth being `01_Core/`.
+**Note:** MCP configuration is in `00_Core/05_Mcp/` not root. This aligns with source of truth being `00_Core/`.
 
 ---
 
@@ -318,9 +318,9 @@ None. All core functionality present.
 
 ### Observations
 
-1. **Documentation Redundancy:** `.agent/` contains backup copies of `01_Core/` content. Some files are identical, creating maintenance overhead.
+1. **Documentation Redundancy:** `.agent/` contains backup copies of `00_Core/` content. Some files are identical, creating maintenance overhead.
 
-2. **MCP Config Location:** MCP servers (36+) are configured in `01_Core/05_Mcp/mcp.json` rather than root, which is actually better for organization.
+2. **MCP Config Location:** MCP servers (36+) are configured in `00_Core/05_Mcp/mcp.json` rather than root, which is actually better for organization.
 
 3. **GGA Location:** Guardian Angel is in `.agent/05_GGA/` which aligns with the backup strategy.
 
@@ -374,10 +374,10 @@ None required. System is fully operational.
 
 1. **Consolidate Documentation:**
    - Consider marking `.agent/` as strictly backup with no documentation
-   - Update all docs to reference only `01_Core/` as source
+   - Update all docs to reference only `00_Core/` as source
 
 2. **Root .mcp.json:**
-   - Either create symlink from root to `01_Core/05_Mcp/mcp.json`
+   - Either create symlink from root to `00_Core/05_Mcp/mcp.json`
    - Or update README to explicitly state MCP config location
 
 3. **GGA Documentation:**

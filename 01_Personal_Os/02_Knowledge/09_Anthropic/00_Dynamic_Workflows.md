@@ -105,7 +105,7 @@ For each unit of work:
 
 ## Relationship to This Project's OS Conductor
 
-This project's **OS Conductor** (`01_Personal_Os/01_Core/02_Tools/01_Agents/00_OS_Conductor/SKILL.md`) already implements a similar pattern at the skill-orchestration level:
+This project's **OS Conductor** (`01_Personal_Os/00_Core/02_Tools/01_Agents/00_OS_Conductor/SKILL.md`) already implements a similar pattern at the skill-orchestration level:
 
 | Aspect       | OS Conductor                             | Dynamic Workflows                          |
 |-------------|-----------------------------------------|-------------------------------------------|

@@ -1041,7 +1041,7 @@ Nodes (8): str, beautify_markdown(), get_content_hash(), main(), process_file(),
 
 ### Community 177 - "Community 177"
 Cohesion: 0.36
-Nodes (7): analyze_skills(), find_skills(), main(), print_report(), Encuentra todas las skills en 01_Personal_Os/01_Core/02_Tools/02_Skills/., Analiza el estado de las skills., Imprime el reporte de salud.
+Nodes (7): analyze_skills(), find_skills(), main(), print_report(), Encuentra todas las skills en 01_Personal_Os/00_Core/02_Tools/02_Skills/., Analiza el estado de las skills., Imprime el reporte de salud.
 
 ### Community 178 - "Community 178"
 Cohesion: 0.36
@@ -1237,7 +1237,7 @@ Nodes (5): 📁 14_Otros — Otros Scripts, 📋 Descripción, ⚠️ Notas, �
 
 ### Community 228 - "Community 228"
 Cohesion: 0.47
-Nodes (4): apply_changes(), audit_category(), main(), SKILL AUDITOR & FIXER Audita la estructura de 01_Core/02_Tools/02_Skills y corri
+Nodes (4): apply_changes(), audit_category(), main(), SKILL AUDITOR & FIXER Audita la estructura de 00_Core/02_Tools/02_Skills y corri
 
 ### Community 229 - "Community 229"
 Cohesion: 0.47
@@ -1261,7 +1261,7 @@ Nodes (5): 📁 12_Auditors_Os — Auditors Utilities, 📦 Scripts (5 en `scrip
 
 ### Community 234 - "Community 234"
 Cohesion: 0.47
-Nodes (4): apply_changes(), audit_category(), main(), SKILL AUDITOR & FIXER Audita la estructura de 01_Core/02_Tools/02_Skills y corri
+Nodes (4): apply_changes(), audit_category(), main(), SKILL AUDITOR & FIXER Audita la estructura de 00_Core/02_Tools/02_Skills y corri
 
 ### Community 235 - "Community 235"
 Cohesion: 0.47

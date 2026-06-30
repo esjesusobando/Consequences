@@ -106,7 +106,7 @@ feat(ops): auditoría integral del PersonalOS Think_Different v1.2
 - Migra contenido de 09_Marketing → 01_Creacion_Contenidos/
 - Implementa Auto-Improvement Engine en 04_Operations/01_Auto_Improvement/
 - Actualiza README.md, CLAUDE.md, RULES_INDEX.md a v1.2
-- Sincroniza .agent/00_Rules/ con 01_Core/01_Rules/
+- Sincroniza .agent/00_Rules/ con 00_Core/01_Rules/
 - Valida 100% en 8 checks de salud
 ```
 

@@ -10,7 +10,7 @@ The Video_Intel skill extracts structured knowledge from YouTube videos and GitH
 
 ## Location
 
-`01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/`
+`01_Personal_Os/00_Core/02_Tools/02_Skills/19_Video_Intel/`
 
 ## Purpose
 

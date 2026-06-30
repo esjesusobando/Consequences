@@ -8,9 +8,9 @@ Completar auditoría integral del proyecto, corregir rutas obsoletas, actualizar
 ## ✅ LOGROS ALCANZADOS
 
 ### 1. CORRECCIÓN DE RUTAS Y ESTRUCTURA
-- ✅ Rutas de skills corregidas: `01_Core/03_Skills/` → `01_Core/02_Tools/02_Skills/`
+- ✅ Rutas de skills corregidas: `00_Core/03_Skills/` → `00_Core/02_Tools/02_Skills/`
   - En 4 scripts de auditoría: audit-skills.py, audit-loop.py, fix-missing.py, validate-essence.py
-  - En .agent/ y 01_Personal_Os/01_Core/02_Tools/02_Skills/ (source y agent copias)
+  - En .agent/ y 01_Personal_Os/00_Core/02_Tools/02_Skills/ (source y agent copias)
 - ✅ Estructura de carpetas actualizada:
   - `00_Personal_Os_Stack/` → `00_System_Core/`
   - `00_Skill_Auditor/` → `10_Skill_Auditor/`
@@ -58,7 +58,7 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - 06_AI_News_Weekly
 - 07_Clinica_Infantil
 
-#### 📊 03_Reportes/ - Informes y seguimiento
+#### 📊 07_Reports/ - Informes y seguimiento
 - audit_estructura_*.txt
 - audit_health_*.txt
 - audit_profundo_*.txt
@@ -94,7 +94,7 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - 239 archivos modificados en commits principales
 - 11,927 inserciones, 11,913 eliminaciones
 - 6+ commits totales en esta sesión de auditoría
-- 0 referencias incorrectas a 01_Core/03_Skills/ en archivos activos
+- 0 referencias incorrectas a 00_Core/03_Skills/ en archivos activos
 - 0 scripts raíz sin shebang
 - 2 plugins esenciales instalados y registrados
 - 1 issue KI-004 cerrado
@@ -114,7 +114,7 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - .agent/02_Skills/10_Skill_Auditor/01_Scripts/audit-loop.py — ruta de skills corregida
 - .agent/02_Skills/10_Skill_Auditor/01_Scripts/fix-missing.py — ruta de skills corregida
 - .agent/02_Skills/10_Skill_Auditor/01_Scripts/validate-essence.py — ruta de skills corregida
-- 01_Personal_Os/01_Core/02_Tools/02_Skills/10_Skill_Auditor/01_Scripts/ — copias source corregidas
+- 01_Personal_Os/00_Core/02_Tools/02_Skills/10_Skill_Auditor/01_Scripts/ — copias source corregidas
 - .claude/03_Agents/README.md — referencia de skills corregida
 - ~/.config/opencode/tui.json — ambos plugins registrados
 - 05_Archive/New_Implementation_Plan.md — plan archivado
@@ -122,7 +122,7 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - 03_Resultado/00_Proyectos/ — proyectos y planes organizados
 - 03_Resultado/01_Aprendizaje/ — recursos de aprendizaje organizados
 - 03_Resultado/02_Experimentos/ — experimentos organizados
-- 03_Resultado/03_Reportes/ — informes organizados
+- 03_Resultado/07_Reports/ — informes organizados
 - 03_Resultado/05_Documentacion/ — documentación suelta organizada
 - 03_Resultado/ORGANIZACION_SUMMARY.md — documento de organización
 
@@ -214,15 +214,15 @@ Ejecutar pipeline completo de SOTA upgrade para agentes de marketing (15, 16, 17
 4. Validar que graphify update funcione con la nueva ruta
 
 ## 📋 ARCHIVOS CLAVE MODIFICADOS/CREADOS
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/15_Marketing_Estratega.md` — SOTA upgrade
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/16_Marketing_Creador.md` — SOTA upgrade
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/17_Marketing_Analista.md` — SOTA upgrade
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/06_Marketing_Orchestrator.md` — NEW
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/15_Marketing_Estratega.md` — SOTA upgrade
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/16_Marketing_Creador.md` — SOTA upgrade
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/17_Marketing_Analista.md` — SOTA upgrade
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/01_Dream_Team/06_Marketing_Orchestrator.md` — NEW
 - `CLAUDE.marketing.md` — NEW template
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/linkedin-content-flow/SKILL.md` — NEW
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/MARKETING_PIPELINE.md` — NEW
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/README.md` — updated
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/README.md` — updated
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/linkedin-content-flow/SKILL.md` — NEW
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/MARKETING_PIPELINE.md` — NEW
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/README.md` — updated
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/01_Dream_Team/README.md` — updated
 - `openspec/changes/marketing-agents-sota-upgrade/` — full SDD artifacts
 - `02_Playground/Graphify_Out/` — moved from root
 - `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py` — path updated

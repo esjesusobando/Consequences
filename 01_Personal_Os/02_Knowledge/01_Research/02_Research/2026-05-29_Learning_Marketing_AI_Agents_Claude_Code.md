@@ -129,12 +129,12 @@ Descripción: Flujo completo YouTube: idea → publicación
 
 | Elemento del video    | Equivalente en el OS                                                     |
 |----------------------|-------------------------------------------------------------------------|
-| Carpeta `contexto/`   | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/04_Contexto/`  |
-| Carpeta `marca/`      | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/05_Marca/`     |
-| Carpeta `plantillas/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/06_Plantillas/`|
-| Agentes especializados| `01_Personal_Os/01_Core/02_Tools/01_Agents/` (definiciones de agentes)   |
-| MCPs                  | `01_Personal_Os/01_Core/02_Tools/03_MCPs/` (configuraciones MCP)         |
-| Flujos automatizados  | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (skills + workflows)        |
+| Carpeta `contexto/`   | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/04_Contexto/`  |
+| Carpeta `marca/`      | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/05_Marca/`     |
+| Carpeta `plantillas/` | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/06_Plantillas/`|
+| Agentes especializados| `01_Personal_Os/00_Core/02_Tools/01_Agents/` (definiciones de agentes)   |
+| MCPs                  | `01_Personal_Os/00_Core/02_Tools/03_MCPs/` (configuraciones MCP)         |
+| Flujos automatizados  | `01_Personal_Os/00_Core/02_Tools/02_Skills/` (skills + workflows)        |
 
 ### Lo que el OS ya tiene y el video recomienda
 

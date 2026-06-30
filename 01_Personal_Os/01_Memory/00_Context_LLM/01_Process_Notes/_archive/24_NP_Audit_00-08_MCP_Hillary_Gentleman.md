@@ -40,8 +40,8 @@
 - Fix: Eliminadas duplicadas, agregada tabla triggers Hillary
 
 ### 5. Hillary Life OS integrado a produccion
-- 5 skills en 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/
-- Workflow orquestador: 01_Core/00_Workflows/24_Hillary_Life_OS.md
+- 5 skills en 01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/
+- Workflow orquestador: 00_Core/00_Workflows/24_Hillary_Life_OS.md
 - RUNBOOK: 02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md
 - Inbox: 03_Tasks/02_Hillary_Inbox/README.md
 - Registry: .atl/skill-registry.md + 03_Scripts_Os/SCRIPTS_INDEX.md
@@ -54,7 +54,7 @@
 ### 7. Auditoria 00-08 -- fixes aplicados
 - Skills README.md: 4 cats faltantes + typo 05_Viba->05_Vibe + tabla desactualizada
 - RULES_INDEX.md: 13_Testing_Resource.mdc -> 13_Testing_Resource_Management.mdc
-- LFG_Autonomous_Engine.md: ref 05_System/ -> 01_Core/05_Mcp/ + 03_Scripts_Os/
+- LFG_Autonomous_Engine.md: ref 05_System/ -> 00_Core/05_Mcp/ + 03_Scripts_Os/
 - 00_Plan_Integration.md raiz -> 03_Tasks/01_Tasks_Done/
 - 01_Report_Status.md raiz -> 04_Operations/03_Process_Notes/
 
@@ -79,7 +79,7 @@
 ## Gotchas Clave
 
 - OpenCode v1.3.13: env->environment es breaking change. additionalProperties:false mata todos los MCPs silenciosamente.
-- Dual-config: Claude Code lee .mcp.json (raiz), OpenCode lee ~/.config/opencode/opencode.json. Backups en 01_Core/05_Mcp son solo documentales.
+- Dual-config: Claude Code lee .mcp.json (raiz), OpenCode lee ~/.config/opencode/opencode.json. Backups en 00_Core/05_Mcp son solo documentales.
 - GOALS.md en .gitignore: requiere git add -f.
 - Gentleman audit: skills con subdirs necesitan SKILL.md raiz como orquestador.
 

@@ -37,7 +37,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                   ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/       ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/       ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/              ✅ 14 reglas .mdc
 │   │   └── 02_Tools/              ✅ Herramientas
 │   │       ├── 00_SDD/            ✅ SDD Registry + JARVIS manifests

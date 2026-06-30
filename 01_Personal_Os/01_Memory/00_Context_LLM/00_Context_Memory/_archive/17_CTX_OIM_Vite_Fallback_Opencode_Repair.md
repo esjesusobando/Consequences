@@ -20,7 +20,7 @@ Reparar el comando global `opencode` en Windows, activar el índice y motor the 
 4. Se acató la nueva regla arquitectónica de convenciones de Context Memory: `00_CTX_Tema.md` con las fechas adjuntadas al final del body en caso de archivo previo.
 
 ## 4. Alineamiento Metodológico (Core/Rules)
-Se validó la primacía de `01_Core/01_Rules` guiada por `CLAUDE.md` y `01_Personal_Os/11_AGENTS.md` como la *Fuente de Verdad*, comprobando que todos los agentes apuntan al mismo centro operativo en el workspace v6.1 sin fisuras.
+Se validó la primacía de `00_Core/01_Rules` guiada por `CLAUDE.md` y `01_Personal_Os/11_AGENTS.md` como la *Fuente de Verdad*, comprobando que todos los agentes apuntan al mismo centro operativo en el workspace v6.1 sin fisuras.
 
 ---
 * **Fecha de Sesion:** 2026-04-06

@@ -2,7 +2,7 @@
 
 **Estatus**: DOCUMENTO MAESTRO (Compactación v6.1)  
 **Fuente de Verdad (SSOT)**: `03_Tasks/`  
-**Root**: `01_Core/`
+**Root**: `00_Core/`
 
 ---
 

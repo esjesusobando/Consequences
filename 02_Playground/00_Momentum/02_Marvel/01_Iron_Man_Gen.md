@@ -11,7 +11,7 @@ Ejecutar al inicio de cada sesión para cargar el contexto completo del sistema:
 ## Pasos
 
 1. **Leer Reglas de Sesión**:
-   - Leer `01_Core/01_Rules/` — revisar cualquier regla con `alwaysApply: true`.
+   - Leer `00_Core/01_Rules/` — revisar cualquier regla con `alwaysApply: true`.
 
 2. **Cargar Memoria de Largo Plazo (AGENTE)**:
    - Ejecutar `mem_search()` con project="Think_Different" para recuperar contexto previo.

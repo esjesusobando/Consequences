@@ -20,7 +20,7 @@ Completar la migración PersonalOS v2.0 Consequences: actualizar documentación 
 ### 1. Documentación `.agent/` — COMPLETADO
 Todos los documentos del backup estratégico actualizados a v2.0:
 - `.agent/CLAUDE.md` — Reescritura completa: árbol 4 carpetas raíz, 9 áreas skills, 14 HUBs, tabla de estado 2026-04-24
-- `.agent/README.md` — Tabla de estructura v2.0, source of truth en `01_Personal_Os/01_Core/`
+- `.agent/README.md` — Tabla de estructura v2.0, source of truth en `01_Personal_Os/00_Core/`
 - `.agent/WORKSPACE.md` — Workspace completo v2.0: 4 carpetas raíz, subtree `01_Personal_Os/`
 - `.agent/00_Rules/RULES_INDEX.md` — Reemplazadas 21 referencias incorrectas por los 10 .mdc reales
 - `.agent/00_Rules/README.md` — Índice de 10 reglas con nombres correctos
@@ -41,11 +41,11 @@ Todos los documentos del backup estratégico actualizados a v2.0:
 - `SCRIPTS_DIR`: `ENGINE_DIR / "03_Scripts_Os"` → `ENGINE_DIR` (config_paths ya resuelve correctamente)
 
 **`13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py`** — 5 rutas corregidas:
-- skills: `01_Core/03_Skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills`
-- agents: `01_Core/04_Agents` → `01_Personal_Os/01_Core/02_Tools/01_Agents`
-- hooks: `01_Core/07_Hooks` → `01_Personal_Os/01_Core/02_Tools/05_Hooks`
+- skills: `00_Core/03_Skills` → `01_Personal_Os/00_Core/02_Tools/02_Skills`
+- agents: `00_Core/04_Agents` → `01_Personal_Os/00_Core/02_Tools/01_Agents`
+- hooks: `00_Core/07_Hooks` → `01_Personal_Os/00_Core/02_Tools/05_Hooks`
 - hubs: `03_Scripts_Os` → `01_Personal_Os/04_Operations/03_Scripts_Os`
-- rules: `01_Core/01_Rules` → `01_Personal_Os/01_Core/01_Rules`
+- rules: `00_Core/01_Rules` → `01_Personal_Os/00_Core/01_Rules`
 
 ### 4. Claude Code — COMPLETADO
 - Instalado `@anthropic-ai/claude-code-win32-x64` (binario nativo faltante)
@@ -68,8 +68,8 @@ Borradas ~95MB de archivos seguros:
 ### P1 — Fix de ruta en tech-defaults.md (CRÍTICO)
 ```
 Archivo: .claude/rules/tech-defaults.md
-Problema: @../../01_Core/01_Rules/03_Pilar_Motor.mdc  (ruta v1.x)
-Fix:      @../../01_Personal_Os/01_Core/01_Rules/03_Pilar_Motor.mdc
+Problema: @../../00_Core/01_Rules/03_Pilar_Motor.mdc  (ruta v1.x)
+Fix:      @../../01_Personal_Os/00_Core/01_Rules/03_Pilar_Motor.mdc
 ```
 
 ### P2 — Verificación de metodologías (PENDIENTE)

@@ -1,6 +1,6 @@
 # 📋 Registry — Mapa Completo de Skills del PersonalOS
 
-> **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+> **Source of Truth:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 > **Actualizado:** 2026-05-30 (v4.9 Consequences + Anthropic Skills)
 > **Total:** 12 áreas, ~103 skills
 

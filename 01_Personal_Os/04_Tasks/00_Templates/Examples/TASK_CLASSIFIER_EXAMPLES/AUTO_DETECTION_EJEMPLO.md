@@ -12,7 +12,7 @@ Leyó descripción → Detectó keywords: feature, endpoint, componente
 
 Razon: Feature de ~3h, 4 archivos, complejidad media
 
-Archivo: 01_Core/05_Templates/04_Task_Template_Medio.md
+Archivo: 00_Core/05_Templates/04_Task_Template_Medio.md
 
 ¿Confirmás este template?
 ```

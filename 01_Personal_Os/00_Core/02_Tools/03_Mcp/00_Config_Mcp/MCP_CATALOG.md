@@ -4,7 +4,7 @@
 **Última actualización:** 2026-04-18
 **Config activa (Claude Code):** `.mcp.json` (raíz del proyecto)
 **Config activa (OpenCode):** `~/.config/opencode/opencode.json`
-**Source (backup):** `01_Core/05_Mcp/01_Claude_Code/mcp.json`
+**Source (backup):** `00_Core/05_Mcp/01_Claude_Code/mcp.json`
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 

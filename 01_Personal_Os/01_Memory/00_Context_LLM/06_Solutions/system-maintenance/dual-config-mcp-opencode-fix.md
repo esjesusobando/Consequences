@@ -19,7 +19,7 @@ problema_resuelto: true
 
 ### Problema 1: .mcp.json faltante
 Claude Code busca MCPs en `.mcp.json` en la raiz del proyecto. El archivo existia SOLO en
-`01_Core/05_Mcp/01_Claude_Code/mcp.json` como backup documental -- ningun tool lo leia.
+`00_Core/05_Mcp/01_Claude_Code/mcp.json` como backup documental -- ningun tool lo leia.
 
 ### Problema 2: OpenCode v1.3.13 breaking change
 OpenCode v1.3.13 renombro el campo `env` a `environment` en `McpLocalConfig`.
@@ -33,7 +33,7 @@ La carpeta `05_System` nunca existio en v6.1.
 ## Working Solution
 
 ### Fix 1: Crear .mcp.json en raiz
-Crear `.mcp.json` con el contenido de `01_Core/05_Mcp/01_Claude_Code/mcp.json`
+Crear `.mcp.json` con el contenido de `00_Core/05_Mcp/01_Claude_Code/mcp.json`
 adaptado al formato correcto (npx.cmd en Windows, transport: stdio).
 
 ### Fix 2: Renombrar env -> environment
@@ -53,7 +53,7 @@ def fix_env(obj):
 
 for path in [
     "~/.config/opencode/opencode.json",
-    "01_Core/05_Mcp/02_OpenCode/opencode.json"
+    "00_Core/05_Mcp/02_OpenCode/opencode.json"
 ]:
     config = json.load(open(path))
     fix_env(config["mcp"])
@@ -71,8 +71,8 @@ a `openpencil-mcp.cmd` (npm global disponible en PATH).
 ```
 Claude Code  ->  .mcp.json (raiz proyecto)              31 MCPs
 OpenCode     ->  ~/.config/opencode/opencode.json       31 MCPs
-Backup CC    ->  01_Core/05_Mcp/01_Claude_Code/mcp.json (documental, 38 entries)
-Backup OC    ->  01_Core/05_Mcp/02_OpenCode/opencode.json (documental, 31)
+Backup CC    ->  00_Core/05_Mcp/01_Claude_Code/mcp.json (documental, 38 entries)
+Backup OC    ->  00_Core/05_Mcp/02_OpenCode/opencode.json (documental, 31)
 ```
 
 REGLA: Al modificar MCPs, actualizar SIEMPRE el activo Y el backup.

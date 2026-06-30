@@ -43,7 +43,7 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 
 ## 🔗 RELACIONES
 
-- **Source:** `01_Personal_Os/01_Core/02_Tools/`
+- **Source:** `01_Personal_Os/00_Core/02_Tools/`
 - **Backup estratégico:** `.agent/02_Tools/` (sincronizado)
 - **Manifests:** `04_Operations/02_Agent_Teams_Lite/00_Manifest/`
 

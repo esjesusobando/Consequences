@@ -12,7 +12,7 @@ El sistema "Carousel Master" permitirá al usuario generar carruseles completos 
 
 ### [Componente] Agente Estratega (Growth)
 
-#### [NEW] [Carousel_Strategist.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/04_Agents/03_Growth/Carousel_Strategist.md)
+#### [NEW] [Carousel_Strategist.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/00_Core/04_Agents/03_Growth/Carousel_Strategist.md)
 - Perfil: Experto en copywriting, psicología del consumidor y diseño visual.
 - Misión: Realizar el onboarding, investigar el nicho, redactar las 5 slides y coordinar la generación de imágenes.
 
@@ -20,7 +20,7 @@ El sistema "Carousel Master" permitirá al usuario generar carruseles completos 
 
 ### [Componente] Habilidad de Sistema (Skill)
 
-#### [NEW] [SKILL.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/28_Carousel_Master/SKILL.md)
+#### [NEW] [SKILL.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Personal_Os/00_Core/02_Tools/02_Skills/28_Carousel_Master/SKILL.md)
 - Define los disparadores (`carousel`, `crear carrusel`, `automatización carrusel`).
 - Establece el flujo operativo SOTA (Investigación -> Storytelling -> Diseño -> Preview).
 

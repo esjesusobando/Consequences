@@ -1,0 +1,2270 @@
+{
+  "stale_hooks_path": [
+    {
+      "file": ".agent/03_Workflows/04_Hillary/25_Hillary_Life_OS.md",
+      "line": 62,
+      "text": "- **Notificaciones:** `python 01_Core/07_Hooks/04_Sound/notification.py --task-complete`"
+    },
+    {
+      "file": ".claude/02_Rules/01_Context_Protocol.mdc",
+      "line": 166,
+      "text": "- Ejecutar sonido: `01_Core/07_Hooks/04_Sound/task-complete-sound.ps1`"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 145,
+      "text": "- python 01_Core/07_Hooks/04_Sound/notification.py --task-complete"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 149,
+      "text": "El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Core/07_Hooks/`."
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/REPORTE_AUDITORIA_INTEGRAL_2026-04-21.md",
+      "line": 139,
+      "text": "| `01_Core/07_Hooks/`                                     | ✅                               | Hooks del sistema                                        |"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md",
+      "line": 154,
+      "text": "**Documentación:** `01_Core/07_Hooks/README.md` ✅"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md",
+      "line": 203,
+      "text": "| `01_Core/07_Hooks/README.md`                                           | ✅ Creado                                                | 2026-04-18                          |"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/06_Unicorn/01_Pm/video_analysis_Ariel_PM_Agentes.md",
+      "line": 42,
+      "text": "- **1. Hook de Sincronización PM (`01_Core/07_Hooks`):** Crear un hook `sdd_to_tasks.sh` que lea automáticamente archivos de diseño (`.md` en Unicorn) e inicialice los subagentes en `03_Tasks/` con checklists pre-aprobad"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/README.md",
+      "line": 64,
+      "text": "- Ejecutar: `python 01_Core/07_Hooks/04_Sound/notification.py --task-complete`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/01_Context_Protocol.mdc",
+      "line": 166,
+      "text": "- Ejecutar sonido: `01_Core/07_Hooks/04_Sound/task-complete.ps1` o `python 01_Core/07_Hooks/04_Sound/notification.py --task-complete`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/00_Workflows_Os/04_Hillary/25_Hillary_Life_OS.md",
+      "line": 62,
+      "text": "- **Notificaciones:** `python 01_Core/07_Hooks/04_Sound/notification.py --task-complete`"
+    },
+    {
+      "file": "03_Resultado/03_Reportes/01_Auditorias_OS/02_agent_workspace_deep_audit_2026-05-26.json",
+      "line": 198,
+      "text": "\"path\": \".agent/04_Extensions/hooks\","
+    },
+    {
+      "file": "03_Resultado/03_Reportes/01_Auditorias_OS/03_ecosystem_integration_validation_2026-05-26.json",
+      "line": 31,
+      "text": "\"Corrected core hooks documentation from stale 01_Core/07_Hooks to 01_Personal_Os/01_Core/02_Tools/05_Hooks and runtime mirror .agent/04_Extensions/01_Hooks\","
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_PLAN_BLINDAJE_OS_SOTA.md",
+      "line": 176,
+      "text": "2. Agregar al hook de fin de sesión en `.agent/04_Extensions/hooks/03_Lifecycle/` o crear cron:"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_OS_Bug_Fix_2026-04-27.md",
+      "line": 62,
+      "text": "| Hooks                | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`              | 🔴 Analizar                  |"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/PLAN_REPARACION_OS_2026-04-27.md",
+      "line": 43,
+      "text": "- `.agent/04_Extensions/hooks/` (hooks .py)"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/03_Revisar_Planes/00_Plan_Migración_Os.md",
+      "line": 50,
+      "text": "| `01_Core/07_Hooks/`                                   | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/03_Revisar_Planes/MAPA_MIGRACION_V2.md",
+      "line": 74,
+      "text": "| `01_Core/07_Hooks/`                                   | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |"
+    }
+  ],
+  "stale_rule12": [
+    {
+      "file": "03_Resultado/00_Proyectos/02_Revisar_Now/claude_code_audit.md",
+      "line": 91,
+      "text": "| **12**                      | `12_Nexus-Routing.mdc`                         | `12_Nexus_Routing.mdc`                            | `12_Nexus-Routing.mdc`                               | ⚠️ **Naming mismatch**          "
+    }
+  ],
+  "old_counts": [
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 188,
+      "text": "4. **HUBs** - 14 HUBs operativos en `03_Scripts_Os/`"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/04_Docs/plans/2026-04-23-001-fix-v1.1-alpha-stabilization-plan.md",
+      "line": 20,
+      "text": "- 33 MCPs configurados"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md",
+      "line": 42,
+      "text": "| `03_Scripts_Os/`                                | ✅                                 | ✅ 14 HUBs                                                   | PASS                              |"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/01_OIM_Website_v2/README.md",
+      "line": 43,
+      "text": "├── 03_Scripts_Os/           ✅ 14 HUBs operativos"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/01_OIM_Website_v2/README.md",
+      "line": 92,
+      "text": "### HUBs (03_Scripts_Os/) — 14 HUBs"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/02_OIM_Website/README.md",
+      "line": 43,
+      "text": "├── 04_Operations/03_Scripts_Os/           ✅ 14 HUBs operativos"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/02_OIM_Website/README.md",
+      "line": 92,
+      "text": "### HUBs (04_Operations/03_Scripts_Os/) — 14 HUBs"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/04_OIM_Website_Backup/README.md",
+      "line": 55,
+      "text": "├── 03_Scripts_Os/           ✅ 14 HUBs operativos"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/04_OIM_Website_Backup/README.md",
+      "line": 104,
+      "text": "### HUBs (03_Scripts_Os/) — 14 HUBs"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_Consequences.md",
+      "line": 110,
+      "text": "4. **Agentes ciegos** — 50/52 agentes (96%) NO saben que existen los 14 HUBs."
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_Consequences.md",
+      "line": 181,
+      "text": "├── 05_HUB_Catalog.yaml         # los 14 HUBs con uso típico"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_Consequences.md",
+      "line": 317,
+      "text": "- 33 MCPs disponibles → ver 00_Manifest/02_MCP_Registry.yaml"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_Consequences.md",
+      "line": 320,
+      "text": "- 14 HUBs ejecutables → ver 00_Manifest/05_HUB_Catalog.yaml"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_de_Cierre_v1.1_Alpha.md",
+      "line": 8,
+      "text": "- [ ] Ejecutar `mem_save` a través de Engram para registrar todas las decisiones de arquitectura de esta sesión (Resolución Dinámica, Ley de Formatos, Stack de 33 MCPs)."
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/00_Plan_de_Cierre_v1.1_Alpha.md",
+      "line": 13,
+      "text": "- *Realidad:* `01_Inventario_Total.md` actualizado aditivamente con el mapa de 9 Áreas y 33 MCPs."
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/01_PLAN_VALIDACION_TOTAL_OS.md",
+      "line": 145,
+      "text": "**B.8 — Tour de los 14 HUBs**"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/Implementation_Plan_Cierre.md",
+      "line": 18,
+      "text": "- La finalización del Mapa de 9 Áreas Maestras y los 33 MCPs."
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/03_Revisar_Planes/00_Plan_Migración_Os.md",
+      "line": 105,
+      "text": "│   │   ├── 03_Scripts_Os/        ← 14 HUBs (antes 03_Scripts_Os/)"
+    }
+  ],
+  "todo_markers": [
+    {
+      "file": ".agent/WORKSPACE.md",
+      "line": 54,
+      "text": "├── 04_Operations/                   # TODO LO OPERATIVO"
+    },
+    {
+      "file": ".agent/02_Skills/TOP_20_SKILLS.md",
+      "line": 49,
+      "text": "| **Valor**                             | 10/10                        | Metodología universal — sirve para TODO: slides, landing, cards, posts                    |"
+    },
+    {
+      "file": ".agent/03_Workflows/02_Marvel/07_AntMan_Lfg_Lite.md",
+      "line": 19,
+      "text": "7. **Resolver TODOs pendientes**: Revisar y cerrar cualquier TODO generado durante implementación"
+    },
+    {
+      "file": ".agent/03_Workflows/04_Hillary/15_Captura_Rapida.md",
+      "line": 34,
+      "text": "| **Bug / Problema**                                     | `00_Winter_is_Coming/BACKLOG.md` con tag `[BUG]`                                  | \"El script 13 falla con archivos vacíos\"                                     "
+    },
+    {
+      "file": ".agent/03_Workflows/04_Hillary/15_Captura_Rapida.md",
+      "line": 49,
+      "text": "- [2026-03-02] [BUG] Script 07_Morning_Standup no lee Context_Memory correctamente"
+    },
+    {
+      "file": ".agent/02_Skills/01_Creacion_Contenidos/14_Youtube_Full_Video.md",
+      "line": 9,
+      "text": "> Workflow completo integrado con TODO el ecosistema de skills de marketing."
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/KIT_DISENO_TOP_11.md",
+      "line": 23,
+      "text": "| **Valor**                             | 10/10                        | Metodología universal — sirve para TODO: slides, landing, cards, posts                    |"
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/KIT_DISENO_TOP_15.md",
+      "line": 17,
+      "text": "| **Valor**                             | 10/10                        | Metodología universal — sirve para TODO: slides, landing, cards, posts                    |"
+    },
+    {
+      "file": ".agent/02_Skills/08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/brainstorming/SKILL.md",
+      "line": 119,
+      "text": "1. **Placeholder scan:** Any \"TBD\", \"TODO\", incomplete sections, or vague requirements? Fix them."
+    },
+    {
+      "file": ".agent/02_Skills/08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-plans/SKILL.md",
+      "line": 109,
+      "text": "- \"TBD\", \"TODO\", \"implement later\", \"fill in details\""
+    },
+    {
+      "file": ".agent/02_Skills/07_Personal_Os/07_Hillary/SKILL.md",
+      "line": 33,
+      "text": "- Bug → BACKLOG.md con [BUG]"
+    },
+    {
+      "file": ".agent/02_Skills/07_Personal_Os/07_Hillary/SKILL.md",
+      "line": 58,
+      "text": "| `[BUG]`     | Bug encontrado  | BACKLOG con priorización|"
+    },
+    {
+      "file": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/11_Token_Management/SKILL.md",
+      "line": 84,
+      "text": "- Si te alejás 10+ minutos: cuando volvés, Claude relee TODO desde cero"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/06_Testing/13_Skill_Testing_Automation/scripts/run_tests.py",
+      "line": 452,
+      "text": "# TODO: Implement report-only generation"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/09_Skill_Architect/SKILL.md",
+      "line": 274,
+      "text": "- Generates a SKILL.md template with proper frontmatter and TODO placeholders"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/04_Obsidian_CLI/SKILL.md",
+      "line": 99,
+      "text": "obsidian search query=\"TODO\" exact=true"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/04_Obsidian_CLI/SKILL.md",
+      "line": 123,
+      "text": "obsidian grep query=\"TODO\" path=\"Proyectos/Alpha\""
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 16,
+      "text": "# TODO: Nombre de la Skill"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 23,
+      "text": "# TODO: Comando de ejemplo"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 29,
+      "text": "- TODO: Primer trigger específico"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 30,
+      "text": "- TODO: Segundo trigger específico"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 31,
+      "text": "- TODO: Tercer trigger específico"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 35,
+      "text": "- TODO: Primer caso donde NO aplicarla"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 36,
+      "text": "- TODO: Segundo caso donde NO aplicarla"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 87,
+      "text": "## TODO: Pasos para Completar"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 5,
+      "text": "Descripción: TODO: Describir qué hace este script"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 24,
+      "text": "parser = argparse.ArgumentParser(description=\"TODO: Descripción del script\")"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 41,
+      "text": "# TODO: Implementar lógica principal"
+    },
+    {
+      "file": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 73,
+      "text": "# TODO: Implementar procesamiento"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 28,
+      "text": "- **Solución**: Usar [BUG], [FEATURE], [ENHANCEMENT], [REFACTOR]"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 74,
+      "text": "- Title: `[BUG] Add aws_region field to AWS provider secrets (API)`"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 78,
+      "text": "- Title: `[BUG] Add region selector to AWS provider connection form (UI)`"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 224,
+      "text": "- `[BUG]` - Something broken that worked before"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 240,
+      "text": "- `[BUG] AWS GovCloud accounts cannot connect - STS region hardcoded (API + UI)`"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 308,
+      "text": "### Task 1: [BUG] {Description} (API)"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 313,
+      "text": "### Task 2: [BUG] {Description} (UI)"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/references/title-conventions.md",
+      "line": 13,
+      "text": "| `[BUG]`                                        | Something broken that worked before                                     |"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/references/title-conventions.md",
+      "line": 32,
+      "text": "- `[BUG] AWS GovCloud cannot connect - STS region hardcoded (API + UI)`"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/scripts/create-task.py",
+      "line": 12,
+      "text": "BUG_TEMPLATE = \"\"\"# [BUG] {title}"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning/scripts/plan-generator.py",
+      "line": 35,
+      "text": "# TODO: Add test"
+    },
+    {
+      "file": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning/scripts/plan-generator.py",
+      "line": 41,
+      "text": "# TODO: Add implementation"
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/10_GWS_Client/SKILL.md",
+      "line": 240,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/11_Gws_Client/SKILL.md",
+      "line": 240,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/12_Gcierr/00_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/12_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/12_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/11_Gcierr/00_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/11_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": ".agent/02_Skills/04_Automatizacion/11_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/09_Huashu_Design/references/slide-decks.md",
+      "line": 726,
+      "text": "6. [ ] 搜一下 `TODO` / `placeholder` 残留，确认都清理了"
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Huashu_Design/references/slide-decks.md",
+      "line": 726,
+      "text": "6. [ ] 搜一下 `TODO` / `placeholder` 残留，确认都清理了"
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/SKILL.md",
+      "line": 53,
+      "text": "**In code blocks:** `// ...`, `// rest of code`, `// implement here`, `// TODO`, `/* ... */`, `// similar to above`, `// continue pattern`, `// add more as needed`, bare `...` standing in for omitted code"
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/references/banned-patterns.md",
+      "line": 7,
+      "text": "- ❌ `// TODO`"
+    },
+    {
+      "file": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/scripts/validate-output.py",
+      "line": 16,
+      "text": "r\"//\\s*TODO\","
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/01_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/01_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/01_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/02_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                     | Isomorfa                       | Si borro TODO el texto, se sigue entendiendo la estructura mental?                             | Fila de cajas identicas                                     |"
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/02_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/02_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/03_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/03_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": ".agent/02_Skills/00_System_Core/03_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/00_Personal_Os_Stack/03_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": ".agent/02_Skills/00_Personal_Os_Stack/03_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": ".agent/02_Skills/00_Personal_Os_Stack/03_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/01_Agents_Review/pattern-recognition-specialist.md",
+      "line": 29,
+      "text": "- TODO/FIXME/HACK comments that indicate technical debt"
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/01_Agents_Review/pattern-recognition-specialist.md",
+      "line": 54,
+      "text": "3. Search for common anti-pattern indicators (TODO, FIXME, HACK, XXX)"
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/09_Scripts/06_AntMan_Lfg_Lite.py",
+      "line": 193,
+      "text": "dynamic_speak(\"Resolviendo comentarios TODO generados durante implementación.\")"
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/09_Scripts/06_AntMan_Lfg_Lite.py",
+      "line": 195,
+      "text": "# Buscar archivos TODO en el proyecto"
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/09_Scripts/06_AntMan_Lfg_Lite.py",
+      "line": 204,
+      "text": "if \"TODO\" in content.upper():"
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/09_Scripts/07_Doc_Strange_Lfg.py",
+      "line": 309,
+      "text": "dynamic_speak(\"Resolviendo comentarios TODO con estándares Silicon Valley.\")"
+    },
+    {
+      "file": ".agent/02_Skills/00_Compound_Engineering/09_Scripts/73_Avengers_Workflow_v3.py",
+      "line": 255,
+      "text": "if \"TODO\" in content or \"FIXME\" in content:"
+    },
+    {
+      "file": ".agent/01_Agents/02_Specialists_Compound/20_Pattern-Recognition-Specialist.md",
+      "line": 14,
+      "text": "- TODO/FIXME/HACK comments that indicate technical debt"
+    },
+    {
+      "file": ".agent/01_Agents/02_Specialists_Compound/20_Pattern-Recognition-Specialist.md",
+      "line": 39,
+      "text": "3. Search for common anti-pattern indicators (TODO, FIXME, HACK, XXX)"
+    },
+    {
+      "file": ".claude/02_Rules/01_Context_Protocol.mdc",
+      "line": 214,
+      "text": "1.  **TODO PLAN, TAREA O LISTA DEBE SER EN ESPAÑOL**."
+    },
+    {
+      "file": ".claude/02_Rules/17_Genesis.mdc",
+      "line": 41,
+      "text": "- Carga TODO el sistema: estructura, agentes, scripts, MCPs, skills"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 2,
+      "text": "description: TODO: Brief description of what this rule enforces"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 3,
+      "text": "globs: TODO: File patterns this rule applies to (e.g., *.tsx,*.ts)"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 6,
+      "text": "# TODO: Rule Title"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 9,
+      "text": "TODO: Explain what this rule prevents or enforces and why it matters for your codebase."
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 11,
+      "text": "TODO: Brief explanation of the problems this rule solves or the standards it maintains."
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 13,
+      "text": "## Rule: TODO: Core rule statement"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 14,
+      "text": "1. **Never use** TODO: [What the AI should never do]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 15,
+      "text": "2. **Never use** TODO: [Another thing to avoid]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 16,
+      "text": "3. **Always use** TODO: [What the AI should always do instead]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 17,
+      "text": "4. **Fix the root cause** TODO: [General principle for handling violations]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 21,
+      "text": "### ❌ BAD: TODO: Violation description"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 23,
+      "text": "// TODO: Show example of what NOT to do"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 27,
+      "text": "### ✅ GOOD: TODO: Correct approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 29,
+      "text": "// TODO: Show the correct way to handle the same situation"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 33,
+      "text": "### ❌ BAD: TODO: Another violation"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 35,
+      "text": "// TODO: Another example of what to avoid"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 38,
+      "text": "### ✅ GOOD: TODO: Another correct approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 40,
+      "text": "// TODO: Show alternative correct solution"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 44,
+      "text": "## When You Think You Need TODO: [Exception/Workaround]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 46,
+      "text": "### TODO: Common temptation scenario"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 49,
+      "text": "// TODO: Show tempting but wrong approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 52,
+      "text": "// TODO: Show proper solution following the rule"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 55,
+      "text": "### TODO: Another scenario"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 58,
+      "text": "// TODO: Another wrong approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 61,
+      "text": "// TODO: Correct way to handle this"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 66,
+      "text": "### TODO: Project-specific guidance"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 69,
+      "text": "// TODO: Common project-specific violation"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 71,
+      "text": "// ✅ GOOD - TODO: Recommended pattern"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 72,
+      "text": "// TODO: Show project-specific correct approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 77,
+      "text": "### 1. TODO: Solution approach 1"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 78,
+      "text": "TODO: Describe when and how to use this approach:"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 81,
+      "text": "// TODO: Code example of this solution approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 84,
+      "text": "### 2. TODO: Solution approach 2"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 85,
+      "text": "TODO: Describe this alternative:"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 88,
+      "text": "// TODO: Code example of alternative approach"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 92,
+      "text": "TODO: If this rule can be automated, add tool configs:"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 97,
+      "text": "\"TODO-eslint-rule\": \"error\""
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 102,
+      "text": "- [ ] Never suggest TODO: [forbidden approach] in any context"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 103,
+      "text": "- [ ] Never suggest TODO: [another forbidden approach] in any context"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 104,
+      "text": "- [ ] Always propose TODO: [proper solutions] instead of TODO: [violations]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 105,
+      "text": "- [ ] Create TODO: [appropriate alternatives] when needed for TODO: [specific situations]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 106,
+      "text": "- [ ] Use TODO: [recommended patterns] with TODO: [proper approach]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 107,
+      "text": "- [ ] Fix the root cause of TODO: [problem type], don't TODO: [mask/workaround]"
+    },
+    {
+      "file": ".claude/02_Rules/__Cursor_Rule_Skeleton.mdc",
+      "line": 109,
+      "text": "Remember: TODO: [Core principle - why this rule exists and what it prevents]"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/12_Pptx_Generator/SKILL.md",
+      "line": 585,
+      "text": "**⚠️ CRITICAL BACKGROUND BUG FIX:**"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/12_Pptx_Generator/SKILL.md",
+      "line": 679,
+      "text": "**🚨 CRITICAL BUG WARNING: BACKGROUND MUST BE SET WHEN COMBINING 🚨**"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/SKILL.md",
+      "line": 58,
+      "text": "- **CRÍTICO:** No dejes secciones vacías. Si la tarea es \"Integrar Stripe\", el Agente debe llenar la sección de \"Cambios en Datos\" con los esquemas reales de Stripe, no con \"TODO: ver docs\"."
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/SKILL.md",
+      "line": 274,
+      "text": "- Generates a SKILL.md template with proper frontmatter and TODO placeholders"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/23_Supabase_Integration/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/24_Seo_Audit/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/25_Data_Visualization/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/26_Vercel_Deploy/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 20,
+      "text": "description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 27,
+      "text": "[TODO: 1-2 sentences explaining what this skill enables]"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 31,
+      "text": "[TODO: Choose the structure that best fits this skill's purpose. Common patterns:"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 57,
+      "text": "## [TODO: Replace with the first main section based on chosen structure]"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 59,
+      "text": "[TODO: Add content here. See examples in existing skills:"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 119,
+      "text": "# TODO: Add actual script logic here"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/22_Skill_Creator/scripts/init_skill.py",
+      "line": 266,
+      "text": "print(\"1. Edit SKILL.md to complete the TODO items and update the description\")"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 21,
+      "text": "- **Frameworks y Versiones:** TODO: Lista tus frameworks principales y versiones"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 22,
+      "text": "- **Lenguaje:** TODO: Especifica el lenguaje de programación y versión"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 23,
+      "text": "- **Base de Datos y ORM:** TODO: Define la base de datos y el ORM elegidos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 24,
+      "text": "- **UI y Estilos:** TODO: Lista el framework de UI y el enfoque de estilos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 25,
+      "text": "- **Autenticación:** TODO: Especifica el sistema de autenticación"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 26,
+      "text": "- **Patrones Arquitectónicos Clave:** TODO: Lista los patrones principales"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 50,
+      "text": "- **🚨 Etapa del Proyecto:** TODO: Define si es desarrollo nuevo, sistema en producción o migración legacy"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 51,
+      "text": "- **Cambios Disruptivos:** TODO: Especifica si se aceptan cambios que rompan la compatibilidad o deben evitarse"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 52,
+      "text": "- **Manejo de Datos:** TODO: Define los requisitos de preservación de datos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 53,
+      "text": "- **Base de Usuarios:** TODO: Describe quiénes se verán afectados por los cambios"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 54,
+      "text": "- **Prioridad:** TODO: Establece tus prioridades entre velocidad vs estabilidad"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 62,
+      "text": "TODO: Define qué pueden hacer los usuarios y qué manejará el sistema automáticamente"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 70,
+      "text": "- **Rendimiento:** TODO: Define tiempos de respuesta y requisitos de carga"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 71,
+      "text": "- **Seguridad:** TODO: Especifica necesidades de autenticación y protección de datos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 72,
+      "text": "- **Usabilidad:** TODO: Establece estándares de experiencia de usuario y accesibilidad"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 73,
+      "text": "- **Diseño Responsivo:** TODO: Define soporte para móvil, tablet y escritorio"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 74,
+      "text": "- **Soporte de Temas:** TODO: Especifica modo claro/oscuro y requisitos de marca"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 88,
+      "text": "TODO: Añade tus cambios de esquema SQL aquí (nuevas tablas, columnas, índices, etc.)"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 92,
+      "text": "TODO: Define tus tipos de TypeScript, interfaces y cambios en la estructura de datos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 96,
+      "text": "## TODO: Planea tus pasos de migración (backup, aplicar cambios, transformar datos, validar)"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 102,
+      "text": "TODO: Define dónde debe ir cada tipo de código (mutaciones, consultas, rutas de API)"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 106,
+      "text": "TODO: Lista tus operaciones de creación, actualización y eliminación y qué hacen"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 110,
+      "text": "## TODO: Define tu enfoque de obtención de datos (consultas directas vs funciones separadas)"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 116,
+      "text": "TODO: Lista los nuevos componentes a crear y su propósito"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 120,
+      "text": "TODO: Lista las páginas que necesitan cambios y qué modificaciones se requieren"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 124,
+      "text": "## TODO: Define tu enfoque de gestión de estado y estrategia de flujo de datos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 128,
+      "text": "## TODO: Desglosa el trabajo en fases con tareas específicas y rutas de archivos"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 134,
+      "text": "## TODO: Define cómo quieres que la IA rastree e informe el progreso de las tareas"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 138,
+      "text": "## TODO: Planifica qué archivos nuevos crear y cuáles existentes modificar"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 145,
+      "text": "TODO: Pasos específicos para que el agente siga"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 149,
+      "text": "TODO: Cómo quieres que el agente se comunique contigo"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 153,
+      "text": "## TODO: Cualquier estándar de código específico"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 159,
+      "text": "## TODO: Dile a la IA qué secciones de código te preocupa romper, problemas de rendimiento e impactos en el flujo de trabajo del usuario"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/02_Skill_Testing_Automation/scripts/run_tests.py",
+      "line": 452,
+      "text": "# TODO: Implement report-only generation"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/01_Plan/05_Jira_Task/SKILL.md",
+      "line": 36,
+      "text": "- Title: `[BUG] Add aws_region field to AWS provider secrets (API)`"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/01_Plan/05_Jira_Task/SKILL.md",
+      "line": 40,
+      "text": "- Title: `[BUG] Add region selector to AWS provider connection form (UI)`"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/01_Plan/05_Jira_Task/SKILL.md",
+      "line": 186,
+      "text": "- `[BUG]` - Something broken that worked before"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/01_Plan/05_Jira_Task/SKILL.md",
+      "line": 202,
+      "text": "- `[BUG] AWS GovCloud accounts cannot connect - STS region hardcoded (API + UI)`"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/01_Plan/05_Jira_Task/SKILL.md",
+      "line": 270,
+      "text": "### Task 1: [BUG] {Description} (API)"
+    },
+    {
+      "file": ".claude/04_Skills/05_Gentleman/01_Plan/05_Jira_Task/SKILL.md",
+      "line": 275,
+      "text": "### Task 2: [BUG] {Description} (UI)"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/12_Pptx_Generator/SKILL.md",
+      "line": 585,
+      "text": "**⚠️ CRITICAL BACKGROUND BUG FIX:**"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/12_Pptx_Generator/SKILL.md",
+      "line": 679,
+      "text": "**🚨 CRITICAL BUG WARNING: BACKGROUND MUST BE SET WHEN COMBINING 🚨**"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/23_Supabase_Integration/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/24_Seo_Audit/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/25_Data_Visualization/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/26_Vercel_Deploy/SKILL.md",
+      "line": 20,
+      "text": "## TODO"
+    },
+    {
+      "file": ".claude/04_Skills/03_Utilities/02_Skill_Testing_Automation/scripts/run_tests.py",
+      "line": 452,
+      "text": "# TODO: Implement report-only generation"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/SKILL.md",
+      "line": 58,
+      "text": "- **CRÍTICO:** No dejes secciones vacías. Si la tarea es \"Integrar Stripe\", el Agente debe llenar la sección de \"Cambios en Datos\" con los esquemas reales de Stripe, no con \"TODO: ver docs\"."
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/SKILL.md",
+      "line": 274,
+      "text": "- Generates a SKILL.md template with proper frontmatter and TODO placeholders"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 20,
+      "text": "description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that trigger it.]"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 27,
+      "text": "[TODO: 1-2 sentences explaining what this skill enables]"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 31,
+      "text": "[TODO: Choose the structure that best fits this skill's purpose. Common patterns:"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 57,
+      "text": "## [TODO: Replace with the first main section based on chosen structure]"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 59,
+      "text": "[TODO: Add content here. See examples in existing skills:"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 119,
+      "text": "# TODO: Add actual script logic here"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/22_Skill_Creator/scripts/init_skill.py",
+      "line": 266,
+      "text": "print(\"1. Edit SKILL.md to complete the TODO items and update the description\")"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 21,
+      "text": "- **Frameworks y Versiones:** TODO: Lista tus frameworks principales y versiones"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 22,
+      "text": "- **Lenguaje:** TODO: Especifica el lenguaje de programación y versión"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 23,
+      "text": "- **Base de Datos y ORM:** TODO: Define la base de datos y el ORM elegidos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 24,
+      "text": "- **UI y Estilos:** TODO: Lista el framework de UI y el enfoque de estilos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 25,
+      "text": "- **Autenticación:** TODO: Especifica el sistema de autenticación"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 26,
+      "text": "- **Patrones Arquitectónicos Clave:** TODO: Lista los patrones principales"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 50,
+      "text": "- **🚨 Etapa del Proyecto:** TODO: Define si es desarrollo nuevo, sistema en producción o migración legacy"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 51,
+      "text": "- **Cambios Disruptivos:** TODO: Especifica si se aceptan cambios que rompan la compatibilidad o deben evitarse"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 52,
+      "text": "- **Manejo de Datos:** TODO: Define los requisitos de preservación de datos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 53,
+      "text": "- **Base de Usuarios:** TODO: Describe quiénes se verán afectados por los cambios"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 54,
+      "text": "- **Prioridad:** TODO: Establece tus prioridades entre velocidad vs estabilidad"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 62,
+      "text": "TODO: Define qué pueden hacer los usuarios y qué manejará el sistema automáticamente"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 70,
+      "text": "- **Rendimiento:** TODO: Define tiempos de respuesta y requisitos de carga"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 71,
+      "text": "- **Seguridad:** TODO: Especifica necesidades de autenticación y protección de datos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 72,
+      "text": "- **Usabilidad:** TODO: Establece estándares de experiencia de usuario y accesibilidad"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 73,
+      "text": "- **Diseño Responsivo:** TODO: Define soporte para móvil, tablet y escritorio"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 74,
+      "text": "- **Soporte de Temas:** TODO: Especifica modo claro/oscuro y requisitos de marca"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 88,
+      "text": "TODO: Añade tus cambios de esquema SQL aquí (nuevas tablas, columnas, índices, etc.)"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 92,
+      "text": "TODO: Define tus tipos de TypeScript, interfaces y cambios en la estructura de datos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 96,
+      "text": "## TODO: Planea tus pasos de migración (backup, aplicar cambios, transformar datos, validar)"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 102,
+      "text": "TODO: Define dónde debe ir cada tipo de código (mutaciones, consultas, rutas de API)"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 106,
+      "text": "TODO: Lista tus operaciones de creación, actualización y eliminación y qué hacen"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 110,
+      "text": "## TODO: Define tu enfoque de obtención de datos (consultas directas vs funciones separadas)"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 116,
+      "text": "TODO: Lista los nuevos componentes a crear y su propósito"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 120,
+      "text": "TODO: Lista las páginas que necesitan cambios y qué modificaciones se requieren"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 124,
+      "text": "## TODO: Define tu enfoque de gestión de estado y estrategia de flujo de datos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 128,
+      "text": "## TODO: Desglosa el trabajo en fases con tareas específicas y rutas de archivos"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 134,
+      "text": "## TODO: Define cómo quieres que la IA rastree e informe el progreso de las tareas"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 138,
+      "text": "## TODO: Planifica qué archivos nuevos crear y cuáles existentes modificar"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 145,
+      "text": "TODO: Pasos específicos para que el agente siga"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 149,
+      "text": "TODO: Cómo quieres que el agente se comunique contigo"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 153,
+      "text": "## TODO: Cualquier estándar de código específico"
+    },
+    {
+      "file": ".claude/04_Skills/02_High_Value/19_Planificacion_Tareas_Ai/resources/task_template.md",
+      "line": 159,
+      "text": "## TODO: Dile a la IA qué secciones de código te preocupa romper, problemas de rendimiento e impactos en el flujo de trabajo del usuario"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/GOVERNANCE.md",
+      "line": 56,
+      "text": "| **4**                  | FULL                      | Ejecución completa                  | TODO                              | NUNCA*                                |"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/01_CTX_Sesion_Auditoria_Estado_del_Arte_v4.7.md",
+      "line": 18,
+      "text": "- **Actividad**: Despliegue de 3 agentes de exploración simultáneos para mapear TODO el proyecto"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/Notas_de_Proceso.md",
+      "line": 102,
+      "text": "- **Revisión completada**: Se verificaron skills y scripts en busca de marcadores TODO/FIXME/XXX"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/Notas_de_Proceso.md",
+      "line": 105,
+      "text": "- Los TODO reales estaban principalmente en plantillas de habilidades (lo cual es esperado)"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 24,
+      "text": "### 1. BUG CRÍTICO: Versión Desincronizada"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 33,
+      "text": "**BUG:** `00_Winter_is_Coming/AGENTS.md` declara versión v6.1 en footer pero el sistema es v1.1. Esto causa confusión."
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 39,
+      "text": "### 2. BUG: Paths Desactualizados en AGENTS.md"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 78,
+      "text": "### 3. BUG: skill-registry.md con Estructura Antigua"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 119,
+      "text": "### 4. BUG: .opencode/skills Vacío"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 132,
+      "text": "### 5. BUG: Referencias a Carpetas que No Existen"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md",
+      "line": 142,
+      "text": "### 6. BUG: Hooks Path Incorrecto en AGENTS.md"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/REPORTE_AUDITORIA_INTEGRAL_2026-04-21.md",
+      "line": 203,
+      "text": "*AUDITORÍA COMPLETADA — TODO OK ✅*"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/05_Projects/00_Context/04_Learnings/2026-04-14_Steve_Arneson_Prospect_Machine_Claude_Code.md",
+      "line": 142,
+      "text": "Las 4 preguntas de entrada fazem que TODO el output sea custom para el usuario. No es un template genérico."
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/05_Projects/00_Context/00_Learning_Always/02_LA_Recall_2.0/06_Post_Redes/06_Posts_Redes.md",
+      "line": 18,
+      "text": "Guardás un video/artículo/PDF → la IA lo resumes, lo conecta con TODO lo que ya sabés, y te ayuda a aprender activo (no pasivo)."
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/05_Projects/00_Context/00_Learning_Always/02_LA_Recall_2.0/06_Post_Redes/06_Posts_Redes.md",
+      "line": 24,
+      "text": "Es como tener un asistente que lee TODO lo que leés y te ayuda a encontrar conexiones que no sabías que existían."
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/05_Projects/00_Context/00_Learning_Always/02_LA_Recall_2.0/06_Post_Redes/06_Posts_Redes.md",
+      "line": 67,
+      "text": "2/ IA lo resume + conecta con TODO lo que ya sabés"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/05_Projects/00_Context/00_Learning_Always/02_LA_Recall_2.0/09_OS_Mejoras/09_OS_Mejoras.md",
+      "line": 67,
+      "text": "**Qué:** Crear graph view de TODO el conocimiento del OS."
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/skill_security_scan.py",
+      "line": 130,
+      "text": "(r\"# TODO.*password\", \"TODO about password in code\"),"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py",
+      "line": 230,
+      "text": "# TODO: Fix number prefix import - from 04_Playwright_QA import run_playwright_qa"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Generator.py",
+      "line": 228,
+      "text": "gen.add_bug(\"BUG-001\", \"Session expira antes de lo esperado\", \"high\")"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Generator.py",
+      "line": 229,
+      "text": "gen.add_bug(\"BUG-002\", \"Memory leak en dashboard\", \"medium\")"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Generator.py",
+      "line": 254,
+      "text": "gen.add_bug(\"BUG-001\", \"Test bug\", \"low\")"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Generator.py",
+      "line": 265,
+      "text": "assert \"BUG-001\" in md"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/06_Utils/fix_broken_imports.py",
+      "line": 71,
+      "text": "# For now, comment them out with TODO"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/06_Utils/fix_broken_imports.py",
+      "line": 73,
+      "text": "r\"(from Legacy_Backup[^;]+\\.)\", r\"# TODO: Fix legacy import - \\1\", content"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/06_Utils/fix_broken_imports.py",
+      "line": 76,
+      "text": "r\"(import Legacy_Backup)\", r\"# TODO: Fix legacy import - \\1\", content"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/01_Auto_Improvement/06_Utils/fix_broken_imports.py",
+      "line": 94,
+      "text": "r\"(from 0\\d_\\w+ import)\", r\"# TODO: Fix number prefix import - \\1\", content"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/02_Knowledge_Brain/09_Course_AI_Agents_Remy_Gasill.md",
+      "line": 110,
+      "text": "- Crear skills para TODO proceso repetitivo"
+    },
+    {
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/03_Memory_Brain/03_Archive_Memory/2026-03-21/00_Super_Reporte_Sistema.md",
+      "line": 186,
+      "text": "Modo de coordinación que delega TODO el trabajo a sub-agentes:"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 26,
+      "text": "- **Frameworks & Versions:** TODO: List your main frameworks and versions"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 27,
+      "text": "- **Language:** TODO: Specify your programming language and version"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 28,
+      "text": "- **Database & ORM:** TODO: Define your database and ORM choice"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 29,
+      "text": "- **UI & Styling:** TODO: List your UI framework and styling approach"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 30,
+      "text": "- **Authentication:** TODO: Specify your authentication system"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 31,
+      "text": "- **Key Architectural Patterns:** TODO: List your main architectural patterns"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 59,
+      "text": "- **🚨 Project Stage:** TODO: Define if this is new development, production system, or legacy migration"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 60,
+      "text": "- **Breaking Changes:** TODO: Specify if breaking changes are acceptable or must be avoided"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 61,
+      "text": "- **Data Handling:** TODO: Define data preservation requirements"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 62,
+      "text": "- **User Base:** TODO: Describe who will be affected by changes"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 63,
+      "text": "- **Priority:** TODO: Set your speed vs stability priorities"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 73,
+      "text": "TODO: Define what users can do and what the system will automatically handle"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 81,
+      "text": "- **Performance:** TODO: Define response time and load handling requirements"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 82,
+      "text": "- **Security:** TODO: Specify authentication and data protection needs"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 83,
+      "text": "- **Usability:** TODO: Set user experience and accessibility standards"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 84,
+      "text": "- **Responsive Design:** TODO: Define mobile, tablet, desktop support requirements"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 85,
+      "text": "- **Theme Support:** TODO: Specify light/dark mode and brand requirements"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 102,
+      "text": "TODO: Add your SQL schema changes here (new tables, columns, indexes, etc.)"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 108,
+      "text": "TODO: Define your TypeScript types, interfaces, and data structure changes"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 114,
+      "text": "TODO: Plan your data migration steps (backup, apply changes, transform data, validate)"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 124,
+      "text": "TODO: Define where different types of code should go in your project (mutations, queries, API routes)"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 130,
+      "text": "TODO: List your create, update, delete operations and what they do"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 136,
+      "text": "TODO: Define your data fetching approach (direct queries vs separate functions)"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 146,
+      "text": "TODO: List the new components you need to create and their purpose"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 152,
+      "text": "TODO: List the pages that need changes and what modifications are required"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 158,
+      "text": "TODO: Define your state management approach and data flow strategy"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 164,
+      "text": "TODO: Break your work into phases with specific tasks and file paths"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 174,
+      "text": "TODO: Define how you want the AI to track and report progress on tasks"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 180,
+      "text": "TODO: Plan what new files to create and existing files to modify"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 190,
+      "text": "TODO:"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 195,
+      "text": "TODO: How do you want the agent to communicate with you"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 200,
+      "text": "TODO: Any specific code standards"
+    },
+    {
+      "file": "01_Personal_Os/03_Task/00_Templates/00_Task_Template_Skeleton.md",
+      "line": 210,
+      "text": "TODO: Tell the AI what sections of code you're worried about breaking, performance concerns, and user workflow impacts"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/01_Research_Os/Skills_TOP_Rankings.md",
+      "line": 182,
+      "text": "2. **Taste-Skills:** Usar `06_Taste_Skills/` para TODO frontend"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/02_Research/05_SOTA_2026_Research.md",
+      "line": 175,
+      "text": "- Audit logging TODO"
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/04_Docs/Plan_Unicorn_Engineering_SOTA.md",
+      "line": 12,
+      "text": "> Documentar TODO el conocimiento SOTA de las 6 áreas del Unicorn Engineering para que el OS evolucione automáticamente."
+    },
+    {
+      "file": "01_Personal_Os/02_Knowledge/06_Unicorn/README.md",
+      "line": 11,
+      "text": "Almacenar TODO el conocimiento SOTA de las 6 áreas del Unicorn Engineering para que el OS evolucione automáticamente con contexto de nivel Silicon Valley."
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/TOP_20_SKILLS.md",
+      "line": 49,
+      "text": "| **Valor**                             | 10/10                        | Metodología universal — sirve para TODO: slides, landing, cards, posts                    |"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/03_Mcp/server.py",
+      "line": 3,
+      "text": "MCP Server for Manager AI - TODO System Management"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/07_Server/mcp/Server.py",
+      "line": 3,
+      "text": "MCP Server for Manager AI - TODO System Management"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Youtube_Full_Video.md",
+      "line": 9,
+      "text": "> Workflow completo integrado con TODO el ecosistema de skills de marketing."
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/KIT_DISENO_TOP_11.md",
+      "line": 23,
+      "text": "| **Valor**                             | 10/10                        | Metodología universal — sirve para TODO: slides, landing, cards, posts                    |"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/KIT_DISENO_TOP_15.md",
+      "line": 17,
+      "text": "| **Valor**                             | 10/10                        | Metodología universal — sirve para TODO: slides, landing, cards, posts                    |"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/brainstorming/SKILL.md",
+      "line": 119,
+      "text": "1. **Placeholder scan:** Any \"TBD\", \"TODO\", incomplete sections, or vague requirements? Fix them."
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-plans/SKILL.md",
+      "line": 109,
+      "text": "- \"TBD\", \"TODO\", \"implement later\", \"fill in details\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/07_Hillary/SKILL.md",
+      "line": 33,
+      "text": "- Bug → BACKLOG.md con [BUG]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/07_Hillary/SKILL.md",
+      "line": 58,
+      "text": "| `[BUG]`     | Bug encontrado  | BACKLOG con priorización|"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/11_Token_Management/SKILL.md",
+      "line": 84,
+      "text": "- Si te alejás 10+ minutos: cuando volvés, Claude relee TODO desde cero"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/13_Skill_Testing_Automation/scripts/run_tests.py",
+      "line": 452,
+      "text": "# TODO: Implement report-only generation"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/09_Skill_Architect/SKILL.md",
+      "line": 274,
+      "text": "- Generates a SKILL.md template with proper frontmatter and TODO placeholders"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/04_Obsidian_CLI/SKILL.md",
+      "line": 99,
+      "text": "obsidian search query=\"TODO\" exact=true"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/07_DevOps/04_Obsidian_CLI/SKILL.md",
+      "line": 123,
+      "text": "obsidian grep query=\"TODO\" path=\"Proyectos/Alpha\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 16,
+      "text": "# TODO: Nombre de la Skill"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 23,
+      "text": "# TODO: Comando de ejemplo"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 29,
+      "text": "- TODO: Primer trigger específico"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 30,
+      "text": "- TODO: Segundo trigger específico"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 31,
+      "text": "- TODO: Tercer trigger específico"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 35,
+      "text": "- TODO: Primer caso donde NO aplicarla"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 36,
+      "text": "- TODO: Segundo caso donde NO aplicarla"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+      "line": 87,
+      "text": "## TODO: Pasos para Completar"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 5,
+      "text": "Descripción: TODO: Describir qué hace este script"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 24,
+      "text": "parser = argparse.ArgumentParser(description=\"TODO: Descripción del script\")"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 41,
+      "text": "# TODO: Implementar lógica principal"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/scripts/TEMPLATE.py",
+      "line": 73,
+      "text": "# TODO: Implementar procesamiento"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 28,
+      "text": "- **Solución**: Usar [BUG], [FEATURE], [ENHANCEMENT], [REFACTOR]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 74,
+      "text": "- Title: `[BUG] Add aws_region field to AWS provider secrets (API)`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 78,
+      "text": "- Title: `[BUG] Add region selector to AWS provider connection form (UI)`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 224,
+      "text": "- `[BUG]` - Something broken that worked before"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 240,
+      "text": "- `[BUG] AWS GovCloud accounts cannot connect - STS region hardcoded (API + UI)`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 308,
+      "text": "### Task 1: [BUG] {Description} (API)"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+      "line": 313,
+      "text": "### Task 2: [BUG] {Description} (UI)"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/references/title-conventions.md",
+      "line": 13,
+      "text": "| `[BUG]`                                        | Something broken that worked before                                     |"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/references/title-conventions.md",
+      "line": 32,
+      "text": "- `[BUG] AWS GovCloud cannot connect - STS region hardcoded (API + UI)`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/scripts/create-task.py",
+      "line": 12,
+      "text": "BUG_TEMPLATE = \"\"\"# [BUG] {title}"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning/scripts/plan-generator.py",
+      "line": 35,
+      "text": "# TODO: Add test"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning/scripts/plan-generator.py",
+      "line": 41,
+      "text": "# TODO: Add implementation"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/10_GWS_Client/SKILL.md",
+      "line": 240,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/11_Gws_Client/SKILL.md",
+      "line": 240,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/12_Gcierr/00_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/12_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/12_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/11_Gcierr/00_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/11_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/11_Gcierr/00_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/09_Huashu_Design/references/slide-decks.md",
+      "line": 726,
+      "text": "6. [ ] 搜一下 `TODO` / `placeholder` 残留，确认都清理了"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/08_Huashu_Design/references/slide-decks.md",
+      "line": 726,
+      "text": "6. [ ] 搜一下 `TODO` / `placeholder` 残留，确认都清理了"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/SKILL.md",
+      "line": 53,
+      "text": "**In code blocks:** `// ...`, `// rest of code`, `// implement here`, `// TODO`, `/* ... */`, `// similar to above`, `// continue pattern`, `// add more as needed`, bare `...` standing in for omitted code"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/references/banned-patterns.md",
+      "line": 7,
+      "text": "- ❌ `// TODO`"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/scripts/validate-output.py",
+      "line": 16,
+      "text": "r\"//\\s*TODO\","
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/01_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/01_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/01_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/03_Gcierr/02-excalidraw-diagram.md",
+      "line": 297,
+      "text": "| 1                              | Isomorfa                                | Si borro TODO el texto, se sigue entendiendo la estructura mental?                                      | Fila de cajas identicas              "
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/03_Gcierr/04-gws-cli.md",
+      "line": 206,
+      "text": "3. Agrega una fila \"TODO del dia\" en una Sheet"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/03_Gcierr/04-gws-cli.md",
+      "line": 237,
+      "text": "echo \"== Registrando TODO en Sheet ==\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/01_Agents_Review/pattern-recognition-specialist.md",
+      "line": 29,
+      "text": "- TODO/FIXME/HACK comments that indicate technical debt"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/01_Agents_Review/pattern-recognition-specialist.md",
+      "line": 54,
+      "text": "3. Search for common anti-pattern indicators (TODO, FIXME, HACK, XXX)"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/09_Scripts/06_AntMan_Lfg_Lite.py",
+      "line": 193,
+      "text": "dynamic_speak(\"Resolviendo comentarios TODO generados durante implementación.\")"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/09_Scripts/06_AntMan_Lfg_Lite.py",
+      "line": 195,
+      "text": "# Buscar archivos TODO en el proyecto"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/09_Scripts/06_AntMan_Lfg_Lite.py",
+      "line": 204,
+      "text": "if \"TODO\" in content.upper():"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/09_Scripts/07_Doc_Strange_Lfg.py",
+      "line": 309,
+      "text": "dynamic_speak(\"Resolviendo comentarios TODO con estándares Silicon Valley.\")"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/09_Scripts/73_Avengers_Workflow_v3.py",
+      "line": 255,
+      "text": "if \"TODO\" in content or \"FIXME\" in content:"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/20_Pattern-Recognition-Specialist.md",
+      "line": 14,
+      "text": "- TODO/FIXME/HACK comments that indicate technical debt"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/20_Pattern-Recognition-Specialist.md",
+      "line": 39,
+      "text": "3. Search for common anti-pattern indicators (TODO, FIXME, HACK, XXX)"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/01_Context_Protocol.mdc",
+      "line": 214,
+      "text": "1.  **TODO PLAN, TAREA O LISTA DEBE SER EN ESPAÑOL**."
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/17_Genesis.mdc",
+      "line": 41,
+      "text": "- Carga TODO el sistema: estructura, agentes, scripts, MCPs, skills"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 2,
+      "text": "description: TODO: Brief description of what this rule enforces"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 3,
+      "text": "globs: TODO: File patterns this rule applies to (e.g., *.tsx,*.ts)"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 6,
+      "text": "# TODO: Rule Title"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 9,
+      "text": "TODO: Explain what this rule prevents or enforces and why it matters for your codebase."
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 11,
+      "text": "TODO: Brief explanation of the problems this rule solves or the standards it maintains."
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 13,
+      "text": "## Rule: TODO: Core rule statement"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 14,
+      "text": "1. **Never use** TODO: [What the AI should never do]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 15,
+      "text": "2. **Never use** TODO: [Another thing to avoid]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 16,
+      "text": "3. **Always use** TODO: [What the AI should always do instead]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 17,
+      "text": "4. **Fix the root cause** TODO: [General principle for handling violations]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 21,
+      "text": "### ❌ BAD: TODO: Violation description"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 23,
+      "text": "// TODO: Show example of what NOT to do"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 27,
+      "text": "### ✅ GOOD: TODO: Correct approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 29,
+      "text": "// TODO: Show the correct way to handle the same situation"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 33,
+      "text": "### ❌ BAD: TODO: Another violation"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 35,
+      "text": "// TODO: Another example of what to avoid"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 38,
+      "text": "### ✅ GOOD: TODO: Another correct approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 40,
+      "text": "// TODO: Show alternative correct solution"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 44,
+      "text": "## When You Think You Need TODO: [Exception/Workaround]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 46,
+      "text": "### TODO: Common temptation scenario"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 49,
+      "text": "// TODO: Show tempting but wrong approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 52,
+      "text": "// TODO: Show proper solution following the rule"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 55,
+      "text": "### TODO: Another scenario"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 58,
+      "text": "// TODO: Another wrong approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 61,
+      "text": "// TODO: Correct way to handle this"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 66,
+      "text": "### TODO: Project-specific guidance"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 69,
+      "text": "// TODO: Common project-specific violation"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 71,
+      "text": "// ✅ GOOD - TODO: Recommended pattern"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 72,
+      "text": "// TODO: Show project-specific correct approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 77,
+      "text": "### 1. TODO: Solution approach 1"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 78,
+      "text": "TODO: Describe when and how to use this approach:"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 81,
+      "text": "// TODO: Code example of this solution approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 84,
+      "text": "### 2. TODO: Solution approach 2"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 85,
+      "text": "TODO: Describe this alternative:"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 88,
+      "text": "// TODO: Code example of alternative approach"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 92,
+      "text": "TODO: If this rule can be automated, add tool configs:"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 97,
+      "text": "\"TODO-eslint-rule\": \"error\""
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 102,
+      "text": "- [ ] Never suggest TODO: [forbidden approach] in any context"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 103,
+      "text": "- [ ] Never suggest TODO: [another forbidden approach] in any context"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 104,
+      "text": "- [ ] Always propose TODO: [proper solutions] instead of TODO: [violations]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 105,
+      "text": "- [ ] Create TODO: [appropriate alternatives] when needed for TODO: [specific situations]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 106,
+      "text": "- [ ] Use TODO: [recommended patterns] with TODO: [proper approach]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 107,
+      "text": "- [ ] Fix the root cause of TODO: [problem type], don't TODO: [mask/workaround]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/01_Rules/.Backup/00_Rules_Backup/__Cursor_Rule_Skeleton.mdc",
+      "line": 109,
+      "text": "Remember: TODO: [Core principle - why this rule exists and what it prevents]"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/07_AntMan_Lfg_Lite.md",
+      "line": 19,
+      "text": "7. **Resolver TODOs pendientes**: Revisar y cerrar cualquier TODO generado durante implementación"
+    },
+    {
+      "file": "01_Personal_Os/01_Core/00_Workflows_Os/04_Hillary/15_Captura_Rapida.md",
+      "line": 34,
+      "text": "| **Bug / Problema**                                     | `00_Winter_is_Coming/BACKLOG.md` con tag `[BUG]`                                  | \"El script 13 falla con archivos vacíos\"                                     "
+    },
+    {
+      "file": "01_Personal_Os/01_Core/00_Workflows_Os/04_Hillary/15_Captura_Rapida.md",
+      "line": 49,
+      "text": "- [2026-03-02] [BUG] Script 07_Morning_Standup no lee Context_Memory correctamente"
+    },
+    {
+      "file": "03_Resultado/02_Experimentos/00_World_OIM/01_OIM_Website_v2/src/app/actions.ts",
+      "line": 86,
+      "text": "// 4. TODO: Send email via Resend/SendGrid/EmailJS"
+    },
+    {
+      "file": "03_Resultado/01_Aprendizaje/02_Contenido_Learning/01_LA_HTMLSlides/05_Insights_Segundo_Cerebro/05_Insights.md",
+      "line": 51,
+      "text": "## Insight 5: Convierte TODO"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/01_PLAN_VALIDACION_TOTAL_OS.md",
+      "line": 4,
+      "text": "**Objetivo:** Probar TODO el OS, integrar todo, corregir rutas viejas residuales, validar las 297 skills, verificar el sistema recursivo, optimizar el llamado de skills (auto-trigger por contexto)."
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/01_PLAN_VALIDACION_TOTAL_OS.md",
+      "line": 267,
+      "text": "TODO output de auditor/script va a:"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/01_PLAN_VALIDACION_TOTAL_OS.md",
+      "line": 270,
+      "text": "TODO plan/propuesta para usuario va a:"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/01_PLAN_VALIDACION_TOTAL_OS.md",
+      "line": 273,
+      "text": "TODO output de proyecto activo va a:"
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/01_Planes/Plan_Unicorn_Engineering_SOTA.md",
+      "line": 11,
+      "text": "> Documentar TODO el conocimiento SOTA de las 6 áreas del Unicorn Engineering para que el OS evolucione automáticamente."
+    },
+    {
+      "file": "03_Resultado/00_Proyectos/03_Revisar_Planes/00_Plan_Migración_Os.md",
+      "line": 171,
+      "text": "# BUG (línea 33)"
+    }
+  ]
+}

@@ -19,12 +19,12 @@ Reorganizar y actualizar el sistema de Skills para crear el mejor sistema SOTA (
 | Ubicación                                                         | Skills                                                | Problema                                                                     |
 |------------------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
 | `.cursor/02_Skills/`                                              | 155                                                   | Source of Truth (aparentemente)                                              |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                      | 287                                                   | DUPLICADO MASIVO (95 archivos)                                               |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`                      | 287                                                   | DUPLICADO MASIVO (95 archivos)                                               |
 
 ### Estructura Antigua
 
 ```
-.cursor/02_Skills/ ≈ 01_Personal_Os/01_Core/02_Tools/02_Skills/
+.cursor/02_Skills/ ≈ 01_Personal_Os/00_Core/02_Tools/02_Skills/
 ├── 01_Plan/      (duplicado)
 ├── 02_Work/      (duplicado)
 ├── 03_Review/    (duplicado)
@@ -35,7 +35,7 @@ Reorganizar y actualizar el sistema de Skills para crear el mejor sistema SOTA (
 
 ### Skills ÚNICOS en .agent/
 
-- `01_Core/` — 3 skills (Fork Terminal, Parallel, Git Manager)
+- `00_Core/` — 3 skills (Fork Terminal, Parallel, Git Manager)
 - `02_High_Value/` — 36 skills (workflows especializados)
 - `05_Gentleman/` — estructura anidada con 01_Plan, 02_Work, 03_Review, 04_Compound, 05_Utilities
 
@@ -43,11 +43,11 @@ Reorganizar y actualizar el sistema de Skills para crear el mejor sistema SOTA (
 
 ## 2. NUEVA ESTRUCTURA SOTA
 
-El usuario reorganizó `01_Personal_Os/01_Core/02_Tools/02_Skills/` con nueva estructura:
+El usuario reorganizó `01_Personal_Os/00_Core/02_Tools/02_Skills/` con nueva estructura:
 
 ```
 02_Skills/
-├── 01_Core/               ⭐ PRIORITY #1 (3 skills)
+├── 00_Core/               ⭐ PRIORITY #1 (3 skills)
 ├── 02_High_Value/        ⭐ PRIORITY #2 (31 skills)
 ├── 03_Utilities/         ⭐ PRIORITY #3 (30 skills)
 ├── 04_Agent_Teams_Lite/  ⭐ PRIORITY #4 (SDD phases)
@@ -172,7 +172,7 @@ feat(skills): implement Sistema SOTA v2.0 - complete reorganization
 - Update Skills_Top_20.md with new rankings
 - Update Reporte_Skills_Duplicados_vs_SOTA.md
 - Add sync_skills.py script for .agent -> .cursor
-- Update 01_Personal_Os/01_Core/02_Tools/02_Skills/README.md
+- Update 01_Personal_Os/00_Core/02_Tools/02_Skills/README.md
 - Sync .cursor/02_Skills/ with .agent/ structure
 - Add 07_Every and 08_Taste_Skills folders
 - Create backup in 06_Archive/01_Backups/skills_sync/
@@ -239,7 +239,7 @@ Agregar al `.mcp.json`:
 | `Skills_Top_20.md`                                                                   | Rankings TOP 20                                                            |
 | `Reporte_Skills_Duplicados_vs_SOTA.md`                                               | Análisis de duplicados                                                     |
 | `03_Scripts_Os/55_Sync_Skills.py`                                                    | Script de sincronización                                                   |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                | README actualizado                                                         |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`                                | README actualizado                                                         |
 | `06_Archive/01_Backups/skills_sync/`                                                 | Backups de sync                                                            |
 
 - --

@@ -38,11 +38,7 @@ from config_paths import *
 
 # PROJECT_ROOT ya viene de config_paths como ROOT_DIR
 PROJECT_ROOT = ROOT_DIR
-REPORTS_DIR = (
-    ROOT_DIR / "03_Resultado" / "07_Reports"
-    if (ROOT_DIR / "03_Resultado" / "07_Reports").exists()
-    else ROOT_DIR / "03_Resultado" / "03_Reportes"
-)
+REPORTS_DIR = ROOT_DIR / "03_Resultado" / "07_Reports"
 
 # DIMENSIONES v6.2 - usando config_paths
 DIMENSIONS = [
@@ -232,7 +228,7 @@ def main():
             f"Total errors: {total_errors}\n",
             encoding="utf-8",
         )
-        print(f"{Fore.CYAN}📄 Reporte: 03_Resultado/04_Reportes/audit_estructura_{ts}.txt{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}📄 Reporte: {REPORTS_DIR}/audit_estructura_{ts}.txt{Style.RESET_ALL}")
     elif args.command == "links":
         dynamic_speak("Iniciando auditoría de enlaces")
         run_script("29_Repo_Sync_Auditor.py", REPORTS_DIR / f"audit_links_{ts}.txt")

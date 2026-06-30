@@ -12,8 +12,8 @@
 > **Estado:** Fase 1 Completada, Fase 2 Completada, Fase 3 Completada, Fase 4 Completada, Fase 5 Completada, Fase 6 Completada
 > **Fecha ultima actualizacion:** 2026-05-28
 > **Nota de paths:** Los paths en este plan usan la estructura VIEJA (02_Diseno_Ui_Ux/, 06_Tools/ en raiz).
-> La estructura REAL los tiene en `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` y
-> `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/`. Los merges aplican igual.
+> La estructura REAL los tiene en `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` y
+> `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/`. Los merges aplican igual.
 
 ---
 
@@ -265,7 +265,7 @@ Ejemplo: `CTX_2026_05_27_Plan_Optimizacion.md`
 Son skills: 01_Shared, 02-10_Sdd_*, 11_Judgment_Day, 12_Go_Testing, 13_Branch_Pr, 14_Issue_Creation.
 
 ### Decision
-- **Opcion A (sync a main)**: Copiarlos a `01_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
+- **Opcion A (sync a main)**: Copiarlos a `00_Core/02_Tools/02_Skills/00_Agent_Teams_Lite/`
 - ~~**Opcion B (document drift)**~~: No seleccionada
 
 **Resultado:** Opcion A ejecutada. Verificacion diff: IDENTICAL.

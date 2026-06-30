@@ -37,7 +37,7 @@ sys.path.insert(0, str(SCRIPTS_OS))
 try:
     from config_paths import get_skill_script, WORKFLOWS_DIR
 except ImportError:
-    WORKFLOWS_DIR = PERSONAL_OS / "00_Core" / "00_Workflows_Os"
+    WORKFLOWS_DIR = PERSONAL_OS / "00_Core" / "00_Workflows"
     def get_skill_script(name: str) -> Optional[Path]: return None
 
 # === COLOR SETUP ===

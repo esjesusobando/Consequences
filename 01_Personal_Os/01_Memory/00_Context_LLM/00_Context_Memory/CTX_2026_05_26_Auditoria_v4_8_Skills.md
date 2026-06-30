@@ -30,22 +30,22 @@ Auditoría focalizada en el Área 01 (Creación de Contenidos) de skills tras mi
 
 ### Bugfixes
 - `.agent/02_Skills/01_Creacion_Contenidos/20_Marketing_Scripts/18_Generacion_Contenido.py`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/20_Marketing_Scripts/18_Generacion_Contenido.py`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/20_Marketing_Scripts/18_Generacion_Contenido.py`
 - `.agent/02_Skills/01_Creacion_Contenidos/{03,05,06,07,08}/SKILL.md`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/{03,05,06,07,08}/SKILL.md`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/{03,05,06,07,08}/SKILL.md`
 
 ### Creados
 - `.agent/02_Skills/01_Creacion_Contenidos/16_Ai_Agents/SKILL.md`
 - `.agent/02_Skills/01_Creacion_Contenidos/18_Marketing_Strategy/SKILL.md`
 - `.agent/02_Skills/01_Creacion_Contenidos/19_Marketing_Tech/SKILL.md`
 - `.agent/02_Skills/01_Creacion_Contenidos/20_Marketing_Scripts/SKILL.md`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/{16,18,19,20}/SKILL.md`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/{16,18,19,20}/SKILL.md`
 
 ### Reescritos
 - `.agent/02_Skills/01_Creacion_Contenidos/SKILL.md`
 - `.agent/02_Skills/INDEX_AREA_FUNCTIONAL.md`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/SKILL.md`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/SKILL.md`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---
 

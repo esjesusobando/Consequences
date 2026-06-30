@@ -101,7 +101,7 @@ Subcarpetas creadas: `03_Growth/`, `04_Contexto/`, `05_Marca/`, `06_Plantillas/`
 | R17                  | Auto-Improvement `--scan` ejecuta OK                                           |
 | R18                  | Agent sync: ZERO DRIFT entre live y backup                                     |
 | R19                  | Health test ejecuta y devuelve resultados parseable                            |
-| R20                  | Docs activos sin refs v1.x (`01_Core/03_Skills`, `03_Scripts_Os`)              |
+| R20                  | Docs activos sin refs v1.x (`00_Core/03_Skills`, `03_Scripts_Os`)              |
 
 ### G5 — Health Metrics Hub ✅
 **Archivo creado:** `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`
@@ -118,7 +118,7 @@ Subcarpetas creadas: `03_Growth/`, `04_Contexto/`, `05_Marca/`, `06_Plantillas/`
 - Resultado actual: **ZERO DRIFT (52/52 archivos)**
 
 ### G4 — Secret Scanner Pre-Commit ✅
-**Archivo creado:** `01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`
+**Archivo creado:** `01_Personal_Os/00_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`
 **Instalado en:** `.git/hooks/pre-commit` (ANTES del GGA)
 
 Detecta:
@@ -195,13 +195,13 @@ Pre-commit hook en producción (`a1fa1e1`): Secret Scanner → GGA → commit ex
 
 **Qué hacer:**
 1. Leer los 3 SKILL.md:
-   - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/SKILL.md`
-   - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/SKILL.md`
-   - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/07_Skill_Creator_Invictus/SKILL.md`
+   - `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/SKILL.md`
+   - `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/SKILL.md`
+   - `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/07_Skill_Creator_Invictus/SKILL.md`
 2. Identificar cuál es el más completo/actualizado (canónico)
-3. `git mv` los otros 2 a `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/`
+3. `git mv` los otros 2 a `01_Personal_Os/00_Core/02_Tools/02_Skills/09_Legacy_Archive/`
 4. Actualizar:
-   - `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+   - `01_Personal_Os/00_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
    - `.atl/skill-registry.md`
    - `CLAUDE.md` si tiene referencia
 
@@ -278,7 +278,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
 | `02_Playground/01_OS_Runtime_Test.py`                                                 | 20 tests de ejecución                   |
 | `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`                 | Dashboard histórico                     |
 | `01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`                     | Sync live ↔ .agent                      |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`              | Scanner pre-commit                      |
+| `01_Personal_Os/00_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`              | Scanner pre-commit                      |
 | `.git/hooks/pre-commit`                                                               | Hook: Secret Scanner → GGA              |
 
 ### Comandos de validación rápida
@@ -307,7 +307,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA
 | Elite Portfolio redesign                | P1                       | Pendiente              | Exaggerated Minimalism con taste-skill                       |
 | OIM Website Hostinger                   | P1                       | Bloqueado              | Espera: tipo hosting, dominio, acceso SSH                    |
 | `claude doctor`                         | P2                       | Pendiente              | Requiere TTY real — correr en terminal separada              |
-| Marvel Workflows verificar              | P3                       | Pendiente              | 8 archivos en `00_Workflows_Os/02_Marvel/`                   |
+| Marvel Workflows verificar              | P3                       | Pendiente              | 8 archivos en `00_Workflows/02_Marvel/`                   |
 | Avengers Plan decisión                  | P3                       | Pendiente              | Ejecutar / actualizar / archivar                             |
 
 ---

@@ -51,9 +51,9 @@ Usuario → Director → Jugadores → Árbitro → Director → Usuario
 
 | Workflow    | Ubicación                                 | Héroes  |
 |------------|------------------------------------------|--------|
-| Marvel      | `00_Workflows_Os/02_Marvel/`              | 8       |
-| Personal OS | `00_Workflows_Os/01_Personal_Os/`         | 11      |
-| Compound Eng| `00_Workflows_Os/05_Compound_Engineering/`| 4       |
+| Marvel      | `00_Workflows/02_Marvel/`              | 8       |
+| Personal OS | `00_Workflows/01_Personal_Os/`         | 11      |
+| Compound Eng| `00_Workflows/05_Compound_Engineering/`| 4       |
 
 ## ⚠️ Gotchas
 
@@ -80,7 +80,7 @@ Usuario → Director → Jugadores → Árbitro → Director → Usuario
 | Componente              | Persistencia | Mecanismo                                                  |
 |------------------------|-------------|-----------------------------------------------------------|
 | Workflow activo         | ⚠️ Por sesión| Estado en memoria — se pierde al cerrar sesión             |
-| Resultados de fase      | ✅ Archivo    | Checkpoints en `00_Workflows/00_Workflows_Os/.checkpoints/`|
+| Resultados de fase      | ✅ Archivo    | Checkpoints en `00_Workflows/.checkpoints/`|
 | Config de equipos       | ✅ Permanente | SKILL.md de cada equipo en su directorio                   |
 | Historial de ejecuciones| ❌ No persiste| Cada ejecución empieza fresh                               |
 

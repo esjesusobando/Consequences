@@ -167,7 +167,7 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/      ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 00_SDD/           ✅ SDD registry + JARVIS manifests
@@ -347,7 +347,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 | Agents                                    | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                                   |
 | Rules                                     | `01_Personal_Os/00_Core/01_Rules/`                                             |
 | HUBs                                      | `01_Personal_Os/05_Scripts/00_HUBs/`                                           |
-| Workflows                                 | `01_Personal_Os/00_Core/00_Workflows_Os/`                                      |
+| Workflows                                 | `01_Personal_Os/00_Core/00_Workflows/`                                      |
 | Tasks                                     | `01_Personal_Os/04_Tasks/`                                                     |
 | Knowledge                                 | `01_Personal_Os/02_Knowledge/`                                                 |
 | Memory LLM                                | `01_Personal_Os/01_Memory/`                                                    |

@@ -44,7 +44,7 @@ Cada skill ahora tiene:
 ## 📁 ESTRUCTURA DE SKILLS
 
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/
+01_Personal_Os/00_Core/02_Tools/02_Skills/
 ├── 01_Agent_Teams_Lite/     # 9 skills — SDD Workflows
 ├── 02_Project_Manager/      # 9 skills — Gestión de proyectos
 ├── 03_Product_Manager/      # 7 skills — Gestión de producto
@@ -111,7 +111,7 @@ Cada skill ahora tiene:
 ### Skills
 - Reorganización completa: 10 perfiles → 9 perfiles + 1 backup
 - Nombres: snake_case → PascalCase
-- Canonical source: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- Canonical source: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 - Mirror: `.cursor/02_Skills/` (README only)
 
 ### Scripts

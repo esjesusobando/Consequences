@@ -28,7 +28,7 @@
 Think_Different/
 ├── 00_Winter_is_Coming/      ✅
 ├── 01_Personal_Os/            ✅
-│   ├── 01_Core/              ✅
+│   ├── 00_Core/              ✅
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/    ✅ 52+ agentes
 │   │       └── 02_Skills/    ✅ 300+ skills (11 areas)

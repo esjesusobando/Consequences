@@ -25,8 +25,8 @@
 - [ ] Skills nuevas cumplen estándar Anthropic
 
 ### 4. OS Structure
-- [ ] `01_Core/02_Tools/01_Agents/` tiene README actualizado
-- [ ] `01_Core/02_Tools/02_Skills/` no tiene directorios rotos
+- [ ] `00_Core/02_Tools/01_Agents/` tiene README actualizado
+- [ ] `00_Core/02_Tools/02_Skills/` no tiene directorios rotos
 - [ ] Archivos legacy (v4.0) están marcados como históricos
 
 ---

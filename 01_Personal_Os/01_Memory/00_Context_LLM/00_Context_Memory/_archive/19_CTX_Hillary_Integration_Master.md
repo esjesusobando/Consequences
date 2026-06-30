@@ -8,8 +8,8 @@
 Hillary ha sido activada como agente proactiva especializada en la gestión de rutinas y proyectos personales. Su lógica operativa se basa en 5 fases de maduración del Life OS.
 
 ### 🧩 Mapping Arquitectónico
-- **Agente**: `01_Core/04_Agents/13_Hillary.md` -> Reporta a @gentleman.
-- **Instrucciones**: `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md`.
+- **Agente**: `00_Core/04_Agents/13_Hillary.md` -> Reporta a @gentleman.
+- **Instrucciones**: `01_Personal_Os/00_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md`.
 - **Data Input**: `03_Tasks/02_Hillary_Inbox/`.
 - **Data Output**: `03_Tasks/` (Routine Master 06).
 

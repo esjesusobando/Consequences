@@ -5,7 +5,7 @@ priority: P3
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/05_Ritual_Cierre_Protocol.md
+  - 01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol.md
   - 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
 ---
 
@@ -49,7 +49,7 @@ El protocolo actual dice:
 
 ## 🎯 Definición de Terminado
 
-1. **Ritual documentado** — versión canonical en `01_Personal_Os/01_Core/00_Workflows_Os/`
+1. **Ritual documentado** — versión canonical en `01_Personal_Os/00_Core/00_Workflows/`
 2. **Script funcional** — `04_Ritual_Hub.py` funciona
 3. **Usado actualmente** — verificado en usage
 4. **Integración mem_save** — funciona con Engram
@@ -65,7 +65,7 @@ El protocolo actual dice:
 ls 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py 2>/dev/null && echo "EXISTS" || echo "NOT FOUND"
 
 # Ver versión activa en workflows
-cat 01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/05_Ritual_Cierre_Protocol.md 2>/dev/null || echo "Not found in core"
+cat 01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol.md 2>/dev/null || echo "Not found in core"
 ```
 
 ---

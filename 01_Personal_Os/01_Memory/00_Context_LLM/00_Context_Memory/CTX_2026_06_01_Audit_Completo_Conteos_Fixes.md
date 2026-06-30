@@ -38,7 +38,7 @@ Auditoría full del proyecto Think_Different v4.9. Se mapeó la estructura compl
 
 ## Estructura de Skills (14 áreas funcionales)
 
-Las áreas funcionales activas en `01_Core/02_Tools/02_Skills/` son:
+Las áreas funcionales activas en `00_Core/02_Tools/02_Skills/` son:
 
 1. `00_Agent_Teams_Lite` — SDD sub-agentes + JARVIS manifests
 2. `00_Compound_Engineering` — CE Spider, Avengers, metodología

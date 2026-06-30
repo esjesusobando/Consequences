@@ -43,7 +43,7 @@
 | Problema                                           | Detalle                                                    |
 |---------------------------------------------------|-----------------------------------------------------------|
 | **Referencia en CLAUDE.md**                        | `.config/opencode/skills/`                                 |
-| **Ubicación real**                                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/`               |
+| **Ubicación real**                                 | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               |
 | **Também existe**                                  | `.claude/skills/` (algunos backups)                        |
 
 **Archivos afectadas:**
@@ -57,7 +57,7 @@
 
 | Archivo                                         | Issue                                            | Severidad                                        |
 |------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| `01_Core/01_Rules/*.mdc`                        | Archivos .mdc (cifrados?)                        | BAJA — pueden ser backups                        |
+| `00_Core/01_Rules/*.mdc`                        | Archivos .mdc (cifrados?)                        | BAJA — pueden ser backups                        |
 | `.gga`                                          | Archivo oculto existe                            | OK                                               |
 
 ---
@@ -133,10 +133,10 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
 |--------------------------------------------------------|--------------------------------|---------------------------------------------------------|
 | Estructura (00-08)                                      | ✅ PASS                          | 9 carpetas válidas                                       |
 | `00_Winter_is_Coming/`                                  | ✅ OK                            | Goals, Backlog, AGENTS, CHANGELOG                        |
-| `01_Core/01_Rules/`                                     | ✅                               | 25 reglas definidas                                      |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | ✅                               | ~20+ categorías activas                                  |
-| `01_Core/05_Mcp/`                                       | ✅                               | Config MCPs                                              |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/`             | ✅                               | Hooks del sistema                                        |
+| `00_Core/01_Rules/`                                     | ✅                               | 25 reglas definidas                                      |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | ✅                               | ~20+ categorías activas                                  |
+| `00_Core/05_Mcp/`                                       | ✅                               | Config MCPs                                              |
+| `01_Personal_Os/00_Core/02_Tools/05_Hooks/`             | ✅                               | Hooks del sistema                                        |
 | `02_Knowledge/`                                         | ✅                               | Docs y research                                          |
 | `03_Tasks/`                                             | ✅                               | YAML frontmatter                                         |
 | `04_Operations/`                                        | ✅                               | Auto-improvement                                         |
@@ -162,7 +162,7 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
    - [ ] `Now/OIM_Website/README.md`
    - [ ] Documentación en `04_Operations/`
 
-2. **Verificar ubicación** de `.config/opencode/skills/` vs `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+2. **Verificar ubicación** de `.config/opencode/skills/` vs `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 3. **Confirmar** si `10_General_Hub.py` debe existir o actualizar documentación
 
@@ -170,13 +170,13 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
 
 4. **Unificar versión** entre README.md y CLAUDE.md
 5. **Auditar** scripts legacy en `03_Scripts_Os/10_Legacy/`
-6. **Revisar** archivos .mdc en `01_Core/01_Rules/`
+6. **Revisar** archivos .mdc en `00_Core/01_Rules/`
 
 ### Prioridad BAJA (Mejoras)
 
 7. **Limpiar** archivos duplicados en `.backup/`
 8. **Actualizar** dated information en CHANGELOG.md
-9. **Auditar** skills en `.claude/skills/` vs `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+9. **Auditar** skills en `.claude/skills/` vs `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 ---
 

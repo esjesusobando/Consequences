@@ -78,7 +78,7 @@
 ## Referencias
 
 - [07_Projects/README.md](../README.md) — Proyectos
-- [01_Core/](./01_Core/) — Cerebro del sistema
+- [00_Core/](./00_Core/) — Cerebro del sistema
 
 ---
 

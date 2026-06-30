@@ -9,7 +9,7 @@
 ## Antes de la Auditoría (Estado Inicial)
 
 ### Problemas Identificados:
-- Rutas de skills obsoletas: 01_Core/03_Skills/ (no existía desde v4 migration)
+- Rutas de skills obsoletas: 00_Core/03_Skills/ (no existía desde v4 migration)
 - Estructura de carpetas desactualizada: 00_Personal_Os_Stack/00_Skill_Auditor/
 - Scripts raíz sin shebangs
 - Plugins necesarios no instalados
@@ -20,7 +20,7 @@
 ## Después de la Auditoría (Estado Actual)
 
 ### Mejoras Implementadas:
-1. ✅ Rutas de skills corregidas: 01_Core/03_Skills/ → 01_Core/02_Tools/02_Skills/
+1. ✅ Rutas de skills corregidas: 00_Core/03_Skills/ → 00_Core/02_Tools/02_Skills/
 2. ✅ Estructura actualizada: 00_Personal_Os_Stack/ → 00_System_Core/, 00_Skill_Auditor/ → 10_Skill_Auditor/
 3. ✅ Shebangs añadidos a 13 scripts Python raíz
 4. ✅ Plugins instalados: sdd-engram-manage v1.6.6, sub-agent-statusline v0.7.1

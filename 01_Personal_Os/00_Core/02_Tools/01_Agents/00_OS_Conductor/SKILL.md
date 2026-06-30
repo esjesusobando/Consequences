@@ -23,7 +23,7 @@ harness:
 **Tipo:** Orquestador Maestro v4.9
 **Versión Skill:** 2.0.0 (2026-05-28)
 **Harness:** Anthropic 2.0 — Sprint Contract · Evaluator Pattern · Context Management
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/00_OS_Conductor/`
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/01_Agents/00_OS_Conductor/`
 
 ---
 
@@ -508,9 +508,9 @@ El Conductor incluye un sistema de **evaluación cuantitativa** siguiendo Skill 
 
 - **Registry completo:** [`registry.md`](registry.md) — mapa skill-por-skill
 - **Documentación humana:** [`README.md`](README.md)
-- **Catálogo de skills:** `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
-- **Ranking:** `01_Personal_Os/01_Core/02_Tools/02_Skills/TOP_20_SKILLS.md`
-- **Agentes:** `01_Personal_Os/01_Core/02_Tools/01_Agents/README.md`
+- **Catálogo de skills:** `01_Personal_Os/00_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+- **Ranking:** `01_Personal_Os/00_Core/02_Tools/02_Skills/TOP_20_SKILLS.md`
+- **Agentes:** `01_Personal_Os/00_Core/02_Tools/01_Agents/README.md`
 - **Scripts:** [`scripts/`](scripts/)
 - **Flujos detallados:** [`references/compound-flows.md`](references/compound-flows.md)
 - **Sprint Contract template:** [`references/sprint-contract.md`](references/sprint-contract.md)

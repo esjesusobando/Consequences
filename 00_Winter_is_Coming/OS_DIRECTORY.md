@@ -48,7 +48,7 @@
 | **Rules**                             | `01_Personal_Os/00_Core/01_Rules/`                                             |
 | **HUBs**                              | `01_Personal_Os/05_Scripts/00_HUBs/`                                           |
 | **Manifests**                         | `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/`                          |
-| **Workflows**                         | `01_Personal_Os/00_Core/00_Workflows_Os/`                                      |
+| **Workflows**                         | `01_Personal_Os/00_Core/00_Workflows/`                                      |
 | **Skills Globales**                   | `~/.config/opencode/skills/`                                                   |
 | **Skills Locales**                    | `.opencode/skills/`                                                            |
 
@@ -82,7 +82,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/     ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 00_SDD/          ✅ SDD Registry + JARVIS manifests

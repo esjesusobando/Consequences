@@ -39,7 +39,7 @@ Contiene: Experimentos, ejercicios, pruebas y recursos de aprendizaje práctico.
 - 06_AI_News_Weekly
 - 07_Clinica_Infantil
 
-#### 03_Reportes/
+#### 07_Reports/
 Contiene: Informes de auditoría, salud y seguimiento del sistema.
 - audit_estructura_*.txt
 - audit_health_*.txt
@@ -68,13 +68,13 @@ Contiene: Informes de auditoría, salud y seguimiento del sistema.
 
 ### Actualización 2026-05-26 — JSON de auditorías
 
-Se movieron los JSON sueltos de la raíz de `03_Resultado/` hacia `03_Resultado/03_Reportes/01_Auditorias_OS/`, con numeración explícita y manifest:
+Se movieron los JSON sueltos de la raíz de `03_Resultado/` hacia `03_Resultado/07_Reports/01_Auditorias_OS/`, con numeración explícita y manifest:
 
 - `00_manifest_auditorias_os_2026-05-26.json`
 - `01_sota_integrity_audit_2026-05-24.json`
 ### Actualización 2026-05-26 — JSON de auditorías
 
-Se movieron los JSON sueltos de la raíz de `03_Resultado/` hacia `03_Resultado/03_Reportes/01_Auditorias_OS/`, con numeración explícita y manifest:
+Se movieron los JSON sueltos de la raíz de `03_Resultado/` hacia `03_Resultado/07_Reports/01_Auditorias_OS/`, con numeración explícita y manifest:
 
 - `00_manifest_auditorias_os_2026-05-26.json`
 - `01_sota_integrity_audit_2026-05-24.json`
@@ -94,11 +94,11 @@ Principio aplicado: mover y complementar sin eliminar evidencia histórica.
 
 Reconciliación estructura vs. disco. Cambios:
 
-- **`04_Reportes/`** eliminada (carpeta fantasma — no existe en disco, contenido fusionado en `03_Reportes/`)
+- **`04_Reportes/`** eliminada (carpeta fantasma — no existe en disco, contenido fusionado en `07_Reports/`)
 - **`05_Documentacion/`** renumerada → `04_Documentacion/` (secuencia corregida tras eliminar 04_Reportes)
 - **`09_World_OIM/`** eliminada (duplicado confirmado de `02_Experimentos/00_World_OIM/`)
 - **`08_Suerte_Repeticion_Test/`** documentada como nuevo experimento en `02_Experimentos/`
-- **`03_Reportes/`** expandida con detalle: 01_Auditorias_OS (6 JSONs), 9 audit_*.txt, 9 watchdog_report_*.txt, 2 sota_integrity_*.txt
+- **`07_Reports/`** expandida con detalle: 01_Auditorias_OS (6 JSONs), 9 audit_*.txt, 9 watchdog_report_*.txt, 2 sota_integrity_*.txt
 - `README.md` actualizado con tabla de contenido por área y conteos reales
 - `Structure_v4.8.md` sincronizado con esta estructura
 

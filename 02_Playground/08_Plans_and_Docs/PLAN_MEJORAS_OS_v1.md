@@ -59,8 +59,8 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 **Solución:** Unificar registry + crear lookup conversacional.
 
 #### Pasos
-1. Reconfigurar skill-registry para que escanee TAMBIÉN `01_Personal_Os/01_Core/02_Tools/02_Skills/` (skills locales)
-2. Crear `01_Personal_Os/01_Core/02_Tools/02_Skills/00_SKILL_LOOKUP.md` organizado por intención
+1. Reconfigurar skill-registry para que escanee TAMBIÉN `01_Personal_Os/00_Core/02_Tools/02_Skills/` (skills locales)
+2. Crear `01_Personal_Os/00_Core/02_Tools/02_Skills/00_SKILL_LOOKUP.md` organizado por intención
 3. Vincular el LOOKUP.md en AGENTS.md como paso previo a buscar en disco
 
 **Esfuerzo:** 3-4h | **Impacto:** ⭐⭐⭐⭐⭐
@@ -77,7 +77,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 **Solución:** Barrer y corregir todos los archivos de documentación que mencionan conteos.
 
 #### Pasos
-1. Corregir `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md` (74 → 396)
+1. Corregir `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md` (74 → 396)
 2. Corregir `README.md` raíz (skills, agentes, workflows)
 3. Actualizar `INDEX_AREA_FUNCTIONAL.md` con conteos reales
 4. Propagar a `Structure_v5.0.md` y `OS_DIRECTORY.md`
@@ -95,7 +95,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 **Solución:** Workflow editorial end-to-end.
 
 #### Pasos
-1. Crear `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/05_Content_Pipeline.md`
+1. Crear `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Content_Pipeline.md`
 2. Crear `03_Resultado/Contenido/`
 3. Crear `01_Personal_Os/04_Operations/07_Reports/content_log.md`
 4. Añadir métrica "Piezas publicadas" a GOALS.md
@@ -112,7 +112,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 
 #### Pasos
 1. Crear skill `identificando-oportunidades-ai-strong` con template de propuesta
-2. Crear `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/06_Monetization_Pipeline.md`
+2. Crear `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/06_Monetization_Pipeline.md`
 3. Crear `01_Personal_Os/04_Operations/07_Reports/revenue_log.md`
 4. Añadir a Weekly Review: revisión de pipeline de monetización
 

@@ -68,7 +68,7 @@ REPLACEMENTS: List[Tuple[str, str]] = [
     ("01_Personal_Os/03_Task", "01_Personal_Os/04_Tasks"),
     ("01_Core/02_Tools", "00_Core/02_Tools"),
     ("01_Core/01_Rules", "00_Core/01_Rules"),
-    ("01_Core/00_Workflows_Os", "00_Core/00_Workflows_Os"),
+    ("00_Core/00_Workflows_Os", "00_Core/00_Workflows"),
     ("04_Operations/03_Scripts_Os", "05_Scripts/00_HUBs/03_Scripts_Os"),
     ("04_Operations/02_Agent_Teams", "05_Scripts/02_Agent_Teams"),
     ("04_Operations/01_Auto_Improvement", "05_Scripts/01_Auto_Improvement"),

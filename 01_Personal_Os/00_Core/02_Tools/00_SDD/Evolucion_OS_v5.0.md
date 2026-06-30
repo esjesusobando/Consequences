@@ -61,7 +61,7 @@ Se realizó una auditoría completa del filesystem para entender:
 #### Problema #1: `01_Core` no era realmente "core"
 
 ```
-01_Core/
+00_Core/
 ├── 00_Comandos_Workflows.md  → Documentación (debería estar en docs)
 ├── 00_Workflows/             → Workflows operativos (deberían tener espacio propio)
 ├── 01_Inventario_Total.md    → Inventario (redundante con otras fuentes)
@@ -130,9 +130,9 @@ No son carpetas — son **dimensiones ontológicas**. Cada una responde una preg
 
 | Old Path | New Path | Rol |
 |----------|----------|-----|
-| `01_Core/01_Rules` | `00_Core/01_Rules` | Reglas del sistema |
-| `01_Core/02_Tools` | `00_Core/02_Tools` | Herramientas (skills, agents, MCPs) |
-| `01_Core/00_Workflows` | `00_Core/00_Workflows` | Flujos de trabajo |
+| `00_Core/01_Rules` | `00_Core/01_Rules` | Reglas del sistema |
+| `00_Core/02_Tools` | `00_Core/02_Tools` | Herramientas (skills, agents, MCPs) |
+| `00_Core/00_Workflows` | `00_Core/00_Workflows` | Flujos de trabajo |
 | `04_Operations/00_Context_LLM` | `01_Memory/00_Context_LLM` | Memoria operativa |
 | `02_Knowledge` | `02_Knowledge` | (se purifica, no se mueve) |
 | `04_Operations/01_Auto_Improvement` | `03_Learning/01_Auto_Improvement` | Motor de mejora continua |
@@ -177,7 +177,7 @@ Se actualizaron todas las referencias de paths en el protocolo de arranque:
 - Árbol de directorios reescrito
 - Path de HUBs: `04_Operations/03_Scripts_Os/` → `05_Scripts/00_HUBs/`
 - Path de backlog: `03_Task/` → `04_Tasks/`
-- Path de workflows: `01_Core/` → `00_Core/`
+- Path de workflows: `00_Core/` → `00_Core/`
 - Tabla de backup .agent/ actualizada
 - Paths de SDD y CE skills
 
@@ -234,8 +234,8 @@ El cambio `fix-doc-paths` y `fix-script-paths` fueron archivados en:
 | Escenario | Antes (v4.9) | Después (v5.0) | Mejora |
 |-----------|-------------|----------------|--------|
 | Encontrar un script de HUB | Buscar en `04_Operations/03_Scripts_Os/` (mezclado con context, agents, projects) | `05_Scripts/00_HUBs/` (solo scripts) | +30% |
-| Localizar una skill | `01_Core/02_Tools/02_Skills/` (pero también había skills en `04_Operations/02_Agent_Teams_Lite/`) | `00_Core/02_Tools/02_Skills/` (única fuente de verdad) | +25% |
-| Ejecutar workflow de cierre | Buscar en `01_Core/00_Workflows/` con paths a `04_Operations/` que ya no existen | `00_Core/00_Workflows/` con paths a `05_Scripts/` que sí existen | +20% |
+| Localizar una skill | `00_Core/02_Tools/02_Skills/` (pero también había skills en `04_Operations/02_Agent_Teams_Lite/`) | `00_Core/02_Tools/02_Skills/` (única fuente de verdad) | +25% |
+| Ejecutar workflow de cierre | Buscar en `00_Core/00_Workflows/` con paths a `04_Operations/` que ya no existen | `00_Core/00_Workflows/` con paths a `05_Scripts/` que sí existen | +20% |
 | Configurar paths de sistema | `config_paths.py` con 8+ paths legacy rotos | config_paths.py con paths corregidos | +35% |
 
 **Métrica**: Reducción del tiempo promedio de "sé lo que necesito → lo encuentro" de ~45s a ~33s.

@@ -66,16 +66,16 @@ Auditoría completa del proyecto Think_Different PersonalOS v4.9.1 para identifi
 ### Comandos de verificación
 ```bash
 # Conteo de skills
-find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/ -name "SKILL.md" -type f | wc -l
+find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/02_Tools/02_Skills/ -name "SKILL.md" -type f | wc -l
 
 # Conteo de agentes
-find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/01_Agents/ -name "*.md" -type f | wc -l
+find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/02_Tools/01_Agents/ -name "*.md" -type f | wc -l
 
 # Conteo de workflows
-find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/00_Workflows_Os/ -name "*.md" -type f | wc -l
+find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/00_Workflows/ -name "*.md" -type f | wc -l
 
 # Conteo de hooks
-find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/ -name "*.py" -type f | wc -l
+find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/02_Tools/05_Hooks/ -name "*.py" -type f | wc -l
 
 # Conteo de HUBs
 ls /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/ | grep -E "^[0-9]" | wc -l

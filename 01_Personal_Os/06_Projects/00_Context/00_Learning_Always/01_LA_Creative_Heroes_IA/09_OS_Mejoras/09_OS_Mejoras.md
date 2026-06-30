@@ -60,7 +60,7 @@
 | 4                              | Adobe Firefly                            | ⏳ Por verificar                            | Agregar skill si no existe                            |
 | 5                              | ElevenLabs                               | ⏳ Por verificar                            | Agregar skill si no existe                            |
 
-> **Nota:** Estas herramientas deben verificarse en `01_Personal_Os/01_Core/02_Tools/02_Skills/` y agregarse si no existen.
+> **Nota:** Estas herramientas deben verificarse en `01_Personal_Os/00_Core/02_Tools/02_Skills/` y agregarse si no existen.
 
 ---
 
@@ -81,8 +81,8 @@
 | Desde                                         | Hacia                                                                | Tipo                                 |
 |----------------------------------------------|---------------------------------------------------------------------|-------------------------------------|
 | Learning_Always WF                            | 02_Knowledge/00_Second_Brain/                                        | Output                               |
-| Learning_Always WF                            | 01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/              | Skills                               |
-| Learning_Always WF                            | 01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/            | Skills                               |
+| Learning_Always WF                            | 01_Personal_Os/00_Core/02_Tools/02_Skills/09_Marketing/              | Skills                               |
+| Learning_Always WF                            | 01_Personal_Os/00_Core/02_Tools/02_Skills/05_Vibe_Coding/            | Skills                               |
 | Insights                                      | 07_Projects/00_Context/                                              | Knowledge                            |
 
 ---
@@ -103,7 +103,7 @@
 
 ## Acción Pendiente
 
-- [ ] Verificar herramientas en `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- [ ] Verificar herramientas en `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 - [ ] Agregar skills faltantes (Midjourney, Leonardo.ai, Runway, Firefly, ElevenLabs)
 - [ ] Actualizar inventory de skills
 

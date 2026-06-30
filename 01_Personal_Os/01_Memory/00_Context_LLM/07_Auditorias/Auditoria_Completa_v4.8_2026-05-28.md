@@ -75,7 +75,7 @@ En `05_Workflows`: 4 de 6 skills tienen subdirs legacy numerados
 - `Analisis_Capacidades_OS_v1_0.md` — análisis puntual, podría ir a 00_Context_LLM/05_Plans/
 
 ### M2. MCP tree.txt stale
-- `01_Core/02_Tools/03_Mcp/00_Config_Mcp/tree.txt` — dump de arbol posiblemente stale
+- `00_Core/02_Tools/03_Mcp/00_Config_Mcp/tree.txt` — dump de arbol posiblemente stale
 
 ### M3. 12_Auditors_Os/README.md no referenciado desde HUB_CATALOG
 - HUB_CATALOG.md actualizado pero falta verificar si linkea correctamente
@@ -115,7 +115,7 @@ En `05_Workflows`: 4 de 6 skills tienen subdirs legacy numerados
 - Posiblemente leftover de prueba, verificar si está referenciado
 
 ### B2. Server/AIPM estructura presente sin documentación de uso
-- `01_Core/02_Tools/07_Server/AIPM/` existe pero propósito no documentado
+- `00_Core/02_Tools/07_Server/AIPM/` existe pero propósito no documentado
 
 ### B3. 06_SOTA_Features con 6 features pero sin README
 - ambient_intelligence/, contemplation_loop/, feedback_loop/ etc existen sin doc
@@ -124,7 +124,7 @@ En `05_Workflows`: 4 de 6 skills tienen subdirs legacy numerados
 - ATL = Agent Teams Lite? No hay aclaración
 
 ### B5. 09_Templates vacío
-- `01_Core/02_Tools/09_Templates/` existe pero sin contenido aparente
+- `00_Core/02_Tools/09_Templates/` existe pero sin contenido aparente
 
 ### B6. 04_Scripts_Os/13_Legacy — sin documentar qué contiene
 - Directorio legacy sin README ni índice

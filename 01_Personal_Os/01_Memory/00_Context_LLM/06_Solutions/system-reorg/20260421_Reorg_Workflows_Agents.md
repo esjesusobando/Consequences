@@ -8,7 +8,7 @@
 ---
 
 ## 🚩 Síntomas y Problema
-El sistema PersonalOS v6.1 presentaba una estructura de workflows plana en `01_Core/00_Workflows/` (28+ archivos), lo que dificultaba la navegación y la expansión temática. Además:
+El sistema PersonalOS v6.1 presentaba una estructura de workflows plana en `00_Core/00_Workflows/` (28+ archivos), lo que dificultaba la navegación y la expansión temática. Además:
 1.  **Inconsistencia de IDs**: El agente de Marketing/Growth era referenciado como `#05` en algunos documentos y `#03` en otros.
 2.  **Colisión de IDs**: El ID `#03` estaba ocupado físicamente por el `React Test Implementer`.
 3.  **Fragmentación**: Los agentes y flujos no seguían una jerarquía alineada con el "Dream Team".

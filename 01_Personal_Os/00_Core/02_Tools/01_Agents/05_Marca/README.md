@@ -28,7 +28,7 @@ Centraliza la identidad de marca del proyecto activo — tono, voz, paleta, tipo
 ## Conexion con otros agentes
 
 - `03_Growth/` — lee esta carpeta para generar contenido on-brand
-- `01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/01_Brand_Voice/` — skill de Brand Voice usa estos assets
+- `00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/01_Brand_Voice/` — skill de Brand Voice usa estos assets
 
 ---
 

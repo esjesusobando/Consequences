@@ -15,7 +15,7 @@
 | `.claude/`                                          | Sincronizado                                 | ✅ AUDITADO                                                            | SKIP                                     |
 | `03_Scripts_Os/`                                    | ~100+ scripts                                | 🔴 NO AUDITADO                                                         | P0                                       |
 | `04_Operations/`                                    | ~90 archivos                                 | 🔴 NO AUDITADO                                                         | P0                                       |
-| `01_Core/`                                          | ~200+ archivos                               | 🔴 NO AUDITADO                                                         | P0                                       |
+| `00_Core/`                                          | ~200+ archivos                               | 🔴 NO AUDITADO                                                         | P0                                       |
 | `00_Winter_is_Coming/`                              | 4 archivos                                   | 🔴 NO AUDITADO                                                         | P1                                       |
 | `02_Knowledge/`                                     | ~40 archivos                                 | 🔴 NO AUDITADO                                                         | P1                                       |
 | `03_Tasks/`                                         | ~30 tareas                                   | 🔴 NO AUDITADO                                                         | P1                                       |
@@ -100,11 +100,11 @@
 
 ---
 
-### 3️⃣ 01_Core/ — Motor del Sistema
+### 3️⃣ 00_Core/ — Motor del Sistema
 
 #### 📁 Estructura Detectada
 ```
-01_Core/
+00_Core/
 ├── 09_Server/             # MCP Server (Go + Python)
 │   ├── Engram/           # Engram memory system
 │   ├── mcp/              # MCP server code
@@ -127,15 +127,15 @@
 | 3.7                               | **Python deps**                                      | requirements.txt es instalable                                                             |
 | 3.8                               | **Templates**                                        | 10_Templates/ tiene templates válidos                                                      |
 | 3.9                               | **Workflows**                                        | 00_Workflows/ tiene workflows funcionales                                                  |
-| 3.10                              | **Sync con .agent/**                                 | Estructura 01_Core/03_Skills refleja 01_Personal_Os/01_Core/02_Tools/02_Skills/            |
+| 3.10                              | **Sync con .agent/**                                 | Estructura 00_Core/03_Skills refleja 01_Personal_Os/00_Core/02_Tools/02_Skills/            |
 
 #### 🧪 Tests a Verificar
 ```bash
 # Go tests
-cd 01_Core/09_Server/Engram && go test ./...
+cd 00_Core/09_Server/Engram && go test ./...
 
 # Python syntax
-python -m py_compile 01_Core/09_Server/mcp/Server.py
+python -m py_compile 00_Core/09_Server/mcp/Server.py
 ```
 
 ---
@@ -260,7 +260,7 @@ Maerks/
 FASE 1: Estructura Crítica (P0)
 ├── 1️⃣ 03_Scripts_Os/
 ├── 2️⃣ 04_Operations/
-└── 3️⃣ 01_Core/
+└── 3️⃣ 00_Core/
 
 FASE 2: Contenido (P1)
 ├── 4️⃣ 00_Winter_is_Coming/
@@ -281,7 +281,7 @@ El Agente Work deberá generar para cada carpeta:
 |--------------------------------------------------|----------------------------------------------------------|
 | 03_Scripts_Os/                                    | `audit_scripts_report.md`                                 |
 | 04_Operations/                                    | `audit_operations_report.md`                              |
-| 01_Core/                                          | `audit_core_report.md`                                    |
+| 00_Core/                                          | `audit_core_report.md`                                    |
 | 00_Winter_is_Coming/                              | `audit_matrix_report.md`                                  |
 | 02_Knowledge/                                     | `audit_knowledge_report.md`                               |
 | 03_Tasks/                                         | `audit_tasks_report.md`                                   |

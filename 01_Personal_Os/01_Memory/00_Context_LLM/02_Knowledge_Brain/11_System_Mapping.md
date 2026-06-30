@@ -13,7 +13,7 @@
 | **Agentes Principales**                                | 12                                        | `.agent/01_Agents/`                                            |
 | **Especialistas**                                      | 24                                        | `.agent/01_Agents/Specialists/`                                |
 | **Perfiles de Negocio**                                | 5                                         | `.agent/01_Agents/Perfiles/`                                   |
-| **Skills**                                             | 128+                                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
+| **Skills**                                             | 128+                                      | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                   |
 | **Scripts**                                            | 86+                                       | `03_Scripts_Os/`                                               |
 | **Workflows**                                          | 24                                        | `.agent/03_Workflows/`                                         |
 | **Hooks**                                              | 12                                        | `.agent/04_Extensions/01_Hooks/`                               |
@@ -81,7 +81,7 @@
 
 ## 🛠️ 4. SKILLS (128+)
 
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 ### Por Categoría
 
@@ -295,7 +295,7 @@
 | - `02_Evaluator_Runner.py`                                |                                                                                | QA separado (GAN)                                     |
 | - `03_Sprint_Contract.py`                                 |                                                                                | Negocia "done"                                        |
 | - `04_Playwright_QA.py`                                   |                                                                                | Testing interactivo                                   |
-| **Skills**                                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`              |                                                       |
+| **Skills**                                                | `01_Personal_Os/00_Core/02_Tools/02_Skills/14_Anthropic_Harness/`              |                                                       |
 | - `01_Evaluator_Pattern/`                                 |                                                                                | Adversarial eval                                      |
 | - `02_Context_Management/`                                |                                                                                | Reset vs compaction                                   |
 | - `03_Sprint_Contract/`                                   |                                                                                | Generator + Evaluator                                 |
@@ -332,7 +332,7 @@
 ```
 Think_Different_AI/
 ├── 00_Core/                    # ADN: 01_Personal_Os/11_AGENTS.md, GOALS.md, BACKLOG.md
-├── 01_Core/                   # Memoria y conocimiento
+├── 00_Core/                   # Memoria y conocimiento
 │   ├── 01_Context_Memory/     # Memoria JSON + MD
 │   ├── 02_Knowledge_Brain/    # Base de conocimiento
 │   ├── 03_Process_Notes/       # Notas de sesiones

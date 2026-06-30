@@ -26,8 +26,8 @@ Análisis completo del OS Think Different, identificación de errores de paths o
 Think_Different/
 ├── 00_Winter_is_Coming/     ✅ Goals, Backlog, AGENTS.md (MATRIX)
 ├── 01_Personal_Os/          ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/              ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/ ✅ Workflows
+│   ├── 00_Core/              ✅ Motor del OS
+│   │   ├── 00_Workflows/ ✅ Workflows
 │   │   ├── 01_Rules/        ✅ 10 reglas (.mdc) - FUENTE DE VERDAD
 │   │   └── 02_Tools/        ✅ Todas las herramientas
 │   │       ├── 01_Agents/    ✅ 35+ agentes
@@ -49,8 +49,8 @@ Think_Different/
 
 | Issue                                                                 | Cantidad                  | Severidad                   | Estado                                 |
 |----------------------------------------------------------------------|--------------------------|----------------------------|---------------------------------------|
-| Referencias a `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | 911                       | CRITICA                     | Docs actualizadas                      |
-| Referencias a `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | 177                       | ALTA                        | Docs actualizadas                      |
+| Referencias a `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | 911                       | CRITICA                     | Docs actualizadas                      |
+| Referencias a `01_Personal_Os/00_Core/02_Tools/02_Skills/`            | 177                       | ALTA                        | Docs actualizadas                      |
 | Copias de config_paths.py                                             | 5                         | MEDIA                       | Consolidado logicamente                |
 | Multiples ubicaciones Rules                                           | 4                         | MEDIA                       | Fuente definida                        |
 
@@ -91,13 +91,13 @@ OpenCode: 1.14.25 ✅
 ## 📝 Lecciones Aprendidas
 
 ### 1. Paths Obsoletos Persisten
-- **Problema:** 911 archivos referencian paths antigos (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
+- **Problema:** 911 archivos referencian paths antigos (`01_Personal_Os/00_Core/02_Tools/02_Skills/`)
 - **Solucion:** No eliminar - actualizar documentacion y definir fuente unica
 - ** Lehns learned: Los paths antiguos son historicos, no criticos si la estructura actual funciona
 
 ### 2. Multiples Fuentes de Verdad
-- **Problema:** Skills en 3 ubicaciones (`01_Personal_Os/01_Core/02_Tools/02_Skills/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
-- **Solucion:** Definir `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente oficial
+- **Problema:** Skills en 3 ubicaciones (`01_Personal_Os/00_Core/02_Tools/02_Skills/`, `01_Personal_Os/00_Core/02_Tools/02_Skills/`, `01_Personal_Os/00_Core/02_Tools/02_Skills/`)
+- **Solucion:** Definir `01_Personal_Os/00_Core/02_Tools/02_Skills/` como fuente oficial
 - ** Lehns learned: Clarificar fuente previene confusion y trabajo duplicado
 
 ### 3. Instalacion de Herramientas
@@ -129,18 +129,18 @@ OpenCode: 1.14.25 ✅
 ## ⚠️ Notas Importantes
 
 1. **Paths critiques documentados:**
-   - Skills: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+   - Skills: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
    - HUBs: `01_Personal_Os/04_Operations/03_Scripts_Os/`
-   - Rules: `01_Personal_Os/01_Core/01_Rules/`
+   - Rules: `01_Personal_Os/00_Core/01_Rules/`
 
 2. **Referencias obsoletas no eliminadas:**
-   - 911 refs a `01_Personal_Os/01_Core/02_Tools/02_Skills/` — historico en archivos de resultado
-   - 177 refs a `01_Personal_Os/01_Core/02_Tools/02_Skills/` — docs anteriores
+   - 911 refs a `01_Personal_Os/00_Core/02_Tools/02_Skills/` — historico en archivos de resultado
+   - 177 refs a `01_Personal_Os/00_Core/02_Tools/02_Skills/` — docs anteriores
    - Son contexto historico, no bloquean el sistema
 
 3. **Backup estrategico:**
-   - `.agent/` sincroniza con `01_Personal_Os/01_Core/`
-   - NO usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` para trabajo activo
+   - `.agent/` sincroniza con `01_Personal_Os/00_Core/`
+   - NO usar `01_Personal_Os/00_Core/02_Tools/02_Skills/` para trabajo activo
 
 ---
 

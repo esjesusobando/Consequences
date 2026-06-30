@@ -1,7 +1,7 @@
 # INVENTARIO CORE — PersonalOS v4.9 Consequences
 
 > **Fecha:** 2026-05-22
-> **Path:** `01_Personal_Os/01_Core/`
+> **Path:** `01_Personal_Os/00_Core/`
 > **Versión:** v4.9 Consequences — Boot Protocol强化, Dependency Modernization
 > **Estado:** ✅ PURE GREEN
 
@@ -10,14 +10,14 @@
 ## ESTRUCTURA DE 01_Core
 
 ```
-01_Core/
+00_Core/
 ├── README.md                     ← Índice central
 ├── INVENTARIO_CORE.md           ← Este archivo (v4.9)
 ├── 00_Comandos_Workflows.md     ← Comandos y HUBs
 ├── 01_Inventario_Total.md       ← Inventario completo del OS
 ├── 02_Dream_Team.md             ← Estructura del equipo
 ├── Requirements.txt              ← Dependencias Python
-├── 00_Workflows_Os/            ← 28 workflows (7 categorías)
+├── 00_Workflows/            ← 28 workflows (7 categorías)
 ├── 01_Rules/                   ← 14 archivos .mdc (00-13)
 └── 02_Tools/
     ├── README.md
@@ -93,7 +93,7 @@
 
 ## RULES — 13 archivos .mdc
 
-**Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
+**Ubicación:** `01_Personal_Os/00_Core/01_Rules/`
 
 | #  | Rule                    | Propósito               |
 |---|------------------------|------------------------|
@@ -131,7 +131,7 @@
 
 ### 02_Skills — 15 ÁREAS ACTIVAS (392 skills) ✅
 
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 | Área                   | Skills  | Descripción                                 |
 |-----------------------|--------|--------------------------------------------|

@@ -5,7 +5,7 @@ priority: P3
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/
+  - 01_Personal_Os/00_Core/00_Workflows/02_Marvel/
 ---
 
 # Task: Revisar Workflows Marvel
@@ -21,7 +21,7 @@ resource_refs:
 
 ### Workflows Marvel Existentes
 
-**Ubicación:** `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/`
+**Ubicación:** `01_Personal_Os/00_Core/00_Workflows/02_Marvel/`
 
 | Workflow       | Archivo                  | Descripción                 |
 |---------------|-------------------------|----------------------------|
@@ -36,7 +36,7 @@ resource_refs:
 
 ### Skill Marvel/Avengers
 
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/07_Marvel_Avengers/SKILL.md`
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/07_Marvel_Avengers/SKILL.md`
 
 - **v1.0** — Activated 2026-04-25
 - **8 heroes** implementados
@@ -63,8 +63,8 @@ Los 8 workflows existen y están documentados. La pregunta es si necesitan revis
 
 ```bash
 # Ver cuáles están actualizados vs legacy
-head -20 01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md
-head -20 01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/05_Thor_Work.md
+head -20 01_Personal_Os/00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md
+head -20 01_Personal_Os/00_Core/00_Workflows/02_Marvel/05_Thor_Work.md
 
 # Comparar con versión en .agent/03_Workflows/02_Marvel/
 ```

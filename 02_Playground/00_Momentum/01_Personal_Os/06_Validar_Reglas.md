@@ -17,7 +17,7 @@ Este workflow asegura que el código y la estructura del proyecto PersonalOS cum
 
 1. **Ingesta de Contexto (CRÍTICO)**
    Antes de cualquier validación técnica, el agente debe:
-   - **Leer todas las reglas** en `01_Core/01_Rules/`.
+   - **Leer todas las reglas** en `00_Core/01_Rules/`.
    - **Internalizar** los conceptos de _Armor Layer_, _Vitaminización_ y _Naming Conventions_.
    - Asegurar que cualquier código a validar cumple con la **intención** de la regla, no solo la sintaxis.
 
@@ -32,7 +32,7 @@ Este workflow asegura que el código y la estructura del proyecto PersonalOS cum
    - Si el script termina en **VERDE** (Éxito), el sistema es compliant.
    - Si termina en **ROJO** (Error), revisar los logs para corregir:
      - Nombres de archivos en `03_Scripts_Os` (deben ser `NN_snake_case.py`).
-     - Estructura de `.mdc` en `01_Core/01_Rules` (campos `description`, `globs`).
+     - Estructura de `.mdc` en `00_Core/01_Rules` (campos `description`, `globs`).
 
 ## Integración con Ritual de Cierre
 

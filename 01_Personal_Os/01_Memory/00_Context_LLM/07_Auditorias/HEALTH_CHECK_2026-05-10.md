@@ -32,13 +32,13 @@
    - `03_Resultado/` — Outputs de proyectos ✅
 
 2. **Skills System (11 áreas funcionales)**
-   - `01_Personal_Os/01_Core/02_Tools/02_Skills/` — 300+ skills ✅
+   - `01_Personal_Os/00_Core/02_Tools/02_Skills/` — 300+ skills ✅
    - INDEX_AREA_FUNCTIONAL.md actualizado ✅
    - Skills README.md actualizado ✅
 
 3. **MCPs (38 Claude Code / 34 OpenCode)**
    - `.mcp.json` en raíz ✅
-   - Config backup en `01_Personal_Os/01_Core/02_Tools/03_Mcp/` ✅
+   - Config backup en `01_Personal_Os/00_Core/02_Tools/03_Mcp/` ✅
 
 4. **HUBs Scripts (28 scripts)**
    - 23 HUBs principales en `03_Scripts_Os/` ✅
@@ -52,7 +52,7 @@
 
 6. **Rules System (11 .mdc files)**
    - RULES_INDEX.md actualizado ✅
-   - 11 reglas en `01_Core/01_Rules/` ✅
+   - 11 reglas en `00_Core/01_Rules/` ✅
 
 7. **JARVIS Manifests (7 archivos)**
    - `02_Agent_Teams_Lite/00_Manifest/` ✅
@@ -73,14 +73,14 @@
 **Antes:**
 ```bash
 SKILL_VALIDATOR_SCRIPT="04_Operations/03_Scripts_Os/03_Validator/skill_validator.py"
-SKILL_PATHS="01_Core/03_Skills/"
+SKILL_PATHS="00_Core/03_Skills/"
 SKILL_SECURITY_SCRIPT="04_Operations/03_Scripts_Os/03_Validator/skill_security_scan.py"
 ```
 
 **Después:**
 ```bash
 SKILL_VALIDATOR_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_validator.py"
-SKILL_PATHS="01_Personal_Os/01_Core/02_Tools/02_Skills/"
+SKILL_PATHS="01_Personal_Os/00_Core/02_Tools/02_Skills/"
 SKILL_SECURITY_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_security_scan.py"
 ```
 
@@ -98,7 +98,7 @@ SKILL_SECURITY_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/s
 | `00_Winter_is_Coming/OS_DIRECTORY.md`                     | v3.1 → v3.2, Open Design agregado                                      |
 | `00_Winter_is_Coming/GOALS.md`                            | Fecha actualizada a Mayo 10, 2026                                      |
 | `CLAUDE.md`                                               | v3.1 → v3.2 Consequences, JARVIS 3.2                                   |
-| `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`          | v2.0 → v3.2, 10 → 11 reglas, 9 → 11 áreas, 165+ → 300+ skills          |
+| `01_Personal_Os/00_Core/01_Rules/RULES_INDEX.md`          | v2.0 → v3.2, 10 → 11 reglas, 9 → 11 áreas, 165+ → 300+ skills          |
 
 ---
 
@@ -133,8 +133,8 @@ SKILL_SECURITY_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/s
 Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md (MATRIX)
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/                  ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/      ✅ 28 workflows
+│   ├── 00_Core/                  ✅ Motor del OS
+│   │   ├── 00_Workflows/      ✅ 28 workflows
 │   │   ├── 01_Rules/             ✅ 11 reglas .mdc
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 01_Agents/        ✅ 52+ agentes

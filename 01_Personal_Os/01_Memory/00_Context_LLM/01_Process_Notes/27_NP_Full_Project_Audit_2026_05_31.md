@@ -18,7 +18,7 @@ Revisar integralmente el proyecto Think_Different para identificar:
 - Errores y bugs en scripts, configuraciones y dependencias
 - Rutas legacy o rotas
 - Problemas de estructura de carpetas
-- Drift entre `.agent/` (backup) y `01_Core/` (fuente de verdad)
+- Drift entre `.agent/` (backup) y `00_Core/` (fuente de verdad)
 - Riesgos de seguridad
 - Scripts esqueleto o vacíos que no hacen nada
 
@@ -41,7 +41,7 @@ Revisar integralmente el proyecto Think_Different para identificar:
 
 | #  | Archivo                               | Problema                                                                                                                        | Fix                                                                 |
 |---|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| 1  | `audit_skills_routes.ps1`             | `$OLD_PATHS` incluía la ruta canónica `01_Personal_Os/01_Core/02_Tools/02_Skills/`, causando falsos positivos de autorreferencia| Eliminada la ruta canónica de `$OLD_PATHS`                          |
+| 1  | `audit_skills_routes.ps1`             | `$OLD_PATHS` incluía la ruta canónica `01_Personal_Os/00_Core/02_Tools/02_Skills/`, causando falsos positivos de autorreferencia| Eliminada la ruta canónica de `$OLD_PATHS`                          |
 | 2  | `migrate_skills_routes.ps1`           | Mismo bug de autorreferencia                                                                                                    | Misma corrección                                                    |
 | 3  | `08_Elite_Portfolio/.gitignore`       | Solo 4 líneas, no ignoraba `.env*` (riesgo de seguridad), `coverage/`, `.vercel`, `*.tsbuildinfo`                               | Agregadas 12 líneas de protección                                   |
 | 4  | `06_OIM_Original/package.json`        | `"name": "react-example"` (default template), `vite` duplicado en deps+devDeps, `"clean": "rm -rf dist"` no cross-platform      | Renombrado a `oim-original`, vite solo en devDeps, clean usa node.js|
@@ -84,7 +84,7 @@ Estos scripts solo contienen `echo` y placeholders. **No se eliminaron** (por di
 | 09_Valeria         | —        | —      | —           | —         | —     |
 | Drilling Calculator| —        | ^19.2.0| ~5.8.3      | —         | ^7.3.1|
 
-### 3.5 Drift entre `.agent/` y `01_Core/` (Resuelto)
+### 3.5 Drift entre `.agent/` y `00_Core/` (Resuelto)
 
 | Archivo                                           | Estado Anterior                         | Fix                                         |
 |--------------------------------------------------|----------------------------------------|--------------------------------------------|
@@ -171,7 +171,7 @@ Estos scripts solo contienen `echo` y placeholders. **No se eliminaron** (por di
 
 ### No-issues confirmados (reportes falsos del auditor automático)
 
-- `notification.py` **SÍ existe** en ambos directorios (`.agent/` y `01_Core/`). El reporte automático lo marcó incorrectamente como "missing".
+- `notification.py` **SÍ existe** en ambos directorios (`.agent/` y `00_Core/`). El reporte automático lo marcó incorrectamente como "missing".
 - `install.sh` (Claude Ads) PIP_CMD logic **SÍ es correcta**. El fallback a `pip` es alcanzable cuando `pip3` no existe y `pip` sí.
 - `run.bat` (Auto-Improvement) path resolution **SÍ es correcta**. `%~dp0..\..\..` desde `01_Auto_Improvement/` llega al root del proyecto.
 
@@ -179,7 +179,7 @@ Estos scripts solo contienen `echo` y placeholders. **No se eliminaron** (por di
 
 1. **Consolidar versiones de proyectos**: 05_OBAND, 06_OIM, 07_Backup, y 08_Elite tienen 3 ecosistemas distintos de versiones. Considerar migrar todo a Next 16 + React 19 + Tailwind 4.
 2. **Implementar o eliminar** los 12 scripts esqueleto — actualmente crean confusión y desperdician espacio.
-3. **Deduplicar skills**: Hay skills duplicadas en `.agent/`, `01_Core/`, `.claude/` y `05_Archive/`. Algunas tienen 7+ copias (Invoice Intelligence install.sh).
+3. **Deduplicar skills**: Hay skills duplicadas en `.agent/`, `00_Core/`, `.claude/` y `05_Archive/`. Algunas tienen 7+ copias (Invoice Intelligence install.sh).
 4. **Mover CI/CD de GGA** del backup en `05_Archive/` a `.github/workflows/` activo si se quiere usar.
 5. **Agregar `!.env.example`** al root `.gitignore` para prevenir que los `.env.example` no sean trackeados.
 
@@ -201,7 +201,7 @@ Estos scripts solo contienen `echo` y placeholders. **No se eliminaron** (por di
 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/.gitignore
 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/package.json
 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/start.bat
-01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/task-complete.bat
+01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/task-complete.bat
 .agent/04_Extensions/01_Hooks/04_Sound/task-complete.bat
 .agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1
 .agent/04_Extensions/01_Hooks/04_Sound/README.md                                        [NEW]

@@ -114,7 +114,7 @@ Features: HITL con etiquetas [AI DRAFT - NEEDS REVIEW]
 ```
 Think_Different_AI/
 ├── 00_Core/          # BACKLOG.md con #SOTA-MCP
-├── 01_Core/         # Context_Memory, Knowledge_Brain, Rules, Memory_Brain
+├── 00_Core/         # Context_Memory, Knowledge_Brain, Rules, Memory_Brain
 ├── 04_Operations/    # Tasks, Evals, Progress
 ├── 03_Knowledge/    # Research, Notes, Resources
 ├── 04_Operations/        # 86 scripts, SCRIPTS_INDEX.md

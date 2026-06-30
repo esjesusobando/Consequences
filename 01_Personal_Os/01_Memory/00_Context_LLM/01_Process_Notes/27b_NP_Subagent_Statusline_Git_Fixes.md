@@ -83,7 +83,7 @@ el parser se saturaba y mostraba pantalla en blanco.
 
 ## 3. Documentación en Git Rules
 
-Se actualizó `01_Personal_Os/01_Core/01_Rules/10_Git_Directions.mdc`:
+Se actualizó `01_Personal_Os/00_Core/01_Rules/10_Git_Directions.mdc`:
 
 - **Nueva sección 9**: Plugin subagent-statusline con repo, autor, versión, config
 - **Checklist expandido**: de 6 a 9 pasos (agregados checks de subagent-statusline
@@ -110,5 +110,5 @@ A partir de esta sesión, cuando el usuario diga **"documentar"** o **"documenta
 - Repo plugin: https://github.com/Joaquinvesapa/sub-agent-statusline
 - Config: `~/.config/opencode/tui.json`
 - Package: `~/.config/opencode/node_modules/opencode-subagent-statusline/`
-- Git rules: `01_Personal_Os/01_Core/01_Rules/10_Git_Directions.mdc`
+- Git rules: `01_Personal_Os/00_Core/01_Rules/10_Git_Directions.mdc`
 - Process Note previa: `08_NP_Session_Archive_2026-04-25.md` (mención inicial del plugin)

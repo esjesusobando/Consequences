@@ -17,8 +17,8 @@ Audited 9 core documentation files for version/metric/directory-name consistency
 - `.agent/CLAUDE.md`
 - `OS_DIRECTORY.md`
 - `Structure_v4.7.md`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 - `02_Playground/README.md`
 - `02_Playground/01_OS_Runtime_Test.py`
 

@@ -32,7 +32,7 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 | Actual                              | Destino                                                     | Tipo                                   |
 |------------------------------------|------------------------------------------------------------|---------------------------------------|
 | `00_Winter_is_Coming/`              | `00_Winter_is_Coming/`                                      | Sin cambio                             |
-| `01_Core/`                          | `01_Personal_Os/01_Core/`                                   | Mover dentro de OS                     |
+| `00_Core/`                          | `01_Personal_Os/00_Core/`                                   | Mover dentro de OS                     |
 | `02_Knowledge/`                     | `01_Personal_Os/02_Knowledge/`                              | Mover dentro de OS                     |
 | `03_Tasks/`                         | `01_Personal_Os/03_Task/`                                   | Mover + rename (singular)              |
 | `04_Operations/`                    | `01_Personal_Os/04_Operations/00_Context_LLM/`              | Mover + restructurar                   |
@@ -42,21 +42,21 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 | `03_Scripts_Os/`                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`               | Mover a Operations                     |
 | `Now/`                              | `03_Resultado/`                                             | Renombrar                              |
 
-### `01_Core/` → `01_Personal_Os/01_Core/`
+### `00_Core/` → `01_Personal_Os/00_Core/`
 
 | Actual                                                | Destino                                                         |
 |------------------------------------------------------|----------------------------------------------------------------|
-| `01_Core/00_Workflows/`                               | `01_Personal_Os/01_Core/00_Workflows_Os/`                       |
-| `01_Core/01_Rules/`                                   | `01_Personal_Os/01_Core/01_Rules/`                              |
-| `01_Core/02_Evals/`                                   | `01_Personal_Os/01_Core/02_Tools/08_Evals/`                     |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                    |
-| `01_Core/04_Agents/`                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                    |
-| `01_Core/05_Mcp/`                                     | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                       |
-| `01_Core/06_Integrations/`                            | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`              |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/`           | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |
-| `01_Core/08_Plugins/`                                 | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`                   |
-| `01_Core/09_Server/`                                  | `01_Personal_Os/01_Core/02_Tools/07_Server/`                    |
-| `01_Core/10_Templates/`                               | `01_Personal_Os/01_Core/02_Tools/09_Templates/`                 |
+| `00_Core/00_Workflows/`                               | `01_Personal_Os/00_Core/00_Workflows/`                       |
+| `00_Core/01_Rules/`                                   | `01_Personal_Os/00_Core/01_Rules/`                              |
+| `00_Core/02_Evals/`                                   | `01_Personal_Os/00_Core/02_Tools/08_Evals/`                     |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/`          | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                    |
+| `00_Core/04_Agents/`                                  | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                    |
+| `00_Core/05_Mcp/`                                     | `01_Personal_Os/00_Core/02_Tools/03_Mcp/`                       |
+| `00_Core/06_Integrations/`                            | `01_Personal_Os/00_Core/02_Tools/04_Integrations/`              |
+| `01_Personal_Os/00_Core/02_Tools/05_Hooks/`           | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                     |
+| `00_Core/08_Plugins/`                                 | `01_Personal_Os/00_Core/02_Tools/06_Plugins/`                   |
+| `00_Core/09_Server/`                                  | `01_Personal_Os/00_Core/02_Tools/07_Server/`                    |
+| `00_Core/10_Templates/`                               | `01_Personal_Os/00_Core/02_Tools/09_Templates/`                 |
 
 ### `04_Operations/` → `01_Personal_Os/04_Operations/00_Context_LLM/`
 
@@ -88,8 +88,8 @@ PersonalOS/
 │   └── README.md
 │
 ├── 01_Personal_Os/               ← EL SISTEMA OPERATIVO
-│   ├── 01_Core/
-│   │   ├── 00_Workflows_Os/      ← Workflows (renombrado con _Os)
+│   ├── 00_Core/
+│   │   ├── 00_Workflows/      ← Workflows (renombrado con _Os)
 │   │   ├── 01_Rules/             ← 10 reglas (.mdc)
 │   │   └── 02_Tools/             ← Todas las herramientas
 │   │       ├── 01_Agents/
@@ -194,7 +194,7 @@ SCRIPTS_DIR = ENGINE_DIR
 | Componente                         | Valor                                                            |
 |-----------------------------------|-----------------------------------------------------------------|
 | MCPs activos                       | 33                                                               |
-| Rules (fuente verdad)              | 10 .mdc en `01_Core/01_Rules/`                                   |
+| Rules (fuente verdad)              | 10 .mdc en `00_Core/01_Rules/`                                   |
 | HUBs                               | 14 (→ `04_Operations/03_Scripts_Os/`)                            |
 | Skills                             | 165+ en 9 áreas funcionales                                      |
 | `.mcp.json`                        | ✅ JSON válido                                                    |

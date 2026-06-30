@@ -28,7 +28,7 @@ Resultado en el selector de agentes de OpenCode: solo ves `gentle-orchestrator`.
 
 ## Estado Anterior (Backup Stale en Repo)
 
-El backup en `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json` todavía muestra la configuración **vieja** con **dos agentes primarios**:
+El backup en `01_Personal_Os/00_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json` todavía muestra la configuración **vieja** con **dos agentes primarios**:
 
 ```jsonc
 {
@@ -75,7 +75,7 @@ Agregar `sdd-orchestrator` como agente primario separado en `~/.config/opencode/
 
 1. Editar `~/.config/opencode/opencode.json`
 2. Agregar el agente `sdd-orchestrator` con `"mode": "primary"`
-3. El prompt del orchestrator está en el backup del repo (`01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`) — buscar `sdd-orchestrator`
+3. El prompt del orchestrator está en el backup del repo (`01_Personal_Os/00_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`) — buscar `sdd-orchestrator`
 4. Los SDD sub-agentes (`sdd-apply`, `sdd-verify`, etc.) pueden quedar como están (ya existen en el config global)
 5. Sincronizar el backup del repo con los cambios
 
@@ -107,7 +107,7 @@ Si preferís tener un solo primario pero con el nombre SDD:
 ## Archivos Relevantes
 
 - **Config global real**: `~/.config/opencode/opencode.json` (fuera del repo)
-- **Backup stale en repo**: `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`
+- **Backup stale en repo**: `01_Personal_Os/00_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`
 - **Repo-level config**: `.opencode/opencode.jsonc` (solo define sub-agentes como `mode:subagent`)
 - **Engram memory**: buscar `config/opencode-agent-setup` en `mem_search`
 

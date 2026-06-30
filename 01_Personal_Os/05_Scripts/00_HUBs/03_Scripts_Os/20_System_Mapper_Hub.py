@@ -55,7 +55,7 @@ MANIFEST_DIR = (
     / "02_Agent_Teams_Lite"
     / "00_Manifest"
 )
-REPORTS_DIR = PROJECT_ROOT / "03_Resultado" / "04_Reportes"
+REPORTS_DIR = PROJECT_ROOT / "03_Resultado" / "07_Reports"
 
 # Excluded directories for scanning
 EXCLUDE_DIRS = {
@@ -410,7 +410,7 @@ def scan_hubs():
 
 def scan_workflows():
     """Escanea workflows por categoría."""
-    workflows_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/00_Workflows_Os"
+    workflows_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/00_Workflows"
 
     by_cat = defaultdict(list)
     for f in walk_files(workflows_dir, ext_filter=(".md",)):
@@ -422,7 +422,7 @@ def scan_workflows():
     return {
         "version": "v3.0",
         "generated": datetime.now().isoformat(timespec="seconds"),
-        "base_path": "01_Personal_Os/00_Core/00_Workflows_Os/",
+        "base_path": "01_Personal_Os/00_Core/00_Workflows/",
         "totals": {
             "categories": len(by_cat),
             "workflows": sum(len(w) for w in by_cat.values()),

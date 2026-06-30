@@ -77,7 +77,7 @@ Auditoría integral de todo el proyecto Think_Different: paths, estructuras, dep
 |-----------|-------|---------|--------|
 | `02_Playground/03_Reports/` | 3 archivos | 1 archivo | Eliminados 2 duplicados |
 | `00_Context_LLM/11_Reports/` | 3 archivos + subdir | 1 archivo | Eliminados CSV + legacy_logs |
-| `03_Resultado/03_Reportes/` | 20+ archivos | 2 archivos | Eliminados duplicados, kept last audit |
+| `03_Resultado/07_Reports/` | 20+ archivos | 2 archivos | Eliminados duplicados, kept last audit |
 
 ### 8. Plan Archivado
 
@@ -137,7 +137,7 @@ Think_Different/
 | # | Pendiente | Prioridad | Notas |
 |---|-----------|-----------|-------|
 | 1 | Actualizar `CLAUDE.md` con paths de playground actualizados | P2 | Referencia `08_JAO` en tabla de skills |
-| 2 | Sincronizar `.agent/` backup con `01_Core/` | P2 | Paths pueden estar desactualizados |
+| 2 | Sincronizar `.agent/` backup con `00_Core/` | P2 | Paths pueden estar desactualizados |
 | 3 | Actualizar `INDEX_AREA_FUNCTIONAL.md` | P3 | Referencias a carpetas antiguas |
 | 4 | Revisar seguridad Higgsfield High Risk skills | P2 | marketplace-cards, product-photoshoot |
 | 5 | Integrar Higgsfield en Audio Pipeline workflow | P3 | Reemplazar/o complementar Higgsfield MCP |

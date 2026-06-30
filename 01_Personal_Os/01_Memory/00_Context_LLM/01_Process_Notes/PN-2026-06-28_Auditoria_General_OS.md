@@ -34,7 +34,7 @@
 | # | Problema | Estado | Observación |
 |---|----------|--------|-------------|
 | 12 | **Drift `.agent` vs `.claude` agents (26 vs 20)** | ⚠️ No corregido | `.agent` es source; `.claude` es runtime. El drift es esperado pero debería sincronizarse |
-| 13 | **Skills en 3 ubicaciones** | ⚠️ No corregido | `.agent/02_Skills/`, `.claude/04_Skills/`, `01_Core/.../02_Skills/`. El source es `01_Core/.../02_Skills/` |
+| 13 | **Skills en 3 ubicaciones** | ⚠️ No corregido | `.agent/02_Skills/`, `.claude/04_Skills/`, `00_Core/.../02_Skills/`. El source es `00_Core/.../02_Skills/` |
 | 14 | **THINK_DIFFERENT_ROOT env var no definida** | ⚠️ Diagnosticado | Se usa en `settings.json` con fallback. Definir `THINK_DIFFERENT_ROOT` en el sistema evitaría rely en hardcoded paths |
 | 15 | **settings.json + settings.local.json duplican hooks** | ⚠️ No corregido | Ambos definen PreToolUse, PostToolUse. Uno debería ser el source y el otro "no tocar" |
 

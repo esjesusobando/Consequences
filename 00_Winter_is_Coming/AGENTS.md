@@ -162,7 +162,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/00_Sound_Engine.py --task-complete
 | `.agent/00_Rules/`                                              | `01_Personal_Os/00_Core/01_Rules/`                                 |
 | `.agent/01_Agents/`                                             | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                       |
 | `.agent/02_Skills/`                                             | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                       |
-| `.agent/03_Workflows/`                                          | `01_Personal_Os/00_Core/00_Workflows_Os/`                          |
+| `.agent/03_Workflows/`                                          | `01_Personal_Os/00_Core/00_Workflows/`                          |
 
 ---
 
@@ -175,7 +175,7 @@ Think_Different/                           # v5.0.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías)
+│   │   ├── 00_Workflows/              # 29 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 00_SDD/                   # SDD registry + JARVIS manifests
@@ -274,14 +274,14 @@ Tie to goals and reference material.
 
 ### Specialized Workflows
 
-For complex tasks, delegate to workflow files in `01_Personal_Os/00_Core/00_Workflows_Os/`.
+For complex tasks, delegate to workflow files in `01_Personal_Os/00_Core/00_Workflows/`.
 
 | Trigger                                   | Workflow                                                                                      | Cuándo usar                               |
 |------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------|
-| Content generation                        | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`              | Writing, marketing                        |
-| Morning planning                          | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/01_Morning_Standup.md`                 | Daily focus                               |
-| Processing backlog                        | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`              | Backlog flow                              |
-| Weekly reflection                         | `01_Personal_Os/00_Core/00_Workflows_Os/01_Personal_Os/04_Weekly_Review.md`                   | Weekly review                             |
+| Content generation                        | `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/03_Content_Generation.md`              | Writing, marketing                        |
+| Morning planning                          | `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/01_Morning_Standup.md`                 | Daily focus                               |
+| Processing backlog                        | `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/02_Backlog_Processing.md`              | Backlog flow                              |
+| Weekly reflection                         | `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/04_Weekly_Review.md`                   | Weekly review                             |
 
 ---
 
@@ -491,7 +491,7 @@ gr --agents    # Solo 3 agents
 
 ## 12. WORKFLOWS (30 — 8 categorías)
 
-📁 `01_Personal_Os/00_Core/00_Workflows_Os/`
+📁 `01_Personal_Os/00_Core/00_Workflows/`
 
 | Categoría                                   | Path                                         | Workflows                                       |
 |--------------------------------------------|---------------------------------------------|------------------------------------------------|

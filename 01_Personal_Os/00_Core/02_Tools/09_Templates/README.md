@@ -22,9 +22,9 @@ Templates reutilizables para diferentes purposes del sistema. Incluye templates 
 
 ## 🔗 RELACIONES
 
-- **Source:** `01_Personal_Os/01_Core/02_Tools/09_Templates/`
+- **Source:** `01_Personal_Os/00_Core/02_Tools/09_Templates/`
 - **Skills que usan templates:** `02_Skills/06_Tools/02_Skill_Template/`
-- **Workflows:** `00_Workflows_Os/`
+- **Workflows:** `00_Workflows/`
 
 ---
 

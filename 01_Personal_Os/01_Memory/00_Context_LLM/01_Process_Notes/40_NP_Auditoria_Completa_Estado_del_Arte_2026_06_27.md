@@ -56,7 +56,7 @@ El número de agentes varía según qué documento se lea:
 | `README.md` | 63 |
 | `Structure_v5.0.md` | 63 |
 | `00_Winter_is_Coming/AGENTS.md` | 62 |
-| `01_Personal_Os/01_Core/02_Tools/01_Agents/` | **74 archivos .md** (real en disco) |
+| `01_Personal_Os/00_Core/02_Tools/01_Agents/` | **74 archivos .md** (real en disco) |
 
 ### Desglose real en disco (2026-06-27)
 
@@ -90,7 +90,7 @@ Complementar los documentos con el desglose real. No se eliminan conteos anterio
 | `CLAUDE.md` | 392 |
 | `README.md` | 392 |
 | `Structure_v5.0.md` | 392 |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md` | 74 (severamente desactualizado) |
+| `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md` | 74 (severamente desactualizado) |
 | **Real en disco** | **396 SKILL.md** |
 
 ### Desglose real por área (2026-06-27)
@@ -180,7 +180,7 @@ Documentar que ambos archivos existen y recomendar unificar en un solo `opencode
 | **claude-seo-ai** | Solo en skill-registry (invisible en docs principales) | Referenciado en CLAUDE.md, README.md, Structure_v5.0.md |
 | **Skills README.md** | Decía "12 Áreas, 74 skills" (severamente desactualizado) | Complementado con conteo real de 396 skills |
 | **OpenCode config** | Solo `opencode.json` (sin SDD agents visibles) | Documentado dual config `.json` + `.jsonc` |
-| **00_Workflows_Os count** | 28 workflows documentados | Verificado contra disco (consistente) |
+| **00_Workflows count** | 28 workflows documentados | Verificado contra disco (consistente) |
 | **HUBs count** | 30 HUBs, 163 scripts | Verificado contra disco (consistente) |
 | **MCPs count** | 11 root + 38 backup | Verificado contra `.mcp.json` (9 root activos) |
 

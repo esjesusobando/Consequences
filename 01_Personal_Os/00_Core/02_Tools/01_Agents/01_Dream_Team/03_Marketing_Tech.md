@@ -172,16 +172,16 @@ Este perfil construye estrategias de marketing técnico: SEO, paid ads, contenid
 ### Skills Anthropic
 | Skill                                                   | Ubicación                                                                                                           | Uso                                                          |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| **Evaluator Pattern**                                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`                     | Cómo hacer adversarial eval                                  |
-| **Context Management**                                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`                    | Reset vs compaction                                          |
-| **Sprint Contract**                                     | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`                       | Generator + Evaluator                                        |
+| **Evaluator Pattern**                                   | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`                     | Cómo hacer adversarial eval                                  |
+| **Context Management**                                  | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`                    | Reset vs compaction                                          |
+| **Sprint Contract**                                     | `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`                       | Generator + Evaluator                                        |
 
 ### Workflow
-- **17_Anthropic_Harness**: `01_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes
+- **17_Anthropic_Harness**: `00_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes
 
 ### Skills Base (Marketing)
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/08_Marketing_Tech/` completo — 32 skills de marketing
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/09_Firecrawl/` — Web scraping
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/08_Marketing_Tech/` completo — 32 skills de marketing
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/04_Automatizacion/09_Firecrawl/` — Web scraping
 
 ### Specialists
-- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Best-Practices-Researcher.md`
+- `01_Personal_Os/00_Core/02_Tools/01_Agents/02_Specialists_Compound/Best-Practices-Researcher.md`

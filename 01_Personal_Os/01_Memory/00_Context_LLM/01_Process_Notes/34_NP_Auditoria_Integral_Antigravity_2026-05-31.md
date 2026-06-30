@@ -43,7 +43,7 @@ La auditoría detectó que el número real de scripts, workflows, skills y carpe
   - Skills: 385 en 14 áreas.
 
 ### Fase 3: Planeación Estratégica (`GOALS.md`)
-- Actualizado path de MCP System a `01_Personal_Os/01_Core/02_Tools/07_Server/`.
+- Actualizado path de MCP System a `01_Personal_Os/00_Core/02_Tools/07_Server/`.
 - Actualizado path del Workflow de Genesis en la instrucción Subagent Protocol.
 
 ## 3. Estado Final (Cuadro Comparativo)

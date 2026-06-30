@@ -47,7 +47,7 @@ Finalizar reorganización del sistema: limpiar raíz, homologar .claude con .age
 .claude/         ← Homologado con .agent
 .cursor/
 00_Core/
-01_Core/
+00_Core/
 04_Operations/
 03_Knowledge/
 04_Operations/

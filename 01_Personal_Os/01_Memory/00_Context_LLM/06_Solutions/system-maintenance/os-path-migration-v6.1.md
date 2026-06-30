@@ -13,11 +13,11 @@ problema_resuelto: true
 
 El PersonalOS tenía **5,330+ referencias obsoletas** a paths antiguos:
 - `04_Engine` → debería ser `04_Operations`
-- `.claude/skills` → debería ser `01_Core/03_Skills`
+- `.claude/skills` → debería ser `00_Core/03_Skills`
 - `02_Operations` → debería ser `04_Operations`
 - `todos/` → debería ser `03_Tasks/`
 - `.claude/agents` → debería ser `.agent/01_Agents/`
-- `01_Brain/` → debería ser `01_Core/`
+- `01_Brain/` → debería ser `00_Core/`
 
 El sistema Auto-Improvement detectaba **1,418 issues** (99% false positives).
 
@@ -29,7 +29,7 @@ El sistema Auto-Improvement detectaba **1,418 issues** (99% false positives).
 
 2. **Verificación de workflows**
    - Revisé `03_Vision_Review.md` manualmente
-   - Actualicé referencias a `.claude/skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills/...`
+   - Actualicé referencias a `.claude/skills` → `01_Personal_Os/00_Core/02_Tools/02_Skills/...`
    - Actualicé referencias a `todos/` → `03_Tasks/`
 
 3. **Script de corrección masiva**
@@ -46,7 +46,7 @@ El sistema Auto-Improvement detectaba **1,418 issues** (99% false positives).
 El sistema había evolucionado a v6.1 pero la **documentación y referencias no se actualizaron**:
 
 1. Estructura de carpetas cambió de `04_Engine` → `04_Operations`
-2. Skills migraron de `.claude/skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+2. Skills migraron de `.claude/skills` → `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 3. Tasks migraron de `todos/` → `03_Tasks/`
 4. Los workflows seguían apuntando a rutas antiguas
 
@@ -56,11 +56,11 @@ El sistema había evolucionado a v6.1 pero la **documentación y referencias no 
 # Script de corrección automática
 REPLACEMENTS = [
     ("04_Engine", "04_Operations"),
-    (".claude/skills", "01_Core/03_Skills"),
+    (".claude/skills", "00_Core/03_Skills"),
     ("02_Operations", "04_Operations"),
     ("todos/", "03_Tasks/"),
     (".claude/agents", ".agent/01_Agents"),
-    ("01_Brain/", "01_Core/"),
+    ("01_Brain/", "00_Core/"),
 ]
 ```
 

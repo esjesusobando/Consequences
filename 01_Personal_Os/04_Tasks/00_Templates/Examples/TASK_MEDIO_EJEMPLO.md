@@ -10,8 +10,8 @@ Tags:
   - backend
   - api
 Resource_Refs:
-  - 01_Core/04_Rules/
-  - 01_Core/05_Templates/
+  - 00_Core/04_Rules/
+  - 00_Core/05_Templates/
 ---
 
 # Task: Agregar Backup a Sync Skills

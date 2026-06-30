@@ -50,7 +50,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/          # ESTRATÉGICO: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
 │   ├── 00_Core/                  # MOTOR DEL OS
-│   │   ├── 00_Workflows_Os/     # 28 workflows (7 categorías)
+│   │   ├── 00_Workflows/     # 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 14 reglas .mdc (00-13)
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/       # 61 agentes (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)

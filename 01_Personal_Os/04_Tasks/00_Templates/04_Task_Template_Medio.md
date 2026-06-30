@@ -11,8 +11,8 @@ Tags:
   - standard
   - feature
 Resource_Refs:
-  - 01_Core/04_Rules/
-  - 01_Core/05_Templates/
+  - 00_Core/04_Rules/
+  - 00_Core/05_Templates/
   - 06_Taste_Skills/
 - --
 
