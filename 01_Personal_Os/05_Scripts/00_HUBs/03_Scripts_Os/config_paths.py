@@ -152,7 +152,9 @@ INVENTORY_FILE = CORE_DIR / "01_Inventario_Core.md"  # fix: era 01_Inventario_To
 BRAIN_TEMPLATE_DIR = ROOT_DIR / "01_Personal_Os" / "04_Tasks" / "00_Templates"
 
 # Workflows (Estructura Jerárquica v4.7)
-WORKFLOWS_DIR = CORE_DIR / "00_Workflows_Os"
+# Auto-detecta v5 (00_Workflows) vs v4 (00_Workflows_Os)
+_workflows_v5 = CORE_DIR / "00_Workflows"
+WORKFLOWS_DIR = _workflows_v5 if _workflows_v5.exists() else CORE_DIR / "00_Workflows_Os"
 WORKFLOWS_PERSONAL_DIR = WORKFLOWS_DIR / "01_Personal_Os"
 WORKFLOWS_MARVEL_DIR = WORKFLOWS_DIR / "02_Marvel"
 WORKFLOWS_GENTLEMAN_DIR = WORKFLOWS_DIR / "03_Gentleman"

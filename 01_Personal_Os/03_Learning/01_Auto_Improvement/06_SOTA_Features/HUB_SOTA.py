@@ -13,25 +13,52 @@ import sys
 import json
 from pathlib import Path
 
-# Add to path for imports
 SOTA_DIR = Path(__file__).parent
 sys.path.insert(0, str(SOTA_DIR))
 
-from config import load_config, is_feature_enabled
-from contemplation_loop.engine import ContemplationLoopEngine
-from voice_profile.engine import VoiceProfileEngine
-from memory_versioning.engine import MemoryVersioningEngine
-from feedback_loop.engine import FeedbackLoopEngine
-from ambient_intelligence.engine import AmbientIntelligenceEngine
+# =============================================================================
+# Config stub — si no existe config.py, usa defaults locales
+# =============================================================================
+try:
+    from config import load_config, is_feature_enabled
+except ImportError:
+    def load_config():
+        cfg = SOTA_DIR / "config.yaml"
+        if cfg.exists():
+            import yaml
+            return yaml.safe_load(cfg.read_text()) or {}
+        return {"sota_features": {}, "global": {"dry_run": False, "log_level": "INFO"}}
+    def is_feature_enabled(name):
+        cfg = load_config()
+        return cfg.get("sota_features", {}).get(name, {}).get("enabled", False)
 
+# =============================================================================
+# SOTA Engine imports with graceful fallback
+# =============================================================================
+class _EngineStub:
+    """Stub para SOTA engines no instalados."""
+    def execute(self):
+        return {"status": "unavailable", "reason": "Engine module not installed"}
 
-FEATURES = {
-    '01_contemplation_loop': ContemplationLoopEngine,
-    '02_voice_profile': VoiceProfileEngine,
-    '03_memory_versioning': MemoryVersioningEngine,
-    '04_feedback_loop': FeedbackLoopEngine,
-    '05_ambient_intelligence': AmbientIntelligenceEngine
+def _try_import(module_path, class_name):
+    try:
+        mod = __import__(module_path, fromlist=[class_name])
+        return getattr(mod, class_name)
+    except (ImportError, AttributeError):
+        return _EngineStub
+
+FEATURE_ENGINES = {
+    '01_contemplation_loop':  ("contemplation_loop.engine", "ContemplationLoopEngine"),
+    '02_voice_profile':       ("voice_profile.engine", "VoiceProfileEngine"),
+    '03_memory_versioning':   ("memory_versioning.engine", "MemoryVersioningEngine"),
+    '04_feedback_loop':       ("feedback_loop.engine", "FeedbackLoopEngine"),
+    '05_ambient_intelligence':("ambient_intelligence.engine", "AmbientIntelligenceEngine"),
 }
+
+FEATURES = {}
+for key, (mod_path, cls_name) in FEATURE_ENGINES.items():
+    engine_cls = _try_import(mod_path, cls_name)
+    FEATURES[key] = engine_cls
 
 
 def show_status():

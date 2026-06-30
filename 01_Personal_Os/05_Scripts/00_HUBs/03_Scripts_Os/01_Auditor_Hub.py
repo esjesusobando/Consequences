@@ -38,7 +38,11 @@ from config_paths import *
 
 # PROJECT_ROOT ya viene de config_paths como ROOT_DIR
 PROJECT_ROOT = ROOT_DIR
-REPORTS_DIR = ROOT_DIR / "03_Resultado" / "04_Reportes"
+REPORTS_DIR = (
+    ROOT_DIR / "03_Resultado" / "07_Reports"
+    if (ROOT_DIR / "03_Resultado" / "07_Reports").exists()
+    else ROOT_DIR / "03_Resultado" / "03_Reportes"
+)
 
 # DIMENSIONES v6.2 - usando config_paths
 DIMENSIONS = [
