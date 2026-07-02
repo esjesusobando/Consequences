@@ -195,7 +195,7 @@ export default function WaveformPlayer({
           <Disc className={`w-4 h-4 text-ash group-hover:text-white`} />
         </div>
         <div className="min-w-0 flex-1">
-          <div className="font-mono text-[9px] text-[#7A839E]/80 tracking-wider flex items-center gap-1.5 uppercase">
+          <div className="font-mono text-[9px] text-ash/80 tracking-wider flex items-center gap-1.5 uppercase">
             <Radio className="w-3 h-3 text-signal-magenta inline" /> EP_RECEIVER // SIGNAL_{currentTrack.num}
           </div>
           <div className="font-body text-xs font-semibold text-bone truncate">
@@ -250,7 +250,7 @@ export default function WaveformPlayer({
             setVolume(val);
             onLogMessage('info', `Receiver audio volume adjusted to ${Math.floor(val * 100)}%`);
           }}
-          className="w-full accent-signal-cyan h-1 bg-[#1E2435] rounded-lg cursor-pointer"
+          className="w-full accent-signal-cyan h-1 bg-graphite rounded-lg cursor-pointer"
         />
       </div>
 

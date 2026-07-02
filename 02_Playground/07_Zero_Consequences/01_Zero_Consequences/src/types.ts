@@ -104,7 +104,7 @@ export interface WarehouseTransfer {
 }
 
 // === Customizable System Space ===
-export type ThemeMode = 'dark' | 'light_neocraft' | 'craft' | 'cyber';
+export type ThemeMode = 'dark' | 'light_neocraft' | 'craft' | 'cyber' | 'editorial';
 
 export interface PresentationConfig {
   backgroundImage: string;

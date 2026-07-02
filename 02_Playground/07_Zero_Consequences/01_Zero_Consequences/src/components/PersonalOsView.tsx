@@ -256,7 +256,7 @@ export default function PersonalOsView({
                         className="max-h-24 w-auto rounded object-contain border border-graphite"
                         referrerPolicy="no-referrer"
                       />
-                      <span className="text-[9px] font-mono text-[#7A839E] mt-2 truncate w-full text-center">
+                      <span className="text-[9px] font-mono text-ash mt-2 truncate w-full text-center">
                         {ocrImageName}
                       </span>
                     </div>

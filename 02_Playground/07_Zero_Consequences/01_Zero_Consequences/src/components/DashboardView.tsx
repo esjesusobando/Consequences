@@ -122,13 +122,14 @@ export default function DashboardView({
   }, [projectName]);
 
   // Neutral color cycling for countdown header text (visibility on any background)
+  // Uses text-ash which adapts to both dark (#7A839E) and editorial (#6B7280) modes
   const neutralColors = [
-    'text-gray-300',
-    'text-slate-300',
-    'text-zinc-300',
-    'text-stone-300',
-    'text-neutral-300',
-    'text-gray-100',
+    'text-ash',
+    'text-ash/80',
+    'text-ash/70',
+    'text-ash/85',
+    'text-ash/75',
+    'text-ash/90',
   ];
   const [headerColorIndex, setHeaderColorIndex] = useState<number>(0);
 
@@ -576,8 +577,8 @@ export default function DashboardView({
         <div className="flex justify-between items-center w-full z-10">
           <div className="flex gap-2 items-center">
             <div className={`w-1.5 h-1.5 rounded-full ${getAccentSolidBg()}`} />
-            <div className="w-10 h-[1px] bg-[#1E2435]" />
-            <span className="font-mono text-[9px] tracking-widest text-[#7A839E]/80">MEETING_SYNC_SYS</span>
+            <div className="w-10 h-[1px] bg-graphite" />
+            <span className="font-mono text-[9px] tracking-widest text-ash/80">MEETING_SYNC_SYS</span>
           </div>
 
           <div className="flex gap-4 items-center mb-1">
@@ -591,7 +592,7 @@ export default function DashboardView({
                 }}
                 className="flex items-center gap-1 bg-black/40 px-2 py-1 rounded"
               >
-                <span className="font-mono text-[9px] uppercase text-[#7A839E]">Proyecto:</span>
+                <span className="font-mono text-[9px] uppercase text-ash">Proyecto:</span>
                 <input
                   defaultValue={projectName}
                   className="w-28 bg-transparent border border-signal-amber/40 outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[9px] uppercase"
@@ -602,7 +603,7 @@ export default function DashboardView({
             ) : (
               <span
                 onClick={() => setEditingProject(true)}
-                className="font-mono text-[9px] tracking-wider text-[#7A839E] uppercase flex items-center gap-1.5 bg-black/40 px-2 py-1 rounded cursor-pointer hover:text-bone transition-colors"
+                className="font-mono text-[9px] tracking-wider text-ash uppercase flex items-center gap-1.5 bg-black/40 px-2 py-1 rounded cursor-pointer hover:text-bone transition-colors"
                 title="Clic para editar nombre del proyecto"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-signal-amber animate-pulse" />
@@ -655,7 +656,7 @@ export default function DashboardView({
           {/* Editable Project Name below countdown */}
           <div className="mt-4 flex justify-center">
             <div className="flex items-center gap-2 bg-black/30 border border-signal-amber/20 rounded-lg px-3 py-1.5">
-              <span className="font-mono text-[8px] uppercase text-[#7A839E] tracking-wider">Proyecto:</span>
+              <span className="font-mono text-[8px] uppercase text-ash tracking-wider">Proyecto:</span>
               <input
                 value={projectName}
                 onChange={(e) => setProjectName(e.target.value)}
@@ -1246,7 +1247,7 @@ export default function DashboardView({
                               <span className={`font-mono text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wide ${
                                 isActive 
                                   ? 'bg-signal-cyan/10 text-signal-cyan border border-signal-cyan/20' 
-                                  : 'bg-[#1E2435]/40 text-ash border border-transparent'
+                                  : 'bg-graphite/40 text-ash border border-transparent'
                               }`}>
                                 {sig.time}
                               </span>
@@ -1305,7 +1306,7 @@ export default function DashboardView({
                             </div>
                           </div>
 
-                          <div className="font-body text-xs font-semibold text-[#dfe2ef] tracking-wide mt-1 pl-3">
+                          <div className="font-body text-xs font-semibold text-bone tracking-wide mt-1 pl-3">
                             {sig.title}
                           </div>
 

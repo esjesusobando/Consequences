@@ -102,7 +102,7 @@ export default function AnalyticsOSView({
         {/* Metric Card 1: Valuation Total */}
         <div className="bg-carbon/25 border border-graphite/45 rounded-xl p-5 flex items-center justify-between backdrop-blur-md relative overflow-hidden">
           <div className="flex flex-col gap-1.5">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-[#7A839E]">VALORACIÓN TOTAL DEL INVENTARIO</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-ash">VALORACIÓN TOTAL DEL INVENTARIO</span>
             <span className="text-2xl font-bold font-mono text-glow-cyan text-signal-cyan">
               ${totalInventoryValuation.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} USD
             </span>
@@ -114,7 +114,7 @@ export default function AnalyticsOSView({
         {/* Metric Card 2: Rotation Index */}
         <div className="bg-carbon/25 border border-graphite/45 rounded-xl p-5 flex items-center justify-between backdrop-blur-md relative overflow-hidden">
           <div className="flex flex-col gap-1.5">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-[#7A839E]">ROTACIÓN DE INVENTARIO (ROT)</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-ash">ROTACIÓN DE INVENTARIO (ROT)</span>
             <span className="text-2xl font-bold font-mono text-[#C6FF3D] text-glow-lime">
               {simulatedTurnoverRate.toFixed(1)}x / Año
             </span>
@@ -126,7 +126,7 @@ export default function AnalyticsOSView({
         {/* Metric Card 3: Best Seller */}
         <div className="bg-carbon/25 border border-graphite/45 rounded-xl p-5 flex items-center justify-between backdrop-blur-md relative overflow-hidden">
           <div className="flex flex-col gap-1.5">
-            <span className="font-mono text-[9px] uppercase tracking-widest text-[#7A839E]">PRESELECCIÓN DE PRODUCTOS POPULARES</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest text-ash">PRESELECCIÓN DE PRODUCTOS POPULARES</span>
             <span className="text-sm font-bold text-bone truncate max-w-sm">
               Quantum Aura Core V5
             </span>
@@ -152,7 +152,7 @@ export default function AnalyticsOSView({
                   <FileSpreadsheet className="w-4 h-4 text-signal-lime" />
                   Módulo de Reportes Forenses & Documentos Descarables
                 </h3>
-                <span className="text-[9px] text-[#7A839E] font-mono block mt-1">Exportación en vivo del estado contable y logístico.</span>
+                <span className="text-[9px] text-ash font-mono block mt-1">Exportación en vivo del estado contable y logístico.</span>
               </div>
             </div>
 
@@ -243,7 +243,7 @@ export default function AnalyticsOSView({
 
                 <button
                   onClick={handlePrintLabel}
-                  className="w-full py-2 bg-[#1E2435] hover:bg-[#2A3148] border border-graphite/80 hover:text-bone text-xs font-mono font-bold uppercase rounded-lg flex items-center justify-center gap-1.5 text-slate select-pointer"
+                  className="w-full py-2 bg-graphite hover:bg-graphite/80 border border-graphite/80 hover:text-bone text-xs font-mono font-bold uppercase rounded-lg flex items-center justify-center gap-1.5 text-slate select-pointer"
                 >
                   <Printer className="w-3.5 h-3.5" /> Mandar a Impresión
                 </button>
@@ -326,7 +326,7 @@ export default function AnalyticsOSView({
 
             <form onSubmit={handleSaveNotificationConfig} className="flex flex-col gap-3 font-mono text-[10.5px]">
               <div className="flex flex-col gap-1.5">
-                <label className="text-[9px] text-[#7A839E] uppercase">Email de supervisor directivo</label>
+                <label className="text-[9px] text-ash uppercase">Email de supervisor directivo</label>
                 <input 
                   type="email" 
                   value={emailAlerts}

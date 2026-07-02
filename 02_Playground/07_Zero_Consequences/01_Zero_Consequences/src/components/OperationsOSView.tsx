@@ -332,7 +332,7 @@ export default function OperationsOSView({
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded text-[10px] font-mono font-bold uppercase transition-all ${
                   active 
                     ? 'bg-signal-lime text-void' 
-                    : 'text-[#7A839E] hover:text-bone hover:bg-carbon'
+                    : 'text-ash hover:text-bone hover:bg-carbon'
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
@@ -440,7 +440,7 @@ export default function OperationsOSView({
                       <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-bone">
                         Inventariado de Variantes: {selectedProduct.name}
                       </h3>
-                      <span className="text-[9px] text-[#7A839E] font-mono">Unidades y precios diferenciados de distribución</span>
+                      <span className="text-[9px] text-ash font-mono">Unidades y precios diferenciados de distribución</span>
                     </div>
                     <span className="font-mono text-[9px] text-signal-lime uppercase px-2 py-0.5 border border-signal-lime/25 bg-signal-lime/5 rounded">
                       SKU Raíz: {selectedProduct.sku}
@@ -582,7 +582,7 @@ export default function OperationsOSView({
                   <Truck className="w-4 h-4 text-signal-lime" />
                   Comparativa de Costos vs Tiempos de Entrega
                 </h3>
-                <span className="text-[9px] text-[#7A839E] font-mono block mt-1">
+                <span className="text-[9px] text-ash font-mono block mt-1">
                   Mapeo analítico logístico para optimización del ROI de reabastecimiento crítico.
                 </span>
               </div>
@@ -627,7 +627,7 @@ export default function OperationsOSView({
                         <div key={p.providerName} className="flex flex-col gap-1">
                           <div className="flex justify-between text-bone">
                             <span>{p.providerName}</span>
-                            <span className={`font-bold ${isOptimal ? 'text-signal-lime text-glow-lime' : 'text-[#7A839E]'}`}>
+                            <span className={`font-bold ${isOptimal ? 'text-signal-lime text-glow-lime' : 'text-ash'}`}>
                               {p.deliveryDays} Días
                             </span>
                           </div>
@@ -733,7 +733,7 @@ export default function OperationsOSView({
 
               {/* Listado de Órdenes creadas con flujo de recepción */}
               <div className="bg-carbon/25 border border-graphite/45 backdrop-blur-md rounded-xl p-5 flex flex-col gap-4">
-                <span className="font-mono text-[10px] uppercase text-[#7A839E] font-semibold block">Seguimiento de Órdenes y Recepción Directa</span>
+                <span className="font-mono text-[10px] uppercase text-ash font-semibold block">Seguimiento de Órdenes y Recepción Directa</span>
                 
                 <div className="flex flex-col gap-3">
                   {purchaseOrders.map((po) => {
@@ -806,7 +806,7 @@ export default function OperationsOSView({
                   <ArrowRightLeft className="w-4 h-4 text-signal-lime" />
                   Módulo de Transferencias de Inventario Inter-Ubicaciones
                 </h3>
-                <span className="text-[9px] text-[#7A839E] font-mono block mt-1">
+                <span className="text-[9px] text-ash font-mono block mt-1">
                   Mueve stock seguro desde tu Almacén Central a cualquier sucursal con validaciones integradas de cubicaciones.
                 </span>
               </div>
@@ -950,7 +950,7 @@ export default function OperationsOSView({
                     <span className="font-bold text-bone">{wh.name}</span>
                     <span className="text-[8.5px] font-mono text-signal-cyan uppercase font-bold bg-[#00F0FF]/10 p-0.5 px-1.5 rounded">{wh.id}</span>
                   </div>
-                  <p className="text-[#7A839E] font-body text-[10px] leading-relaxed">
+                  <p className="text-ash font-body text-[10px] leading-relaxed">
                     Dirección: {wh.location}
                   </p>
                 </div>

@@ -604,6 +604,22 @@ export default function SettingsDrawer({
           sidebarWidth: 384,
           themeMode: 'cyber'
         }
+      },
+      {
+        id: 'preset-editorial',
+        name: 'Notion Editorial',
+        accent: 'cyan' as AccentColor,
+        config: {
+          backgroundImage: "",
+          backdropBlur: 0,
+          overlayOpacity: 0,
+          audioLoop: 'synth-pad',
+          volume: 15,
+          isPlayingSound: false,
+          panelsSwapped: false,
+          sidebarWidth: 340,
+          themeMode: 'editorial'
+        }
       }
     ];
   });
@@ -872,7 +888,7 @@ export default function SettingsDrawer({
           </CollapsibleSection>
 
           {/* ════════════════════════════════════════════════════════════════ */}
-          {/* 3. MODO DE DISEÑO (solo Dark + Light)                           */}
+          {/* 3. MODO DE DISEÑO                                               */}
           {/* ════════════════════════════════════════════════════════════════ */}
           <CollapsibleSection
             title="MODO DE DISEÑO"
@@ -880,7 +896,7 @@ export default function SettingsDrawer({
             accentColor="#00F0FF"
             sectionKey="theme"
           >
-            <div className="grid grid-cols-2 gap-2 mt-1">
+            <div className="grid grid-cols-3 gap-2 mt-1">
               <button
                 type="button"
                 onClick={() => { setConfig(prev => ({ ...prev, themeMode: 'dark' })); onLogMessage('info', 'Modo Oscuro'); }}
@@ -901,6 +917,17 @@ export default function SettingsDrawer({
                   <div className="w-2.5 h-2.5 rounded-full bg-[#156BFF]" />
                 </div>
                 <span className="text-[9px] font-mono font-bold uppercase text-bone mt-1">LIGHT</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => { setConfig(prev => ({ ...prev, themeMode: 'editorial' })); onLogMessage('ok', 'Modo Editorial'); }}
+                className={`flex flex-col items-center gap-1 p-2.5 rounded-lg border text-center transition-all cursor-pointer ${config.themeMode === 'editorial' ? 'border-signal-cyan bg-signal-cyan/10 font-bold' : 'border-graphite/40 bg-void/35 hover:border-graphite'}`}
+              >
+                <div className="w-5 h-5 rounded bg-[#FFFFFF] border border-[#E2E4E8] flex items-center justify-center">
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#00838F]" />
+                </div>
+                <span className="text-[9px] font-mono font-bold uppercase text-bone mt-1">EDITORIAL</span>
               </button>
             </div>
           </CollapsibleSection>
@@ -982,7 +1009,7 @@ export default function SettingsDrawer({
                       <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: ws.accent === 'tokyo' ? '#d4b395' : ws.accent === 'custom' ? 'hsl(180,100%,50%)' : `var(--color-signal-${ws.accent})` }} />
                       <span className="font-mono text-[9px] font-bold text-bone uppercase">{ws.name}</span>
                     </div>
-                    {ws.id !== 'preset-sota' && ws.id !== 'preset-minimal' && ws.id !== 'preset-craft' && ws.id !== 'preset-cyber' && (
+                    {ws.id !== 'preset-sota' && ws.id !== 'preset-minimal' && ws.id !== 'preset-craft' && ws.id !== 'preset-cyber' && ws.id !== 'preset-editorial' && (
                       <button onClick={(e) => handleDeleteWorkspace(ws.id, e)} className="p-0.5 text-slate hover:text-signal-magenta rounded transition-all opacity-0 group-hover:opacity-100" title="Eliminar">
                         <Trash2 className="w-2.5 h-2.5" />
                       </button>

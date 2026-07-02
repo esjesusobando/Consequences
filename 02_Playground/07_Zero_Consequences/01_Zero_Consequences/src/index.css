@@ -100,3 +100,208 @@
 .glitch-layer-2 {
   animation: glitch-anim-2 3.5s infinite linear alternate-reverse;
 }
+
+/* ══════════════════════════════════════════════════════════════
+   EDITORIAL MODE OVERRIDES (Notion/Craft/Maven-inspired light)
+   ══════════════════════════════════════════════════════════════
+   Activated via data-theme="editorial" on <html> by App.tsx
+   ══════════════════════════════════════════════════════════════ */
+[data-theme="editorial"] {
+  color-scheme: light;
+}
+
+/* Subtle bg-grid for editorial (light gray grid instead of dark) */
+[data-theme="editorial"] .bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  opacity: 1 !important;
+}
+
+/* Editorial glows → subtle shadows instead of neon */
+[data-theme="editorial"] .glow-cyan {
+  box-shadow: 0 1px 3px rgba(0, 131, 143, 0.15), 0 1px 2px rgba(0, 131, 143, 0.08);
+}
+[data-theme="editorial"] .glow-magenta {
+  box-shadow: 0 1px 3px rgba(198, 40, 40, 0.15), 0 1px 2px rgba(198, 40, 40, 0.08);
+}
+[data-theme="editorial"] .glow-lime {
+  box-shadow: 0 1px 3px rgba(85, 130, 47, 0.15), 0 1px 2px rgba(85, 130, 47, 0.08);
+}
+[data-theme="editorial"] .glow-amber {
+  box-shadow: 0 1px 3px rgba(174, 101, 0, 0.15), 0 1px 2px rgba(174, 101, 0, 0.08);
+}
+
+/* Editorial text glows → clean no-glow (shadows look bad in light mode) */
+[data-theme="editorial"] .text-glow-cyan,
+[data-theme="editorial"] .text-glow-magenta,
+[data-theme="editorial"] .text-glow-lime,
+[data-theme="editorial"] .text-glow-amber {
+  text-shadow: none;
+}
+
+/* Editorial custom scrollbar (light version) */
+[data-theme="editorial"] .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+[data-theme="editorial"] .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 2px;
+}
+[data-theme="editorial"] .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Editorial drawer background override */
+[data-theme="editorial"] #settings-ambient-drawer {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-left-color: #E2E4E8 !important;
+}
+
+/* Editorial SideNavBar hardcoded bg overrides */
+[data-theme="editorial"] .flex.flex-col.gap-3\\.5.mt-6.w-full.px-2 .absolute.left-16 {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: #E2E4E8 !important;
+}
+
+/* Editorial drawer footer bg override */
+[data-theme="editorial"] #settings-ambient-drawer > div:last-child {
+  background: #F8F9FA !important;
+  border-top-color: #E2E4E8 !important;
+}
+
+/* Editorial drawer text overrides for hardcoded colors */
+[data-theme="editorial"] #settings-ambient-drawer .text-bone {
+  color: #1F2937 !important;
+}
+[data-theme="editorial"] #settings-ambient-drawer .text-slate {
+  color: #6B7280 !important;
+}
+[data-theme="editorial"] #settings-ambient-drawer .text-ash {
+  color: #6B7280 !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Editorial DashboardView Countdown overrides
+   ══════════════════════════════════════════════════════════════ */
+
+/* Hardcoded light gray countdown metadata text → dark enough for white bg */
+[data-theme="editorial"] .text-\[\#A6AFC9\] {
+  color: #6B7280 !important;
+}
+
+/* Hardcoded medium gray text (minus sign, --:--:--) → readable but subtle on white */
+[data-theme="editorial"] .text-\[\#4A5273\] {
+  color: #9CA3AF !important;
+}
+
+/* Matte-white accent countdown text → visible in editorial mode */
+[data-theme="editorial"] .text-\[\#E8E4D9\] {
+  color: #1F2937 !important;
+}
+
+/* Near-white signal title in sidebar → use editorial bone color */
+[data-theme="editorial"] .text-\[\#dfe2ef\] {
+  color: #1F2937 !important;
+}
+
+/* Dark overlays (bg-black/30, bg-black/40) → light overlays in editorial mode */
+[data-theme="editorial"] .bg-black\/30 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+[data-theme="editorial"] .bg-black\/40 {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* bg-carbon/50 → light overlay in editorial mode */
+[data-theme="editorial"] .bg-carbon\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Editorial SettingsDrawer (image/wallpaper tools) overrides
+   ══════════════════════════════════════════════════════════════ */
+
+/* Hardcoded dark bg upload area → light gray in editorial */
+[data-theme="editorial"] #settings-ambient-drawer .bg-\[\#131826\]\/30 {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Hardcoded dark input backgrounds → light gray in editorial */
+[data-theme="editorial"] #settings-ambient-drawer .bg-\[\#04060A\] {
+  background-color: #F3F4F6 !important;
+}
+
+/* Hardcoded dark workspace items → light gray in editorial */
+[data-theme="editorial"] #settings-ambient-drawer .bg-\[\#0c101b\] {
+  background-color: #F8F9FA !important;
+}
+
+/* White border on selected accent button → visible gray border in editorial */
+[data-theme="editorial"] #settings-ambient-drawer .border-white {
+  border-color: #00838F !important;
+}
+[data-theme="editorial"] #settings-ambient-drawer .bg-white\/5 {
+  background-color: rgba(0, 131, 143, 0.08) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Editorial PhotoEditor overrides
+   ══════════════════════════════════════════════════════════════ */
+
+/* Main PhotoEditor containers (#090B10 → white) */
+[data-theme="editorial"] .bg-\[\#090B10\] {
+  background-color: #FFFFFF !important;
+}
+[data-theme="editorial"] .bg-\[\#090B10\]\/80 {
+  background-color: rgba(255,255,255,0.8) !important;
+}
+
+/* Canvas zone before state (#111 → light gray) */
+[data-theme="editorial"] .bg-\[\#111\] {
+  background-color: #F3F4F6 !important;
+}
+
+/* PhotoEditor button text on cyan bg (#090B10 text → white) */
+[data-theme="editorial"] .text-\[\#090B10\] {
+  color: #FFFFFF !important;
+}
+
+/* PhotoEditor slider track (inline #12161F → light gray) */
+[data-theme="editorial"] .photo-editor-slider {
+  background: #E5E7EB !important;
+}
+
+/* PhotoEditor slider fill (inline #12161F → matched) */
+[data-theme="editorial"] .photo-editor-slider-fill {
+  background: #D1D5DB !important;
+}
+
+/* PhotoEditor slider thumb (inline #1A1F2E → light) */
+[data-theme="editorial"] .photo-editor-slider-thumb {
+  background: #FFFFFF !important;
+  border-color: #D1D5DB !important;
+  box-shadow: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   Editorial DashboardView input overrides
+   ══════════════════════════════════════════════════════════════ */
+
+/* All hardcoded dark input backgrounds across DashboardView */
+[data-theme="editorial"] .bg-\[\#03060C\] {
+  background-color: #F3F4F6 !important;
+}
+[data-theme="editorial"] .bg-\[\#04060A\] {
+  background-color: #F3F4F6 !important;
+}
+
+/* Inactive theme buttons in SettingsDrawer — bg-void/35 invisible on white */
+[data-theme="editorial"] #settings-ambient-drawer .bg-void\/35 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Dark bg for add-signal button (#131826/30 → light) */
+[data-theme="editorial"] .bg-\[\#131826\]\/30 {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}

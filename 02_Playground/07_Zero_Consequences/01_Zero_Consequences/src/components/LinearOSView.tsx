@@ -477,7 +477,7 @@ export default function LinearOSView({
               <span className="font-mono text-[10px] text-slate uppercase tracking-wider">
                 Tareas Totales Registradas ({projectIssues.length})
               </span>
-              <span className="font-mono text-[9px] text-[#7A839E]/85">Click en el elemento para desplegar criterios SOTA</span>
+              <span className="font-mono text-[9px] text-ash/85">Click en el elemento para desplegar criterios SOTA</span>
             </div>
 
             {projectIssues.length === 0 ? (
@@ -583,7 +583,7 @@ export default function LinearOSView({
 
             <div>
               <span className="font-mono text-[9px] uppercase text-slate block mb-1">Descripción de Ingeniería</span>
-              <div className="bg-[#04060A] text-[#7A839E] border border-graphite/50 p-3 rounded text-[11px] leading-relaxed">
+              <div className="bg-[#04060A] text-ash border border-graphite/50 p-3 rounded text-[11px] leading-relaxed">
                 {selectedIssue.description}
               </div>
             </div>
@@ -591,7 +591,7 @@ export default function LinearOSView({
             {/* Checklist de Criterios de Aceptación Claras y Verificables */}
             <div>
               <div className="flex items-center justify-between mb-2">
-                <span className="font-mono text-[10px] uppercase text-[#7A839E] font-semibold flex items-center gap-1.5">
+                <span className="font-mono text-[10px] uppercase text-ash font-semibold flex items-center gap-1.5">
                   <FileCheck className="w-3.5 h-3.5 text-signal-lime" />
                   Criterios de Aceptación
                 </span>
@@ -623,7 +623,7 @@ export default function LinearOSView({
 
             {/* Acciones de Estado del Mazo */}
             <div className="border-t border-graphite/30 pt-3 flex flex-col gap-2 mt-2">
-              <span className="font-mono text-[9px] text-[#7A839E]/80 uppercase">Ajustar Estado Actual</span>
+              <span className="font-mono text-[9px] text-ash/80 uppercase">Ajustar Estado Actual</span>
               <div className="grid grid-cols-2 gap-2">
                 <button
                   onClick={() => handleUpdateIssueStatus(selectedIssue.id, 'in_progress')}

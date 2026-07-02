@@ -20,6 +20,7 @@ import EmailView from './components/EmailView';
 import TaskBacklog from './components/TaskBacklog';
 import MarketingView from './components/MarketingView';
 import FocusMode from './components/FocusMode';
+import ToolsView from './components/ToolsView';
 
 // Types & Data
 import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog, BacklogTask } from './types';
@@ -511,6 +512,10 @@ export default function App() {
   useEffect(() => {
     const root = document.documentElement;
 
+    // Set data-theme attribute for CSS-based overrides (editorial modes, etc.)
+    const theme = presentationConfig.themeMode ?? 'dark';
+    root.setAttribute('data-theme', theme);
+
     // First, restore standard variables (default dark theme)
     const standardColors = {
       '--color-void': '#04060A',
@@ -525,13 +530,15 @@ export default function App() {
       '--color-signal-magenta': '#FF2E9A',
       '--color-signal-lime': '#C6FF3D',
       '--color-signal-amber': '#FFB400',
+      '--color-on-surface': '#ECEEF5',
+      '--color-on-primary': '#04060A',
+      '--color-paper': '#131826',
     };
 
     Object.entries(standardColors).forEach(([key, val]) => {
       root.style.setProperty(key, val);
     });
 
-    const theme = presentationConfig.themeMode ?? 'dark';
     const accentHexMap: Record<string, string> = {
       cyan: '#00F0FF', magenta: '#FF2E9A', lime: '#C6FF3D', amber: '#FFB400'
     };
@@ -659,6 +666,51 @@ export default function App() {
         if (accent === 'matte-white') root.style.setProperty('--color-signal-cyan', '#E8E4D9');
       } else {
         root.style.setProperty('--accent-hex', '#156BFF');
+      }
+    }
+    // ---- EDITORIAL MODE (Notion/Craft/Maven-inspired light) ----
+    else if (theme === 'editorial') {
+      const editorialColors = {
+        '--color-void': '#FFFFFF',
+        '--color-night': '#F8F9FA',
+        '--color-carbon': '#FFFFFF',
+        '--color-graphite': '#E2E4E8',
+        '--color-steel': '#D1D5DB',
+        '--color-slate': '#6B7280',
+        '--color-ash': '#4B5563',
+        '--color-bone': '#1F2937',
+        '--color-on-surface': '#1F2937',
+        '--color-on-primary': '#FFFFFF',
+        '--color-paper': '#F0F1F3',
+        '--color-signal-cyan': '#00838F',
+        '--color-signal-magenta': '#C62828',
+        '--color-signal-lime': '#55822F',
+        '--color-signal-amber': '#AE6500',
+      };
+      Object.entries(editorialColors).forEach(([key, val]) => {
+        root.style.setProperty(key, val);
+      });
+
+      const editorialAccents: Record<string, string> = {
+        cyan: '#00838F', magenta: '#C62828', lime: '#55822F', amber: '#AE6500',
+        tokyo: '#8B7355', 'matte-white': '#E8E4D9'
+      };
+
+      if (accent === 'custom') {
+        const h = presentationConfig.customH ?? 210;
+        const s = presentationConfig.customS ?? 100;
+        const l = presentationConfig.customL ?? 50;
+        root.style.setProperty('--color-signal-cyan', `hsl(${h}, ${s}%, ${l}%)`);
+        root.style.setProperty('--accent-hex', `hsl(${h}, ${s}%, ${l}%)`);
+      } else if (accent !== 'cyan') {
+        root.style.setProperty('--accent-hex', editorialAccents[accent] || '#00838F');
+        if (accent === 'magenta') root.style.setProperty('--color-signal-cyan', '#C62828');
+        if (accent === 'lime') root.style.setProperty('--color-signal-cyan', '#55822F');
+        if (accent === 'amber') root.style.setProperty('--color-signal-cyan', '#AE6500');
+        if (accent === 'tokyo') root.style.setProperty('--color-signal-cyan', '#8B7355');
+        if (accent === 'matte-white') root.style.setProperty('--color-signal-cyan', '#E8E4D9');
+      } else {
+        root.style.setProperty('--accent-hex', '#00838F');
       }
     }
     // ---- DARK MODE (default) ----
@@ -941,6 +993,14 @@ export default function App() {
               onLogMessage={logMessage}
               onInjectSignalFromCmd={handleInjectSignalFromCmd}
               onExit={() => setActiveTab('dashboard')}
+            />
+          )}
+
+          {/* TAB 8: TOOLS (Prompt Library, Image Editor, Remove BG, QR, Passwords) */}
+          {activeTab === 'tools' && (
+            <ToolsView
+              accent={accent}
+              onLogMessage={logMessage}
             />
           )}
         </motion.div>

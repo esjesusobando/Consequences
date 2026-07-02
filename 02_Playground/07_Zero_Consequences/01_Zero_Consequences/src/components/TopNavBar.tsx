@@ -95,7 +95,7 @@ export default function TopNavBar({
     return (
       <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 h-9 bg-void/90 backdrop-blur-md border-b border-graphite/30">
         <div className="flex items-center gap-3">
-          <span className="font-mono text-[9px] text-[#7A839E] uppercase tracking-widest">
+          <span className="font-mono text-[9px] text-ash uppercase tracking-widest">
             {tabLabels[activeTab]}
           </span>
         </div>
@@ -103,7 +103,7 @@ export default function TopNavBar({
           <button
             onClick={onToggleFocus}
             className={`w-6 h-6 flex items-center justify-center rounded transition-colors ${
-              focusMode ? 'text-signal-lime' : 'text-[#7A839E] hover:text-bone'
+              focusMode ? 'text-signal-lime' : 'text-ash hover:text-bone'
             }`}
             title={focusMode ? 'Salir de Focus' : 'Focus Mode'}
           >
@@ -124,7 +124,7 @@ export default function TopNavBar({
         {/* LEFT: Clock + Location name (click to show panel) */}
         <div className="flex items-center gap-4">
           {/* Clock */}
-          <span className="font-mono text-[9px] text-[#7A839E] tracking-wider">
+          <span className="font-mono text-[9px] text-ash tracking-wider">
             {clockText}
           </span>
 
@@ -143,14 +143,14 @@ export default function TopNavBar({
               >
                 {tabLabels[activeTab]}
               </span>
-              <ChevronDown className="w-3 h-3 text-[#7A839E]" />
+              <ChevronDown className="w-3 h-3 text-ash" />
             </button>
 
             {/* Dropdown panel */}
             {showPanel && (
               <div className="absolute top-7 left-0 bg-carbon/95 backdrop-blur-md border border-graphite/50 rounded-lg shadow-xl py-1 min-w-[200px] z-[100] animate-fade-in">
                 <div className="px-3 py-1.5 border-b border-graphite/30">
-                  <span className="font-mono text-[8px] text-[#7A839E] uppercase tracking-widest">
+                  <span className="font-mono text-[8px] text-ash uppercase tracking-widest">
                     UBICACIÓN ACTUAL
                   </span>
                 </div>
@@ -164,7 +164,7 @@ export default function TopNavBar({
                         setShowPanel(false);
                       }}
                       className={`w-full text-left px-3 py-2 font-mono text-[10px] uppercase tracking-wider transition-colors cursor-pointer ${
-                        isActive ? 'text-bone font-bold' : 'text-[#7A839E] hover:text-bone'
+                        isActive ? 'text-bone font-bold' : 'text-ash hover:text-bone'
                       }`}
                     >
                       <span className="mr-2">{isActive ? '▸' : '·'}</span>
@@ -182,7 +182,7 @@ export default function TopNavBar({
           {/* Hamburger - Settings */}
           <button
             onClick={onOpenSettings}
-            className="w-6 h-6 flex items-center justify-center text-[#7A839E] hover:text-bone cursor-pointer transition-colors"
+            className="w-6 h-6 flex items-center justify-center text-ash hover:text-bone cursor-pointer transition-colors"
             title="Configuración"
           >
             <Menu className="w-3.5 h-3.5" />
@@ -191,7 +191,7 @@ export default function TopNavBar({
           {/* Ctrl+K command palette */}
           <button
             onClick={onOpenCommandPalette}
-            className="flex items-center gap-1 font-mono text-[8px] text-[#7A839E] hover:text-bone transition-colors cursor-pointer uppercase tracking-widest"
+            className="flex items-center gap-1 font-mono text-[8px] text-ash hover:text-bone transition-colors cursor-pointer uppercase tracking-widest"
             title="Command Palette (Ctrl+K)"
           >
             <span className="text-[7px] px-1 py-0.5 bg-graphite/40 rounded border border-graphite/60">⌘K</span>
@@ -201,7 +201,7 @@ export default function TopNavBar({
           <button
             onClick={onToggleFocus}
             className={`w-6 h-6 flex items-center justify-center rounded transition-colors ${
-              focusMode ? 'text-signal-lime' : 'text-[#7A839E] hover:text-bone'
+              focusMode ? 'text-signal-lime' : 'text-ash hover:text-bone'
             }`}
             title={focusMode ? 'Salir de Focus' : 'Focus Mode'}
           >

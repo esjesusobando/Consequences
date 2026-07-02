@@ -101,7 +101,7 @@ export default function DesignSystemView({
         <h1 className="font-display text-3xl sm:text-4xl font-bold uppercase tracking-tight text-bone">
           CONSEQUENCES DESIGN SPEC
         </h1>
-        <p className="text-[#7A839E]/80 font-body text-sm leading-relaxed max-w-2xl">
+        <p className="text-ash/80 font-body text-sm leading-relaxed max-w-2xl">
           Inspirado en interfaces de rendimiento técnico, estética cyberpunk, alto contraste adaptativo y control preciso de elementos de interfaz. Esta especificación describe el comportamiento métrico, colorimétrico y tipográfico de la plataforma Consequences.
         </p>
 
@@ -185,7 +185,7 @@ export default function DesignSystemView({
                 >
                   <div className="font-mono text-[10px] uppercase font-bold tracking-widest">{sig.name}</div>
                   <div className="text-[20px] font-bold tracking-tight font-display mt-2">{sig.hex}</div>
-                  <div className="text-[11px] text-[#7A839E] font-body leading-relaxed mt-2">{sig.desc}</div>
+                  <div className="text-[11px] text-ash font-body leading-relaxed mt-2">{sig.desc}</div>
                   
                   {isActiveAccent && (
                     <span className="absolute bottom-2 right-2 text-[9px] font-mono text-white bg-white/10 px-1 py-0.5 rounded">
@@ -408,7 +408,7 @@ export default function DesignSystemView({
 
             {/* Buttons Showcase */}
             <div className="space-y-3">
-              <span className="font-mono text-[10px] text-[#7A839E]/80 uppercase">// SYSTEM BUTTONS ACTION RIG</span>
+              <span className="font-mono text-[10px] text-ash/80 uppercase">// SYSTEM BUTTONS ACTION RIG</span>
               
               <div className="flex flex-wrap gap-2.5">
                 <button 
@@ -454,7 +454,7 @@ export default function DesignSystemView({
             
             return (
               <div key={item.token} className="flex items-center gap-4 group">
-                <div className="w-12 text-[#7A839E] font-bold uppercase">{item.token}</div>
+                <div className="w-12 text-ash font-bold uppercase">{item.token}</div>
                 <div className="flex-1 bg-[#131826] h-5 rounded overflow-hidden flex items-center relative">
                   <div 
                     className="h-full bg-gradient-to-r from-signal-cyan/50 to-signal-cyan transition-all duration-500 group-hover:brightness-110" 

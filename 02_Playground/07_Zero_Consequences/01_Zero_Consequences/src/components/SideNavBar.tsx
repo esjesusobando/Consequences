@@ -15,10 +15,11 @@ import {
   Mail,
   ListTodo,
   Megaphone,
+  Wrench,
 } from 'lucide-react';
 import { AccentColor } from '../types';
 
-export type TabId = 'dashboard' | 'email' | 'tasks' | 'marketing' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
+export type TabId = 'dashboard' | 'email' | 'tasks' | 'marketing' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal' | 'tools';
 
 interface SideNavBarProps {
   activeTab: TabId;
@@ -84,6 +85,7 @@ export default function SideNavBar({
     { id: 'analytics',    label: 'Analíticas',     icon: TrendingUp,    desc: 'Balance Valuación, QR, Reportes CSV/PDF',      ready: false },
     { id: 'specs',        label: 'Design Guide',   icon: Code,          desc: 'Guías de Estilo & Color Specs',                ready: false },
     { id: 'terminal',     label: 'CLI Terminal',   icon: Sliders,       desc: 'Comandos del Sistema',                         ready: false },
+    { id: 'tools',        label: 'Tools',          icon: Wrench,        desc: 'Editor Imagen, QR, Prompts, Passwords',        ready: true  },
   ];
 
   const visibleItems = menuItems.filter(item => item.ready);
