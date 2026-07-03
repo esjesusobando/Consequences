@@ -24,13 +24,13 @@ El archivo `.gitmodules` define rutas que NO existen en disco:
 
 ```ini
 # .gitmodules (ACTUAL — INCORRECTO)
-[submodule ".../05_Archive/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster"]
-[submodule ".../05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram"]
+[submodule ".../07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster"]
+[submodule ".../07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/engram"]
 ```
 
 La ruta real en disco es:
 ```
-01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
+01_Personal_Os/07_Archive/05_Repos/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
 ```
 
 **Falta el segmento `03_Backups_Refs/`** en el path del `.gitmodules`.

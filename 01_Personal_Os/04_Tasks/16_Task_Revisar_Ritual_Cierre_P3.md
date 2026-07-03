@@ -24,7 +24,7 @@ resource_refs:
 
 | Archivo                      | Ubicación                                                                                                              | Estado       |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------|
-| **Ritual_Cierre_Protocol.md**| `01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/12_Ritual_Cierre_Protocol.md`| Legacy/Backup|
+| **Ritual_Cierre_Protocol.md**| `01_Personal_Os/07_Archive/05_Repos/03_Backups_Audits/05_Legacy_Scripts_Backup/03_Backup_Workflows/12_Ritual_Cierre_Protocol.md`| Legacy/Backup|
 | **cierre.md**                | `.claude/01_Commands/cierre.md`                                                                                        | Activo?      |
 | **Ritual_Cierre_Protocol.md**| `.agent/03_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol.md`                                                      | Backup       |
 | **Ritual_Cierre_Protocol.md**| `02_Playground/00_Momentum/01_Personal_Os/05_Ritual_Cierre_Protocol.md`                                                | Playground   |

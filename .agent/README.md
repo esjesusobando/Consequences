@@ -124,7 +124,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 - **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for canonical skills (392); `.agent/02_Skills/` preserves backup skills
 - **CLAUDE.md:** See `./CLAUDE.md` for agent instructions
 - **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 163 scripts (30 HUBs)
-- **Manifests:** See `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/` for JARVIS 3.1
+- **Manifests:** See `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/` for v5 manifest
 
 ---
 

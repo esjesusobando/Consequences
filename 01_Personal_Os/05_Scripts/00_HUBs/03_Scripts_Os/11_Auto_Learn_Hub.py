@@ -36,7 +36,7 @@ try:
     from recursive_improvement_engine import RecursiveImprovementEngine
 except ImportError:
     print("ERROR: No se pudo importar el motor de automejora")
-    print("Asegurate de que existe: 05_Scripts/01_Auto_Improvement/01_Engine/")
+    print("Asegurate de que existe: 03_Learning/01_Auto_Improvement/01_Engine/")
     sys.exit(1)
 
 

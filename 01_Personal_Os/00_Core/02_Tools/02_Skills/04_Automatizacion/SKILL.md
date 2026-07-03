@@ -30,17 +30,17 @@ Automatización no es reemplazar trabajo humano — es eliminar el trabajo que u
 | `06_N8N_Validation/`           | Validación en workflows         |
 | `07_N8N_Workflows/`            | Workflows completos             |
 | `08_AI_News_Weekly/`           | AI News Weekly                  |
-| `08_N8N_Invictus/`             | N8N para Invictus               |
+| `09_N8N_Invictus/`             | N8N para Invictus               |
 | `09_Firecrawl/`                | Web scraping con Firecrawl      |
-| `10_GWS_Client/`               | Google Workspace Client         |
+| `12_GWS_Client/`               | Google Workspace Client         |
 | `11_Gcierr/`                   | Gcierr tool                     |
-| `11_Gws_Client/`               | GWS Client alternativo          |
+| `18_Gws_Client/`               | GWS Client alternativo          |
 | `12_N8N/`                      | N8N adicional                   |
 | `13_Content_From_Url/`         | Contenido desde URL             |
 | `14_Compound_Knowledge/`       | Compound Knowledge              |
 | `15_Os_Self_Improvement/`      | OS Self Improvement             |
-| `16_Reverse_Engineering/`      | Reverse Engineering             |
-| `17_Learning_Url_To_Knowledge/`| Learning URL to Knowledge       |
+| `17_Reverse_Engineering/`      | Reverse Engineering             |
+| `19_Learning_Url_To_Knowledge/`| Learning URL to Knowledge       |
 
 ## Integración
 

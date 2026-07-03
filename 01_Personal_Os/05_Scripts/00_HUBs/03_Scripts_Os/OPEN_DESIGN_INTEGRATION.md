@@ -20,7 +20,7 @@
 ## 📁 Ubicación en PersonalOS
 
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/open-design/
 ├── skills/                    # 62 skills de diseño
 ├── design-systems/             # 138 design systems
 ├── apps/
@@ -36,7 +36,7 @@
 
 ```bash
 # 1. Ir al directorio
-cd 01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design
+cd 01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/open-design
 
 # 2. Levantar daemon (backend)
 pnpm tools-dev

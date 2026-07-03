@@ -23,7 +23,7 @@ resource_refs:
 
 | Archivo                    | Ubicación                                                                                                                 | Tipo    |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------|--------|
-| `build-your-personal-os.md`| `01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/18_Personal_Os_Main/personal-os-main/examples/tutorials/`| Tutorial|
+| `build-your-personal-os.md`| `01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/18_Personal_Os_Main/personal-os-main/examples/tutorials/`| Tutorial|
 | `BACKLOG_example.md`       | Mismo folder                                                                                                              | Ejemplo |
 | `example_knowledge.md`     | Mismo folder                                                                                                              | Ejemplo |
 

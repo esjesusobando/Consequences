@@ -61,9 +61,9 @@
 | `12_N8N/05_N8n_Node_Configuration/`                                     | → `04_AUTOMATIZACION/05_N8N_Nodes/`                                    | Config nodos                                 |
 | `12_N8N/06_N8n_Validation_Expert/`                                      | → `04_AUTOMATIZACION/06_N8N_Validation/`                               | Validación                                   |
 | `12_N8N/07_N8n_Workflow_Patterns/`                                      | → `04_AUTOMATIZACION/07_N8N_Workflows/`                                | Patterns                                     |
-| `29_Invictus_Skills/5. FLUJOS DE N8N/`                                  | → `04_AUTOMATIZACION/08_N8N_Invictus/`                                 | Flows N8N                                    |
+| `29_Invictus_Skills/5. FLUJOS DE N8N/`                                  | → `04_AUTOMATIZACION/09_N8N_Invictus/`                                 | Flows N8N                                    |
 | `29_Invictus_Skills/6. FIRECRAWL SCRAPER/`                              | → `04_AUTOMATIZACION/09_Firecrawl/`                                    | Web scraping                                 |
-| `29_Invictus_Skills/10, GWS CLIENT/`                                    | → `04_AUTOMATIZACION/10_GWS_Client/`                                   | GWS client                                   |
+| `29_Invictus_Skills/10, GWS CLIENT/`                                    | → `04_AUTOMATIZACION/12_GWS_Client/`                                   | GWS client                                   |
 
 ---
 

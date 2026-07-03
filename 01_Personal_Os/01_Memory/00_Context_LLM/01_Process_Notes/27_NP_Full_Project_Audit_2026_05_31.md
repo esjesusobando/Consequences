@@ -68,10 +68,10 @@ Estos scripts solo contienen `echo` y placeholders. **No se eliminaron** (por di
 | `extract-content.sh` + `_v2.sh`    | `04_Automatizacion/13_Content_From_Url/scripts/`         | TODO: Integrate with Firecrawl |
 | `find-connections.sh` + `_v2.sh`   | `04_Automatizacion/14_Compound_Knowledge/scripts/`       | TODO: Integrate with Engram    |
 | `analyze-improvement.sh` + `_v2.sh`| `04_Automatizacion/15_Os_Self_Improvement/scripts/`      | Empty echo statements          |
-| `analyze-target.sh` + `_v2.sh`     | `04_Automatizacion/16_Reverse_Engineering/scripts/`      | Empty echo statements          |
+| `analyze-target.sh` + `_v2.sh`     | `04_Automatizacion/17_Reverse_Engineering/scripts/`      | Empty echo statements          |
 | `run-pipeline.sh` + `_v2.sh`       | `04_Automatizacion/17_Learning_Url_To_Knowledge/scripts/`| Empty echo statements          |
 | `extrayendo_leads.sh`              | `04_Automatizacion/09_Firecrawl/`                        | Simulated demo (sleep 2 + echo)|
-| `demo_comandos_google.sh`          | `04_Automatizacion/10_GWS_Client/scripts/`               | Simulated demo (sleep 1 + echo)|
+| `demo_comandos_google.sh`          | `04_Automatizacion/12_GWS_Client/scripts/`               | Simulated demo (sleep 1 + echo)|
 
 ### 3.4 Fragmentación de Versiones
 

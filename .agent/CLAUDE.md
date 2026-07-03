@@ -38,7 +38,7 @@ Al iniciar una nueva sesion, ejecutar esta secuencia antes de responder:
 1. Leer `.agent/00_Rules/` — Reglas activas del sistema
 2. Ejecutar `mem_context` — Ultimas sesiones de Engram
 3. Ejecutar `mem_search` con keywords del proyecto si aplica
-4. Leer `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/MANIFEST.md` — Estado actual del OS (config_paths.BACKLOG_FILE auto-detecta)
+4. Leer `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/README.md` — Estado actual del OS (config_paths.BACKLOG_FILE auto-detecta)
 5. **Reportar en el chat** un resumen del contexto cargado antes de actuar
 
 ---
@@ -92,29 +92,32 @@ Al iniciar una nueva sesion, ejecutar esta secuencia antes de responder:
 C:\Users\sebas\                    # Project Root (LIVE OS)
 |
 |--- .agent/                       # Configuracion activa de agentes
-|    |--- 00_Rules/                # Reglas del sistema (24 activas)
-|    |--- 01_Agents/               # Agentes configurados (69 activos)
-|    |--- 02_Skills/               # Skills operativas (34 areas, ~3606 archivos)
-|    |--- 03_Workflows/            # Workflows (28 activos)
-|    |--- 04_Extensions/           # Extensiones y hooks
-|    |    +--- hooks/              # 9 archivos en 6 directorios
+|    |--- 00_Rules/                # Reglas del sistema (13 activas)
+|    |--- 01_Agents/               # Agentes configurados (57 agent definitions)
+|    |--- 02_Skills/               # Skills operativas (15 areas, ~1624 archivos)
+|    |--- 03_Workflows/            # Workflows (31 activos)
+|    |--- 04_Extensions/           # Hooks del sistema
+|    |    +--- 01_Hooks/           # 11 archivos en 6 directorios
 |    |        |--- 01_Pre_Tool/    # PreToolUse
 |    |        |--- 02_Post_Tool/   # PostToolUse
 |    |        |--- 03_Lifecycle/   # Stop, SubagentStop
 |    |        |--- 04_Sound/       # Notifications
 |    |        |--- 05_Harness/     # Anthropic Harness
-|    |        +--- 05_Post_Hulk_Compound/  # Post-Hulk (duplicado 05_)
+|    |        |--- 06_Post_Hulk_Compound/
+|    |    +--- 02_Utils/
+|    |    +--- 03_Validators/
 |    +--- README.md                # Documentación de .agent/
 |
 |--- .config/opencode/             # Configuracion OpenCode
 |    |--- opencode.json            # MCP servers, sub-agents, permisos
-|    |--- skills/                  # 200 skills en 81 areas (vía symlink/copy)
+|    |--- skills/                  # 215 skills en 96 areas (vía symlink/copy)
 |    |--- nodes_modules/           # MCP tooling
 |
 |--- 01_Personal_Os/               # Organizador principal del OS
 |    |--- 04_Operations/           # Operaciones activas
-|         |--- 02_Agent_Teams_Lite/ # SDD Workflows + Manifest
-|         |    +--- 00_Manifest/   # FUENTE DE VERDAD del sistema
+|         |--- 02_Agent_Teams_Lite/ # SDD Workflows (legacy)
+|         |    +--- ...           
+|         |--- 00_Core/02_Tools/00_SDD/00_Manifest/   # FUENTE DE VERDAD del sistema
 |         |--- 03_Scripts_Os/      # Scripts operativos HUB
 |
 |--- Downloads/01 Revisar/         # Context Bunker y backups
@@ -131,20 +134,25 @@ C:\Users\sebas\                    # Project Root (LIVE OS)
 
 ```
 .agent/
-|--- 00_Rules/                # 24 reglas del sistema (`.mdc`)
-|--- 01_Agents/               # 69 agentes (`.md` con YAML frontmatter)
-|--- 02_Skills/               # 34 areas de conocimiento (~3606 archivos)
-|--- 03_Workflows/            # 28 workflows (`.md` con YAML frontmatter)
+|--- 00_Rules/                # 13 reglas del sistema (`.mdc`)
+|--- 01_Agents/               # 57 agent definitions (`.md` con YAML frontmatter)
+|--- 02_Skills/               # 15 areas de conocimiento (~1624 archivos)
+|--- 03_Workflows/            # 31 workflows (`.md` con YAML frontmatter)
 |--- 04_Extensions/           # Hooks del sistema
-|    +--- hooks/              # 9 archivos en 6 directorios
+|    +--- 01_Hooks/           # 11 archivos en 6 directorios
 |        |--- 01_Pre_Tool/    # PreToolUse
 |        |--- 02_Post_Tool/   # PostToolUse
 |        |--- 03_Lifecycle/   # Stop, SubagentStop
 |        |--- 04_Sound/       # Notifications
 |        |--- 05_Harness/     # Anthropic Harness
-|        +--- 05_Post_Hulk_Compound/  # Post-Hulk (duplicado 05_)
+|        |--- 06_Post_Hulk_Compound/
+|    +--- 02_Utils/
+|    +--- 03_Validators/
+|--- 05_GGA/                  # Guardian Angel Pre-Commit
+|--- archive/                 # Legacy archive
 +--- CLAUDE.md                # Este archivo
 +--- README.md                # Documentacion de .agent/
++--- WORKSPACE.md             # Workspace reference
 ```
 
 ---
@@ -153,11 +161,11 @@ C:\Users\sebas\                    # Project Root (LIVE OS)
 
 El manifest es la **FUENTE DE VERDAD** del estado del OS.
 
-**Ubicacion:** `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`
+**Ubicacion:** `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/`
 
 | Archivo | Contenido |
 |---------|-----------|
-| `README.md` (alias MANIFEST.md) | Conteos oficiales: 45 MCPs, 200 Skills (81 areas), 69 Agentes, 28 Workflows, 9 Hooks, 24 Rules, 24 Integrations, 1 HUB |
+| `README.md` (alias MANIFEST.md) | Conteos oficiales: 45 MCPs, 215 Skills (96 areas), 57 Agentes, 31 Workflows, 11 Hooks, 13 Rules, 24 Integrations, 1 HUB |
 | `AGENTS.md` | Listado completo de agentes |
 | `SKILLS.md` | Listado completo de skills por area |
 | `WORKFLOWS.md` | Listado completo de workflows |
@@ -195,7 +203,7 @@ Listado completo: `01_Personal_Os/04_Operations/03_Scripts_Os/`
 
 ## Skills por Area (.config/opencode/skills/)
 
-**Total: 200 skills en 81 areas** — Ver listado completo en `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/README.md`
+**Total: 215 skills en 96 areas** — Ver listado completo en `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/README.md`
 
 Las skills se organizan en las siguientes categorias principales:
 
@@ -205,6 +213,7 @@ Las skills se organizan en las siguientes categorias principales:
 | **Compound Engineering** (config/opencode/skills/ce-*) | ~20 | brainstorm, plan, work, review, debug, etc. |
 | **Claude SEO AI** (config/opencode/skills/claude-seo-ai/) | 5 | audit, fix, geo, score, seo-orchestrator |
 | **JAO** (config/opencode/skills/gentleman/07_JAO/) | 6 | Entrevistador, Humanizador, Prompts, Presentaciones, Superpowers, Verificador |
+| **Marketing Tech** (market-*) | ~15 | SEO, analytics, A/B testing, paid ads, social, referral, schema |
 | **Otros** | ~14 | pdf, docx, xlsx, pptx, canvas, mcp, etc. |
 
 ---
@@ -235,19 +244,19 @@ Usa los comandos CE: `/ce:ideate`, `/ce:brainstorm`, `/ce:plan`, `/ce:work`, `/c
 
 | Categoria | Estado |
 |-----------|--------|
-| Agentes (69) | ✅ OPERATIONAL |
-| Skills (200 en 81 areas) | ✅ OPERATIONAL |
-| MCPs (45 configurados, 35 activos) | ✅ ACTIVE |
-| Workflows (28) | ✅ OPERATIONAL |
-| Hooks (9) | ✅ ACTIVE |
-| Rules (24) | ✅ ACTIVE |
+| Agentes (57) | ✅ OPERATIONAL |
+| Skills (215 en 96 areas) | ✅ OPERATIONAL |
+| MCPs (45 configurados, 37 activos) | ✅ ACTIVE |
+| Workflows (31) | ✅ OPERATIONAL |
+| Hooks (11) | ✅ ACTIVE |
+| Rules (13) | ✅ ACTIVE |
 | Manifest | ✅ VALIDATED (0 errores) |
 | Scripts OS (20_System_Mapper_Hub) | ✅ OPERATIONAL |
 
 ---
 
 > **Nota:** Este sistema ya NO usa la estructura `Think_Different/` ni `01_Core/` como fuente de verdad.
-> La fuente de verdad es el **Manifest** en `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`.
+> La fuente de verdad es el **Manifest** en `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/`.
 > La estructura `.agent/` es el directorio operativo vivo, no un backup.
 
 © 2026 PersonalOS v5.0 Live

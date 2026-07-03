@@ -162,7 +162,7 @@ Cloud status: not configured
 | Archivo                                                                         | Cambio                                                           |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | `00_PLAN_BLINDAJE_OS_SOTA.md`                                                   | Actualizado con estado actual y nuevos pendientes                |
-| `01_Personal_Os/05_Archive/07_Repos_Gentleman/EXTERNAL_REPOS.md`                | Agregado TubeMaster y sub-agent-statusline                       |
+| `01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/EXTERNAL_REPOS.md`                | Agregado TubeMaster y sub-agent-statusline                       |
 | `~/.config/opencode/tui.json`                                                   | Agregado plugin opencode-subagent-statusline                     |
 | `.git/hooks/pre-commit`                                                         | Verificado — Secret Scanner → GGA funcionando                    |
 

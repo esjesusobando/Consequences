@@ -58,8 +58,8 @@
 ├── 04_Automatizacion/        ⚙️ Automatización (19 skills)
 │   ├── 01-08: N8N JS → N8N Invictus
 │   ├── 10_Firecrawl/
-│   ├── 10_GWS_Client/
-│   ├── 11_Gcierr/ + 11_Gws_Client/
+│   ├── 12_GWS_Client/
+│   ├── 11_Gcierr/ + 18_Gws_Client/
 │   ├── 13-17: Content From URL → Learning URL→Knowledge
 │
 ├── 05_Claude_Ads/            📢 Claude Ads (9 skills)

@@ -217,8 +217,8 @@ Cada skill listada abajo será leída, su valor extraído e inyectado en la mega
 
 | #  | Directorio                              | name:             | Valor                       |
 |---|----------------------------------------|------------------|----------------------------|
-| 16 | 04_Automatizacion/10_GWS_Client/        | gws-cli           | Google Workspace CLI        |
-| 17 | 04_Automatizacion/11_Gws_Client/        | gws-cli           | DUPLICADO de 16             |
+| 16 | 04_Automatizacion/12_GWS_Client/        | gws-cli           | Google Workspace CLI        |
+| 17 | 04_Automatizacion/18_Gws_Client/        | gws-cli           | DUPLICADO de 16             |
 | 18 | 04_Automatizacion/13_Content_From_Url/  | content-from-url  | URL content extraction      |
 | 19 | 04_Automatizacion/14_Compound_Knowledge/| compound-knowledge| Knowledge network connection|
 | 20 | 04_Automatizacion/08_AI_News_Weekly/    | ai-news-weekly    | AI news briefing            |
@@ -228,7 +228,7 @@ Cada skill listada abajo será leída, su valor extraído e inyectado en la mega
 | #  | Directorio                                     | name:                    | Valor                               |
 |---|-----------------------------------------------|-------------------------|------------------------------------|
 | 21 | 04_Automatizacion/15_Os_Self_Improvement/      | os-self-improvement      | OS improvement opportunity detection|
-| 22 | 04_Automatizacion/16_Reverse_Engineering/      | reverse-engineering      | Extract patterns from code          |
+| 22 | 04_Automatizacion/17_Reverse_Engineering/      | reverse-engineering      | Extract patterns from code          |
 | 23 | 04_Automatizacion/17_Learning_Url_To_Knowledge/| learning-url-to-knowledge| URL → 8 deliverables                |
 | 24 | 04_Automatizacion/04_Automatizacion/           | automatizacion           | Area index                          |
 

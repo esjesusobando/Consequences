@@ -1,10 +1,6 @@
-import logging
-import typing
-
-logging.basicConfig(level=logging.INFO)
 #!/usr/bin/env python3
 """
-16_System_Mapper_Hub.py — Consequences 3.0 — JARVIS Ground Truth
+20_System_Mapper_Hub.py — Consequences 3.0 — JARVIS Ground Truth
 
 Escanea el OS y genera los 7 archivos del manifest centralizado.
 Es la "fuente de verdad inmutable" que todos los agentes consultan.
@@ -328,7 +324,7 @@ def scan_hubs():
     HUBs = (scripts .py con prefijo numerico en raiz de Scripts_Os/)
           + (subdirectorios funcionales con contenido numerado)
     """
-    hubs_dir = PROJECT_ROOT / "01_Personal_Os/05_Scripts/03_Scripts_Os"
+    hubs_dir = PROJECT_ROOT / "01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os"
 
     hubs = []
     scripts = []

@@ -1,12 +1,12 @@
+#!/usr/bin/env python3
+"""
+01_Auditor_Hub.py — Hub centralizador de auditorías del sistema
+Reutiliza scripts de auditoría existentes: 53, 57, 34, 50, 33
+"""
 import logging
 import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
-"""
-91_Auditor_Hub.py — Hub centralizador de auditorías del sistema
-Reutiliza scripts de auditoría existentes: 53, 57, 34, 50, 33
-"""
 
 import argparse
 import os

@@ -11,23 +11,25 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 
 ---
 
-## 📁 ESTRUCTURA
+## 📁 ESTRUCTURA (v5.0 — 2026-07-03)
 
 ```
 01_Personal_Os/
-├── 00_Core/               ✅ Motor del OS — Reglas, Agents, Skills, MCPs, Hooks, Plugins
-├── 02_Knowledge/          ✅ Base de conocimiento — Docs, recursos, system knowledge
-├── 03_Task/               ✅ Tareas activas — Workflows, sprints, tracking
-├── 04_Operations/         ✅ Operaciones — Scripts (42 HUBs), MCPs, Projects, Installer
-├── 05_Archive/            ✅ Archivo — Legacy docs, repos de referencia
-└── 06_Evals/              ✅ Evaluadores — Escenarios, dashboard y métricas
+├── 00_Core/               ✅ Motor del OS — Workflows, Rules, Agents, Skills, MCPs, Hooks, Plugins
+├── 01_Memory/             ✅ Memoria LLM — Context_Memory, Notas_de_Proceso, Context_LLM
+├── 02_Knowledge/          ✅ Base de conocimiento — Docs, Research, Content, Examples
+├── 03_Learning/           ✅ Conocimiento activo — Auto-Improvement, Shared_Org, Telemetry
+├── 04_Tasks/              ✅ Tareas activas — Hillary Inbox, proyectos
+├── 05_Scripts/            ✅ Operaciones — 42 HUBs, 166 scripts totales, Installer
+├── 06_Projects/           ✅ Proyectos activos
+└── 07_Archive/            ✅ Backups, snapshots, históricos, repos de referencia
 ```
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v5.0 SOTA — 2026-06-27)
+## 📊 ESTADO DEL SISTEMA (v5.0 SOTA — 2026-07-03)
 
-> Fuente: `20_System_Mapper_Hub.py --scan` — 2026-06-27T13:19:17
+> Fuente: `20_System_Mapper_Hub.py --scan` — 2026-07-03 (auditoría de integridad referencial)
 
 | Componente      | Total | Estado                           |
 | --------------- | ----- | -------------------------------- |

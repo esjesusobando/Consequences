@@ -16,6 +16,11 @@ from pathlib import Path
 SOTA_DIR = Path(__file__).parent
 sys.path.insert(0, str(SOTA_DIR))
 
+# ENGINE_DIR — para acceder a los hub scripts de Model Eval y Router
+_ENGINE_DIR = Path(__file__).resolve().parent.parent.parent.parent / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"
+if _ENGINE_DIR.exists():
+    sys.path.insert(0, str(_ENGINE_DIR))
+
 # =============================================================================
 # Config stub — si no existe config.py, usa defaults locales
 # =============================================================================
@@ -60,36 +65,78 @@ for key, (mod_path, cls_name) in FEATURE_ENGINES.items():
     engine_cls = _try_import(mod_path, cls_name)
     FEATURES[key] = engine_cls
 
+# =============================================================================
+# HUB Scripts — CLI-based features (ejecutados como subprocess)
+# =============================================================================
+HUB_SCRIPTS = {
+    '06_model_eval_hub':    _ENGINE_DIR / "26_Model_Eval_Hub.py",
+    '07_model_router_hub':  _ENGINE_DIR / "28_Model_Router_Hub.py",
+    '08_drift_detector':    _ENGINE_DIR / "26_Model_Eval_Engine" / "drift_detector.py",
+    '09_pareto_frontier':   _ENGINE_DIR / "26_Model_Eval_Engine" / "pareto_frontier.py",
+    '10_calibration_loop':  _ENGINE_DIR / "26_Model_Eval_Engine" / "calibration_loop.py",
+}
+
+def _hub_is_available(name):
+    """Check if a hub script exists."""
+    path = HUB_SCRIPTS.get(name)
+    return path is not None and path.exists()
+
+def _run_hub_script(name, args=None):
+    """Run a hub script via subprocess."""
+    import subprocess
+    script = HUB_SCRIPTS[name]
+    cmd = [sys.executable, str(script)]
+    if args:
+        cmd.extend(args)
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    print(result.stdout)
+    if result.stderr:
+        print(f"[STDERR] {result.stderr}")
+    return {"status": "ok" if result.returncode == 0 else "error", "returncode": result.returncode}
+
 
 def show_status():
-    """Show status of all SOTA features."""
+    """Show status of all SOTA features and hub scripts."""
     config = load_config()
     print("\n" + "="*60)
-    print("SOTA FEATURES STATUS — PersonalOS v4.9")
+    print("SOTA FEATURES STATUS — PersonalOS v5.0")
     print("="*60)
-
+    print("\n  --- Engine Features ---")
     for feature_name in FEATURES.keys():
         enabled = is_feature_enabled(feature_name)
         status_icon = "[*]" if enabled else "[ ]"
         feature_config = config.get('sota_features', {}).get(feature_name, {})
         version = feature_config.get('version', 'unknown')
-
         print(f"  {status_icon} {feature_name:<25} v{version} {'[ENABLED]' if enabled else '[disabled]'}")
 
-    print("="*60)
+    print("\n  --- Hub Scripts ---")
+    for hub_name in HUB_SCRIPTS:
+        available = _hub_is_available(hub_name)
+        icon = "[OK]" if available else "[--]"
+        print(f"  {icon} {hub_name:<25}")
 
-    # Show global settings
+    print("="*60)
     global_config = config.get('global', {})
     print(f"\nGlobal: dry_run={global_config.get('dry_run', False)}, "
           f"log_level={global_config.get('log_level', 'INFO')}")
     print()
 
 
-def run_feature(feature_name: str):
-    """Run a specific feature."""
+def run_feature(feature_name: str, extra_args: list[str] = None):
+    """Run a specific feature or hub script."""
+    # Hub scripts (no require config toggle)
+    if feature_name in HUB_SCRIPTS:
+        if not _hub_is_available(feature_name):
+            print(f"[{feature_name}] script not found at {HUB_SCRIPTS[feature_name]}")
+            return
+        _run_hub_script(feature_name, extra_args)
+        return
+
+    # Engine features (require config toggle)
     if feature_name not in FEATURES:
         print(f"Unknown feature: {feature_name}")
-        print(f"Available: {', '.join(FEATURES.keys())}")
+        all_features = list(FEATURES.keys()) + list(HUB_SCRIPTS.keys())
+        print(f"Available: {', '.join(all_features)}")
         return
 
     if not is_feature_enabled(feature_name):
@@ -104,17 +151,24 @@ def run_feature(feature_name: str):
 
 
 def run_all():
-    """Run all enabled features."""
+    """Run all enabled features and available hub scripts."""
     results = {}
 
+    # Engine features
     for feature_name, engine_class in FEATURES.items():
         if not is_feature_enabled(feature_name):
             continue
-
         print(f"Running {feature_name}...")
         engine = engine_class()
         result = engine.execute()
         results[feature_name] = result
+
+    # Hub scripts (status-only)
+    for hub_name in HUB_SCRIPTS:
+        if _hub_is_available(hub_name):
+            print(f"Running {hub_name}...")
+            result = _run_hub_script(hub_name, ["--status"])
+            results[hub_name] = result
 
     print("\n" + "="*60)
     print("ALL FEATURES COMPLETED")
@@ -152,13 +206,14 @@ def main():
         show_status()
     elif cmd == '--run':
         if len(sys.argv) < 3:
-            print("Usage: --run <feature_name|all>")
+            print("Usage: --run <feature_name|all> [-- <hub_args...>]")
             return
         feature = sys.argv[2]
         if feature == 'all':
             run_all()
         else:
-            run_feature(feature)
+            extra_args = sys.argv[4:] if len(sys.argv) > 3 and sys.argv[3] == '--' else None
+            run_feature(feature, extra_args)
     elif cmd == '--toggle':
         if len(sys.argv) < 3:
             print("Usage: --toggle <feature_name>")

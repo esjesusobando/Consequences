@@ -5,7 +5,7 @@ priority: P3
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/05_Archive/03_Backups_Refs/02_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md
+  - 01_Personal_Os/07_Archive/05_Repos/03_Backups_Refs/02_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md
 ---
 
 # Task: Evaluar Avengers Plan
@@ -23,8 +23,8 @@ resource_refs:
 
 | Archivo             | Ubicación                                                                                                                | Tipo         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|-------------|
-| **Avengers_Plan.md**| `01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md`       | Legacy       |
-| **Avengers_Plan.md**| `01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md`| Legacy Backup|
+| **Avengers_Plan.md**| `01_Personal_Os/07_Archive/05_Repos/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md`       | Legacy       |
+| **Avengers_Plan.md**| `01_Personal_Os/07_Archive/05_Repos/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md`| Legacy Backup|
 
 ### Contenido del Plan (Resumen)
 
@@ -61,7 +61,7 @@ El plan es de **2026-04-20** — tiene más de un mes. Necesita evaluación:
 **Leer Avengers Plan completo y evaluar:**
 
 ```bash
-cat 01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md
+cat 01_Personal_Os/07_Archive/05_Repos/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md
 ```
 
 **Luego decidir:**

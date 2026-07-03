@@ -180,7 +180,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 - **Frontend:** React, Next.js
 - **Automatización:** Make, Zapier
 - **MCP:** Implementación de protocolo personalizado (vía `01_Personal_Os/00_Core/02_Tools/07_Server/`)
-- **Scripts de Motor:** `01_Personal_Os/04_Operations/03_Scripts_Os/` — Scripts HUB de automatización para operaciones del OS
+- **Scripts de Motor:** `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` — Scripts HUB de automatización para operaciones del OS
 
 ## 7. Tracking Metrics
 
@@ -257,12 +257,11 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
    - `00_Winter_is_Coming/GOALS.md` → Objetivos estratégicos
    - `00_Winter_is_Coming/BACKLOG.md` → Tareas pendientes
    - `01_Personal_Os/00_Core/` → Estructura de skills, agents, MCPs
-   - `01_Personal_Os/04_Operations/00_Context_LLM/` → Base de conocimiento
+   - `01_Personal_Os/01_Memory/00_Context_LLM/` → Base de conocimiento
 
 3. **Entender Estructura del Proyecto**:
    - Revisar `00_Winter_is_Coming/AGENTS.md` para reglas del sistema
-   - Verificar `01_Personal_Os/03_Task/` para tareas activas
-   - Consultar `01_Personal_Os/02_Knowledge/` para contexto relevante
+   - Verificar `01_Personal_Os/04_Tasks/` para tareas activas
 
 4. **Esperar Instrucción del Orquestador**:
    - Solo después de tener contexto completo
@@ -291,8 +290,8 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 | "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
 
 **Skills location:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/`
-**Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
-**RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
+**Inbox:** `01_Personal_Os/04_Tasks/02_Hillary_Inbox/`
+**RUNBOOK:** `01_Personal_Os/02_Knowledge/02_Docs/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 
 ---
 

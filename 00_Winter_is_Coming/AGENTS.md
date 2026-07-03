@@ -29,7 +29,7 @@ cat .atl/skill-registry.md
 
 # 3.5. Adaptive Boot — Carga condicional de contexto (NUEVO)
 # Detecta tipo de agente y carga solo contexto relevante
-python 01_Personal_Os/01_Memory/adaptive_boot.py --agent "$AGENT_NAME" --json
+python 01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py --agent "$AGENT_NAME" --json
 # Si el agente es desconocido, fallback a carga completa (comportamiento actual)
 # Ahorra 60-70% de tokens por boot
 
@@ -37,7 +37,7 @@ python 01_Personal_Os/01_Memory/adaptive_boot.py --agent "$AGENT_NAME" --json
 ls 01_Personal_Os/04_Tasks/02_Hillary_Inbox/  # SI hay archivos .md → procesar con Hillary antes de continuar
 
 # 5. Si hay trabajo en curso, verificar estado
-cat 01_Personal_Os/04_Tasks/  # tareas activas
+ls 01_Personal_Os/04_Tasks/  # tareas activas
 
 # 6. Consultar reference repos para metodología upstream
 ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
@@ -54,7 +54,7 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **MCPs** (11 root + configs globales)              | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
-| **Adaptive Boot**                                  | `01_Personal_Os/01_Memory/adaptive_boot.py`                                | Carga condicional de contexto (60-70% ahorro tokens)              |
+| **Adaptive Boot**                                  | `01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py`                 | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/03_Learning/01_Auto_Improvement/`                          | Detección y fix recursivo de issues                                |
 | **Workflows** | **29** (7 categorías) [FIXED] en 7 categorías                                      |
@@ -133,7 +133,7 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 | Herramienta                                 | Ubicación                                                                              | Función                                                       |
 |--------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **Notifier**                                | `01_Personal_Os/05_Scripts/00_HUBs/00_Sound_Engine.py`                        | Sonido al completar tareas ✅                                  |
+| **Notifier**                                | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py`          | Sonido al completar tareas ✅                                  |
 
 ---
 
@@ -143,7 +143,7 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 After completing each task in TodoWrite, ALWAYS execute:
 
 ```bash
-python 01_Personal_Os/05_Scripts/00_HUBs/00_Sound_Engine.py --task-complete
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --task-complete
 ```
 
 ### Sonido siempre activo
@@ -389,7 +389,7 @@ Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos**.
 
 ## 7. HUB SCRIPTS (36 raíz activos — 168 scripts totales)
 
-Centralized HUBs in `01_Personal_Os/05_Scripts/00_HUBs/`:
+Centralized HUBs in `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`:
 
 | Hub                                                 | Propósito                                                                  |
 |----------------------------------------------------|---------------------------------------------------------------------------|
@@ -419,8 +419,10 @@ Centralized HUBs in `01_Personal_Os/05_Scripts/00_HUBs/`:
 | **23_Preview_Generator.js**                         | Generador de previews (JavaScript)                                         |
 | **24_mass_path_migration.py**                       | Migración masiva de paths legacy                                           |
 | **25_Minimax_Optimizer_Hub.py**                     | Optimización Minimax de recursos del sistema                               |
+| **26_Model_Eval_Hub.py** ★                          | Evaluación de modelos: G-Eval, benchmark, drift, Pareto, calibración       |
 | **26_Parallel_Audit_Pro.py**                        | Auditoría paralela avanzada                                                |
 | **27_Skill_Auditor.py**                             | Auditoría específica de skills                                             |
+| **28_Model_Router_Hub.py** ★                        | Routing inteligente de modelos: semántico → cascada → bandido contextual   |
 | **28_System_Health_Monitor.py**                     | Monitor de salud del sistema                                               |
 | **29_Repo_Sync_Auditor.py**                         | Auditor de sincronización de repos                                         |
 | **30_path_replacement.py**                          | Reemplazo masivo de paths en skills legacy                                 |
@@ -576,11 +578,11 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
                   → ¿Items sin procesar > 48h? → Alertar al usuario
 ```
 
-**Skills location:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/`
+**Skills location:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/`
 **Skill principal:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/07_Hillary/SKILL.md`
 **Agente:** `01_Personal_Os/00_Core/02_Tools/01_Agents/13_Hillary.md`
 **Inbox:** `01_Personal_Os/04_Tasks/02_Hillary_Inbox/`
-**RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
+**RUNBOOK:** `01_Personal_Os/02_Knowledge/02_Docs/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 
 ---
 

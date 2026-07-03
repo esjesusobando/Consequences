@@ -103,6 +103,7 @@ El sistema tiene GGA para código y Watchdog para salud interna. No hay ningún 
 - [ ] **Voice Guide** — Crear Knowledge/voice-guide.md
 - [ ] **Weekly Review automation** — Script para generar reporte semanal automático
 - [ ] **Playground Agent Configuration (SDD Fase 6)** — Configurar agentes en playground
+- [ ] **Team Profile Analysis (IMG_7719.PNG)** — Evaluar perfiles faltantes y crear plan de equipo en raíz. Imagen: `C:\Users\sebas\Downloads\IMG_7719.PNG` (screenshot 1125×2436). ⏳ Pendiente de descripción del usuario.
 
 ---
 
@@ -110,7 +111,7 @@ El sistema tiene GGA para código y Watchdog para salud interna. No hay ningún 
 
 - [ ] **Marketing Agency Fase 3** — Multi-cliente, reporting, lead gen, orquestador (tareas 3.1-3.8)
 - [ ] **Marketing Agency Fase 4** — SOTA: compound learning, design system v2, A/B testing, case studies (tareas 4.1-4.7)
-- [ ] Automatizar generación de `04_Operations/07_Reports/` con `01_Auditor_Hub.py`
+- [ ] Automatizar generación de `03_Resultado/07_Reports/` con `01_Auditor_Hub.py`
 - [ ] **Revisar y ejecutar**: Workflows Marvel — verificar que estén actualizados y operativos
 - [ ] **Revisar y ejecutar**: Ritual de Cierre — verificar pasos automatizados
 - [ ] **Evaluar Avengers Plan**: Definir si ejecutar, actualizar o archivar

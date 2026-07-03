@@ -1,8 +1,8 @@
-# 00_Winter_is_Coming — Think Different PersonalOS v4.9.1
+# 00_Winter_is_Coming — Think Different PersonalOS v5.0
 
-**Versión:** 4.9.1
-**Última actualización:** 2026-06-25
-**Estado:** ✅ PRODUCTION READY | SOTA | v4.9.1
+**Versión:** 5.0 (SOTA)
+**Última actualización:** 2026-07-03
+**Estado:** ✅ PRODUCTION READY | SOTA | v5.0 — Reference Integrity Verified
 
 ---
 
@@ -22,18 +22,18 @@
 
 ---
 
-## 📊 Estado Actual (v4.9 — 2026-06-01)
+## 📊 Estado Actual (v5.0 — 2026-07-03)
 
 - **GGA Version**: v2.8.1 ✅
 - **Every CE**: v3.8.4 ✅
 - **gentle-ai**: v1.30.6 ✅
-- **Agentes**: 62 (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
-- **MCPs**: 36 servidores activos
-- **Skills**: 392 SKILL.md activas (15 áreas funcionales)
-- **HUBs**: 30 (todos con interfaz)
-- **Scripts**: 163 .py (30 root + 133 subdirectorios)
-- **Workflows**: 28 (7 categorías)
+- **Agentes**: 63 (source) + 72 (backup) — drift 9
+- **MCPs**: 11 root Claude + 45 OpenCode
+- **Skills**: 396 SKILL.md activas (15 áreas funcionales)
+- **HUBs**: 42 HUBs + 166 scripts totales
+- **Workflows**: 29 (7 categorías)
 - **Rules**: 14 .mdc (00-13)
+- **Auditoría v5.0**: ✅ 18 issues corregidos — paths, shebangs, referencias, estructura
 
 ---
 

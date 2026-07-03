@@ -82,8 +82,26 @@ BRAIN_RULES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "03_Memory_Brain"
 
 OPERATIONS_TASKS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Tasks"
 OPERATIONS_EVALS_DIR = CORE_DIR / "02_Tools" / "08_Evals"
+MODEL_EVALS_DIR = ROOT_DIR / "01_Personal_Os" / "01_Memory" / "00_Context_LLM" / "08_Model_Evals"
+
+# === Model Eval Module paths (Phases 3-5)
+MODEL_REGISTRY_FILE = MODEL_EVALS_DIR / "model_registry.json"
+EVAL_RUBRICS_FILE   = MODEL_EVALS_DIR / "eval_rubrics.json"
+ROUTING_POLICY_FILE = MODEL_EVALS_DIR / "routing_policy.yaml"
+PARETO_FILE         = MODEL_EVALS_DIR / "pareto_frontiers.json"
+GOLD_STANDARDS_DIR  = MODEL_EVALS_DIR / "gold_standards"
+EVAL_RUNS_DIR       = MODEL_EVALS_DIR / "runs"
+RUN_HISTORY_DIR     = EVAL_RUNS_DIR
+DRIFT_REPORTS_DIR   = MODEL_EVALS_DIR
+CALIBRATION_FILE    = MODEL_EVALS_DIR / "calibration_state.json"
+EVAL_ENGINE_DIR     = ENGINE_DIR / "26_Model_Eval_Engine"
+ROUTER_ENGINE_DIR   = ENGINE_DIR / "28_Model_Router_Engine"
+
+# Ensure eval directories exist at import time
+EVAL_RUNS_DIR.mkdir(parents=True, exist_ok=True)
+
 OPERATIONS_ANALYTICS_DIR = OPERATIONS_DIR / "00_Context_LLM" / "01_Process_Notes"
-AUTO_IMPROVEMENT_DIR = OPERATIONS_DIR / "01_Auto_Improvement"
+AUTO_IMPROVEMENT_DIR = ROOT_DIR / "01_Personal_Os" / "03_Learning" / "01_Auto_Improvement"
 
 # =============================================================================
 # SUBDIRECTORIOS ENGINE/SCRIPTS (v4.9)

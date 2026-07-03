@@ -35,7 +35,7 @@ Framework operativo personal que integra agents, skills, workflows, y automatiza
 
 ### Base (Origen)
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/personal-os-main/
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/personal-os-main/
 ```
 
 ### Arquitectura Actual
@@ -92,7 +92,7 @@ Sistema de instalación y configuración automatizada con TUI interactiva (Bubbl
 
 ### Base (Origen)
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/Gentleman.Dots/
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/Gentleman.Dots/
 ├── installer/              ← Go TUI (Bubbletea)
 ├── skills/                 ← 6 skills Gentleman
 ├── homebrew-tap/          ← Homebrew formulas
@@ -111,7 +111,7 @@ Sistema de instalación y configuración automatizada con TUI interactiva (Bubbl
 
 ### Skills Base (Gentleman.Skills repo)
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/gentleman-skills/
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/gentleman-skills/
 ├── curated/
 │   ├── skill-creator/       ← Skill creation
 │   ├── playwright/          ← E2E testing
@@ -161,8 +161,8 @@ Sistema de ingeniería compuesta con agents especializados para reviews, archite
 
 ### Base (Origen)
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/gentle-ai/
-01_Personal_Os/05_Archive/07_Repos_Gentleman/compound-engineering-plugin/
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/gentle-ai/
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/compound-engineering-plugin/
 ```
 
 ### Arquitectura en PersonalOS
@@ -278,8 +278,8 @@ Sistema de captura, clasificación y procesamiento de tareas con inbox y templat
 
 ### Base (Origen)
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/gentle-ai/ (backlog-triage skill)
-01_Personal_Os/05_Archive/10_Legacy_Revisar/03_Backup_Workflows/25_Hillary_Life_OS.md
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/gentle-ai/ (backlog-triage skill)
+01_Personal_Os/07_Archive/05_Repos/10_Legacy_Revisar/03_Backup_Workflows/25_Hillary_Life_OS.md
 ```
 
 ### Arquitectura en PersonalOS
@@ -428,8 +428,8 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 
 ### Base (Origen)
 ```
-01_Personal_Os/05_Archive/07_Repos_Gentleman/gentle-ai/ (memory protocols)
-01_Personal_Os/05_Archive/07_Repos_Gentleman/engram/ (memory skills)
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/gentle-ai/ (memory protocols)
+01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/engram/ (memory skills)
 ```
 
 ### Skills Learning
@@ -613,7 +613,7 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 | `01_Personal_Os/04_Operations/01_Auto_Improvement/recursive_improvement_engine.py`                | Motor recursivo                            |
 | `01_Personal_Os/03_Task/README.md`                                                                | Sistema Hillary                            |
 | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/SKILL.md`                      | Compound main                              |
-| `01_Personal_Os/05_Archive/07_Repos_Gentleman/`                                                   | Bases originales                           |
+| `01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/`                                                   | Bases originales                           |
 
 ---
 

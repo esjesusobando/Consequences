@@ -86,17 +86,17 @@
 | **N8N Validation**                           | `04_Automatizacion/06_N8N_Validation/`                                  | Validación de workflows N8N                    |
 | **N8N Workflow Patterns**                    | `04_Automatizacion/07_N8N_Workflows/`                                   | Patrones de workflows                          |
 | **AI News Weekly**                           | `04_Automatizacion/08_AI_News_Weekly/`                                  | News semanal con IA                            |
-| **N8N Invictus**                             | `04_Automatizacion/08_N8N_Invictus/`                                    | Workflows N8N del ecosistema Invictus          |
+| **N8N Invictus**                             | `04_Automatizacion/09_N8N_Invictus/`                                    | Workflows N8N del ecosistema Invictus          |
 | **Firecrawl Scraper**                        | `04_Automatizacion/10_Firecrawl/`                                       | Web scraping con Firecrawl                     |
-| **GWS Client**                               | `04_Automatizacion/10_GWS_Client/`                                      | Cliente Google Workspace                       |
+| **GWS Client**                               | `04_Automatizacion/12_GWS_Client/`                                      | Cliente Google Workspace                       |
 | **Gcierr**                                   | `04_Automatizacion/11_Gcierr/`                                          | Herramientas Gcierr                            |
-| **Gws Client**                               | `04_Automatizacion/11_Gws_Client/`                                      | Cliente Google Workspace (alternativo)         |
+| **Gws Client**                               | `04_Automatizacion/18_Gws_Client/`                                      | Cliente Google Workspace (alternativo)         |
 | **Content From URL**                         | `04_Automatizacion/13_Content_From_Url/`                                | Extraer contenido desde URL                    |
 | **Compound Knowledge**                       | `04_Automatizacion/14_Compound_Knowledge/`                              | Conocimiento compuesto                         |
 | **N8N (general)**                            | `04_Automatizacion/14_N8n/`                                             | Skill N8N general                              |
 | **OS Self Improvement**                      | `04_Automatizacion/15_Os_Self_Improvement/`                             | Auto-mejora del OS                             |
-| **Reverse Engineering**                      | `04_Automatizacion/16_Reverse_Engineering/`                             | Ingeniería inversa                             |
-| **Learning URL→Knowledge**                   | `04_Automatizacion/17_Learning_Url_To_Knowledge/`                       | Pipeline URL → conocimiento                    |
+| **Reverse Engineering**                      | `04_Automatizacion/17_Reverse_Engineering/`                             | Ingeniería inversa                             |
+| **Learning URL→Knowledge**                   | `04_Automatizacion/19_Learning_Url_To_Knowledge/`                       | Pipeline URL → conocimiento                    |
 
 ---
 
@@ -226,7 +226,7 @@
 
 ---
 
-> ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
+> ℹ️ **Legacy Archive** → movido a `01_Personal_Os/07_Archive/05_Repos/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
 *PersonalOS v4.9 Consequences — 2026-06-01 | 15 áreas funcionales | Skills: 396 activas + 17 Anthropic + ~490 legacy*
 

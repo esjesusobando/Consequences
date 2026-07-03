@@ -100,7 +100,7 @@ def analyze(video_url, repo, output, format, verbose, no_transcript):
             # Log to registry
             if result.get("components", {}).get("video"):
                 try:
-                    registry_path = Path(__file__).parent.parent.parent.parent.parent / "02_Knowledge" / "06_Unicorn" / "video_analysis_registry.md"
+                    registry_path = Path(__file__).parent.parent.parent.parent.parent / "02_Knowledge" / "03_Unicorn" / "video_analysis_registry.md"
                     video_registry = VideoRegistry(str(registry_path))
                     abs_output = str(Path(resolved_output).resolve())
                     video_registry.append_to_registry(result["components"]["video"], abs_output)

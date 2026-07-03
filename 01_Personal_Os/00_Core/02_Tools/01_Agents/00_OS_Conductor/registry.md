@@ -84,16 +84,16 @@
 | 5  | **N8N Nodes**             | `05_N8N_Nodes/`                | `n8n`, `nodes`                | Configuración de nodos N8N           |
 | 6  | **N8N Validation**        | `06_N8N_Validation/`           | `n8n`, `validation`           | Validación de workflows N8N          |
 | 7  | **N8N Workflows**         | `07_N8N_Workflows/`            | `n8n`, `patterns`             | Patrones de workflows N8N            |
-| 8  | **N8N Invictus**          | `08_N8N_Invictus/`             | `n8n`, `invictus`             | Workflows N8N del ecosistema Invictus|
+| 8  | **N8N Invictus**          | `09_N8N_Invictus/`             | `n8n`, `invictus`             | Workflows N8N del ecosistema Invictus|
 | 9  | **Firecrawl**             | `10_Firecrawl/`                | `scraping`, `web`, `firecrawl`| Web scraping con Firecrawl           |
-| 10 | **GWS Client**            | `10_GWS_Client/`               | `gws`, `google-workspace`     | Cliente Google Workspace             |
+| 10 | **GWS Client**            | `12_GWS_Client/`               | `gws`, `google-workspace`     | Cliente Google Workspace             |
 | 11 | **Gcierr**                | `11_Gcierr/`                   | `gcierr`, `tools`             | Herramientas Gcierr                  |
 | 12 | **N8N**                   | `14_N8n/`                      | `n8n`, `general`              | Skill N8N general                    |
 | 13 | **Content From URL**      | `13_Content_From_Url/`         | `url`, `content`, `extract`   | Extraer contenido desde URL          |
 | 14 | **Compound Knowledge**    | `14_Compound_Knowledge/`       | `knowledge`, `compound`       | Conocimiento compuesto               |
 | 15 | **OS Self Improvement**   | `15_Os_Self_Improvement/`      | `self-improvement`, `os`      | Auto-mejora del OS                   |
-| 16 | **Reverse Engineering**   | `16_Reverse_Engineering/`      | `reverse`, `analysis`         | Ingeniería inversa                   |
-| 17 | **Learning URL→Knowledge**| `17_Learning_Url_To_Knowledge/`| `learning`, `url`, `pipeline` | Pipeline URL → conocimiento          |
+| 16 | **Reverse Engineering**   | `17_Reverse_Engineering/`      | `reverse`, `analysis`         | Ingeniería inversa                   |
+| 17 | **Learning URL→Knowledge**| `19_Learning_Url_To_Knowledge/`| `learning`, `url`, `pipeline` | Pipeline URL → conocimiento          |
 
 ---
 

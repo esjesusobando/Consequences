@@ -40,7 +40,7 @@
 
 ## Completado Esta Session
 
-- ✅ GWS CLI skill (`04_Automatizacion/10_GWS_Client/SKILL.md`)
+- ✅ GWS CLI skill (`04_Automatizacion/12_GWS_Client/SKILL.md`)
 - ✅ Design SOTA skill (`02_Diseno_Ui_Ux/10_Design_SOTA/SKILL.md`)
 - ✅ 14 API keys centralizadas en `.env`
 - ✅ `.mcp.json` actualizado con `${ENV_VAR}` references

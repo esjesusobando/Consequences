@@ -14,9 +14,9 @@ Estado validado y corregido para el ecosistema Gentleman, OpenCode SDD y EveryIn
 
 - Repo principal: `master...origin/master` limpio.
 - Se inicializaron submódulos que aparecían con `-` en `git submodule status`, probable causa de flechas hacia abajo en Cursor:
-  - `01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster`
-  - `01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram`
-  - `01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/gentle-pi`
+  - `01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster`
+  - `01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/engram`
+  - `01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/gentle-pi`
   - `03_Resultado/09b_World_OIM/01_OIM_Website_v2`
 
 ## OpenCode SDD

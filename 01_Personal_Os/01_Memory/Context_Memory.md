@@ -1,7 +1,7 @@
 # Memoria de Contexto del Proyecto
 
 **Proyecto:** Think Different PersonalOS v5.0 (SOTA)
-**Última Actualización:** 2026-06-29
+**Última Actualización:** 2026-07-03
 **Estado:** ✅ Production Ready — Post-Auditoría SOTA
 
 ---
@@ -12,7 +12,7 @@
 
 | Métrica              | Valor Verificado                    |
 |----------------------|-------------------------------------|
-| Skills (SKILL.md)    | 396 (15 áreas) — CoT injected       |
+| Skills (SKILL.md)    | 411 (16 áreas) — +RealEstate (14 skills + 1 orchestrator) |
 | Scripts Python       | 57+ actualizados (logging + typing) |
 | READMEs beautificados| 393 archivos                        |
 | Reglas (.mdc)        | 14                                  |
@@ -51,6 +51,27 @@ Think_Different/
 
 ---
 
+## Skills System (16 áreas funcionales — 411 skills)
+
+| Área | Skills | Descripción |
+|------|--------|-------------|
+| 00_Agent_Teams_Lite | 14 | SDD sub-agentes + JARVIS manifests |
+| 00_Compound_Engineering | 63 | Core CE — SDD + Compound Engineering |
+| 00_Personal_Os | 24 | Life OS, Hillary, Rituales |
+| 00_Skill_Auditor | 1 | Auditor de skills |
+| 00_System_Core | 1 | System core |
+| 00_Workflows | 39 | Workflow skills |
+| 01_Creacion_Contenidos | 52 | Brand, YouTube, SEO, Marketing |
+| 02_Diseno_Ui_Ux | 34 | Product Design, UI/UX, Taste |
+| 03_Video_Media | 11 | Video production |
+| 04_Automatizacion | 27 | Automation |
+| 05_Claude_Ads | 21 | Claude Ads |
+| 06_Tools | 83 | Skill Creator, Testing, DevOps |
+| 07_Invictus_Web | 18 | Invictus Web |
+| 08_JAO | 7 | Entrevistador, Humanizador, Superpowers |
+| **09_RealEstate** | **15** | **Real estate analysis (NEW)** |
+| 10_Laia_Learning | 1 | Laia Learning |
+
 ## Convenciones del Sistema
 
 - **Idioma:** Español para comunicación, inglés para código/entidades técnicas
@@ -59,6 +80,33 @@ Think_Different/
 - **Scripts:** Todos llevan `import logging, typing` + `logging.basicConfig`
 - **Commits:** `--no-verify` cuando GGA hook falla por OpenCode CLI ausente
 - **READMEs:** Beautificar con `58_Batch_Beautify_README.py` tras cambios masivos
+
+---
+
+## Historial de Auditorías
+
+### 2026-07-03 — Auditoría de Integridad Referencial (Sesión 2)
+- **Alcance:** Verificación de rutas, shebangs, referencias cruzadas en AGENTS.md, GOALS.md, BACKLOG.md, config_paths.py
+- **18 issues encontrados**, **17 corregidos** + **1 redundancia estructural resuelta**:
+  - 7 paths rotos en `AGENTS.md` (Winter_is_Coming) — corregidos
+  - 5 paths rotos en `AGENTS.md` (raíz) — corregidos
+  - 5 paths rotos en `GOALS.md` — corregidos
+  - 1 path roto en `BACKLOG.md` — corregido
+  - 1 path roto en `config_paths.py` (`AUTO_IMPROVEMENT_DIR`) — corregido
+  - 1 path roto en `20_System_Mapper_Hub.py` (`hubs_dir` sin `00_HUBs/`) — corregido
+  - 1 error msg en `11_Auto_Learn_Hub.py` — corregido
+  - 2 shebangs reposicionados a línea 1 (`01_Auditor_Hub.py`, `20_System_Mapper_Hub.py`)
+  - 1 redundancia estructural (`01_Auto_Improvement/01_Auto_Improvement/`) — **consolidada**: movidos 12 subdirectorios + 10 archivos al nivel correcto
+- **Lecciones clave:**
+  - `config_paths.py` tenía `AUTO_IMPROVEMENT_DIR` apuntando a `05_Scripts/01_Auto_Improvement/` (no existe); el real estaba en `03_Learning/01_Auto_Improvement/01_Auto_Improvement/` con anidamiento redundante
+  - `20_System_Mapper_Hub.py` fallaba silenciosamente porque su `hubs_dir` hardcodeado no incluía `00_HUBs/` — el manifest no se generaba desde la reestructura v5.0
+  - Múltiples docs estratégicos (AGENTS.md, GOALS.md, BACKLOG.md) mantenían rutas de la estructura anterior (`04_Operations/`, `03_Task/`, `05_Archive/`)
+- **Verificado:**
+  - `34_HUB_SOTA.py --status` → funciona (importa canónico, muestra features)
+  - `20_System_Mapper_Hub.py --scan` → genera manifest completo (7 fases)
+  - `config_paths.py` → `AUTO_IMPROVEMENT_DIR` resuelve correctamente
+  - 396 skills en 15 áreas funcionales
+  - SOTA Skill Modernizer funcional
 
 ---
 

@@ -50,11 +50,11 @@ graph TD
 
 | Repo | Location | Purpose |
 |------|----------|---------|
-| **Personal OS** | `01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/18_Personal_Os_Main/` | Original Personal OS methodology |
-| **Gentle AI** | `01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/10_Gentle_AI/` | Gentle AI stack reference |
-| **Engram** | `01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/08_Engram/` | Persistent memory system |
-| **Every CE** | `01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/` | Compound Engineering plugin |
-| **qmd** | `01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/20_qmd/` | QMD documentation format |
+| **Personal OS** | `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/18_Personal_Os_Main/` | Original Personal OS methodology |
+| **Gentle AI** | `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/10_Gentle_AI/` | Gentle AI stack reference |
+| **Engram** | `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/08_Engram/` | Persistent memory system |
+| **Every CE** | `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/04_Compound_Engineering_Plugin/` | Compound Engineering plugin |
+| **qmd** | `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/20_qmd/` | QMD documentation format |
 
 **GitHub Sources:**
 - https://github.com/Gentleman-Programming (Gentle AI, Engram, qmd)

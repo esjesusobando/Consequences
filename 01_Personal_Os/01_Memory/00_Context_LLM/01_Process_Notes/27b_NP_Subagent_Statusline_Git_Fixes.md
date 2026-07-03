@@ -71,7 +71,7 @@ Además, el repo clonado `sub-agent-statusline/` en la ruta
 2. `02_Knowledge/` → `01_Personal_Os/02_Knowledge/` en todas las líneas
 3. Removida línea `CLAUDE.md` del gitignore (el archivo ya está trackeado)
 4. Removida línea `!CLAUDE_TEMPLATE.md` (ya no aplica)
-5. Agregado `01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/`
+5. Agregado `01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/`
 
 ### Por qué esto rompía Cursor
 

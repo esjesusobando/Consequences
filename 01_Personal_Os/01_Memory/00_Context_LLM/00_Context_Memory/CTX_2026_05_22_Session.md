@@ -66,7 +66,7 @@ El repo clonado en `01_Repos_Reference/02_Repos_Gentleman/` tenía su propio `.g
 y no estaba ignorado. Se agregó:
 
 ```
-01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
+01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/
 ```
 
 ---

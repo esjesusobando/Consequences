@@ -987,8 +987,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "15_Audio_Pipeline",
-          "path": "01_Creacion_Contenidos/15_Audio_Pipeline/SKILL.md",
+          "name": "19_Audio_Pipeline",
+          "path": "01_Creacion_Contenidos/19_Audio_Pipeline/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1297,43 +1297,43 @@
           "has_frontmatter": true
         },
         {
-          "name": "08_N8N_Invictus",
-          "path": "04_Automatizacion/08_N8N_Invictus/SKILL.md",
+          "name": "09_N8N_Invictus",
+          "path": "04_Automatizacion/09_N8N_Invictus/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-code-javascript",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-code-javascript/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-code-javascript/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-code-python",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-code-python/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-code-python/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-expression-syntax",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-expression-syntax/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-expression-syntax/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-mcp-tools-expert",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-mcp-tools-expert/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-mcp-tools-expert/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-node-configuration",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-node-configuration/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-node-configuration/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-validation-expert",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-validation-expert/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-validation-expert/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "n8n-workflow-patterns",
-          "path": "04_Automatizacion/08_N8N_Invictus/n8n-workflow-patterns/SKILL.md",
+          "path": "04_Automatizacion/09_N8N_Invictus/n8n-workflow-patterns/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1342,8 +1342,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "10_GWS_Client",
-          "path": "04_Automatizacion/10_GWS_Client/SKILL.md",
+          "name": "12_GWS_Client",
+          "path": "04_Automatizacion/12_GWS_Client/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1352,8 +1352,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "11_Gws_Client",
-          "path": "04_Automatizacion/11_Gws_Client/SKILL.md",
+          "name": "18_Gws_Client",
+          "path": "04_Automatizacion/18_Gws_Client/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1377,13 +1377,13 @@
           "has_frontmatter": true
         },
         {
-          "name": "16_Reverse_Engineering",
-          "path": "04_Automatizacion/16_Reverse_Engineering/SKILL.md",
+          "name": "17_Reverse_Engineering",
+          "path": "04_Automatizacion/17_Reverse_Engineering/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "17_Learning_Url_To_Knowledge",
-          "path": "04_Automatizacion/17_Learning_Url_To_Knowledge/SKILL.md",
+          "name": "19_Learning_Url_To_Knowledge",
+          "path": "04_Automatizacion/19_Learning_Url_To_Knowledge/SKILL.md",
           "has_frontmatter": true
         }
       ]

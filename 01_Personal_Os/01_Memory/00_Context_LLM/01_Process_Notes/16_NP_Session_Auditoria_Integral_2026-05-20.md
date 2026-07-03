@@ -74,8 +74,8 @@ python 19_Agent_Sync_Hub.py --apply
 ### 4. Archivado de Reports
 
 **Archivos archivados:**
-- `AUDITORIA_INTEGRAL_2026-05-20.md` → `01_Personal_Os/05_Archive/03_Auditorias/`
-- `AUDIT_REPORT_v4.1.md` → `01_Personal_Os/05_Archive/03_Auditorias/`
+- `AUDITORIA_INTEGRAL_2026-05-20.md` → `01_Personal_Os/07_Archive/05_Repos/03_Auditorias/`
+- `AUDIT_REPORT_v4.1.md` → `01_Personal_Os/07_Archive/05_Repos/03_Auditorias/`
 
 ---
 

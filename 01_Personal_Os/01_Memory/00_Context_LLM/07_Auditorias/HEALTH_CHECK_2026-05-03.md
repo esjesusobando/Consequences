@@ -84,7 +84,7 @@ MCP_CONFIG_AUDIT.md                       # Drift de configs MCP
 | `03_Resultado/`                                           | 14                    | ~32                            |
 | `02_Playground/04_Maerks/`                                | 28                    | ~105                           |
 | `01_Personal_Os/04_Operations/00_Context_LLM/`            | 32                    | ~76                            |
-| `01_Personal_Os/05_Archive/`                              | ~50                   | ~50                            |
+| `01_Personal_Os/07_Archive/05_Repos/`                              | ~50                   | ~50                            |
 | **TOTAL**                                                 | **124+**              | **~1,700+**                    |
 
 ---

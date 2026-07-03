@@ -99,7 +99,7 @@
   - `03_Resultado/04_Reportes/00_RESUMEN_AUDITORIAS.md`
   - `02_Playground/06_Reports/00_SALUD_REPORTS.md`
   - `02_Playground/04_Maerks/00_AUDIT_SUMMARY.md`
-- **OIM_Website_Backup copies**: Archivadas copias duplicadas en `01_Personal_Os/05_Archive/10_Legacy_Revisar/`
+- **OIM_Website_Backup copies**: Archivadas copias duplicadas en `01_Personal_Os/07_Archive/10_Legacy_Revisar/`
 - **Git state**: Limpio, push a origin/master exitoso
 - **CLAUDE.md, README.md, OS_DIRECTORY.md**: Actualizados a v4.0
 

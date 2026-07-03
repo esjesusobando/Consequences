@@ -81,7 +81,7 @@ Auditoría integral de todo el proyecto Think_Different: paths, estructuras, dep
 
 ### 8. Plan Archivado
 
-- `Plan_SOTA_Marketing_Agency.md` → `01_Personal_Os/05_Archive/01_Plans/`
+- `Plan_SOTA_Marketing_Agency.md` → `01_Personal_Os/07_Archive/05_Repos/01_Plans/`
 - Tareas pendientes agregadas al BACKLOG.md:
   - Fase 1.4-1.6 (P2): Validar agentes, learning entry
   - Fase 2 (P2): Quality gates, SLA, MCPs, dashboard, feedback loop

@@ -229,9 +229,9 @@ MCP Configuration (add to your agent's config):
       }
     }
   } was corrupted: missing .git directory, only contained , was reading parent repo's .git
--  was a gitlink (160000) without entry in , causing -05e6fd183e2af60bb3b40559d337b7e845991b84 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster
- 743f2d0f42e6f9d5512310541d3c62ca89d019c1 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram (pi-v0.1.5-2-g743f2d0)
- 848a1fd62b16bde1be54e4a797157f3287fde58b 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/gentle-pi (v0.3.8) to fail
+-  was a gitlink (160000) without entry in , causing -05e6fd183e2af60bb3b40559d337b7e845991b84 01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster
+ 743f2d0f42e6f9d5512310541d3c62ca89d019c1 01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/engram (pi-v0.1.5-2-g743f2d0)
+ 848a1fd62b16bde1be54e4a797157f3287fde58b 01_Personal_Os/07_Archive/05_Repos/01_Repos_Reference/02_Repos_Gentleman/gentle-pi (v0.3.8) to fail
 - Multiple zombie submodules in  (OIM Website Backup copies, Design System, etc.) referencing non-existent paths
 -  in root and  were out of sync (v4.7 vs v4.8, different dates)
 -  last updated April 20, 2026 (stale)

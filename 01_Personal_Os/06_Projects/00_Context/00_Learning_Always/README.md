@@ -47,14 +47,14 @@
 
 ## 🔗 Contexto
 
-Los insights van a → `02_Knowledge/06_Unicorn/`
+Los insights van a → `02_Knowledge/03_Unicorn/`
 
 | Disciplina      | Ubicación                       |
 | --------------- | ------------------------------- |
-| Project Manager | `06_Unicorn/01_Pm/`             |
-| Product Manager | `06_Unicorn/02_Pdm/`            |
-| Product Design  | `06_Unicorn/03_Product_Design/` |
-| Engineering     | `06_Unicorn/06_Engineering/`    |
+| Project Manager | `03_Unicorn/01_Pm/`             |
+| Product Manager | `03_Unicorn/02_Pdm/`            |
+| Product Design  | `03_Unicorn/03_Product_Design/` |
+| Engineering     | `03_Unicorn/06_Engineering/`    |
 
 ---
 

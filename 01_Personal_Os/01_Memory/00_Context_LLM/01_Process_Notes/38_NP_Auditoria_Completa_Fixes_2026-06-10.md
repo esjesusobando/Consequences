@@ -131,7 +131,7 @@ Auditoría integral del proyecto Think_Different que cubrió:
 
 ### 2.7 Plan Archivado
 
-- `Plan_SOTA_Marketing_Agency.md` → `01_Personal_Os/05_Archive/01_Plans/`
+- `Plan_SOTA_Marketing_Agency.md` → `01_Personal_Os/07_Archive/05_Repos/01_Plans/`
 - 14 tareas pendientes agregadas al BACKLOG.md
 
 ---

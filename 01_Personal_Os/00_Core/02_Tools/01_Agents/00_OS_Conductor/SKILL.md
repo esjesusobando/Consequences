@@ -359,7 +359,7 @@ El Conductor opera como **Evaluator del flujo completo**:
 
 ## ⚡ Dynamic Workflows Pattern (Anthropic May 2026)
 
-> **Reference:** [Knowledge Base](../../../02_Knowledge/09_Anthropic/00_Dynamic_Workflows.md)
+> **Reference:** [Knowledge Base](../../../02_Knowledge/05_Anthropic/00_Dynamic_Workflows.md)
 
 Anthropic's **Dynamic Workflows** (released May 28, 2026) represent the next evolution of agent orchestration — Claude dynamically writes JavaScript scripts that run tens to hundreds of parallel subagents in a single session. This pattern extends the Conductor's orchestration capabilities beyond sequential skill pipelines.
 
@@ -515,5 +515,5 @@ El Conductor incluye un sistema de **evaluación cuantitativa** siguiendo Skill 
 - **Flujos detallados:** [`references/compound-flows.md`](references/compound-flows.md)
 - **Sprint Contract template:** [`references/sprint-contract.md`](references/sprint-contract.md)
 - **Runbooks:** [`references/runbooks/`](references/runbooks/)
-- **Dynamic Workflows knowledge:** `01_Personal_Os/02_Knowledge/09_Anthropic/00_Dynamic_Workflows.md`
-- **Security Find-and-Fix knowledge:** `01_Personal_Os/02_Knowledge/09_Anthropic/01_Security_Find_Fix_Loop.md`
+- **Dynamic Workflows knowledge:** `01_Personal_Os/02_Knowledge/05_Anthropic/00_Dynamic_Workflows.md`
+- **Security Find-and-Fix knowledge:** `01_Personal_Os/02_Knowledge/05_Anthropic/01_Security_Find_Fix_Loop.md`

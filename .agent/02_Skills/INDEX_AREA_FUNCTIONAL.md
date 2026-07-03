@@ -1,8 +1,8 @@
-# INDEX ÁREAS FUNCIONALES — Skills v4.9 Consequences
+# INDEX ÁREAS FUNCIONALES — Skills v5.0 Live
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `.agent/02_Skills/`
-> **Actualizado:** 2026-05-29 (v4.9 Consequences — Production Ready)
+> **Actualizado:** 2026-07-01 (v5.0 Live)
 
 ---
 
@@ -10,9 +10,12 @@
 
 | Skill                                       | Path                                          | Descripción                                                  |
 |--------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
+| **Agent Teams Lite**                        | `00_Agent_Teams_Lite/`                        | SDD sub-agents (explore, propose, spec, design, etc.)        |
 | **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                    |
-| **Personal OS Stack**                       | `00_System_Core/`                             | Stack base del OS, System Guardian                           |
-| **Skill Auditor**                           | `10_Skill_Auditor/`                           | Auditoría y validación de skills                             |
+| **Personal OS**                             | `00_Personal_Os/`                             | Personal OS system                                           |
+| **Skill Auditor**                           | `00_Skill_Auditor/`                           | Auditoría y validación de skills                             |
+| **System Core**                             | `00_System_Core/`                             | Stack base del OS, System Guardian                           |
+| **Workflows**                               | `00_Workflows/`                               | Workflow automation                                          |
 
 ---
 
@@ -86,15 +89,11 @@
 
 ---
 
-## ÁREA 05: WORKFLOWS & ORQUESTACIÓN
+## ÁREA 05: CLAUDE ADS
 
-| Skill                                        | Path                                                          | Descripción                                          |
-|---------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------|
-| **Agent Teams Lite**                         | `05_Workflows/01_Agent_Teams_Lite/`                           | Orquestación de equipos de agents                    |
-| **Project Manager**                          | `05_Workflows/02_Project_Manager/`                            | Gestión de proyectos                                 |
-| **Product Manager**                          | `05_Workflows/03_Product_Manager/`                            | Gestión de producto                                  |
-| **PM Agent Orchestrator**                    | `05_Workflows/04_PM_Orchestrator/`                            | Orquestación PM avanzada                             |
-| **Workflow Orchestrator**                    | `05_Workflows/05_Workflow_Orchestrator.md`                    | Orquestación de workflows                            |
+| Skill                                     | Path                                  | Descripción                                            |
+|------------------------------------------|--------------------------------------|-------------------------------------------------------|
+| **Claude Ads Platform**                   | `05_Claude_Ads/`                      | Claude Ads platform skills                             |
 
 ---
 
@@ -114,26 +113,37 @@
 
 ---
 
-## ÁREA 07: PERSONAL OS
-
-| Skill                                    | Path                                                                                  | Descripción                                    |
-|-----------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Life OS**                             | `07_Personal_Os/01_Life_OS/`                                                         | Sistema Life OS                               |
-| **Personal OS (Hillary)**               | `07_Personal_Os/02_Personal_Os/`                                                     | Captura rápida, plan diario                    |
-| **Fantasticos**                         | `07_Personal_Os/03_Fantasticos/`                                                     | 4 Fantásticos                                 |
-
----
-
-## ÁREA 08: INVICTUS WEB
+## ÁREA 07: INVICTUS WEB
 
 | Skill                                     | Path                                  | Descripción                                            |
 |------------------------------------------|--------------------------------------|-------------------------------------------------------|
-| **Browser Automation**                    | `08_Invictus_Web/03_Playwright/`      | Playwright, automatización web                         |
-| **Superpowers**                           | `08_Invictus_Web/01_Superpowers/`     | Superpoderes de búsqueda y scraping                    |
-| **Buscador Skills**                       | `08_Invictus_Web/02_Buscador_Skills/` | Buscador de skills                                     |
+| **Browser Automation**                    | `07_Invictus_Web/03_Playwright/`      | Playwright, automatización web                         |
+| **Superpowers**                           | `07_Invictus_Web/01_Superpowers/`     | Superpoderes de búsqueda y scraping                    |
+| **Buscador Skills**                       | `07_Invictus_Web/02_Buscador_Skills/` | Buscador de skills                                     |
 
 ---
 
-> ℹ️ **Legacy Archive** → mover a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
+## ÁREA 08: JAO AGENTS
 
-*PersonalOS v4.9 Consequences — 2026-05-29 | 14 áreas funcionales | Skills: 385 activas + ~490 legacy*
+| Skill                                     | Path                                  | Descripción                                            |
+|------------------------------------------|--------------------------------------|-------------------------------------------------------|
+| **Entrevistador Procesos**                | `08_JAO/`                             | Entrevistador de procesos                              |
+| **Humanizador**                           | `08_JAO/`                             | Humanización de textos                                 |
+| **Optimizador Prompts**                   | `08_JAO/`                             | Optimización de prompts                                |
+| **Presentaciones Visuales**               | `08_JAO/`                             | Presentaciones HTML                                    |
+| **Superpowers**                           | `08_JAO/`                             | Superpoderes de búsqueda                               |
+| **Verificador Datos**                     | `08_JAO/`                             | Verificación de datos                                  |
+
+---
+
+## ÁREA 10: LAIA LEARNING
+
+| Skill                                     | Path                                  | Descripción                                            |
+|------------------------------------------|--------------------------------------|-------------------------------------------------------|
+| **Laia Learning System**                  | `10_Laia_Learning/`                   | Sistema de aprendizaje Laia                            |
+
+---
+
+> ℹ️ **Legacy Archive** → `01_Personal_Os/05_Archive/10_Skills_Legacy/` (no es área activa de skills)
+
+*PersonalOS v5.0 Live — 2026-07-01 | 15 áreas funcionales | Skills: 396 activas*

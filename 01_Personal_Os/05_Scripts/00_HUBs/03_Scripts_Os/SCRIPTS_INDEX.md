@@ -1,11 +1,10 @@
-# Scripts Index — PersonalOS Think Different v4.9 Consequences
+# Scripts Index — PersonalOS Think Different v5.0 C.G.S.
 
-> **Total Scripts:** 163 (30 raíz + 133 activos en subdirs) — ver nota de legacy abajo
-> **Total HUBs:** 30 scripts raíz (00-32, con gaps en 12, 13, 23 — excluye config_paths + HUB_SOTA + refactor_revert_id)
-> **Last Updated:** 2026-05-27
-> **Validation:** Production Ready — Sistema PURE GREEN v4.9 Renumbered
-> **Migration:** Scripts reorganizados en estructura 00-13 post-renumbering
-> **New:** Directorios 00-13 alineados con HUBs numerados
+> **Total Scripts:** 45+ (39 raíz HUBs + 6 utilidades + 2 engine dirs con 14 módulos) — ver detalle abajo
+> **Total HUBs:** 36 scripts raíz (00-36, con gaps en 12, 13, 23 — excluye config_paths + batch_replace_paths + refactor_revert_id)
+> **Last Updated:** 2026-07-02
+> **Validation:** v5.0 — Model Eval Engine + Model Router Engine integrados
+> **Path:** `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` (migrado de `04_Operations/` en v5.0)
 
 ---
 
@@ -28,9 +27,9 @@
 
 ---
 
-## 🏗️ Standalone HUBs & Scripts (01_Personal_Os/04_Operations/03_Scripts_Os/)
+## 🏗️ Standalone HUBs & Scripts (01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/)
 
-> **Total:** 30 scripts raíz + 4 subdirectorios con scripts internos. Ver detalle completo en `HUB_CATALOG.md`
+> **Total:** 36 HUBs + utilidades + 2 engine dirs (14 módulos). Ver detalle completo en `HUB_CATALOG.md`
 
 | #    | Script                         | Purpose                                            | Status           |
 |-----|-------------------------------|---------------------------------------------------|-----------------|
@@ -55,17 +54,24 @@
 | 20   | `System_Mapper_Hub.py`         | System Mapper — regenera manifest                  | ✅ ACTIVO         |
 | 21   | `Legacy_Path_Cleanup.py`       | Legacy Path Cleanup Scanner                        | ✅ ACTIVO         |
 | 22   | `Validate_Skill_Frontmatter.py`| Skill Frontmatter Validator                        | ✅ ACTIVO         |
+| 23   | `Preview_Generator.js`         | Generador de previews (JavaScript)                 | ✅ ACTIVO         |
 | 24   | `mass_path_migration.py`       | Migración masiva de paths del sistema              | ✅ ACTIVO         |
-| 25   | `Minimax_Optimizer_Hub.py`     | Gestión de Integración MiniMax                     | ✅ ACTIVO         |
-| 26   | `Parallel_Audit_Pro.py`        | Auditoría paralela                                 | ✅ ACTIVO         |
+| 25   | `Minimax_Optimizer_Hub.py`     | Optimización Minimax de recursos                   | ✅ ACTIVO         |
+| 26a  | `Model_Eval_Hub.py` ★          | Evaluación de modelos (G-Eval, drift, Pareto)      | ✅ ACTIVO         |
+| 26b  | `Parallel_Audit_Pro.py`        | Auditoría paralela avanzada                        | ✅ ACTIVO         |
 | 27   | `Skill_Auditor.py`             | Skill Auditor                                      | ✅ ACTIVO         |
-| 28   | `System_Health_Monitor.py`     | Health monitor del sistema                         | ✅ ACTIVO         |
+| 28a  | `Model_Router_Hub.py` ★        | Router de modelos (semántico→cascada→bandido)     | ✅ ACTIVO         |
+| 28b  | `System_Health_Monitor.py`     | Health monitor del sistema                         | ✅ ACTIVO         |
 | 29   | `Repo_Sync_Auditor.py`         | Repo sync auditor                                  | ✅ ACTIVO         |
-| 30   | `path_replacement.py`          | PATH Replacement Script — OS v4.9                  | ✅ ACTIVO         |
+| 30   | `path_replacement.py`          | PATH Replacement Script                            | ✅ ACTIVO         |
 | 31   | `Graphify_Hub.py`              | Graph knowledge base management hub                | ✅ ACTIVO         |
 | 32   | `Graphify_Update.py`           | Graph incremental update runner                    | ✅ ACTIVO         |
+| 33   | `Doc_Sync.py`                  | Sincronización de documentos                       | ✅ ACTIVO         |
+| 34   | `HUB_SOTA.py`                  | State of the Art — registro + orquestación        | ✅ ACTIVO         |
+| 35   | `SOTA_Skill_Modernizer.py`     | Inyección CoT en skills para SOTA alignment        | ✅ ACTIVO         |
+| 36   | `README_Table_Beautifier.py`   | Embellecedor de tablas README                      | ✅ ACTIVO         |
 
-> Nota: los # 12-13 fueron reasignados a directorios internos. `Context_Usage_Bar.py` y `Beautify_Tables.py` están en `12_Auditors_Os/scripts/`.
+> Nota: los # 12-13 fueron reasignados a directorios internos. `Context_Usage_Bar.py` y `Beautify_Tables.py` están en `12_Auditors_Os/scripts/`. 26a/26b y 28a/28b comparten número. ★ = HUBs v5.0 nuevos.
 
 ### Usage
 
@@ -80,15 +86,15 @@ validate        # Validator_Hub.py
 
 # O directamente
 cd Think_Different
-python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py estructura
-python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py skills
-python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py health
-python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py profundo
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py estructura
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py skills
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py health
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py profundo
 ```
 
 ---
 
-## 📁 Estructura v4.9 Consequences (Activo — 2026-05-31)
+## 📁 Estructura v5.0 C.G.S. (Activo — 2026-07-02)
 
 ```
 Think_Different/                        ← Raíz del proyecto
@@ -99,15 +105,17 @@ Think_Different/                        ← Raíz del proyecto
 │   │   ├── 01_Rules/                   ✅ 13 reglas .mdc
 │   │   └── 02_Tools/                   ✅ Agentes, Skills, MCPs, Hooks, Evals
 │   │       ├── 01_Agents/              ✅ 52+ agentes (Dream Team + Specialists)
-│   │       ├── 02_Skills/               ✅ 392 skills en 15 áreas funcionales
+│   │       ├── 02_Skills/              ✅ 392 skills en 15 áreas funcionales
 │   │       └── 03_Mcp/ … 09_Templates ✅ MCPs, Hooks, Plugins, Server, Evals
 │   ├── 02_Knowledge/                   ✅ Base de conocimiento
 │   ├── 03_Task/                        ✅ Tareas activas
-│   ├── 04_Operations/                  ✅ Todo lo operativo
-│   │   ├── 03_Scripts_Os/              ✅ 23 HUBs + utilities (JARVIS 3.1)
-│   │   │   ├── 12_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
-│   │   │   └── 13_Legacy/              ✅ Scripts legacy archivados
-│   │   └── 02_Agent_Teams_Lite/00_Manifest/ ✅ 7 archivos JARVIS manifest
+│   ├── 05_Scripts/                     ✅ Scripts + HUBs v5.0
+│   │   └── 00_HUBs/03_Scripts_Os/     ✅ 36 HUBs + utilities + engines (JARVIS 5.0)
+│   │       ├── 12_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
+│   │       ├── 13_Legacy/              ✅ Scripts legacy archivados
+│   │       ├── 26_Model_Eval_Engine/   ✅ 10 módulos de evaluación
+│   │       └── 28_Model_Router_Engine/ ✅ 4 módulos de routing
+│   ├── 01_Memory/                      ✅ Memoria persistente + context LLM
 │   └── 05_Archive/                     ✅ Legacy + repos de referencia
 ├── 02_Playground/                      ✅ Zona de pruebas
 ├── 03_Resultado/                       ✅ Outputs (OIM, Elite Portfolio, etc.)
@@ -143,7 +151,7 @@ Think_Different/                        ← Raíz del proyecto
 
 ## 🔧 Legacy Scripts (13_Legacy/)
 
-Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/` — scripts históricos archivados:
+Scripts legacy en `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/` — scripts históricos archivados:
 
 | Rango      | Cantidad  | Contenido                            |
 |-----------|----------|-------------------------------------|
@@ -168,9 +176,11 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/` — sc
 
 ## 📝 Notas Importantes
 
-1. **Rutas v4.0**: Skills ahora en `01_Personal_Os/00_Core/02_Tools/02_Skills/` (estructura v4.9 Consequences)
-2. **.bashrc**: Alias configurados con rutas absolutas
-3. **27_Skill_Auditor.py**: Corregido para auto-detectar categorías
+1. **Rutas v5.0**: Scripts en `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` (migrados de `04_Operations/`)
+2. **Engine dirs**: `26_Model_Eval_Engine/` (10 módulos) y `28_Model_Router_Engine/` (4 módulos) — importados como paquetes desde los HUBs
+3. **config_paths.py**: Resolución centralizada de paths (TASKS_DIR, EVALS_DIR, MODEL_EVALS_DIR, etc.)
+4. **HUB_SOTA.py**: Dual — uno en `03_Learning/01_Auto_Improvement/06_SOTA_Features/` y otro en raíz de scripts (34_HUB_SOTA.py)
+5. **.bashrc**: Alias configurados con rutas absolutas
 
 ---
 
@@ -239,4 +249,4 @@ Scripts migrados a skills usando `get_skill_script()`:
 
 ---
 
-*Actualizado: 2026-05-31 — Estructura 05_Archive estandarizada (01-09)*
+*Actualizado: 2026-07-02 — v5.0 C.G.S. — Model Eval Engine + Model Router Engine integrados*

@@ -18,17 +18,17 @@
 | 06  | `06_N8N_Validation/`            | n8n Validation      | Validacion de workflows n8n                    |
 | 07  | `07_N8N_Workflows/`             | n8n Workflows       | Patrones de workflows n8n                      |
 | 08  | `08_AI_News_Weekly/`            | AI News Weekly      | Newsletter semanal de IA automatizada          |
-| 09  | `08_N8N_Invictus/`              | n8n Invictus        | Automatizaciones n8n para Invictus             |
+| 09  | `09_N8N_Invictus/`              | n8n Invictus        | Automatizaciones n8n para Invictus             |
 | 10  | `10_Firecrawl/`                 | Firecrawl           | Web scraping con Firecrawl                     |
-| 11  | `10_GWS_Client/`                | GWS CLI             | Cliente CLI para Google Workspace              |
+| 11  | `12_GWS_Client/`                | GWS CLI             | Cliente CLI para Google Workspace              |
 | 12  | `11_Gcierr/`                    | GCIERR              | Automatizacion de branding GCIERR              |
-| 13  | `11_Gws_Client/`                | GWS Client (alt)    | Cliente alternativo Google Workspace           |
+| 13  | `18_Gws_Client/`                | GWS Client (alt)    | Cliente alternativo Google Workspace           |
 | 14  | `13_Content_From_Url/`          | Content from URL    | Extraccion de contenido desde URLs             |
 | 15  | `14_Compound_Knowledge/`        | Compound Knowledge  | Conocimiento compuesto automatizado            |
 | 16  | `14_N8n/`                       | n8n Automation      | Automatizacion general n8n                     |
 | 17  | `15_Os_Self_Improvement/`       | OS Self Improvement | Auto-mejora del sistema operativo              |
-| 18  | `16_Reverse_Engineering/`       | Reverse Engineering | Ingenieria inversa de sistemas                 |
-| 19  | `17_Learning_Url_To_Knowledge/` | URL to Knowledge    | Conversion de URLs a conocimiento estructurado |
+| 18  | `17_Reverse_Engineering/`       | Reverse Engineering | Ingenieria inversa de sistemas                 |
+| 19  | `19_Learning_Url_To_Knowledge/` | URL to Knowledge    | Conversion de URLs a conocimiento estructurado |
 
 ---
 
@@ -41,8 +41,8 @@
                        04_N8N_MCP → 05_N8N_Nodes → 06_N8N_Validation → 07_N8N_Workflows
 
   Scraping ──────────── 10_Firecrawl / 13_Content_From_Url
-  Google Workspace ──── 10_GWS_Client / 11_Gws_Client
-  Conocimiento ──────── 14_Compound_Knowledge / 17_Learning_Url_To_Knowledge
+  Google Workspace ──── 12_GWS_Client / 18_Gws_Client
+  Conocimiento ──────── 14_Compound_Knowledge / 19_Learning_Url_To_Knowledge
   Auto-mejora ───────── 15_Os_Self_Improvement
 ```
 
@@ -56,11 +56,11 @@
 | Automatizar con n8n (Python) | `02_N8N_Python`          |
 | Workflow complejo n8n        | `07_N8N_Workflows`       |
 | Web scraping                 | `10_Firecrawl`           |
-| Integrar Google Workspace    | `10_GWS_Client`          |
+| Integrar Google Workspace    | `12_GWS_Client`          |
 | Extraer contenido de URL     | `13_Content_From_Url`    |
 | Procesar conocimiento        | `14_Compound_Knowledge`  |
 | Auto-mejora del sistema      | `15_Os_Self_Improvement` |
-| Ingenieria inversa           | `16_Reverse_Engineering` |
+| Ingenieria inversa           | `17_Reverse_Engineering` |
 
 ---
 

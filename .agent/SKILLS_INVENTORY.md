@@ -1,35 +1,30 @@
-# SKILLS INVENTORY — Think Different PersonalOS v4.8
+# SKILLS INVENTORY — Think Different PersonalOS v5.0
 
-> 📍 **Source:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (canonical)
-> 📍 **Backup activo:** `.agent/02_Skills/` (sincronizado)
-> 📦 **Legacy archivado:** `01_Personal_Os/05_Archive/10_Skills_Legacy/`
+> 📍 **Source:** `.agent/02_Skills/` (canonical activo)
 
 ---
 
-## 📁 Estructura Activa: `.agent/02_Skills/` (14 directorios, 407 SKILL.md)
+## 📁 Estructura Activa: `.agent/02_Skills/` (15 directorios, 396 SKILL.md)
 
-### 00_* — Infraestructura/bootstrap (preservados; no todos existen en source)
+### Áreas Activas
 
 | Directorio | SKILL.md | Propósito |
 |-----------|----------|-----------|
-| `00_Agent_Teams_Lite` | 13 | SDD sub-agents (explore, propose, spec, design, tasks, apply, verify, archive) |
+| `00_Agent_Teams_Lite` | 14 | SDD sub-agents (explore, propose, spec, design, tasks, apply, verify, archive) |
 | `00_Compound_Engineering` | 63 | Compound Engineering: skills de agentes, CE workflow, herramientas |
-| `00_System_Core` | 1 | Stack de configuración del OS |
-| `10_Skill_Auditor` | 1 | Auditoría de skills |
-
-### 01-09 — Áreas Canónicas (sincronizadas desde source)
-
-| Área | SKILL.md | Skills clave |
-|------|----------|-------------|
-| `01_Creacion_Contenidos` | 40 | SEO, copywriting, ads, analytics, content strategy, email, CRO |
-| `02_Diseno_Ui_Ux` | 29 | UI/UX design, taste skill, brand identity, diagram studio, pencil design |
-| `03_Video_Media` | 7 | Video production, media skills |
-| `04_Automatizacion` | 37 | N8N (10 skills), automation, scripts |
-| `05_Workflows` | 37 | E2E, playwright, testing, observability, edge cases |
-| `06_Tools` | 112 | **Principal área técnica**: React, Next, Angular, Tailwind, TypeScript, Zod, Zustand, Django, Python, agent-native, testing, debugging, etc. |
-| `07_Personal_Os` | 32 | Personajes/agentes (14), rituals, system, daily/weekly workflows |
-| `08_Invictus_Web` | 15 | Invictus web design system, components, pages |
-| `09_Claude_Ads` | 20 | Claude Ads platform skills |
+| `00_Personal_Os` | 24 | Personal OS system |
+| `00_Skill_Auditor` | 1 | Skill auditing |
+| `00_System_Core` | 1 | System core |
+| `00_Workflows` | 43 | Workflow automation |
+| `01_Creacion_Contenidos` | 49 | Content creation |
+| `02_Diseno_Ui_Ux` | 34 | UI/UX design |
+| `03_Video_Media` | 11 | Video/media |
+| `04_Automatizacion` | 27 | Automation |
+| `05_Claude_Ads` | 21 | Claude Ads |
+| `06_Tools` | 83 | Development tools |
+| `07_Invictus_Web` | 18 | Invictus web |
+| `08_JAO` | 6 | JAO agents |
+| `10_Laia_Learning` | 1 | Laia learning |
 
 ---
 
@@ -47,11 +42,12 @@
 | Diseño UI/UX / Branding | `02_Diseno_Ui_Ux/` |
 | Video / Media | `03_Video_Media/` |
 | Automatización / N8N | `04_Automatizacion/` |
-| Workflows / E2E / Testing | `05_Workflows/` |
+| Workflows / E2E / Testing | `00_Workflows/` |
 | Agentes / Tool building / Architecture | `06_Tools/` |
-| Rituals / Daily / Weekly / Sync | `07_Personal_Os/` |
-| Invictus Web | `08_Invictus_Web/` |
-| Claude Ads | `09_Claude_Ads/` |
+| Personal OS | `00_Personal_Os/` |
+| Invictus Web | `07_Invictus_Web/` |
+| Claude Ads | `05_Claude_Ads/` |
+| JAO Agents | `08_JAO/` |
 | Compound Engineering (CE) | `00_Compound_Engineering/` |
 | SDD sub-agents | `00_Agent_Teams_Lite/` |
 
@@ -85,10 +81,9 @@ Skill lookup: `find 01_Personal_Os/05_Archive/10_Skills_Legacy/ -name "<skill_na
 
 | Ubicación | SKILL.md | Notas |
 |-----------|----------|-------|
-| Source (`01_Core/02_Tools/02_Skills/`) | 394 | Canonical |
-| Backup activo (`.agent/02_Skills/`) | 407 | Incluye bootstrap 00_* + source sync |
+| Activo (`.agent/02_Skills/`) | 396 | 15 directorios |
 | Legacy archive (`05_Archive/10_Skills_Legacy/`) | ~490 | Preservado completo |
 | **Total general único estimado** | **~700+** | Skills únicos en todo el OS |
 
 ---
-*Actualizado: 2026-05-26 | PersonalOS v4.8 | 394 source / 407 backup skills*
+*Actualizado: 2026-07-01 | PersonalOS v5.0 | 396 skills activas en 15 áreas*

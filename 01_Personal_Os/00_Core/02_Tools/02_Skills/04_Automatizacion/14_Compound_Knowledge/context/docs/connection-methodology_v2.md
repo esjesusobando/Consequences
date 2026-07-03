@@ -75,13 +75,13 @@ Context: same week or project
 
 ---
 
-## 06_Unicorn Integration
+## 03_Unicorn Integration
 
 ### File Naming Convention
 ```
-06_Unicorn/{discipline}/patterns/{YYYY-MM-DD}_{Pattern_Name}.md
-06_Unicorn/{discipline}/lessons/{YYYY-MM-DD}_{Lesson_Name}.md
-06_Unicorn/{discipline}/connections/{YYYY-MM-DD}_{Connections_Name}.md
+03_Unicorn/{discipline}/patterns/{YYYY-MM-DD}_{Pattern_Name}.md
+03_Unicorn/{discipline}/lessons/{YYYY-MM-DD}_{Lesson_Name}.md
+03_Unicorn/{discipline}/connections/{YYYY-MM-DD}_{Connections_Name}.md
 ```
 
 ### Discipline Mapping

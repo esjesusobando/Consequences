@@ -20,7 +20,7 @@
 |                                                                                         | --- Skill_Creator_v2_Analysis.md                                          |
 | +--- 99_ATL/skill-registry.md                                                           |
 | --- 05_Aipm/                         # Recursos de AI Project Management                |
-| --- 06_Unicorn/                      # Unicorn Engineering — 6 areas SOTA               |
+| --- 03_Unicorn/                      # Unicorn Engineering — 6 areas SOTA               |
 |                                                                                         | --- README.md                                                             |
 |                                                                                         | --- 01_Pm/                      # Project Management                      |
 |                                                                                         | --- 02_Pdm/                     # Product Management                      |
@@ -28,7 +28,7 @@
 |                                                                                         | --- 04_Art_Director/            # Visual, branding, design system         |
 |                                                                                         | --- 05_Aipm/                    # AI patterns, agents, context engineering|
 | +--- 06_Engineering/             # Full-stack, arquitectura, codigo                     |
-+--- 07_Invictus/                     # Metodologia de creacion de agentes Invictus
++--- 04_Invictus/                     # Metodologia de creacion de agentes Invictus
 ```
 
 > Nota: `02_Perfiles_Team` fue eliminado en una sesion anterior. El indice salta de 01 a 03.

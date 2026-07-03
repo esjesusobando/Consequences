@@ -1,6 +1,6 @@
 ---
 name: compound-knowledge
-description: Take newly generated knowledge and connect it to existing knowledge in the OS. Uses Engram to find connections, integrates with 06_Unicorn structure, and builds compounding knowledge network. Trigger: /compound-knowledge [topic]
+description: Take newly generated knowledge and connect it to existing knowledge in the OS. Uses Engram to find connections, integrates with 03_Unicorn structure, and builds compounding knowledge network. Trigger: /compound-knowledge [topic]
 sota_upgraded: true
 ---
 
@@ -12,7 +12,7 @@ Connect newly generated knowledge to existing knowledge in the OS. Builds a comp
 
 ## Esencia Original
 
-Takes newly generated knowledge (from learning-url-to-knowledge or manual input) and connects it to existing knowledge in the OS using Engram. Builds a compounding network where each new piece reinforces and connects to previous learnings across disciplines defined in `06_Unicorn/`.
+Takes newly generated knowledge (from learning-url-to-knowledge or manual input) and connects it to existing knowledge in the OS using Engram. Builds a compounding network where each new piece reinforces and connects to previous learnings across disciplines defined in `03_Unicorn/`.
 
 ---
 
@@ -56,17 +56,17 @@ New Knowledge
 
 ---
 
-## Integration with 06_Unicorn
+## Integration with 03_Unicorn
 
 Knowledge connects to disciplines:
 
 | Discipline     | Location                       | Topic Key Prefix  |
 |---------------|-------------------------------|------------------|
-| Project Manager| `06_Unicorn/01_Pm/`            | `learning/01_Pm/` |
-| Product Manager| `06_Unicorn/02_Pdm/`           | `learning/02_Pdm/`|
-| Product Design | `06_Unicorn/03_Product_Design/`| `learning/03_Pd/` |
-| AI/PM          | `06_Unicorn/05_Aipm/`          | `learning/ai_pm/` |
-| Engineering    | `06_Unicorn/06_Engineering/`   | `learning/eng/`   |
+| Project Manager| `03_Unicorn/01_Pm/`            | `learning/01_Pm/` |
+| Product Manager| `03_Unicorn/02_Pdm/`           | `learning/02_Pdm/`|
+| Product Design | `03_Unicorn/03_Product_Design/`| `learning/03_Pd/` |
+| AI/PM          | `03_Unicorn/05_Aipm/`          | `learning/ai_pm/` |
+| Engineering    | `03_Unicorn/06_Engineering/`   | `learning/eng/`   |
 
 ---
 
@@ -95,7 +95,7 @@ mem_save({
   content: {
     what: "Connected new learning to existing knowledge",
     why: "Build compounding knowledge network",
-    where: "06_Unicorn/{discipline}/patterns/",
+    where: "03_Unicorn/{discipline}/patterns/",
     learned: "How topics relate across the OS"
   }
 });
@@ -137,7 +137,7 @@ Create a connections doc:
 **Input**: New learning about "Claude Computer Use"
 
 **Step 1**: Search Engram for "Claude", "computer use", "AI agents"
-**Step 2**: Find existing: `learning/claude` in 06_Unicorn/05_Aipm
+**Step 2**: Find existing: `learning/claude` in 03_Unicorn/05_Aipm
 **Step 3**: Connect:
 - New: Computer Use patterns
 - Existing: Claude agent patterns

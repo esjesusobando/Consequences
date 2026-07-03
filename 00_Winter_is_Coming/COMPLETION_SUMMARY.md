@@ -231,7 +231,7 @@ Ejecutar pipeline completo de SOTA upgrade para agentes de marketing (15, 16, 17
 - `.opencode/plugins/graphify.js` — reference updated
 - `.cursor/rules/graphify.mdc` — reference updated
 - `.claude/settings.json` — reference updated
-- `01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_SDDAudits/2026-06-25_settings-drawer/` — archived SDD
+- `01_Personal_Os/07_Archive/05_Repos/03_Backups_Audits/05_Legacy_SDDAudits/2026-06-25_settings-drawer/` — archived SDD
 
 ## ✅ CONFIRMACIÓN DE ESTADO FINAL
 Sistema Think Different PersonalOS en **v4.9.1** con:

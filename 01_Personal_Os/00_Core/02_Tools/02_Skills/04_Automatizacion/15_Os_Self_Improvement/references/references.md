@@ -14,7 +14,7 @@
 │   │   └── 04_Automatizacion/   # Automation tools
 │   └── 03_Context/              # Context docs
 ├── 02_Knowledge/
-│   └── 06_Unicorn/              # Knowledge network
+│   └── 03_Unicorn/              # Knowledge network
 └── 03_Resultado/
     └── 10_Contenido_Learning/    # Learning Always output
 ```

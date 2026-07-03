@@ -2,7 +2,7 @@
 
 ## Source Documents
 - Learning Always: `C:/Users/sebas/Desktop/Think_Different/03_Resultado/02_Revisar_Now/Learning_Always.md`
-- Unicorn structure: `C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/02_Knowledge/06_Unicorn/`
+- Unicorn structure: `C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/02_Knowledge/03_Unicorn/`
 
 ## Related Skills
 - `learning-url-to-knowledge` - Input source

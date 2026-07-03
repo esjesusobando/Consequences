@@ -149,7 +149,7 @@ alias validate="python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Valida
 
 ## 📖 Origen / Referencia
 
-Basado en: `01_Personal_Os/05_Archive/07_Repos_Gentleman/personal-os-main/examples/workflows/`
+Basado en: `01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/personal-os-main/examples/workflows/`
 
 | Workflow Original                        | Script v3.1                                       |
 |-----------------------------------------|--------------------------------------------------|

@@ -62,7 +62,7 @@ Think_Different/
 │   │       ├── 07_Server/       # Engram server
 │   │       ├── 08_Evals/        # Evaluadores
 │   │       └── 09_Templates/    # Templates
-│   ├── 02_Knowledge/            # Base de conocimiento (00-09, incl 09_Anthropic)
+│   ├── 02_Knowledge/            # Base de conocimiento (00-05, incl 05_Anthropic)
 │   ├── 04_Tasks/                 # Tareas activas (18+ tareas P0-P3)
 │   └── 05_Scripts/           # MOTOR OPERATIVO
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)

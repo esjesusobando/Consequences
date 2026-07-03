@@ -82,7 +82,7 @@ Think_Different/                    # Root (detected by 01_Core presence)
 ## Skills Integradas Esta Session
 
 ### GWS CLI
-- **Path:** `04_Automatizacion/10_GWS_Client/SKILL.md`
+- **Path:** `04_Automatizacion/12_GWS_Client/SKILL.md`
 - **Size:** 7438 bytes, 400+ lineas
 - **Status:** Instalado (`npx gws-cli v0.22.5`)
 - **Pending:** OAuth (requiere browser manual)
