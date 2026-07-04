@@ -1,4 +1,4 @@
-# Marketing Agency — Plan de Construcción
+ar # Marketing Agency — Plan de Construcción
 
 > Sistema completo de agencia de marketing. 8 pipelines modulares.
 > Tu pipeline Zero Consequences (audio→publicar) es el Pipeline 02 — intacto, referenciado.
