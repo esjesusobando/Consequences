@@ -38,19 +38,19 @@ Each profile specifies:
 ### From Command Line
 ```bash
 # Get boot plan for admin agent
-python 01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py --agent "Admin Agent"
+python 01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py --agent "Admin Agent"
 
 # Get boot plan with task context
-python 01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py --agent "Admin" --task "onboarding"
+python 01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py --agent "Admin" --task "onboarding"
 
 # JSON output (for programmatic use)
-python 01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py --agent "Finance" --json
+python 01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py --agent "Finance" --json
 ```
 
 ### In AGENTS.md Boot Protocol
 ```
 # After step 2 (reading goals/backlog):
-python 01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py --agent "$AGENT_NAME" --json
+python 01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py --agent "$AGENT_NAME" --json
 # Then load only the files in the JSON output's "required" and "boost" arrays
 ```
 
@@ -86,7 +86,7 @@ stats = get_cache_stats()
 
 ## Metrics
 
-Boot metrics are logged to `01_Personal_Os/04_Operations/00_Context_LLM/boot_metrics.json`:
+Boot metrics are logged to `01_Personal_Os/01_Memory/00_Context_LLM/boot_metrics.json`:
 - Files loaded per boot
 - Total size in bytes/KB
 - Lazy-loaded count

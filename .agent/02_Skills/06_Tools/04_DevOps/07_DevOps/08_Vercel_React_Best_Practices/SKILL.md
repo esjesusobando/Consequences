@@ -148,4 +148,4 @@ For the complete guide with all rules expanded: `01_Personal_Os/11_AGENTS.md`
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

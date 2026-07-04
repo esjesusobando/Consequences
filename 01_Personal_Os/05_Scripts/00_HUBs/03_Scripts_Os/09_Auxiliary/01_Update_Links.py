@@ -15,15 +15,14 @@ import glob
 import subprocess
 import io
 
-
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -42,7 +41,6 @@ except ImportError:
     class Style:
         RESET_ALL = ""
 
-
 for d, path in [("CORE", CORE_DIR), ("BRAIN", BRAIN_DIR), ("SCRIPTS", ENGINE_DIR)]:
     if not path.exists():
         print(f"[WARN] Required directory not found: {d} at {path}")
@@ -51,7 +49,6 @@ for d, path in [("CORE", CORE_DIR), ("BRAIN", BRAIN_DIR), ("SCRIPTS", ENGINE_DIR
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
-
 
 def dynamic_speak(text):
     """Interfaz de Voz SOTA v2.2"""
@@ -64,7 +61,6 @@ def dynamic_speak(text):
             )
         except:
             pass
-
 
 def print_banner():
     banner = rf"""
@@ -83,9 +79,7 @@ def print_banner():
 """
     print(banner)
 
-
 ROOT_DIR = PROJECT_ROOT
-
 
 # Real mapping of path renames for v4.7
 RENAMES = {
@@ -127,7 +121,6 @@ RENAMES = {
     "24_aipm_consolidated_report.py": "30_AIPM_Consolidated_Report.py",
 }
 
-
 def update_links():
     """
     Iterates through the project files and replaces legacy paths with updated ones.
@@ -167,7 +160,6 @@ def update_links():
 
     print(f"Finished. {count} files updated.")
 
-
 def validate_workflows():
     """Valida que los workflows principales existan."""
     print("\n--- [VALIDATE] Workflows principales ---")
@@ -192,7 +184,6 @@ def validate_workflows():
 
     print("[OK] Workflows principales validados.")
     return True
-
 
 if __name__ == "__main__":
     update_links()

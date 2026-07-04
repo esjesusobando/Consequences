@@ -1,6 +1,6 @@
 # PERSONAL OS — Area Funcional 00
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/`
 > **Ultima actualizacion:** 2026-05-30
 > **Skills activas:** 10
 

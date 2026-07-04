@@ -1,6 +1,6 @@
 # Critical Pattern Template
 
-Use this template when adding a pattern to `04_Operations/06_Solutions/patterns/critical-patterns.md`:
+Use this template when adding a pattern to `01_Memory/00_Context_LLM/06_Solutions/patterns/critical-patterns.md`:
 
 ---
 
@@ -20,7 +20,7 @@ Use this template when adding a pattern to `04_Operations/06_Solutions/patterns/
 
 **Placement/Context:** [When this applies]
 
-**Documented in:** `04_Operations/06_Solutions/[category]/[filename].md`
+**Documented in:** `01_Memory/00_Context_LLM/06_Solutions/[category]/[filename].md`
 
 ---
 

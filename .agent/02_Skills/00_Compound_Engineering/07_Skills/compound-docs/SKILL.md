@@ -20,7 +20,7 @@ preconditions:
 
 This skill captures problem solutions immediately after confirmation, creating structured documentation that serves as a searchable knowledge base for future sessions.
 
-**Organization:** Single-file architecture - each problem documented as one markdown file in its symptom category directory (e.g., `04_Operations/06_Solutions/performance-issues/n-plus-one-briefs.md`). Files use YAML frontmatter for metadata and searchability.
+**Organization:** Single-file architecture - each problem documented as one markdown file in its symptom category directory (e.g., `01_Memory/00_Context_LLM/06_Solutions/performance-issues/n-plus-one-briefs.md`). Files use YAML frontmatter for metadata and searchability.
 
 ---
 
@@ -92,14 +92,14 @@ I need a few details to document this properly:
 <step number="3" required="false" depends_on="2">
 ### Step 3: Check Existing Docs
 
-Search 04_Operations/06_Solutions/ for similar issues:
+Search 01_Memory/00_Context_LLM/06_Solutions/ for similar issues:
 
 ```bash
 # Search by error message keywords
-grep -r "exact error phrase" 04_Operations/06_Solutions/
+grep -r "exact error phrase" 01_Memory/00_Context_LLM/06_Solutions/
 
 # Search by symptom category
-ls 04_Operations/06_Solutions/[category]/
+ls 01_Memory/00_Context_LLM/06_Solutions/[category]/
 ```
 
 **IF similar issue found:**
@@ -107,7 +107,7 @@ ls 04_Operations/06_Solutions/[category]/
 THEN present decision options:
 
 ```
-Found similar issue: 04_Operations/06_Solutions/[path]
+Found similar issue: 01_Memory/00_Context_LLM/06_Solutions/[path]
 
 What's next?
 1. Create new doc with cross-reference (recommended)
@@ -182,10 +182,10 @@ Please provide corrected values.
 PROBLEM_TYPE="[from validated YAML]"
 CATEGORY="[mapped from problem_type]"
 FILENAME="[generated-filename].md"
-DOC_PATH="04_Operations/06_Solutions/${CATEGORY}/${FILENAME}"
+DOC_PATH="01_Memory/00_Context_LLM/06_Solutions/${CATEGORY}/${FILENAME}"
 
 # Create directory if needed
-mkdir -p "04_Operations/06_Solutions/${CATEGORY}"
+mkdir -p "01_Memory/00_Context_LLM/06_Solutions/${CATEGORY}"
 
 # Write documentation using template from assets/resolution-template.md
 # (Content populated with Step 2 context and validated YAML frontmatter)
@@ -218,8 +218,8 @@ Already includes cross-reference from Step 6.
 If this represents a common pattern (3+ similar issues):
 
 ```bash
-# Add to 04_Operations/06_Solutions/patterns/common-solutions.md
-cat >> 04_Operations/06_Solutions/patterns/common-solutions.md << 'EOF'
+# Add to 01_Memory/00_Context_LLM/06_Solutions/patterns/common-solutions.md
+cat >> 01_Memory/00_Context_LLM/06_Solutions/patterns/common-solutions.md << 'EOF'
 
 ## [Pattern Name]
 
@@ -250,7 +250,7 @@ But **NEVER auto-promote**. User decides via decision menu (Option 2).
 
 **Template for critical pattern addition:**
 
-When user selects Option 2 (Add to Required Reading), use the template from `assets/critical-pattern-template.md` to structure the pattern entry. Number it sequentially based on existing patterns in `04_Operations/06_Solutions/patterns/critical-patterns.md`.
+When user selects Option 2 (Add to Required Reading), use the template from `assets/critical-pattern-template.md` to structure the pattern entry. Number it sequentially based on existing patterns in `01_Memory/00_Context_LLM/06_Solutions/patterns/critical-patterns.md`.
 </step>
 
 </critical_sequence>
@@ -267,7 +267,7 @@ After successful documentation, present options and WAIT for user response:
 ✓ Solution documented
 
 File created:
-- 04_Operations/06_Solutions/[category]/[filename].md
+- 01_Memory/00_Context_LLM/06_Solutions/[category]/[filename].md
 
 What's next?
 1. Continue workflow (recommended)
@@ -296,14 +296,14 @@ User selects this when:
 Action:
 1. Extract pattern from the documentation
 2. Format as ❌ WRONG vs ✅ CORRECT with code examples
-3. Add to `04_Operations/06_Solutions/patterns/critical-patterns.md`
+3. Add to `01_Memory/00_Context_LLM/06_Solutions/patterns/critical-patterns.md`
 4. Add cross-reference back to this doc
 5. Confirm: "✓ Added to Required Reading. All subagents will see this pattern before code generation."
 
 **Option 3: Link related issues**
 
 - Prompt: "Which doc to link? (provide filename or describe)"
-- Search 04_Operations/06_Solutions/ for the doc
+- Search 01_Memory/00_Context_LLM/06_Solutions/ for the doc
 - Add cross-reference to both docs
 - Confirm: "✓ Cross-reference added"
 
@@ -327,7 +327,7 @@ User selects this when the solution represents the start of a new learning domai
 
 Action:
 1. Prompt: "What should the new skill be called? (e.g., stripe-billing, email-processing)"
-2. Run `python3 01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/scripts/init_skill.py [skill-name]`
+2. Run `python3 01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/scripts/init_skill.py [skill-name]`
 3. Create initial reference files with this solution as first example
 4. Confirm: "✓ Created new [skill-name] skill with this solution as first example"
 
@@ -370,7 +370,7 @@ All context needed for documentation should be present in conversation history b
 Documentation is successful when ALL of the following are true:
 
 - ✅ YAML frontmatter validated (all required fields, correct formats)
-- ✅ File created in 04_Operations/06_Solutions/[category]/[filename].md
+- ✅ File created in 01_Memory/00_Context_LLM/06_Solutions/[category]/[filename].md
 - ✅ Enum values match schema.yaml exactly
 - ✅ Code examples included in solution section
 - ✅ Cross-references added if related issues found
@@ -476,7 +476,7 @@ Documentation is successful when ALL of the following are true:
    ```
    ✅ Valid
 6. **Create documentation:**
-   - `04_Operations/06_Solutions/performance-issues/n-plus-one-brief-generation-BriefSystem-20251110.md`
+   - `01_Memory/00_Context_LLM/06_Solutions/performance-issues/n-plus-one-brief-generation-BriefSystem-20251110.md`
 7. **Cross-reference:** None needed (no similar issues)
 
 **Output:**
@@ -485,7 +485,7 @@ Documentation is successful when ALL of the following are true:
 ✓ Solution documented
 
 File created:
-- 04_Operations/06_Solutions/performance-issues/n-plus-one-brief-generation-BriefSystem-20251110.md
+- 01_Memory/00_Context_LLM/06_Solutions/performance-issues/n-plus-one-brief-generation-BriefSystem-20251110.md
 
 What's next?
 1. Continue workflow (recommended)

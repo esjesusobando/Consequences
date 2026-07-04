@@ -1,33 +1,28 @@
-# 02_Knowledge — Base de Conocimiento PersonalOS v4.9
+# 02_Knowledge — Personal OS v5.0 Knowledge Base
 
-**Version:** 4.7 Consequences
-**Ultima actualizacion:** 2026-05-26
-**Estado:** Activo
+**Version:** v5.0 SOTA
+**Last updated:** 2026-07-03 — Path audit, structural alignment
+**Status:** Active
 
 ---
 
-## Estructura
+## Structure
 
 ```
 02_Knowledge/
-| --- README.md                        # Este archivo                                     |
-| --- 00_Examples_Personal_Os/         # Tutoriales, workflows y ejemplos del OS          |
-| --- 01_Research_Os/                  # Investigacion tecnologica y rankings SOTA        |
-| --- 03_Writing_Content/              # Borradores de contenido y reflexiones            |
-| --- 04_Docs/                         # Documentacion oficial (Auditorias, Runbooks, ATL)|
-|                                                                                         | --- OS_Integration_Audit_v6.1.md                                          |
-|                                                                                         | --- OS_Edge_Cases_Analysis.md                                             |
-|                                                                                         | --- Skill_Creator_v2_Analysis.md                                          |
-| +--- 99_ATL/skill-registry.md                                                           |
-| --- 05_Aipm/                         # Recursos de AI Project Management                |
-| --- 03_Unicorn/                      # Unicorn Engineering — 6 areas SOTA               |
-|                                                                                         | --- README.md                                                             |
-|                                                                                         | --- 01_Pm/                      # Project Management                      |
-|                                                                                         | --- 02_Pdm/                     # Product Management                      |
-|                                                                                         | --- 03_Product_Design/          # UX, wireframes, Design Sprint           |
-|                                                                                         | --- 04_Art_Director/            # Visual, branding, design system         |
-|                                                                                         | --- 05_Aipm/                    # AI patterns, agents, context engineering|
-| +--- 06_Engineering/             # Full-stack, arquitectura, codigo                     |
+├── 00_Examples_Personal_Os/    # Tutorials, workflows, example files
+├── 01_Research/                # Tech research, SOTA rankings
+├── 02_Docs/                    # Official documentation (audits, runbooks, ATL)
+├── 03_Unicorn/                 # Unicorn Engineering — 6 areas SOTA
+│   ├── 01_Pm/                  # Project Management
+│   ├── 02_Pdm/                 # Product Management
+│   ├── 03_Product_Design/      # UX, wireframes, Design Sprint
+│   ├── 04_Art_Director/        # Visual, branding, design system
+│   ├── 05_Aipm/                # AI patterns, agents, context engineering
+│   └── 06_Engineering/         # Full-stack, architecture, code
+├── 04_Invictus/                # Invictus web project resources
+└── 05_Anthropic/               # Anthropic SDK and API resources
+```
 +--- 04_Invictus/                     # Metodologia de creacion de agentes Invictus
 ```
 
@@ -39,12 +34,12 @@
 
 Almacena **documentacion de referencia, investigacion, specs y notas** que las tareas y skills necesitan.
 
-| Tipo         | Ejemplos                                  |
-| ------------ | ----------------------------------------- |
-| Specs        | Requisitos de proyecto, specs de features |
-| Research     | Analisis de mercado, hallazgos tecnicos   |
-| Process docs | How-tos, checklists, runbooks             |
-| Unicorn KB   | Decisions, lessons, patterns por area     |
+| Tipo             | Ejemplos                                      |
+|------------------|-----------------------------------------------|
+| Specs            | Requisitos de proyecto, specs de features     |
+| Research         | Analisis de mercado, hallazgos tecnicos       |
+| Process docs     | How-tos, checklists, runbooks                 |
+| Unicorn KB       | Decisions, lessons, patterns por area         |
 
 ---
 

@@ -1,6 +1,6 @@
 # YAML Frontmatter Schema
 
-**See `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/schema.yaml` for the complete schema specification.**
+**See `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/schema.yaml` for the complete schema specification.**
 
 ## Required Fields
 
@@ -50,16 +50,16 @@ tags: [n-plus-one, eager-loading, performance]
 
 Based on `problem_type`, documentation is filed in:
 
-- **build_error** → `04_Operations/06_Solutions/build-errors/`
-- **test_failure** → `04_Operations/06_Solutions/test-failures/`
-- **runtime_error** → `04_Operations/06_Solutions/runtime-errors/`
-- **performance_issue** → `04_Operations/06_Solutions/performance-issues/`
-- **database_issue** → `04_Operations/06_Solutions/database-issues/`
-- **security_issue** → `04_Operations/06_Solutions/security-issues/`
-- **ui_bug** → `04_Operations/06_Solutions/ui-bugs/`
-- **integration_issue** → `04_Operations/06_Solutions/integration-issues/`
-- **logic_error** → `04_Operations/06_Solutions/logic-errors/`
-- **developer_experience** → `04_Operations/06_Solutions/developer-experience/`
-- **workflow_issue** → `04_Operations/06_Solutions/workflow-issues/`
-- **best_practice** → `04_Operations/06_Solutions/best-practices/`
-- **documentation_gap** → `04_Operations/06_Solutions/documentation-gaps/`
+- **build_error** → `01_Memory/00_Context_LLM/06_Solutions/build-errors/`
+- **test_failure** → `01_Memory/00_Context_LLM/06_Solutions/test-failures/`
+- **runtime_error** → `01_Memory/00_Context_LLM/06_Solutions/runtime-errors/`
+- **performance_issue** → `01_Memory/00_Context_LLM/06_Solutions/performance-issues/`
+- **database_issue** → `01_Memory/00_Context_LLM/06_Solutions/database-issues/`
+- **security_issue** → `01_Memory/00_Context_LLM/06_Solutions/security-issues/`
+- **ui_bug** → `01_Memory/00_Context_LLM/06_Solutions/ui-bugs/`
+- **integration_issue** → `01_Memory/00_Context_LLM/06_Solutions/integration-issues/`
+- **logic_error** → `01_Memory/00_Context_LLM/06_Solutions/logic-errors/`
+- **developer_experience** → `01_Memory/00_Context_LLM/06_Solutions/developer-experience/`
+- **workflow_issue** → `01_Memory/00_Context_LLM/06_Solutions/workflow-issues/`
+- **best_practice** → `01_Memory/00_Context_LLM/06_Solutions/best-practices/`
+- **documentation_gap** → `01_Memory/00_Context_LLM/06_Solutions/documentation-gaps/`

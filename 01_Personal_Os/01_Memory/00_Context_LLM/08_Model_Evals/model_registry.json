@@ -1,0 +1,75 @@
+{
+  "models": {
+    "claude-opus-4.8": {
+      "status": "active",
+      "capabilities": ["reasoning", "code", "agent", "factual", "vision"],
+      "added": "2026-07-02",
+      "provider": "anthropic",
+      "pricing": {"input_per_mtok": 3.00, "output_per_mtok": 15.00}
+    },
+    "claude-sonnet-4.8": {
+      "status": "active",
+      "capabilities": ["reasoning", "code", "agent", "factual", "vision"],
+      "added": "2026-07-02",
+      "provider": "anthropic",
+      "pricing": {"input_per_mtok": 1.50, "output_per_mtok": 7.50}
+    },
+    "gpt-5.1": {
+      "status": "active",
+      "capabilities": ["reasoning", "code", "factual"],
+      "added": "2026-07-02",
+      "provider": "openai",
+      "pricing": {"input_per_mtok": 1.25, "output_per_mtok": 10.00}
+    },
+    "gpt-5.5-codex": {
+      "status": "active",
+      "capabilities": ["reasoning", "code", "agent"],
+      "added": "2026-07-02",
+      "provider": "openai",
+      "pricing": {"input_per_mtok": 2.50, "output_per_mtok": 15.00}
+    },
+    "gemini-3-ultra": {
+      "status": "active",
+      "capabilities": ["reasoning", "vision", "code", "factual"],
+      "added": "2026-07-02",
+      "provider": "google",
+      "pricing": {"input_per_mtok": 1.00, "output_per_mtok": 3.00}
+    },
+    "gemini-3-pro": {
+      "status": "active",
+      "capabilities": ["reasoning", "vision", "code", "factual"],
+      "added": "2026-07-02",
+      "provider": "google",
+      "pricing": {"input_per_mtok": 0.50, "output_per_mtok": 1.50}
+    },
+    "deepseek-v4": {
+      "status": "active",
+      "capabilities": ["reasoning", "code"],
+      "added": "2026-07-02",
+      "provider": "deepseek",
+      "pricing": {"input_per_mtok": 0.14, "output_per_mtok": 0.28}
+    },
+    "llama-4-70b": {
+      "status": "active",
+      "capabilities": ["reasoning", "code", "factual"],
+      "added": "2026-07-02",
+      "provider": "meta",
+      "type": "local",
+      "pricing": {"input_per_mtok": 0.00, "output_per_mtok": 0.00}
+    },
+    "mistral-large-3": {
+      "status": "active",
+      "capabilities": ["reasoning", "code", "factual"],
+      "added": "2026-07-02",
+      "provider": "mistral",
+      "pricing": {"input_per_mtok": 0.40, "output_per_mtok": 1.20}
+    },
+    "glm-5.2": {
+      "status": "candidate",
+      "capabilities": ["reasoning", "code", "factual"],
+      "added": "2026-07-02",
+      "provider": "zhipu",
+      "pricing": {"input_per_mtok": 0.14, "output_per_mtok": 0.86}
+    }
+  }
+}

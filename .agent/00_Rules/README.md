@@ -2,7 +2,7 @@
 
 **Este directorio es la FUENTE DE VERDAD** para las reglas del PersonalOS.
 
-> ⚠️ **DOCUMENTO LEGACY:** Este README describe el sistema **Triada AI-Prime** (v1.0, 2026-04-18). El sistema actual (v4.0) está en `01_Personal_Os/01_Core/01_Rules/` con 13 reglas numeradas 00-12.
+> ⚠️ **DOCUMENTO LEGACY:** Este README describe el sistema **Triada AI-Prime** (v1.0, 2026-04-18). El sistema actual (v4.0) está en `01_Personal_Os/00_Core/01_Rules/` con 13 reglas numeradas 00-12.
 
 ---
 
@@ -11,7 +11,7 @@
 | Sistema                        | Ubicación                          | Qty                                | Estado     |
 | ------------------------------ | ---------------------------------- | ---------------------------------- | ---------- |
 | **Triada AI-Prime (Legacy)**   | `.claude/02_Rules/`                | 25 rules (01-35, algunos saltados) | Convive    |
-| **Consequences v4.0 (Active)** | `01_Personal_Os/01_Core/01_Rules/` | 13 rules (00-12)                   | **ACTIVO** |
+| **Consequences v4.0 (Active)** | `01_Personal_Os/00_Core/01_Rules/` | 13 rules (00-12)                   | **ACTIVO** |
 
 > 📂 Los sistemas paralelos `.claude/02_Rules/` (Legacy) y `.agent/00_Rules/` (Backup) coexisten por compatibilidad.
 

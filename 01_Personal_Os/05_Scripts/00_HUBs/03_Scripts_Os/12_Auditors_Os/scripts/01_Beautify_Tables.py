@@ -13,8 +13,8 @@ from pathlib import Path
 # → scripts/ → 12_Auditors_Os/ → 03_Scripts_Os/ → 05_Scripts/ → 01_Personal_Os/ → ROOT
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent          # 04_Operations
-PERSONAL_OS = OPERATIONS.parent         # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")         # 01_Personal_Os
 ROOT = PERSONAL_OS.parent               # Project root
 
 # Fix encoding (Standard block)
@@ -28,7 +28,6 @@ import re
 import glob
 
 PROJECT_ROOT = ROOT_DIR
-
 
 def validate_table(table_block, file_path, line_num):
     """Valida que una tabla no tenga overflow ni problemas de formato."""
@@ -71,7 +70,6 @@ def validate_table(table_block, file_path, line_num):
 
     return issues
 
-
 def validate_file(file_path):
     """Valida todas las tablas en un archivo."""
     issues = []
@@ -111,7 +109,6 @@ def validate_file(file_path):
         issues.append(f"Error leyendo archivo: {e}")
 
     return issues
-
 
 def align_table(table_block):
     """Alinea las columnas de una tabla markdown con espaciado equilibrado."""
@@ -159,7 +156,6 @@ def align_table(table_block):
         new_lines.append(new_row)
 
     return "\n".join(new_lines)
-
 
 def process_file(file_path, dry_run=False):
     """Procesa un archivo y beautifica sus tablas."""
@@ -218,7 +214,6 @@ def process_file(file_path, dry_run=False):
     except Exception as e:
         return False, f"[ERROR] {os.path.basename(file_path)}: {e}"
 
-
 def validate_all_files(files):
     """Valida todas las tablas en una lista de archivos."""
     print("=" * 50)
@@ -246,7 +241,6 @@ def validate_all_files(files):
 
     print("=" * 50)
     return all_issues
-
 
 def main():
     parser = argparse.ArgumentParser(description="Beautify and validate markdown tables")
@@ -295,7 +289,6 @@ def main():
     if args.files:
         print("\n🔍 Validando tablas...\n")
         validate_all_files(args.files)
-
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-06-27 (v5.0.1 — Documentation Ground Truth Sync)
+**Última actualización:** 2026-07-03 (v5.0.1 — Path audit: 04_Tasks → 04_Tasks)
 
 ---
 
@@ -196,7 +196,7 @@ Think_Different/                           # v5.0.1 — 4 carpetas raíz
 │   │   ├── 02_Learning_Always/          # Aprendizaje continuo
 │   │   ├── 03_Content/                  # Creación de contenido
 │   │   └── 04_Telemetry/                # Telemetría y monitoreo
-│   ├── 04_Tasks/                         # 📋 Tareas activas
+│   ├── 04_Tasks/            # 📋 Tareas activas
 │   ├── 05_Scripts/                       # ⚡ Scripts operativos
 │   │   ├── 00_HUBs/                     # HUBs del sistema
 │   │   └── 01_Installer/                # Instalador del OS

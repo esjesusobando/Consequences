@@ -30,4 +30,4 @@ Aquí se almacena la identidad visual y verbal de la marca:
 ---
 
 *Marketing Agents v1.0 — PersonalOS v4.9 Consequences*
-*Integrado con Core: 01_Core/02_Tools/01_Agents/*
+*Integrado con Core: 00_Core/02_Tools/01_Agents/*

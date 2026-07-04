@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Sequence — FlowSync Welcome</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a2e;display:flex;flex-direction:column;align-items:center;min-height:100vh;font-family:'Inter',-apple-system,sans-serif;padding:40px 20px}
+  .inbox-label{color:#888;font-size:12px;font-weight:600;margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase;width:100%;max-width:600px}
+  .email{background:#fff;border-radius:12px;max-width:600px;width:100%;margin-bottom:16px;box-shadow:0 8px 40px rgba(0,0,0,.15);overflow:hidden;transition:transform .15s}
+  .email:hover{transform:translateX(4px)}
+  .email-header{display:flex;align-items:center;padding:16px 20px;gap:12px;border-bottom:1px solid #f0f0f0;cursor:pointer}
+  .email-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;flex-shrink:0}
+  .email-from{flex:1;min-width:0}
+  .email-from h3{font-size:14px;font-weight:600;color:#1a1a1a;display:flex;align-items:center;gap:6px}
+  .email-from h3 .badge{font-size:10px;background:#6c5ce7;color:#fff;padding:1px 6px;border-radius:4px;font-weight:500}
+  .email-from p{font-size:13px;color:#666;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;font-weight:500}
+  .email-time{font-size:12px;color:#999;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+  .email-time .unread{width:8px;height:8px;border-radius:50%;background:#6c5ce7;display:inline-block}
+  .email-body{padding:24px 20px 20px;display:none}
+  .email.open .email-body{display:block}
+  .email-body .greeting{font-size:15px;color:#333;margin-bottom:12px;line-height:1.6}
+  .email-body p{font-size:14.5px;line-height:1.7;color:#444;margin-bottom:12px}
+  .email-body .cta-box{background:linear-gradient(135deg,#6c5ce7,#a29bfe);border-radius:12px;padding:20px;text-align:center;margin:16px 0;color:#fff}
+  .email-body .cta-box h3{font-size:18px;font-weight:700;margin-bottom:4px;color:#fff}
+  .email-body .cta-box p{font-size:13px;color:rgba(255,255,255,.85);margin-bottom:12px}
+  .email-body .cta-btn{display:inline-block;background:#fff;color:#6c5ce7;font-weight:700;font-size:14px;padding:10px 28px;border-radius:8px;text-decoration:none}
+  .email-body .cta-btn:hover{background:#f8f8f8}
+  .email-body ul{margin:10px 0 14px;padding-left:20px}
+  .email-body ul li{font-size:14px;color:#444;margin-bottom:6px;line-height:1.5}
+  .email-body .divider{height:1px;background:#eee;margin:18px 0}
+  .email-body .signature{font-size:13px;color:#888;line-height:1.5;margin-top:16px}
+  .email-body .ps{font-size:13px;color:#888;font-style:italic;margin-top:12px;padding:12px;background:#f8f8f8;border-radius:8px}
+  .email-number{display:inline-block;font-size:10px;font-weight:700;color:#6c5ce7;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;background:#f0edff;padding:2px 8px;border-radius:4px}
+  .stats-bar{display:flex;gap:24px;margin:24px 0 10px;padding:16px 20px;background:#1e1e3a;border-radius:12px;max-width:600px;width:100%}
+  .stat-item{text-align:center;flex:1}
+  .stat-item .num{font-size:22px;font-weight:800;color:#6c5ce7;display:block}
+  .stat-item .label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.3px}
+  .seq-visual{display:flex;gap:6px;margin-bottom:20px;max-width:600px;width:100%}
+  .seq-step{flex:1;text-align:center;padding:8px 4px;border-radius:8px;font-size:10px;font-weight:600;color:#888}
+  .seq-step.active{background:#6c5ce7;color:#fff}
+  .seq-step.done{background:#f0edff;color:#6c5ce7}
+</style>
+</head>
+<body>
+<div class="inbox-label">📬 Email Sequence — FlowSync Onboarding (4 emails)</div>
+
+<div class="seq-visual">
+  <div class="seq-step done">Day 0 ✨</div>
+  <div class="seq-step active">Day 1 🚀</div>
+  <div class="seq-step">Day 3 💡</div>
+  <div class="seq-step">Day 7 📊</div>
+</div>
+
+<!-- Email 1: Welcome -->
+<div class="email open">
+  <div class="email-header">
+    <div class="email-avatar" style="background:#6c5ce7">FS</div>
+    <div class="email-from">
+      <h3>FlowSync <span class="badge">Day 0</span></h3>
+      <p>Welcome to FlowSync — Your account is ready!</p>
+    </div>
+    <div class="email-time">
+      <span>Just now</span>
+      <span class="unread"></span>
+    </div>
+  </div>
+  <div class="email-body">
+    <span class="email-number">Email 1/4 · Welcome</span>
+    <p class="greeting">Hey there,</p>
+    <p>Welcome to <strong>FlowSync</strong> 🎉</p>
+    <p>You just took the first step toward a calmer, more productive creative workflow. No more "which version is final?" No more scope creep eating your margins.</p>
+    <p>Here's what's waiting for you:</p>
+    <ul>
+      <li>✅ <strong>Your workspace</strong> is ready — invite your team</li>
+      <li>📋 <strong>3 brief templates</strong> pre-loaded (Creative, Web Dev, Brand) </li>
+      <li>📊 <strong>Sample project</strong> — see how FlowSync works in 5 minutes</li>
+      <li>🎯 <strong>Weekly digest</strong> — your team's capacity at a glance</li>
+    </ul>
+    <div class="cta-box">
+      <h3>🚀 Start your first project</h3>
+      <p>It takes 60 seconds and you'll see the difference immediately.</p>
+      <a href="#" class="cta-btn">Go to Dashboard →</a>
+    </div>
+    <div class="divider"></div>
+    <p><strong>Pro tip:</strong> Set up your <strong>brief template</strong> first. It's the single highest-leverage thing you can do. Clients fill in the blanks. No more chasing for specs.</p>
+    <div class="signature">
+      Cheers,<br>
+      The FlowSync Team<br>
+      <a style="color:#6c5ce7;font-size:12px">flowsync.app/dashboard</a>
+    </div>
+    <div class="ps">
+      💡 <strong>PS:</strong> We're onboarding free beta users now. If there's anything you need, just reply to this email. Real humans — no bots.
+    </div>
+  </div>
+</div>
+
+<!-- Email 2: Day 1 -->
+<div class="email open">
+  <div class="email-header">
+    <div class="email-avatar" style="background:#00b894">FS</div>
+    <div class="email-from">
+      <h3>FlowSync <span class="badge">Day 1</span></h3>
+      <p>Your team is waiting — 3 things to do today</p>
+    </div>
+    <div class="email-time">
+      <span>Tomorrow 10:00 AM</span>
+    </div>
+  </div>
+  <div class="email-body">
+    <span class="email-number">Email 2/4 · Activation</span>
+    <p class="greeting">Hi again,</p>
+    <p>Most teams never get past the first login. Let's make sure you're <strong>one of the ones that do</strong>.</p>
+    <p><strong>3 things, 5 minutes each:</strong></p>
+    <ul>
+      <li>☐ <strong>Invite your team</strong> (or just 1 collaborator) — flow syncs when people are on it</li>
+      <li>☐ <strong>Import one active project</strong> — see how FlowSync organizes what you're already doing</li>
+      <li>☐ <strong>Set your deep work hours</strong> — FlowSync will auto-protect them</li>
+    </ul>
+    <div class="cta-box" style="background:linear-gradient(135deg,#00b894,#00cec9)">
+      <h3>🔥 Complete your setup</h3>
+      <p>Most teams that complete setup stay. Go ahead, it takes 3 minutes.</p>
+      <a href="#" class="cta-btn" style="color:#00b894">Complete Setup →</a>
+    </div>
+    <p style="font-size:13px;color:#888;margin-top:14px">⏱️ Average time to first value: 4 minutes. Let's beat that.</p>
+    <div class="signature">
+      — The FlowSync Team<br>
+      <a style="color:#6c5ce7;font-size:12px">flowsync.app</a>
+    </div>
+  </div>
+</div>
+
+<!-- Email 3: Day 3 -->
+<div class="email">
+  <div class="email-header">
+    <div class="email-avatar" style="background:#fdcb6e;color:#333">FS</div>
+    <div class="email-from">
+      <h3>FlowSync <span class="badge">Day 3</span></h3>
+      <p>The #1 mistake creative teams make (and how to avoid it)</p>
+    </div>
+    <div class="email-time">
+      <span>In 2 days 10:00 AM</span>
+    </div>
+  </div>
+  <div class="email-body">
+    <span class="email-number">Email 3/4 · Value Deepener</span>
+    <p class="greeting">Hey,</p>
+    <p><strong>Quick story:</strong> A design agency we onboarded last month was drowning in Slack notifications. "We're working 50+ hours a week and still behind," the founder told us.</p>
+    <p>Turns out, <strong>40% of their team's time</strong> was spent on status updates, not actual creation.</p>
+    <p>They made ONE change: <strong>FlowSync's time-blocking feature</strong>. Every team member gets 4 protected hours daily. No Slack, no meetings, no email in that window.</p>
+    <p>Two weeks later: <strong>30% faster delivery</strong>. Founder cried in our weekly call. Not kidding.</p>
+    <div class="cta-box" style="background:linear-gradient(135deg,#fdcb6e,#e17055);color:#333">
+      <h3>⚡ Enable Time-Blocking</h3>
+      <p>It's one toggle. The ROI is immediate.</p>
+      <a href="#" class="cta-btn" style="color:#e17055">Turn It On →</a>
+    </div>
+    <div class="divider"></div>
+    <p style="font-size:13px;color:#666"><strong>In FlowSync this week:</strong> We shipped a new client dashboard. Your clients can now see project status without emailing you.</p>
+    <div class="signature">
+      Stay creative,<br>
+      The FlowSync Team
+    </div>
+  </div>
+</div>
+
+<!-- Email 4: Day 7 -->
+<div class="email">
+  <div class="email-header">
+    <div class="email-avatar" style="background:#e17055">FS</div>
+    <div class="email-from">
+      <h3>FlowSync <span class="badge">Day 7</span></h3>
+      <p>1 week in — here's your team's performance report</p>
+    </div>
+    <div class="email-time">
+      <span>In 6 days 9:00 AM</span>
+    </div>
+  </div>
+  <div class="email-body">
+    <span class="email-number">Email 4/4 · Results + Next Steps</span>
+    <p class="greeting">One week in. Let's see how it's going 👇</p>
+    <div style="background:#f8f8f8;border-radius:12px;padding:16px;margin:12px 0">
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <div style="text-align:center;flex:1;min-width:80px">
+          <span style="font-size:28px;font-weight:800;color:#6c5ce7;display:block">12</span>
+          <span style="font-size:11px;color:#888">Tasks completed</span>
+        </div>
+        <div style="text-align:center;flex:1;min-width:80px">
+          <span style="font-size:28px;font-weight:800;color:#00b894;display:block">8h</span>
+          <span style="font-size:11px;color:#888">Deep work hours</span>
+        </div>
+        <div style="text-align:center;flex:1;min-width:80px">
+          <span style="font-size:28px;font-weight:800;color:#fdcb6e;display:block">3</span>
+          <span style="font-size:11px;color:#888">Projects active</span>
+        </div>
+        <div style="text-align:center;flex:1;min-width:80px">
+          <span style="font-size:28px;font-weight:800;color:#e17055;display:block">94%</span>
+          <span style="font-size:11px;color:#888">On-time rate</span>
+        </div>
+      </div>
+    </div>
+    <p><strong>Next week's focus:</strong> Set up your first <strong>client dashboard</strong>. Your clients get real-time status without emailing you. That's the game-changer.</p>
+    <div class="cta-box" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe)">
+      <h3>📊 Set Up Client Dashboard</h3>
+      <p>15 minutes. Your clients will love you for it.</p>
+      <a href="#" class="cta-btn">Get Started →</a>
+    </div>
+    <p style="font-size:13px;color:#888;margin-top:12px">This was the last onboarding email, but we'll keep sending you weekly tips and product updates.</p>
+    <div class="signature">
+      Here for your flow,<br>
+      The FlowSync Team<br>
+      <a style="color:#6c5ce7;font-size:12px">flowsync.app</a>
+    </div>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="num">64%</span>
+    <span class="label">Open Rate</span>
+  </div>
+  <div class="stat-item">
+    <span class="num">28%</span>
+    <span class="label">Click Rate</span>
+  </div>
+  <div class="stat-item">
+    <span class="num">4.2%</span>
+    <span class="label">Unsub Rate</span>
+  </div>
+  <div class="stat-item">
+    <span class="num">92</span>
+    <span class="label">Copy Score</span>
+  </div>
+</div>
+
+<div style="max-width:600px;width:100%;margin-top:8px;padding:10px 0;text-align:center">
+  <p style="font-size:10px;color:#555;text-transform:uppercase;letter-spacing:.3px">Generated by /market emails — AI Marketing Suite · Sequence optimized for conversion</p>
+</div>
+
+<script>
+// Toggle email open/close on click
+document.querySelectorAll('.email-header').forEach(h => {
+  h.addEventListener('click', () => {
+    h.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

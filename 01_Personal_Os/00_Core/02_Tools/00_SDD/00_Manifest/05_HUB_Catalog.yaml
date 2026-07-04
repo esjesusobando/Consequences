@@ -2,7 +2,7 @@
 
 version: v3.0
 generated: "2026-06-27T15:40:03"
-base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
+base_path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/
 totals:
   hubs: 43
   hubs_scripts_raiz: 34
@@ -14,1208 +14,1208 @@ totals:
   scripts_no_hub: 133
 hubs:
   - name: 00_Sound_Engine
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 01_Auditor_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 02_Git_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/02_Git_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/02_Git_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 03_AIPM_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 04_Ritual_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 05_Validator_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 06_Tool_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/06_Tool_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/06_Tool_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 07_Integration_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 08_Workflow_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Workflow_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Workflow_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 09_Data_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Data_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Data_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 10_General_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_General_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_General_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 11_Auto_Learn_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/11_Auto_Learn_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/11_Auto_Learn_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 14_Health_Metrics_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/14_Health_Metrics_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/14_Health_Metrics_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 15_MCP_Sync_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/15_MCP_Sync_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/15_MCP_Sync_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 16_Agent_Mirror_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/16_Agent_Mirror_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/16_Agent_Mirror_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 17_Watchdog_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Watchdog_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Watchdog_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 18_Telemetry_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Telemetry_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Telemetry_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 19_Agent_Sync_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/19_Agent_Sync_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/19_Agent_Sync_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 20_System_Mapper_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 21_Legacy_Path_Cleanup
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/21_Legacy_Path_Cleanup.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/21_Legacy_Path_Cleanup.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 22_Validate_Skill_Frontmatter
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 24_mass_path_migration
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/24_mass_path_migration.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/24_mass_path_migration.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 25_Minimax_Optimizer_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 26_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/26_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/26_Parallel_Audit_Pro.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/26_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/26_Parallel_Audit_Pro.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 27_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/27_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/27_Skill_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/27_Skill_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/27_Skill_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 28_System_Health_Monitor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/28_System_Health_Monitor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/28_System_Health_Monitor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/28_System_Health_Monitor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/28_System_Health_Monitor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 29_Repo_Sync_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/29_Repo_Sync_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/29_Repo_Sync_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/29_Repo_Sync_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/29_Repo_Sync_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 30_path_replacement
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/30_path_replacement.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/30_path_replacement.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/30_path_replacement.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/30_path_replacement.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 31_Graphify_Hub
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/31_Graphify_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/31_Graphify_Hub.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/31_Graphify_Hub.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/31_Graphify_Hub.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 32_Graphify_Update
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/32_Graphify_Update.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/32_Graphify_Update.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/32_Graphify_Update.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/32_Graphify_Update.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 33_Doc_Sync
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/33_Doc_Sync.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/33_Doc_Sync.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/33_Doc_Sync.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/33_Doc_Sync.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 34_HUB_SOTA
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/34_HUB_SOTA.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/34_HUB_SOTA.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/34_HUB_SOTA.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/34_HUB_SOTA.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 35_SOTA_Skill_Modernizer
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/35_SOTA_Skill_Modernizer.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 36_README_Table_Beautifier
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/36_README_Table_Beautifier.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/36_README_Table_Beautifier.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/36_README_Table_Beautifier.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/36_README_Table_Beautifier.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
 hubs_directorios:
   - name: 01_Ritual
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual
     type: subdir
     scripts_count: 4
   - name: 03_AIPM
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM
     type: subdir
     scripts_count: 9
   - name: 05_Validator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator
     type: subdir
     scripts_count: 6
   - name: 07_Integration
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration
     type: subdir
     scripts_count: 3
   - name: 08_Data
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data
     type: subdir
     scripts_count: 4
   - name: 09_Auxiliary
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary
     type: subdir
     scripts_count: 5
   - name: 10_Anthropic
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic
     type: subdir
     scripts_count: 10
   - name: 12_Auditors_Os
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os
     type: subdir
     scripts_count: 5
   - name: 13_Legacy
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy
     type: subdir
     scripts_count: 87
 scripts:
   - name: 00_Context_Reset
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/00_Context_Reset.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/00_Context_Reset.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/00_Context_Reset.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/00_Context_Reset.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 01_Campanilla
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/01_Campanilla.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/01_Campanilla.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/01_Campanilla.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/01_Campanilla.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 02_Alert_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/02_Alert_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/02_Alert_Manager.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/02_Alert_Manager.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/02_Alert_Manager.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 03_Notify_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/03_Notify_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/03_Notify_System.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/03_Notify_System.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Ritual/03_Notify_System.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 00_AIPM_Trace_Logger
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/00_AIPM_Trace_Logger.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/00_AIPM_Trace_Logger.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/00_AIPM_Trace_Logger.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/00_AIPM_Trace_Logger.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 01_AIPM_Evaluator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/01_AIPM_Evaluator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/01_AIPM_Evaluator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/01_AIPM_Evaluator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/01_AIPM_Evaluator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 02_AIPM_Interview_Sim
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/02_AIPM_Interview_Sim.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/02_AIPM_Interview_Sim.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/02_AIPM_Interview_Sim.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/02_AIPM_Interview_Sim.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 03_Token_Budget_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/03_Token_Budget_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/03_Token_Budget_Guard.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/03_Token_Budget_Guard.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/03_Token_Budget_Guard.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 04_RAG_Optimizer_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/04_RAG_Optimizer_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/04_RAG_Optimizer_Pro.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/04_RAG_Optimizer_Pro.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/04_RAG_Optimizer_Pro.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 05_Probabilistic_Risk_Audit
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/05_Probabilistic_Risk_Audit.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/05_Probabilistic_Risk_Audit.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/05_Probabilistic_Risk_Audit.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/05_Probabilistic_Risk_Audit.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 06_AIPM_Control_Center
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/06_AIPM_Control_Center.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/06_AIPM_Control_Center.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/06_AIPM_Control_Center.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/06_AIPM_Control_Center.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 07_Guardrails_Service
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/07_Guardrails_Service.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/07_Guardrails_Service.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/07_Guardrails_Service.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/07_Guardrails_Service.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 08_AIPM_Consolidated_Report
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/08_AIPM_Consolidated_Report.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/08_AIPM_Consolidated_Report.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/08_AIPM_Consolidated_Report.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AIPM/08_AIPM_Consolidated_Report.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 00_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/00_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/00_Parallel_Audit_Pro.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/00_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/00_Parallel_Audit_Pro.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 01_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/01_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/01_Skill_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/01_Skill_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/01_Skill_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 02_Linter_Autofix
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/02_Linter_Autofix.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/02_Linter_Autofix.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/02_Linter_Autofix.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/02_Linter_Autofix.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 03_Validate_Rules
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/03_Validate_Rules.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/03_Validate_Rules.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/03_Validate_Rules.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/03_Validate_Rules.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 04_Edge_Case_Validator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/04_Edge_Case_Validator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/04_Edge_Case_Validator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/04_Edge_Case_Validator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/04_Edge_Case_Validator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 05_test_skill_lifecycle
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/05_test_skill_lifecycle.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/05_test_skill_lifecycle.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/05_test_skill_lifecycle.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/05_test_skill_lifecycle.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 00_Sync_MCP_OpenCode
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/00_Sync_MCP_OpenCode.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/00_Sync_MCP_OpenCode.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration/00_Sync_MCP_OpenCode.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration/00_Sync_MCP_OpenCode.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 01_Update_QMD_Index
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/01_Update_QMD_Index.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/01_Update_QMD_Index.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration/01_Update_QMD_Index.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration/01_Update_QMD_Index.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 02_Obsidian_Exporter
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/02_Obsidian_Exporter.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/02_Obsidian_Exporter.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration/02_Obsidian_Exporter.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/07_Integration/02_Obsidian_Exporter.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 00_Master_Analytics_Factory
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/00_Master_Analytics_Factory.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/00_Master_Analytics_Factory.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/00_Master_Analytics_Factory.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/00_Master_Analytics_Factory.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 01_Batch_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/01_Batch_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/01_Batch_Parser.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/01_Batch_Parser.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/01_Batch_Parser.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 02_Resumen_Extractor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/02_Resumen_Extractor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/02_Resumen_Extractor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/02_Resumen_Extractor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/02_Resumen_Extractor.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 03_Universal_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/03_Universal_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/03_Universal_Parser.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/03_Universal_Parser.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Data/03_Universal_Parser.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 00_AI_Task_Planner
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/00_AI_Task_Planner.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/00_AI_Task_Planner.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/00_AI_Task_Planner.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/00_AI_Task_Planner.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 01_Update_Links
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/01_Update_Links.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/01_Update_Links.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/01_Update_Links.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/01_Update_Links.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 02_Fast_Vision
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/02_Fast_Vision.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/02_Fast_Vision.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/02_Fast_Vision.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/02_Fast_Vision.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 03_MCP_Health_Check
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/03_MCP_Health_Check.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/03_MCP_Health_Check.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/03_MCP_Health_Check.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/03_MCP_Health_Check.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 04_Skill_Harmonizer
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/04_Skill_Harmonizer.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/04_Skill_Harmonizer.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/04_Skill_Harmonizer.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/09_Auxiliary/04_Skill_Harmonizer.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 00_Safety_Wrapper
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/00_Safety_Wrapper.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/00_Safety_Wrapper.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/00_Safety_Wrapper.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/00_Safety_Wrapper.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 01_Context_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/01_Context_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/01_Context_Manager.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/01_Context_Manager.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/01_Context_Manager.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 02_Evaluator_Runner
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/02_Evaluator_Runner.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/02_Evaluator_Runner.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/02_Evaluator_Runner.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/02_Evaluator_Runner.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 03_Sprint_Contract
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/03_Sprint_Contract.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/03_Sprint_Contract.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/03_Sprint_Contract.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/03_Sprint_Contract.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 04_Playwright_QA
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/04_Playwright_QA.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/04_Playwright_QA.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/04_Playwright_QA.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/04_Playwright_QA.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 05_Pass_At_Metrics
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/05_Pass_At_Metrics.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/05_Pass_At_Metrics.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/05_Pass_At_Metrics.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/05_Pass_At_Metrics.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 06_Feature_List
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/06_Feature_List.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/06_Feature_List.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/06_Feature_List.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/06_Feature_List.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 07_Agent_Teams_Locks
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/07_Agent_Teams_Locks.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/07_Agent_Teams_Locks.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/07_Agent_Teams_Locks.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/07_Agent_Teams_Locks.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 08_Progress_Generator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/08_Progress_Generator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/08_Progress_Generator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/08_Progress_Generator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/08_Progress_Generator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 09_Multi_Agent_Pipeline
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/09_Multi_Agent_Pipeline.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/09_Multi_Agent_Pipeline.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/09_Multi_Agent_Pipeline.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Anthropic/09_Multi_Agent_Pipeline.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 00_Context_Usage_Bar
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 01_Beautify_Tables
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 02_Beauty_Doc
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/02_Beauty_Doc.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/02_Beauty_Doc.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/02_Beauty_Doc.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/02_Beauty_Doc.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 03_SOTA_Integrity_Check
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 04_Carousel_Engine
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/04_Carousel_Engine.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/04_Carousel_Engine.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/04_Carousel_Engine.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/04_Carousel_Engine.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 00_Context_Reset
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/00_Context_Reset.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/00_Context_Reset.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/00_Context_Reset.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/00_Context_Reset.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 01_Spider_Brainstorm
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/01_Spider_Brainstorm.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/01_Spider_Brainstorm.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/01_Spider_Brainstorm.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/01_Spider_Brainstorm.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 02_Professor_X_Plan
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/02_Professor_X_Plan.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/02_Professor_X_Plan.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/02_Professor_X_Plan.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/02_Professor_X_Plan.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 03_Thor_Work
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/03_Thor_Work.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/03_Thor_Work.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/03_Thor_Work.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/03_Thor_Work.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 04_Vision_Review
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/04_Vision_Review.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/04_Vision_Review.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/04_Vision_Review.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/04_Vision_Review.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 05_Hulk_Compound
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/05_Hulk_Compound.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/05_Hulk_Compound.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/05_Hulk_Compound.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/05_Hulk_Compound.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 06_AntMan_Lfg_Lite
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/06_AntMan_Lfg_Lite.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/06_AntMan_Lfg_Lite.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/06_AntMan_Lfg_Lite.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/06_AntMan_Lfg_Lite.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 07_Doc_Strange_Lfg
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/07_Doc_Strange_Lfg.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/07_Doc_Strange_Lfg.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/07_Doc_Strange_Lfg.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/07_Doc_Strange_Lfg.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 08_Ritual_Cierre
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/08_Ritual_Cierre.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/08_Ritual_Cierre.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/08_Ritual_Cierre.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/08_Ritual_Cierre.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 09_Backlog_Triage
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/09_Backlog_Triage.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/09_Backlog_Triage.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/09_Backlog_Triage.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/09_Backlog_Triage.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 10_AI_Task_Planner
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/10_AI_Task_Planner.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/10_AI_Task_Planner.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/10_AI_Task_Planner.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/10_AI_Task_Planner.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 11_Sync_Notes
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/11_Sync_Notes.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/11_Sync_Notes.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/11_Sync_Notes.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/11_Sync_Notes.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 12_Update_Links
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/12_Update_Links.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/12_Update_Links.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/12_Update_Links.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/12_Update_Links.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 13_Validate_Stack
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/13_Validate_Stack.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/13_Validate_Stack.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/13_Validate_Stack.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/13_Validate_Stack.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 14_Morning_Standup
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/14_Morning_Standup.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/14_Morning_Standup.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/14_Morning_Standup.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/14_Morning_Standup.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 15_Weekly_Review
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/15_Weekly_Review.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/15_Weekly_Review.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/15_Weekly_Review.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/15_Weekly_Review.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 16_Clean_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/16_Clean_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/16_Clean_System.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/16_Clean_System.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/16_Clean_System.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 17_Ritual_Dominical
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/17_Ritual_Dominical.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/17_Ritual_Dominical.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/17_Ritual_Dominical.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/17_Ritual_Dominical.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 18_Generacion_Contenido
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/18_Generacion_Contenido.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/18_Generacion_Contenido.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/18_Generacion_Contenido.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/18_Generacion_Contenido.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 19_Generate_Progress
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/19_Generate_Progress.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/19_Generate_Progress.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/19_Generate_Progress.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/19_Generate_Progress.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 20_Master_Analytics_Factory
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/20_Master_Analytics_Factory.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/20_Master_Analytics_Factory.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/20_Master_Analytics_Factory.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/20_Master_Analytics_Factory.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 21_Skill_Script_Mapper
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/21_Skill_Script_Mapper.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/21_Skill_Script_Mapper.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/21_Skill_Script_Mapper.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/21_Skill_Script_Mapper.py
     interfaz:
       has_main: False
       has_args: False
       is_numerado: True
   - name: 22_AIPM_Trace_Logger
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/22_AIPM_Trace_Logger.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/22_AIPM_Trace_Logger.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/22_AIPM_Trace_Logger.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/22_AIPM_Trace_Logger.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 23_AIPM_Evaluator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/23_AIPM_Evaluator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/23_AIPM_Evaluator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/23_AIPM_Evaluator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/23_AIPM_Evaluator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 24_AIPM_Interview_Sim
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/24_AIPM_Interview_Sim.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/24_AIPM_Interview_Sim.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/24_AIPM_Interview_Sim.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/24_AIPM_Interview_Sim.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 28_AIPM_Control_Center
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/28_AIPM_Control_Center.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/28_AIPM_Control_Center.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/28_AIPM_Control_Center.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/28_AIPM_Control_Center.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 30_AIPM_Consolidated_Report
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/30_AIPM_Consolidated_Report.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/30_AIPM_Consolidated_Report.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/30_AIPM_Consolidated_Report.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/30_AIPM_Consolidated_Report.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 31_Silicon_Valley_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/31_Silicon_Valley_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/31_Silicon_Valley_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/31_Silicon_Valley_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/31_Silicon_Valley_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 32_Multi_Agent_Final_Validation
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/32_Multi_Agent_Final_Validation.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/32_Multi_Agent_Final_Validation.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/32_Multi_Agent_Final_Validation.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/32_Multi_Agent_Final_Validation.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 33_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/33_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/33_Parallel_Audit_Pro.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/33_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/33_Parallel_Audit_Pro.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 34_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/34_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/34_Skill_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/34_Skill_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/34_Skill_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 35_Beautify_Tables
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/35_Beautify_Tables.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/35_Beautify_Tables.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/35_Beautify_Tables.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/35_Beautify_Tables.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 36_Beauty_Doc
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/36_Beauty_Doc.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/36_Beauty_Doc.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/36_Beauty_Doc.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/36_Beauty_Doc.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 37_Linter_Autofix
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/37_Linter_Autofix.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/37_Linter_Autofix.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/37_Linter_Autofix.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/37_Linter_Autofix.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 38_Recap_Planning
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/38_Recap_Planning.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/38_Recap_Planning.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/38_Recap_Planning.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/38_Recap_Planning.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 39_Repair_Corruption
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/39_Repair_Corruption.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/39_Repair_Corruption.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/39_Repair_Corruption.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/39_Repair_Corruption.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 40_Validate_Rules
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/40_Validate_Rules.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/40_Validate_Rules.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/40_Validate_Rules.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/40_Validate_Rules.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 43_Marketing_Skills_Distributor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/43_Marketing_Skills_Distributor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/43_Marketing_Skills_Distributor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/43_Marketing_Skills_Distributor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/43_Marketing_Skills_Distributor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 44_Auto_Compound_Intelligence
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/44_Auto_Compound_Intelligence.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/44_Auto_Compound_Intelligence.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/44_Auto_Compound_Intelligence.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/44_Auto_Compound_Intelligence.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 45_Migration_Master
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/45_Migration_Master.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/45_Migration_Master.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/45_Migration_Master.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/45_Migration_Master.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 46_Sync_MCP_OpenCode
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/46_Sync_MCP_OpenCode.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/46_Sync_MCP_OpenCode.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/46_Sync_MCP_OpenCode.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/46_Sync_MCP_OpenCode.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 47_Verify_OpenCode_Status
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/47_Verify_OpenCode_Status.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/47_Verify_OpenCode_Status.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/47_Verify_OpenCode_Status.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/47_Verify_OpenCode_Status.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 48_Design_Critique_Expert
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/48_Design_Critique_Expert.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/48_Design_Critique_Expert.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/48_Design_Critique_Expert.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/48_Design_Critique_Expert.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 49_Path_Optimization
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/49_Path_Optimization.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/49_Path_Optimization.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/49_Path_Optimization.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/49_Path_Optimization.py
     interfaz:
       has_main: False
       has_args: False
       is_numerado: True
   - name: 50_DEBUG
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/50_DEBUG.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/50_DEBUG.py
     interfaz:
       has_main: False
       has_args: False
       is_numerado: True
   - name: 50_DEBUG2
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG2.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG2.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/50_DEBUG2.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/50_DEBUG2.py
     interfaz:
       has_main: False
       has_args: False
       is_numerado: True
   - name: 50_System_Health_Monitor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_System_Health_Monitor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_System_Health_Monitor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/50_System_Health_Monitor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/50_System_Health_Monitor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 51_Commit_Lint_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/51_Commit_Lint_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/51_Commit_Lint_Guard.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/51_Commit_Lint_Guard.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/51_Commit_Lint_Guard.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 52_Safe_Commit
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/52_Safe_Commit.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/52_Safe_Commit.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/52_Safe_Commit.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/52_Safe_Commit.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 53_Structure_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/53_Structure_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/53_Structure_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/53_Structure_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/53_Structure_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 54_Commit_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/54_Commit_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/54_Commit_Guard.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/54_Commit_Guard.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/54_Commit_Guard.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 55_Sync_Skills
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/55_Sync_Skills.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/55_Sync_Skills.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/55_Sync_Skills.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/55_Sync_Skills.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 56_Organize_Solutions
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/56_Organize_Solutions.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/56_Organize_Solutions.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/56_Organize_Solutions.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/56_Organize_Solutions.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 57_Repo_Sync_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/57_Repo_Sync_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/57_Repo_Sync_Auditor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/57_Repo_Sync_Auditor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/57_Repo_Sync_Auditor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 58_Batch_Beautify_README
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/58_Batch_Beautify_README.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/58_Batch_Beautify_README.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/58_Batch_Beautify_README.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/58_Batch_Beautify_README.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 59_Task_Classifier
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/59_Task_Classifier.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/59_Task_Classifier.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/59_Task_Classifier.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/59_Task_Classifier.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 60_Fast_Vision
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/60_Fast_Vision.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/60_Fast_Vision.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/60_Fast_Vision.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/60_Fast_Vision.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 61_MCP_Health_Check
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/61_MCP_Health_Check.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/61_MCP_Health_Check.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/61_MCP_Health_Check.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/61_MCP_Health_Check.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 63_Audit_Sync_Master
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/63_Audit_Sync_Master.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/63_Audit_Sync_Master.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/63_Audit_Sync_Master.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/63_Audit_Sync_Master.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 64_Campanilla
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/64_Campanilla.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/64_Campanilla.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/64_Campanilla.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/64_Campanilla.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 65_CTX_Generator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/65_CTX_Generator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/65_CTX_Generator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/65_CTX_Generator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/65_CTX_Generator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 66_Alert_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/66_Alert_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/66_Alert_Manager.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/66_Alert_Manager.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/66_Alert_Manager.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 67_Retry_Decorator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/67_Retry_Decorator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/67_Retry_Decorator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/67_Retry_Decorator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/67_Retry_Decorator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 68_Benchmark_Baseline
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/68_Benchmark_Baseline.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/68_Benchmark_Baseline.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/68_Benchmark_Baseline.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/68_Benchmark_Baseline.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 69_Health_Check_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/69_Health_Check_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/69_Health_Check_Pro.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/69_Health_Check_Pro.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/69_Health_Check_Pro.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 70_Ship_It
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/70_Ship_It.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/70_Ship_It.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/70_Ship_It.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/70_Ship_It.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 72_Validate_Skills_Duplicates
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/72_Validate_Skills_Duplicates.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/72_Validate_Skills_Duplicates.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/72_Validate_Skills_Duplicates.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/72_Validate_Skills_Duplicates.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 73_Avengers_Workflow
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/73_Avengers_Workflow.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/73_Avengers_Workflow.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 73_Avengers_Workflow_v3
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow_v3.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow_v3.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/73_Avengers_Workflow_v3.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/73_Avengers_Workflow_v3.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 74_MCP_Top_Tests
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/74_MCP_Top_Tests.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/74_MCP_Top_Tests.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/74_MCP_Top_Tests.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/74_MCP_Top_Tests.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 75_Update_QMD_Index
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/75_Update_QMD_Index.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/75_Update_QMD_Index.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/75_Update_QMD_Index.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/75_Update_QMD_Index.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 76_Obsidian_Exporter
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/76_Obsidian_Exporter.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/76_Obsidian_Exporter.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/76_Obsidian_Exporter.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/76_Obsidian_Exporter.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 77_Notify_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/77_Notify_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/77_Notify_System.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/77_Notify_System.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/77_Notify_System.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 78_Context_Switcher
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/78_Context_Switcher.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/78_Context_Switcher.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/78_Context_Switcher.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/78_Context_Switcher.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 79_System_Guardian
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/79_System_Guardian.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/79_System_Guardian.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/79_System_Guardian.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/79_System_Guardian.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 80_Edge_Case_Validator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/80_Edge_Case_Validator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/80_Edge_Case_Validator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/80_Edge_Case_Validator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/80_Edge_Case_Validator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 81_RTM_Generator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/81_RTM_Generator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/81_RTM_Generator.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/81_RTM_Generator.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/81_RTM_Generator.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 82_Health_Monitor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/82_Health_Monitor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/82_Health_Monitor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/82_Health_Monitor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/82_Health_Monitor.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 83_Skill_Script_Mapper
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/83_Skill_Script_Mapper.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/83_Skill_Script_Mapper.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/83_Skill_Script_Mapper.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/83_Skill_Script_Mapper.py
     interfaz:
       has_main: False
       has_args: False
       is_numerado: True
   - name: 84_Batch_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/84_Batch_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/84_Batch_Parser.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/84_Batch_Parser.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/84_Batch_Parser.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 85_Resumen_Extractor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/85_Resumen_Extractor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/85_Resumen_Extractor.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/85_Resumen_Extractor.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/85_Resumen_Extractor.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 86_Universal_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/86_Universal_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/86_Universal_Parser.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/86_Universal_Parser.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/86_Universal_Parser.py
     interfaz:
       has_main: True
       has_args: True
       is_numerado: True
   - name: 87_Iron_Man_Gen
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/87_Iron_Man_Gen.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/87_Iron_Man_Gen.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/87_Iron_Man_Gen.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/87_Iron_Man_Gen.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 88_Frontend_Premium
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/88_Frontend_Premium.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/88_Frontend_Premium.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/88_Frontend_Premium.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/88_Frontend_Premium.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 89_Redaccion_de_Docs
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/89_Redaccion_de_Docs.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/89_Redaccion_de_Docs.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/89_Redaccion_de_Docs.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/89_Redaccion_de_Docs.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 90_Deep_Work_Session
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/90_Deep_Work_Session.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/90_Deep_Work_Session.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/90_Deep_Work_Session.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/90_Deep_Work_Session.py
     interfaz:
       has_main: True
       has_args: False
       is_numerado: True
   - name: 95_Documentation_Updater
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/95_Documentation_Updater.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/95_Documentation_Updater.py
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/95_Documentation_Updater.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/95_Documentation_Updater.py
     interfaz:
       has_main: True
       has_args: True

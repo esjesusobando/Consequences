@@ -1,6 +1,6 @@
 # DISEÑO UI/UX — Área Funcional 02
 
-> **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
+> **Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
 > **Última actualización:** 2026-04-28
 > **Skills activas:** 10 (+ 1 repo externo destacado)
 

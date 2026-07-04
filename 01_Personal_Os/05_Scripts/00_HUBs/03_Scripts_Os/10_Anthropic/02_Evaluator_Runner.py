@@ -9,8 +9,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -22,9 +22,6 @@ try:
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 except:
     pass
-
-
-
 
 """
 02_Evaluator_Runner.py — Anthropic Evaluator Agent (GAN Pattern)
@@ -51,7 +48,6 @@ from typing import List, Optional
 # GRADING CRITERIA (Anthropic Pattern)
 # ========================
 
-
 class GradingCriteria(Enum):
     """Criterios de evaluación basados en el artículo de Anthropic"""
 
@@ -66,7 +62,6 @@ class GradingCriteria(Enum):
     TEST_COVERAGE = "test_coverage"
     SECURITY = "security"
     PERFORMANCE = "performance"
-
 
 @dataclass
 class GradingScore:
@@ -86,7 +81,6 @@ class GradingScore:
             return "C"
         else:
             return "D"
-
 
 @dataclass
 class EvaluationResult:
@@ -116,7 +110,6 @@ class EvaluationResult:
             "passed": self.passed,
             "average_score": self.average_score,
         }
-
 
 class EvaluatorRunner:
     """
@@ -355,7 +348,6 @@ class EvaluatorRunner:
 
         return "\n".join(lines)
 
-
 def run_evaluator(
     output: str, output_type: str = "code", expected: dict = None
 ) -> EvaluationResult:
@@ -377,7 +369,6 @@ def run_evaluator(
     print(evaluator.get_report(result))
 
     return result
-
 
 if __name__ == "__main__":
     # Demo

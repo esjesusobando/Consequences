@@ -76,7 +76,7 @@ Solo **2 de 7** subdirectorios eran realmente "core". El resto era ruido.
 #### Problema #2: `04_Operations` era un cajón de sastre
 
 ```
-04_Operations/
+05_Scripts/
 ├── 00_Context_LLM/     → MEMORIA (área totalmente distinta a operaciones)
 ├── 01_Auto_Improvement/→ APRENDIZAJE (no es operación)
 ├── 02_Agent_Teams_Lite/→ HERRAMIENTAS (no es operación)
@@ -92,7 +92,7 @@ Solo **2 de 7** subdirectorios eran realmente "core". El resto era ruido.
 #### Problema #3: `03_Task` era huérfano
 
 ```
-03_Task/
+04_Tasks/
 ├── 00_Templates/   → ✅ Templates
 ├── ...tareas.md    → ✅ Tareas activas
 ```
@@ -133,15 +133,15 @@ No son carpetas — son **dimensiones ontológicas**. Cada una responde una preg
 | `00_Core/01_Rules` | `00_Core/01_Rules` | Reglas del sistema |
 | `00_Core/02_Tools` | `00_Core/02_Tools` | Herramientas (skills, agents, MCPs) |
 | `00_Core/00_Workflows` | `00_Core/00_Workflows` | Flujos de trabajo |
-| `04_Operations/00_Context_LLM` | `01_Memory/00_Context_LLM` | Memoria operativa |
+| `05_Scripts/00_Context_LLM` | `01_Memory/00_Context_LLM` | Memoria operativa |
 | `02_Knowledge` | `02_Knowledge` | (se purifica, no se mueve) |
-| `04_Operations/01_Auto_Improvement` | `03_Learning/01_Auto_Improvement` | Motor de mejora continua |
+| `05_Scripts/01_Auto_Improvement` | `03_Learning/01_Auto_Improvement` | Motor de mejora continua |
 | (nuevo) | `03_Learning/00_Shared_Org` | Capital Token + filosofía |
 | `03_Task` | `04_Tasks` | Gestión de tareas |
-| `04_Operations/03_Scripts_Os` | `05_Scripts/00_HUBs/03_Scripts_Os` | Scripts operativos |
+| `05_Scripts/03_Scripts_Os` | `05_Scripts/00_HUBs/03_Scripts_Os` | Scripts operativos |
 | (nuevo) | `05_Scripts/00_HUBs` | Hub de entrada a scripts |
 | (nuevo) | `05_Scripts/01_Installer` | Instalador del sistema |
-| `04_Operations/05_Projects` | `06_Projects` | Proyectos activos |
+| `05_Scripts/05_Projects` | `06_Projects` | Proyectos activos |
 | `05_Archive` | `07_Archive` | Archivo histórico |
 
 ---
@@ -154,7 +154,7 @@ Se identificaron:
 - **~800 archivos** analizados
 - **~500+ referencias** a paths viejos
 - **~269 archivos** con paths stale en docs y scripts
-- **4 patrones de reemplazo**: `01_Core→00_Core`, `03_Task→04_Tasks`, `04_Operations/03_Scripts_Os→05_Scripts/00_HUBs/03_Scripts_Os`, `04_Operations→05_Scripts`
+- **4 patrones de reemplazo**: `01_Core→00_Core`, `03_Task→04_Tasks`, `05_Scripts/03_Scripts_Os→05_Scripts/00_HUBs/03_Scripts_Os`, `04_Operations→05_Scripts`
 
 ### Fase 1 — Structure_v5.0.md (documento canónico)
 
@@ -175,8 +175,8 @@ Se actualizaron todas las referencias de paths en el protocolo de arranque:
 
 **AGENTS.md** (12 paths corregidos):
 - Árbol de directorios reescrito
-- Path de HUBs: `04_Operations/03_Scripts_Os/` → `05_Scripts/00_HUBs/`
-- Path de backlog: `03_Task/` → `04_Tasks/`
+- Path de HUBs: `05_Scripts/00_HUBs/03_Scripts_Os/` → `05_Scripts/00_HUBs/`
+- Path de backlog: `04_Tasks/` → `04_Tasks/`
 - Path de workflows: `00_Core/` → `00_Core/`
 - Tabla de backup .agent/ actualizada
 - Paths de SDD y CE skills
@@ -233,9 +233,9 @@ El cambio `fix-doc-paths` y `fix-script-paths` fueron archivados en:
 
 | Escenario | Antes (v4.9) | Después (v5.0) | Mejora |
 |-----------|-------------|----------------|--------|
-| Encontrar un script de HUB | Buscar en `04_Operations/03_Scripts_Os/` (mezclado con context, agents, projects) | `05_Scripts/00_HUBs/` (solo scripts) | +30% |
-| Localizar una skill | `00_Core/02_Tools/02_Skills/` (pero también había skills en `04_Operations/02_Agent_Teams_Lite/`) | `00_Core/02_Tools/02_Skills/` (única fuente de verdad) | +25% |
-| Ejecutar workflow de cierre | Buscar en `00_Core/00_Workflows/` con paths a `04_Operations/` que ya no existen | `00_Core/00_Workflows/` con paths a `05_Scripts/` que sí existen | +20% |
+| Encontrar un script de HUB | Buscar en `05_Scripts/00_HUBs/03_Scripts_Os/` (mezclado con context, agents, projects) | `05_Scripts/00_HUBs/` (solo scripts) | +30% |
+| Localizar una skill | `00_Core/02_Tools/02_Skills/` (pero también había skills en `05_Scripts/02_Agent_Teams_Lite/`) | `00_Core/02_Tools/02_Skills/` (única fuente de verdad) | +25% |
+| Ejecutar workflow de cierre | Buscar en `00_Core/00_Workflows/` con paths a `05_Scripts/` que ya no existen | `00_Core/00_Workflows/` con paths a `05_Scripts/` que sí existen | +20% |
 | Configurar paths de sistema | `config_paths.py` con 8+ paths legacy rotos | config_paths.py con paths corregidos | +35% |
 
 **Métrica**: Reducción del tiempo promedio de "sé lo que necesito → lo encuentro" de ~45s a ~33s.
@@ -248,8 +248,8 @@ El cambio `fix-doc-paths` y `fix-script-paths` fueron archivados en:
 |-------|-------|
 | "Esto es importante → va a 01_Core" | "Esto es una regla → va a 00_Core/01_Rules" |
 | "No sé dónde va esto → va a 04_Operations" | "Esto ejecuta código → va a 05_Scripts" |
-| "Esto es aprendizaje → 04_Operations/01_Auto_Improvement" | "Esto mejora el sistema → 03_Learning" |
-| "Esto es contexto → 04_Operations/00_Context_LLM" | "Esto es memoria → 01_Memory" |
+| "Esto es aprendizaje → 05_Scripts/01_Auto_Improvement" | "Esto mejora el sistema → 03_Learning" |
+| "Esto es contexto → 05_Scripts/00_Context_LLM" | "Esto es memoria → 01_Memory" |
 
 **La regla de oro**: Si no sabes en qué carpeta poner algo, responde: "¿qué pregunta responde?"
 
@@ -275,7 +275,7 @@ Un agente nuevo que lee el AGENTS.md por primera vez:
 
 | Problema | Antes | Ahora |
 |----------|-------|-------|
-| Paths hardcodeados rotos | Múltiples referencias a `04_Operations/` que ya no existe | 0 referencias stale confirmadas por grep |
+| Paths hardcodeados rotos | Múltiples referencias a `05_Scripts/` que ya no existe | 0 referencias stale confirmadas por grep |
 | Ambigüedad de ubicación | "¿Este script va en Operations/Scripts o en Core/Tools?" | "¿Ejecuta código? → 05_Scripts. ¿Define comportamiento? → 00_Core." |
 | Duplicación | Scripts duplicados en `03_Scripts_Os/` y `08_Bash/` y `04_Extensions/` | Una sola ubicación canónica por tipo |
 | Archivos huérfanos | Difícil saber si un archivo está vivo o muerto | `06_Projects` = vivo, `07_Archive` = muerto |
@@ -340,13 +340,13 @@ Un agente nuevo que lee el AGENTS.md por primera vez:
 ### 8.2 Lo que dolió
 
 1. **Archivos fuera de categorías**: El batch script inicial no cubrió `00_Core/00_Workflows/` ni `00_Core/00_Comandos_Workflows.md` porque no estaban en los globs. Se tuvo que agregar una categoría `workflows` manualmente.
-2. **config_paths.py**: Especialmente delicado porque usa pathlib (`/`) en vez de strings simples. El batch script tuvo que adaptarse para detectar `"01_Personal_Os" / "01_Core"` como patrón de reemplazo.
-3. **Patrones anidados**: `04_Operations/03_Scripts_Os/` debe reemplazarse ANTES que `04_Operations/` para evitar reemplazos parciales incorrectos.
+2. **config_paths.py**: Especialmente delicado porque usa pathlib (`/`) en vez de strings simples. El batch script tuvo que adaptarse para detectar `"01_Personal_Os" / "00_Core"` como patrón de reemplazo.
+3. **Patrones anidados**: `05_Scripts/00_HUBs/03_Scripts_Os/` debe reemplazarse ANTES que `05_Scripts/` para evitar reemplazos parciales incorrectos.
 4. **.agent/ backup files**: Quedaron con paths viejos intencionalmente (out of scope), pero crean ruido en las búsquedas.
 
 ### 8.3 Lo que aún falta
 
-1. **Revisión de config_paths.py**: Aunque los paths strings se actualizaron, algunas rutas computadas que usan `OPERATIONS_DIR` ahora apuntan a `05_Scripts/` donde antes era `04_Operations/`. Esto requiere una revisión manual para restaurar la lógica correcta.
+1. **Revisión de config_paths.py**: Aunque los paths strings se actualizaron, algunas rutas computadas que usan `OPERATIONS_DIR` ahora apuntan a `05_Scripts/` donde antes era `05_Scripts/`. Esto requiere una revisión manual para restaurar la lógica correcta.
 2. **scripts en .claude/04_Skills/**: Quedaron fuera de scope, pero podrían necesitar actualización si se usan activamente.
 3. **aliases.ps1**: No existe en el sistema actual, solo `aliases.sh`. Si se crea en el futuro, debe heredar los paths nuevos.
 

@@ -1,6 +1,6 @@
 # AUTOMATIZACION — Area Funcional 04
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/04_Automatizacion/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 16
 

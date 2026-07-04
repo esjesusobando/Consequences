@@ -1,7 +1,7 @@
-# 03_Task — Sistema de Tareas PersonalOS v4.9
+# 04_Tasks — Sistema de Tareas PersonalOS v5.0
 
-**Versión:** 4.9 Consequences
-**Última actualización:** 2026-05-31
+**Versión:** 5.0
+**Última actualización:** 2026-07-03
 **Estado:** ✅ Activo
 
 ---
@@ -13,20 +13,23 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
 ├── 01_Personal_Os/             # Sistema Operativo Personal
 │   ├── 00_Core/              # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
+│   ├── 01_Memory/            # Memoria LLM, Process Notes
 │   ├── 02_Knowledge/         # Base de Conocimiento, Research y Documentación
-│   ├── 03_Task/              # Gestión de Tareas Activas ✅
-│   ├── 05_Archive/           # Backups, snapshots, históricos
-│   └── 04_Operations/        # Cerebro Operativo y Automatización
+│   ├── 03_Learning/          # Conocimiento activo
+│   ├── 04_Tasks/             # Gestión de Tareas Activas ✅
+│   ├── 05_Scripts/           # Scripts operativos + HUBs
+│   ├── 06_Projects/          # Proyectos activos
+│   └── 07_Archive/           # Backups, snapshots, históricos
 ├── 02_Playground/            # Laboratorio de Pruebas y Experimentos
 └── 03_Resultado/             # Resultados de proyectos
 ```
 
 ---
 
-## 📂 Estructura 03_Task
+## 📂 Estructura 04_Tasks
 
 ```
-01_Personal_Os/03_Task/
+01_Personal_Os/04_Tasks/
 ├── 00_Templates/                   # Plantillas oficiales (SOTA, Skeleton, AI)
 ├── 01_Tasks_Done/                 # Historial de hitos logrados
 ├── 02_Hillary_Inbox/               # Entrada de tareas sin procesar
@@ -40,33 +43,33 @@ Think_Different/
 
 ## 🎯 Sistema de Prioridades
 
-| Prioridad | Significado | Límite                                 |
-| --------- | ----------- | -------------------------------------- |
-| **P0**    | Hacer hoy   | max 3                                  |
-| **P1**    | Esta semana | max 7                                  |
-| **P2**    | Programado  | -------------------------------------- |
-| **P3**    | Algún día   | -------------------------------------- |
+| Prioridad     | Significado     | Límite                                     |
+|---------------|-----------------|--------------------------------------------|
+| **P0**        | Hacer hoy       | max 3                                      |
+| **P1**        | Esta semana     | max 7                                      |
+| **P2**        | Programado      |--------------------------------------------|
+| **P3**        | Algún día       |--------------------------------------------|
 
 ### Estados de Tarea
 
-| Estado | Significado |
-| ------ | ----------- |
-| `n`    | not started |
-| `s`    | started     |
-| `b`    | blocked     |
-| `d`    | done        |
+| Estado     | Significado     |
+|------------|-----------------|
+| `n`        | not started     |
+| `s`        | started         |
+| `b`        | blocked         |
+| `d`        | done            |
 
 ### Categorías
 
-| Categoría   | Descripción                    |
-| ----------- | ------------------------------ |
-| `technical` | build, fix, configure          |
-| `outreach`  | communicate, meet              |
-| `research`  | learn, analyze                 |
-| `writing`   | draft, document                |
-| `admin`     | operations, finance, logistics |
-| `personal`  | health, routines               |
-| `other`     | everything else                |
+| Categoría       | Descripción                        |
+|-----------------|------------------------------------|
+| `technical`     | build, fix, configure              |
+| `outreach`      | communicate, meet                  |
+| `research`      | learn, analyze                     |
+| `writing`       | draft, document                    |
+| `admin`         | operations, finance, logistics     |
+| `personal`      | health, routines                   |
+| `other`         | everything else                    |
 
 ---
 

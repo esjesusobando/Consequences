@@ -11,8 +11,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -53,7 +53,6 @@ TEMPLATE_PATH = BRAIN_TEMPLATE_DIR / "01_ai_task_template.md"
 MARKER = "# 🧠 AI Task Planning Framework"
 SEPARATOR = f"\n\n---\n{MARKER} (Ajuste de Tareas)\n---\n"
 
-
 def speak(message):
     """Notificación de voz vía TTS Windows (Protocolo PersonalOS)."""
     try:
@@ -64,7 +63,6 @@ def speak(message):
         )
     except:
         pass
-
 
 def print_banner():
     """Banner Premium PersonalOS."""
@@ -77,7 +75,6 @@ def print_banner():
 ######################################################################{RESET}
 """
     print(banner)
-
 
 def main():
     """Función principal para ejecutar el escaneo y actualización de tareas."""
@@ -151,7 +148,6 @@ def main():
             f"{SUCCESS}Todas las tareas ya están al día. No se requieren acciones.{RESET}"
         )
         speak("Todas las tareas están al día.")
-
 
 if __name__ == "__main__":
     main()

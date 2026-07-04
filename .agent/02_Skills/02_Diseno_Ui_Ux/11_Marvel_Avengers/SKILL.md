@@ -175,7 +175,7 @@ argument-hint: "[feature idea or problem]"
 ## Ubicación
 
 ```
-01_Core/00_Workflows_Os/02_Marvel/
+00_Core/00_Workflows/02_Marvel/
 ```
 
 ---

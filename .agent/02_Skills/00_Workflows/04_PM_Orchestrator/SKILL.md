@@ -95,7 +95,7 @@ auto-mejorar skills.
 |-------------------------------------------------------|-----------------------------------------------------------------------------------|
 | Multi-agent orchestration                              | CE Workflows + SDD                                                                 |
 | Back pressure gates                                    | SDD gates en specs                                                                 |
-| Let it Fail                                            | 04_Operations/01_Auto_Improvement/                                                 |
+| Let it Fail                                            | 03_Learning/01_Auto_Improvement/                                                 |
 | Git truth                                              | 01_Personal_Os/11_AGENTS.md - Git como fuente de verdad                            |
 | /discovery, /spec                                      | /sdd:explore, /sdd:spec                                                            |
 | yt-dlp                                                 | 19_Video_Intel skill                                                               |

@@ -98,7 +98,7 @@ Para cada contenido, extraer:
 
 ```bash
 # Para cada herramienta mencionada en el contenido:
-1. Buscar en ../01_Personal_Os/01_Core/02_Tools/02_Skills/
+1. Buscar en ../01_Personal_Os/00_Core/02_Tools/02_Skills/
 2. SI NO existe en contexto:
    - Investigar (websearch, codesearch)
    - Agregar al OS (crear skill o documentation)
@@ -288,7 +288,7 @@ Tweet 2: [280 chars]
 
 ```bash
 # Para cada herramienta identificada:
-1. Buscar en ../01_Personal_Os/01_Core/02_Tools/02_Skills/
+1. Buscar en ../01_Personal_Os/00_Core/02_Tools/02_Skills/
 2. SI NEW → Investigar → Agregar al OS
 3. SI EXISTS → Update con nuevo conocimiento
 ```

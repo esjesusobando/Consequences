@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 Pass@k Metrics - Calculate pass@k and pass^k for agent evaluations.
@@ -25,7 +24,6 @@ Inspirado en: "Demystifying Evals for AI Agents" article (Jan 09, 2026)
 from typing import List, Optional, Dict, Any
 from dataclasses import dataclass
 import math
-
 
 @dataclass
 class PassAtKResult:
@@ -38,7 +36,6 @@ class PassAtKResult:
 
     def __str__(self):
         return f"pass@{self.k}: {self.pass_at_k:.2%} ({self.successes}/{self.total_trials})"
-
 
 def calculate_pass_at_k(results: List[bool], k: int) -> float:
     """
@@ -71,7 +68,6 @@ def calculate_pass_at_k(results: List[bool], k: int) -> float:
     # pass@k = 1 - (1 - p)^k
     return 1 - math.pow(1 - p, k)
 
-
 def calculate_pass_all_k(results: List[bool], k: int) -> float:
     """
     Calcula pass^k: probabilidad de que TODOS k intentos succeedan.
@@ -102,7 +98,6 @@ def calculate_pass_all_k(results: List[bool], k: int) -> float:
     # pass^k = p^k
     return math.pow(p, k)
 
-
 def calculate_pass_at_k_from_raw(trials: List[Dict[str, Any]], k: int) -> float:
     """
     Calcula pass@k desde trials crudos (no solo booleanos).
@@ -116,7 +111,6 @@ def calculate_pass_at_k_from_raw(trials: List[Dict[str, Any]], k: int) -> float:
     """
     results = [trial.get("passed", False) for trial in trials]
     return calculate_pass_at_k(results, k)
-
 
 class EvaluationMetrics:
     """
@@ -179,7 +173,6 @@ class EvaluationMetrics:
         print(f"  pass^3:  {summary['pass^3']:.2%}")
         print(f"  pass^5:  {summary['pass^5']:.2%}")
         print("=" * 60)
-
 
 # ==================== EJEMPLO DE USO ====================
 

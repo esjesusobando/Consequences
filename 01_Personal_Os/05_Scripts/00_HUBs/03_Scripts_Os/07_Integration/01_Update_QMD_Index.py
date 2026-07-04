@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -33,7 +33,6 @@ QMD_BIN = Path(
 )
 BUN_BIN = "bun"
 
-
 def run_cmd(cmd: list[str]) -> tuple[int, str, str]:
     """Run QMD command via bun."""
     try:
@@ -47,7 +46,6 @@ def run_cmd(cmd: list[str]) -> tuple[int, str, str]:
         return result.returncode, result.stdout, result.stderr
     except Exception as e:
         return 1, "", str(e)
-
 
 def main():
     print("=" * 50)
@@ -91,7 +89,6 @@ def main():
     print("  Status:      bun qmd.js status")
     print("  Collections: bun qmd.js collection list")
     print(f"\nQMD binary: {QMD_BIN}")
-
 
 if __name__ == "__main__":
     main()

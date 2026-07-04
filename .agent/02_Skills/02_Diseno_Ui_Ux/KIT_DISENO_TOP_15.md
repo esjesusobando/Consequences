@@ -3,7 +3,7 @@
 > **Proyecto:** PersonalOS v4.9 Consequences
 > **Fecha:** 2026-05-14
 > **Criterio:** Valor práctico × Estado del arte × Calidad de diseño
-> **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
+> **Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
 
 ---
 

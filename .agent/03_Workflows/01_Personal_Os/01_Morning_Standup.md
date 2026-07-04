@@ -10,7 +10,7 @@ A quick 2-minute check-in to set your focus for the day.
 
 ## Auto-check: Hillary Inbox (siempre)
 Antes de presentar el standup, SIEMPRE verificar:
-1. ¿Hay archivos en `01_Personal_Os/03_Task/02_Hillary_Inbox/` (sin contar README)?
+1. ¿Hay archivos en `01_Personal_Os/04_Tasks/02_Hillary_Inbox/` (sin contar README)?
 2. SI SÍ → triagearlos primero: categorizar por tag, mover a BACKLOG.md según prioridad
 3. ¿Existe `Daily_Report.md` para hoy?
 4. SI NO → preguntar si quiere generar uno

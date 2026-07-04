@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -29,7 +29,6 @@ if sys.stdout.encoding != "utf-8":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 # HOOKS_DIR ya viene de config_paths
-
 
 def play_completion_sound():
     """
@@ -52,7 +51,6 @@ def play_completion_sound():
         # Silencioso si falla
         pass
 
-
 def notify_voz(mensaje):
     """
     Notifica por voz usando el hook de común.
@@ -69,7 +67,6 @@ def notify_voz(mensaje):
                 module.speak(mensaje)
     except Exception:
         print(f"[VOZ] {mensaje}")
-
 
 if __name__ == "__main__":
     print("🔔 Probando campanilla...")

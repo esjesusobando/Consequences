@@ -15,12 +15,11 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -40,7 +39,6 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
-
 def print_banner():
     banner = rf"""
 {Fore.GREEN}    ###########################################################################
@@ -57,7 +55,6 @@ def print_banner():
 """
     print(banner)
 
-
 def dynamic_speak(text):
     """Interfaz de Voz SOTA v2.2"""
     print(f"{Fore.MAGENTA}🔊 [VOICE]: {text}{Style.RESET_ALL}")
@@ -69,7 +66,6 @@ def dynamic_speak(text):
             )
         except:
             pass
-
 
 def run_script(script_name, args=None):
     # Los scripts de AIPM ahora están en 03_AIPM
@@ -84,7 +80,6 @@ def run_script(script_name, args=None):
 
     print(f"{Fore.YELLOW}[RUNNING] Ejecutando: {script_name} {' '.join(args) if args else ''}...{Style.RESET_ALL}")
     subprocess.run(cmd)
-
 
 def main():
     print_banner()
@@ -124,7 +119,6 @@ def main():
         run_script(cmd_map[args.command])
     else:
         parser.print_help()
-
 
 if __name__ == "__main__":
     main()

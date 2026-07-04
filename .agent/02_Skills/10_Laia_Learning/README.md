@@ -1,6 +1,6 @@
 # LAIA LEARNING — Area Funcional 11
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Laia_Learning/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/11_Laia_Learning/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 1
 

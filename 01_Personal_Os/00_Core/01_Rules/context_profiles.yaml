@@ -88,7 +88,7 @@ task_types:
 
   analysis:
     boost:
-      - "01_Personal_Os/04_Operations/01_Auto_Improvement/03_Metrics/"
+      - "01_Personal_Os/03_Learning/01_Auto_Improvement/03_Metrics/"
 
   coordination:
     boost:

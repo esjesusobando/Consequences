@@ -274,7 +274,7 @@ Si una skill ya tiene workflow, se COMPLEMENTA con Gotchas — no se reemplaza e
 ## 🔗 Referencias
 
 - **Auditor SOTA v5.1:** `10_Skill_Auditor/SKILL.md`
-- **Estandar completo:** `04_Operations/00_Context_LLM/02_Knowledge_Brain/08_Skill_Creation_SOTA.md`
+- **Estandar completo:** `01_Memory/00_Context_LLM/02_Knowledge_Brain/08_Skill_Creation_SOTA.md`
 - **Blueprint (modelo):** `00_OS_Conductor/SKILL.md` (100% SOTA)
 - **Conductor evals:** `00_OS_Conductor/evals.json`
 

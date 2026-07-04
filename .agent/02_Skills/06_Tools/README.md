@@ -1,6 +1,6 @@
 # TOOLS — Area Funcional 06
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 15
 

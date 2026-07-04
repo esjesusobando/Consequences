@@ -32,10 +32,10 @@ Se encontraron estos archivos con contenido relevante para API keys:
 
 ```
 01_Personal_Os/00_Core/02_Tools/02_Skills/09_Claude_Ads/07_Scripts/generate_image.py
-01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
-01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
-01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/skill_security_scan.py
-01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/29_Guardrails_Service.py
+01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
+01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/33_Parallel_Audit_Pro.py
+01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/skill_security_scan.py
+01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_AIPM/29_Guardrails_Service.py
 ```
 
 ### Concepto: Staged API Keys Scanner
@@ -69,7 +69,7 @@ ls .agent/05_GGA/hooks/ 2>/dev/null || echo "No hooks dir"
 git config --get core.hooksPath
 
 # Revisar scripts de security scan existentes
-cat 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/skill_security_scan.py
+cat 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/skill_security_scan.py
 ```
 
 **Si no existe:** Crear como parte del GGA o como hook standalone.

@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 Progress File Template Generator
@@ -28,7 +27,6 @@ import json
 from datetime import datetime
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, field
-
 
 @dataclass
 class SessionProgress:
@@ -60,7 +58,6 @@ class SessionProgress:
 
     # Notas de sesión
     session_notes: List[str] = field(default_factory=list)
-
 
 class ProgressFileGenerator:
     """Genera archivos de progreso en formato Markdown."""
@@ -201,9 +198,7 @@ class ProgressFileGenerator:
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
 
-
 # ==================== EXAMPLE ====================
-
 
 def example_usage():
     """Ejemplo de uso del generador."""
@@ -242,9 +237,7 @@ def example_usage():
     print("--- JSON ---")
     print(gen.to_json())
 
-
 # ==================== TESTS ====================
-
 
 def test_basic_generation():
     """Test generación básica."""
@@ -268,7 +261,6 @@ def test_basic_generation():
     assert "Do something" in md
     assert "BUG-001" in md
 
-
 def test_json_output():
     """Test salida JSON."""
     gen = ProgressFileGenerator("Test")
@@ -280,7 +272,6 @@ def test_json_output():
     assert data["project_name"] == "Test"
     assert "Done" in data["completed_items"]
 
-
 def test_empty_state():
     """Test con estado vacío."""
     gen = ProgressFileGenerator("Empty")
@@ -289,7 +280,6 @@ def test_empty_state():
 
     assert "Empty" in md
     assert "(Nada completado aún)" in md
-
 
 if __name__ == "__main__":
     print("=" * 60)

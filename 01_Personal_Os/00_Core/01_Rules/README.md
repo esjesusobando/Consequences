@@ -11,7 +11,7 @@
 ## 🏛️ Sistema Dual de Reglas
 
 | Sistema                        | Ubicación                          | Qty                                | Estado     |
-| ------------------------------ | ---------------------------------- | ---------------------------------- | ---------- |
+|--------------------------------|------------------------------------|------------------------------------|------------|
 | **Triada AI-Prime (Legacy)**   | `.claude/02_Rules/`                | 25 rules (01-35, algunos saltados) | Convive    |
 | **Consequences v4.9 (Active)** | `01_Personal_Os/00_Core/01_Rules/` | 13 rules (00-12)                   | **ACTIVO** |
 
@@ -22,7 +22,7 @@
 ## 📋 Índice de Reglas (Legacy — 25 archivos)
 
 | #   | Regla                                | Propósito                                   |
-| --- | ------------------------------------ | ------------------------------------------- |
+|-----|--------------------------------------|---------------------------------------------|
 | 01  | `01_Context_Protocol.mdc`            | Protocolo de contexto obligatorio (Génesis) |
 | 02  | `02_Pilar_Base.mdc`                  | Pilares fundamentales del sistema           |
 | 03  | `03_Pilar_Motor.mdc`                 | Motor y stack técnico                       |

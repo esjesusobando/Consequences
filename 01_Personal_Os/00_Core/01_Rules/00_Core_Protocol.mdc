@@ -14,20 +14,24 @@ alwaysApply: true
 
 ---
 
-## 📂 Workspace Structure (v4.9 Consequences)
+## 📂 Workspace Structure (v5.0)
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATEGICO)
 ├── 01_Personal_Os/      # El Sistema Operativo
-│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 14 reglas .mdc
-│   ├── 01_Core/02_Tools/ # Skills, Agents, MCPs, Hooks
+│   ├── 00_Core/          # Motor del OS — Rules, Tools, Agents, Skills
+│   ├── 01_Memory/        # Context_LLM, Context_Memory, Process_Notes
 │   ├── 02_Knowledge/    # Base de conocimiento
-│   ├── 03_Task/         # Tareas activas
-│   ├── 04_Operations/   # Scripts HUBs, Auto-Improvement
-│   └── 05_Archive/      # Legados
-├── 02_Playground/       # Zona de pruebas
-└── 03_Resultado/       # Outputs, Planes, Reportes
+│   ├── 03_Learning/     # Auto-Improvement, Shared_Org, Telemetry
+│   ├── 04_Tasks/        # Tareas activas
+│   ├── 05_Scripts/      # HUBs, Installer
+│   ├── 06_Projects/     # Proyectos activos
+│   └── 07_Archive/      # Backups, históricos, repos de referencia
+├── 02_Playground/       # Zona de pruebas, Graphify
+├── 03_Resultado/       # Outputs, Planes, Reportes
+├── .agent/             # Backup estratégico de 00_Core/
+└── .atl/               # SDD Registry + openspec
 ```
 
 ---
@@ -45,8 +49,8 @@ Think_Different/
 
 ### FASE 2: Memoria AI (Contexto Inter-sesiones)
 
-6.  **CTX más reciente**: `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/CTX_*.md`
-7.  **Session Summary**: `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/SUMMARY*.md`
+6.  **CTX más reciente**: `01_Personal_Os/01_Memory/00_Context_LLM/00_Context_Memory/CTX_*.md`
+7.  **Process Note más reciente**: `01_Personal_Os/01_Memory/00_Context_LLM/01_Process_Notes/XX_NP_*.md`
 
 ---
 
@@ -70,12 +74,21 @@ Think_Different/
   - Bug fix completado (include root cause)
   - Feature implementada con approach no-obvio
 
-### Documentación Local (Obligatorio cuando el usuario diga "documenta")
+### Documentación Local — REGLA DE LOS 3 SITIOS (Obligatorio)
 
-Cuando el usuario solicite documentar, crear en **TRES** ubicaciones:
-1. `00_Context_LLM/00_Context_Memory/CTX_YYYY_MM_DD_Session.md` — resumen de contexto
-2. `00_Context_LLM/01_Process_Notes/XX_NP_Title_YYYY_MM_DD.md` — proceso detallado (numeración secuencial)
-3. Engram — `mem_save` + `mem_session_summary`
+> ⚠️ **Cuando el usuario diga "documenta", "guarda esto", "registra" o cualquier variante — SIEMPRE en estos 3 sitios, SIN EXCEPCIÓN.**
+
+Los **3 sitios obligatorios** para documentar:
+
+| # | Sitio | Formato |
+|---|-------|---------|
+| 1 | **Engram** | `mem_save(title, type, content)` + opcional `mem_session_summary()` |
+| 2 | **`00_Context_LLM/00_Context_Memory/`** | `CTX_YYYY_MM_DD_Descripcion.md` — resumen de contexto |
+| 3 | **`00_Context_LLM/01_Process_Notes/`** | `XX_NP_Descripcion_YYYY_MM_DD.md` — proceso detallado (numeración secuencial, ej: `46_NP_Paths_Compactacion_v5_2026-07-03.md`) |
+
+**Paths completos:**
+- Context Memory: `01_Personal_Os/01_Memory/00_Context_LLM/00_Context_Memory/`
+- Process Notes: `01_Personal_Os/01_Memory/00_Context_LLM/01_Process_Notes/`
 
 NUNCA escribir en los archivos sueltos `Context_Memory.md` o `Notas_de_Proceso.md` de la raíz de `00_Context_LLM/`.
 
@@ -125,24 +138,25 @@ Antes de terminar sesión, DEBE llamar `mem_session_summary`:
 
 ---
 
-## 📋 SECCIÓN 05: Aliases de Rutas (v4.9 Consequences)
+## 📋 SECCIÓN 05: Aliases de Rutas (v5.0)
 
 ```
-ROOT_DIR              → Think_Different/ (raíz)
-PERSONAL_OS_DIR      → 01_Personal_Os/
-CORE_DIR             → 01_Personal_Os/01_Core/
-RULES_DIR           → 01_Personal_Os/01_Core/01_Rules/
-SKILLS_DIR          → 01_Personal_Os/01_Core/02_Tools/02_Skills/
-AGENTS_DIR          → 01_Personal_Os/01_Core/02_Tools/01_Agents/
-MCP_DIR             → 01_Personal_Os/01_Core/02_Tools/03_Mcp/
-HOOKS_DIR           → 01_Personal_Os/01_Core/02_Tools/05_Hooks/
-ENGINE_DIR          → 01_Personal_Os/04_Operations/03_Scripts_Os/
-OPERATIONS_DIR     → 01_Personal_Os/04_Operations/
-KNOWLEDGE_DIR       → 01_Personal_Os/02_Knowledge/
-TASKS_DIR           → 01_Personal_Os/03_Task/
-MEMORY_DIR         → 01_Personal_Os/04_Operations/00_Context_LLM/
-BRAIN_DIR          → 01_Personal_Os/04_Operations/00_Context_LLM/
-BACKUP_DIR         → .agent/ (Agent Teams mirror)
+ROOT_DIR                 → Think_Different/ (raíz)
+PERSONAL_OS_DIR         → 01_Personal_Os/
+CORE_DIR                → 01_Personal_Os/00_Core/
+RULES_DIR              → 01_Personal_Os/00_Core/01_Rules/
+SKILLS_DIR             → 01_Personal_Os/00_Core/02_Tools/02_Skills/
+AGENTS_DIR             → 01_Personal_Os/00_Core/02_Tools/01_Agents/
+MCP_DIR                → 01_Personal_Os/00_Core/02_Tools/03_Mcp/
+HOOKS_DIR              → 01_Personal_Os/00_Core/02_Tools/05_Hooks/
+HUB_DIR                → 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/
+KNOWLEDGE_DIR          → 01_Personal_Os/02_Knowledge/
+TASKS_DIR              → 01_Personal_Os/04_Tasks/
+MEMORY_DIR             → 01_Personal_Os/01_Memory/
+CONTEXT_LLM_DIR       → 01_Personal_Os/01_Memory/00_Context_LLM/
+CONTEXT_MEMORY_DIR    → 01_Personal_Os/01_Memory/00_Context_LLM/00_Context_Memory/
+PROCESS_NOTES_DIR     → 01_Personal_Os/01_Memory/00_Context_LLM/01_Process_Notes/
+BACKUP_DIR            → .agent/ (Agents mirror de 00_Core/)
 ```
 
 ---

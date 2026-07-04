@@ -11,8 +11,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -34,7 +34,6 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
-
 def dynamic_speak(text):
     """Interfaz de Voz SOTA v2.2"""
     print(f"{Fore.MAGENTA}🔊 [VOICE]: {text}{Style.RESET_ALL}")
@@ -46,7 +45,6 @@ def dynamic_speak(text):
             )
         except:
             pass
-
 
 def print_banner():
     banner = rf"""
@@ -65,7 +63,6 @@ def print_banner():
 """
     print(banner)
 
-
 if os.path.exists(AIPM_CORE) and AIPM_CORE not in sys.path:
     sys.path.append(str(AIPM_CORE))
 
@@ -81,7 +78,6 @@ except ImportError:
             print(
                 f"{Fore.GREEN}✅ Evaluación completada: 100% Tools operacionales.{Style.RESET_ALL}"
             )
-
 
 if __name__ == "__main__":
     print_banner()

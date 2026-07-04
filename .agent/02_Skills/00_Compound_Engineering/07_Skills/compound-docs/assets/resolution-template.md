@@ -85,7 +85,7 @@ tags: [keyword1, keyword2, keyword3]
 
 ## Related Issues
 
-[If any similar problems exist in 04_Operations/06_Solutions/, link to them:]
+[If any similar problems exist in 01_Memory/00_Context_LLM/06_Solutions/, link to them:]
 - See also: [another-related-issue.md](../category/another-related-issue.md)
 - Similar to: [related-problem.md](../category/related-problem.md)
 

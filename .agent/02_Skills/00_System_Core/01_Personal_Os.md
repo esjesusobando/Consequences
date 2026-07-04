@@ -13,13 +13,13 @@ El PersonalOS tiene la siguiente estructura:
 
 ```
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Agentes
-├── 01_Core/               # Skills, Agents, Evals, MCP, Server
+├── 00_Core/               # Skills, Agents, Evals, MCP, Server
 ├── 02_Knowledge/          # Base de conocimiento
 ├── 03_Tasks/              # Tareas activas (YAML frontmatter)
-├── 04_Operations/         # Memoria, Brain, Notas
+├── 05_Scripts/         # Memoria, Brain, Notas
 ├── 05_Archive/           # Archive: Repos, legacy
 ├── 03_Resultado/          # Outputs: Learning Always, OIM, Projects
-└── 01_Personal_Os/04_Operations/03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
+└── 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
 ```
 
 ## Comandos Principales

@@ -2,7 +2,7 @@
 
 ## Source of Truth
 The canonical version of these hooks lives at:
-`01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/`
+`01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/`
 
 `.agent/04_Extensions/` is the **strategic backup**. This copy is synced from the source of truth.
 

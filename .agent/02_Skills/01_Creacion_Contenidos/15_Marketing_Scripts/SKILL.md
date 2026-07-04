@@ -48,7 +48,7 @@ Scripts ejecutables que automatizan tareas repetitivas de marketing. Se integran
 ## 💾 State Persistence
 
 > **Qué persists**: Scripts ejecutables, configuraciones por plataforma, logs de ejecución, outputs generados.
-> **Dónde**: `01_Personal_Os/04_Operations/03_Scripts_Os/`, `assets/`, `output/`.
+> **Dónde**: `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`, `assets/`, `output/`.
 > **Cuándo restore**: Al retomar una tarea de automatización, restaurar la configuración del script y verificar outputs previos.
 > **Formato**: Archivos Python/shell + config YAML + logs estructurados.
 

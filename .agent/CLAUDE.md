@@ -114,11 +114,9 @@ C:\Users\sebas\                    # Project Root (LIVE OS)
 |    |--- nodes_modules/           # MCP tooling
 |
 |--- 01_Personal_Os/               # Organizador principal del OS
-|    |--- 04_Operations/           # Operaciones activas
-|         |--- 02_Agent_Teams_Lite/ # SDD Workflows (legacy)
-|         |    +--- ...           
-|         |--- 00_Core/02_Tools/00_SDD/00_Manifest/   # FUENTE DE VERDAD del sistema
-|         |--- 03_Scripts_Os/      # Scripts operativos HUB
+|    |--- 04_Tasks/               # Tareas activas (migrado de 04_Tasks)
+|    |--- 05_Scripts/             # Scripts operativos + HUBs (migrado de 05_Scripts/)
+|    |    |--- 00_HUBs/03_Scripts_Os/  # HUB de scripts central
 |
 |--- Downloads/01 Revisar/         # Context Bunker y backups
 |    |--- 09 Versiones/            # Respaldos del sistema
@@ -174,13 +172,13 @@ El manifest es la **FUENTE DE VERDAD** del estado del OS.
 | `INTEGRATIONS.md` | Listado completo de integraciones |
 | `DASHBOARD.md` | Vista consolidada del sistema |
 
-**Comando de validacion:** `python 03_Scripts_Os/20_System_Mapper_Hub.py --validate`
+**Comando de validacion:** `python 05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --validate`
 
 ---
 
 # HUB Scripts
 
-Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/` — **27 scripts activos**.
+Centralizados en `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` — **27 scripts activos**.
 
 | Script | Proposito |
 |--------|-----------|
@@ -193,7 +191,7 @@ Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/` — **27 scripts 
 | `20_System_Mapper_Hub.py` | System validation + manifest generation |
 | ... y 20 mas | Varios (monitoreo, cleanup, scripts tooling) |
 
-Listado completo: `01_Personal_Os/04_Operations/03_Scripts_Os/`
+Listado completo: `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`
 
 > **Nota:** El manifest real en disco es `README.md` (no `MANIFEST.md`). config_paths.BACKLOG_FILE auto-detecta cuál leer.
 
@@ -255,7 +253,7 @@ Usa los comandos CE: `/ce:ideate`, `/ce:brainstorm`, `/ce:plan`, `/ce:work`, `/c
 
 ---
 
-> **Nota:** Este sistema ya NO usa la estructura `Think_Different/` ni `01_Core/` como fuente de verdad.
+> **Nota:** Este sistema ya NO usa la estructura `Think_Different/` ni `00_Core/` como fuente de verdad.
 > La fuente de verdad es el **Manifest** en `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/`.
 > La estructura `.agent/` es el directorio operativo vivo, no un backup.
 

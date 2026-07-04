@@ -37,4 +37,4 @@ Plantillas para:
 ---
 
 *Parte del sistema Marketing Agents v1.0*
-*Homologado a Core: 01_Core/04_Agents/*
+*Homologado a Core: 00_Core/04_Agents/*

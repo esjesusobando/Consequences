@@ -22,8 +22,8 @@ from pathlib import Path
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -39,14 +39,12 @@ except ImportError:
     print("Asegurate de que existe: 03_Learning/01_Auto_Improvement/01_Engine/")
     sys.exit(1)
 
-
 BANNER = """
 ╔══════════════════════════════════════════════════════════════════════╗
 ║           🔄 AUTO LEARN HUB - PersonalOS v6.1                      ║
 ║              Motor de Automejora Recursiva                          ║
 ╠══════════════════════════════════════════════════════════════════════╣
 """
-
 
 def run_scan(dry_run=True):
     """Ejecutar scan rápido (daily)"""
@@ -60,7 +58,6 @@ def run_scan(dry_run=True):
     print_report(report)
     return report
 
-
 def run_weekly(dry_run=True):
     """Ejecutar scan profundo (weekly)"""
     print(f"{BANNER}")
@@ -73,7 +70,6 @@ def run_weekly(dry_run=True):
     print_report(report)
     return report
 
-
 def run_monthly():
     """Ejecutar auto-evolución (monthly)"""
     print(f"{BANNER}")
@@ -85,7 +81,6 @@ def run_monthly():
 
     print_report(report)
     return report
-
 
 def run_learn_only():
     """Solo aprender del historial"""
@@ -101,7 +96,6 @@ def run_learn_only():
 
     return result
 
-
 def print_report(report):
     """Imprimir reporte formateado"""
     print("\n" + "=" * 60)
@@ -114,7 +108,6 @@ def print_report(report):
     print(f"Fixes aplicados: {report.get('fixes_applied', 0)}")
     print(f"Aprendizajes: {report.get('learnings', 0)}")
     print("=" * 60)
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -166,7 +159,6 @@ Ejemplos:
 
         traceback.print_exc()
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()

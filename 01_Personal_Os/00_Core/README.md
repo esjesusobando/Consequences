@@ -1,93 +1,85 @@
-# 01_Core — Think Different PersonalOS v4.9
+# 00_Core — Personal OS v5.0 Engine
 
-> **Versión:** v4.9 Consequences — Audit v3 synced
-> **Última actualización:** 2026-05-31
-> **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
+> **Version:** v5.0 SOTA
+> **Last updated:** 2026-07-03 — Full path audit, dual-copy architecture documented
+> **Status:** ACTIVE | SOURCE OF TRUTH
 
 ---
 
-## 📂 Estructura Principal v4.9
+## Directory Structure (v5.0)
 
 ```
 Think_Different/
-├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
+├── 00_Winter_is_Coming/       # Strategy, backlog, DNA
 ├── 01_Personal_Os/
-│   ├── 00_Core/          # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
-│   ├── 02_Knowledge/     # Base de Conocimiento, Research y Documentación
-│   ├── 03_Task/          # Gestión de Tareas Activas (Hillary)
-│   ├── 05_Archive/       # Backups, snapshots, históricos
-│   └── 04_Operations/   # Cerebro Operativo y Automatización
-├── 02_Playground/       # Laboratorio de Pruebas y Experimentos
-└── 03_Resultado/       # Resultados de trabajo
+│   ├── 00_Core/               # OS Engine: Workflows, Rules, Tools (SOURCE OF TRUTH)
+│   │   ├── 00_Workflows/      # 29 workflows (7 categories)
+│   │   ├── 01_Rules/          # 14 rules (.mdc)
+│   │   ├── 02_Tools/          # Agents, Skills, MCPs, Hooks, Plugins, Evals
+│   │   ├── 03_Content/        # Content templates and assets
+│   │   └── 04_Telemetry/      # Telemetry configuration
+│   ├── 01_Memory/             # LLM memory, process notes, context LLM
+│   ├── 02_Knowledge/          # Knowledge base, research, docs
+│   ├── 03_Learning/           # Active knowledge, auto-improvement
+│   ├── 04_Tasks/              # Active task management
+│   ├── 05_Scripts/            # Operations: 42 HUBs, 166+ scripts
+│   ├── 06_Projects/           # Active projects
+│   └── 07_Archive/            # Backups, snapshots, history
+├── 02_Playground/             # Testing and experiments
+└── 03_Resultado/              # Work outputs
 ```
 
 ---
 
-## 📂 Estructura 01_Core
+## 00_Core Structure
 
-| #   | Carpeta            | Contenido                                   | Estado |
-| --- | ------------------ | ------------------------------------------- | ------ |
-| 01  | `00_Workflows/` | 28 workflows (7 categorías)                 | ✅      |
-| 02  | `01_Rules/`        | 14 reglas .mdc (00-13)                      | ✅      |
-| 03  | `02_Tools/`        | Agents, Skills, MCPs, Hooks, Plugins, Evals | ✅      |
-
----
-
-## 📂 Estructura 02_Tools
-
-| #   | Carpeta            | Contenido                                                    | Estado |
-| --- | ------------------ | ------------------------------------------------------------ | ------ |
-| 01  | `01_Agents/`       | 61 agents (25 Root + 5 Dream + 23 Spec + 5 Growth + 3 other) | ✅      |
-| 02  | `02_Skills/`       | 392 skills (15 áreas)                                        | ✅      |
-| 03  | `03_Mcp/`          | MCP servers (backup config)                                  | ✅      |
-| 04  | `04_Integrations/` | Fireflies, Granola                                           | ✅      |
-| 05  | `05_Hooks/`        | 10 hooks (6 fases)                                           | ✅      |
-| 06  | `06_Plugins/`      | Plugins OS                                                   | ✅      |
-| 07  | `07_Server/`       | Engram server                                                | ✅      |
-| 08  | `08_Evals/`        | Evaluaciones                                                 | ✅      |
-| 09  | `09_Templates/`    | Plantillas                                                   | ✅      |
+| #     | Directory          | Content                                                                               | Status   |
+|-------|--------------------|---------------------------------------------------------------------------------------|----------|
+| 01    | `00_Workflows/`    | 29 workflows (7 categories: MKT, Personal, Marvel, Gentleman, Hillary, CE, YouTube)   | ACTIVE   |
+| 02    | `01_Rules/`        | 14 rules .mdc (00-13)                                                                 | ACTIVE   |
+| 03    | `02_Tools/`        | Agents, Skills, MCPs, Hooks, Plugins, Server, Evals                                   | ACTIVE   |
+| 04    | `03_Content/`      | Content templates and marketing assets                                                | ACTIVE   |
+| 05    | `04_Telemetry/`    | Telemetry and monitoring configuration                                                | ACTIVE   |
 
 ---
 
-## 📊 Resumen de Inventario
+## 02_Tools Structure
 
-| Componente       | Cantidad | Estado                 |
-| ---------------- | -------- | ---------------------- |
-| Workflows        | 28       | ✅ Activo               |
-| Rules (.mdc)     | 14       | ✅ Definido             |
-| Agents           | 62       | ✅ Sync (ver manifest)  |
-| Skills           | 392      | ✅ 15 áreas funcionales |
-| MCPs             | 36       | ✅ Activo               |
-| HUBs             | 30       | ✅ Activo               |
-| Scripts totales  | 163      | ✅ 30 root + 133 subdir |
-| JARVIS Manifests | 7        | ✅ Validado             |
-| Hooks            | 10       | ✅ 6 fases              |
-
----
-
-## 📋 Documentos Clave
-
-| Documento        | Ubicación                   |
-| ---------------- | --------------------------- |
-| Dream Team       | `02_Dream_Team.md`          |
-| Inventario Total | `01_Inventario_Total.md`    |
-| Inventario Core  | `03_Inventario_Core.md`     |
-| Workflows        | `00_Workflows/README.md` |
-| Comandos         | `00_Comandos_Workflows.md`  |
+| #     | Directory               | Content                                                         | Status   |
+|-------|-------------------------|-----------------------------------------------------------------|----------|
+| 00    | `00_SDD/`               | SDD Registry + JARVIS manifests (7 manifests)                   | ACTIVE   |
+| 01    | `01_Agents/`            | 63 agents (9 categories: Root, Dream Team, Specialists, etc.)   | ACTIVE   |
+| 02    | `02_Skills/`            | 35+ skill areas (~3600+ files)                                  | ACTIVE   |
+| 03    | `03_Mcp/`               | MCP server backup configs                                       | ACTIVE   |
+| 04    | `04_Integrations/`      | Fireflies, Granola integrations                                 | ACTIVE   |
+| 05    | `05_Hooks/`             | 10 hooks (6 phases)                                             | ACTIVE   |
+| 06    | `06_Plugins/`           | OS plugins                                                      | ACTIVE   |
+| 07    | `07_Server/`            | Engram MCP server                                               | ACTIVE   |
+| 08    | `08_Evals/`             | Evaluators and metrics                                          | ACTIVE   |
+| 09    | `09_Templates/`         | Templates                                                       | ACTIVE   |
 
 ---
 
-## ⚡ JARVIS 4.5 — Manifest System
+## Key Documents
 
-7 manifests en `04_Operations/02_Agent_Teams_Lite/00_Manifest/`:
-- 01_OS_Inventory.json
-- 02_MCP_Registry.yaml
-- 03_Agent_Catalog.yaml
-- 04_Skill_Index.json
-- 05_HUB_Catalog.yaml
-- 06_Workflow_Graph.yaml
-- 07_Hook_Registry.yaml
+| Document                 | Location                                         |
+|--------------------------|--------------------------------------------------|
+| Comandos Workflows       | `00_Comandos_Workflows.md`                       |
+| Workflows README         | `00_Workflows/README.md`                         |
+| Rules README             | `01_Rules/README.md`                             |
+| Agents Catalog           | `02_Tools/01_Agents/README.md`                   |
+| Skills Index             | `02_Tools/02_Skills/README.md`                   |
+| MCP Registry             | `02_Tools/03_Mcp/README.md`                      |
+| JARVIS Manifests         | `05_Scripts/02_Agent_Teams_Lite/00_Manifest/`    |
 
 ---
 
-**PersonalOS v4.9 Consequences — Audit v2 synced — 2026-05-26**
+## Dual-Copy Architecture
+
+See `01_Personal_Os/README.md` for details on the dual-copy structure:
+- **Copy A** (`C:\Users\sebas\01_Personal_Os\`) — Flat scripts, quick access
+- **Copy B** (`Desktop\Think_Different\01_Personal_Os\`) — Canonical v5, structured, rich content
+
+---
+
+**Personal OS v5.0 SOTA — Path audit 2026-07-03 — 84/84 paths OK**

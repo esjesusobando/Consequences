@@ -1,77 +1,53 @@
-# 00_Context_LLM — Memoria LLM y Contexto Persistente v4.9
+# 00_Context_LLM — LLM Memory & Persistent Context v5.0
 
-> **Versión:** v4.9 Consequences
-> **Última actualización:** 2026-05-21
-
----
-
-## 🎯 DESCRIPCIÓN
-
-Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de proceso, knowledge brain y mapeo de memoria.
+> **Version:** v5.0 SOTA
+> **Last updated:** 2026-07-03 — Directory sync, path audit
 
 ---
 
-## 📁 ESTRUCTURA
+## Description
+
+Memory and context system for LLMs. Stores system state, process notes, knowledge brain, memory mapping, model evals, and telemetry.
+
+---
+
+## Directory Structure
 
 ```
 00_Context_LLM/
-├── 00_Context_Memory/       # Memoria de contexto del sistema
-├── 01_Process_Notes/        # Notas de proceso (sesiones)
-├── 02_Knowledge_Brain/      # Knowledge brain del sistema
-├── 03_Memory_Brain/         # Brain de memoria persistente
-├── 04_Docs/                 # Documentación del sistema
-├── 05_Plans/                # Planes activos y archivados
-├── 06_Solutions/            # Soluciones documentadas
-├── 07_Auditorias/           # Reportes de auditoría
-├── 11_Reports/              # Reportes generados
-├── 13_Telemetry/            # Telemetría del sistema
-├── 14_Scripts/              # Scripts auxiliares
-├── 15_Resources/            # Recursos adicionales
-├── Context_Memory.md         # Archivo de contexto plano (registro de sesiones)
-├── Notas_de_Proceso.md      # Notas de proceso plano
-└── README.md                # Este archivo
-```
+├── 00_Context_Memory/       # System context memory files
+├── 01_Process_Notes/        # Session process notes (NP_*.md)
+├── 02_Knowledge_Brain/      # Knowledge brain (inventory, docs)
+├── 03_Memory_Brain/         # Persistent memory brain
+├── 04_Docs/                 # System documentation
+├── 05_Plans/                # Active and archived plans
+├── 06_Solutions/            # Documented solutions (compound)
+├── 07_Auditorias/           # Audit reports
+├── 08_Model_Evals/          # Model evaluations, routing, SOTA
+├── 09_Reports/              # Generated reports
+├── 10_Telemetry/            # System telemetry
+├── 11_Scripts/              # Auxiliary scripts
+└── 12_Resources/            # Additional resources
+---
 
-> **Nota:** La numeración tiene saltos (08-10, 12 son espacios no utilizados/heredados que se preservaron tal cual).
+## Memory Process
+
+| Step   | Action                     | Tool                             |
+|--------|----------------------------|----------------------------------|
+| 1      | Load context on start      | `engram_mem_context()`           |
+| 2      | Save key decisions         | `mem_save()`                     |
+| 3      | Save session on close      | `engram_mem_session_summary()`   |
+| 4      | Keep notes updated         | `01_Process_Notes/`              |
 
 ---
 
-## 📋 PROCESO DE MEMORIA
+## Related
 
-| Paso | Acción                      | Tool                           |
-| ---- | --------------------------- | ------------------------------ |
-| 1    | Cargar contexto al iniciar  | `engram_mem_context()`         |
-| 2    | Guardar decisiones clave    | `mem_save()`                   |
-| 3    | Guardar sesión al cerrar    | `engram_mem_session_summary()` |
-| 4    | Mantener notes actualizadas | `01_Process_Notes/`            |
+- **Engram MCP:** Persistent memory system
+- **Process Notes:** Saved sessions in `01_Process_Notes/`
+- **Model Evals:** Evaluation data in `08_Model_Evals/`
+- **Telemetry:** System metrics in `10_Telemetry/`
 
 ---
 
-## 📊 ESTADO
-
-| Recurso         | Total | Estado      |
-| --------------- | ----- | ----------- |
-| Process Notes   | 16+   | ✅ ACTIVE    |
-| Memory records  | ?     | ⏳ Verificar |
-| Knowledge Brain | ?     | ⏳ Verificar |
-
----
-
-## 🔗 RELACIONES
-
-- **Engram MCP:** Para memoria persistente
-- **Process Notes:** Sesiones guardadas en `01_Process_Notes/`
-- **Agents:**记忆 de agentes en Engram
-
----
-
-## 📋 NOTAS DE SESIÓN RECIENTES
-
-| Fecha      | Nota                                |
-| ---------- | ----------------------------------- |
-| 2026-05-19 | Session 15                          |
-| 2026-05-31 | **Auditoría Integral** — Session 16 |
-
----
-
-*Think Different PersonalOS v4.9 Consequences*
+*Personal OS v5.0 SOTA — Path audit 2026-07-03 — 84/84 paths OK*

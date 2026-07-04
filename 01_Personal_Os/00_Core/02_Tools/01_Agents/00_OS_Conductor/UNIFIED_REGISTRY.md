@@ -177,8 +177,8 @@
 | #  | Script           | Ruta                                | Propósito       |
 |---|-----------------|------------------------------------|----------------|
 | 1  | `aliases.sh`     | `03_Mcp/00_Config_Aliases/`         | Shell aliases   |
-| 2  | `run.bat`        | `04_Operations/01_Auto_Improvement/`| Auto-improvement|
-| 3  | `tarea_lista.bat`| `04_Operations/03_Scripts_Os/`      | Task list runner|
+| 2  | `run.bat`        | `03_Learning/01_Auto_Improvement/`| Auto-improvement|
+| 3  | `tarea_lista.bat`| `05_Scripts/00_HUBs/03_Scripts_Os/`      | Task list runner|
 
 ### 3-C Command References (en skills)
 

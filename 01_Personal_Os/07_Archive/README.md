@@ -48,12 +48,12 @@ Repos clonados de upstream para referencia y consulta.
 
 ### Principales Repos Referenciados
 
-| Repo           | Stars   | Propósito            |
-| -------------- | ------- | -------------------- |
-| engram         | 2.7k    | Memoria persistente  |
-| gentle-ai      | 2.2k    | AI Gentle Stack      |
-| taste-skill    | 3.9k    | Diseño premium UI/UX |
-| Gentleman.Dots | 1.7k    | LazyVim config       |
+| Repo               | Stars       | Propósito                |
+|--------------------|-------------|--------------------------|
+| engram             | 2.7k        | Memoria persistente      |
+| gentle-ai          | 2.2k        | AI Gentle Stack          |
+| taste-skill        | 3.9k        | Diseño premium UI/UX     |
+| Gentleman.Dots     | 1.7k        | LazyVim config           |
 
 ---
 
@@ -129,10 +129,10 @@ Backups, snapshots y reportes de auditoría del sistema.
 
 ## 🔄 Historial
 
-| Fecha      | Cambio                                                                                       |
-| ---------- | -------------------------------------------------------------------------------------------- |
-| 2026-06-01 | **v4.9** — README actualizado con estructura real (9 directorios, 00_Skills_Legacy/ añadido) |
-| 2026-05-31 | **v4.5** — Reorganizado de 15 carpetas a 4 + subcarpetas enumeradas 01-07                    |
+| Fecha          | Cambio                                                                                           |
+|----------------|--------------------------------------------------------------------------------------------------|
+| 2026-06-01     | **v4.9** — README actualizado con estructura real (9 directorios, 00_Skills_Legacy/ añadido)     |
+| 2026-05-31     | **v4.5** — Reorganizado de 15 carpetas a 4 + subcarpetas enumeradas 01-07                        |
 
 ---
 

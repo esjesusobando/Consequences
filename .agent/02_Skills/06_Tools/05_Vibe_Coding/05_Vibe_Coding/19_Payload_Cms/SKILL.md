@@ -194,4 +194,4 @@ payload, cms, admin, collections, mongodb, headless, payload-config
 
 Guardar en:
 - `03_Knowledge/` — Documentación
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

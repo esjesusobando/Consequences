@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 Agent Teams con Git Locks - Sistema de coordinación para múltiples agentes
@@ -33,7 +32,6 @@ from dataclasses import dataclass, field
 from enum import Enum
 import threading
 
-
 class LockState(Enum):
     """Estados posibles de un lock."""
 
@@ -41,7 +39,6 @@ class LockState(Enum):
     LOCKED = "LOCKED"
     RELEASED = "RELEASED"
     EXPIRED = "EXPIRED"
-
 
 @dataclass
 class TaskLock:
@@ -73,7 +70,6 @@ class TaskLock:
             "expires_at": self.expires_at,
             "metadata": self.metadata,
         }
-
 
 class GitLockManager:
     """
@@ -271,7 +267,6 @@ class GitLockManager:
 
         return cleaned
 
-
 class AgentTeam:
     """
     Equipo de agentes que trabajan en paralelo con locks.
@@ -380,9 +375,7 @@ class AgentTeam:
             "agents": self.agents,
         }
 
-
 # ==================== TESTS ====================
-
 
 def test_lock_acquire_release():
     """Test acquire y release de locks."""
@@ -412,7 +405,6 @@ def test_lock_acquire_release():
             f"Expected RELEASED, got {status.state}"
         )
 
-
 def test_lock_conflict():
     """Test que dos agentes no pueden tomar el mismo lock."""
     import tempfile
@@ -430,7 +422,6 @@ def test_lock_conflict():
             assert False, "Should have raised exception"
         except RuntimeError as e:
             assert "already held" in str(e)
-
 
 def test_team_status():
     """Test estado del equipo."""
@@ -467,7 +458,6 @@ def test_team_status():
         assert status["working"] == 0  # All done, all idle
         assert status["idle"] == 3  # All 3 agents idle
 
-
 def test_cleanup_expired():
     """Test limpieza de locks expirados."""
     import tempfile
@@ -486,7 +476,6 @@ def test_cleanup_expired():
         # Cleanup
         cleaned = manager.cleanup_expired()
         assert cleaned >= 1, f"Expected at least 1 expired lock, got {cleaned}"
-
 
 if __name__ == "__main__":
     print("=" * 60)

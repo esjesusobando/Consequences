@@ -25,12 +25,11 @@ import sys
 import subprocess
 from pathlib import Path
 
-
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -49,7 +48,6 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
-
 def print_banner():
     banner = rf"""
 {Fore.CYAN}    ###########################################################################
@@ -67,17 +65,14 @@ def print_banner():
 """
     print(banner)
 
-
 def dynamic_speak(text):
     print(f"{Fore.MAGENTA}🔊 [VOICE]: {text}{Style.RESET_ALL}")
-
 
 def report_progress(percent, message):
     bar_length = 40
     filled = int(bar_length * percent / 100)
     bar = "█" * filled + "░" * (bar_length - filled)
     print(f"{Fore.GREEN}[{bar}] {percent}% - {message}{Style.RESET_ALL}")
-
 
 def run_script(script_name):
     # Los scripts de Herramientas migraron a 13_Legacy
@@ -115,7 +110,6 @@ def run_script(script_name):
 
     return result.returncode == 0
 
-
 def main():
     print_banner()
     parser = argparse.ArgumentParser(
@@ -150,7 +144,6 @@ def main():
         run_script(cmd_map[args.command])
     else:
         parser.print_help()
-
 
 if __name__ == "__main__":
     main()

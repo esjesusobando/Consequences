@@ -6,10 +6,10 @@ Plantilla oficial para crear nuevas skills en PersonalOS.
 
 ```bash
 # Copiar el template
-cp -r 01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/ 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Nueva_Skill/
+cp -r 01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/ 01_Personal_Os/00_Core/02_Tools/02_Skills/NN_Nueva_Skill/
 
 # Renombrar y personalizar
-cd 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Nueva_Skill/
+cd 01_Personal_Os/00_Core/02_Tools/02_Skills/NN_Nueva_Skill/
 mv SKILL.md NN_Nueva_Skill.md
 ```
 
@@ -32,10 +32,10 @@ Antes de integrar, ejecutar:
 
 ```bash
 # Security scan
-python 01_Personal_Os/04_Operations/03_Scripts_Os/Validator_Fixed/skill_security_scan.py --skill 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Skill/
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/Validator_Fixed/skill_security_scan.py --skill 01_Personal_Os/00_Core/02_Tools/02_Skills/NN_Skill/
 
 # Skill auditor
-python 01_Personal_Os/04_Operations/03_Scripts_Os/Validator_Fixed/34_Skill_Auditor.py --skill 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Skill/
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/Validator_Fixed/34_Skill_Auditor.py --skill 01_Personal_Os/00_Core/02_Tools/02_Skills/NN_Skill/
 ```
 
 ## Requisitos

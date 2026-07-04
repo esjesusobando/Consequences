@@ -276,7 +276,7 @@ Para tareas de ingeniería de alta complejidad, el Agente DEBE adoptar el framew
 
 ### 2. Inyección de Vitaminas (AI Task Vitamin Injection)
 Cuando el usuario solicite "Ajuste de tareas", se activa el protocolo de vitaminización:
-- Ejecutar `python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AI_Task_Planner.py` para inyectar el esqueleto SOTA.
+- Ejecutar `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/03_AI_Task_Planner.py` para inyectar el esqueleto SOTA.
 - **BUCLE DE ANÁLISIS**: El agente debe rellenar manualmente las secciones de "Impacto de Segundo Orden" y "Manejo de Datos" con datos reales (esquemas, modelos), no placeholders.
 
 ---

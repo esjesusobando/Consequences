@@ -2,7 +2,7 @@
 
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 
-**Ruta:** `01_Personal_Os/01_Core/00_Workflows_Os/`
+**Ruta:** `01_Personal_Os/00_Core/00_Workflows/`
 **Total:** 27 workflows en 7 categorías
 
 ---
@@ -69,7 +69,7 @@ Cada archivo contiene su propio frontmatter YAML con `name`, `description` y `ar
 
 ```bash
 # Ejecutar un workflow específico vía HUB
-python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <workflow-name>
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Workflow_Hub.py run <workflow-name>
 
 # O simplemente leer el archivo .md y seguir sus pasos
 ```

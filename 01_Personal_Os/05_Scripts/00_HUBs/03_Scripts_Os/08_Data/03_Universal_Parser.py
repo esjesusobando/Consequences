@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 83_Universal_Parser.py - Universal Doc Reader Elite
@@ -90,7 +89,6 @@ SCRIPT_VERSION = "v2.0"
 SKILL_ID = "31"
 SKILL_NAME = "Universal Doc Reader Elite"
 
-
 def print_branding():
     """Header premium del script."""
     print("─" * 60)
@@ -102,23 +100,18 @@ def print_branding():
     print("─" * 60)
     print()
 
-
 def print_error(msg: str):
     print(f"  ❌ ERROR: {msg}", file=sys.stderr)
-
 
 def print_success(msg: str):
     print(f"  ✅ {msg}")
 
-
 def print_info(msg: str):
     print(f"  ℹ️  {msg}")
-
 
 # =============================================================================
 # PARSERS - Por formato
 # =============================================================================
-
 
 def parse_pdf(file_path: str) -> str:
     """Extrae texto de PDF."""
@@ -143,7 +136,6 @@ def parse_pdf(file_path: str) -> str:
         return "\n".join(text)
     except Exception as e:
         return f"ERROR parsing PDF: {e}"
-
 
 def parse_docx(file_path: str) -> str:
     """Extrae texto y tablas de DOCX."""
@@ -176,7 +168,6 @@ def parse_docx(file_path: str) -> str:
     except Exception as e:
         return f"ERROR parsing DOCX: {e}"
 
-
 def parse_excel(file_path: str) -> str:
     """Extrae datos de XLSX, XLS y CSV."""
     if not PANDAS_AVAILABLE:
@@ -203,7 +194,6 @@ def parse_excel(file_path: str) -> str:
     except Exception as e:
         return f"ERROR parsing Excel: {e}"
 
-
 def parse_pptx(file_path: str) -> str:
     """Extrae contenido de PowerPoint."""
     if not PPTX_AVAILABLE:
@@ -223,7 +213,6 @@ def parse_pptx(file_path: str) -> str:
         return "\n".join(output)
     except Exception as e:
         return f"ERROR parsing PPTX: {e}"
-
 
 def parse_psd(file_path: str) -> str:
     """Extrae metadata y estructura de capas de PSD."""
@@ -249,7 +238,6 @@ def parse_psd(file_path: str) -> str:
     except Exception as e:
         return f"ERROR parsing PSD: {e}"
 
-
 def parse_image_meta(file_path: str) -> str:
     """Extrae metadata de imágenes."""
     if not PIL_AVAILABLE:
@@ -271,7 +259,6 @@ def parse_image_meta(file_path: str) -> str:
     except Exception as e:
         return f"ERROR parsing imagen: {e}"
 
-
 def parse_markdown(file_path: str) -> str:
     """Lee archivos Markdown."""
     try:
@@ -279,7 +266,6 @@ def parse_markdown(file_path: str) -> str:
             return f.read()
     except Exception as e:
         return f"ERROR leyendo MD: {e}"
-
 
 # =============================================================================
 # MAPPER - Extensión → Parser
@@ -304,7 +290,6 @@ PARSER_MAP = {
     ".md": parse_markdown,
     ".txt": parse_markdown,
 }
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -358,7 +343,6 @@ Ejemplos:
     print("─" * 60)
     print_success(f"Extracción completa: {file_path.name}")
     print("─" * 60)
-
 
 if __name__ == "__main__":
     main()

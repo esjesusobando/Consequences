@@ -41,7 +41,8 @@ Confirmar que las carpetas v6.1 existen:
 
 ```
 00_Winter_is_Coming / 01_Core / 02_Knowledge / 03_Tasks /
-04_Operations / 05_Archive / 05_Scripts/03_Scripts_Os / .agent
+00_Winter_is_Coming / 01_Personal_Os/00_Core / 02_Knowledge / 03_Learning /
+05_Scripts / 00_HUBs / .agent
 ```
 
 ### 4. Validar Scripts de 05_Scripts/03_Scripts_Os

@@ -9,8 +9,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -22,9 +22,6 @@ try:
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 except:
     pass
-
-
-
 
 """
 03_Sprint_Contract.py — Sprint Contract Manager
@@ -56,7 +53,6 @@ from datetime import datetime
 # CONTRACT TYPES
 # ========================
 
-
 class ContractStatus(Enum):
     """Estados del contrato"""
 
@@ -65,7 +61,6 @@ class ContractStatus(Enum):
     AGREED = "agreed"
     FULFILLED = "fulfilled"
     BREACHED = "breached"
-
 
 @dataclass
 class ContractCriterion:
@@ -85,7 +80,6 @@ class ContractCriterion:
             "passed": self.passed,
             "evidence": self.evidence,
         }
-
 
 @dataclass
 class SprintContract:
@@ -111,7 +105,6 @@ class SprintContract:
             "status": self.status.value,
             "created_at": self.created_at,
         }
-
 
 class SprintContractManager:
     """
@@ -251,7 +244,6 @@ class SprintContractManager:
 
         return "\n".join(lines)
 
-
 def run_sprint_contract(
     sprint_id: str, feature: str, proposal: str, requirements: List[str]
 ) -> dict:
@@ -288,7 +280,6 @@ def run_sprint_contract(
 
     # Return contract
     return contract.to_dict()
-
 
 if __name__ == "__main__":
     # Demo

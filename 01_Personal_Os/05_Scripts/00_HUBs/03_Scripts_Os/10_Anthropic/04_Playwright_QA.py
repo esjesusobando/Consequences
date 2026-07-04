@@ -9,13 +9,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 04_Playwright_QA.py â€” Playwright QA Integration
@@ -44,7 +43,6 @@ from typing import List, Optional, Callable
 # PLAYWRIGHT QA CONFIG
 # ========================
 
-
 class QAState(Enum):
     """Estados del QA"""
 
@@ -52,7 +50,6 @@ class QAState(Enum):
     RUNNING = "running"
     PASSED = "passed"
     FAILED = "failed"
-
 
 @dataclass
 class TestResult:
@@ -72,7 +69,6 @@ class TestResult:
             "error": self.error,
             "screenshot": self.screenshot,
         }
-
 
 @dataclass
 class QASession:
@@ -96,7 +92,6 @@ class QASession:
         if not self.tests:
             return 0
         return (self.passed_count / self.total_count) * 100
-
 
 class PlaywrightQA:
     """
@@ -225,7 +220,6 @@ class PlaywrightQA:
 
         return "\n".join(lines)
 
-
 def run_playwright_qa(url: str, tests: List[dict]) -> dict:
     """
     FunciÃ³n principal para ejecutar Playwright QA.
@@ -282,7 +276,6 @@ def run_playwright_qa(url: str, tests: List[dict]) -> dict:
         "total_count": session.total_count,
         "tests": [t.to_dict() for t in session.tests],
     }
-
 
 if __name__ == "__main__":
     # Demo

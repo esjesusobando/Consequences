@@ -11,13 +11,13 @@ Review requirements or plan documents through multi-persona analysis. Dispatches
 
 **If a document path is provided:** Read it, then proceed.
 
-**If no document is specified:** Ask which document to review, or find the most recent in `04_Operations/07_Brain_Storming/` or `04_Operations/05_Plans/` using a file-search/glob tool (e.g., Glob in Claude Code).
+**If no document is specified:** Ask which document to review, or find the most recent in `05_Scripts/07_Brain_Storming/` or `01_Memory/00_Context_LLM/05_Plans/` using a file-search/glob tool (e.g., Glob in Claude Code).
 
 ### Classify Document Type
 
 After reading, classify the document:
-- **requirements** -- from `04_Operations/07_Brain_Storming/`, focuses on what to build and why
-- **plan** -- from `04_Operations/05_Plans/`, focuses on how to build it with implementation details
+- **requirements** -- from `05_Scripts/07_Brain_Storming/`, focuses on what to build and why
+- **plan** -- from `01_Memory/00_Context_LLM/05_Plans/`, focuses on how to build it with implementation details
 
 ### Select Conditional Personas
 
@@ -168,9 +168,9 @@ Brief summary at the top: "Applied N auto-fixes. M findings to consider (X at P0
 ### Protected Artifacts
 
 During synthesis, discard any finding that recommends deleting or removing files in:
-- `04_Operations/07_Brain_Storming/`
-- `04_Operations/05_Plans/`
-- `04_Operations/06_Solutions/`
+- `05_Scripts/07_Brain_Storming/`
+- `01_Memory/00_Context_LLM/05_Plans/`
+- `01_Memory/00_Context_LLM/06_Solutions/`
 
 These are pipeline artifacts and must not be flagged for removal.
 

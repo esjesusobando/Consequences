@@ -1,6 +1,6 @@
 # WORKFLOWS — Area Funcional 00
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Workflows/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Workflows/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 5 (mas documentos de orquestacion)
 

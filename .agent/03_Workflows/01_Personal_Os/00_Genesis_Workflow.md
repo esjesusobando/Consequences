@@ -22,9 +22,9 @@ Recuperar las últimas 10 sesiones de Engram para entender qué se hizo antes.
 - Leer `00_Winter_is_Coming/AGENTS.md` — Estructura del sistema
 
 ### 3. Verificación de Salud del Sistema
-- Correr: `python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py --quick`
-- Verificar que `01_Personal_Os/01_Core/` existe y tiene estructura correcta
-- Verificar que `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py` funciona
+- Correr: `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Watchdog_Hub.py --quick`
+- Verificar que `01_Personal_Os/00_Core/` existe y tiene estructura correcta
+- Verificar que `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py` funciona
 
 ### 4. Carga de Skills y Herramientas
 - Skills activas en `~/.config/opencode/skills/`
@@ -39,4 +39,4 @@ Resumir en el chat: metas activas, estado del sistema, últimas sesiones.
 - `00_Winter_is_Coming/BACKLOG.md` — Backlog de tareas
 - `00_Winter_is_Coming/AGENTS.md` — Documentación del sistema
 - `.agent/CLAUDE.md` — Reglas del agente
-- `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py` — Rutas centralizadas
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py` — Rutas centralizadas

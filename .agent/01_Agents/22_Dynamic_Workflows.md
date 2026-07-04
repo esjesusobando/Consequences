@@ -1,8 +1,8 @@
 # ⚡ 22_Dynamic_Workflows — Pipeline Completo de Feature
 
 > **Status:** Semi-Autonomous — Se activa para features que requieren el ciclo completo (research→ship→compound)
-> **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`
-> **Skills:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/SKILL.md`
+> **Source of Truth:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`
+> **Skills:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/SKILL.md`
 > **Dependencias:** SDD flow (propose→spec→design→tasks→apply→verify→archive), ce-compound, GitHub
 
 ---

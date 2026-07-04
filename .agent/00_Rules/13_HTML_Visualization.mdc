@@ -1,0 +1,142 @@
+---
+description: Toda salida — conocimiento, análisis, workflow, skill — debe incluir visualización HTML. Markdown para pensar, HTML para entender/compartir.
+globs: **/*.md, **/01_Research_Os/*, **/02_Knowledge/*
+---
+
+# 13_HTML_Visualization — Regla de Visualización HTML Obligatoria
+
+> **Markdown es para pensar. HTML es para entender y compartir.**
+> Toda salida del sistema debe incluir un archivo HTML de visualización.
+
+---
+
+## Fundamentos
+
+El PersonalOS genera conocimiento estructurado constantemente. Markdown es el formato de trabajo — lineal, portable, editable. Pero el entendimiento profundo requiere visualización: jerarquías, relaciones, comparaciones, timelines.
+
+**Esta regla es el puente entre el conocimiento crudo y la comprensión visual.**
+
+---
+
+## Especificaciones
+
+### 1. HTML Genérico (obligatorio para TODA salida)
+
+Toda entrada de conocimiento, análisis, workflow, o skill que produzca una salida debe incluir un archivo HTML en el **mismo directorio** que el resultado principal.
+
+| Resultado principal | HTML requerido |
+|---------------------|----------------|
+| `2026-06-01_Learning_*.md` | `2026-06-01_Learning_*__visual.html` |
+| `2026-06-01_RE_*.md` | `2026-06-01_RE_*__visual.html` |
+| Análisis de skill | `analysis__visual.html` |
+| Workflow output | `output__visual.html` |
+
+### 2. Simulación Instagram (para contenido social)
+
+Cuando el resultado esté relacionado con:
+- Insights de marketing / redes sociales
+- Publicaciones simuladas
+- Análisis de contenido social
+- Estrategias de contenido
+
+Debe generar una **interfaz visual idéntica a Instagram** (móvil y escritorio) en el HTML, no un genérico.
+
+### 3. Tipos de Visualización por Categoría
+
+| Tipo de Contenido | Estilo HTML Recomendado |
+|-------------------|-------------------------|
+| YouTube / Video Learning | Tarjetas con resumen, puntos clave, métricas |
+| Análisis técnico | Dashboard con gráficos, tablas, código highlight |
+| Social / Marketing | Simulación Instagram (mobile-first) |
+| Arquitectura / Sistema | Diagrama de jerarquía, árbol expandible |
+| Comparativa | Tabla side-by-side con highlighting |
+| Timeline / Progreso | Línea de tiempo interactiva |
+
+---
+
+## Implementación
+
+### Plantilla Base HTML
+
+Usar esta estructura mínima para visualizaciones genéricas:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[TÍTULO] — Visualización</title>
+  <style>
+    /* Diseño limpio, tipografía sistema, colores OS */
+    :root { --bg: #f8f9fa; --text: #1a1a2e; --accent: #e94560; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           max-width: 800px; margin: 0 auto; padding: 2rem;
+           background: var(--bg); color: var(--text); line-height: 1.6; }
+    h1 { border-bottom: 3px solid var(--accent); padding-bottom: 0.5rem; }
+    .card { background: white; border-radius: 12px; padding: 1.5rem;
+            margin: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .tag { display: inline-block; background: var(--accent); color: white;
+           padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <h1>[TÍTULO]</h1>
+  <div class="card">
+    <!-- Contenido visual -->
+  </div>
+</body>
+</html>
+```
+
+### Simulación Instagram (para contenido social)
+
+La interfaz debe incluir:
+- Header con username + avatar +三点menu
+- Imagen/post principal
+- Botones de acción (like, comment, share, save)
+- Footer con likes, caption, comments simulados
+- **Diseño responsive**: mobile-first + breakpoint desktop
+
+---
+
+## Integración con Workflows
+
+### Learning Always
+- Al crear `2026-06-01_Learning_*` → generar automáticamente `*__visual.html`
+- RE (Research Entry) → HTML con tarjetas de puntos clave
+
+### Skills / HUBs
+- Skills que producen análisis → incluir generación HTML en el pipeline
+- HUB_SOTA debe validar que skills cumplen esta regla
+
+### Graphify
+- Queries de graph → HTML con visualización del subgraph
+- Graph report summaries → HTML dashboard
+
+---
+
+## Verificación
+
+Antes de dar una tarea por completada:
+
+1. ✅ ¿El resultado tiene su archivo HTML acompañante?
+2. ✅ ¿El HTML es visualmente informativo (no solo texto en div)?
+3. ✅ ¿Usa la paleta/estilo del OS (colores, tipografía)?
+4. ✅ ¿Es responsive / mobile-friendly?
+5. ✅ ¿El contenido social tiene simulación Instagram?
+
+---
+
+## Excepciones
+
+Solo se permite omitir HTML cuando:
+- El resultado es puramente interno (debug, log)
+- El resultado es un archivo de configuración/script
+- El usuario explícitamente pide no generar HTML
+
+En esos casos, documentar por qué se omitió.
+
+---
+
+*Creada: 2026-06-01 | v4.9 Consequences OS | Regla nro 13 del sistema*

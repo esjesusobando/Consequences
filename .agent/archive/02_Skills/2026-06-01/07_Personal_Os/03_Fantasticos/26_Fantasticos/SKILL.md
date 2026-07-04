@@ -103,7 +103,7 @@ doc = {
 ## Ejemplo Real: Migración de Rutas
 
 ```
-Usuario: "Migra todas las rutas de skills de la raíz a 01_Core/"
+Usuario: "Migra todas las rutas de skills de la raíz a 00_Core/"
 
 → ORQUESTADOR despliega 4 FANTÁSTICOS
     │

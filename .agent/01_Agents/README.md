@@ -13,7 +13,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 ## 📂 Estructura del Directorio
 
 ```
-01_Personal_Os/01_Core/02_Tools/01_Agents/
+01_Personal_Os/00_Core/02_Tools/01_Agents/
 ├── 00_OS_Conductor/                # 🧠 OS Conductor v2.0 — Anthropic 2.0 Harness (Sprint Contract + Evaluator + Context)
 ├── 00_Orchestrator.md              # [LEGACY v4.0] Reemplazado por OS Conductor
 ├── 01_Scope_Rule_Architect.md      # Arquitectura — Scope Rule

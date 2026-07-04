@@ -25,12 +25,12 @@ Ejecutar al finalizar cada sesión de trabajo. Garantiza que el sistema quede en
 
 ### 2. Actualizar Inventario (si aplica)
 
-1. ¿Se crearon scripts nuevos en `01_Personal_Os/04_Operations/03_Scripts_Os/`? → Registrar en `01_Core/01_Inventario_Total.md`
-2. ¿Se crearon Skills o Workflows nuevos? → Registrar en `01_Core/01_Inventario_Total.md` + actualizar `README.md` del directorio
+1. ¿Se crearon scripts nuevos en `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`? → Registrar en `00_Core/01_Inventario_Total.md`
+2. ¿Se crearon Skills o Workflows nuevos? → Registrar en `00_Core/01_Inventario_Total.md` + actualizar `README.md` del directorio
 
 ### 3. Guardar Notas de Proceso
 
-1. Crear o actualizar archivo en `04_Operations/03_Process_Notes/` con resumen de la sesión + ejecutar `mem_save()` en Engram:
+1. Crear o actualizar archivo en `05_Scripts/03_Process_Notes/` con resumen de la sesión + ejecutar `mem_save()` en Engram:
    - Qué se hizo
    - Decisiones tomadas
    - Pendientes para la próxima sesión
@@ -39,7 +39,7 @@ Ejecutar al finalizar cada sesión de trabajo. Garantiza que el sistema quede en
 ### 4. Ejecutar Ritual Automatizado
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py
 ```
 
 El script ejecuta: backup + validación de reglas + sync de contexto.
@@ -70,7 +70,7 @@ Reportar en chat:
 Para ejecutar el ritual completo con un solo comando:
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py
 ```
 
 ---

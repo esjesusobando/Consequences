@@ -48,7 +48,7 @@ First, I need to determine the review target type and set up the code for analys
 
 #### 🛡️ Pachamama Protocol (Backup Check)
 
-- [ ] Ejecutar `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --backup-only` para asegurar un punto de restauración antes de iniciar la revisión profunda.
+- [ ] Ejecutar `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py --backup-only` para asegurar un punto de restauración antes de iniciar la revisión profunda.
 
 </task_list>
 
@@ -57,8 +57,8 @@ First, I need to determine the review target type and set up the code for analys
 <protected_artifacts>
 The following paths are compound-engineering pipeline artifacts and must never be flagged for deletion, removal, or gitignore by any review agent:
 
-- `04_Operations/05_Plans/*.md` — Plan files created by `/workflows:plan`. These are living documents that track implementation progress (checkboxes are checked off by `/workflows:work`).
-- `04_Operations/06_Solutions/*.md` — Solution documents created during the pipeline.
+- `01_Memory/00_Context_LLM/05_Plans/*.md` — Plan files created by `/workflows:plan`. These are living documents that track implementation progress (checkboxes are checked off by `/workflows:work`).
+- `01_Memory/00_Context_LLM/06_Solutions/*.md` — Solution documents created during the pipeline.
 
 If a review agent flags any file in these directories for cleanup or removal, discard that finding during synthesis. Do not create a todo for it.
 </protected_artifacts>
@@ -220,7 +220,7 @@ Remove duplicates, prioritize by severity and impact.
 <synthesis_tasks>
 
 - [ ] Collect findings from all parallel agents
-- [ ] Discard any findings that recommend deleting or gitignoring files in `04_Operations/05_Plans/` or `04_Operations/06_Solutions/` (see Protected Artifacts above)
+- [ ] Discard any findings that recommend deleting or gitignoring files in `01_Memory/00_Context_LLM/05_Plans/` or `01_Memory/00_Context_LLM/06_Solutions/` (see Protected Artifacts above)
 - [ ] Categorize by type: security, performance, architecture, quality, etc.
 - [ ] Assign severity levels: 🔴 CRITICAL (P1), 🟡 IMPORTANT (P2), 🔵 NICE-TO-HAVE (P3)
 - [ ] Remove duplicate or overlapping findings
@@ -238,7 +238,7 @@ Remove duplicates, prioritize by severity and impact.
 
 - Create todo files directly using Write tool
 - All findings in parallel for speed
-- Use standard template from `01_Personal_Os/01_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
+- Use standard template from `01_Personal_Os/00_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
 - Follow naming convention: `{issue_id}-pending-{priority}-{description}.md`
 
 **Option B: Sub-Agents in Parallel (Recommended for Scale)** For large PRs with 15+ findings, use sub-agents to create finding files in parallel:
@@ -284,7 +284,7 @@ Sub-agents can:
    ```
 
    The skill provides:
-   - Template location: `01_Personal_Os/01_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
+   - Template location: `01_Personal_Os/00_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
    - Naming convention: `{issue_id}-{status}-{priority}-{description}.md`
    - YAML frontmatter structure: status, priority, issue_id, tags, dependencies
    - All required sections: Problem Statement, Findings, Solutions, etc.
@@ -304,7 +304,7 @@ Sub-agents can:
    004-pending-p3-unused-parameter.md
    ```
 
-5. Follow template structure from file-todos skill: `01_Personal_Os/01_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
+5. Follow template structure from file-todos skill: `01_Personal_Os/00_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
 
 **Todo File Structure (from template):**
 

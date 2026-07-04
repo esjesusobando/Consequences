@@ -19,15 +19,14 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
 
 import json
-
 
 def find_skills() -> dict:
     """Encuentra todas las skills en 01_Personal_Os/00_Core/02_Tools/02_Skills/."""
@@ -64,7 +63,6 @@ def find_skills() -> dict:
 
     return skills
 
-
 def analyze_skills(skills: dict) -> dict:
     """Analiza el estado de las skills."""
     analysis = {
@@ -86,7 +84,6 @@ def analyze_skills(skills: dict) -> dict:
                 analysis["issues"].append(f"Category {name} has no SKILL.md")
 
     return analysis
-
 
 def print_report(skills: dict, analysis: dict):
     """Imprime el reporte de salud."""
@@ -124,7 +121,6 @@ def print_report(skills: dict, analysis: dict):
     print("Usa este reporte para mantener la salud del sistema de skills.")
     print("=" * 60)
 
-
 def main():
     """Punto de entrada."""
     print("[INFO] Analizando skills...")
@@ -141,7 +137,6 @@ def main():
 
     # Print report
     print_report(skills, analysis)
-
 
 if __name__ == "__main__":
     main()

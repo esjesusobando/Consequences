@@ -220,10 +220,10 @@
 |--------------------|--------------------------------------------------------------------------|
 | Gentleman           | `03_Gentleman/` workflows, `gentleman-*` skills                           |
 | Compound Engineering| `05_Compound_Engineering/` + `02_Tools/01_Agents/02_Specialists_Compound/`|
-| Hillary             | `04_Hillary/` + `03_Task/`                                                |
+| Hillary             | `04_Hillary/` + `04_Tasks/`                                                |
 | Sistema Recursivo   | `System_Health_Audit.md` en workflows                                     |
 | Learning Always     | Integrada en todos los workflows via Engram                               |
-| JARVIS 4.5          | `04_Operations/02_Agent_Teams_Lite/00_Manifest/` (7 manifests)            |
+| JARVIS 4.5          | `05_Scripts/02_Agent_Teams_Lite/00_Manifest/` (7 manifests)            |
 
 ---
 

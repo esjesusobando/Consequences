@@ -32,7 +32,7 @@ Se completó exitosamente la implementación del Fork Terminal Skill (v2.0), inc
 #### Archivos Creados/Actualizados:
 
 ```
-01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/
+01_Personal_Os/00_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/
 ├── SKILL.md                              ✅ Creado/Actualizado
 ├── COMPATIBILITY.md                      ✅ Creado
 ├── ADVANCED_TESTS.md                     ✅ Creado
@@ -61,8 +61,8 @@ Se completó exitosamente la implementación del Fork Terminal Skill (v2.0), inc
 
 #### 2.1 Renombrado de Directorio
 
-- **Antes:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal` (guion bajo)
-- **Después:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal` (guion medio)
+- **Antes:** `01_Personal_Os/00_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal` (guion bajo)
+- **Después:** `01_Personal_Os/00_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal` (guion medio)
 - **Razón:** Consistencia con imagen de referencia y estándares
 
 #### 2.2 Actualización de Rutas
@@ -126,7 +126,7 @@ Cada cookbook ahora incluye:
 
 ### Directorios Explorados
 
-1. `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/`
+1. `01_Personal_Os/00_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/`
 2. `Skill One/` (referencia)
 3. `00 Bunker Notes/00 Claude/`
 

@@ -13,7 +13,7 @@ Ejecutar en orden. No saltarse pasos.
 
 ### FASE 1 — Contexto y Arquitectura
 
-1. **Cargar contexto completo**: `AGENTS.md` + `01_Core/01_Rules/` + `04_Operations/00_Context_Memory/` + **Engram** + `04_Operations/03_Process_Notes/`
+1. **Cargar contexto completo**: `AGENTS.md` + `00_Core/01_Rules/` + `05_Scripts/00_Context_Memory/` + **Engram** + `05_Scripts/03_Process_Notes/`
 2. **Mapear impacto**: Identificar todos los archivos, módulos y dependencias afectados
 3. **Brainstorm**: Ejecutar `01_Spider_Brainstorm` — explorar 2-3 enfoques antes de comprometerse
 4. **Checkpoint 1**: Confirmar enfoque con el usuario antes de continuar
@@ -32,17 +32,17 @@ Ejecutar en orden. No saltarse pasos.
 
 ### FASE 4 — Calidad y Seguridad
 
-1. **Linting**: `python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py --lint`
-2. **Validar reglas**: `python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py --rules`
-3. **Auditoría**: `python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py` (si el cambio es mayor)
+1. **Linting**: `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator_Hub.py --lint`
+2. **Validar reglas**: `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator_Hub.py --rules`
+3. **Auditoría**: `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/01_Auditor_Hub.py` (si el cambio es mayor)
 4. **Checkpoint 3**: Revisión de seguridad — OWASP Top 10 si hay endpoints o inputs
 
 ### FASE 5 — Revisión y Cierre
 
 1. **Revisión completa**: Ejecutar `03_Vision_Review` — 13 agentes en paralelo
 2. **Browser test** *(si hay UI)*: Screenshot antes/después con MCP Playwright
-3. **Documentar**: Actualizar `01_Core/01_Inventario_Total.md` si hay nuevos scripts
-4. **Cierre ritual**: `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py` → commit final → reportar `✅ DONE`
+3. **Documentar**: Actualizar `00_Core/01_Inventario_Total.md` si hay nuevos scripts
+4. **Cierre ritual**: `python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py` → commit final → reportar `✅ DONE`
 
 ## ⚡ Cuándo usar Pro vs Lite
 

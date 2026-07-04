@@ -2,13 +2,13 @@
 
 ## Source Documents
 - Learning Always: `C:/Users/sebas/Desktop/Think_Different/03_Resultado/02_Revisar_Now/Learning_Always.md`
-- Skill Creator: `C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/`
+- Skill Creator: `C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/`
 
 ## OS Structure Reference
 
 ```
 01_Personal_Os/
-├── 01_Core/
+├── 00_Core/
 │   ├── 02_Tools/
 │   │   ├── 02_Skills/          # Skills inventory
 │   │   └── 04_Automatizacion/   # Automation tools
@@ -32,7 +32,7 @@
 | Workflow  | `05_Workflows/`      | Optimize, Integrate    |
 | Tool      | `04_Automatizacion/` | Add, Update, Replace   |
 | Knowledge | `02_Knowledge/`      | Connect, Expand        |
-| Context   | `01_Core/03_Context/`| Update, Add            |
+| Context   | `00_Core/03_Context/`| Update, Add            |
 
 ## Example Improvements Made
 

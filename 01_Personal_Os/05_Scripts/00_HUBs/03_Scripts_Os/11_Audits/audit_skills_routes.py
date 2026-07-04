@@ -12,8 +12,8 @@ SCRIPTS_OS = next(
     (p for p in [SCRIPT_DIR, *SCRIPT_DIR.parents] if p.name == "03_Scripts_Os"),
     SCRIPT_DIR.parent,
 )
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = next(
     (p for p in [SCRIPT_DIR, *SCRIPT_DIR.parents] if (p / "00_Winter_is_Coming").exists() and (p / "01_Personal_Os").exists()),
     PERSONAL_OS.parent,
@@ -22,7 +22,6 @@ ROOT = next(
 if str(SCRIPTS_OS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 AUDITORÍA DE RUTAS DE SKILLS - DRY RUN
@@ -74,7 +73,6 @@ PATHSPECS = [
     ":!**/pnpm-lock.yaml",
 ]
 
-
 def find_references():
     """Encuentra referencias a rutas legacy de skills."""
     refs = defaultdict(list)
@@ -100,7 +98,6 @@ def find_references():
             refs[file].append((int(line_number), old_path, line.strip()[:100]))
 
     return refs
-
 
 def analyze_impact():
     """Analiza el impacto de la migración"""
@@ -149,7 +146,6 @@ def analyze_impact():
     print("Actualizar solo referencias operativas; preservar contexto legacy en archivos de archivo/historia.")
 
     return refs
-
 
 def generate_script(refs):
     """Genera script de migración (sed para Unix/Mac, ps1 para Windows)"""
@@ -224,7 +220,6 @@ if ($migrate) {{
     script_path.write_text(script, encoding="utf-8")
     print(f"\nScript generado: {script_path}")
     return script_path
-
 
 if __name__ == "__main__":
     refs = analyze_impact()

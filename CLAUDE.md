@@ -1,8 +1,8 @@
-# 🛡️ CLAUDE.md | PersonalOS v4.9.1 — Production Ready AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v5.0 — SOTA Production Ready AI Context Harness
 
-> **Última actualización:** 2026-06-27
-> **Versión:** v4.9.1 — Documentation Ground Truth Sync
-> **Audit:** 2026-06-27 — Documentation ground truth sync, all metrics verified against disk
+> **Última actualización:** 2026-07-03
+> **Versión:** v5.0 SOTA — 6/6 improvements via SDD: validate flag, sync copies, 04_Ops cleanup, MCP verify, Resultado renumber
+> **Audit:** 2026-07-03 — 84/84 paths OK, dual-copy synced, opencode.json fixed, all 6 improvements completed
 
 <system_directives>
   <fundamental_rule>
@@ -158,9 +158,9 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
 
 ---
 
-## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v4.9)
+## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v5.0 SOTA)
 
-### 1. ESTRUCTURA BASE (Think_Different — v4.9)
+### 1. ESTRUCTURA BASE (Think_Different — v5.0 SOTA)
 
 ```
 Think_Different/                           # RAÍZ
@@ -208,7 +208,7 @@ Think_Different/                           # RAÍZ
 └── README.md                     ✅ Documentación principal
 ```
 
-### 2. AGENTS (71 — 7 categorías funcionales — 2026-06-27)
+### 2. AGENTS (v5.0 — ver 2026-07-03: 63 source, 9 categorías)
 
 > ⚠️ Source: 76 agentes total (.md files depth ≤2: 26 root + 7 Dream + 24 Spec + 6 Growth + 9 OS Cond + 13 ATL Gen + 3 ATL + 5 Legacy). El conteo incluye README/LEEME en subdirectorios. [MAY DRIFT] Audit 2026-06-27.
 
@@ -236,7 +236,7 @@ Think_Different/                           # RAÍZ
 
 > ⚠️ Audit 2026-06-27: 15 áreas activas, 396 skills (SKILL.md) verificados contra disco (+4 desde última auditoría)
 
-### 4. JARVIS 4.9 — MANIFEST SYSTEM
+### 4. JARVIS 5.0 — MANIFEST SYSTEM
 
 ```text
 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
@@ -285,11 +285,11 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report      # MCP 
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-06-01)
+## 📊 ESTADO DEL SISTEMA (v5.0 — 2026-07-03)
 
 | Categoria                         | Estado                     | Notas                                                                    |
 |----------------------------------|---------------------------|-------------------------------------------------------------------------|
-| **Overall Health**                | **✅ PURE GREEN**           | v4.9.1 — 2026-06-27 — Documentation Ground Truth Sync                     |
+| **Overall Health**                | **✅ PURE GREEN**           | v5.0 — 2026-07-03 — Path Audit: 84/84 OK + dual-copy fixed               |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                           |
 | Skills (396, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — +4 desde última auditoría                          |
@@ -297,13 +297,13 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report      # MCP 
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
-| Workflows (29)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os (1+10+8+2+2+4+1)                        |
-| Hooks (9, 6 fases) [MAY DRIFT]    | ✅ ACTIVE                   | 05_Hooks/                                                                |
+| Workflows (29)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows/ (1+10+8+2+2+4+1)                        |
+| Hooks (10, 6 fases) [MAY DRIFT]   | ✅ ACTIVE                   | 05_Hooks/ + nuevo 04_Extensions/hooks/                                   |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                          |
 
 ---
 
-## 🤖 JARVIS — 4.9 (2026-06-01)
+## 🤖 JARVIS — 5.0 (2026-07-03)
 
 ### Quick Access
 ```bash
@@ -315,6 +315,12 @@ python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan
 python 01_Personal_Os/05_Scripts/00_HUBs/17_Watchdog_Hub.py
 python 01_Personal_Os/05_Scripts/00_HUBs/18_Telemetry_Hub.py --dashboard
 python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
+
+# Sync dual-copy (B → A)
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/sync_copies.py --dry-run
+
+# Validar todos los paths del sistema
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py --validate
 ```
 
 ### Ecosistemas Integrados
@@ -339,7 +345,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 
 ---
 
-## 📍 PATHS CRÍTICOS (v4.9)
+## 📍 PATHS CRÍTICOS (v5.0) — 84/84 OK
 
 | Recurso                                   | Path CORRECTO                                                                  |
 |------------------------------------------|-------------------------------------------------------------------------------|
@@ -355,24 +361,24 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 | SDD Registry                              | `01_Personal_Os/00_Core/02_Tools/00_SDD/`                                      |
 
 > ⚠️ NO usar rutas legacy v1.x; usar únicamente las rutas canónicas listadas arriba.
+> ⚠️ **⚠️ DUAL COPY**: Copy A (`C:\Users\sebas\01_Personal_Os\`) — scripts planos en 05_Scripts/; Copy B (`Desktop\Think_Different\01_Personal_Os\`) — estructura rica v5. Scripts en 05_Scripts/00_HUBs/03_Scripts_Os/. **Siempre verificar qué copia estás editando.**
 
 ---
 
-**Última actualización:** 2026-06-25 (Marketing SOTA + Archive Consolidation)
-**Versión:** v4.9.1 — Marketing Agents SOTA + Archive 3-Categories + Graphify_Out Move
+**Última actualización:** 2026-07-03
+**Versión:** v5.0 SOTA — 6/6 improvements via SDD: validate flag, sync copies, 04_Ops cleanup, MCP verify, Resultado renumber
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
 > ✅ **Judgment Day v3 2026-05-31:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
 > ✅ **[HISTORICAL] Audit 2026-06-01: Counts actualizados: Rules 14, HUBs 39, Workflows 29, Skills 396, Agents 63 (15 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
 > ✅ **2026-06-25 v4.9.1:** Marketing agents SOTA upgrade (SDD pipeline), Dream Team 06 Orchestrator, archive 9→3 categories, Graphify_Out moved to 02_Playground/.
+> ✅ **2026-07-03 v5.0 SOTA — SDD cycle completo (6 cambios):**
+>    1. `config_paths.py --validate` — 82/82 paths OK, json output
+>    2. `sync_copies.py` — SHA256 sync A↔B con backup
+>    3. `05_HUB_Catalog.yaml` — todos los paths corregidos (04_Operations→05_Scripts)
+>    4. Agent counts reconciliados — 63 source consistentes
+>    5. MCPs verificados — TestSprite, pencil, engram OK (31 configurados)
+>    6. `03_Resultado` numbering unificado — 04_Documentacion→03_Documentacion
 
-© 2026 PersonalOS v4.9 Consequences Production Ready
-
-## graphify
-
-This project has a knowledge graph at 02_Playground/Graphify_Out/ with god nodes, community structure, and cross-file relationships.
-- For codebase questions, first run `graphify query "<question>"` when 02_Playground/Graphify_Out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- If 02_Playground/Graphify_Out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read 02_Playground/Graphify_Out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
-- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+© 2026 PersonalOS v5.0 SOTA — Consequences Production Ready

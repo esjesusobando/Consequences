@@ -43,4 +43,4 @@ Plantillas estructuradas por canal que los agentes usan para producir contenido 
 ---
 
 *Marketing Agents v1.0 — PersonalOS v4.9 Consequences*
-*Integrado con Core: 01_Core/02_Tools/01_Agents/*
+*Integrado con Core: 00_Core/02_Tools/01_Agents/*

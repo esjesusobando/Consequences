@@ -3,7 +3,7 @@
 > **Proyecto:** PersonalOS Consequences v3.1
 > **Fecha:** 2026-04-28 (OBSOLETO — ver KIT_DISENO_TOP_15.md)
 > **Criterio:** Valor práctico × Estado del arte × Calidad de diseño
-> **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
+> **Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
 
 ---
 

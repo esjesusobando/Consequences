@@ -130,7 +130,7 @@ Todos los agentes completaron sus tareas correctamente.
 The agent uses the following priority when searching for skills:
 
 ```
-1. 01_Core/03_Skills/    (HIGHEST PRIORITY - User customizations)
+1. 00_Core/03_Skills/    (HIGHEST PRIORITY - User customizations)
 2. .agent/skills/     (Standard skills)
 ```
 
@@ -146,7 +146,7 @@ The agent uses the following priority when searching for skills:
 
 ### When Distributing Work
 
-The agent MUST use `01_Core/03_Skills/parallel-orchestration/` which:
+The agent MUST use `00_Core/03_Skills/parallel-orchestration/` which:
 
 - Launches visible CMD terminals for each agent
 - Keeps terminals open for user inspection
@@ -163,12 +163,12 @@ The agent MUST use `01_Core/03_Skills/parallel-orchestration/` which:
 
 | Location                                          | Purpose                                                     | Priority                                 |
 |--------------------------------------------------|------------------------------------------------------------|-----------------------------------------|
-| `01_Core/03_Skills/`                              | User customizations, overrides                              | ðŸ¥‡ FIRST                               |
+| `00_Core/03_Skills/`                              | User customizations, overrides                              | ðŸ¥‡ FIRST                               |
 | `.agent/skills/`                                  | Standard skill library                                      | ðŸ¥ˆ SECOND                              |
 
 ## Current Skills
 
-### In 01_Core/03_Skills/
+### In 00_Core/03_Skills/
 
 - `fork-terminal/` - Terminal orchestration system
 - `parallel-orchestration/` - Multi-agent coordination (NEW)
@@ -192,12 +192,12 @@ The agent MUST use `01_Core/03_Skills/parallel-orchestration/` which:
 
 ### Location
 
-`01_Core/03_Skills/fork-terminal/tools/fork_terminal.py`
+`00_Core/03_Skills/fork-terminal/tools/fork_terminal.py`
 
 ### Usage Pattern
 
 ```bash
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "command && pause"
+python "00_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "command && pause"
 ```
 
 ### Benefits
@@ -261,7 +261,7 @@ These skills are **REQUIRED** in specific scenarios:
 **Trigger:** Starting ANY creative work
 **Purpose:** Explores user intent and requirements before implementation
 **Use:** REQUIRED before building features/components/functionality
-**Output:** Design document in `04_Operations/05_Plans/`
+**Output:** Design document in `01_Memory/00_Context_LLM/05_Plans/`
 
 ### brand-identity
 
@@ -356,7 +356,7 @@ These skills are **REQUIRED** in specific scenarios:
 
 **Trigger:** Have spec/requirements for multi-step task
 **Purpose:** Creates comprehensive implementation plan
-**Output:** `04_Operations/05_Plans/YYYY-MM-DD-<feature>.md`
+**Output:** `01_Memory/00_Context_LLM/05_Plans/YYYY-MM-DD-<feature>.md`
 **Format:** Bite-sized tasks (2-5 min each), DRY, YAGNI, TDD
 **Execution options:**
 

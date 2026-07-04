@@ -102,14 +102,14 @@ python -X utf8 04_Triggers/cron_trigger.py --loop --interval 8
 
 ### Fixers del Executor v2.0
 
-| Fixer                    | Categoria | Que hace                                                                      |
-| ------------------------ | --------- | ----------------------------------------------------------------------------- |
-| `_create_missing_dir`    | structure | Crea directorios faltantes del arbol                                          |
-| `_fix_version_mismatch`  | docs      | Unifica version entre README.md y AGENTS.md (parseo seguro con tupla de ints) |
-| `_fix_docstring`         | docs      | Actualiza fechas y versiones viejas en docstrings                             |
-| `_fix_naming_convention` | code      | Renombra archivos a formato NN_Descripcion.ext (prefijo dinamico)             |
-| `_fix_duplicate_scripts` | structure | Archiva scripts duplicados en 05_Archive/00_Duplicates_Auto                   |
-| `_fix_requirements_txt`  | deps      | Estandariza constraints (>=→==) sin tocar != ni multi-constraint              |
+| Fixer                        | Categoria     | Que hace                                                                          |
+|------------------------------|---------------|-----------------------------------------------------------------------------------|
+| `_create_missing_dir`        | structure     | Crea directorios faltantes del arbol                                              |
+| `_fix_version_mismatch`      | docs          | Unifica version entre README.md y AGENTS.md (parseo seguro con tupla de ints)     |
+| `_fix_docstring`             | docs          | Actualiza fechas y versiones viejas en docstrings                                 |
+| `_fix_naming_convention`     | code          | Renombra archivos a formato NN_Descripcion.ext (prefijo dinamico)                 |
+| `_fix_duplicate_scripts`     | structure     | Archiva scripts duplicados en 05_Archive/00_Duplicates_Auto                       |
+| `_fix_requirements_txt`      | deps          | Estandariza constraints (>=→==) sin tocar != ni multi-constraint                  |
 
 ### CLI Usage
 
@@ -145,10 +145,10 @@ python executor.py /ruta               # dry-run en ruta especifica
 
 > `Auto-Improvement` + `Capital Token` = Infraestructura saludable + Conocimiento que se acumula
 
-| Sistema                | Rol           | Que hace                                  | Donde vive                           |
-| ---------------------- | ------------- | ----------------------------------------- | ------------------------------------ |
-| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `04_Operations/01_Auto_Improvement/` |
-| 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`        |
+| Sistema                    | Rol               | Que hace                                      | Donde vive                               |
+|----------------------------|-------------------|-----------------------------------------------|------------------------------------------|
+| 🔄 **Auto-Improvement**     | Mantenimiento     | Barre, ordena, arregla codigo roto            | `04_Operations/01_Auto_Improvement/`     |
+| 🌕 **Capital Token**        | Biblioteca        | Documenta procesos, decisiones, playbooks     | `02_Knowledge/10_Shared_Org/`            |
 
 **Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.
 **Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.
@@ -181,10 +181,10 @@ Este sistema se complementa con el **Capital Token** (`01_Personal_Os/02_Knowled
          ▼  Playbooks, decisiones, templates reusables
 ```
 
-| Sistema            | Rol                                    | Scope                                      | Frecuencia         |
-| ------------------ | -------------------------------------- | ------------------------------------------ | ------------------ |
-| 🔄 Auto-Improvement | Mantenimiento técnico recursivo        | Código, estructura, naming, docs           | Automático cada 8h |
-| 🌕 Capital Token    | Captura de conocimiento organizacional | Procesos, ADRs, playbooks, agent templates | Manual (on-demand) |
+| Sistema                | Rol                                        | Scope                                          | Frecuencia             |
+|------------------------|--------------------------------------------|------------------------------------------------|------------------------|
+| 🔄 Auto-Improvement     | Mantenimiento técnico recursivo            | Código, estructura, naming, docs               | Automático cada 8h     |
+| 🌕 Capital Token        | Captura de conocimiento organizacional     | Procesos, ADRs, playbooks, agent templates     | Manual (on-demand)     |
 
 **Auto-Improvement** barre y ordena el sistema técnicamente. **Capital Token** documenta el conocimiento para que no se pierda. Juntos: infraestructura saludable + conocimiento que se acumula.
 

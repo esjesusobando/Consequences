@@ -5,7 +5,7 @@ priority: P2
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/04_Operations/04_Installer/
+  - 01_Personal_Os/05_Scripts/01_Installer/
 ---
 
 # Task: Onboarding Nueva Máquina — Documentación Setup
@@ -47,7 +47,7 @@ Una guía de setup paso a paso para:
 
 ## 🎯 Definición de Terminado
 
-1. **Doc de setup existe** — en `01_Personal_Os/04_Operations/04_Installer/` o similar
+1. **Doc de setup existe** — en `01_Personal_Os/05_Scripts/01_Installer/` o similar
 2. **Pasos verificados** — alguien siguió la doc en máquina nueva
 3. **Cubre dependencias** — Node, Python, Git, bash
 4. **Cubre hooks** — GGA pre-commit install
@@ -60,13 +60,13 @@ Una guía de setup paso a paso para:
 **Buscar doc existente:**
 
 ```bash
-ls 01_Personal_Os/04_Operations/04_Installer/
+ls 01_Personal_Os/05_Scripts/01_Installer/
 
 # Buscar archivos de setup
 find . -maxdepth 4 -name "*setup*" -o -name "*onboard*" -o -name "*install*"
 ```
 
-**Si no existe:** Crear `01_Personal_Os/04_Operations/04_Installer/01_Setup_Guide.md`
+**Si no existe:** Crear `01_Personal_Os/05_Scripts/01_Installer/01_Setup_Guide.md`
 
 ---
 

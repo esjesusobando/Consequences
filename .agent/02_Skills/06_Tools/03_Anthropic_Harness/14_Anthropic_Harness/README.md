@@ -78,7 +78,7 @@ Cargar skill según necesidad:
 
 ## 📚 Scripts Relacionados
 
-En `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/`:
+En `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/11_Anthropic_Harness/`:
 
 | Script                   | Función                    |
 | ------------------------ | -------------------------- |
@@ -92,7 +92,7 @@ En `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/`:
 
 ## 📖 Referencia Principal
 
-- Artículo completo: `01_Core/02_Knowledge_Brain/10_Anthropic_Harness_Design.md`
+- Artículo completo: `00_Core/02_Knowledge_Brain/10_Anthropic_Harness_Design.md`
 - Workflow: `.agent/03_Workflows/17_Anthropic_Harness.md`
 
 ---

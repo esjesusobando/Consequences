@@ -6,7 +6,7 @@ status: n
 created_date: 2026-04-25
 estimated_time: 120
 resource_refs:
-  - 01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py
+  - 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py
   - 03_Resultado/00_Plan_Consequences.md
 ---
 
@@ -46,8 +46,8 @@ Activar esta tarea SOLO si:
 
 ```bash
 # 1. Dry-run por área — NO bulk replace
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Legacy_Path_Cleanup.py --dry-run --area 03_Validator
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Legacy_Path_Cleanup.py --dry-run --area 07_Data
+# NOTA: 17_Legacy_Path_Cleanup.py fue reemplazado por batch_replace_paths.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/batch_replace_paths.py --category hub-scripts --dry-run
 
 # 2. Revisar diff antes de aplicar
 # 3. Apply por área individual

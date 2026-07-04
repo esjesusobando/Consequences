@@ -1,9 +1,10 @@
 # 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v5.0 (SOTA)
 
 > **Versión:** 5.0 (SOTA)
-> **Fecha:** 2026-06-29
-> **Estado:** Production Ready — SOTA Upgraded (CoT Injected, Type Hints, Logging)
+> **Fecha:** 2026-07-03
+> **Estado:** Production Ready — SOTA Upgraded + Full Path Audit (84/84 OK)
 > **Audit v5.0 (Complete Audit):** 2026-06-29 — SOTA upgrade + Playground organizado + 393 READMEs beautificados.
+> **Path Audit 2026-07-03:** 84/84 paths OK, dual-copy arch documented, opencode.json fix, Structure sync.
 > **Auto-Improvement:** ✅ Activo — Corre cada 8h (01:05, 09:05, 17:05)
 
 ---
@@ -37,25 +38,27 @@ Think_Different/                    # RAÍZ
 ├── 00_Core/                       # MOTOR DEL OS
 │   ├── 00_Workflows/          # 29 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
-│   └── 02_Tools/                 # Herramientas del OS
-│       ├── 00_SDD/               # SDD registry + JARVIS manifests
-│       ├── 01_Agents/            # 63 agentes source (9 categorías) [FIXED]
-│       ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
-│       ├── 03_Mcp/               # Backup MCP configs (2 JSON + 3 subdirs)
-│       ├── 04_Integrations/      # Fireflies, Granola
-│       ├── 05_Hooks/             # 10 hooks (6 fases) [FIXED]
-│       ├── 06_Plugins/           # Plugins OS
-│       ├── 07_Server/            # Engram server
-│       ├── 08_Evals/             # Evaluadores, dashboard y métricas
-│       └── 09_Templates/         # Templates
+│   ├── 02_Tools/                 # Herramientas del OS
+│   │   ├── 00_SDD/               # SDD registry + JARVIS manifests
+│   │   ├── 01_Agents/            # 63 agentes source (9 categorías) [FIXED]
+│   │   ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
+│   │   ├── 03_Mcp/               # Backup MCP configs (2 JSON + 3 subdirs)
+│   │   ├── 04_Integrations/      # Fireflies, Granola
+│   │   ├── 05_Hooks/             # 10 hooks (6 fases) [FIXED]
+│   │   ├── 06_Plugins/           # Plugins OS
+│   │   ├── 07_Server/            # Engram server
+│   │   ├── 08_Evals/             # Evaluadores, dashboard y métricas
+│   │   └── 09_Templates/         # Templates
+│   ├── 03_Content/               # Contenido del sistema operativo
+│   └── 04_Telemetry/             # Telemetría y monitoreo
 ├── 01_Memory/                    # Memoria LLM (CTX + Process Notes)
 ├── 02_Knowledge/                 # Base de conocimiento (estática)
 │   ├── 00_Examples_Personal_Os/  # Ejemplos del OS
 │   ├── 01_Research/              # Investigaciones (consolidado)
 │   ├── 02_Docs/                  # Documentación técnica
-│   ├── 06_Unicorn/               # Unicorn content
-│   ├── 07_Invictus/              # Invictus project
-│   └── 09_Anthropic/             # Anthropic references
+│   ├── 03_Unicorn/               # Unicorn content
+│   ├── 04_Invictus/              # Invictus project
+│   └── 05_Anthropic/             # Anthropic references
 ├── 03_Learning/                  # Conocimiento activo
 │   ├── 00_Shared_Org/            # 🌕 Capital Token — Conocimiento organizacional
 │   │   ├── playbooks/            # Procesos repetitivos documentados
@@ -76,8 +79,9 @@ Think_Different/                    # RAÍZ
 │   └── 04_Telemetry/             # Telemetría y monitoreo (ex Aipm)
 ├── 04_Tasks/                     # Tareas activas (YAML frontmatter 100%)
 ├── 05_Scripts/                   # Scripts operativos
-│   ├── 00_HUBs/                  # HUBs funcionales — scripts del sistema
-│   └── 01_Installer/             # Scripts de instalación
+│   ├── 00_HUBs/                  # HUBs funcionales + sync_copies.py
+│   ├── 01_Installer/             # Scripts de instalación
+│   └── 02_Agent_Teams_Lite/      # Manifests y config de agentes lite
 ├── 06_Projects/                  # Proyectos activos
 └── 07_Archive/                   # Backups, snapshots, históricos
     ├── 01_Plans_Completed/       # Planes, docs, session summaries
@@ -115,10 +119,11 @@ Think_Different/                    # RAÍZ
 ├── 00_Proyectos/                  # Planes, revisiones, side projects
 ├── 01_Aprendizaje/                # Skills output, fundamentos, referencias
 ├── 02_Experimentos/               # World OIM, ejercicios, sesiones
-├── 07_Reports/                   # Auditorías y reportes
-├── 04_Documentacion/              # Documentación general
+├── 03_Documentacion/              # Documentación general
+├── 04_Reports/                    # Auditorías y reportes
 ├── 05_Testing_Skills/             # Pruebas controladas
-└── 06_Testing_Travel/             # Testing de travel
+├── 06_Testing_Travel/             # Testing de travel
+└── 07_Test_MKT_Skills/            # Marketing skills testing
 ```
 
 ---
@@ -292,4 +297,23 @@ Runner: run_scheduled.bat → cron_trigger.py --once --apply (LIVE)
 
 ---
 
-*Structure v5.0 — 2026-06-28 — Think Different PersonalOS (SOTA) — Restructured: 00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive*
+*Structure v5.0 — 2026-07-03 — Think Different PersonalOS (SOTA) — Restructured + Path Audit (84/84 OK)*
+
+---
+
+## 📌 DUAL COPY — Advertencia Importante
+
+Este proyecto tiene **dos copias** del directorio `01_Personal_Os/`:
+
+| Copia | Ubicación | Scripts | Contenido |
+|-------|-----------|---------|-----------|
+| **A** | `C:\Users\sebas\01_Personal_Os\` | Planos en `05_Scripts/` | Mínimo — solo estructura |
+| **B** (CANÓNICA) | `Desktop\Think_Different\01_Personal_Os\` | En `05_Scripts/00_HUBs/03_Scripts_Os/` | Rico — estructura v5 completa |
+
+- **Regla:** Copy B es la fuente de verdad. Copy A es un mirror plano para scripts.
+- **Env var:** `PERSONAL_OS_ROOT=C:/Users/sebas/Desktop/Think_Different` → apunta a Copy B
+- **Path audit:** 84/84 paths OK en ambas copias (2026-07-03)
+- **⚠️ `04_Operations/`** no existe en ninguna copia — todas las rutas legacy que lo referencian están obsoletas
+- **05_HUB_Catalog.yaml** corregido: todos los paths `04_Operations/→05_Scripts/00_HUBs/` (2026-07-03)
+- **config_paths.py --validate**: 82/82 paths OK, salida JSON disponible
+- **sync_copies.py**: sync B→A con SHA256, backup y dry-run

@@ -75,4 +75,4 @@ python 02_Core/skills/e2b_script.py cleanup <project-id>
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

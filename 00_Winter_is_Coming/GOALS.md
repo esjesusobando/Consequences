@@ -1,6 +1,6 @@
 # Goals & Strategic Direction
 
-_Last updated: June 27, 2026_
+_Last updated: July 3, 2026 — Path audit: 04_Operations resolved, 84/84 OK_
 
 ---
 
@@ -48,7 +48,7 @@ _Last updated: June 27, 2026_
 | #    | Objetivo                                                   | Estado        |
 |-----|-----------------------------------------------------------|--------------|
 | 1    | Integrar 5 skills Hillary Life OS a `18_Personal_Life_OS`  | ✅ 2026-04-02  |
-| 2    | Activar Quick Capture → `03_Tasks/02_Hillary_Inbox/`       | ✅ 2026-04-02  |
+| 2    | Activar Quick Capture → `04_Tasks/02_Hillary_Inbox/`       | ✅ 2026-04-02  |
 | 3    | Workflow orquestador `24_Hillary_Life_OS.md`               | ✅ 2026-04-02  |
 | 4    | Usar Hillary daily para captura de ideas y planificación   | 🔄 En curso    |
 - [ ] Scripts 21, 41, 42, 62, 70: decidir si reserva o permitir gaps

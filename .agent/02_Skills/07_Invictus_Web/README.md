@@ -1,6 +1,6 @@
 # INVICTUS WEB — Area Funcional 07
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Invictus_Web/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/07_Invictus_Web/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 3
 

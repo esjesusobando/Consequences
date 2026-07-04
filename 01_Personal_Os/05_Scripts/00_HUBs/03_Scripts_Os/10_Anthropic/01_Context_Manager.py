@@ -9,8 +9,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -22,9 +22,6 @@ try:
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 except:
     pass
-
-
-
 
 """
 01_Context_Manager.py — Anthropic Context Manager
@@ -48,7 +45,6 @@ from typing import Optional
 # ========================
 # MODEL CONFIGURATION
 # ========================
-
 
 class ModelType(Enum):
     """Tipos de modelo Claude"""
@@ -81,7 +77,6 @@ class ModelType(Enum):
         """¿El modelo muestra context anxiety?"""
         return self.needs_context_reset
 
-
 @dataclass
 class ContextState:
     """Estado del contexto"""
@@ -100,7 +95,6 @@ class ContextState:
     @property
     def should_compact(self) -> bool:
         return 0.50 <= self.usage_percentage < self.threshold_percentage
-
 
 class ContextManager:
     """Gestor de contexto basado en Anthropic patterns"""
@@ -220,7 +214,6 @@ class ContextManager:
         # En ese caso, un evaluator externo ayuda
         return self.state.usage_percentage >= 0.60
 
-
 def run_context_manager(token_count: int = None) -> dict:
     """
     Función principal para ejecutar el Context Manager.
@@ -251,7 +244,6 @@ def run_context_manager(token_count: int = None) -> dict:
 
     # Retornar análisis
     return manager.analyze()
-
 
 if __name__ == "__main__":
     # Demo

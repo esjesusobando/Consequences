@@ -23,13 +23,13 @@ Es la fuente de verdad que TODOS los agentes consultan.
 ## Cómo regenerar
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 ```
 
 ## Cómo validar integridad
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --validate
 ```
 
 ## 🔵 Single Source of Truth
@@ -54,5 +54,5 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --vali
 Corré `--validate` para ver la tabla comparativa entre el manifest y los 4 docs maestros:
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --validate
 ```

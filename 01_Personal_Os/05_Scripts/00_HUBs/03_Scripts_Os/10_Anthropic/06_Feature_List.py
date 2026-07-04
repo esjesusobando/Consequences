@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 Feature List JSON Generator
@@ -27,7 +26,6 @@ import uuid
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, asdict
 
-
 @dataclass
 class Feature:
     """Una feature individual."""
@@ -39,7 +37,6 @@ class Feature:
     passes: bool = False
     priority: str = "medium"
     notes: Optional[str] = None
-
 
 class FeatureListGenerator:
     """
@@ -163,7 +160,6 @@ class FeatureListGenerator:
         """Obtiene features completadas."""
         return [f for f in features if f.passes]
 
-
 class FeatureTracker:
     """
     Tracking de progreso de features a lo largo de múltiples sesiones.
@@ -201,7 +197,6 @@ class FeatureTracker:
             lines.append("")
 
         return "\n".join(lines)
-
 
 # ==================== EJEMPLO ====================
 

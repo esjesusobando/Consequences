@@ -30,12 +30,12 @@ Templates reutilizables para diferentes purposes del sistema. Incluye templates 
 
 ## 📋 TIPOS DE TEMPLATES
 
-| Tipo               | Uso                              |
-| ------------------ | -------------------------------- |
-| Skill Templates    | Para crear nuevas skills         |
-| Agent Templates    | Para crear nuevos agentes        |
-| Workflow Templates | Para crear workflows             |
-| Doc Templates      | Para documentación estandarizada |
+| Tipo                   | Uso                                  |
+|------------------------|--------------------------------------|
+| Skill Templates        | Para crear nuevas skills             |
+| Agent Templates        | Para crear nuevos agentes            |
+| Workflow Templates     | Para crear workflows                 |
+| Doc Templates          | Para documentación estandarizada     |
 
 ---
 

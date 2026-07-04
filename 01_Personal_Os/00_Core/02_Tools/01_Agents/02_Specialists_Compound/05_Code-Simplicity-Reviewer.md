@@ -33,7 +33,7 @@ When reviewing code, you will:
    - Eliminate extensibility points without clear use cases
    - Question generic solutions for specific problems
    - Remove "just in case" code
-   - Never flag `04_Operations/05_Plans/*.md` or `04_Operations/06_Solutions/*.md` for removal — these are compound-engineering pipeline artifacts created by `/workflows:plan` and used as living documents by `/workflows:work`
+   - Never flag `01_Memory/00_Context_LLM/05_Plans/*.md` or `01_Memory/00_Context_LLM/06_Solutions/*.md` for removal — these are compound-engineering pipeline artifacts created by `/workflows:plan` and used as living documents by `/workflows:work`
 
 6. **Optimize for Readability**:
    - Prefer self-documenting code over comments

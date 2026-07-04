@@ -82,7 +82,7 @@
 
 ```bash
 # Validar sistema completo
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --validate
 
 # Ver manifest
 cat 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/README.md
@@ -94,7 +94,7 @@ cat 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/README.md
 ## 🧠 Notas
 
 - Las áreas reflejan la estructura actual en disco (15 áreas activas)
-- Los scripts HUB están en `01_Personal_Os/04_Operations/03_Scripts_Os/`
+- Los scripts HUB están en `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`
 - Esta carpeta **NO** es la de skills OpenCode — esas están en `.config/opencode/skills/`
 
 ---

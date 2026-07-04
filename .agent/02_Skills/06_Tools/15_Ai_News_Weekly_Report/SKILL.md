@@ -29,7 +29,7 @@ Create a current AI-news intelligence package for the last week, with:
    - Use the bundled script for deterministic scaffolding:
 
    ```powershell
-   python 01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/23_Ai_News_Weekly_Report/scripts/generate_ai_news_weekly_report.py --days 7
+   python 01_Personal_Os/00_Core/02_Tools/02_Skills/06_Tools/23_Ai_News_Weekly_Report/scripts/generate_ai_news_weekly_report.py --days 7
    ```
 
    - The script automatically creates the next sequential folder:

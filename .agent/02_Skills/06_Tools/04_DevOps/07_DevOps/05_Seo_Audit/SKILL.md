@@ -667,4 +667,4 @@ curl "https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=CrUX_API_
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

@@ -49,7 +49,7 @@ metadata:
 
 Tracking de PRs en:
 - GitHub (remote)
-- `04_Operations/03_Progress/` — Estado de features en curso
+- `05_Scripts/03_Progress/` — Estado de features en curso
 
 ## When to Use
 

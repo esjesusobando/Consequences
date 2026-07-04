@@ -9,8 +9,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -22,7 +22,6 @@ try:
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 except:
     pass
-
 
 """
 00_Safety_Wrapper.py — Anthropic Harness Safety System
@@ -42,7 +41,6 @@ from datetime import datetime
 # ========================
 # CONFIGURATION
 # ========================
-
 
 class SafetyConfig:
     """Configuración del Safety Wrapper"""
@@ -77,7 +75,6 @@ class SafetyConfig:
 
     # Log file
     LOG_FILE = ".claude/logs/harness_safety.log"
-
 
 class SafetyResult:
     """Resultado de la validación de seguridad"""
@@ -132,7 +129,6 @@ class SafetyResult:
 
         lines.append(f"\n{'=' * 60}")
         return "\n".join(lines)
-
 
 class SafetyWrapper:
     """Safety Wrapper principal"""
@@ -338,7 +334,6 @@ class SafetyWrapper:
         print("\n✅ SAFETY CHECK PASSED - PROCEEDING")
         return True
 
-
 def run_safety_check(script_name: str = None, context: dict = None) -> bool:
     """
     Función principal para ejecutar el safety check.
@@ -358,7 +353,6 @@ def run_safety_check(script_name: str = None, context: dict = None) -> bool:
 
     wrapper = SafetyWrapper()
     return wrapper.validate_and_proceed(context, auto_continue=False)
-
 
 if __name__ == "__main__":
     # Si se ejecuta directamente, hacer check completo

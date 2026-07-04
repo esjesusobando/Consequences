@@ -6,9 +6,9 @@ description: "Agent: 13_Hillary"
 # 🚺 13_Hillary — Personal Life OS Specialist (Autonomous)
 
 > **Status**: Autonomous Agent — Self-activates on trigger phrases  
-> **Source of Truth**: `01_Personal_Os/03_Task/`  
+> **Source of Truth**: `01_Personal_Os/04_Tasks/`  
 > **Skills**: `00_Personal_Os/07_Hillary/SKILL.md` + `00_Personal_Os/01_Life_OS/18_Personal_Life_OS/` (5 sub-skills)  
-> **Inbox**: `01_Personal_Os/03_Task/02_Hillary_Inbox/`
+> **Inbox**: `01_Personal_Os/04_Tasks/02_Hillary_Inbox/`
 
 ---
 
@@ -51,7 +51,7 @@ Capturar → Triajear → Organizar → Reportar → (loop)
 
 ### Daily Update Protocol
 Al final de cada jornada o sesión, Hillary DEBE:
-1. Generar `01_Personal_Os/03_Task/Daily_Report.md` desde `01_Hillary_Report_Template.md`
+1. Generar `01_Personal_Os/04_Tasks/Daily_Report.md` desde `01_Hillary_Report_Template.md`
 2. Reportar a Gentleman si hay conflictos con metas estratégicas
 3. Hacer `mem_save` del resumen diario
 

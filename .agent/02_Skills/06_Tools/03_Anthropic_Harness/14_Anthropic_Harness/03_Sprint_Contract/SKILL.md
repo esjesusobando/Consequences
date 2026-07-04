@@ -55,7 +55,7 @@ Implementa el patrón de Sprint Contract de Anthropic:
 Usa `03_Sprint_Contract.py`:
 
 ```python
-from 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract import run_sprint_contract
+from 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract import run_sprint_contract
 
 # Crear contrato
 contract = run_sprint_contract(
@@ -137,8 +137,8 @@ Status: AGREED
 
 ## Referencias
 
-- Artículo: `01_Core/02_Knowledge_Brain/10_Anthropic_Harness_Design.md`
-- Script: `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`
+- Artículo: `00_Core/02_Knowledge_Brain/10_Anthropic_Harness_Design.md`
+- Script: `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`
 
 ---
 

@@ -19,7 +19,7 @@ Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
 Antes de responder, leer en este orden:
 
 ### 1. Reglas de Sesión
-   - Leer `01_Personal_Os/01_Core/01_Rules/` — cualquier regla con `alwaysApply: true`
+   - Leer `01_Personal_Os/00_Core/01_Rules/` — cualquier regla con `alwaysApply: true`
    - Especial atención a: `00_Core_Protocol.mdc`, `06_Contexto_Gestion.mdc`, `09_Agent_Teams_Protocol.mdc`
 
 ### 2. Memoria Persistente (Engram)
@@ -30,12 +30,12 @@ Antes de responder, leer en este orden:
 ### 3. Estado Estratégico
    - Leer `00_Winter_is_Coming/GOALS.md` — Metas y prioridades
    - Leer `00_Winter_is_Coming/BACKLOG.md` — Bandeja de entrada
-   - Leer `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/` — notas de proceso recientes
+   - Leer `01_Personal_Os/01_Memory/00_Context_LLM/01_Process_Notes/` — notas de proceso recientes
    - Leer `OS_DIRECTORY.md` (raíz) — Mapa JARVIS del sistema
 
 ### 4. Estado de Tareas
-   - Leer `01_Personal_Os/03_Task/` — identificar tareas `status: s` (en progreso) y `status: b` (bloqueadas)
-   - Buscar SDDs activos en `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/`
+   - Leer `01_Personal_Os/04_Tasks/` — identificar tareas `status: s` (en progreso) y `status: b` (bloqueadas)
+   - Buscar SDDs activos en `01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/`
 
 ### 5. Archivos Raíz de Config
    - `CLAUDE.md` — Config de IA
@@ -49,7 +49,7 @@ Antes de responder, leer en este orden:
 Think_Different/
 ├── 00_Winter_is_Coming/          # ESTRATÉGICO: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
-│   ├── 01_Core/                  # MOTOR DEL OS
+│   ├── 00_Core/                  # MOTOR DEL OS
 │   │   ├── 00_Workflows_Os/     # 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 13 reglas .mdc (00-12)
 │   │   └── 02_Tools/
@@ -63,8 +63,8 @@ Think_Different/
 │   │       ├── 08_Evals/        # Evaluadores
 │   │       └── 09_Templates/    # Templates
 │   ├── 02_Knowledge/            # Base de conocimiento
-│   ├── 03_Task/                 # Tareas activas (18+ tareas P0-P3)
-│   └── 04_Operations/           # MOTOR OPERATIVO
+│   ├── 04_Tasks/                 # Tareas activas (18+ tareas P0-P3)
+│   └── 05_Scripts/           # MOTOR OPERATIVO
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
@@ -75,7 +75,7 @@ Think_Different/
 │       └── 07_Reports/          # Reportes consolidados (10_Reports eliminado en v4.7)
 ├── 02_Playground/               # Zona de pruebas
 ├── 03_Resultado/                # Outputs de proyectos
-├── .agent/                      # Backup estratégico (sync con 01_Core/)
+├── .agent/                      # Backup estratégico (sync con 00_Core/)
 ├── .atl/                        # SDD Registry + openspec/
 ├── .claude/                     # Config Claude Code + rules
 ├── .mcp.json                    # 7+38 MCPs activos
@@ -90,12 +90,12 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 394)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
-| **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
-| **Agentes** (82)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (21+2)                | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **Skills** (12 áreas, 394)    | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Reglas** (13 .mdc)           | `01_Personal_Os/00_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
+| **Agentes** (82)               | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
+| **HUBs** (21+2)                | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`                             | Operaciones de sistema                    |
 | **MCPs** (8+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
-| **Hooks** (12)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
+| **Hooks** (12)                 | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
 | **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
@@ -106,19 +106,19 @@ Think_Different/
 
 ```bash
 # Regenerar 7 manifests JARVIS
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 
 # Health check del sistema
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Watchdog_Hub.py
 
 # Dashboard de métricas ASCII
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
 
 # Detectar drift MCP Claude ↔ OpenCode
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 # Sync .agent ↔ 01_Core
-python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/19_Agent_Sync_Hub.py
 ```
 
 ---
@@ -149,13 +149,13 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ```bash
 # Al completar cada tarea en TodoWrite
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-complete
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --task-complete
 
 # Logro importante
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --success
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --success
 
 # Error
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --error
 ```
 
 ---
@@ -204,8 +204,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 - [ ] `engram_mem_context()` — memoria reciente
 - [ ] `00_Winter_is_Coming/GOALS.md` — metas activas
 - [ ] `00_Winter_is_Coming/BACKLOG.md` — items pendientes
-- [ ] `01_Personal_Os/01_Core/01_Rules/` — reglas activas
-- [ ] `01_Personal_Os/03_Task/` — tareas en progreso/bloqueadas
+- [ ] `01_Personal_Os/00_Core/01_Rules/` — reglas activas
+- [ ] `01_Personal_Os/04_Tasks/` — tareas en progreso/bloqueadas
 - [ ] `.atl/skill-registry.md` — compact rules (si hay SDD)
 - [ ] Reportar resumen al chat antes de actuar
 

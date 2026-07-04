@@ -1,0 +1,93 @@
+{
+  "version": "v4.9",
+  "generated": "2026-07-03T00:32:10",
+  "source": "20_System_Mapper_Hub.py --scan",
+  "personal_os": {
+    "name": "PersonalOS",
+    "version": "v4.9 Consequences",
+    "root": "Think_Different"
+  },
+  "totals": {
+    "mcps_claude": 11,
+    "mcps_opencode": 45,
+    "skills": 396,
+    "skill_areas": 15,
+    "agents_source": 63,
+    "agents_backup": 72,
+    "hubs": 45,
+    "scripts": 111,
+    "workflows": 28,
+    "workflow_categories": 6,
+    "hooks": 10,
+    "hook_phases": 6,
+    "rules": 14,
+    "integrations": 2
+  },
+  "agents": {
+    "definition": "archivos .md en 00_Core/02_Tools/01_Agents/ (excluye README, templates, references)",
+    "source_count": 63,
+    "backup_count": 72,
+    "total_operational": 63,
+    "by_category": {
+      "atl_gen": 3,
+      "dream_team": 6,
+      "growth": 5,
+      "individual": 0,
+      "os_conductor": 1,
+      "other": 0,
+      "root": 25,
+      "specialists": 23
+    },
+    "drift": 9
+  },
+  "hubs": {
+    "definition_hub": "scripts en 03_Scripts_Os/ (raiz numerados + subdirectorios funcionales)",
+    "hubs": 45,
+    "hubs_scripts_raiz": 36,
+    "hubs_directorios": 9,
+    "hubs_numerados": 36,
+    "hubs_con_interfaz": 35,
+    "scripts_totales": 147,
+    "scripts_no_hub": 111
+  },
+  "skills_totals": {
+    "total": 396,
+    "areas": 15,
+    "per_area": {
+      "00_Agent_Teams_Lite": 14,
+      "00_Compound_Engineering": 63,
+      "00_Personal_Os": 24,
+      "00_Skill_Auditor": 1,
+      "00_System_Core": 1,
+      "00_Workflows": 39,
+      "01_Creacion_Contenidos": 52,
+      "02_Diseno_Ui_Ux": 34,
+      "03_Video_Media": 11,
+      "04_Automatizacion": 27,
+      "05_Claude_Ads": 21,
+      "06_Tools": 83,
+      "07_Invictus_Web": 18,
+      "08_JAO": 7,
+      "10_Laia_Learning": 1
+    }
+  },
+  "integrations": [
+    "01_Fireflies",
+    "02_Granola"
+  ],
+  "doc_reference_paths": {
+    "os_directory": "OS_DIRECTORY.md",
+    "claude_md": "CLAUDE.md",
+    "agents_md": "00_Winter_is_Coming/AGENTS.md",
+    "readme_md": "README.md"
+  },
+  "manifest_files": [
+    "01_OS_Inventory.json",
+    "02_MCP_Registry.yaml",
+    "03_Agent_Catalog.yaml",
+    "04_Skill_Index.json",
+    "05_HUB_Catalog.yaml",
+    "06_Workflow_Graph.yaml",
+    "07_Hook_Registry.yaml"
+  ]
+}

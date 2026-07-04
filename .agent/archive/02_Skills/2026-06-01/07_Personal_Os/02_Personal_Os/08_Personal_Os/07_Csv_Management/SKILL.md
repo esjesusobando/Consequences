@@ -74,4 +74,4 @@ _Task_: "Update price of item 'X' to 20 in inventory.csv"
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado
+- `05_Scripts/` — Estado

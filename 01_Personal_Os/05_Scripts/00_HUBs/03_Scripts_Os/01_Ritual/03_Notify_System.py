@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -19,7 +19,6 @@ import winsound
 import json
 import os
 import time
-
 
 def get_config_path():
     """Obtiene la ruta del config desde varias ubicaciones posibles"""
@@ -44,9 +43,7 @@ def get_config_path():
 
     return None
 
-
 CONFIG_PATH = get_config_path()
-
 
 def play_sound():
     if CONFIG_PATH and os.path.exists(CONFIG_PATH):
@@ -65,7 +62,6 @@ def play_sound():
     else:
         # Default
         winsound.Beep(440, 300)
-
 
 if __name__ == "__main__":
     play_sound()

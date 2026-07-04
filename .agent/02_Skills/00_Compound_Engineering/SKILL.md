@@ -22,7 +22,7 @@ Sistema de capitalización de conocimiento - documenta soluciones para que el eq
 
 1. **Detectar**: Problema resuelto recientemente
 2. **Documentar**: Escribir la solución
-3. **Categorizar**: Guardar en 04_Operations/06_Solutions/
+3. **Categorizar**: Guardar en 01_Memory/00_Context_LLM/06_Solutions/
 4. **Vincular**: Relacionar con issues existentes
 
 ## Categorías de Soluciones
@@ -39,7 +39,7 @@ Sistema de capitalización de conocimiento - documenta soluciones para que el eq
 
 ## ⚠️ Gotchas
 
-- **Sin categoría válida**: Si guardas en categoría que no existe, el script falla. Solución: Crear la carpeta primero en `04_Operations/06_Solutions/`
+- **Sin categoría válida**: Si guardas en categoría que no existe, el script falla. Solución: Crear la carpeta primero en `01_Memory/00_Context_LLM/06_Solutions/`
 - **Documentación vacía**: Si documentas sin contexto (qué problema, por qué, cómo), la knowledge no es reutilizable. Solución: Always follow the template: "What → Why → How → Learned"
 - **Duplicados**: Si guardas la misma solución dos veces, pierdes trazabilidad. Solución: Buscar antes de crear nuevo documento
 - **Sin vínculo a issues**: Si no vinculas con el issue original, no hay trazabilidad. Solución: Incluir referencia al issue/PR en el documento

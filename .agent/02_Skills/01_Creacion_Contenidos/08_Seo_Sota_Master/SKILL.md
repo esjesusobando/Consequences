@@ -693,7 +693,7 @@ This skill makes you a **Silicon Valley-grade SEO expert**:
 ## 💾 State Persistence
 
 > **Qué persists**: Datos de auditorías, reportes, configuraciones de proyectos SEO, cohortes de páginas.
-> **Dónde**: `01_Personal_Os/04_Operations/03_Scripts_Os/` + exports del skill.
+> **Dónde**: `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` + exports del skill.
 > **Cuándo restore**: Al retomar un proyecto SEO, restaurar la data de Search Console, cohortes, y estado del audit.
 > **Formato**: CSV/JSON con rankings, tráfico, y métricas segmentadas.
 

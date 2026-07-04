@@ -72,11 +72,11 @@ Use **AskUserQuestion tool** to ask which approach the user prefers.
 
 ### Phase 3: Capture the Design
 
-Write a brainstorm document to `04_Operations/07_Brain_Storming/YYYY-MM-DD_<topic>_brainstorm.md`.
+Write a brainstorm document to `05_Scripts/07_Brain_Storming/YYYY-MM-DD_<topic>_brainstorm.md`.
 
 **Document structure:** See the `brainstorming` skill for the template format. Key sections: What We're Building, Why This Approach, Key Decisions, Open Questions.
 
-Ensure `04_Operations/07_Brain_Storming/` directory exists before writing.
+Ensure `05_Scripts/07_Brain_Storming/` directory exists before writing.
 
 ### Phase 4: Handoff
 
@@ -96,7 +96,7 @@ When complete, display:
 ```
 Brainstorm complete!
 
-Document: 04_Operations/07_Brain_Storming/YYYY-MM-DD_<topic>_brainstorm.md
+Document: 05_Scripts/07_Brain_Storming/YYYY-MM-DD_<topic>_brainstorm.md
 
 Key decisions:
 - [Decision 1]

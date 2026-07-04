@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -38,7 +38,6 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
-
 def dynamic_speak(text):
     """Interfaz de Voz SOTA v2.2"""
     print(f"{Fore.MAGENTA}🔊 [VOICE]: {text}{Style.RESET_ALL}")
@@ -50,7 +49,6 @@ def dynamic_speak(text):
             )
         except:
             pass
-
 
 def print_banner():
     banner = rf"""
@@ -69,9 +67,7 @@ def print_banner():
 """
     print(banner)
 
-
 ROOT_DIR = PROJECT_ROOT
-
 
 class AIPMConsolidatedReport:
     """
@@ -552,7 +548,6 @@ El resultado: el presupuesto cayó a {budget.get("current_usage", 0):,} tokens, 
 
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(md_content)
-
 
 if __name__ == "__main__":
     reporter = AIPMConsolidatedReport()

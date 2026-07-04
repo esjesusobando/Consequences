@@ -45,5 +45,5 @@ Detector → Analyzer → Executor → Learner
 
 ## Links
 
-- Auto_Improvement README: `04_Operations/01_Auto_Improvement/README.md`
+- Auto_Improvement README: `03_Learning/01_Auto_Improvement/README.md`
 - Evals integration: `08_Evals/` — evaluaciones retroalimentan al Learner

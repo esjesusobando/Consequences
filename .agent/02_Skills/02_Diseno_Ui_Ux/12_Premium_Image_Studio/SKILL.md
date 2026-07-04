@@ -35,7 +35,7 @@ El estudio no usa prompts simples. Construye comandos detallados que incluyen:
 - Texturas macro y materiales premium (carbono, vidrio esmerilado).
 
 ### 3. Orquestación de Motores (Engine Integration)
-- Usa `01_Personal_Os/04_Operations/03_Scripts_Os/18_Generacion_Contenido.py` para el contexto creativo.
+- Usa `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Generacion_Contenido.py` para el contexto creativo.
 - Integra `02_High_Value/15_Dieter_Rams_Design` para auditoría de diseño.
 - Aplica `03_Utilities/08_Managing_Image_Assets` para:
   - Catalogación en `assets/images/`.

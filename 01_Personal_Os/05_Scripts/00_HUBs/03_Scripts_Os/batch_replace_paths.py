@@ -27,7 +27,7 @@ OS_ROOT = ROOT / "01_Personal_Os"
 
 # Excluded directories (never touch these)
 EXCLUDED_DIRS = {
-    ".git", "node_modules", ".agent", "07_Archive", 
+    ".git", "node_modules", "07_Archive", 
     ".backup", "13_Legacy", "04_Testing_Legacy"
 }
 
@@ -36,7 +36,14 @@ EXCLUDED_DIRS = {
 REPLACEMENTS: List[Tuple[str, str]] = [
     # Full pathlib path segments (with slash)
     ("04_Operations/03_Scripts_Os/", "05_Scripts/00_HUBs/03_Scripts_Os/"),
-    ("04_Operations/", "05_Scripts/"),
+    ("04_Operations/02_Tasks/", "04_Tasks/"),
+    ("04_Operations/02_Tasks", "04_Tasks"),  # no trailing slash
+    ("04_Operations/06_Solutions/", "01_Memory/00_Context_LLM/06_Solutions/"),
+    ("04_Operations/05_Plans/", "01_Memory/00_Context_LLM/05_Plans/"),
+    ("04_Operations/05_Projects/", "06_Projects/"),
+    ("04_Operations/00_Context_LLM/", "01_Memory/00_Context_LLM/"),
+    ("04_Operations/01_Auto_Improvement/", "03_Learning/01_Auto_Improvement/"),
+    ("04_Operations/", "05_Scripts/"),  # generic fallback — keep LAST for 04_Operations/*
     ("01_Core/", "00_Core/"),
     ("03_Task/", "04_Tasks/"),
     
@@ -71,8 +78,11 @@ REPLACEMENTS: List[Tuple[str, str]] = [
     ("00_Core/00_Workflows_Os", "00_Core/00_Workflows"),
     ("04_Operations/03_Scripts_Os", "05_Scripts/00_HUBs/03_Scripts_Os"),
     ("04_Operations/02_Agent_Teams", "05_Scripts/02_Agent_Teams"),
-    ("04_Operations/01_Auto_Improvement", "05_Scripts/01_Auto_Improvement"),
-    ("04_Operations/00_Context_LLM", "05_Scripts/00_Context_LLM"),
+    ("04_Operations/06_Solutions", "01_Memory/00_Context_LLM/06_Solutions"),
+    ("04_Operations/05_Plans", "01_Memory/00_Context_LLM/05_Plans"),
+    ("04_Operations/05_Projects", "06_Projects"),
+    ("04_Operations/00_Context_LLM", "01_Memory/00_Context_LLM"),
+    ("04_Operations/01_Auto_Improvement", "03_Learning/01_Auto_Improvement"),
     ("03_Task/", "04_Tasks/"),
 ]
 
@@ -114,6 +124,27 @@ CATEGORIES: Dict[str, Dict] = {
     "auto-improvement": {
         "globs": ["03_Learning/01_Auto_Improvement/**/*.py"],
         "description": "Auto-improvement engine"
+    },
+    "agents": {
+        "globs": ["00_Core/02_Tools/01_Agents/**/*.md"],
+        "description": "Agent definition files"
+    },
+    "core-docs": {
+        "globs": [
+            "00_Core/README.md",
+            "00_Core/02_Tools/README.md",
+            "00_Core/02_Tools/00_SDD/**/*.md",
+            "00_Core/02_Tools/06_Plugins/**/*.md",
+            "00_Core/02_Tools/03_Mcp/**/*.md",
+            "00_Core/02_Tools/04_Integrations/**/*.md",
+            "00_Core/02_Tools/08_Evals/**/*.md",
+            "00_Core/01_Inventario_Core.md",
+        ],
+        "description": "Core documentation files"
+    },
+    "agent-backup": {
+        "globs": [".agent/**/*.md"],
+        "description": "Agent backup files (.agent/)"
     },
     "workflows": {
         "globs": [

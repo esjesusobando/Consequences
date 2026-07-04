@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -45,7 +45,6 @@ REQUIRED_DIRS = [
 for d in REQUIRED_DIRS:
     if not (PROJECT_ROOT / d).exists():
         print(f"[WARN] Required directory not found: {d}")
-
 
 class MCPSynchronizer:
     def __init__(self):
@@ -249,7 +248,6 @@ class MCPSynchronizer:
 
         print("=" * 60)
         return success
-
 
 if __name__ == "__main__":
     synchronizer = MCPSynchronizer()

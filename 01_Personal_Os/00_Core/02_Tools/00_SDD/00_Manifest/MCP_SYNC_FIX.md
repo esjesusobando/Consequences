@@ -53,7 +53,7 @@ Para usar una config local, crear `opencode.local.json` en raíz con los MCPs ad
 ## Script de Verificación
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 ```
 
 ---

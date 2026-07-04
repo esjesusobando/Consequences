@@ -1,6 +1,6 @@
 # CREACION DE CONTENIDOS — Area Funcional 01
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 21
 

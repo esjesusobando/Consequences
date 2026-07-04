@@ -11,7 +11,7 @@ Actualiza enlaces del sistema.
 ## Usage
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/12_Update_Links.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/Ritual_Fixed/12_Update_Links.py
 ```
 
 ---

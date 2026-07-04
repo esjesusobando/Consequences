@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -18,7 +18,6 @@ from config_paths import *
 import datetime
 import os
 import json
-
 
 def get_obsidian_path():
     """Obtiene la ruta del vault desde config.json"""
@@ -42,7 +41,6 @@ def get_obsidian_path():
                 pass
 
     return None
-
 
 def export_to_obsidian(content):
     """Escribe el reporte directamente en el Vault de Obsidian."""
@@ -72,7 +70,6 @@ def export_to_obsidian(content):
     except Exception as e:
         print(f"[ERR] Fallo al escribir en Obsidian: {e}")
         return False
-
 
 if __name__ == "__main__":
     report_path = "02_Operations/03_Progress/2026-03-15_Resumen_Operativo.md"

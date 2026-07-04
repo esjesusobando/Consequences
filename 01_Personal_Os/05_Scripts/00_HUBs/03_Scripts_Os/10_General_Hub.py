@@ -24,8 +24,8 @@ from pathlib import Path
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -48,7 +48,6 @@ if sys.platform == "win32":
 import argparse
 import subprocess
 
-
 def print_banner():
     banner = rf"""
 {Fore.WHITE}    ###########################################################################
@@ -66,10 +65,8 @@ def print_banner():
 """
     print(banner)
 
-
 def dynamic_speak(text):
     print(f"{Fore.MAGENTA}🔊 [VOICE]: {text}{Style.RESET_ALL}")
-
 
 def run_script(script_name):
     # Los scripts Generales están en 01_Ritual (renombrados de legacy)
@@ -83,7 +80,6 @@ def run_script(script_name):
 
     print(f"{Fore.YELLOW}[RUNNING] Ejecutando: {script_name}...{Style.RESET_ALL}")
     subprocess.run([sys.executable, str(script_path)])
-
 
 def main():
     print_banner()
@@ -125,7 +121,6 @@ def main():
         run_script(cmd_map[args.command])
     else:
         parser.print_help()
-
 
 if __name__ == "__main__":
     main()

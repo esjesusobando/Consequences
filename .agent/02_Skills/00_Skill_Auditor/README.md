@@ -1,6 +1,6 @@
 # SKILL AUDITOR — Area Funcional 00
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Skill_Auditor/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 1
 

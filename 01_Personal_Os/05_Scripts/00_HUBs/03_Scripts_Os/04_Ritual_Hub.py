@@ -15,12 +15,11 @@ import sys
 import subprocess
 from pathlib import Path
 
-
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -39,14 +38,12 @@ except ImportError:
     class Style:
         RESET_ALL = ""
 
-
 # Fix Windows console encoding
 if sys.platform == "win32":
     import io
 
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
-
 
 def print_banner():
     banner = rf"""
@@ -65,7 +62,6 @@ def print_banner():
 """
     print(banner)
 
-
 def dynamic_speak(text):
     """Interfaz de Voz SOTA v2.2"""
     print(f"{Fore.MAGENTA}🔊 [VOICE]: {text}{Style.RESET_ALL}")
@@ -77,7 +73,6 @@ def dynamic_speak(text):
             )
         except:
             pass
-
 
 def run_script(script_name, script_subdir="01_Ritual"):
     """Ejecuta un script de ritual - usa get_skill_script() si está en el mapa."""
@@ -106,7 +101,6 @@ def run_script(script_name, script_subdir="01_Ritual"):
         print(result.stdout)
     if result.stderr:
         print(f"{Fore.RED}[STDERR] {result.stderr}{Style.RESET_ALL}")
-
 
 def main():
     print_banner()
@@ -157,7 +151,6 @@ def main():
             dynamic_speak(f"Script no encontrado: {cmd_map[command]}")
     else:
         parser.print_help()
-
 
 if __name__ == "__main__":
     main()

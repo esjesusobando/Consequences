@@ -1,6 +1,6 @@
 # VIDEO & MEDIA — Area Funcional 03
 
-> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/`
+> **Ubicacion:** `01_Personal_Os/00_Core/02_Tools/02_Skills/03_Video_Media/`
 > **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 2
 

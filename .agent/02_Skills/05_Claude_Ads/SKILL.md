@@ -12,4 +12,4 @@ alwaysApply: false
 ## Propósito
 Gestión de publicidad y campañas de marketing usando Claude.
 
-**Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Claude_Ads/`
+**Source of Truth:** `01_Personal_Os/00_Core/02_Tools/02_Skills/05_Claude_Ads/`

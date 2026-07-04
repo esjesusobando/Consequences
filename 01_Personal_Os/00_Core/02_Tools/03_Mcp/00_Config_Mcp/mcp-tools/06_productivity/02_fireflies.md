@@ -66,7 +66,7 @@
 ### Sync Script
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/fireflies_sync.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/fireflies_sync.py
 ```
 
 ---
@@ -95,7 +95,7 @@ What were the action items from my meetings this week?
 | File                                               | Location                                                        | Purpose                                      |
 |---------------------------------------------------|----------------------------------------------------------------|---------------------------------------------|
 | `YYYY-MM-DD_Title.md`                              | `03_Knowledge/Transcripts/`                                     | Full transcript                              |
-| `action_items.json`                                | `04_Operations/00_Context_Memory/`                              | Extracted tasks                              |
+| `action_items.json`                                | `05_Scripts/00_Context_Memory/`                              | Extracted tasks                              |
 
 ---
 

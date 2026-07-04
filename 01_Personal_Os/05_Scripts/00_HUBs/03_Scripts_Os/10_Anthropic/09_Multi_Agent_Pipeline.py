@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 Multi-Agent Roles Workflow
@@ -29,7 +28,6 @@ from enum import Enum
 from datetime import datetime
 import json
 
-
 class AgentRole(Enum):
     """Roles disponibles para agentes."""
 
@@ -41,7 +39,6 @@ class AgentRole(Enum):
     SECURITY = "security"  # Seguridad
     ARCHITECT = "architect"  # Diseño de arquitectura
 
-
 @dataclass
 class AgentSpec:
     """Especificación de un agente."""
@@ -52,7 +49,6 @@ class AgentSpec:
     capabilities: List[str] = field(default_factory=list)
     max_retries: int = 3
     timeout_seconds: int = 300
-
 
 @dataclass
 class TaskResult:
@@ -66,7 +62,6 @@ class TaskResult:
     error: Optional[str] = None
     duration_seconds: float = 0.0
     metadata: Dict[str, Any] = field(default_factory=dict)
-
 
 class MultiAgentPipeline:
     """
@@ -244,9 +239,7 @@ class MultiAgentPipeline:
 
         return "\n".join(lines)
 
-
 # ==================== BUILDER ====================
-
 
 class PipelineBuilder:
     """Builder para crear pipelines fácilmente."""
@@ -345,9 +338,7 @@ class PipelineBuilder:
         """Construye el pipeline."""
         return self.pipeline
 
-
 # ==================== TESTS ====================
-
 
 def test_pipeline_creation():
     """Test creación de pipeline."""
@@ -368,7 +359,6 @@ def test_pipeline_creation():
     assert len(pipeline.pipeline_steps) == 2
     assert any("generator" in step and "qa" in step for step in pipeline.pipeline_steps)
 
-
 def test_pipeline_execution():
     """Test ejecución de pipeline."""
     pipeline = (
@@ -388,7 +378,6 @@ def test_pipeline_execution():
     assert len(results) >= 1  # At least one agent should run
     assert results[0].role == AgentRole.GENERATOR
 
-
 def test_yaml_export():
     """Test exportación YAML."""
     pipeline = PipelineBuilder("export-test").with_generator().with_qa().build()
@@ -398,7 +387,6 @@ def test_yaml_export():
     assert "export-test" in yaml
     assert "generator" in yaml
     assert "qa" in yaml
-
 
 def test_pipeline_status():
     """Test estado del pipeline."""
@@ -416,7 +404,6 @@ def test_pipeline_status():
 
     assert status["total_agents"] == 3
     assert status["total_steps"] == 2
-
 
 if __name__ == "__main__":
     print("=" * 60)

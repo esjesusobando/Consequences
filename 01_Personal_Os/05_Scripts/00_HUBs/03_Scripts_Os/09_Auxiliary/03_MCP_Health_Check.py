@@ -12,8 +12,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -38,7 +38,6 @@ init(autoreset=True)
 
 ROOT_DIR = PROJECT_ROOT
 
-
 def get_mcp_file_path():
     """Obtiene la ruta del archivo mcp.json con fallback legacy"""
     new_path = ROOT_DIR / ".claude" / "mcp.json"
@@ -49,7 +48,6 @@ def get_mcp_file_path():
         return legacy_path
     return new_path
 
-
 MCP_FILE = get_mcp_file_path()
 
 # Check ports para MCPs locales comunes
@@ -57,7 +55,6 @@ LOCAL_PORTS = {
     "obsidian-api": 27124,
     "eagle-mcp": 41596,
 }
-
 
 def check_port(host, port):
     """Check if port is open"""
@@ -70,12 +67,10 @@ def check_port(host, port):
     except:
         return False
 
-
 def load_mcp_config():
     """Carga configuración de MCPs"""
     with open(MCP_FILE, encoding="utf-8") as f:
         return json.load(f)["mcpServers"]
-
 
 def check_npx():
     """Check if npx is available (tries npx and npx.cmd for Windows)"""
@@ -98,7 +93,6 @@ def check_npx():
         pass
 
     return False
-
 
 def check_mcp(name, config, npx_available):
     """Check individual MCP"""
@@ -176,7 +170,6 @@ def check_mcp(name, config, npx_available):
 
     return status, detail, color
 
-
 def main():
     print(f"{Style.BRIGHT}{'=' * 60}")
     print(f"MCP Health Check")
@@ -226,7 +219,6 @@ def main():
         f"\n{Fore.YELLOW}Note: Open Cursor/OpenCode and type '@' to verify actual active tools."
     )
     print(f"      Some MCPs may show 'READY' here but fail to load in the client.")
-
 
 if __name__ == "__main__":
     main()

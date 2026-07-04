@@ -24,12 +24,12 @@ python run_evals.py --dashboard
 
 ## Metrics Explained
 
-| Metric               | What It Measures                    | Target                             |
-| -------------------- | ----------------------------------- | ---------------------------------- |
-| **response_time**    | Seconds to complete task            | < 5s for simple, < 10s for complex |
-| **token_usage**      | Tokens consumed (input + output)    | < 3000 for complex tasks           |
-| **context_accuracy** | % of relevant context loaded        | > 80%                              |
-| **task_completion**  | Binary: task completed successfully | 1.0 (100%)                         |
+| Metric                   | What It Measures                        | Target                                 |
+|--------------------------|-----------------------------------------|----------------------------------------|
+| **response_time**        | Seconds to complete task                | < 5s for simple, < 10s for complex     |
+| **token_usage**          | Tokens consumed (input + output)        | < 3000 for complex tasks               |
+| **context_accuracy**     | % of relevant context loaded            | > 80%                                  |
+| **task_completion**      | Binary: task completed successfully     | 1.0 (100%)                             |
 
 ### Overall Score Formula
 
@@ -68,13 +68,13 @@ Weights: Task completion (40%), Context accuracy (30%), Response time (20%), Tok
 ```
 
 ### 3. Required Fields
-| Field             | Purpose                      |
-| ----------------- | ---------------------------- |
-| `id`              | Unique identifier (agent_NN) |
-| `name`            | Human-readable name          |
-| `input`           | Data fed to agent            |
-| `expected_output` | Criteria for success         |
-| `metrics`         | Target thresholds            |
+| Field                 | Purpose                          |
+|-----------------------|----------------------------------|
+| `id`                  | Unique identifier (agent_NN)     |
+| `name`                | Human-readable name              |
+| `input`               | Data fed to agent                |
+| `expected_output`     | Criteria for success             |
+| `metrics`             | Target thresholds                |
 
 ---
 

@@ -356,4 +356,4 @@ python -m rtm compliance --standard=ISO26262 --output=compliance.pdf
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

@@ -8,8 +8,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -52,7 +52,6 @@ if sys.stdout.encoding != "utf-8":
 # CONFIGURACIÓN
 # ============================================================
 
-
 class AlertLevel(Enum):
     """Niveles de severidad de alertas."""
 
@@ -60,7 +59,6 @@ class AlertLevel(Enum):
     WARNING = 1
     ERROR = 2
     CRITICAL = 3
-
 
 # Paths
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -80,7 +78,6 @@ COLORS = {
 # CARGAR CONFIGURACIÓN
 # ============================================================
 
-
 def load_config() -> Dict:
     """Carga configuración de alertas."""
     default_config = {
@@ -99,18 +96,15 @@ def load_config() -> Dict:
             return default_config
     return default_config
 
-
 def save_config(config: Dict) -> None:
     """Guarda configuración de alertas."""
     CONFIG_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(config, f, indent=2)
 
-
 # ============================================================
 # NOTIFICACIONES
 # ============================================================
-
 
 def notify_voz(mensaje: str) -> None:
     """Notifica por voz usando 64_Campanilla."""
@@ -122,7 +116,6 @@ def notify_voz(mensaje: str) -> None:
             )
     except Exception:
         pass  # Silencioso si falla
-
 
 def send_discord_webhook(
     webhook_url: str, level: str, script: str, message: str
@@ -163,7 +156,6 @@ def send_discord_webhook(
         print(f"[Discord Error] {e}")
         return False
 
-
 def log_alert(level: str, script: str, message: str, config: Dict) -> None:
     """Guarda alerta en archivo de log."""
     log_path = Path(config.get("log_path", str(LOG_DIR)))
@@ -181,7 +173,6 @@ def log_alert(level: str, script: str, message: str, config: Dict) -> None:
     with open(log_file, "a", encoding="utf-8") as f:
         f.write(json.dumps(entry) + "\n")
 
-
 def print_alert(level: str, script: str, message: str) -> None:
     """Imprime alerta en console con color."""
     color = COLORS.get(level, COLORS["RESET"])
@@ -190,16 +181,13 @@ def print_alert(level: str, script: str, message: str) -> None:
     icon = icons.get(level, "🔔")
     print(f"{color}{icon} [{level}] {script}: {message}{COLORS['RESET']}")
 
-
 # ============================================================
 # LÓGICA PRINCIPAL
 # ============================================================
 
-
 def should_stop(level: str) -> bool:
     """Determina si el proceso debe detenerse."""
     return level in ["ERROR", "CRITICAL"]
-
 
 def alert(
     level: str = "INFO",
@@ -249,7 +237,6 @@ def alert(
     # Retornar si debe detenerse
     return should_stop(level)
 
-
 def check_and_alert(
     script_name: str, return_code: int, output: str = "", config: Dict = None
 ) -> bool:
@@ -289,11 +276,9 @@ def check_and_alert(
 
     return alert(level=level, script=script_name, message=message)
 
-
 # ============================================================
 # CLI
 # ============================================================
-
 
 def main():
     """Interfaz de línea de comandos."""
@@ -332,7 +317,6 @@ def main():
         sys.exit(1)
 
     sys.exit(0)
-
 
 if __name__ == "__main__":
     main()

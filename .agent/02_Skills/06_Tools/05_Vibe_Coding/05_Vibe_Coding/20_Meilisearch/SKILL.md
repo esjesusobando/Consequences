@@ -200,4 +200,4 @@ meilisearch, search, full-text, typo-tolerant, autocomplete, filters, instant-se
 
 Guardar en:
 - `03_Knowledge/` — Documentación
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

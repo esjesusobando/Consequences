@@ -190,4 +190,4 @@ histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m]))
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

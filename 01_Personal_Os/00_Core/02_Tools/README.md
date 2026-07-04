@@ -30,14 +30,14 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 
 ## 📊 ESTADO DEL SISTEMA
 
-| Herramienta  | Total | Estado                         |
-| ------------ | ----- | ------------------------------ |
-| Agents       | 62    | ✅ SYNCED                       |
-| Skills       | 392   | ✅ VERIFIED — 0 sin frontmatter |
-| MCPs backup  | 35+   | ✅ ACTIVE                       |
-| Hooks        | 10    | ✅ 6 fases activas              |
-| Plugins      | ?     | ⏳ Verificar                    |
-| Integrations | 2     | ✅ Fireflies, Granola           |
+| Herramienta      | Total     | Estado                             |
+|------------------|-----------|------------------------------------|
+| Agents           | 62        | ✅ SYNCED                           |
+| Skills           | 392       | ✅ VERIFIED — 0 sin frontmatter     |
+| MCPs backup      | 35+       | ✅ ACTIVE                           |
+| Hooks            | 10        | ✅ 6 fases activas                  |
+| Plugins          | ?         | ⏳ Verificar                        |
+| Integrations     | 2         | ✅ Fireflies, Granola               |
 
 ---
 
@@ -45,7 +45,7 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 
 - **Source:** `01_Personal_Os/00_Core/02_Tools/`
 - **Backup estratégico:** `.agent/02_Tools/` (sincronizado)
-- **Manifests:** `04_Operations/02_Agent_Teams_Lite/00_Manifest/`
+- **Manifests:** `05_Scripts/02_Agent_Teams_Lite/00_Manifest/`
 
 ---
 

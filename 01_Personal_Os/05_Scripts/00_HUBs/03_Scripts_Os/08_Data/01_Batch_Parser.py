@@ -8,13 +8,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
-
 
 """
 26_Batch_Parser.py - Batch Doc Processor Elite
@@ -88,7 +87,6 @@ try:
 except ImportError:
     INFO = WARNING = SUCCESS = ERROR = RESET = ""
 
-
 def print_branding():
     """Header premium del script."""
     print("─" * 60)
@@ -100,27 +98,21 @@ def print_branding():
     print("─" * 60)
     print()
 
-
 def print_info(msg: str):
     print(f"{INFO}  ℹ️  {msg}{RESET}")
-
 
 def print_success(msg: str):
     print(f"{SUCCESS}  ✅ {msg}{RESET}")
 
-
 def print_error(msg: str):
     print(f"{ERROR}  ❌ {msg}{RESET}", file=sys.stderr)
-
 
 def print_warning(msg: str):
     print(f"{WARNING}  ⚠️  {msg}{RESET}")
 
-
 # =============================================================================
 # CORE LOGIC
 # =============================================================================
-
 
 def find_parser_script() -> Path:
     """Ubica 83_Universal_Parser.py."""
@@ -142,7 +134,6 @@ def find_parser_script() -> Path:
     print_error(f"83_Universal_Parser.py no encontrado")
     sys.exit(1)
 
-
 def scan_files(directory: Path, recursive: bool) -> List[Path]:
     """Escanea directorio por archivos soportados."""
     files = []
@@ -159,7 +150,6 @@ def scan_files(directory: Path, recursive: bool) -> List[Path]:
                 files.append(fpath)
 
     return sorted(files)
-
 
 def process_file(parser_script: Path, file_path: Path, output_file: Path) -> bool:
     """Procesa un archivo individual."""
@@ -191,7 +181,6 @@ def process_file(parser_script: Path, file_path: Path, output_file: Path) -> boo
         print_error(f"Error procesando {file_path.name}: {e}")
         return False
 
-
 def generate_header(
     output_path: Path, source_dir: Path, recursive: bool, files: List[Path]
 ):
@@ -210,11 +199,9 @@ def generate_header(
 """
     output_path.write_text(header, encoding="utf-8")
 
-
 # =============================================================================
 # MAIN
 # =============================================================================
-
 
 def main():
     parser = argparse.ArgumentParser(
@@ -318,7 +305,6 @@ Ejemplos:
     import json
 
     meta_path.write_text(json.dumps(meta_content, indent=2), encoding="utf-8")
-
 
 if __name__ == "__main__":
     main()

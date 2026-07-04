@@ -186,7 +186,7 @@ Usa siempre el estándar de commits semánticos:
 
 ### 3. Integración con System Guardian
 Antes del push final, es RECOMENDABLE ejecutar el script de integridad para validar el impacto global:
-`python 01_Personal_Os/04_Operations/03_Scripts_Os/79_System_Guardian.py`
+`python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/79_System_Guardian.py`
 
 ---
 © 2026 PersonalOS | Quality & Delivery Standard

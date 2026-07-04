@@ -4,7 +4,7 @@
 
 Este directorio contiene la configuración de agentes, skills y hooks de PersonalOS.
 
-> **NOTE:** `.agent/` es **BACKUP ESTRATÉGICO** sincronizado con `01_Personal_Os/01_Core/`. La fuente de verdad es `01_Personal_Os/01_Core/`.
+> **NOTE:** `.agent/` es **BACKUP ESTRATÉGICO** sincronizado con `01_Personal_Os/00_Core/`. La fuente de verdad es `01_Personal_Os/00_Core/`.
 
 ---
 
@@ -12,10 +12,10 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 | Directorio         | Contenido                               | Fuente de verdad                             |
 | ------------------ | --------------------------------------- | -------------------------------------------- |
-| **00_Rules/**      | 14 reglas activas (.mdc)                | `01_Personal_Os/01_Core/01_Rules/`           |
-| **01_Agents/**     | Agentes configurados (62+)              | `01_Personal_Os/01_Core/02_Tools/01_Agents/` |
-| **02_Skills/**     | Skills organizadas (backup)             | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
-| **03_Workflows/**  | Workflows del sistema                   | `01_Personal_Os/01_Core/00_Workflows_Os/`    |
+| **00_Rules/**      | 14 reglas activas (.mdc)                | `01_Personal_Os/00_Core/01_Rules/`           |
+| **01_Agents/**     | Agentes configurados (62+)              | `01_Personal_Os/00_Core/02_Tools/01_Agents/` |
+| **02_Skills/**     | Skills organizadas (backup)             | `01_Personal_Os/00_Core/02_Tools/02_Skills/` |
+| **03_Workflows/**  | Workflows del sistema                   | `01_Personal_Os/00_Core/00_Workflows/`    |
 | **04_Extensions/** | Hooks system (Pre/Post/Lifecycle/Sound) | Local                                        |
 | **05_GGA/**        | Gentleman Guardian Angel (Code Review)  | `.agent/05_GGA/`                             |
 
@@ -27,11 +27,11 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 | --------------------------------- | ------------------------------------------------------------ |
 | **00_Winter_is_Coming/**          | Goals, Backlog, AGENTS.md (ESTRATÉGICO)                      |
 | **01_Personal_Os/**               | El sistema operativo completo                                |
-| **01_Personal_Os/01_Core/**       | Motor: Skills (15 áreas, 392), Rules (14), MCPs (36), Tools  |
+| **01_Personal_Os/00_Core/**       | Motor: Skills (15 áreas, 392), Rules (14), MCPs (36), Tools  |
 | **01_Personal_Os/02_Knowledge/**  | Documentación, Research, Notas                               |
-| **01_Personal_Os/03_Task/**       | Tareas activas                                               |
-| **01_Personal_Os/04_Operations/** | Operativo: Scripts (163), Auto-Mejora, Projects, Context LLM |
-| **01_Personal_Os/05_Archive/**    | Legacy archivado                                             |
+| **01_Personal_Os/04_Tasks/**      | Tareas activas (antes 04_Tasks)                |
+| **01_Personal_Os/05_Scripts/**    | Scripts operativos + HUBs (antes 05_Scripts/)            |
+| **01_Personal_Os/07_Archive/**    | Legacy archivado                                             |
 | **02_Playground/**                | Zona de pruebas (no contamina el OS)                         |
 | **03_Resultado/**                 | Outputs de proyectos                                         |
 
@@ -52,7 +52,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ## 🎯 Skills Disponibles (15 áreas funcionales — 392 activas + ~490 legacy)
 
-### Por Categoría (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
+### Por Categoría (`01_Personal_Os/00_Core/02_Tools/02_Skills/`)
 
 | Categoría               | Contenido                             | Estado |
 | ----------------------- | ------------------------------------- | ------ |
@@ -71,7 +71,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ### TASTE-SKILLS (PRIORIDAD ALTA PARA FRONTEND)
 
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
 
 | Skill                | Uso                             |
 | -------------------- | ------------------------------- |
@@ -85,7 +85,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ## 📋 HUBs del Sistema (30 total (numerados + HUB_SOTA + auxiliares))
 
-**Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
+**Ubicación:** `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`
 
 | Hub                   | Script                                           | Proposito                                                    |
 | --------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
@@ -108,7 +108,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 | **Agent Mirror**      | `16_Agent_Mirror_Hub.py`                         | Sincroniza agentes source → backup                           |
 | **Watchdog**          | `17_Watchdog_Hub.py`                             | Health watchdog — valida integridad del manifest             |
 | **Telemetry**         | `18_Telemetry_Hub.py`                            | Dashboard ASCII de métricas de uso por HUB                   |
-| **Agent Sync**        | `19_Agent_Sync_Hub.py`                           | Sincroniza .agent/01_Agents/ con 01_Core/02_Tools/01_Agents/ |
+| **Agent Sync**        | `19_Agent_Sync_Hub.py`                           | Sincroniza .agent/01_Agents/ con 00_Core/02_Tools/01_Agents/ |
 | **System Mapper**     | `20_System_Mapper_Hub.py`                        | Genera 7 manifests del OS via os.walk                        |
 | **Legacy Cleanup**    | `21_Legacy_Path_Cleanup.py`                      | Escanea y limpia paths legacy de Consequences 2.x            |
 | **Skill Frontmatter** | `22_Validate_Skill_Frontmatter.py`               | Detecta skills sin frontmatter YAML                          |
@@ -120,10 +120,10 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ## 🔗 Related
 
-- **Rules:** See `01_Personal_Os/01_Core/01_Rules/` for active rules (13 .mdc)
-- **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for canonical skills (392); `.agent/02_Skills/` preserves backup skills
+- **Rules:** See `01_Personal_Os/00_Core/01_Rules/` for active rules (13 .mdc)
+- **Skills:** See `01_Personal_Os/00_Core/02_Tools/02_Skills/` for canonical skills (392); `.agent/02_Skills/` preserves backup skills
 - **CLAUDE.md:** See `./CLAUDE.md` for agent instructions
-- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 163 scripts (30 HUBs)
+- **Scripts:** See `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` for 163 scripts (30 HUBs)
 - **Manifests:** See `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/` for v5 manifest
 
 ---
@@ -143,10 +143,10 @@ Code Review con IA integrado.
 
 ```bash
 # HUBs JARVIS 3.1
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py                 # health check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard    # stats ASCII
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report        # MCP drift
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Watchdog_Hub.py                 # health check
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Telemetry_Hub.py --dashboard    # stats ASCII
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/15_MCP_Sync_Hub.py --report        # MCP drift
 
 # System Guardian
 gr              # System Auditor (Dry-run)

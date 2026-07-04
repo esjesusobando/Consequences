@@ -12,8 +12,8 @@ from pathlib import Path
 # → scripts/ → 12_Auditors_Os/ → 03_Scripts_Os/ → 05_Scripts/ → 01_Personal_Os/ → ROOT
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent          # 04_Operations
-PERSONAL_OS = OPERATIONS.parent         # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")         # 01_Personal_Os
 ROOT = PERSONAL_OS.parent               # Project root
 
 # Fix encoding for Windows
@@ -30,12 +30,10 @@ import hashlib
 
 BASE_DIR = ROOT_DIR
 
-
 def get_content_hash(text: str) -> str:
     """Hash del contenido sin espacios."""
     pure = "".join(text.split())
     return hashlib.sha256(pure.encode("utf-8")).hexdigest()
-
 
 def beautify_markdown(content: str) -> str:
     """Reglas de estética premium."""
@@ -50,7 +48,6 @@ def beautify_markdown(content: str) -> str:
     # Un salto al final
     content = content.strip() + "\n"
     return content
-
 
 def process_file(file_path: str) -> tuple:
     """Procesa archivo individual. Returns (success, message)"""
@@ -81,7 +78,6 @@ def process_file(file_path: str) -> tuple:
 
     except (OSError, UnicodeDecodeError) as e:
         return False, f"[EXCEPTION] {os.path.basename(file_path)}: {e}"
-
 
 def main():
     print("=" * 50)
@@ -126,7 +122,6 @@ def main():
     print(f"✅ Procesados: {success_count}")
     print(f"❌ Errores: {error_count}")
     print("=" * 50)
-
 
 if __name__ == "__main__":
     main()

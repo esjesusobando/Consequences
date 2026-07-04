@@ -21,9 +21,9 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 | Trigger del usuario                                                                                | Skill invocado                                      | Acción                                                                       |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------------------|
-| "capture", "captura", "quick add", "anota", "guarda idea"                                          | `01_Quick_Capture`                                  | Crear archivo en `01_Personal_Os/03_Task/02_Hillary_Inbox/`                  |
+| "capture", "captura", "quick add", "anota", "guarda idea"                                          | `01_Quick_Capture`                                  | Crear archivo en `01_Personal_Os/04_Tasks/02_Hillary_Inbox/`                  |
 | "plan my day", "plan día", "qué hago hoy", "organizar día"                                         | `02_Plan_My_Day`                                    | Leer inbox → generar schedule                                                |
-| "daily notes", "log this", "registro", "anotar actividad"                                          | `03_Daily_Notes`                                    | Agregar a log diario en `04_Operations/`                                     |
+| "daily notes", "log this", "registro", "anotar actividad"                                          | `03_Daily_Notes`                                    | Agregar a log diario en `05_Scripts/`                                     |
 | "record", "transcribe", "grabar reunión", "recording mode"                                         | `04_Recording_Mode`                                 | Transcribir + anonimizar PII                                                 |
 | "create skill from", "auto-skill", "build pattern", "track returns"                                | `05_Returns_Tracker`                                | Detectar patrón → generar skill                                              |
 
@@ -33,7 +33,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 ```
 1. DETECTAR intención (tabla arriba)
-2. CARGAR skill: 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/{skill}/SKILL.md
+2. CARGAR skill: 01_Personal_Os/00_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/{skill}/SKILL.md
 3. EJECUTAR según instrucciones del skill
 4. GUARDAR resultado en destino apropiado
 5. NOTIFICAR via notification.py si corresponde
@@ -45,11 +45,11 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 | Skill                                          | Destino del output                                                                      |
 |-----------------------------------------------|----------------------------------------------------------------------------------------|
-| Quick Capture                                  | `01_Personal_Os/03_Task/02_Hillary_Inbox/`                                              |
-| Plan My Day                                    | respuesta inline + opcionalmente `04_Operations/`                                       |
-| Daily Notes                                    | `04_Operations/03_Process_Notes/` (si existe)                                           |
+| Quick Capture                                  | `01_Personal_Os/04_Tasks/02_Hillary_Inbox/`                                              |
+| Plan My Day                                    | respuesta inline + opcionalmente `05_Scripts/`                                       |
+| Daily Notes                                    | `05_Scripts/03_Process_Notes/` (si existe)                                           |
 | Recording Mode                                 | `02_Knowledge/` (transcripciones)                                                       |
-| Returns Tracker                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (auto-generated skills)                    |
+| Returns Tracker                                | `01_Personal_Os/00_Core/02_Tools/02_Skills/` (auto-generated skills)                    |
 
 ---
 
@@ -59,7 +59,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 - **SDD:** Compatible con `/sdd:new` si la captura escala a feature
 - **CE:** Compatible con `/ce:work` para ejecutar tasks del inbox
 - **GOALS.md:** Quick Capture → tareas alineadas con objetivos Q2 2026
-- **Notificaciones:** `python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete`
+- **Notificaciones:** `python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete`
 
 ---
 
@@ -68,12 +68,12 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 ```
 Usuario: "captura: revisar propuesta de cliente [trabajo]"
 → Skill: Quick Capture
-→ Output: 01_Personal_Os/03_Task/02_Hillary_Inbox/2026-04-02-revisar-propuesta.md
+→ Output: 01_Personal_Os/04_Tasks/02_Hillary_Inbox/2026-04-02-revisar-propuesta.md
 → Engram: mem_save("Quick capture: revisar propuesta cliente")
 
 Usuario: "plan my day"
 → Skill: Plan My Day
-→ Lee: 01_Personal_Os/03_Task/02_Hillary_Inbox/ + GOALS.md
+→ Lee: 01_Personal_Os/04_Tasks/02_Hillary_Inbox/ + GOALS.md
 → Output: Schedule por bloques de energía inline
 ```
 

@@ -36,15 +36,15 @@ Extrae información estructurada y premium de archivos individuales en múltiple
 
 ```bash
 # Uso básico
-python 01_Personal_Os/04_Operations/03_Scripts_Os/83_Universal_Parser.py <archivo>
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/83_Universal_Parser.py <archivo>
 
 # Con output a archivo
-python 01_Personal_Os/04_Operations/03_Scripts_Os/83_Universal_Parser.py <archivo> -o resultado.md
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/83_Universal_Parser.py <archivo> -o resultado.md
 
 # Ejemplos
-python 01_Personal_Os/04_Operations/03_Scripts_Os/83_Universal_Parser.py ./docs/informe.pdf
-python 01_Personal_Os/04_Operations/03_Scripts_Os/83_Universal_Parser.py ./datos/ventas.xlsx
-python 01_Personal_Os/04_Operations/03_Scripts_Os/83_Universal_Parser.py "./presentación cliente.pptx"
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/83_Universal_Parser.py ./docs/informe.pdf
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/83_Universal_Parser.py ./datos/ventas.xlsx
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/83_Universal_Parser.py "./presentación cliente.pptx"
 ```
 
 ## 🛡️ Estándar de Salida

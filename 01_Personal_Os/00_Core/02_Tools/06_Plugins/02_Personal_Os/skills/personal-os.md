@@ -16,10 +16,10 @@ El PersonalOS tiene la siguiente estructura:
 ├── 00_Core/               # Skills, Agents, Evals, MCP, Server
 ├── 02_Knowledge/          # Base de conocimiento
 ├── 03_Tasks/              # Tareas activas (YAML frontmatter)
-├── 04_Operations/         # Memoria, Brain, Notas
+├── 05_Scripts/         # Memoria, Brain, Notas
 ├── 05_Archive/           # Archive: Repos, legacy
 ├── 07_Projects/          # Proyectos
-└── 01_Personal_Os/04_Operations/03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
+└── 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
 ```
 
 ## Comandos Principales

@@ -6,7 +6,7 @@ status: n
 created_date: 2026-05-22
 resource_refs:
   - 01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol.md
-  - 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+  - 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py
 ---
 
 # Task: Revisar Ritual de Cierre
@@ -62,7 +62,7 @@ El protocolo actual dice:
 
 ```bash
 # Buscar script del ritual
-ls 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py 2>/dev/null && echo "EXISTS" || echo "NOT FOUND"
+ls 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py 2>/dev/null && echo "EXISTS" || echo "NOT FOUND"
 
 # Ver versión activa en workflows
 cat 01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol.md 2>/dev/null || echo "Not found in core"

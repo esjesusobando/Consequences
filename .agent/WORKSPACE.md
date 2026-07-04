@@ -27,7 +27,7 @@ Think_Different/
 
 ```
 01_Personal_Os/
-├── 01_Core/                         # Motor del OS
+├── 00_Core/                         # Motor del OS
 │   ├── 00_Workflows_Os/             # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
 │   ├── 01_Rules/                    # 13 reglas del sistema (.mdc)
 │   └── 02_Tools/                    # Todas las herramientas
@@ -46,12 +46,12 @@ Think_Different/
 │   ├── 01_Research_Os/
 │   └── 03_Writing_Content/
 │
-├── 03_Task/                         # Tareas activas (singular)
+├── 04_Tasks/                         # Tareas activas (singular)
 │   ├── 00_Templates/
 │   ├── 01_Tasks_Done/
 │   └── 02_Hillary_Inbox/
 │
-├── 04_Operations/                   # TODO LO OPERATIVO
+├── 05_Scripts/                   # TODO LO OPERATIVO
 │   ├── 00_Context_LLM/              # Memoria y contexto
 │   │   ├── 00_Context_Memory/
 │   │   ├── 01_Process_Notes/
@@ -88,17 +88,17 @@ Think_Different/
 
 | Recurso                       | Ruta                                                           |
 |-------------------------------|----------------------------------------------------------------|
-| **Fuente de Verdad Skills**   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
-| **Rules (13 .mdc)**           | `01_Personal_Os/01_Core/01_Rules/`                             |
-| **Scripts (20 HUBs + 256 scripts)** | `01_Personal_Os/04_Operations/03_Scripts_Os/`                  |
-| **Workflows**                 | `01_Personal_Os/01_Core/00_Workflows_Os/`                      |
-| **Agents**                    | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                   |
-| **MCPs**                      | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                      |
-| **Projects**                  | `01_Personal_Os/04_Operations/05_Projects/`                    |
-| **Context LLM**               | `01_Personal_Os/04_Operations/00_Context_LLM/`                 |
-| **Auto-Improvement**          | `01_Personal_Os/04_Operations/01_Auto_Improvement/`            |
-| **config_paths.py**           | `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`   |
-| **Sound Engine**              | `01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/`           |
+| **Fuente de Verdad Skills**   | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                   |
+| **Rules (13 .mdc)**           | `01_Personal_Os/00_Core/01_Rules/`                             |
+| **Scripts (20 HUBs + 256 scripts)** | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`                  |
+| **Workflows**                 | `01_Personal_Os/00_Core/00_Workflows/`                      |
+| **Agents**                    | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                   |
+| **MCPs**                      | `01_Personal_Os/00_Core/02_Tools/03_Mcp/`                      |
+| **Projects**                  | `01_Personal_Os/06_Projects/`                    |
+| **Context LLM**               | `01_Personal_Os/01_Memory/00_Context_LLM/`                 |
+| **Auto-Improvement**          | `01_Personal_Os/03_Learning/01_Auto_Improvement/`            |
+| **config_paths.py**           | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py`   |
+| **Sound Engine**              | `01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/`           |
 | **MCP Config Activo**         | `.mcp.json` (raíz)                                             |
 
 ---

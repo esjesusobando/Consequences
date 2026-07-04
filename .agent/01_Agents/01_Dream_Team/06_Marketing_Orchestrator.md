@@ -118,10 +118,10 @@ User Input → Orchestrator (parse intent)
 
 ### Skill Directories
 
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/13_Marketing_Strategy/` — Skills de estrategia
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/` — Skills de marketing técnico
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/13_Marketing_Strategy/` — Skills de estrategia
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/` — Skills de marketing técnico
 
 ### Related
 
 - `03_Marketing_Tech.md` — Perfil generalista de marketing técnico
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/linkedin-content-flow/` — Skill de pipeline LinkedIn
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/linkedin-content-flow/` — Skill de pipeline LinkedIn

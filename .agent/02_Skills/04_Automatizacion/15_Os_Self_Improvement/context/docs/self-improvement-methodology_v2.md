@@ -20,7 +20,7 @@ Input: New learning from any source
 
 ### 2. OS Component Mapping
 ```
-Existing Skills: Check /01_Core/02_Tools/02_Skills/
+Existing Skills: Check /00_Core/02_Tools/02_Skills/
 Existing Workflows: Check /05_Workflows/
 Existing Tools: Check /04_Automatizacion/
 Existing Knowledge: Check /02_Knowledge/

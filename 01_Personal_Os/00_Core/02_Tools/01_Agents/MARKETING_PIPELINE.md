@@ -458,7 +458,7 @@ grep -E "google-workspace|higgsfield|heygen" .mcp.json
 | CLAUDE.marketing.md template | `CLAUDE.marketing.md` (raíz) |
 | LinkedIn Content Flow skill | `02_Skills/01_Creacion_Contenidos/14_Marketing_Tech/linkedin-content-flow/SKILL.md` |
 | Research (RE + Learning) | `02_Knowledge/01_Research_Os/2026-06-25_RE_vINrPqUxnho.md` |
-| Plan SOTA asociado | `04_Operations/00_Context_LLM/04_Docs/plans/2026-06-25-001-strat-learning-always-sota-plan.md` |
+| Plan SOTA asociado | `01_Memory/00_Context_LLM/04_Docs/plans/2026-06-25-001-strat-learning-always-sota-plan.md` |
 
 ### Skills de Marketing
 

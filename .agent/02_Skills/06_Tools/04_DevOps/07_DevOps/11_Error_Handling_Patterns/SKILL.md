@@ -670,4 +670,4 @@ def process_order(order_id: str) -> Order:
 
 ## 💾 State Persistence
 Guardar en:
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo

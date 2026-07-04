@@ -28,7 +28,7 @@ Esta skill se CARGA MANUALMENTE cuando el usuario inicia una tarea. Su función 
 
 ### 3. **PROTOCOLO CONTEXTO** (AL INICIAR)
 - [ ] Leer `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`
-- [ ] Leer `01_Core/01_Rules/01_Context_Protocol.mdc`
+- [ ] Leer `00_Core/01_Rules/01_Context_Protocol.mdc`
 - [ ] Ejecutar `mem_context(limit=10)`
 - [ ] **Reportar contexto** antes de actuar
 
@@ -71,7 +71,7 @@ Al inicio de cada tarea, el usuario o el agente DEBE cargar esta skill para reco
 ## 🔗 Dependencias
 
 ### Skills a cargar después
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` - Si requiere compound engineering
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/` - Si requiere compound engineering
 - Skills específicas de la tarea
 
 ### Archivos de referencia

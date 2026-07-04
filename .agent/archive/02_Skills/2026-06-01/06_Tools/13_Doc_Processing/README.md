@@ -19,9 +19,9 @@
 
 | Script                    | Ubicación                                     | Función                        |
 | ------------------------- | --------------------------------------------- | ------------------------------ |
-| `83_Universal_Parser.py`  | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Motor de extracción individual |
-| `84_Batch_Parser.py`      | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Orquestador batch              |
-| `85_Resumen_Extractor.py` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Extracción de CVs/resúmenes    |
+| `83_Universal_Parser.py`  | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` | Motor de extracción individual |
+| `84_Batch_Parser.py`      | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` | Orquestador batch              |
+| `85_Resumen_Extractor.py` | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` | Extracción de CVs/resúmenes    |
 
 ---
 
@@ -42,13 +42,13 @@ Texto:      MD, TXT
 
 ```bash
 # Extraer archivo individual
-python 01_Personal_Os/04_Operations/03_Scripts_Os/83_Universal_Parser.py <archivo>
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/83_Universal_Parser.py <archivo>
 
 # Batch - directorio completo
-python 01_Personal_Os/04_Operations/03_Scripts_Os/84_Batch_Parser.py <directorio> --recursive
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/84_Batch_Parser.py <directorio> --recursive
 
 # Extraer CVs/resúmenes
-python 01_Personal_Os/04_Operations/03_Scripts_Os/85_Resumen_Extractor.py --source <dir>
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/85_Resumen_Extractor.py --source <dir>
 ```
 
 ---

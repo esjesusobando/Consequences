@@ -1,14 +1,14 @@
 ---
 name: genesis
-description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.9.1.
+description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v5.0.1.
 argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 ---
 
-# 🧬 Workflow: Génesis (Iron Man Boot) — v4.9.1
+# 🧬 Workflow: Génesis (Iron Man Boot) — v5.0.1
 
-> **Versión del sistema:** v4.9.1 — Marketing SOTA + Archive Consolidation
-> **Fecha:** 2026-06-25
-> **Estado:** 🟢 PURE GREEN — Marketing Pipeline + Archive 3-Categories
+> **Versión del sistema:** v5.0.1 — Path audit: 04_Tasks → 04_Tasks
+> **Fecha:** 2026-07-03
+> **Estado:** 🟢 PURE GREEN
 
 Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
 
@@ -30,12 +30,12 @@ Antes de responder, leer en este orden:
 ### 3. Estado Estratégico
    - Leer `00_Winter_is_Coming/GOALS.md` — Metas y prioridades
    - Leer `00_Winter_is_Coming/BACKLOG.md` — Bandeja de entrada
-   - Leer `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/` — notas de proceso recientes
+   - Leer `01_Personal_Os/01_Memory/00_Context_LLM/01_Process_Notes/` — notas de proceso recientes
    - Leer `OS_DIRECTORY.md` (raíz) — Mapa JARVIS del sistema
 
 ### 4. Estado de Tareas
-   - Leer `01_Personal_Os/03_Task/` — identificar tareas `status: s` (en progreso) y `status: b` (bloqueadas)
-   - Buscar SDDs activos en `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/`
+   - Leer `01_Personal_Os/04_Tasks/` — identificar tareas `status: s` (en progreso) y `status: b` (bloqueadas)
+   - Buscar SDDs activos en `.atl/openspec/`
 
 ### 5. Archivos Raíz de Config
    - `CLAUDE.md` — Config de IA
@@ -43,7 +43,7 @@ Antes de responder, leer en este orden:
 
 ---
 
-## 🚀 MAPA DEL SISTEMA (v4.9.1)
+## 🚀 MAPA DEL SISTEMA (v5.0.1)
 
 ```
 Think_Different/
@@ -53,26 +53,25 @@ Think_Different/
 │   │   ├── 00_Workflows/     # 29 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 14 reglas .mdc (00-13)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/       # 63 agentes (26 Root + 6 Dream + 23 Specialists + 5 Growth + 3 other)
-│   │       ├── 02_Skills/       # 392 skills (15 áreas funcionales)
+│   │       ├── 00_SDD/          # SDD Registry
+│   │       ├── 01_Agents/       # 63 agentes (9 categorías)
+│   │       ├── 02_Skills/       # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
-│   │       ├── 05_Hooks/        # 11 hooks (6 fases) [FIXED]
+│   │       ├── 05_Hooks/        # Hooks del sistema
 │   │       ├── 06_Plugins/      # Plugins OS
-│   │       ├── 07_Server/       # Engram server
+│   │       ├── 07_Server/       # MCP Server
 │   │       ├── 08_Evals/        # Evaluadores
 │   │       └── 09_Templates/    # Templates
+│   ├── 01_Memory/               # Memoria LLM (Context_Memory, Process_Notes)
 │   ├── 02_Knowledge/            # Base de conocimiento
-│   ├── 03_Task/                 # Tareas activas (18+ tareas P0-P3)
-│   └── 04_Operations/           # MOTOR OPERATIVO
-│       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
-│       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
-│       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 30 HUBs + 163 scripts total
-│       ├── 04_Installer/        # Scripts de instalación
-│       ├── 05_Projects/         # Proyectos activos
-│       ├── 06_SOTA_Features/    # Features SOTA
-│       └── 07_Reports/          # Reportes consolidados (10_Reports eliminado en v4.7)
+│   ├── 03_Learning/             # Conocimiento activo
+│   ├── 04_Tasks/                # Tareas activas (18+ tareas P0-P3)
+│   ├── 05_Scripts/              # Scripts operativos
+│   │   ├── 00_HUBs/03_Scripts_Os/ # 36 HUBs — 168 scripts
+│   │   └── 01_Installer/        # Scripts de instalación
+│   ├── 06_Projects/             # Proyectos activos
+│   └── 07_Archive/              # Backups, snapshots, históricos
 ├── 02_Playground/               # Zona de pruebas
 ├── 03_Resultado/                # Outputs de proyectos
 ├── .agent/                      # Backup estratégico (sync con 00_Core/)
@@ -90,13 +89,13 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (15 áreas, 392)     | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Skills** (396, 15 áreas)     | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
 | **Reglas** (14 .mdc)           | `01_Personal_Os/00_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
-| **Agentes** (63)               | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (30)                  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **Agentes** (63 source)        | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
+| **HUBs** (36)                  | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`                        | Operaciones de sistema                    |
 | **MCPs** (11)                  | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
 | **Hooks** (10)                 | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
-| **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
+| **Memory**                     | Engram MCP + `01_Personal_Os/01_Memory/`                                  | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
 | **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
 
@@ -106,19 +105,19 @@ Think_Different/
 
 ```bash
 # Regenerar 7 manifests JARVIS
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 
 # Health check del sistema
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Watchdog_Hub.py
 
 # Dashboard de métricas ASCII
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
 
 # Detectar drift MCP Claude ↔ OpenCode
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 # Sync .agent ↔ 01_Core
-python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/19_Agent_Sync_Hub.py
 ```
 
 ---
@@ -149,13 +148,13 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ```bash
 # Al completar cada tarea en TodoWrite
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-complete
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --task-complete
 
 # Logro importante
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --success
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --success
 
 # Error
-python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py --error
 ```
 
 ---
@@ -205,7 +204,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 - [ ] `00_Winter_is_Coming/GOALS.md` — metas activas
 - [ ] `00_Winter_is_Coming/BACKLOG.md` — items pendientes
 - [ ] `01_Personal_Os/00_Core/01_Rules/` — reglas activas
-- [ ] `01_Personal_Os/03_Task/` — tareas en progreso/bloqueadas
+- [ ] `01_Personal_Os/04_Tasks/` — tareas en progreso/bloqueadas
 - [ ] `.atl/skill-registry.md` — compact rules (si hay SDD)
 - [ ] Reportar resumen al chat antes de actuar
 

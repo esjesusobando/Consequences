@@ -40,13 +40,13 @@ Ejemplo:
 ```
 Output: Tener el script 14_Deep_Work_Timer.py funcionando
 Done: El script corre sin errores y guarda el log
-Abrir: VS Code + Claude Code + 01_Personal_Os/04_Operations/03_Scripts_Os/
+Abrir: VS Code + Claude Code + 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/
 ```
 
 ### 2. Preparar el contexto (3 min)
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --standup  # Ver prioridades del día
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py --standup  # Ver prioridades del día
 git status                                # Estado limpio antes de empezar
 ```
 
@@ -86,13 +86,13 @@ Al finalizar cada bloque, evaluar en 1 segundo:
 
 ### Cierre de sesión (5 min)
 
-1. **Documentar**: ¿Qué logré? ¿Qué quedó pendiente? → `04_Operations/03_Process_Notes/` + **Engram**
+1. **Documentar**: ¿Qué logré? ¿Qué quedó pendiente? → `05_Scripts/03_Process_Notes/` + **Engram**
 2. **Commit**: Si hay código → commit atómico descriptivo
 3. **Actualizar tarea**: Cambiar `status` en `03_Tasks/`
 4. **Captura de aprendizajes**: ¿Qué aprendí hoy que vale la pena guardar?
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py   # Si es fin de día
+python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/04_Ritual_Hub.py   # Si es fin de día
 ```
 
 ## Para sesiones de aprendizaje (Python / English)

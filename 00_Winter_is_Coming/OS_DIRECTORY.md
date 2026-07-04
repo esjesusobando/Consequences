@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.9.1** | 2026-06-27
+**v5.0.1** | 2026-07-03 — Path audit: 04_Tasks → 04_Tasks
 
 ---
 
@@ -103,7 +103,7 @@ Think_Different/
 │   │   ├── 02_Learning_Always/   ✅ Aprendizaje continuo
 │   │   ├── 03_Content/           ✅ Creación de contenido
 │   │   └── 04_Telemetry/         ✅ Telemetría y monitoreo
-│   ├── 04_Tasks/                   ✅ Tareas activas (YAML 100%)
+│   ├── 04_Tasks/     ✅ Tareas activas (YAML 100%)
 │   ├── 05_Scripts/                 ✅ Scripts operativos
 │   │   ├── 00_HUBs/              ✅ 39 HUBs — 163 scripts [FIXED]
 │   │   └── 01_Installer/         ✅ Instalador del OS

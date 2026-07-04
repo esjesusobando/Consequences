@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thread — FlowSync on X</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0d0d1a;display:flex;justify-content:center;align-items:center;min-height:100vh;font-family:'Inter',-apple-system,sans-serif;padding:40px 20px}
+  .card{background:#000;border:1px solid #2f3336;border-radius:20px;max-width:620px;width:100%;box-shadow:0 20px 80px rgba(0,0,0,.5);overflow:hidden}
+  .tweet{padding:14px 18px;border-bottom:1px solid #2f3336}
+  .tweet:last-child{border-bottom:2px solid #1d9bf0}
+  .tweet-header{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+  .avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#6c5ce7,#a29bfe);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;flex-shrink:0}
+  .tweet-header-info{flex:1;display:flex;align-items:center;flex-wrap:wrap;gap:2px}
+  .tweet-header-info .name{font-size:15px;font-weight:700;color:#e7e9ea}
+  .tweet-header-info .verified{width:18px;height:18px;fill:#1d9bf0;vertical-align:middle}
+  .tweet-header-info .username{font-size:14px;color:#71767b;margin-left:2px}
+  .tweet-header-info .dot{margin:0 4px;color:#71767b}
+  .tweet-header-info .time{font-size:14px;color:#71767b}
+  .tweet-body{font-size:15px;line-height:1.6;color:#e7e9ea;margin-top:4px}
+  .tweet-body p{margin-bottom:6px}
+  .tweet-body .highlight{color:#1d9bf0}
+  .tweet-body .hash{color:#1d9bf0}
+  .tweet-body .stat{color:#6c5ce7;font-weight:700}
+  .tweet-body .quote{color:#71767b;border-left:3px solid #333;padding-left:12px;margin:8px 0;font-style:italic}
+  .tweet-number{font-size:12px;font-weight:600;color:#6c5ce7;text-transform:uppercase;letter-spacing:.3px;margin-bottom:4px;display:block}
+  .tweet-actions{display:flex;gap:80px;margin-top:10px;padding:2px 0}
+  .tweet-actions svg{width:18px;height:18px;fill:#71767b;cursor:pointer;transition:fill .15s}
+  .tweet-actions svg:hover.fill-blue:hover{fill:#1d9bf0}
+  .tweet-actions svg:hover.fill-green:hover{fill:#00ba7c}
+  .tweet-actions svg:hover.fill-pink:hover{fill:#f91880}
+  .tweet-actions svg:hover.fill-yellow:hover{fill:#ffd400}
+  .tweet-stats{display:flex;gap:16px;margin-top:6px;font-size:13px;color:#71767b}
+  .tweet-stats strong{color:#e7e9ea;font-weight:600}
+  .thread-label{padding:12px 18px;color:#71767b;font-size:13px;border-bottom:1px solid #2f3336;display:flex;align-items:center;gap:6px}
+  .thread-label svg{width:16px;height:16px;fill:#1d9bf0}
+  .header-bar{display:flex;align-items:center;padding:8px 18px;border-bottom:1px solid #2f3336;gap:16px}
+  .header-bar svg{width:20px;height:20px;fill:#e7e9ea;cursor:pointer}
+  .header-bar .x-logo{margin:0 auto}
+  .header-bar .x-logo svg{width:28px;height:28px;fill:#e7e9ea}
+  .inline-img{background:#1d2a3a;border-radius:16px;margin:10px 0;padding:20px;text-align:center;border:1px solid #2f3336}
+  .inline-img .big-stat{font-size:36px;font-weight:800;color:#6c5ce7;display:block}
+  .inline-img p{color:#8899a6;font-size:13px;margin-top:4px}
+  .metric-row{display:flex;gap:12px;margin:8px 0}
+  .metric{flex:1;background:#1d2a3a;border-radius:12px;padding:14px;text-align:center;border:1px solid #2f3336}
+  .metric .num{font-size:22px;font-weight:700;color:#6c5ce7;display:block}
+  .metric .label{font-size:11px;color:#71767b;text-transform:uppercase;letter-spacing:.3px}
+</style>
+</head>
+<body>
+<div class="card">
+  <!-- X Top Bar -->
+  <div class="header-bar">
+    <svg viewBox="0 0 24 24"><path d="M20 11H7.414l4.293-4.293a1 1 0 00-1.414-1.414l-6 6a1 1 0 000 1.414l6 6a1 1 0 001.414-1.414L7.414 13H20a1 1 0 000-2z"/></svg>
+    <div class="x-logo"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+    <svg viewBox="0 0 24 24"><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.48 4 4.9 4s4.435-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.284L18.856 16H5.134z"/></svg>
+  </div>
+
+  <!-- Thread label -->
+  <div class="thread-label">
+    <svg viewBox="0 0 24 24"><path d="M21 9.5v3a1 1 0 01-1 1h-5v6a1 1 0 01-1 1h-3a1 1 0 01-1-1v-6H5a1 1 0 01-1-1v-3a1 1 0 011-1h5v-6a1 1 0 011-1h3a1 1 0 011 1v6h5a1 1 0 011 1z"/></svg>
+    Thread (6 tweets)
+  </div>
+
+  <!-- Tweet 1/6 -->
+  <div class="tweet">
+    <div class="tweet-header">
+      <div class="avatar">FS</div>
+      <div class="tweet-header-info">
+        <span class="name">FlowSync</span>
+        <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.865-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5a.75.75 0 01-1.194.13l-2.5-2.5a.75.75 0 111.06-1.06l1.91 1.91 3.69-5.53a.75.75 0 111.37.55z"/></svg>
+        <span class="username">@flowsync</span>
+        <span class="dot">·</span>
+        <span class="time">1h</span>
+      </div>
+      <svg style="width:18px;height:18px;fill:#71767b;cursor:pointer" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </div>
+    <div class="tweet-body">
+      <span class="tweet-number">1 / 6</span>
+      <p>I spent 3 years studying how creative agencies scale from $0 to $10M.</p>
+      <p>Here's the exact playbook — boiled down to <strong>6 tweets</strong>.</p>
+      <p>🧵👇</p>
+    </div>
+    <div class="tweet-actions">
+      <svg viewBox="0 0 24 24"><path d="M4.5 3.5l15 8.5-15 8.5V3.5z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.634 8.129 8.125 0 3.5-2.213 6.484-5.328 7.466V22l-4.302-3.44c-3.18.12-6.47-1.042-8.87-3.745C1.624 13.778 1.751 11.94 1.751 10z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm0 2H8v2h8v-2z"/></svg>
+    </div>
+    <div class="tweet-stats"><strong>2,847</strong> views · <strong>185</strong> likes</div>
+  </div>
+
+  <!-- Tweet 2/6 -->
+  <div class="tweet">
+    <div class="tweet-header">
+      <div class="avatar">FS</div>
+      <div class="tweet-header-info">
+        <span class="name">FlowSync</span>
+        <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.865-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5a.75.75 0 01-1.194.13l-2.5-2.5a.75.75 0 111.06-1.06l1.91 1.91 3.69-5.53a.75.75 0 111.37.55z"/></svg>
+        <span class="username">@flowsync</span>
+        <span class="dot">·</span>
+        <span class="time">1h</span>
+      </div>
+      <svg style="width:18px;height:18px;fill:#71767b;cursor:pointer" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </div>
+    <div class="tweet-body">
+      <span class="tweet-number">2 / 6</span>
+      <p><strong>Observation 1:</strong> Most agencies under $1M don't have a process problem. They have a <strong>pricing</strong> problem.</p>
+      <p>They charge for hours instead of outcomes. Swap hourly → value-based pricing and your margin goes from 30% → 65% overnight.</p>
+    </div>
+    <div class="tweet-actions">
+      <svg viewBox="0 0 24 24"><path d="M4.5 3.5l15 8.5-15 8.5V3.5z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.634 8.129 8.125 0 3.5-2.213 6.484-5.328 7.466V22l-4.302-3.44c-3.18.12-6.47-1.042-8.87-3.745C1.624 13.778 1.751 11.94 1.751 10z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm0 2H8v2h8v-2z"/></svg>
+    </div>
+    <div class="tweet-stats"><strong>1,234</strong> views · <strong>89</strong> likes</div>
+  </div>
+
+  <!-- Tweet 3/6 -->
+  <div class="tweet">
+    <div class="tweet-header">
+      <div class="avatar">FS</div>
+      <div class="tweet-header-info">
+        <span class="name">FlowSync</span>
+        <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.865-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5a.75.75 0 01-1.194.13l-2.5-2.5a.75.75 0 111.06-1.06l1.91 1.91 3.69-5.53a.75.75 0 111.37.55z"/></svg>
+        <span class="username">@flowsync</span>
+        <span class="dot">·</span>
+        <span class="time">1h</span>
+      </div>
+      <svg style="width:18px;height:18px;fill:#71767b;cursor:pointer" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </div>
+    <div class="tweet-body">
+      <span class="tweet-number">3 / 6</span>
+      <p><strong>Observation 2:</strong> The $1M-$3M trap.</p>
+      <p>Revenue grows but profit doesn't, because you hired <strong>more people</strong> instead of building <strong>systems</strong>.</p>
+      <p>The agencies that break $3M have one thing in common: they <strong>standardized their delivery</strong> before they hit $1.5M.</p>
+    </div>
+    <div class="tweet-actions">
+      <svg viewBox="0 0 24 24"><path d="M4.5 3.5l15 8.5-15 8.5V3.5z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.634 8.129 8.125 0 3.5-2.213 6.484-5.328 7.466V22l-4.302-3.44c-3.18.12-6.47-1.042-8.87-3.745C1.624 13.778 1.751 11.94 1.751 10z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm0 2H8v2h8v-2z"/></svg>
+    </div>
+    <div class="tweet-stats"><strong>1,892</strong> views · <strong>134</strong> likes</div>
+  </div>
+
+  <!-- Tweet 4/6 with data card -->
+  <div class="tweet">
+    <div class="tweet-header">
+      <div class="avatar">FS</div>
+      <div class="tweet-header-info">
+        <span class="name">FlowSync</span>
+        <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.865-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5a.75.75 0 01-1.194.13l-2.5-2.5a.75.75 0 111.06-1.06l1.91 1.91 3.69-5.53a.75.75 0 111.37.55z"/></svg>
+        <span class="username">@flowsync</span>
+        <span class="dot">·</span>
+        <span class="time">1h</span>
+      </div>
+      <svg style="width:18px;height:18px;fill:#71767b;cursor:pointer" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </div>
+    <div class="tweet-body">
+      <span class="tweet-number">4 / 6</span>
+      <p><strong>Observation 3:</strong> The <span class="stat">80/20</span> of agency operations:</p>
+      <div class="metric-row">
+        <div class="metric">
+          <span class="num">20%</span>
+          <span class="label">Client work (creation)</span>
+        </div>
+        <div class="metric">
+          <span class="num">50%</span>
+          <span class="label">Communication overhead</span>
+        </div>
+        <div class="metric">
+          <span class="num">30%</span>
+          <span class="label">Scope management</span>
+        </div>
+      </div>
+      <p>If you can cut communication overhead by half, you just doubled your effective billable capacity.<br><br>Without hiring a single person.</p>
+    </div>
+    <div class="tweet-actions">
+      <svg viewBox="0 0 24 24"><path d="M4.5 3.5l15 8.5-15 8.5V3.5z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.634 8.129 8.125 0 3.5-2.213 6.484-5.328 7.466V22l-4.302-3.44c-3.18.12-6.47-1.042-8.87-3.745C1.624 13.778 1.751 11.94 1.751 10z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm0 2H8v2h8v-2z"/></svg>
+    </div>
+    <div class="tweet-stats"><strong>3,421</strong> views · <strong>267</strong> likes</div>
+  </div>
+
+  <!-- Tweet 5/6 -->
+  <div class="tweet">
+    <div class="tweet-header">
+      <div class="avatar">FS</div>
+      <div class="tweet-header-info">
+        <span class="name">FlowSync</span>
+        <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.865-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5a.75.75 0 01-1.194.13l-2.5-2.5a.75.75 0 111.06-1.06l1.91 1.91 3.69-5.53a.75.75 0 111.37.55z"/></svg>
+        <span class="username">@flowsync</span>
+        <span class="dot">·</span>
+        <span class="time">1h</span>
+      </div>
+      <svg style="width:18px;height:18px;fill:#71767b;cursor:pointer" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </div>
+    <div class="tweet-body">
+      <span class="tweet-number">5 / 6</span>
+      <p><strong>The framework</strong> that every $3M+ agency uses:</p>
+      <p>1️⃣ <strong>Template everything</strong> — Briefs, scopes, feedback forms. Non-negotiable.<br>
+      2️⃣ <strong>Single source of truth</strong> — No more "which version is final?"<br>
+      3️⃣ <strong>Time-block creation</strong> — 4-hour deep work blocks. No Slack. No meetings.<br>
+      4️⃣ <strong>Client self-serve</strong> — Status dashboards, automated check-ins.</p>
+      <p>It's <strong>boring</strong>. That's why it works.</p>
+    </div>
+    <div class="tweet-actions">
+      <svg viewBox="0 0 24 24"><path d="M4.5 3.5l15 8.5-15 8.5V3.5z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.634 8.129 8.125 0 3.5-2.213 6.484-5.328 7.466V22l-4.302-3.44c-3.18.12-6.47-1.042-8.87-3.745C1.624 13.778 1.751 11.94 1.751 10z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm0 2H8v2h8v-2z"/></svg>
+    </div>
+    <div class="tweet-stats"><strong>4,108</strong> views · <strong>312</strong> likes</div>
+  </div>
+
+  <!-- Tweet 6/6 -->
+  <div class="tweet">
+    <div class="tweet-header">
+      <div class="avatar">FS</div>
+      <div class="tweet-header-info">
+        <span class="name">FlowSync</span>
+        <svg class="verified" viewBox="0 0 24 24"><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.865-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5a.75.75 0 01-1.194.13l-2.5-2.5a.75.75 0 111.06-1.06l1.91 1.91 3.69-5.53a.75.75 0 111.37.55z"/></svg>
+        <span class="username">@flowsync</span>
+        <span class="dot">·</span>
+        <span class="time">1h</span>
+      </div>
+      <svg style="width:18px;height:18px;fill:#71767b;cursor:pointer" viewBox="0 0 24 24"><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+    </div>
+    <div class="tweet-body">
+      <span class="tweet-number">6 / 6</span>
+      <p><strong>What I built:</strong> FlowSync — project management designed for creative teams.</p>
+      <p>Built-in brief templates · One-click feedback · Time-blocking · Client dashboards · Scope management</p>
+      <p>We're in beta. <span class="highlight">flowsync.app</span> → free for first 500 teams.</p>
+      <p>If you found this thread useful:</p>
+      <p>👍 Like each tweet<br>
+      🔁 Share with a founder who needs this<br>
+      🧵 Follow <span class="hash">@flowsync</span> for more</p>
+    </div>
+    <div class="tweet-actions">
+      <svg viewBox="0 0 24 24"><path d="M4.5 3.5l15 8.5-15 8.5V3.5z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.634 8.129 8.125 0 3.5-2.213 6.484-5.328 7.466V22l-4.302-3.44c-3.18.12-6.47-1.042-8.87-3.745C1.624 13.778 1.751 11.94 1.751 10z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm0 2H8v2h8v-2z"/></svg>
+    </div>
+    <div class="tweet-stats"><strong>5,621</strong> views · <strong>489</strong> likes · <strong>112</strong> retweets · <strong>24</strong> quotes</div>
+  </div>
+
+  <!-- Generated via -->
+  <div style="padding:10px 18px;border-top:1px solid #2f3336">
+    <p style="font-size:11px;color:#71767b;text-transform:uppercase;letter-spacing:.4px">Generated by /market social — AI Marketing Suite · Content Score: 92/100</p>
+  </div>
+</div>
+</body>
+</html>

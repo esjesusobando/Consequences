@@ -114,6 +114,6 @@ alwaysApply: false
 
 ---
 
-**Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
+**Source of Truth:** `01_Personal_Os/00_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
 
 *Área Diseño UI/UX v2.0 — 2026-05-29*

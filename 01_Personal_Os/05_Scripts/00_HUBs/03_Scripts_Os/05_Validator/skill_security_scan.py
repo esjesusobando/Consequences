@@ -18,8 +18,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
-PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
 ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
@@ -41,7 +41,6 @@ if sys.platform == "win32":
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
-
 @dataclass
 class SecurityFinding:
     """Representa un hallazgo de seguridad."""
@@ -52,7 +51,6 @@ class SecurityFinding:
     line: int
     message: str
     code_snippet: str = ""
-
 
 @dataclass
 class ScanResult:
@@ -80,7 +78,6 @@ class ScanResult:
     @property
     def is_clean(self) -> bool:
         return self.critical_count == 0 and self.high_count == 0
-
 
 class SecurityScanner:
     """Escáner de seguridad para skills."""
@@ -210,7 +207,6 @@ class SecurityScanner:
                     )
                     self.findings.append(finding)
 
-
 def print_report(result: ScanResult):
     """Imprime el reporte de seguridad."""
     print("\n" + "=" * 60)
@@ -266,7 +262,6 @@ def print_report(result: ScanResult):
 
     print()
 
-
 def main():
     """Función principal."""
     parser = argparse.ArgumentParser(
@@ -313,7 +308,6 @@ Examples:
     # CRITICAL=2, HIGH=1, CLEAN=0
     exit_code = 0 if result.is_clean else (2 if result.critical_count > 0 else 1)
     return exit_code
-
 
 if __name__ == "__main__":
     main()

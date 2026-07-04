@@ -3,7 +3,7 @@
 > **Proyecto:** PersonalOS v4.9 Consequences
 > **Fecha:** 2026-05-27 (v2 — añadido TOP 10 Diseño + Creación de Contenido)
 > **Criterio:** Valor práctico × Estado del arte × Calidad de ejecución
-> **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+> **Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
 ---
 

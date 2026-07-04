@@ -27,8 +27,8 @@ from pathlib import Path
 # → scripts/ → 12_Auditors_Os/ → 03_Scripts_Os/ → 05_Scripts/ → 01_Personal_Os/ → ROOT
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
-OPERATIONS = SCRIPTS_OS.parent          # 04_Operations
-PERSONAL_OS = OPERATIONS.parent         # 01_Personal_Os
+
+PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")         # 01_Personal_Os
 ROOT = PERSONAL_OS.parent               # Project root
 
 # Fix encoding for Windows
@@ -47,7 +47,6 @@ import math
 COMPACT_THRESHOLD = 0.80  # Claude compacta al 80%
 BAR_WIDTH = 10
 
-
 # Colores ANSI
 class Colors:
     DIM = "\033[90m"
@@ -58,11 +57,9 @@ class Colors:
     BLINK = "\033[5m"
     RESET = "\033[0m"
 
-
 # ============================================================
 # FUNCIONES
 # ============================================================
-
 
 def scale_percentage(real_percentage: float) -> float:
     """
@@ -71,7 +68,6 @@ def scale_percentage(real_percentage: float) -> float:
     if real_percentage >= COMPACT_THRESHOLD:
         return 100.0
     return (real_percentage / COMPACT_THRESHOLD) * 100
-
 
 def get_color(real_percentage: float) -> str:
     """Retorna color basado en porcentaje real"""
@@ -84,11 +80,9 @@ def get_color(real_percentage: float) -> str:
     else:
         return Colors.RED
 
-
 def get_bar_filled_blocks(percentage: float) -> int:
     """Retorna número de bloques llenos (0-10)"""
     return min(BAR_WIDTH, int((percentage / 100) * BAR_WIDTH + 0.5))
-
 
 def create_progress_bar(real_percentage: float) -> str:
     """Crea barra de progreso de 10 caracteres"""
@@ -106,7 +100,6 @@ def create_progress_bar(real_percentage: float) -> str:
         bar += f" {Colors.BLINK}{Colors.RED}CRITICAL{Colors.RESET}"
 
     return f"{color}{bar}{Colors.RESET}"
-
 
 def format_context_usage(
     model_name: str, folder_name: str, real_percentage: float
@@ -127,7 +120,6 @@ def format_context_usage(
 
     return display
 
-
 def parse_context_from_args(args: list) -> tuple:
     """
     Parsea argumentos: python context_bar.py [model] [folder] [percentage]
@@ -147,11 +139,9 @@ def parse_context_from_args(args: list) -> tuple:
 
     return [(model, folder, pct)]
 
-
 # ============================================================
 # EJEMPLOS DE USO
 # ============================================================
-
 
 def run_demo():
     """Demo con ejemplos de diferentes niveles de uso"""
@@ -185,7 +175,6 @@ def run_demo():
     print(
         f"  {Colors.GREEN}█{Colors.RESET} <50% | {Colors.YELLOW}█{Colors.RESET} 50-65% | {Colors.ORANGE}█{Colors.RESET} 65-95% | {Colors.RED}█ + 💀{Colors.RESET} >=95%"
     )
-
 
 # ============================================================
 # MAIN

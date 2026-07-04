@@ -33,8 +33,8 @@ Esta skill es el **motor de contenido visual** del PersonalOS. Crea carruseles p
 - **Storytelling**: Una idea por slide.
 
 ## 📦 Scripts Relacionados
-- `01_Personal_Os/04_Operations/03_Scripts_Os/16_Carousel_Engine.py`: Lógica de generación.
-- `01_Personal_Os/04_Operations/03_Scripts_Os/17_Preview_Generator.js`: Render interactivo.
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/16_Carousel_Engine.py`: Lógica de generación.
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/17_Preview_Generator.js`: Render interactivo.
 
 ---
 

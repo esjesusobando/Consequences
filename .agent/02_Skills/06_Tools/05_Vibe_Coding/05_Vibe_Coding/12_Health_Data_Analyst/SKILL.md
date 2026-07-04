@@ -115,4 +115,4 @@ def plot_health_trends(df, target_col):
 
 Guardar en:
 - `03_Knowledge/` — Documentación
-- `04_Operations/` — Estado activo
+- `05_Scripts/` — Estado activo
