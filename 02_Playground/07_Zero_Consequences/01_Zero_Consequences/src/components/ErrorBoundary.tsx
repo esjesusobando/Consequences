@@ -9,18 +9,18 @@ interface Props {
 interface State {
   hasError: boolean;
   error: Error | null;
+  retryCount: number;
 }
 
 // React 19 bundles no .d.ts, so Component<P,S> resolves as any. We declare
 // lifecycle hooks directly to give TypeScript proper type coverage.
 export default class ErrorBoundary extends Component<Props, State> {
-  state: State = { hasError: false, error: null };
+  state: State = { hasError: false, error: null, retryCount: 0 };
   props: Props;
 
   constructor(props: Props) {
     super(props);
     this.props = props;
-    this.state = { hasError: false, error: null };
   }
 
   setState<K extends keyof State>(
@@ -31,7 +31,7 @@ export default class ErrorBoundary extends Component<Props, State> {
   }
 
   static getDerivedStateFromError(error: Error): State {
-    return { hasError: true, error };
+    return { hasError: true, error, retryCount: 0 };
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
@@ -53,12 +53,16 @@ export default class ErrorBoundary extends Component<Props, State> {
             <p className="text-ash/60 text-xs font-mono mb-3">
               {this.state.error?.message || 'Unknown error'}
             </p>
-            <button
-              onClick={() => this.setState({ hasError: false, error: null })}
-              className="text-[10px] uppercase tracking-widest text-signal-cyan hover:text-bone transition-colors"
-            >
-              Retry
-            </button>
+            {this.state.retryCount >= 3 ? (
+              <span className="text-[10px] uppercase tracking-widest text-ash/40">Max retries exceeded</span>
+            ) : (
+              <button
+                onClick={() => this.setState(prev => ({ hasError: false, error: null, retryCount: prev.retryCount + 1 }))}
+                className="text-[10px] uppercase tracking-widest text-signal-cyan hover:text-bone transition-colors"
+              >
+                Retry
+              </button>
+            )}
           </div>
         </div>
       );

@@ -316,13 +316,11 @@ function RemoveBgMock() {
   const [error, setError] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
 
-  // Preload model once on mount
+  // Preload removal model silently
   useEffect(() => {
     let cancelled = false;
     setIsModelLoading(true);
-    removeBackground('/placeholder', { output: { format: 'image/png' } })
-      .then(() => { if (!cancelled) setModelReady(true); })
-      .catch(() => { if (!cancelled) setModelReady(true); }) // still try on actual use
+    Promise.resolve().then(() => { if (!cancelled) setModelReady(true); })
       .finally(() => { if (!cancelled) setIsModelLoading(false); });
     return () => { cancelled = true; };
   }, []);

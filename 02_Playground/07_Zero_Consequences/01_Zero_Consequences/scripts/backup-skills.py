@@ -7,7 +7,7 @@ Backup locations (both):
   2. backup/skills-flat/ — single-file JSON with all metadata + content
   3. Console manifest (stdout)
 """
-import os, json, sys, shutil, hashlib, datetime
+import os, json, sys, shutil, hashlib, datetime, platform
 
 SKILL_DIRS = [
     ("opencode_config", os.path.expanduser("~/.config/opencode/skills")),
@@ -76,26 +76,38 @@ def main():
 
             # Tree backup
             os.makedirs(os.path.dirname(dst_path), exist_ok=True)
+            copy_ok = False
             try:
-                shutil.copy2(src_path, dst_path)
+                src = src_path
+                if platform.system() == "Windows" and len(src_path) > 200:
+                    src = "\\\\?\\" + os.path.abspath(src_path)
+                shutil.copy2(src, dst_path)
+                if os.path.exists(dst_path):
+                    copy_ok = True
+                else:
+                    print(f"  FAIL verify: {dst_path} does not exist after copy")
             except Exception as e:
                 print(f"  FAIL copy: {src_path} → {dst_path}: {e}")
 
-            size = os.path.getsize(src_path)
-            mtime = datetime.datetime.fromtimestamp(os.path.getmtime(src_path)).isoformat(timespec="seconds")
-            checksum = hashlib.md5(text.encode()).hexdigest()
+            if copy_ok:
+                size = os.path.getsize(src_path)
+                mtime = datetime.datetime.fromtimestamp(os.path.getmtime(src_path)).isoformat(timespec="seconds")
+                checksum = hashlib.md5(text.encode()).hexdigest()
 
-            manifest.append({
-                "source": source_name,
-                "rel_path": rel_path,
-                "full_path": src_path,
-                "name": name,
-                "description": fm.get("description", ""),
-                "size_bytes": size,
-                "modified": mtime,
-                "checksum_md5": checksum,
-                "content_length": len(content),
-            })
+                manifest.append({
+                    "source": source_name,
+                    "rel_path": rel_path,
+                    "full_path": src_path,
+                    "name": name,
+                    "description": fm.get("description", ""),
+                    "size_bytes": size,
+                    "modified": mtime,
+                    "checksum_md5": checksum,
+                    "content_length": len(content),
+                    "copied_ok": True,
+                })
+            else:
+                print(f"  SKIP manifest: {src_path} (copy failed)")
 
     # Sort manifest
     manifest.sort(key=lambda m: (m["source"], m["rel_path"]))
