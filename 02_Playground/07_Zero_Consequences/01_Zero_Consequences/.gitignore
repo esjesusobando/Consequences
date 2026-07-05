@@ -10,4 +10,5 @@ coverage/
 # Generated / session artifacts
 backup/
 .sdd/
+openspec/
 spec.md
