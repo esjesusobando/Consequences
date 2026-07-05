@@ -187,7 +187,7 @@ export default function WaveformPlayer({
   };
 
   return (
-    <div className="bg-[#0B0F18] border-t border-graphite/45 py-3 px-6 select-none flex flex-col md:flex-row items-center gap-4 w-full">
+    <div className="bg-night border-t border-graphite/45 py-3 px-6 select-none flex flex-col md:flex-row items-center gap-4 w-full">
       
       {/* Current track metadata */}
       <div className="flex items-center gap-3 w-full md:w-64 flex-shrink-0">

@@ -520,7 +520,7 @@ export default function OperationsOSView({
                           type="text" 
                           placeholder="Aura Core Black Piano Finish"
                           value={variantName}
-                          onChange={(e) => setNewProdName(preset => preset) || setVariantName(e.target.value)}
+                          onChange={(e) => { setNewProdName(preset => preset); setVariantName(e.target.value); }}
                           className="bg-[#04060A] border border-graphite p-2 text-xs text-bone outline-none rounded"
                           required
                         />

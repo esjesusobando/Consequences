@@ -852,7 +852,7 @@ export default function DashboardView({
                     onLogMessage('info', 'Iniciando conexión segura de Google Workspace...');
                     const token = await googleSignIn();
                     if (token) {
-                      setGoogleToken(token);
+                      setGoogleToken(token.accessToken);
                       onLogMessage('ok', '✓ Autenticado con Google con éxito.');
                     }
                   } catch (e: any) {
@@ -870,7 +870,7 @@ export default function DashboardView({
           <div className="flex gap-2">
             <button
               onClick={() => setShowAddForm(!showAddForm)}
-              className="flex-1 flex items-center justify-center gap-2 border border-dashed border-graphite hover:border-ash/50 bg-[#131826]/30 hover:bg-carbon/30 py-2 rounded-lg text-xs font-mono text-ash hover:text-bone transition-all duration-200"
+              className="flex-1 flex items-center justify-center gap-2 border border-dashed border-graphite hover:border-ash/50 bg-carbon/30 hover:bg-carbon/30 py-2 rounded-lg text-xs font-mono text-ash hover:text-bone transition-all duration-200"
             >
               {showAddForm ? <X className="w-3.5 h-3.5 text-signal-amber" /> : <Plus className="w-3.5 h-3.5 text-signal-cyan" />}
               {showAddForm ? 'Cerrar Registro' : 'Agendar Nueva Reunión Calendario'}
@@ -932,7 +932,7 @@ export default function DashboardView({
                       type="time"
                       value={newTime} 
                       onChange={(e) => setNewTime(e.target.value)}
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-2 font-mono text-bone text-sm"
+                      className="bg-carbon border border-graphite focus:border-signal-cyan outline-none rounded p-2 font-mono text-bone text-sm"
                       required
                     />
                   </div>
@@ -950,7 +950,7 @@ export default function DashboardView({
                         }
                       }}
                       placeholder="Nombre de la reunión" 
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-2 text-bone text-xs"
+                      className="bg-carbon border border-graphite focus:border-signal-cyan outline-none rounded p-2 text-bone text-xs"
                       required
                     />
                   </div>
@@ -987,7 +987,7 @@ export default function DashboardView({
                       value={newDesc} 
                       onChange={(e) => setNewDesc(e.target.value)}
                       placeholder="Temario o notas breves..." 
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-2 text-bone text-xs h-12 resize-none"
+                      className="bg-carbon border border-graphite focus:border-signal-cyan outline-none rounded p-2 text-bone text-xs h-12 resize-none"
                     />
                   </div>
 
@@ -1091,12 +1091,12 @@ export default function DashboardView({
                     <input
                       name="title"
                       placeholder="Nueva tarea..."
-                      className="flex-1 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1.5 text-bone font-mono text-[10px]"
+                      className="flex-1 bg-carbon border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1.5 text-bone font-mono text-[10px]"
                     />
                     <input
                       name="time"
                       placeholder="HH:MM"
-                      className="w-16 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1.5 text-bone font-mono text-[10px]"
+                      className="w-16 bg-carbon border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1.5 text-bone font-mono text-[10px]"
                     />
                     <button type="submit" className="px-2 py-1.5 bg-signal-lime/20 border border-signal-lime/40 text-signal-lime rounded font-mono text-[9px] hover:bg-signal-lime/30 cursor-pointer transition-colors">
                       +
@@ -1138,8 +1138,8 @@ export default function DashboardView({
                                 }}
                                 className="flex-1 flex gap-1"
                               >
-                                <input name="editTitle" defaultValue={sig.title} className="flex-1 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[10px]" />
-                                <input name="editTime" defaultValue={sig.time} className="w-14 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[10px]" />
+                                <input name="editTitle" defaultValue={sig.title} className="flex-1 bg-carbon border border-graphite focus:border-signal-lime outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[10px]" />
+                                <input name="editTime" defaultValue={sig.time} className="w-14 bg-carbon border border-graphite focus:border-signal-lime outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[10px]" />
                                 <button type="submit" className="px-1.5 py-0.5 text-signal-lime text-[8px] cursor-pointer font-mono">OK</button>
                               </form>
                             ) : (

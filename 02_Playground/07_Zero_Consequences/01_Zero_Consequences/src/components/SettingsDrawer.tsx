@@ -158,7 +158,10 @@ function McpServerSubsection() {
   const [connections, setConnections] = useState<McpConnection[]>(() => {
     try {
       const saved = localStorage.getItem(storageKey);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
     } catch { /* ignore */ }
     return [];
   });
@@ -288,7 +291,10 @@ function SkillsBrowserSubsection() {
   const [skills, setSkills] = useState<SkillEntry[]>(() => {
     try {
       const saved = localStorage.getItem(storageKey);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
     } catch { /* ignore */ }
     // Default sample skills
     return [
@@ -391,7 +397,10 @@ function HooksSubsection() {
   const [hooks, setHooks] = useState<HookEntry[]>(() => {
     try {
       const saved = localStorage.getItem(storageKey);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
     } catch { /* ignore */ }
     return [
       { name: 'pre-commit-ga', trigger: 'pre-commit', path: '.agents/hooks/pre-commit-ga', enabled: true },
@@ -538,8 +547,13 @@ export default function SettingsDrawer({
 
   // Manage saved custom Workspace layouts
   const [savedWorkspaces, setSavedWorkspaces] = useState<Array<{ id: string, name: string, config: any, accent: AccentColor }>>(() => {
-    const saved = localStorage.getItem('sota_saved_workspaces');
-    if (saved) return JSON.parse(saved);
+    try {
+      const saved = localStorage.getItem('sota_saved_workspaces');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
+    } catch { /* ignore */ }
     return [
       {
         id: 'preset-sota',
@@ -772,7 +786,7 @@ export default function SettingsDrawer({
               {/* Upload */}
               <label 
                 htmlFor="bg-image-upload"
-                className="flex flex-col items-center justify-center border border-dashed border-graphite/60 hover:border-signal-cyan/50 bg-[#131826]/30 hover:bg-[#131826]/60 p-3 rounded-lg cursor-pointer transition-all text-center select-none"
+                className="flex flex-col items-center justify-center border border-dashed border-graphite/60 hover:border-signal-cyan/50 bg-carbon/30 hover:bg-[#131826]/60 p-3 rounded-lg cursor-pointer transition-all text-center select-none"
               >
                 <ImageIcon className="w-4 h-4 text-signal-cyan mb-1 animate-pulse" />
                 <span className="text-[9px] font-mono text-bone uppercase font-bold">Subir imagen</span>
@@ -902,7 +916,7 @@ export default function SettingsDrawer({
                 onClick={() => { setConfig(prev => ({ ...prev, themeMode: 'dark' })); onLogMessage('info', 'Modo Oscuro'); }}
                 className={`flex flex-col items-center gap-1 p-2.5 rounded-lg border text-center transition-all cursor-pointer ${(config.themeMode ?? 'dark') === 'dark' ? 'border-signal-cyan bg-signal-cyan/10 font-bold' : 'border-graphite/40 bg-void/35 hover:border-graphite'}`}
               >
-                <div className="w-5 h-5 rounded bg-[#04060A] border border-[#1E2435] flex items-center justify-center">
+                <div className="w-5 h-5 rounded bg-void border border-[#1E2435] flex items-center justify-center">
                   <div className="w-2.5 h-2.5 rounded-full bg-[#00F0FF]" />
                 </div>
                 <span className="text-[9px] font-mono font-bold uppercase text-bone mt-1">DARK</span>
@@ -998,7 +1012,7 @@ export default function SettingsDrawer({
               </div>
 
               <form onSubmit={handleSaveWorkspace} className="flex gap-1.5 mt-1">
-                <input type="text" value={newWorkspaceName} onChange={(e) => setNewWorkspaceName(e.target.value)} placeholder="Nombre workspace..." className="flex-1 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1 text-bone font-mono text-[9px]" required />
+                <input type="text" value={newWorkspaceName} onChange={(e) => setNewWorkspaceName(e.target.value)} placeholder="Nombre workspace..." className="flex-1 bg-void border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1 text-bone font-mono text-[9px]" required />
                 <button type="submit" className="px-2 bg-signal-lime text-void hover:bg-signal-lime/90 font-mono font-bold uppercase text-[8px] rounded flex items-center gap-1 cursor-pointer"><Save className="w-3 h-3" /></button>
               </form>
 

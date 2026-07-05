@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Eye, EyeOff, ChevronDown, Menu } from 'lucide-react';
 import { AccentColor } from '../types';
+import type { TabId } from './SideNavBar';
 
 interface TopNavBarProps {
-  activeTab: 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
-  setActiveTab: (tab: 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal') => void;
+  activeTab: TabId;
+  setActiveTab: (tab: TabId) => void;
   accent: AccentColor;
   onAccentChange: (accent: AccentColor) => void;
   onOpenSettings: () => void;
@@ -15,12 +16,16 @@ interface TopNavBarProps {
 
 const tabLabels: Record<string, string> = {
   dashboard: 'PRÓXIMA SESIÓN',
+  email: 'EMAIL',
+  tasks: 'TAREAS',
+  marketing: 'MARKETING',
   personal_os: 'PERSONAL OS',
   linear: 'TEAM LINEAR',
   operations: 'OPERACIONES',
   analytics: 'REPORTES & QR',
   specs: 'ESTILOS',
   terminal: 'TERMINAL',
+  tools: 'TOOLS',
 };
 
 const allTabs = ['dashboard', 'personal_os', 'linear', 'operations', 'analytics', 'specs', 'terminal'] as const;

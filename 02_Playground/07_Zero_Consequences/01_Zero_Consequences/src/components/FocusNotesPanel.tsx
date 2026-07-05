@@ -26,7 +26,10 @@ export default function FocusNotesPanel() {
   const [notes, setNotes] = useState<Note[]>(() => {
     try {
       const saved = localStorage.getItem(storageKey);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
     } catch { /* ignore */ }
     return [];
   });
@@ -34,7 +37,10 @@ export default function FocusNotesPanel() {
   const [folders, setFolders] = useState<string[]>(() => {
     try {
       const saved = localStorage.getItem(folderKey);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed;
+      }
     } catch { /* ignore */ }
     return DEFAULT_FOLDERS;
   });

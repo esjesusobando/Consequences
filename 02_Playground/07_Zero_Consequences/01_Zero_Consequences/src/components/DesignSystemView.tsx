@@ -339,7 +339,7 @@ export default function DesignSystemView({
               <input 
                 type="text" 
                 value="Auth_Error: invalid_token_handshake"
-                readonly
+                readOnly
                 className="bg-carbon/20 border border-signal-magenta/50 rounded p-2 text-signal-magenta font-mono text-xs outline-none"
               />
               <span className="text-[10px] text-signal-magenta font-mono uppercase">

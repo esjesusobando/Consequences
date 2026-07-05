@@ -166,7 +166,7 @@ export default function SideNavBar({
               title={item.label}
             >
               <Icon className="w-5 h-5" />
-              <span className="absolute left-16 bg-[#131826]/95 border border-graphite/80 px-2.5 py-1 rounded text-[10px] text-bone uppercase tracking-widest opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 whitespace-nowrap shadow-xl">
+              <span className="absolute left-16 bg-carbon/95 border border-graphite/80 px-2.5 py-1 rounded text-[10px] text-bone uppercase tracking-widest opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 whitespace-nowrap shadow-xl">
                 {item.desc}
               </span>
             </button>
