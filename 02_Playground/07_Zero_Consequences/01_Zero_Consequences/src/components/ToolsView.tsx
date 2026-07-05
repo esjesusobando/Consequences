@@ -6,6 +6,7 @@ import {
   Wand2,
   QrCode,
   KeyRound,
+  Cpu,
   Search,
   Copy,
   Check,
@@ -48,6 +49,17 @@ import QRCode from 'qrcode';
 import { removeBackground } from '@imgly/background-removal';
 import PhotoEditor from './PhotoEditor';
 
+// ── Title Normalizer ──────────────────────────────────────────────
+
+function toPascalCaseUnderscore(str: string): string {
+  return str
+    .replace(/[^a-zA-Z0-9ÁÉÍÓÚáéíóúÑñüÜ\s_-]/g, ' ')
+    .split(/[\s_-]+/)
+    .filter(Boolean)
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join('_');
+}
+
 // ── Types ──────────────────────────────────────────────────────────
 
 interface ToolsViewProps {
@@ -68,9 +80,11 @@ const TOOLS: ToolDef[] = [
   { id: 'remove-bg',  label: 'Remove BG',       icon: Wand2,      desc: 'Quitar fondo automático' },
   { id: 'qr',         label: 'QR Generator',    icon: QrCode,     desc: 'Texto a código QR' },
   { id: 'passwords',  label: 'Passwords',       icon: KeyRound,   desc: 'Generador estilo ProtonVPN' },
+  { id: 'skills',     label: 'Skills Library',  icon: Cpu,        desc: 'CRUD de skills nivel SOTA' },
 ];
 
 import { IMPORTED_PROMPTS } from '../data/importedPrompts';
+import SkillsLibrary from './SkillsLibrary';
 
 // ── Seed data ─────────────────────────────────────────────────────
 
@@ -99,29 +113,33 @@ const STORAGE_KEY = 'zc_prompts';
 const FOLDERS_KEY = 'zc_prompt_folders';
 
 function loadPrompts(): Prompt[] {
+  const normalize = (p: Prompt) => ({ ...p, title: toPascalCaseUnderscore(p.title) });
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
-      const stored: Prompt[] = JSON.parse(raw);
+      const stored: Prompt[] = JSON.parse(raw).map(normalize);
       if (stored.length < SEED_PROMPTS.length) {
-        // Missing prompts — merge with seeds, preserving favorites and custom prompts
         const storedIds = new Set(stored.map(p => p.id));
         const missingFromSeeds = SEED_PROMPTS.filter(p => !storedIds.has(p.id));
-        const merged = [...stored, ...missingFromSeeds];
+        const merged = [...stored, ...missingFromSeeds.map(normalize)];
         localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
         return merged;
       }
       return stored;
     }
   } catch { /* corrupted */ }
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_PROMPTS));
-  return SEED_PROMPTS;
+  const seeds = SEED_PROMPTS.map(normalize);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(seeds));
+  return seeds;
 }
 
 function loadFolders(): string[] {
   try {
     const raw = localStorage.getItem(FOLDERS_KEY);
-    if (raw) return JSON.parse(raw) as string[];
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) return parsed;
+    }
   } catch { /* corrupted */ }
   return [];
 }
@@ -906,22 +924,24 @@ function PromptLibrary() {
   }, [toast]);
 
   // Collect unique categories from prompts
-  const categories = [...new Set(prompts.map(p => p.category))];
+  // as string[] needed: Set spread from JSON-backed array loses type inference
+  const categories = [...new Set(prompts.map(p => p.category))] as string[];
 
   // ── CRUD ──────────────────────────────────────────────────────
 
   const handleSavePrompt = useCallback((data: Omit<Prompt, 'id' | 'createdAt' | 'updatedAt'>) => {
     const now = Date.now();
+    const normalized = { ...data, title: toPascalCaseUnderscore(data.title) };
     if (editingPrompt) {
       setPrompts(prev => prev.map(p =>
         p.id === editingPrompt.id
-          ? { ...p, ...data, sotaLevel: data.sotaLevel ?? p.sotaLevel, updatedAt: now }
+          ? { ...p, ...normalized, sotaLevel: normalized.sotaLevel ?? p.sotaLevel, updatedAt: now }
           : p
       ));
     } else {
       const newPrompt: Prompt = {
         id: nanoid(8),
-        ...data,
+        ...normalized,
         createdAt: now,
         updatedAt: now,
       };
@@ -1254,7 +1274,7 @@ function PromptLibrary() {
                 className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-[11px] font-semibold bg-carbon/30 text-ash/60 border border-graphite/20 hover:text-bone hover:border-graphite/40 transition-all cursor-pointer shrink-0"
                 title="Exportar prompts"
               >
-                <Download className="w-3.5 h-3.5" />
+                <Upload className="w-3.5 h-3.5" />
               </button>
               <AnimatePresence>
                 {showExportMenu && (
@@ -1294,7 +1314,7 @@ function PromptLibrary() {
               className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-[11px] font-semibold bg-carbon/30 text-ash/60 border border-graphite/20 hover:text-bone hover:border-graphite/40 transition-all cursor-pointer shrink-0"
               title="Importar prompts"
             >
-              <Upload className="w-3.5 h-3.5" />
+              <Download className="w-3.5 h-3.5" />
             </button>
 
             {/* New prompt */}
@@ -1518,6 +1538,7 @@ export default function ToolsView({ accent, onLogMessage }: ToolsViewProps) {
           {activeTool === 'remove-bg' && <RemoveBgMock />}
           {activeTool === 'qr' && <QrGeneratorMock />}
           {activeTool === 'passwords' && <PasswordGenerator />}
+          {activeTool === 'skills' && <SkillsLibrary />}
         </div>
       </div>
     </div>

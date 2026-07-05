@@ -49,16 +49,16 @@ interface SliderDef {
 }
 
 const SLIDERS: SliderDef[] = [
-  { key: 'exposure',   label: 'Exposición',   min: -1,   max: 1,   step: 0.01 },
-  { key: 'contrast',   label: 'Contraste',    min: -1,   max: 1,   step: 0.01 },
-  { key: 'highlights', label: 'Altas Luces',  min: -1,   max: 0,   step: 0.01 },
-  { key: 'shadows',    label: 'Sombras',      min: 0,    max: 1,   step: 0.01 },
+  { key: 'exposure',   label: 'Exposición',   min: -1,   max: 1,   step: 0.005 },
+  { key: 'contrast',   label: 'Contraste',    min: -1,   max: 1,   step: 0.005 },
+  { key: 'highlights', label: 'Altas Luces',  min: -1,   max: 0,   step: 0.005 },
+  { key: 'shadows',    label: 'Sombras',      min: 0,    max: 1,   step: 0.005 },
   { key: 'warmth',     label: 'Temperatura',  min: -30,  max: 30,  step: 1 },
-  { key: 'saturation', label: 'Saturación',   min: -0.5, max: 0.5, step: 0.01 },
-  { key: 'vibrance',   label: 'Vibración',    min: 0,    max: 0.5, step: 0.01 },
-  { key: 'clarity',    label: 'Claridad',     min: 0,    max: 0.5, step: 0.01 },
-  { key: 'vignette',   label: 'Viñeta',       min: 0,    max: 0.8, step: 0.01 },
-  { key: 'dof',        label: 'Prof. Campo',  min: 0,    max: 1,   step: 0.01 },
+  { key: 'saturation', label: 'Saturación',   min: -0.5, max: 0.5, step: 0.005 },
+  { key: 'vibrance',   label: 'Vibración',    min: 0,    max: 0.5, step: 0.005 },
+  { key: 'clarity',    label: 'Claridad',     min: 0,    max: 0.5, step: 0.005 },
+  { key: 'vignette',   label: 'Viñeta',       min: 0,    max: 0.8, step: 0.005 },
+  { key: 'dof',        label: 'Prof. Campo',  min: 0,    max: 1,   step: 0.005 },
 ];
 
 const TAGS = ['Luz suave', 'Sombras alzadas', 'Tonos cálidos', 'Split Toning teal↔ámbar', 'DoF creativo', 'Viñeta sutil', 'Vibrance inteligente'];
@@ -205,7 +205,42 @@ function runPipeline(canvas: HTMLCanvasElement, original: HTMLCanvasElement, adj
   }
 }
 
-// ── SliderRow Component ──
+// ── Histogram ──
+
+function computeHistogram(canvas: HTMLCanvasElement): number[] {
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  if (!ctx) return [];
+  const { width, height } = canvas;
+  const data = ctx.getImageData(0, 0, width, height).data;
+  const hist = new Array(256).fill(0);
+  for (let i = 0; i < data.length; i += 4) {
+    const lum = Math.round(data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114);
+    hist[lum]++;
+  }
+  return hist;
+}
+
+function HistogramBar({ hist, max }: { hist: number[]; max: number }) {
+  if (max === 0) return null;
+  return (
+    <div className="flex items-end h-8 gap-[1px] px-1">
+      {hist.map((v, i) => (
+        <div
+          key={i}
+          className="w-[3px] rounded-t-sm transition-all duration-75"
+          style={{
+            height: `${(v / max) * 100}%`,
+            background: i < 85 ? `oklch(from var(--color-signal-cyan) l c h / ${0.3 + (v / max) * 0.7})` :
+                        i < 170 ? `oklch(from var(--color-signal-lime) l c h / ${0.3 + (v / max) * 0.7})` :
+                        `oklch(from var(--color-signal-magenta) l c h / ${0.3 + (v / max) * 0.7})`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
+// ── Custom Slider (Lightroom-style) ──
 
 interface SliderRowProps {
   def: SliderDef;
@@ -215,56 +250,126 @@ interface SliderRowProps {
   onChange: (key: keyof Adjustments, value: number) => void;
 }
 
-function SliderRow({ def, value, accent, isChanged, onChange }: SliderRowProps) {
-  const s = def;
+function SliderRow({ def: s, value, accent, isChanged, onChange }: SliderRowProps) {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [dragging, setDragging] = useState(false);
+  const [focused, setFocused] = useState(false);
+
   const pct = ((value - s.min) / (s.max - s.min)) * 100;
-  const isBi = s.min < 0;
+  const isBi = s.min < 0 && s.max > 0;
   const fillL = isBi ? (value >= 0 ? 50 : pct) : 0;
   const fillW = isBi ? (value >= 0 ? pct - 50 : 50 - pct) : pct;
 
-  const accentMap: Record<string, string> = {
-    cyan: '#00F0FF', magenta: '#FF2E9A', lime: '#C6FF3D', amber: '#FFB400',
-  };
-  const accentColor = accentMap[accent] || '#00F0FF';
+  const accentHex = { cyan: '#00F0FF', magenta: '#FF2E9A', lime: '#C6FF3D', amber: '#FFB400' }[accent] || '#00F0FF';
+
+  const valFromPct = useCallback((clientX: number) => {
+    const track = trackRef.current;
+    if (!track) return value;
+    const rect = track.getBoundingClientRect();
+    const x = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    const raw = s.min + x * (s.max - s.min);
+    const stepped = Math.round(raw / s.step) * s.step;
+    return Math.max(s.min, Math.min(s.max, stepped));
+  }, [s, value]);
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setDragging(true);
+    onChange(s.key, valFromPct(e.clientX));
+  }, [s.key, valFromPct, onChange]);
+
+  useEffect(() => {
+    if (!dragging) return;
+    const handleMove = (e: MouseEvent) => {
+      e.preventDefault();
+      onChange(s.key, valFromPct(e.clientX));
+    };
+    const handleUp = () => setDragging(false);
+    window.addEventListener('mousemove', handleMove);
+    window.addEventListener('mouseup', handleUp);
+    return () => {
+      window.removeEventListener('mousemove', handleMove);
+      window.removeEventListener('mouseup', handleUp);
+    };
+  }, [dragging, s.key, valFromPct, onChange]);
+
+  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
+    const step = e.shiftKey ? s.step * 10 : s.step;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      onChange(s.key, Math.min(s.max, value + step));
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      onChange(s.key, Math.max(s.min, value - step));
+    }
+  }, [s, value, onChange]);
+
+  const handleDoubleClick = useCallback(() => {
+    onChange(s.key, 0);
+  }, [s.key, onChange]);
 
   return (
-    <div className="mb-5 last:mb-0">
-      <div className="flex justify-between items-baseline mb-2">
-        <span className={`text-[11px] font-mono tracking-wide transition-colors duration-150 ${isChanged ? 'text-bone' : 'text-ash'}`}>
+    <div className="mb-3 last:mb-0">
+      <div className="flex justify-between items-baseline mb-1.5">
+        <label className={`text-[10px] font-mono tracking-wide transition-colors duration-150 ${isChanged ? 'text-bone' : 'text-ash/70'}`}>
           {s.label}
-        </span>
-        <span className={`text-[10px] font-mono tabular-nums transition-colors duration-150 min-w-[36px] text-right ${isChanged ? 'text-signal-cyan' : 'text-ash'}`}>
+        </label>
+        <span className="text-[10px] font-mono tabular-nums text-right tabular-nums tracking-tight min-w-[40px] text-right"
+          style={{ color: isChanged ? accentHex : 'var(--color-ash)' }}>
           {fmtVal(s.key, value)}
         </span>
       </div>
-      <div className="relative h-5 flex items-center">
-        <div className="absolute left-0 right-0 h-[3px] rounded-full overflow-visible photo-editor-slider" style={{ background: '#12161F' }}>
+      <div className="relative h-8 flex items-center">
+        {/* Track background */}
+        <div
+          ref={trackRef}
+          className={`relative w-full h-4 rounded-md cursor-pointer overflow-hidden select-none
+            ${dragging ? 'cursor-grabbing' : 'cursor-pointer'}
+            ${focused ? 'ring-1' : ''}`}
+          style={{
+            backgroundColor: 'var(--color-graphite)',
+            opacity: 0.25,
+            boxShadow: focused ? `0 0 0 1px ${accentHex}40` : 'none',
+          }}
+          onMouseDown={handleMouseDown}
+          onDoubleClick={handleDoubleClick}
+          tabIndex={0}
+          role="slider"
+          aria-label={s.label}
+          aria-valuemin={s.min}
+          aria-valuemax={s.max}
+          aria-valuenow={value}
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
+          onKeyDown={handleKeyDown}
+        >
+          {/* Fill */}
+          {fillW > 0 && (
+            <div
+              className="absolute h-full rounded-md pointer-events-none transition-all duration-75"
+              style={{
+                left: `${fillL}%`,
+                width: `${Math.min(100 - fillL, fillW)}%`,
+                background: isChanged ? accentHex : 'var(--color-steel)',
+                opacity: isChanged ? 0.7 : 0.3,
+              }}
+            />
+          )}
+          {/* Center line */}
+          {isBi && (
+            <div className="absolute left-1/2 top-0 w-[1px] h-full pointer-events-none"
+              style={{ backgroundColor: 'var(--color-ash)', opacity: 0.3 }} />
+          )}
+          {/* Thumb */}
           <div
-            className="absolute h-full rounded-full transition-colors duration-150 pointer-events-none photo-editor-slider-fill"
+            className="absolute top-1/2 -translate-y-1/2 w-[14px] h-[14px] rounded-full pointer-events-none transition-all duration-75"
             style={{
-              left: `${fillL}%`,
-              width: `${Math.max(0, fillW)}%`,
-              background: isChanged ? accentColor : '#12161F',
+              left: `calc(${pct}% - 7px)`,
+              background: isChanged ? accentHex : 'var(--color-steel)',
+              boxShadow: isChanged
+                ? `0 0 0 2px ${accentHex}30, 0 1px 4px rgba(0,0,0,0.3)`
+                : '0 1px 3px rgba(0,0,0,0.2)',
             }}
-          />
-          {isBi && <div className="absolute left-1/2 top-1/2 w-[1px] h-[7px] bg-graphite -translate-x-1/2 -translate-y-1/2 pointer-events-none" />}
-          <div
-            className="absolute top-1/2 w-3 h-3 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-colors duration-150 photo-editor-slider-thumb"
-            style={{
-              left: `${pct}%`,
-              background: isChanged ? accentColor : '#1A1F2E',
-              border: isChanged ? `1.5px solid ${accentColor}66` : '1.5px solid #1E2433',
-              boxShadow: isChanged ? `0 0 0 3px ${accentColor}2E` : 'none',
-            }}
-          />
-          <input
-            type="range"
-            min={s.min}
-            max={s.max}
-            step={s.step}
-            value={value}
-            onChange={(e) => onChange(s.key, parseFloat(e.target.value))}
-            className="absolute w-full h-full opacity-0 cursor-pointer top-0 left-0 m-0"
           />
         </div>
       </div>
@@ -272,7 +377,24 @@ function SliderRow({ def, value, accent, isChanged, onChange }: SliderRowProps) 
   );
 }
 
-// ── Main PhotoEditor Component ──
+// ── Main PhotoEditor ──
+
+const CUSTOM_PRESETS_KEY = 'zc_custom_presets';
+
+function loadCustomPresets(): Preset[] {
+  try {
+    const raw = localStorage.getItem(CUSTOM_PRESETS_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) return parsed;
+    }
+    return [];
+  } catch { return []; }
+}
+
+function saveCustomPresets(presets: Preset[]) {
+  localStorage.setItem(CUSTOM_PRESETS_KEY, JSON.stringify(presets));
+}
 
 export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) {
   const [img, setImg] = useState<HTMLImageElement | null>(null);
@@ -280,12 +402,18 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
   const [preset, setPreset] = useState<string>('none');
   const [before, setBefore] = useState(false);
   const [dragOver, setDragOver] = useState(false);
+  const [customPresets, setCustomPresets] = useState<Preset[]>(() => loadCustomPresets());
+  const [savingPreset, setSavingPreset] = useState(false);
+  const [presetName, setPresetName] = useState('');
+  const [histogram, setHistogram] = useState<number[]>([]);
+  const [histMax, setHistMax] = useState(0);
 
   const cvRef = useRef<HTMLCanvasElement>(null);
   const ovRef = useRef<HTMLCanvasElement>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
   const rafRef = useRef<number>(0);
   const fileRef = useRef<HTMLInputElement>(null);
+  const renderTimeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   const hasChanged = Object.keys(DEF).some((k) => adj[k as keyof Adjustments] !== DEF[k as keyof Adjustments]);
   const hasImage = img !== null;
@@ -293,7 +421,7 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
   // Init canvases when image loads
   useEffect(() => {
     if (!img || !cvRef.current || !ovRef.current) return;
-    const MAX = 840;
+    const MAX = 960;
     const scale = Math.min(1, MAX / img.naturalWidth, (MAX * 0.7) / img.naturalHeight);
     const w = Math.round(img.naturalWidth * scale);
     const h = Math.round(img.naturalHeight * scale);
@@ -304,16 +432,34 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
       cvRef.current.height = ovRef.current.height = h;
       ovRef.current.getContext('2d')!.drawImage(img, 0, 0, w, h);
     }
-    render();
+    applyRender();
+    // Initial histogram
+    setTimeout(() => {
+      if (cvRef.current) {
+        const h = computeHistogram(cvRef.current);
+        setHistogram(h);
+        setHistMax(Math.max(...h, 1));
+      }
+    }, 100);
   }, [img]);
 
-  // Render when adj or before changes
+  // Debounced pipeline render when adj or before changes
   useEffect(() => {
     if (!img) return;
-    render();
+    if (renderTimeoutRef.current) clearTimeout(renderTimeoutRef.current);
+    renderTimeoutRef.current = setTimeout(() => {
+      applyRender();
+      // Update histogram
+      if (cvRef.current && !before) {
+        const h = computeHistogram(cvRef.current);
+        setHistogram(h);
+        setHistMax(Math.max(...h, 1));
+      }
+    }, 50);
+    return () => { if (renderTimeoutRef.current) clearTimeout(renderTimeoutRef.current); };
   }, [adj, before, img]);
 
-  function render() {
+  function applyRender() {
     if (!img || !cvRef.current || !ovRef.current) return;
     const cv = cvRef.current;
     const ov = ovRef.current;
@@ -325,9 +471,7 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
     }
 
     cancelAnimationFrame(rafRef.current);
-    let alive = true;
     rafRef.current = requestAnimationFrame(() => {
-      if (!alive) return;
       try {
         runPipeline(cv, ov, adj);
       } catch (err) {
@@ -335,15 +479,12 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
         ctx.drawImage(ov, 0, 0);
       }
     });
-    const cancel = () => { alive = false; };
-    (render as any)._cancel = cancel;
   }
 
-  // Cleanup render on unmount
   useEffect(() => {
     return () => {
       cancelAnimationFrame(rafRef.current);
-      if (typeof (render as any)._cancel === 'function') (render as any)._cancel();
+      if (renderTimeoutRef.current) clearTimeout(renderTimeoutRef.current);
     };
   }, []);
 
@@ -354,6 +495,11 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
       const i = new Image();
       i.onload = () => {
         setImg(i);
+        setAdj({ ...DEF });
+        setPreset('none');
+        setBefore(false);
+        setHistogram([]);
+        setHistMax(0);
         imgRef.current = null;
         onLogMessage('ok', `Imagen cargada: ${file.name} (${i.naturalWidth}×${i.naturalHeight})`);
       };
@@ -392,9 +538,36 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
   const toggleBefore = useCallback(() => setBefore((b) => !b), []);
 
   const handleReset = useCallback(() => {
-    pickPreset(PRESETS[0]);
-    onLogMessage('info', 'Editor de foto restablecido al estado original');
-  }, [pickPreset, onLogMessage]);
+    setPreset('none');
+    setAdj({ ...DEF });
+    onLogMessage('info', 'Editor restablecido');
+  }, [onLogMessage]);
+
+  const handleSaveCustom = useCallback(() => {
+    const name = presetName.trim();
+    if (!name) return;
+    const newPreset: Preset = {
+      id: `custom_${Date.now()}`,
+      label: name,
+      sub: 'Personalizado',
+      adj: { ...adj },
+    };
+    const updated = [...customPresets, newPreset];
+    setCustomPresets(updated);
+    saveCustomPresets(updated);
+    setPreset(newPreset.id);
+    setPresetName('');
+    setSavingPreset(false);
+    onLogMessage('ok', `Preset "${name}" guardado`);
+  }, [presetName, adj, customPresets, onLogMessage]);
+
+  const handleDeleteCustom = useCallback((id: string) => {
+    const updated = customPresets.filter(p => p.id !== id);
+    setCustomPresets(updated);
+    saveCustomPresets(updated);
+    if (preset === id) { setPreset('none'); setAdj({ ...DEF }); }
+    onLogMessage('info', 'Preset eliminado');
+  }, [customPresets, preset, onLogMessage]);
 
   const handleSave = useCallback(() => {
     if (!cvRef.current || !img) return;
@@ -402,149 +575,202 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
     a.download = 'zero-consequences-edit.png';
     a.href = cvRef.current.toDataURL('image/png', 1);
     a.click();
-    onLogMessage('ok', 'Imagen editada descargada como PNG');
+    onLogMessage('ok', 'Imagen descargada como PNG');
   }, [img, onLogMessage]);
 
-  return (
-    <div className="flex-1 flex overflow-hidden bg-[#090B10] text-bone font-sans select-none">
-      <style>{`
-        input[type=range] { -webkit-appearance: none; appearance: none; }
-        input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; }
-      `}</style>
+  const handleZoom = useCallback(() => {
+    // TODO: zoom-to-100% toggle
+  }, []);
 
+  return (
+    <div className="flex-1 flex overflow-hidden bg-void text-bone font-sans select-none">
       {/* LEFT: Preview */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Topbar */}
-        <div className="h-12 flex items-center px-5 gap-2.5 border-b border-graphite/45 shrink-0">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <div className="h-11 flex items-center px-4 gap-2 border-b border-graphite/30 shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-signal-cyan)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
             <line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/>
             <line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/>
           </svg>
-          <span className="font-bold tracking-tight text-[15px]">Photo</span>
-          <span className="text-ash tracking-tight text-[15px]">Editor</span>
+          <span className="font-semibold tracking-tight text-sm">Photo Editor</span>
+          {hasImage && (
+            <span className="text-ash text-[10px] font-mono ml-auto">
+              {img?.naturalWidth}×{img?.naturalHeight}
+            </span>
+          )}
         </div>
 
         {/* Canvas zone */}
         <div
-          className={`flex-1 flex items-center justify-center p-8 relative overflow-hidden transition-colors duration-400 ${before ? 'bg-[#111]' : 'bg-[#090B10]'}`}
+          className="flex-1 flex items-center justify-center p-6 bg-carbon/40 relative overflow-hidden"
           onDrop={handleDrop}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
         >
           {!hasImage ? (
             <div
-              className={`w-full h-full flex flex-col items-center justify-center border-2 border-dashed rounded-2xl cursor-pointer transition-all duration-200
-                ${dragOver ? 'border-signal-cyan bg-signal-cyan/5' : 'border-graphite/70 hover:border-graphite hover:bg-carbon/30'}`}
+              className={`w-full max-w-lg aspect-[4/3] flex flex-col items-center justify-center border-2 border-dashed rounded-2xl cursor-pointer transition-all duration-200
+                ${dragOver ? 'border-signal-cyan bg-signal-cyan/5' : 'border-graphite/40 hover:border-graphite hover:bg-carbon/20'}`}
               onClick={() => fileRef.current?.click()}
             >
-              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#5C6378" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.55, marginBottom: 18 }}>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-ash)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.4, marginBottom: 16 }}>
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
                 <circle cx="8.5" cy="8.5" r="1.5"/>
                 <polyline points="21 15 16 10 5 21"/>
               </svg>
-              <p className="text-[17px] font-medium tracking-tight mb-2">Arrastra tu foto aquí</p>
-              <p className="text-ash text-[13px] font-mono mb-6">JPG · PNG · WEBP · HEIC</p>
-              <button className="px-6 py-2.5 bg-signal-cyan text-[#090B10] rounded-xl text-[13px] font-semibold tracking-tight border-none cursor-pointer hover:brightness-110 transition-all">
+              <p className="text-base font-medium tracking-tight mb-1.5">Arrastrá tu foto aquí</p>
+              <p className="text-ash text-[12px] font-mono mb-5">JPG · PNG · WEBP · HEIC</p>
+              <button className="px-5 py-2 rounded-xl text-sm font-semibold border-none cursor-pointer hover:brightness-110 transition-all"
+                style={{ background: 'var(--color-signal-cyan)', color: 'var(--color-void)' }}>
                 Seleccionar imagen
               </button>
             </div>
           ) : (
             <>
-              <div className="absolute top-5 left-1/2 -translate-x-1/2 z-10 pointer-events-none bg-[#090B10]/80 backdrop-blur-md text-ash px-3.5 py-1 rounded-full text-[10px] tracking-wider uppercase font-semibold border border-graphite whitespace-nowrap font-mono">
+              {/* Status badge */}
+              <div className="absolute top-3 left-1/2 -translate-x-1/2 z-10 pointer-events-none px-3 py-1 rounded-full text-[9px] tracking-wider uppercase font-semibold font-mono"
+                style={{
+                  background: 'var(--color-carbon)',
+                  opacity: 0.9,
+                  color: before ? 'var(--color-ash)' : 'var(--color-signal-cyan)',
+                }}>
                 {before ? '◁ ORIGINAL' : '✦ EDITADO'}
               </div>
               <canvas ref={cvRef} className="max-w-full max-h-full object-contain rounded-xl shadow-2xl" />
               <canvas ref={ovRef} style={{ display: 'none' }} />
+
+              {/* Histogram overlay */}
+              <div className="absolute bottom-3 right-3 bg-carbon/70 backdrop-blur-sm rounded-lg p-2 border border-graphite/20">
+                <div className="text-[7px] font-mono text-ash/50 uppercase tracking-wider mb-1 px-1">Histogram</div>
+                <HistogramBar hist={histogram} max={histMax} />
+              </div>
             </>
           )}
         </div>
 
         {/* Bottom bar */}
         {hasImage && (
-          <div className="flex items-center gap-2 px-5 py-3 border-t border-graphite/45 shrink-0">
-            <button
-              onClick={toggleBefore}
-              className={`px-3 py-1.5 rounded-lg text-[11px] font-mono border transition-all cursor-pointer
-                ${before ? 'bg-signal-amber/12 border-signal-amber text-signal-amber font-semibold' : 'border-graphite text-ash hover:border-steel hover:text-bone bg-transparent'}`}
-            >
+          <div className="flex items-center gap-2 px-4 py-2.5 border-t border-graphite/30 shrink-0 bg-carbon/20">
+            <button onClick={toggleBefore}
+              className={`px-3 py-1.5 rounded-lg text-[10px] font-mono border transition-all cursor-pointer ${
+                before
+                  ? 'bg-signal-amber/15 border-signal-amber text-signal-amber font-semibold'
+                  : 'border-graphite/40 text-ash hover:border-steel hover:text-bone bg-transparent'
+              }`}>
               {before ? '▶ Ver editada' : '◁ Ver original'}
             </button>
-            <button
-              onClick={() => fileRef.current?.click()}
-              className="px-3 py-1.5 rounded-lg text-[11px] font-mono border border-graphite text-ash hover:border-steel hover:text-bone bg-transparent cursor-pointer transition-all"
-            >
+            <button onClick={() => fileRef.current?.click()}
+              className="px-3 py-1.5 rounded-lg text-[10px] font-mono border border-graphite/40 text-ash hover:border-steel hover:text-bone bg-transparent cursor-pointer transition-all">
               Cambiar foto
             </button>
-            <div className="ml-auto">
-              <button
-                onClick={handleSave}
-                className="px-5 py-2 rounded-lg text-[12px] font-bold tracking-tight border-none cursor-pointer transition-all"
-                style={{ background: '#C6FF3D', color: '#090B10' }}
-              >
-                ↓ Descargar PNG
+            <button onClick={handleReset} disabled={!hasChanged}
+              className="px-3 py-1.5 rounded-lg text-[10px] font-mono border border-graphite/40 text-ash/60 hover:text-bone bg-transparent cursor-pointer transition-all disabled:opacity-30 disabled:cursor-not-allowed">
+              Reset
+            </button>
+            <div className="ml-auto flex items-center gap-2">
+              <button onClick={handleSave}
+                className="px-5 py-1.5 rounded-lg text-[11px] font-bold tracking-tight border-none cursor-pointer transition-all hover:brightness-110"
+                style={{ background: 'var(--color-signal-lime)', color: 'var(--color-void)' }}>
+                ↓ Exportar PNG
               </button>
             </div>
           </div>
         )}
       </div>
 
-      {/* RIGHT: Panel */}
-      <div className="w-[280px] border-l border-graphite/45 bg-[#090B10] flex flex-col overflow-y-auto shrink-0">
-        {/* Principles */}
-        <div className="px-4 py-3.5 border-b border-graphite/25 bg-signal-cyan/[0.03]">
-          <span className="block text-[9px] text-signal-cyan tracking-wider uppercase font-semibold mb-2.5 font-mono">Principios de Calidad</span>
-          <div className="flex flex-wrap gap-1.5">
-            {TAGS.map((t) => (
-              <span key={t} className="bg-signal-cyan/[0.07] border border-signal-cyan/[0.18] rounded px-2 py-0.5 text-[9px] text-signal-cyan/80 font-mono">{t}</span>
-            ))}
-          </div>
-        </div>
-
-        {/* Presets */}
-        <div className="px-4 py-3.5 border-b border-graphite/25">
-          <span className="block text-[9px] text-ash tracking-wider uppercase font-bold mb-3 font-mono">Estilos Rápidos</span>
+      {/* RIGHT: Panel — Lightroom-style */}
+      <div className="w-[280px] border-l border-graphite/30 bg-carbon/30 flex flex-col overflow-y-auto shrink-0">
+        {/* Quick Styles */}
+        <div className="px-4 py-3 border-b border-graphite/20">
+          <h3 className="text-[9px] text-ash/60 tracking-wider uppercase font-semibold mb-2.5 font-mono">Estilos Rápidos</h3>
           <div className="grid grid-cols-3 gap-1.5">
             {PRESETS.map((p) => (
-              <button
-                key={p.id}
-                onClick={() => pickPreset(p)}
-                className={`text-center px-2 py-2.5 rounded-xl cursor-pointer transition-all outline-none
-                  ${preset === p.id ? 'bg-signal-cyan/12 border-signal-cyan text-signal-cyan' : 'bg-carbon border-graphite/70 text-bone hover:bg-steel/20 hover:border-steel'}
-                  border`}
-              >
-                <span className="block text-[10px] font-bold tracking-tight">{p.label}</span>
-                <span className={`block text-[8px] mt-1 leading-tight font-mono ${preset === p.id ? 'text-signal-cyan/80' : 'text-ash'}`}>{p.sub}</span>
+              <button key={p.id} onClick={() => pickPreset(p)}
+                className={`text-center px-1.5 py-2 rounded-xl cursor-pointer transition-all outline-none border text-[10px]
+                  ${preset === p.id
+                    ? 'bg-signal-cyan/12 border-signal-cyan/50 text-signal-cyan'
+                    : 'bg-carbon border-graphite/50 text-ash/80 hover:border-steel hover:text-bone'
+                  }`}>
+                <span className="block font-semibold">{p.label}</span>
+                <span className={`block text-[7px] mt-0.5 leading-tight font-mono ${preset === p.id ? 'text-signal-cyan/70' : 'text-ash/50'}`}>{p.sub}</span>
               </button>
+            ))}
+            {customPresets.map((p) => (
+              <div key={p.id} className="relative group">
+                <button onClick={() => pickPreset(p)}
+                  className={`w-full text-center px-1.5 py-2 rounded-xl cursor-pointer transition-all outline-none border text-[10px]
+                    ${preset === p.id
+                      ? 'bg-signal-magenta/12 border-signal-magenta/50 text-signal-magenta'
+                      : 'bg-carbon border-graphite/50 text-ash/80 hover:border-steel hover:text-bone'
+                    }`}>
+                  <span className="block font-semibold">{p.label}</span>
+                  <span className="block text-[7px] mt-0.5 leading-tight font-mono text-ash/50">Personalizado</span>
+                </button>
+                <button onClick={() => handleDeleteCustom(p.id)}
+                  className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full flex items-center justify-center text-[8px] font-bold opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer border-none"
+                  style={{ background: 'var(--color-signal-magenta)', color: 'var(--color-void)' }}>
+                  ✕
+                </button>
+              </div>
+            ))}
+          </div>
+          {savingPreset ? (
+            <div className="flex items-center gap-1.5 mt-2">
+              <input type="text" value={presetName} onChange={e => setPresetName(e.target.value)}
+                placeholder="Nombre del preset..." autoFocus
+                className="flex-1 bg-carbon border border-graphite/30 rounded-lg px-2 py-1.5 text-[10px] text-bone placeholder:text-ash/20 outline-none focus:border-signal-cyan/40 font-mono"
+                onKeyDown={e => { if (e.key === 'Enter') handleSaveCustom(); if (e.key === 'Escape') setSavingPreset(false); }} />
+              <button onClick={handleSaveCustom} className="text-[10px] text-signal-cyan font-mono hover:text-signal-cyan/80 cursor-pointer shrink-0">Guardar</button>
+              <button onClick={() => setSavingPreset(false)} className="text-[10px] text-ash/50 font-mono hover:text-bone cursor-pointer shrink-0">×</button>
+            </div>
+          ) : (
+            hasChanged && !savingPreset && (
+              <button onClick={() => setSavingPreset(true)}
+                className="w-full mt-2 px-2 py-1.5 rounded-lg text-[9px] font-mono text-signal-cyan/70 bg-signal-cyan/8 border border-dashed border-signal-cyan/20 hover:bg-signal-cyan/15 hover:text-signal-cyan transition-all cursor-pointer">
+                + Guardar como preset
+              </button>
+            )
+          )}
+        </div>
+
+        {/* Quality Principles */}
+        <div className="px-4 py-2.5 border-b border-graphite/20">
+          <div className="flex flex-wrap gap-1">
+            {TAGS.map((t) => (
+              <span key={t} className="text-[8px] font-mono px-1.5 py-0.5 rounded text-signal-cyan/80 border border-signal-cyan/20"
+                style={{ background: 'var(--color-signal-cyan)', opacity: 0.08 }}>
+                {t}
+              </span>
             ))}
           </div>
         </div>
 
-        {/* Sliders */}
-        <div className="flex-1 px-4 py-3.5 overflow-y-auto">
-          <span className="block text-[9px] text-ash tracking-wider uppercase font-bold mb-3 font-mono">Ajustes Manuales</span>
+        {/* Manual Adjustments */}
+        <div className="flex-1 px-4 py-3 overflow-y-auto">
+          <div className="text-[9px] text-ash/50 tracking-wider uppercase font-semibold mb-3 font-mono">Ajustes</div>
           {SLIDERS.map((s) => (
+            <div key={s.key} className="contents">
             <SliderRow
-              key={s.key}
               def={s}
               value={adj[s.key]}
               accent={accent}
               isChanged={adj[s.key] !== DEF[s.key]}
               onChange={handleSliderChange}
             />
+            </div>
           ))}
         </div>
 
         {/* Footer */}
-        <div className="px-4 py-3.5 border-t border-graphite/25">
-          <button
-            onClick={handleReset}
-            className="w-full bg-carbon border border-graphite/70 rounded-lg text-ash py-2 text-[11px] cursor-pointer transition-all hover:bg-steel/20 hover:text-bone font-mono"
-          >
+        <div className="px-4 py-3 border-t border-graphite/20">
+          <button onClick={handleReset}
+            className="w-full py-2 rounded-lg text-[10px] font-mono transition-all cursor-pointer"
+            style={{ background: 'var(--color-carbon)', border: '1px solid var(--color-graphite)', color: 'var(--color-ash)' }}>
             Restablecer todo
           </button>
-          <p className="text-center text-ash/15 text-[8px] mt-3 tracking-wide leading-relaxed font-mono">
-            Zero Consequences Photo Editor<br />Canvas API · Split Toning · Bokeh Sim
+          <p className="text-center text-ash/15 text-[7px] mt-2 font-mono">
+            Canvas API · Split Toning · Bokeh Sim · v2
           </p>
         </div>
       </div>

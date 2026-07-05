@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Generated / session artifacts
+backup/
+.sdd/
+spec.md

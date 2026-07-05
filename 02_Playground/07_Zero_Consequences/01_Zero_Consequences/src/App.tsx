@@ -18,6 +18,7 @@ import SettingsDrawer from './components/SettingsDrawer';
 import FocusNotesPanel from './components/FocusNotesPanel';
 import EmailView from './components/EmailView';
 import TaskBacklog from './components/TaskBacklog';
+import ErrorBoundary from './components/ErrorBoundary';
 import MarketingView from './components/MarketingView';
 import FocusMode from './components/FocusMode';
 import ToolsView from './components/ToolsView';
@@ -843,22 +844,26 @@ export default function App() {
             className="flex flex-col h-full"
           >
             <div className="flex-[3] min-h-0 overflow-hidden flex flex-col">
-              <DashboardView 
-                signals={signals}
-                setSignals={setSignals}
-                accent={accent}
-                nodeStatus={metrics.nodeStatus}
-                onLogMessage={logMessage}
-                hideRightPanel={true}
-                config={presentationConfig}
-                user={user}
-                setUser={setUser}
-                googleToken={googleToken}
-                setGoogleToken={setGoogleToken}
-              />
+              <ErrorBoundary>
+                <DashboardView 
+                  signals={signals}
+                  setSignals={setSignals}
+                  accent={accent}
+                  nodeStatus={metrics.nodeStatus}
+                  onLogMessage={logMessage}
+                  hideRightPanel={true}
+                  config={presentationConfig}
+                  user={user}
+                  setUser={setUser}
+                  googleToken={googleToken}
+                  setGoogleToken={setGoogleToken}
+                />
+              </ErrorBoundary>
             </div>
             <div className="flex-[2] min-h-0 overflow-hidden border-t border-graphite/30">
-              <FocusNotesPanel />
+              <ErrorBoundary>
+                <FocusNotesPanel />
+              </ErrorBoundary>
             </div>
           </motion.div>
         ) : (
@@ -874,134 +879,156 @@ export default function App() {
           
           {/* TAB 1: MEETINGS COUNTDOWN HUD */}
           {activeTab === 'dashboard' && (
-            <DashboardView 
-              signals={signals}
-              setSignals={setSignals}
-              accent={accent}
-              nodeStatus={metrics.nodeStatus}
-              onLogMessage={logMessage}
-              hideRightPanel={hideRightPanel}
-              config={presentationConfig}
-              user={user}
-              setUser={setUser}
-              googleToken={googleToken}
-              setGoogleToken={setGoogleToken}
-            />
+            <ErrorBoundary>
+              <DashboardView 
+                signals={signals}
+                setSignals={setSignals}
+                accent={accent}
+                nodeStatus={metrics.nodeStatus}
+                onLogMessage={logMessage}
+                hideRightPanel={hideRightPanel}
+                config={presentationConfig}
+                user={user}
+                setUser={setUser}
+                googleToken={googleToken}
+                setGoogleToken={setGoogleToken}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 2: EMAIL CLIENT (Superhuman-like) */}
           {activeTab === 'email' && (
-            <EmailView
-              accent={accent}
-              onLogMessage={logMessage}
-              onAddTask={handleAddTask}
-              googleToken={googleToken}
-            />
+            <ErrorBoundary>
+              <EmailView
+                accent={accent}
+                onLogMessage={logMessage}
+                onAddTask={handleAddTask}
+                googleToken={googleToken}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 3: TASK BACKLOG (Sumsuma-like) */}
           {activeTab === 'tasks' && (
-            <TaskBacklog
-              tasks={backlogTasks}
-              setTasks={setBacklogTasks}
-              accent={accent}
-              onLogMessage={logMessage}
-              onStartFocus={() => setIsFocusModeOpen(true)}
-            />
+            <ErrorBoundary>
+              <TaskBacklog
+                tasks={backlogTasks}
+                setTasks={setBacklogTasks}
+                accent={accent}
+                onLogMessage={logMessage}
+                onStartFocus={() => setIsFocusModeOpen(true)}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 4: MARKETING AUTOMATION (Audio Pipeline by Levels) */}
           {activeTab === 'marketing' && (
-            <MarketingView
-              accent={accent}
-              onLogMessage={logMessage}
-            />
+            <ErrorBoundary>
+              <MarketingView
+                accent={accent}
+                onLogMessage={logMessage}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 2: PERSONAL OS WORKSPACE & OCR */}
           {activeTab === 'personal_os' && (
-            <PersonalOsView 
-              config={presentationConfig}
-              setConfig={setPresentationConfig}
-              onLogMessage={logMessage}
-              accent={accent}
-            />
+            <ErrorBoundary>
+              <PersonalOsView 
+                config={presentationConfig}
+                setConfig={setPresentationConfig}
+                onLogMessage={logMessage}
+                accent={accent}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 3: TEAM LINEAR (MANAGEMENT & PROJECTS) */}
           {activeTab === 'linear' && (
-            <LinearOSView 
-              projects={projects}
-              setProjects={setProjects}
-              issues={issues}
-              setIssues={setIssues}
-              accent={accent}
-              onLogMessage={logMessage}
-              hideRightPanel={hideRightPanel}
-            />
+            <ErrorBoundary>
+              <LinearOSView 
+                projects={projects}
+                setProjects={setProjects}
+                issues={issues}
+                setIssues={setIssues}
+                accent={accent}
+                onLogMessage={logMessage}
+                hideRightPanel={hideRightPanel}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 4: OPERATIONS & INVENTORY */}
           {activeTab === 'operations' && (
-            <OperationsOSView 
-              products={products}
-              setProducts={setProducts}
-              warehouses={warehouses}
-              providers={providers}
-              purchaseOrders={purchaseOrders}
-              setPurchaseOrders={setPurchaseOrders}
-              onLogMessage={logMessage}
-              onAddAudit={addAudit}
-            />
+            <ErrorBoundary>
+              <OperationsOSView 
+                products={products}
+                setProducts={setProducts}
+                warehouses={warehouses}
+                providers={providers}
+                purchaseOrders={purchaseOrders}
+                setPurchaseOrders={setPurchaseOrders}
+                onLogMessage={logMessage}
+                onAddAudit={addAudit}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 5: ANALYTICS & BARCODES */}
           {activeTab === 'analytics' && (
-            <AnalyticsOSView 
-              products={products}
-              audits={audits}
-              warehouses={warehouses}
-              onLogMessage={logMessage}
-            />
+            <ErrorBoundary>
+              <AnalyticsOSView 
+                products={products}
+                audits={audits}
+                warehouses={warehouses}
+                onLogMessage={logMessage}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 6: DESIGN STYLE STATS */}
           {activeTab === 'specs' && (
-            <DesignSystemView 
-              accent={accent}
-              onAccentChange={(newAccent) => {
-                setAccent(newAccent);
-                logMessage('info', `Acento sobreescrito vía Guía de Estilos: ${newAccent.toUpperCase()}`);
-              }}
-              onLogMessage={logMessage}
-            />
+            <ErrorBoundary>
+              <DesignSystemView 
+                accent={accent}
+                onAccentChange={(newAccent) => {
+                  setAccent(newAccent);
+                  logMessage('info', `Acento sobreescrito vía Guía de Estilos: ${newAccent.toUpperCase()}`);
+                }}
+                onLogMessage={logMessage}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 7: CLI COMMAND SHELL TERMINAL */}
           {activeTab === 'terminal' && (
-            <TerminalLogs 
-              logLines={logLines}
-              setLogLines={setLogLines}
-              accent={accent}
-              onAccentChange={(newAccent) => {
-                setAccent(newAccent);
-                logMessage('info', `Acento modificado desde consola CLI: ${newAccent}`);
-              }}
-              speedMbps={metrics.speedMbps}
-              dbConnected={metrics.dbConnected}
-              onClearLogs={onClearLogs}
-              onLogMessage={logMessage}
-              onInjectSignalFromCmd={handleInjectSignalFromCmd}
-              onExit={() => setActiveTab('dashboard')}
-            />
+            <ErrorBoundary>
+              <TerminalLogs 
+                logLines={logLines}
+                setLogLines={setLogLines}
+                accent={accent}
+                onAccentChange={(newAccent) => {
+                  setAccent(newAccent);
+                  logMessage('info', `Acento modificado desde consola CLI: ${newAccent}`);
+                }}
+                speedMbps={metrics.speedMbps}
+                dbConnected={metrics.dbConnected}
+                onClearLogs={onClearLogs}
+                onLogMessage={logMessage}
+                onInjectSignalFromCmd={handleInjectSignalFromCmd}
+                onExit={() => setActiveTab('dashboard')}
+              />
+            </ErrorBoundary>
           )}
 
           {/* TAB 8: TOOLS (Prompt Library, Image Editor, Remove BG, QR, Passwords) */}
           {activeTab === 'tools' && (
-            <ToolsView
-              accent={accent}
-              onLogMessage={logMessage}
-            />
+            <ErrorBoundary>
+              <ToolsView
+                accent={accent}
+                onLogMessage={logMessage}
+              />
+            </ErrorBoundary>
           )}
         </motion.div>
         )}
