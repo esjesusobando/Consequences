@@ -7,7 +7,7 @@ Backup locations (both):
   2. backup/skills-flat/ — single-file JSON with all metadata + content
   3. Console manifest (stdout)
 """
-import os, json, sys, shutil, hashlib, datetime, platform
+import os, json, shutil, hashlib, datetime, platform
 
 SKILL_DIRS = [
     ("opencode_config", os.path.expanduser("~/.config/opencode/skills")),
@@ -79,9 +79,13 @@ def main():
             copy_ok = False
             try:
                 src = src_path
-                if platform.system() == "Windows" and len(src_path) > 200:
+                need_prefix = platform.system() == "Windows" and len(src_path) > 260
+                if need_prefix:
                     src = "\\\\?\\" + os.path.abspath(src_path)
-                shutil.copy2(src, dst_path)
+                try:
+                    shutil.copy2(src, dst_path)
+                except Exception:
+                    shutil.copy(src, dst_path)
                 if os.path.exists(dst_path):
                     copy_ok = True
                 else:
@@ -90,8 +94,10 @@ def main():
                 print(f"  FAIL copy: {src_path} → {dst_path}: {e}")
 
             if copy_ok:
-                size = os.path.getsize(src_path)
-                mtime = datetime.datetime.fromtimestamp(os.path.getmtime(src_path)).isoformat(timespec="seconds")
+                # Use prefix consistently for all file operations on Windows long paths
+                stat_src = src if need_prefix else src_path
+                size = os.path.getsize(stat_src)
+                mtime = datetime.datetime.fromtimestamp(os.path.getmtime(stat_src)).isoformat(timespec="seconds")
                 checksum = hashlib.md5(text.encode()).hexdigest()
 
                 manifest.append({

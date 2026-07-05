@@ -260,7 +260,7 @@ function SliderRow({ def: s, value, accent, isChanged, onChange }: SliderRowProp
   const fillL = isBi ? (value >= 0 ? 50 : pct) : 0;
   const fillW = isBi ? (value >= 0 ? pct - 50 : 50 - pct) : pct;
 
-  const accentHex = { cyan: '#00F0FF', magenta: '#FF2E9A', lime: '#C6FF3D', amber: '#FFB400' }[accent] || '#00F0FF';
+  const accentHex = ({ cyan: '#00F0FF', magenta: '#FF2E9A', lime: '#C6FF3D', amber: '#FFB400' } as Record<string, string>)[accent] || '#00F0FF';
 
   const valFromPct = useCallback((clientX: number) => {
     const track = trackRef.current;

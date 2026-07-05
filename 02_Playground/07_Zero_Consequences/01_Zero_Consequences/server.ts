@@ -7,7 +7,7 @@ dotenv.config();
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = parseInt(process.env.PORT || "3000", 10);
 
   // Set substantial JSON limits for base64 image/audio uploads
   app.use(express.json({ limit: "20mb" }));
@@ -137,9 +137,16 @@ async function startServer() {
       if (!tokenRes.ok) throw new Error(tokens.error_description || tokens.error || "Token exchange failed");
       const profileRes = await fetch("https://www.googleapis.com/oauth2/v3/userinfo", { headers: { Authorization: `Bearer ${tokens.access_token}` } });
       const profile = await profileRes.json();
-      res.send(`<html><body style="background:#04060A;color:#00f0ff;font-family:monospace;display:flex;align-items:center;justify-content:center;height:100vh;"><script>if(window.opener){window.opener.postMessage({type:'OAUTH_AUTH_SUCCESS',payload:{accessToken:'${tokens.access_token}',user:{email:'${profile.email||""}',name:'${profile.name||"Operator_01"}',picture:'${profile.picture||""}'}}},'*');setTimeout(()=>window.close(),600)}else{window.location.href='/'}</script></body></html>`);
+      const escapeHtml = (s: string) => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+      const safeEmail = escapeHtml(profile.email || '');
+      const safeName = escapeHtml(profile.name || 'Operator_01');
+      const safePicture = escapeHtml(profile.picture || '');
+      const safeToken = escapeHtml(tokens.access_token || '');
+      res.send(`<html><body style="background:#04060A;color:#00f0ff;font-family:monospace;display:flex;align-items:center;justify-content:center;height:100vh;"><script>if(window.opener){window.opener.postMessage({type:'OAUTH_AUTH_SUCCESS',payload:{accessToken:'${safeToken}',user:{email:'${safeEmail}',name:'${safeName}',picture:'${safePicture}'}}},'*');setTimeout(()=>window.close(),600)}else{window.location.href='/'}</script></body></html>`);
     } catch (err: any) {
-      res.send(`<html><body style="background:#04060A;color:#ffb4ab;font-family:monospace;padding:30px;"><h2>EXCHANGE_ERROR</h2><p>${err.message}</p></body></html>`);
+      const escapeHtml = (s: string) => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+      const safeError = escapeHtml(err.message || 'Unknown error');
+      res.send(`<html><body style="background:#04060A;color:#ffb4ab;font-family:monospace;padding:30px;"><h2>EXCHANGE_ERROR</h2><p>${safeError}</p></body></html>`);
     }
   });
 
@@ -294,7 +301,7 @@ async function startServer() {
       if (ai) {
         const cleanBase64 = imageBase64.replace(/^data:image\/\w+;base64,/, "");
         const response = await ai.models.generateContent({
-          model: "gemini-3.5-flash",
+            model: "gemini-2.5-flash",
           contents: [{ inlineData: { mimeType: mimeType || "image/jpeg", data: cleanBase64 } }, { text: "Extract all the text found in this image, retaining layout as closely as possible. Do not add conversational intro/outro text, just output the extracted text." }],
         });
         return res.json({ success: true, text: response.text || "No text extracted.", simulated: false });
@@ -321,7 +328,7 @@ async function startServer() {
       const cleanBase64 = audioBase64.replace(/^data:audio\/\w+;base64,/, "");
       if (ai) {
         const response = await ai.models.generateContent({
-          model: "gemini-3.5-flash",
+          model: "gemini-2.5-flash",
           contents: [{ inlineData: { mimeType: mimeType || "audio/webm", data: cleanBase64 } }, { text: "You are an expert audio transcriber. Transcribe exactly what is being spoken. Output ONLY the transcribed text. Do not summarize or add intro/outro." }],
         });
         return res.json({ success: true, text: response.text || "No speech detected.", simulated: false });
@@ -346,7 +353,7 @@ async function startServer() {
     if (!ai) return res.json({ text: `[SYSTEM_WARNING: NOT_CONNECTED]\n\n${transcript}`, isFallback: true });
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-3.5-flash",
+        model: "gemini-2.5-flash",
         contents: `The following is a voice dictation note that may have errors. Correct it, add clean markdown formatting, organize into readable sections, and make it professional, preserving the original language:\n\n"${transcript}"`,
       });
       res.json({ text: response.text });
@@ -394,8 +401,9 @@ async function startServer() {
     app.use(vite.middlewares);
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`[CONSEQUENCES] Server initialized on port ${PORT}`);
+  const host = process.env.BIND_ADDRESS || "127.0.0.1";
+  app.listen(PORT, host, () => {
+    console.log(`[CONSEQUENCES] Server initialized on ${host}:${PORT}`);
     console.log(`[CONSEQUENCES] Gemini: ${ai ? "READY" : "SIMULATION MODE (set GEMINI_API_KEY)"}`);
     console.log(`[CONSEQUENCES] OAuth: ${process.env.GOOGLE_CLIENT_ID ? "READY" : "SANDBOX MODE (set GOOGLE_CLIENT_ID)"}`);
   });

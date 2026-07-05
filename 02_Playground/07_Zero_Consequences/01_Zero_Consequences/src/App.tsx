@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import TopNavBar from './components/TopNavBar';
 import SideNavBar from './components/SideNavBar';
@@ -123,7 +123,7 @@ export default function App() {
           ...parsed,
         };
       } catch (e) {
-        // Fallback
+        console.warn('Fallback to default presentation config:', e);
       }
     }
     return {
@@ -157,6 +157,7 @@ export default function App() {
     sources: any[];
     activeTrack: string | null;
   }>({ audioCtx: null, gainNode: null, sources: [], activeTrack: null });
+  const lofiChordTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const config = presentationConfig;
@@ -239,7 +240,7 @@ export default function App() {
 
         chordIndex = (chordIndex + 1) % chords.length;
         const timer = setTimeout(playNextChord, 6000);
-        (window as any)._lofiChordTimer = timer;
+        lofiChordTimerRef.current = timer;
       };
       
       playNextChord();
@@ -353,8 +354,9 @@ export default function App() {
       }
       if (synthRef.current.activeTrack !== config.audioLoop) {
         stopAndResetNodes();
-        if ((window as any)._lofiChordTimer) {
-          clearTimeout((window as any)._lofiChordTimer);
+        if (lofiChordTimerRef.current) {
+          clearTimeout(lofiChordTimerRef.current);
+          lofiChordTimerRef.current = null;
         }
         startSynth(config.audioLoop);
       }
@@ -364,8 +366,9 @@ export default function App() {
     startSynth(config.audioLoop);
 
     return () => {
-      if ((window as any)._lofiChordTimer) {
-        clearTimeout((window as any)._lofiChordTimer);
+      if (lofiChordTimerRef.current) {
+        clearTimeout(lofiChordTimerRef.current);
+        lofiChordTimerRef.current = null;
       }
     };
   }, [presentationConfig.isPlayingSound, presentationConfig.audioLoop, presentationConfig.volume]);
@@ -411,7 +414,9 @@ export default function App() {
         }
         return parsed;
       }
-    } catch {}
+    } catch {
+      console.warn('Corrupt zc_signals in localStorage, falling back to defaults');
+    }
     return getInitialSignals();
   });
 

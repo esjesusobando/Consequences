@@ -1,4 +1,4 @@
-import { useState, useEffect, Dispatch, SetStateAction } from 'react';
+import { useState, useEffect, useRef, Dispatch, SetStateAction } from 'react';
 import { SignalEvent } from '../types';
 import { fetchCalendarEvents } from '../lib/googleAuth';
 
@@ -24,6 +24,12 @@ export function useGoogleCalendarSync(
   onLogMessage: (type: 'info' | 'ok' | 'warn' | 'err', text: string) => void
 ): UseGoogleCalendarSyncReturn {
   const [calendarSyncStatus, setCalendarSyncStatus] = useState<SyncStatus>('synchronized');
+  const fetchRef = useRef(fetchCalendarEvents);
+  const logRef = useRef(onLogMessage);
+  const setSignalsRef = useRef(setSignals);
+  fetchRef.current = fetchCalendarEvents;
+  logRef.current = onLogMessage;
+  setSignalsRef.current = setSignals;
 
   useEffect(() => {
     if (!googleToken) return;
@@ -31,9 +37,9 @@ export function useGoogleCalendarSync(
     const pullAndSync = async () => {
       try {
         setCalendarSyncStatus('syncing');
-        const items = await fetchCalendarEvents(googleToken);
+        const items = await fetchRef.current(googleToken);
         if (!items) {
-          onLogMessage('info', 'Sincronizador GCalendar: Conectado y en línea con Workspace.');
+          logRef.current('info', 'Sincronizador GCalendar: Conectado y en línea con Workspace.');
           setCalendarSyncStatus('synchronized');
           return;
         }
@@ -41,7 +47,7 @@ export function useGoogleCalendarSync(
         let updatedCount = 0;
         let newCount = 0;
 
-        setSignals(prev => {
+        setSignalsRef.current(prev => {
           let currentList = [...prev];
           items.forEach((item: GoogleCalendarEvent) => {
             const googleId = item.id;
@@ -89,7 +95,7 @@ export function useGoogleCalendarSync(
         });
 
         if (newCount > 0 || updatedCount > 0) {
-          onLogMessage('ok', `Google Calendar: ${newCount} nuevas reuniones añadidas, ${updatedCount} actualizadas.`);
+          logRef.current('ok', `Google Calendar: ${newCount} nuevas reuniones añadidas, ${updatedCount} actualizadas.`);
         }
         setCalendarSyncStatus('synchronized');
       } catch (err: unknown) {
