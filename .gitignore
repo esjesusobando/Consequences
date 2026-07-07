@@ -227,3 +227,7 @@ out/
 .atl/
 !.atl/*.md
 !.atl/openspec/
+
+# Strong MKT SDD artifacts (engram-backed)
+02_Playground/07_Zero_Consequences/06_Equipo_Strong_MKT/openspec/
+.agent/.playwright-mcp/
