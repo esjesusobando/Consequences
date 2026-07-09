@@ -12,7 +12,7 @@ from datetime import datetime
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
 PROFILES_FILE = PROJECT_ROOT / "01_Personal_Os" / "00_Core" / "01_Rules" / "context_profiles.yaml"
-AGENTS_CONFIG_DIR = PROJECT_ROOT / "01_Personal_Os" / "02_Knowledge" / "10_Shared_Org" / "agents"
+AGENTS_CONFIG_DIR = PROJECT_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "01_Agents"
 
 
 def load_profiles() -> dict:

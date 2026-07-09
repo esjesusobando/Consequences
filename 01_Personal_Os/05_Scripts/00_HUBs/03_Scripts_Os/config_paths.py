@@ -111,8 +111,8 @@ ROUTER_ENGINE_DIR   = ENGINE_DIR / "28_Model_Router_Engine"
 
 try:
     EVAL_RUNS_DIR.mkdir(parents=True, exist_ok=True)
-except OSError:
-    pass
+except OSError as e:
+    print(f"[WARN] Could not create EVAL_RUNS_DIR {EVAL_RUNS_DIR}: {e}")
 
 OPERATIONS_ANALYTICS_DIR = MEMORY_CTX_DIR / "01_Process_Notes"
 AUTO_IMPROVEMENT_DIR = ROOT_DIR / "01_Personal_Os" / "03_Learning" / "01_Auto_Improvement"

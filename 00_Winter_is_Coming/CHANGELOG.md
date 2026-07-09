@@ -1,5 +1,39 @@
 # Changelog
 
+## 5.0.0 — 2026-07-07
+
+### Fixed — OS Edge Cases SOTA Fix + Judgment Day
+
+- **StopIteration eliminado de 51 scripts**: Reemplazado `next(p for p in ...parents if p.name == ...)` → `resolve_os_root(Path(__file__).resolve().parent)` via `tools/batch_fix_next_pattern.py` — 0 residuales
+- **Error Taxonomy creada**: `os_errors.py` con `PersonalOSError` base + 5 subclases tipadas (`OSPathError`, `OSConfigError`, `OSSyncError`, `OSSecurityError`, `OSStateError`) + helpers `safe_find()` y `ensure_path()`
+- **Path Guardian centralizado**: `path_guardian.py` con `resolve_os_root()`, `resolve_project_root()`, `detect_copy_type()`, `resolve_core_path()`, `resolve_engine_path()`. Sin dependencia circular con `config_paths`
+- **Asserts eliminados en producción**: `sync_copies.py:95` assert reemplazado por `OSSyncError`; `resolve_roots()` refactored a `resolve_os_root()`
+- **`except: pass` silencioso eliminado**: `config_paths.py` `except OSError: pass` → `print(f"[WARN] ...")`
+- **Shebangs corregidos**: 12 archivos con shebang movido a línea 1 via `tools/fix_shebangs.py` (11 batch + Sound Engine manual)
+- **Secret Scanner v2**: Patrones reales (`napi_`, `lin_api_`, `sb_`, `fir_`, `exa_`, `xapp-`); modos `--diff`, `--fix`, `--full-scan`, `--json`, `--yes`; `.gitignore`-aware; OpenAI `sk-proj-` support
+- **Pre-Tool Hook**: WMI→CIM migration (`Get-CimInstance` + `Get-WmiObject` fallback); multi-agent soporte (`CLAUDE_TOOL_INPUT`, `OPENCODE_TOOL_INPUT`, `CODEX_TOOL_INPUT`)
+- **Sound Engine cross-platform**: Windows `winsound.Beep()`, Linux terminal bell, macOS `say` con fallback silencioso
+- **Hook Pipeline documentado**: `00_Core/02_Tools/05_Hooks/README.md` con tabla de estado activo/manual
+- **Path roto corregido**: `adaptive_boot.py` `AGENTS_CONFIG_DIR` actualizado a `00_Core/02_Tools/01_Agents`
+- **Judgment Day completado**: 2 rondas, 9 CRITICAL/WARNING fijados, re-juzgamiento APROBADO ✅
+- **Temp cleanup**: `/tmp/` liberado ~3.1 GB (VS Code stale builds, `.tmp` files, OpenCode installers)
+
+### Tools creadas
+- `tools/batch_fix_next_pattern.py` — Batch fix next() + shebang detection
+- `tools/fix_shebangs.py` — Batch shebang repositioning
+
+### Archivos creados
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/os_errors.py` — Error Taxonomy
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/path_guardian.py` — Path resolution
+
+### Commits
+| Commit | Descripción |
+|--------|-------------|
+| (pending) | fix(os): 51 StopIteration fixes + Error Taxonomy + Path Guardian + Secret Scanner v2 |
+| (pending) | fix(os): Judgment Day — 9 fixes applied, re-judgment APPROVED |
+
+---
+
 ## 4.9.1 - 2026-06-25
 
 ### Added — Marketing Agents SOTA Upgrade + Graphify Move

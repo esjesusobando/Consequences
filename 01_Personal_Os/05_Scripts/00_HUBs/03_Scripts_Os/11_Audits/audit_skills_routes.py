@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
 import logging
 import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 import sys
 from pathlib import Path
@@ -13,7 +13,8 @@ SCRIPTS_OS = next(
     SCRIPT_DIR.parent,
 )
 
-PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")  # 01_Personal_Os
+from path_guardian import resolve_os_root
+PERSONAL_OS = resolve_os_root(Path(__file__).resolve().parent)
 ROOT = next(
     (p for p in [SCRIPT_DIR, *SCRIPT_DIR.parents] if (p / "00_Winter_is_Coming").exists() and (p / "01_Personal_Os").exists()),
     PERSONAL_OS.parent,

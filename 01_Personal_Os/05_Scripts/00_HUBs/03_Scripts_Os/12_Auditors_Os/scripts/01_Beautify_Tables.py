@@ -14,7 +14,8 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
 
-PERSONAL_OS = next(p for p in Path(__file__).resolve().parents if p.name == "01_Personal_Os")         # 01_Personal_Os
+from path_guardian import resolve_os_root
+PERSONAL_OS = resolve_os_root(Path(__file__).resolve().parent)
 ROOT = PERSONAL_OS.parent               # Project root
 
 # Fix encoding (Standard block)

@@ -133,28 +133,30 @@ python 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py --notif
 
 ## ⚙️ Hooks Wireados vs Documentados
 
-> **Estado Real (2026-05-26):** No todos los hooks documentados están configurados en `settings.json`.
+> **Estado Real (2026-07-07):** 4 hooks wireados, 4 hooks requieren invocación manual.
+> Los hooks inactivos son intencionales — requieren variables de entorno o setup adicional.
 
-### Hooks Configurados en `.claude/settings.json` (✅ ACTIVOS)
+### Hooks Configurados (✅ ACTIVOS — auto-ejecutados por el LLM)
 
-| Hook                 | Script                              | Estado       |
-|----------------------|-------------------------------------|--------------|
-| PreToolUse           | `01_Pre_Tool/pre_tool_use.py`       | ✅ Activo     |
-| PostToolUse          | `02_Post_Tool/post_tool_use.py`     | ✅ Activo     |
-| Stop                 | `03_Lifecycle/stop.py`              | ✅ Activo     |
-| **SubagentStop**     | `03_Lifecycle/subagent_stop.py`     | ✅ Activo     |
+| Hook           | Script                          | Estado   |
+|----------------|---------------------------------|----------|
+| PreToolUse     | `01_Pre_Tool/pre_tool_use.py`   | ✅ Activo |
+| PostToolUse    | `02_Post_Tool/post_tool_use.py` | ✅ Activo |
+| Stop           | `03_Lifecycle/stop.py`          | ✅ Activo |
+| SubagentStop   | `03_Lifecycle/subagent_stop.py` | ✅ Activo |
 
-### Hooks Documentados pero NO Configurados (❌ INACTIVOS)
+### Hooks Manuales (🔧 INACTIVOS — invocación explícita)
 
-| Hook                      | Script                      | Estado           | Acciones                                              |
-|---------------------------|-----------------------------|------------------|-------------------------------------------------------|
-| 04_Sound                  | `notification.py`           | ❌ No wireado     | Manual: `--task-complete`, `--success`, `--error`     |
-| 05_Harness                | `context_monitor.py`        | ❌ No wireado     | Manual: monitoreo de contexto                         |
-| 05_Harness                | `eval_trigger.py`           | ❌ No wireado     | Manual: dispara evals                                 |
-| 06_Post_Hulk_Compound     | `post_hulk_compound.py`     | ❌ No wireado     | Manual: post-CE workflow                              |
+| Hook                      | Script                      | Activación                                      |
+|---------------------------|-----------------------------|-------------------------------------------------|
+| 04_Sound                  | `notification.py`           | `python notification.py --task-complete`        |
+| 05_Harness                | `context_monitor.py`        | `python context_monitor.py`                     |
+| 05_Harness                | `eval_trigger.py`           | `python eval_trigger.py`                        |
+| 06_Post_Hulk_Compound     | `post_hulk_compound.py`     | Se ejecuta automáticamente post-CE workflow     |
 
-### Recomendación
-Para activar los hooks inactivos, agregar al `settings.json`:
+### Para activar hooks inactivos como auto-ejecutables
+
+Agregar al `settings.local.json` del agente correspondiente:
 
 ```json
 {
@@ -162,7 +164,8 @@ Para activar los hooks inactivos, agregar al `settings.json`:
     "PreToolUse": [{ "command": "python .../01_Pre_Tool/pre_tool_use.py" }],
     "PostToolUse": [{ "command": "python .../02_Post_Tool/post_tool_use.py" }],
     "Stop": [{ "command": "python .../03_Lifecycle/stop.py" }],
-    "SubagentStop": [{ "command": "python .../03_Lifecycle/subagent_stop.py" }]
+    "SubagentStop": [{ "command": "python .../03_Lifecycle/subagent_stop.py" }],
+    "Notification": [{ "command": "python .../04_Sound/notification.py --task-complete" }]
   }
 }
 ```

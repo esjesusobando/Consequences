@@ -1,15 +1,28 @@
+#!/usr/bin/env python3
+"""
+pre_tool_use.py — Pre-Tool Use Hook (PersonalOS v2.0)
+
+Checks before every LLM tool invocation:
+  1. Battery level (Windows only) — blocks if < 15 %
+  2. Destructive commands (rm -rf) — blocked
+  3. .env file access — blocked
+  4. Multi-agent support (Claude Code, OpenCode, Codex)
+
+Exit codes:
+    0 — allow
+    1 — block
+"""
+
+import argparse
+import io
 import os
-import sys
 import subprocess
+import sys
+from pathlib import Path
 
-# Forzar encoding UTF-8 para consola Windows
 if sys.platform == "win32":
-    import io
-
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
-
-from pathlib import Path
 
 _ext_root = Path(__file__).parent.parent.parent
 
@@ -30,34 +43,64 @@ except Exception as e:
     print(f"[WARN] Could not load common utilities: {e}")
 
 
-def speak(msg, priority="normal"):
+def speak(msg: str, priority: str = "normal") -> None:
     if _speak:
         _speak(msg, priority)
     else:
         print(msg)
 
 
-def log_to_json(event, data):
+def log_to_json(event: str, data: dict) -> None:
     if _log_to_json:
         _log_to_json(event, data)
     else:
         print(f"[LOG] {event}: {data}")
 
 
-def check_battery():
+def check_battery() -> tuple[bool, int]:
+    """Check battery level via PowerShell (CIM-compatible, PS 5+ / 7+).
+
+    Returns (ok, level_percent). ok=False if battery < 15%.
+    """
+    if sys.platform != "win32":
+        return True, 100
+
     try:
-        ps_command = "Get-WmiObject -Class Win32_Battery | Select-Object -ExpandProperty EstimatedChargeRemaining"
-        result = subprocess.run(
-            ["powershell.exe", "-Command", ps_command], capture_output=True, text=True,
-            timeout=5,
+        # PowerShell 7+ uses Get-CimInstance; PS 5 falls back to Get-WmiObject
+        ps_command = (
+            "Get-CimInstance -ClassName Win32_Battery "
+            "| Select-Object -ExpandProperty EstimatedChargeRemaining"
         )
-        if result.stdout.strip():
-            battery_level = int(result.stdout.strip())
+        result = subprocess.run(
+            ["powershell.exe", "-NoProfile", "-Command", ps_command],
+            capture_output=True, text=True, timeout=8,
+        )
+        stdout = result.stdout.strip()
+
+        # If Get-CimInstance failed (e.g. no CIM session), fall back to WMI
+        if not stdout:
+            ps_command_fallback = (
+                "Get-WmiObject -Class Win32_Battery "
+                "| Select-Object -ExpandProperty EstimatedChargeRemaining"
+            )
+            result = subprocess.run(
+                ["powershell.exe", "-NoProfile", "-Command", ps_command_fallback],
+                capture_output=True, text=True, timeout=8,
+            )
+            stdout = result.stdout.strip()
+
+        if stdout:
+            battery_level = int(stdout)
             if battery_level < 15:
-                print(f"⚠️ Batería baja: {battery_level}%")
+                print(f"[WARN] Battery low: {battery_level}%")
                 return False, battery_level
+            return True, battery_level
+
+        # No battery output = desktop / no battery
+        print("[INFO] No battery detected")
+        return True, 100
     except subprocess.TimeoutExpired:
-        print("[INFO] Battery check timed out — no battery or slow WMI")
+        print("[INFO] Battery check timed out")
     except FileNotFoundError:
         print("[INFO] powershell.exe not found — skipping battery check")
     except (ValueError, OSError) as e:
@@ -65,49 +108,56 @@ def check_battery():
     return True, 100
 
 
-def main():
-    print("--- PRE-TOOL USE HOOK ---")
+def get_tool_input() -> str:
+    """Read tool input from any supported agent environment variable."""
+    for var in ("CLAUDE_TOOL_INPUT", "OPENCODE_TOOL_INPUT", "CODEX_TOOL_INPUT"):
+        value = os.environ.get(var, "")
+        if value:
+            return value.lower()
+    return os.environ.get("TOOL_INPUT", "").lower()
 
-    # Check battery
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="PersonalOS Pre-Tool Use Hook")
+    parser.add_argument("--check", action="store_true", help="Run battery check only")
+    args = parser.parse_args()
+
+    print("[HOOK] Pre-Tool Use")
+
+    # Battery check
     if os.environ.get("BYPASS_BATTERY_CHECK") != "1":
         bat_ok, level = check_battery()
         if not bat_ok:
-            error_msg = f"Operacion cancelada por bateria baja: {level}%."
-            print(f"[ERR] {error_msg}")
-            # Importación local para evitar dependencias circulares pesadas
-            speak(error_msg)
-            log_to_json(
-                "pre_tool_use",
-                {"action": "cancel", "reason": "low_battery", "level": level},
-            )
-            sys.exit(1)
+            msg = f"Operation cancelled — battery low: {level}%"
+            print(f"[ERR] {msg}")
+            speak(msg)
+            log_to_json("pre_tool_use", {"action": "cancel", "reason": "low_battery", "level": level})
+            return 1
 
-    # Get tool input from environment
-    tool_input = os.environ.get("CLAUDE_TOOL_INPUT", "").lower()
+    if args.check:
+        print("[OK] Battery check passed")
+        return 0
 
-    # 1. Block destructive commands
+    tool_input = get_tool_input()
+
+    # Block destructive commands
     if "rm -rf" in tool_input:
-        error_msg = "Comando destructivo 'rm -rf' bloqueado."
-        print(f"❌ ERROR: {error_msg}")
-        log_to_json(
-            "pre_tool_use",
-            {"action": "block", "command": tool_input, "reason": "destructive"},
-        )
-        sys.exit(1)
+        msg = "Destructive command 'rm -rf' blocked"
+        print(f"[BLOCK] {msg}")
+        log_to_json("pre_tool_use", {"action": "block", "command": tool_input, "reason": "destructive"})
+        return 1
 
-    # 2. Protect .env files
-    if ".env" in tool_input and "cat" in tool_input:
-        error_msg = "Acceso a archivos .env bloqueado."
-        print(f"❌ ERROR: {error_msg}")
-        log_to_json(
-            "pre_tool_use",
-            {"action": "block", "command": tool_input, "reason": "security_file"},
-        )
-        sys.exit(1)
+    # Protect .env files
+    if ".env" in tool_input:
+        msg = ".env file access blocked"
+        print(f"[BLOCK] {msg}")
+        log_to_json("pre_tool_use", {"action": "block", "command": tool_input, "reason": "security_file"})
+        return 1
 
     log_to_json("pre_tool_use", {"action": "allow", "command": tool_input})
-    print("✅ Pre-tool check exitoso.")
+    print("[OK] Pre-tool check passed")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

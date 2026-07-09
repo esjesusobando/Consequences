@@ -1,7 +1,7 @@
 # 00_Core — Personal OS v5.0 Engine
 
-> **Version:** v5.0 SOTA
-> **Last updated:** 2026-07-03 — Full path audit, dual-copy architecture documented
+> **Version:** v5.0.0 SOTA
+> **Last updated:** 2026-07-07 — OS Edge Cases fixed, Error Taxonomy, Path Guardian, Secret Scanner v2
 > **Status:** ACTIVE | SOURCE OF TRUTH
 
 ---
@@ -22,7 +22,7 @@ Think_Different/
 │   ├── 02_Knowledge/          # Knowledge base, research, docs
 │   ├── 03_Learning/           # Active knowledge, auto-improvement
 │   ├── 04_Tasks/              # Active task management
-│   ├── 05_Scripts/            # Operations: 42 HUBs, 166+ scripts
+│   ├── 05_Scripts/            # Operations: 42 HUBs, 166+ scripts, core OS modules
 │   ├── 06_Projects/           # Active projects
 │   └── 07_Archive/            # Backups, snapshots, history
 ├── 02_Playground/             # Testing and experiments
@@ -52,7 +52,7 @@ Think_Different/
 | 02    | `02_Skills/`            | 35+ skill areas (~3600+ files)                                  | ACTIVE   |
 | 03    | `03_Mcp/`               | MCP server backup configs                                       | ACTIVE   |
 | 04    | `04_Integrations/`      | Fireflies, Granola integrations                                 | ACTIVE   |
-| 05    | `05_Hooks/`             | 10 hooks (6 phases)                                             | ACTIVE   |
+| 05    | `05_Hooks/`             | 10 hooks (6 phases) — Secret Scanner v2, Pre-Tool WMI→CIM       | ACTIVE   |
 | 06    | `06_Plugins/`           | OS plugins                                                      | ACTIVE   |
 | 07    | `07_Server/`            | Engram MCP server                                               | ACTIVE   |
 | 08    | `08_Evals/`             | Evaluators and metrics                                          | ACTIVE   |
@@ -82,4 +82,18 @@ See `01_Personal_Os/README.md` for details on the dual-copy structure:
 
 ---
 
-**Personal OS v5.0 SOTA — Path audit 2026-07-03 — 84/84 paths OK**
+## OS Engine Modules (v5.0.0)
+
+| Module             | Path                                                               | Status   |
+|--------------------|--------------------------------------------------------------------|----------|
+| Error Taxonomy     | `05_Scripts/00_HUBs/03_Scripts_Os/os_errors.py`                    | ACTIVE   |
+| Path Guardian      | `05_Scripts/00_HUBs/03_Scripts_Os/path_guardian.py`                | ACTIVE   |
+| Sound Engine       | `05_Scripts/00_HUBs/03_Scripts_Os/00_Sound_Engine.py`              | ACTIVE   |
+| Sync Copies        | `05_Scripts/00_HUBs/03_Scripts_Os/sync_copies.py`                  | ACTIVE   |
+| Config Paths       | `05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py`                 | ACTIVE   |
+| Secret Scanner     | `02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`                  | ACTIVE   |
+| Pre-Tool Hook      | `02_Tools/05_Hooks/01_Pre_Tool/pre_tool_use.py`                    | ACTIVE   |
+
+---
+
+**Personal OS v5.0.0 SOTA — 2026-07-07 — OS Edge Cases Fixed: 0 StopIteration, 0 asserts, 0 except:pass, 0 misplaced shebangs, WMI→CIM migrated, Secret Scanner v2, Judgment Day APPROVED**

@@ -20,39 +20,26 @@ from datetime import datetime
 from pathlib import Path
 from typing import Literal
 
+from os_errors import PersonalOSError
+from path_guardian import resolve_os_root, detect_copy_type
+
 
 # ── Detection ──────────────────────────────────────────
 
 def detect_copy(script_dir: Path) -> Literal["A", "B"]:
     """Detect which PersonalOS copy the script runs from.
 
-    Walks up from *script_dir* to find the ``01_Personal_Os`` directory, then:
-    - If its *parent* has ``00_Winter_is_Coming/`` → Copy B (canonical under Think_Different/)
-    - If the directory itself has ``08_Report/``     → Copy A (minimal under %USERPROFILE%)
-    - Otherwise raises ``ValueError``.
-
-    Follows the same marker-file convention as ``config_paths.find_project_root()``.
+    Delegates to ``path_guardian.resolve_os_root()`` and
+    ``path_guardian.detect_copy_type()`` for centralised path resolution.
     """
-    # Walk up to find 01_Personal_Os
-    personal_os: Path | None = None
-    for candidate in [script_dir, *script_dir.parents]:
-        if candidate.name == "01_Personal_Os":
-            personal_os = candidate
-            break
-
-    if personal_os is None:
-        raise ValueError(
-            f"Cannot find 01_Personal_Os from {script_dir}"
-        )
-
-    parent = personal_os.parent
-    if (parent / "00_Winter_is_Coming").exists():
-        return "B"                     # Copy B: Think_Different/00_Winter_is_Coming
-    if (personal_os / "08_Report").is_dir():
-        return "A"                     # Copy A: %USERPROFILE%/01_Personal_Os/08_Report
-    raise ValueError(
-        f"Cannot detect copy type — no marker found near {personal_os}"
-    )
+    personal_os = resolve_os_root(script_dir)
+    copy_type = detect_copy_type(script_dir)
+    if copy_type == "A":
+        return "A"
+    elif copy_type == "B":
+        return "B"
+    else:
+        raise ValueError(f"Cannot detect copy type near {personal_os}")
 
 
 # ── File Mapping ──────────────────────────────────────
@@ -84,15 +71,7 @@ def resolve_roots(script_dir: Path, copy_type: str) -> tuple[Path, Path]:
             "Sync is one-directional: B → A only."
         )
 
-    # Walk up to 01_Personal_Os, then take its parent (project root)
-    personal_os: Path | None = None
-    for candidate in [script_dir, *script_dir.parents]:
-        if candidate.name == "01_Personal_Os":
-            personal_os = candidate
-            break
-
-    # personal_os is guaranteed non-None because detect_copy already succeeded
-    assert personal_os is not None
+    personal_os = resolve_os_root(script_dir)
     src_root = personal_os.parent          # e.g. C:/Users/sebas/Desktop/Think_Different
     dest_root = Path.home() / "01_Personal_Os"  # e.g. C:/Users/sebas/01_Personal_Os
     return src_root, dest_root
@@ -206,7 +185,7 @@ def main() -> None:
     script_dir = Path(__file__).resolve().parent
     try:
         copy_type = detect_copy(script_dir)
-    except ValueError as exc:
+    except (ValueError, PersonalOSError) as exc:
         print(f"[ERROR] {exc}", file=sys.stderr)
         sys.exit(3)
 
@@ -218,7 +197,7 @@ def main() -> None:
     # ── Resolve roots ─────────────────────────────────────────────────────
     try:
         src_root, dest_root = resolve_roots(script_dir, copy_type)
-    except RuntimeError as exc:
+    except (RuntimeError, PersonalOSError) as exc:
         print(f"[ERROR] {exc}", file=sys.stderr)
         sys.exit(3)
 
