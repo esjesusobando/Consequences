@@ -19,6 +19,7 @@ Skills del ecosistema JAO para comunicación, productividad y calidad.
 | 04 | Presentaciones Visuales | Crea presentaciones HTML modernas | "haz una presentación", "crea slides" |
 | 05 | Superpowers | Modo riguroso para proyectos complejos | "crea una app", "construye esto" |
 | 06 | Verificador de Datos | Fact-check de textos y afirmaciones | "verifica esto", "comprueba si es verdad" |
+| 07 | Karpathy Guidelines | Guías comportamentales anti-overengineering (simplicidad, cirugía, goal-driven) | "aplica karpathy", "simplifica esto", "revisa overengineering" |
 
 ## Uso
 

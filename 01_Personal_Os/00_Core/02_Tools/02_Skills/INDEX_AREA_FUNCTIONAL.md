@@ -71,6 +71,26 @@
 | **Remotion Browser Search**                    | `03_Video_Media/02_James_Cameron/02_Remotion_Browser_Search/`                    | Animación de búsqueda en navegador                    |
 | **Remotion Cards Showcase**                    | `03_Video_Media/02_James_Cameron/03_Remotion_Cards_Showcase/`                    | Cards animadas con Remotion                           |
 | **Remotion Audio Engine**                      | `03_Video_Media/02_James_Cameron/04_Remotion_Audio_Engine/`                      | Motor de audio para Remotion                          |
+| **Hyperframes Core**                           | `03_Video_Media/hyperframes-core/`                                               | Motor base de animaciones tipo Remotion               |
+| **Hyperframes Animation**                      | `03_Video_Media/hyperframes-animation/`                                          | Animaciones keyframe, transiciones, easing            |
+| **Hyperframes Keyframes**                      | `03_Video_Media/hyperframes-keyframes/`                                          | Editor de keyframes visual                            |
+| **Hyperframes Creative**                       | `03_Video_Media/hyperframes-creative/`                                           | Templates creativos, efectos visuales                 |
+| **Hyperframes CLI**                            | `03_Video_Media/hyperframes-cli/`                                                | CLI para renderizar videos                            |
+| **General Video**                              | `03_Video_Media/general-video/`                                                  | Pipeline video genérico                               |
+| **Embedded Captions**                          | `03_Video_Media/embedded-captions/`                                              | Subtítulos embebidos/quemados                         |
+| **Faceless Explainer**                         | `03_Video_Media/faceless-explainer/`                                             | Videos explicativos sin rostro (voz + motion)         |
+| **Figma to Video**                             | `03_Video_Media/figma/`                                                          | Importa diseños Figma → video                         |
+| **Motion Graphics**                            | `03_Video_Media/motion-graphics/`                                                | Motion graphics avanzados                             |
+| **Media Use**                                  | `03_Video_Media/media-use/`                                                      | Manejo de assets (video, audio, imágenes)             |
+| **Music to Video**                             | `03_Video_Media/music-to-video/`                                                 | Visualizador música → video                           |
+| **Product Launch Video**                       | `03_Video_Media/product-launch-video/`                                           | Templates lanzamiento producto                        |
+| **PR to Video**                                | `03_Video_Media/pr-to-video/`                                                    | Convierte PR/changelog → video                        |
+| **Remotion to Hyperframes**                    | `03_Video_Media/remotion-to-hyperframes/`                                        | Migra Remotion → Hyperframes                          |
+| **Slideshow**                                  | `03_Video_Media/slideshow/`                                                      | Slideshows animados                                   |
+| **Talking Head Recut**                         | `03_Video_Media/talking-head-recut/`                                             | Recorta talking heads automáticamente                 |
+| **Website to Video**                           | `03_Video_Media/website-to-video/`                                               | Captura web → video demo                              |
+| **Hyperframes Registry**                       | `03_Video_Media/hyperframes-registry/`                                           | Registry de componentes animados                      |
+| **Hyperframes**                                | `03_Video_Media/hyperframes/`                                                    | Skill meta-orquestador                                |
 
 ---
 
