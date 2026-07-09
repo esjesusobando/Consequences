@@ -96,18 +96,27 @@ Despite being visually collapsed, all 6 sections' children remain **mounted in t
 
 The Playground section alone contains 5 sub-components with independent `useState`/`useEffect` — all running on every drawer mount regardless of visibility.
 
+## How to Reproduce
+
+1. Open Zero Consequences in Vite dev server
+2. Click the Settings gear icon
+3. Observe 1-3 second lag before drawer opens
+4. Open DevTools → Performance tab → record a profile while opening the drawer
+5. Look for: 8+ `localStorage.getItem()` synchronous calls, cascade re-renders from `useEffect`
+6. Check `Application → Local Storage` for size — note if `sota_presentation_config` exceeds 4MB (sign of base64 images)
+
 ## Solution
 
 ### Fixes Applied (Judgment Day R1)
 
-| Issue | Fix |
-|-------|-----|
-| 11 unused icon imports | Removed `FolderOpen`, `Circle`, `Plug`, `ToggleLeft`, `Box`, `Cpu`, `Webhook`, `Beaker`, `Globe`, `Link`, `RefreshCw` |
-| Missing useEffect dep array | Added `[config.backgroundImage]` dependency |
-| `config: any` type bypass | Changed to `config: Partial<PresentationConfig>` with proper typing |
-| 12 hardcoded hex colors | Replaced with CSS variable tokens (`bg-void`, `bg-carbon`, `bg-graphite`, etc.) |
-| setTimeout leak in MCP | Stored timeout in `useRef`, cleanup on unmount |
-| Missing aria attributes | Added `aria-expanded` to buttons, `aria-hidden` to icons |
+| Issue | Fix | Verification |
+|-------|-----|-------------|
+| 11 unused icon imports | Removed `FolderOpen`, `Circle`, `Plug`, `ToggleLeft`, `Box`, `Cpu`, `Webhook`, `Beaker`, `Globe`, `Link`, `RefreshCw` | `rg "import.*lucide" SettingsDrawer.tsx` shows only used icons |
+| Missing useEffect dep array | Added `[config.backgroundImage]` dependency | `<title>` renders once on load, not on every slider tick |
+| `config: any` type bypass | Changed to `config: Partial<PresentationConfig>` with proper typing | TypeScript compiles without `any` warnings |
+| 12 hardcoded hex colors | Replaced with CSS variable tokens (`bg-void`, `bg-carbon`, `bg-graphite`, etc.) | No more `bg-[#` in SettingsDrawer.tsx |
+| setTimeout leak in MCP | Stored timeout in `useRef`, cleanup on unmount | Component unmount clears pending timeout |
+| Missing aria attributes | Added `aria-expanded` to buttons, `aria-hidden` to icons | axe DevTools passes section accessibility |
 
 ### Recommended Next Steps (not yet applied)
 
@@ -155,4 +164,3 @@ The remaining architectural issues (component extraction, conditional rendering,
 - Reference commit: `4f3f4abac` — Settings drawer refactor (the commit that introduced the features)
 - Reference commit: `02500eb8e` (REVISAR tag) — Original working baseline
 - Reference tags: `zc-ref-countdown-fix`, `zc-ref-editorial-mode`, `zc-ref-css-tokens`
-- `docs/solutions/runtime-errors/settings-upload-localstorage-quota.md` (if created)
