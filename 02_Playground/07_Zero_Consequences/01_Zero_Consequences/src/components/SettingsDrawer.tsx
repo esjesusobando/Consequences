@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   X, 
   Sparkles, 
@@ -13,7 +13,6 @@ import {
   Layout,
   Save,
   Trash2,
-  FolderOpen,
   ArrowLeftRight,
   ChevronDown,
   Server,
@@ -21,22 +20,12 @@ import {
   Terminal,
   Zap,
   FlaskConical,
-  Circle,
-  Plug,
   Play,
   Plus,
   Wrench,
-  ToggleLeft,
-  Box,
-  Cpu,
-  Webhook,
-  Beaker,
-  Globe,
-  Link,
   Activity,
   Power,
   PowerOff,
-  RefreshCw,
   Loader
 } from 'lucide-react';
 import { PresentationConfig, AccentColor } from '../types';
@@ -89,6 +78,7 @@ function CollapsibleSection({
       <button
         type="button"
         onClick={() => setExpanded(prev => !prev)}
+        aria-expanded={expanded}
         className="flex items-center justify-between w-full group cursor-pointer"
       >
         <h3
@@ -99,6 +89,7 @@ function CollapsibleSection({
           {title}
         </h3>
         <ChevronDown
+          aria-hidden="true"
           className="w-3.5 h-3.5 text-slate transition-transform duration-200 group-hover:text-bone"
           style={{ transform: expanded ? 'rotate(0deg)' : 'rotate(-90deg)' }}
         />
@@ -154,6 +145,7 @@ type HarnessEntry = {
 
 function McpServerSubsection() {
   const storageKey = 'sota_playground_mcp';
+  const connectTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [connections, setConnections] = useState<McpConnection[]>(() => {
     try {
@@ -184,12 +176,20 @@ function McpServerSubsection() {
     setShowForm(false);
 
     // Simulate connection test after 1.5s
-    setTimeout(() => {
+    connectTimeoutRef.current = setTimeout(() => {
       setConnections(prev =>
         prev.map(c => (c.id === id ? { ...c, status: 'connected' as const } : c))
       );
     }, 1500);
   };
+
+  useEffect(() => {
+    return () => {
+      if (connectTimeoutRef.current) {
+        clearTimeout(connectTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const removeConnection = (id: string) => {
     setConnections(prev => prev.filter(c => c.id !== id));
@@ -525,6 +525,9 @@ export default function SettingsDrawer({
   focusMode,
   setFocusMode,
 }: SettingsDrawerProps) {
+  // NOTE: ~8 synchronous localStorage.getItem() calls in useState initializers below.
+  // This is a known perf issue on mount — fixing would require lazy component splitting
+  // or a context-based persistence layer. Left as-is intentionally for now.
   // Manage recent background images with pinned favorites
   const [recentImages, setRecentImages] = useState<Array<{ url: string; isFavorite: boolean; name: string }>>(() => {
     try {
@@ -546,7 +549,7 @@ export default function SettingsDrawer({
   });
 
   // Manage saved custom Workspace layouts
-  const [savedWorkspaces, setSavedWorkspaces] = useState<Array<{ id: string, name: string, config: any, accent: AccentColor }>>(() => {
+  const [savedWorkspaces, setSavedWorkspaces] = useState<Array<{ id: string, name: string, config: Partial<PresentationConfig>, accent: AccentColor }>>(() => {
     try {
       const saved = localStorage.getItem('sota_saved_workspaces');
       if (saved) {
@@ -699,11 +702,8 @@ export default function SettingsDrawer({
     setNewWorkspaceName('');
   };
 
-  const handleApplyWorkspace = (ws: any) => {
-    setConfig({
-      ...config,
-      ...ws.config
-    });
+  const handleApplyWorkspace = (ws: { id: string; name: string; config: Partial<PresentationConfig>; accent: AccentColor }) => {
+    setConfig(prev => ({ ...prev, ...ws.config }));
     setAccent(ws.accent);
     onLogMessage('ok', `Espacio de trabajo restaurado: "${ws.name}"`);
   };
@@ -748,7 +748,7 @@ export default function SettingsDrawer({
       {/* Slide-out Panel */}
       <div 
         id="settings-ambient-drawer"
-        className="fixed top-0 right-0 h-full w-[380px] max-w-full bg-[#090D16]/95 border-l border-graphite/50 shadow-2xl z-50 flex flex-col transition-all duration-300 custom-scrollbar select-none text-bone"
+        className="fixed top-0 right-0 h-full w-[380px] max-w-full bg-void/95 border-l border-graphite/50 shadow-2xl z-50 flex flex-col transition-all duration-300 custom-scrollbar select-none text-bone"
       >
         {/* Drawer Header */}
         <div className="p-5 border-b border-graphite/30 flex items-center justify-between bg-carbon/25">
@@ -786,7 +786,7 @@ export default function SettingsDrawer({
               {/* Upload */}
               <label 
                 htmlFor="bg-image-upload"
-                className="flex flex-col items-center justify-center border border-dashed border-graphite/60 hover:border-signal-cyan/50 bg-carbon/30 hover:bg-[#131826]/60 p-3 rounded-lg cursor-pointer transition-all text-center select-none"
+                className="flex flex-col items-center justify-center border border-dashed border-graphite/60 hover:border-signal-cyan/50 bg-carbon/30 hover:bg-carbon/60 p-3 rounded-lg cursor-pointer transition-all text-center select-none"
               >
                 <ImageIcon className="w-4 h-4 text-signal-cyan mb-1 animate-pulse" />
                 <span className="text-[9px] font-mono text-bone uppercase font-bold">Subir imagen</span>
@@ -817,7 +817,7 @@ export default function SettingsDrawer({
                     >
                       <img src={img.url} alt={img.name || 'Fondo'} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                       <button onClick={(e) => toggleFavoriteImage(img.url, e)} className="absolute top-0.5 right-0.5 p-0.5 rounded-full bg-void/65 hover:bg-void/90 transition-all text-bone" title="Favorito">
-                        <Star className={`w-2.5 h-2.5 ${img.isFavorite ? 'text-[#FFB400] fill-[#FFB400]' : 'text-slate'}`} />
+                        <Star className={`w-2.5 h-2.5 ${img.isFavorite ? 'text-signal-amber fill-signal-amber' : 'text-slate'}`} />
                       </button>
                     </div>
                   );
@@ -916,8 +916,8 @@ export default function SettingsDrawer({
                 onClick={() => { setConfig(prev => ({ ...prev, themeMode: 'dark' })); onLogMessage('info', 'Modo Oscuro'); }}
                 className={`flex flex-col items-center gap-1 p-2.5 rounded-lg border text-center transition-all cursor-pointer ${(config.themeMode ?? 'dark') === 'dark' ? 'border-signal-cyan bg-signal-cyan/10 font-bold' : 'border-graphite/40 bg-void/35 hover:border-graphite'}`}
               >
-                <div className="w-5 h-5 rounded bg-void border border-[#1E2435] flex items-center justify-center">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#00F0FF]" />
+                <div className="w-5 h-5 rounded bg-void border border-graphite flex items-center justify-center">
+                  <div className="w-2.5 h-2.5 rounded-full bg-signal-cyan" />
                 </div>
                 <span className="text-[9px] font-mono font-bold uppercase text-bone mt-1">DARK</span>
               </button>
@@ -927,8 +927,8 @@ export default function SettingsDrawer({
                 onClick={() => { setConfig(prev => ({ ...prev, themeMode: 'light_neocraft' })); onLogMessage('ok', 'Modo Claro'); }}
                 className={`flex flex-col items-center gap-1 p-2.5 rounded-lg border text-center transition-all cursor-pointer ${config.themeMode === 'light_neocraft' ? 'border-signal-cyan bg-signal-cyan/10 font-bold' : 'border-graphite/40 bg-void/35 hover:border-graphite'}`}
               >
-                <div className="w-5 h-5 rounded bg-[#F8F9FB] border border-[#E8EBF0] flex items-center justify-center">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#156BFF]" />
+                <div className="w-5 h-5 rounded bg-bone border border-graphite/30 flex items-center justify-center">
+                  <div className="w-2.5 h-2.5 rounded-full bg-signal-cyan" />
                 </div>
                 <span className="text-[9px] font-mono font-bold uppercase text-bone mt-1">LIGHT</span>
               </button>
@@ -938,8 +938,8 @@ export default function SettingsDrawer({
                 onClick={() => { setConfig(prev => ({ ...prev, themeMode: 'editorial' })); onLogMessage('ok', 'Modo Editorial'); }}
                 className={`flex flex-col items-center gap-1 p-2.5 rounded-lg border text-center transition-all cursor-pointer ${config.themeMode === 'editorial' ? 'border-signal-cyan bg-signal-cyan/10 font-bold' : 'border-graphite/40 bg-void/35 hover:border-graphite'}`}
               >
-                <div className="w-5 h-5 rounded bg-[#FFFFFF] border border-[#E2E4E8] flex items-center justify-center">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#00838F]" />
+                <div className="w-5 h-5 rounded bg-white border border-graphite/30 flex items-center justify-center">
+                  <div className="w-2.5 h-2.5 rounded-full bg-signal-cyan/80" />
                 </div>
                 <span className="text-[9px] font-mono font-bold uppercase text-bone mt-1">EDITORIAL</span>
               </button>
@@ -969,7 +969,7 @@ export default function SettingsDrawer({
               {AMBIENT_TRACKS.map((track) => {
                 const isActive = config.audioLoop === track.id;
                 return (
-                  <div key={track.id} onClick={() => handleSelectTrack(track.id, track.name)} className={`flex items-center justify-between p-1.5 rounded border cursor-pointer transition-all ${isActive ? 'border-signal-magenta bg-[#FF2E9A]/5' : 'border-graphite/20 bg-void/30 hover:border-graphite/80'}`}>
+                  <div key={track.id} onClick={() => handleSelectTrack(track.id, track.name)} className={`flex items-center justify-between p-1.5 rounded border cursor-pointer transition-all ${isActive ? 'border-signal-magenta bg-signal-magenta/5' : 'border-graphite/20 bg-void/30 hover:border-graphite/80'}`}>
                     <div className="text-[9px] font-bold text-bone font-mono uppercase flex items-center gap-1.5">
                       {isActive && <span className="w-1.5 h-1.5 bg-signal-magenta rounded-full animate-ping" />}
                       {track.name}
@@ -1018,7 +1018,7 @@ export default function SettingsDrawer({
 
               <div className="flex flex-col gap-1">
                 {savedWorkspaces.map((ws) => (
-                  <div key={ws.id} onClick={() => handleApplyWorkspace(ws)} className="group flex items-center justify-between p-1.5 bg-[#0c101b] border border-graphite/45 rounded-lg cursor-pointer hover:border-slate/60 transition-all">
+                  <div key={ws.id} onClick={() => handleApplyWorkspace(ws)} className="group flex items-center justify-between p-1.5 bg-void border border-graphite/45 rounded-lg cursor-pointer hover:border-slate/60 transition-all">
                     <div className="flex items-center gap-1.5">
                       <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: ws.accent === 'tokyo' ? '#d4b395' : ws.accent === 'custom' ? 'hsl(180,100%,50%)' : `var(--color-signal-${ws.accent})` }} />
                       <span className="font-mono text-[9px] font-bold text-bone uppercase">{ws.name}</span>
@@ -1055,7 +1055,7 @@ export default function SettingsDrawer({
         </div>
 
         {/* Drawer Footer info details */}
-        <div className="p-4 border-t border-graphite/35 bg-[#04060C] text-center">
+        <div className="p-4 border-t border-graphite/35 bg-void text-center">
           <span className="text-[8.5px] font-mono tracking-widest text-slate uppercase flex items-center justify-center gap-1">
             <Sparkles className="w-3 h-3 text-signal-cyan animate-pulse" />
             PERSONAL OS CORE v1 — DESIGN SYNCED
