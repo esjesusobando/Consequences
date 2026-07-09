@@ -503,7 +503,13 @@ export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) 
         imgRef.current = null;
         onLogMessage('ok', `Imagen cargada: ${file.name} (${i.naturalWidth}×${i.naturalHeight})`);
       };
-      i.src = e.target!.result as string;
+      i.onerror = () => {
+        onLogMessage('err', `Error al cargar imagen: ${file.name}`);
+      };
+      const target = e.target;
+      if (target?.result) {
+        i.src = target.result as string;
+      }
     };
     reader.readAsDataURL(file);
   }, [onLogMessage]);

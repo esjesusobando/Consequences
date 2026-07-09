@@ -85,7 +85,12 @@ export default function DashboardView({
         const meetingDate = new Date(now);
         meetingDate.setHours(h, m, 0, 0);
 
-        const diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
+        let diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
+        // If the meeting time has passed today, try tomorrow
+        if (diff <= 0) {
+          meetingDate.setDate(meetingDate.getDate() + 1);
+          diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
+        }
         if (diff > 0 && (nextSeconds === null || diff < nextSeconds)) {
           nextSeconds = diff;
           nextTitle = sig.title;
