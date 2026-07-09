@@ -76,14 +76,16 @@ def create_backup(file_path):
 
 def organize_solution_if_needed(file_path):
     """Check if file is in 06_Solutions/ (canonical) and organize it."""
+    canonical_prefix = "01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/"
     if (
-        "06_Solutions" in file_path
+        canonical_prefix in file_path.replace("\\", "/")
         and file_path.endswith(".md")
     ):
         try:
             script_path = (
                 PROJECT_ROOT
                 / "01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os"
+                / "13_Legacy"
                 / "56_Organize_Solutions.py"
             )
             if script_path.exists():
