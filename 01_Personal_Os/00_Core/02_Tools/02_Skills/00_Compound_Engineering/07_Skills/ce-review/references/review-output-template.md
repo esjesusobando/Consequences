@@ -61,7 +61,7 @@ Use this **exact format** when presenting synthesized review findings. Findings 
 
 ### Learnings & Past Solutions
 
-- [Known Pattern] `05_Scripts/06_Solutions/export-pagination.md` -- previous export pagination fix applies to this endpoint
+- [Known Pattern] `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/export-pagination.md` -- previous export pagination fix applies to this endpoint
 
 ### Agent-Native Gaps
 
@@ -105,7 +105,7 @@ Use this **exact format** when presenting synthesized review findings. Findings 
 - **Applied Fixes section** -- include only when a fix phase ran in this review invocation
 - **Residual Actionable Work section** -- include only when unresolved actionable findings were handed off for later work
 - **Pre-existing section** -- separate table, no confidence column (these are informational)
-- **Learnings & Past Solutions section** -- results from learnings-researcher, with links to 05_Scripts/06_Solutions/ files
+- **Learnings & Past Solutions section** -- results from learnings-researcher, with links to 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/ files
 - **Agent-Native Gaps section** -- results from agent-native-reviewer. Omit if no gaps found.
 - **Schema Drift Check section** -- results from schema-drift-detector. Omit if the agent did not run.
 - **Deployment Notes section** -- key checklist items from deployment-verification-agent. Omit if the agent did not run.

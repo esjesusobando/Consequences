@@ -59,7 +59,7 @@ When analyzing, consider:
 
 Your insights should help developers understand not just what the code does, but why it evolved to its current state, informing better decisions for future changes.
 
-Note that files in `05_Scripts/05_Plans/` and `05_Scripts/06_Solutions/` are compound-engineering pipeline artifacts created by `/ce:plan`. They are intentional, permanent living documents — do not recommend their removal or characterize them as unnecessary.
+Note that files in `05_Scripts/05_Plans/` and `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` are compound-engineering pipeline artifacts created by `/ce:plan`. They are intentional, permanent living documents — do not recommend their removal or characterize them as unnecessary.
 
 
 ---

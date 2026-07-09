@@ -70,13 +70,22 @@ Al iniciar sesión, la IA ejecuta EXACTAMENTE este bucle ANTES de actuar:
 
 ---
 
-## 📋 REGLA: PLANES PARA USUARIO
+## 📋 REGLA: JERARQUÍA DE DOCUMENTOS
 <root_plan_rule>
-TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN `00_Winter_is_Coming/` (estratégico) o raíz del proyecto (temporal).
-- Documentos estratégicos: `00_Winter_is_Coming/` (BACKLOG.md, GOALS.md, CHANGELOG.md)
-- Documentos temporales/para revisión: raíz del proyecto
-- NO crear en subcarpetas profundas (profundidad > 2)
-- El usuario revisa desde raíz o `00_Winter_is_Coming/`
+TODO documento se guarda según su tipo y ciclo de vida. NO todo va a raíz.
+
+| Tipo | Dónde guardar | Ejemplos |
+|------|--------------|----------|
+| **Estratégico** (metas, backlog, memoria) | `00_Winter_is_Coming/` | BACKLOG.md, GOALS.md, CHANGELOG.md |
+| **Temporal** (planes en revisión, drafts) | **Raíz del proyecto** | Planes para review del usuario |
+| **Conocimiento permanente** (compounds, lecciones) | `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` | Bugs documentados, patrones, decisiones |
+| **Técnico** (specs, tasks, workflows) | `01_Personal_Os/` (subcarpeta según corresponda) | Tasks en 04_Tasks/, specs en SDD |
+
+Reglas:
+- **Raíz es transitorio**: lo que está en raíz es para que el usuario lo revise y después se mueve o archiva.
+- **Compounds NO van a raíz**: van directo a `06_Solutions/` — son conocimiento permanente.
+- **NO crear en subcarpetas profundas** (profundidad > 2) para documentos de review.
+- El usuario revisa desde raíz o `00_Winter_is_Coming/`.
 </root_plan_rule>
 
 ---

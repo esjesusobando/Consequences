@@ -27,7 +27,7 @@ Compound Engineering nace de una verdad incómoda: en el software, el equipo res
 
 1. **Detectar**: Problema resuelto recientemente
 2. **Documentar**: Escribir la solución
-3. **Categorizar**: Guardar en 05_Scripts/06_Solutions/
+3. **Categorizar**: Guardar en 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/
 4. **Vincular**: Relacionar con issues existentes
 
 ## Categorías de Soluciones
@@ -47,8 +47,8 @@ Compound Engineering nace de una verdad incómoda: en el software, el equipo res
 ### Sin categoría válida
 > Si guardas en categoría que no existe, el script falla.
 
-- **Por qué**: El validador recorre `05_Scripts/06_Solutions/` buscando subdirectorios existentes. Si la categoría no está, el script no tiene dónde escribir y lanza error.
-- **Solución**: Crear la carpeta primero en `05_Scripts/06_Solutions/`. `mkdir -p 05_Scripts/06_Solutions/<categoria>/`
+- **Por qué**: El validador recorre `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` buscando subdirectorios existentes. Si la categoría no está, el script no tiene dónde escribir y lanza error.
+- **Solución**: Crear la carpeta primero en `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/`. `mkdir -p 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/<categoria>/`
 
 ### Documentación vacía
 > Si documentas sin contexto (qué problema, por qué, cómo), la knowledge no es reutilizable.
@@ -72,7 +72,7 @@ Compound Engineering nace de una verdad incómoda: en el software, el equipo res
 
 | Componente             | Persistencia     | Mecanismo                                                |
 |-----------------------|-----------------|---------------------------------------------------------|
-| Soluciones documentadas| ✅ Permanente     | Archivos `.md` en `05_Scripts/06_Solutions/`          |
+| Soluciones documentadas| ✅ Permanente     | Archivos `.md` en `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/`          |
 | Categorías disponibles | ✅ Archivo        | Directorios en `06_Solutions/` + validación al guardar   |
 | Índice de búsqueda     | ⚠️ Bajo demanda  | Se regenera con cada búsqueda — no hay índice persistente|
 | Vínculos a issues      | ✅ En el documento| Formato `Relacionado: #ISSUE-123` incluido en el template|

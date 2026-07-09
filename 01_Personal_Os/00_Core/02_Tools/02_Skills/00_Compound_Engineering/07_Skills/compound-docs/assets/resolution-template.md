@@ -86,7 +86,7 @@ sota_upgraded: true
 
 ## Related Issues
 
-[If any similar problems exist in 05_Scripts/06_Solutions/, link to them:]
+[If any similar problems exist in 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/, link to them:]
 - See also: [another-related-issue.md](../category/another-related-issue.md)
 - Similar to: [related-problem.md](../category/related-problem.md)
 

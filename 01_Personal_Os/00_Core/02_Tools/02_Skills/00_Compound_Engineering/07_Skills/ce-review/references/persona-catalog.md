@@ -19,7 +19,7 @@ Spawned on every review regardless of diff content.
 | Agent                                                                                 | Focus                                                                                                                         |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | `compound-engineering:review:agent-native-reviewer`                                   | Verify new features are agent-accessible                                                                                      |
-| `compound-engineering:research:learnings-researcher`                                  | Search 05_Scripts/06_Solutions/ for past issues related to this PR's modules and patterns                                  |
+| `compound-engineering:research:learnings-researcher`                                  | Search 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/ for past issues related to this PR's modules and patterns                                  |
 
 ## Conditional (5 personas)
 

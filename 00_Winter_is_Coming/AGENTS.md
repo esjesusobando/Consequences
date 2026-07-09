@@ -54,6 +54,7 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **MCPs** (11 root + configs globales)              | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
+| **Solutions (compounds)**                          | `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/`                    | Lecciones documentadas de bugs, patrones y decisiones. Buscar aquí antes de implementar |
 | **Adaptive Boot**                                  | `01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py`                 | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/03_Learning/01_Auto_Improvement/`                          | Detección y fix recursivo de issues                                |
@@ -334,6 +335,10 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 
 - **Global:** `~/.config/opencode/skills/gentleman/06_Compound_Engineering/`
 - **Local:** `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/`
+
+### CE Output Location
+
+- **Compounds:** `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` — leer antes de implementar para no repetir errores pasados
 
 ---
 

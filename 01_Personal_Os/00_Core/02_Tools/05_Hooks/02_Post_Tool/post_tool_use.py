@@ -75,17 +75,15 @@ def create_backup(file_path):
 
 
 def organize_solution_if_needed(file_path):
-    """Check if file is in 05_Scripts/06_Solutions/ and organize it."""
+    """Check if file is in 06_Solutions/ (canonical) and organize it."""
     if (
-        "05_Scripts" in file_path
-        and "06_Solutions" in file_path
+        "06_Solutions" in file_path
         and file_path.endswith(".md")
     ):
         try:
             script_path = (
                 PROJECT_ROOT
-                / "05_Scripts/03_Scripts_Os"
-                / "Legacy_Backup"
+                / "01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os"
                 / "56_Organize_Solutions.py"
             )
             if script_path.exists():

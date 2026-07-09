@@ -50,19 +50,19 @@ tags: [n-plus-one, eager-loading, performance]
 
 Based on `problem_type`, documentation is filed in:
 
-- **build_error** → `05_Scripts/06_Solutions/build-errors/`
-- **test_failure** → `05_Scripts/06_Solutions/test-failures/`
-- **runtime_error** → `05_Scripts/06_Solutions/runtime-errors/`
-- **performance_issue** → `05_Scripts/06_Solutions/performance-issues/`
-- **database_issue** → `05_Scripts/06_Solutions/database-issues/`
-- **security_issue** → `05_Scripts/06_Solutions/security-issues/`
-- **ui_bug** → `05_Scripts/06_Solutions/ui-bugs/`
-- **integration_issue** → `05_Scripts/06_Solutions/integration-issues/`
-- **logic_error** → `05_Scripts/06_Solutions/logic-errors/`
-- **developer_experience** → `05_Scripts/06_Solutions/developer-experience/`
-- **workflow_issue** → `05_Scripts/06_Solutions/workflow-issues/`
-- **best_practice** → `05_Scripts/06_Solutions/best-practices/`
-- **documentation_gap** → `05_Scripts/06_Solutions/documentation-gaps/`
+- **build_error** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/build-errors/`
+- **test_failure** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/test-failures/`
+- **runtime_error** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/runtime-errors/`
+- **performance_issue** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/performance-issues/`
+- **database_issue** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/database-issues/`
+- **security_issue** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/security-issues/`
+- **ui_bug** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/ui-bugs/`
+- **integration_issue** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/integration-issues/`
+- **logic_error** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/logic-errors/`
+- **developer_experience** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/developer-experience/`
+- **workflow_issue** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/workflow-issues/`
+- **best_practice** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/best-practices/`
+- **documentation_gap** → `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/documentation-gaps/`
 
 
 ---

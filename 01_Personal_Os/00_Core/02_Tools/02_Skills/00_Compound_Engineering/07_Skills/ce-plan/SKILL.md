@@ -153,7 +153,7 @@ Collect:
 - Architectural patterns and conventions to follow
 - Implementation patterns, relevant files, modules, and tests
 - 01_Personal_Os/11_AGENTS.md guidance that materially affects the plan, with CLAUDE.md used only as compatibility fallback when present
-- Institutional learnings from `05_Scripts/06_Solutions/`
+- Institutional learnings from `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/`
 
 #### 1.1b Detect Execution Posture Signals
 
@@ -417,7 +417,7 @@ deepened: YYYY-MM-DD  # optional, set later by deepen-plan when the plan is subs
 
 ### Institutional Learnings
 
-- [Relevant `05_Scripts/06_Solutions/` insight]
+- [Relevant `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` insight]
 
 ### External References
 

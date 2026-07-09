@@ -171,7 +171,7 @@ Brief summary at the top: "Applied N auto-fixes. M findings to consider (X at P0
 During synthesis, discard any finding that recommends deleting or removing files in:
 - `05_Scripts/07_Brain_Storming/`
 - `05_Scripts/05_Plans/`
-- `05_Scripts/06_Solutions/`
+- `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/`
 
 These are pipeline artifacts and must not be flagged for removal.
 
