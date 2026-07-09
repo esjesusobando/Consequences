@@ -358,6 +358,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py --validat
 | Knowledge                                 | `01_Personal_Os/02_Knowledge/`                                                 |
 | Memory LLM                                | `01_Personal_Os/01_Memory/`                                                    |
 | Learning                                  | `01_Personal_Os/03_Learning/`                                                  |
+| Solutions Docs (compound learnings)       | `docs/solutions/` — lecciones documentadas de bugs, patrones y decisiones arquitectónicas, organizadas por categoría con frontmatter YAML (`module`, `tags`, `problem_type`). Relevante al debuggear o implementar en áreas documentadas. |
 | SDD Registry                              | `01_Personal_Os/00_Core/02_Tools/00_SDD/`                                      |
 
 > ⚠️ NO usar rutas legacy v1.x; usar únicamente las rutas canónicas listadas arriba.
