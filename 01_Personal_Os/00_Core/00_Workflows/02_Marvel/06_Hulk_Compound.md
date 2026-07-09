@@ -10,7 +10,7 @@ Coordinate multiple subagents working in parallel to document a recently solved 
 
 ## Purpose
 
-Captures problem solutions while context is fresh, creating structured documentation in `05_Scripts/06_Solutions/` with YAML frontmatter for searchability and future reference. Uses parallel subagents for maximum efficiency.
+Captures problem solutions while context is fresh, creating structured documentation in `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` with YAML frontmatter (`project`, `tags`, `category`, `status`) for searchability and future reference. Uses parallel subagents for maximum efficiency.
 
 **Why "compound"?** Each documented solution compounds your team's knowledge. The first time you solve a problem takes research. Document it, and the next occurrence takes minutes. Knowledge compounds.
 
@@ -41,7 +41,7 @@ This command launches multiple specialized subagents IN PARALLEL to maximize eff
 
 ### 3. **Related Docs Finder** (Parallel)
 
-- Searches `05_Scripts/06_Solutions/` for related documentation
+- Searches `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` for related documentation
 - Identifies cross-references and links
 - Finds related GitHub issues
 - Returns: Links and relationships
@@ -55,7 +55,7 @@ This command launches multiple specialized subagents IN PARALLEL to maximize eff
 
 ### 5. **Category Classifier** (Parallel)
 
-- Determines optimal `05_Scripts/06_Solutions/` category
+- Determines optimal `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/` category
 - Validates category against schema
 - Suggests filename based on slug
 - Returns: Final path and filename
@@ -105,7 +105,7 @@ Based on problem type detected, automatically invoke applicable agents:
 
 **Organized documentation:**
 
-- File: `05_Scripts/06_Solutions/[category]/[filename].md`
+- File: `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/[category]/[filename].md`
 
 **Categories auto-detected from problem:**
 
@@ -129,7 +129,7 @@ Primary Subagent Results:
   ✓ Solution Extractor: Extracted 3 code fixes
   ✓ Related Docs Finder: Found 2 related issues
   ✓ Prevention Strategist: Generated test cases
-  ✓ Category Classifier: 05_Scripts/06_Solutions/performance-issues/
+  ✓ Category Classifier: 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/performance-issues/
   ✓ Documentation Writer: Created complete markdown
 
 Specialized Agent Reviews (Auto-Triggered):
@@ -139,7 +139,7 @@ Specialized Agent Reviews (Auto-Triggered):
   ✓ every-style-editor: Documentation style verified
 
 File created:
-- 05_Scripts/06_Solutions/performance-issues/n-plus-one-brief-generation.md
+- 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/performance-issues/n-plus-one-brief-generation.md
 
 This documentation will be searchable for future reference when similar
 issues occur in the Email Processing or Brief System modules.
@@ -158,7 +158,7 @@ What's next?
 This creates a compounding knowledge system:
 
 1. First time you solve "N+1 query in brief generation" → Research (30 min)
-2. Document the solution → 05_Scripts/06_Solutions/performance-issues/n-plus-one-briefs.md (5 min)
+2. Document the solution → 01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/performance-issues/n-plus-one-briefs.md (5 min)
 3. Next time similar issue occurs → Quick lookup (2 min)
 4. Knowledge compounds → Team gets smarter
 

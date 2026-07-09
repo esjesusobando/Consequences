@@ -1,6 +1,6 @@
 # 06_Solutions
 
-Soluciones documentadas generadas por el workflow de compound engineering.
+Soluciones documentadas generadas por el workflow de compound engineering. **Lugar ÚNICO y canónico** para compounds — no crear en `docs/solutions/` (obsoleto) ni en ningún otro lado.
 
 ## Ubicación
 
@@ -23,7 +23,8 @@ Esta carpeta reemplaza `docs/solutions/` obsoleto.
 
 ## Workflows que generan aquí
 
-- `05_Hulk_Compound.md` - Documentación de soluciones
+- `01_Personal_Os/00_Core/00_Workflows/02_Marvel/06_Hulk_Compound.md` — Workflow orquestador (ce:compound)
+- `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/` — Skills CE que leen y escriben aquí
 
 ## Búsqueda
 
@@ -33,9 +34,10 @@ Esta carpeta reemplaza `docs/solutions/` obsoleto.
 ## Formato
 
 Cada solución incluye:
-- YAML frontmatter (problema, fecha, tags)
+- YAML frontmatter (`title`, `date`, `category`, `tags`, `severity`, `project`, `status`, `generated_by`)
 - Symptom
-- Investigation steps
-- Root cause
-- Working solution
+- Investigation steps / What didn't work
+- Root cause analysis
+- Working solution (con código si aplica)
 - Prevention strategies
+- Related (commits, tags, links)
