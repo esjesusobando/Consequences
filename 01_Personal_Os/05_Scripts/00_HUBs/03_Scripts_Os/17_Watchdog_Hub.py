@@ -18,6 +18,7 @@ import os
 import re
 import sys
 import subprocess
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 import logging
 from datetime import datetime
 from pathlib import Path
@@ -33,13 +34,22 @@ logging.basicConfig(
 )
 logger = logging.getLogger("WatchdogHub")
 
+# ────── Timeout configuration ─────────────────────────────
+LEGACY_TIMEOUT: int = 30  # seconds — timeout for legacy drift check
+
 # ─────────────────────────────────────────────────────────────
-# RUTAS
+# RUTAS — usando config_paths como fuente de verdad
 # ─────────────────────────────────────────────────────────────
-REPO_ROOT: Path = Path(__file__).resolve().parent.parent.parent.parent
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+
+REPO_ROOT: Path = ROOT_DIR
 MANIFEST_DIR: Path = REPO_ROOT / "01_Personal_Os" / "05_Scripts" / "02_Agent_Teams_Lite" / "00_Manifest"
-REPORT_DIR: Path = REPO_ROOT / "03_Resultado" / "04_Reportes"
-SCRIPTS_DIR: Path = REPO_ROOT / "01_Personal_Os" / "05_Scripts" / "03_Scripts_Os"
+REPORT_DIR: Path = REPO_ROOT / "03_Resultado" / "07_Reports"
+SCRIPTS_DIR: Path = REPO_ROOT / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"
 
 
 def check_manifest_integrity() -> Dict[str, bool]:
@@ -80,6 +90,8 @@ def check_mcp_sync() -> Dict[str, Any]:
             [sys.executable, str(script), "--report"],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
             timeout=30,
             check=False
         )
@@ -102,35 +114,45 @@ def check_mcp_sync() -> Dict[str, Any]:
         return {"status": "error", "error": str(e)}
 
 
-def check_legacy_drift() -> int:
-    """Cuenta refs legacy v1.x nuevas.
+def check_legacy_drift() -> Tuple[int, bool]:
+    """Cuenta refs legacy v1.x nuevas usando executor con timeout.
     
     Returns:
-        int: Número total de referencias legacy detectadas, o 0 en caso de error.
+        Tuple[int, bool]: (count, timed_out) — count=0 en timeout/error, timed_out=True si expiró.
     """
-    script: Path = SCRIPTS_DIR / "17_Legacy_Path_Cleanup.py" # Nota: En la versión original referenciaba 17_ pero no existe ese script, asumo 21_Legacy_Path_Cleanup.py
+    script: Path = SCRIPTS_DIR / "17_Legacy_Path_Cleanup.py"
     if not script.exists():
         script = SCRIPTS_DIR / "21_Legacy_Path_Cleanup.py"
     if not script.exists():
-        logger.warning(f"Script de cleanup legacy no encontrado.")
-        return 0
+        logger.warning("Script de cleanup legacy no encontrado.")
+        return (0, False)
     
-    try:
+    def _run_script() -> int:
         result = subprocess.run(
             [sys.executable, str(script)],
             capture_output=True,
             text=True,
-            timeout=60,
+            encoding="utf-8",
+            errors="replace",
             check=False
         )
         for line in result.stdout.splitlines():
             if "Total refs legacy:" in line:
-                return int(line.split(":")[-1].strip())
-    except subprocess.TimeoutExpired:
-        logger.error("Timeout en check_legacy_drift")
+                val = line.split(":")[-1].strip().rstrip("|").strip()
+                return int(val) if val else 0
+        return 0
+    
+    try:
+        with ThreadPoolExecutor(max_workers=1) as executor:
+            future = executor.submit(_run_script)
+            refs_count = future.result(timeout=LEGACY_TIMEOUT)
+            return (refs_count, False)
+    except FuturesTimeoutError:
+        logger.warning("Legacy drift check timed out after %ds", LEGACY_TIMEOUT)
+        return (0, True)
     except Exception as e:
         logger.error(f"Excepción en check_legacy_drift: {e}")
-    return 0
+        return (0, False)
 
 
 # ── Rules consistency — 12_Audit_OS_Integrity.mdc ──────────────
@@ -322,9 +344,11 @@ def generate_report(checks: Dict[str, Any], rules_issues: List[Dict[str, Any]]) 
         "|  3. LEGACY DRIFT:                               |",
     ])
     
-    legacy = checks.get("legacy", 0)
-    status = "[OK]" if legacy < 50 else "[!!]"
-    lines.append(f"|    {status} Total refs: {legacy:>3}                           |")
+    legacy_val = checks.get("legacy", (0, False))
+    legacy_count, legacy_timeout = legacy_val if isinstance(legacy_val, tuple) else (legacy_val, False)
+    status = "[OK]" if legacy_count < 50 else "[!!]"
+    timeout_tag = " (timeout)" if legacy_timeout else ""
+    lines.append(f"|    {status} Total refs: {legacy_count:>3}{timeout_tag:<10}               |")
     
     lines.extend([
         "",
@@ -356,7 +380,7 @@ def generate_report(checks: Dict[str, Any], rules_issues: List[Dict[str, Any]]) 
     
     issues = sum([
         not all_ok,
-        legacy >= 50,
+        legacy_count >= 50,
         fm > 0,
         len(rules_issues) > 0,
     ])
