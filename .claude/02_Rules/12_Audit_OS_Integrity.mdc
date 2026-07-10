@@ -14,19 +14,20 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 
 | Métrica | Valor | Última verificación |
 |---------|-------|---------------------|
-| **HUBs** | **39** | 2026-06-01 ✅ |
-| **Scripts** | **163** (133 en subdirectorios) | 2026-06-01 ✅ |
-| **Skills** | **396** (15 áreas funcionales) | 2026-06-01 ✅ |
-| **MCPs** | **8 (Claude) + 43 (Opencode)** | 2026-06-01 ✅ |
-| **Agentes source** | **63** | 2026-06-01 ✅ |
-| **Workflows** | **29** (7 categorías) | 2026-06-01 ✅ |
+| **HUBs** | **46** | 2026-07-09 ✅ |
+| **Scripts** | **148** (148 = 37 HUBs root + 111 en subdirectorios funcionales) | 2026-07-09 ✅ |
+| **Skills** | **429** (16 áreas funcionales) | 2026-07-09 ✅ |
+| **MCPs** | **11 (Claude) + 45 (Opencode)** | 2026-07-09 ✅ |
+| **Agentes source** | **68** | 2026-07-09 ✅ |
+| **Workflows** | **30** (7 categorías) | 2026-07-09 ✅ |
 | **Hooks** | **10** (6 fases) | 2026-06-01 ✅ |
+| **Rules** (.mdc) | **14** | 2026-07-09 ✅ |
 
 ## Archivos que Deben Estar Sync
 
 ### Fuente de Verdad (contienen cómputos directos)
-- `01_Personal_Os/04_Operations/03_Scripts_Os/HUB_SOTA.py` — conteo dinámico de HUBs
-- `01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py` — escaneo de manifests
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/HUB_SOTA.py` — conteo dinámico de HUBs
+- `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py` — escaneo de manifests
 
 ### Documentos Maestro (deben coincidir con fuente)
 - `README.md` (raíz) — árbol de directorios + tabla HUBs + métricas
@@ -35,12 +36,12 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 - `AGENTS.md` (raíz) — entry point GGA
 - `00_Winter_is_Coming/AGENTS.md` — Matrix principal
 - `00_Winter_is_Coming/GOALS.md` — objetivos
-- `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/README.md` — ground truth
+- `01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/README.md` — ground truth
 
 ### Workflows (boot + marvel)
 - `00_Winter_is_Coming/GOALS.md` — section N
-- `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` — boot protocol
-- `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` — boot protocol source
+- `01_Personal_Os/00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md` — boot protocol (source)
+- `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` — boot protocol (symlink/worktree)
 
 ## Árboles de Directorios Duplicados
 
@@ -50,7 +51,7 @@ Los siguientes archivos contienen árboles de directorios que deben mantenerse s
 |---------|-----------|
 | `README.md` | Entry point del sistema |
 | `OS_DIRECTORY.md` | JARVIS discovery (raíz) |
-| `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/README.md` | Catalog de memoria |
+| `01_Personal_Os/01_Memory/00_Context_LLM/00_Context_Memory/README.md` | Catalog de memoria |
 
 **Regla**: después de agregar/renombrar/eliminar un directorio de primer nivel, actualizar los 3 árboles.
 
@@ -72,11 +73,11 @@ Estos hallsazgos de auditoría están documentados y NO deben cambiarse sin apro
 
 Antes de modificar skills/scripts/HUBs/agentes/MCPs:
 
-1. Hacer el cambio en source (`01_Core/` para skills/agentes/rules, `04_Operations/` para scripts/HUBs)
+1. Hacer el cambio en source (`01_Core/` para skills/agentes/rules, `05_Scripts/00_HUBs/` para scripts/HUBs)
 2. Sync los números en todos los documentos maestro listados arriba
 3. Sync los 3 árboles de directorios
-4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→30 scripts→163 skills→392`
+4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→46 scripts→240 skills→429 agentes→68 workflows→30 rules→14`
 
 ---
 
-*Creada: 2026-05-25 | v4.9 Consequences OS Audit | Regla nro 12 del sistema*
+*Creada: 2026-05-25 | Actualizada: 2026-07-09 | v4.9 Consequences OS Audit | Regla nro 12 del sistema*
