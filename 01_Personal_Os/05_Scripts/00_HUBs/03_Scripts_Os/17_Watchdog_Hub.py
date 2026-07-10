@@ -128,31 +128,38 @@ def check_legacy_drift() -> Tuple[int, bool]:
         return (0, False)
     
     def _run_script() -> int:
-        result = subprocess.run(
-            [sys.executable, str(script)],
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            check=False
-        )
-        for line in result.stdout.splitlines():
-            if "Total refs legacy:" in line:
-                val = line.split(":")[-1].strip().rstrip("|").strip()
-                return int(val) if val else 0
-        return 0
+        try:
+            result = subprocess.run(
+                [sys.executable, str(script)],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                check=False,
+                timeout=LEGACY_TIMEOUT
+            )
+            for line in result.stdout.splitlines():
+                if "Total refs legacy:" in line:
+                    val = line.split(":")[-1].strip().rstrip("|").strip()
+                    return int(val) if val else 0
+            return 0
+        except subprocess.TimeoutExpired:
+            return -1  # signal: timed out
     
-    try:
-        with ThreadPoolExecutor(max_workers=1) as executor:
-            future = executor.submit(_run_script)
-            refs_count = future.result(timeout=LEGACY_TIMEOUT)
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(_run_script)
+        try:
+            refs_count = future.result(timeout=LEGACY_TIMEOUT + 10)
+            if refs_count == -1:
+                logger.warning("Legacy drift check timed out after %ds", LEGACY_TIMEOUT)
+                return (0, True)
             return (refs_count, False)
-    except FuturesTimeoutError:
-        logger.warning("Legacy drift check timed out after %ds", LEGACY_TIMEOUT)
-        return (0, True)
-    except Exception as e:
-        logger.error(f"Excepción en check_legacy_drift: {e}")
-        return (0, False)
+        except FuturesTimeoutError:
+            logger.warning("Legacy drift check timed out (executor) after %ds", LEGACY_TIMEOUT)
+            return (0, True)
+        except Exception as e:
+            logger.error(f"Excepción en check_legacy_drift: {e}")
+            return (0, False)
 
 
 # ── Rules consistency — 12_Audit_OS_Integrity.mdc ──────────────

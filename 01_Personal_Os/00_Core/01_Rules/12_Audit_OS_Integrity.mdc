@@ -73,10 +73,10 @@ Estos hallsazgos de auditoría están documentados y NO deben cambiarse sin apro
 
 Antes de modificar skills/scripts/HUBs/agentes/MCPs:
 
-1. Hacer el cambio en source (`01_Core/` para skills/agentes/rules, `04_Operations/` para scripts/HUBs)
+1. Hacer el cambio en source (`01_Core/` para skills/agentes/rules, `05_Scripts/00_HUBs/` para scripts/HUBs)
 2. Sync los números en todos los documentos maestro listados arriba
 3. Sync los 3 árboles de directorios
-4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→46 scripts→240 skills→429 agentes→68 workflows→30 rules→14`
+4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→46 scripts→148 skills→429 agentes→68 workflows→30 rules→14`
 
 ---
 
