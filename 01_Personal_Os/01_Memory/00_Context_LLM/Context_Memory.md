@@ -139,3 +139,58 @@ Todos los paths críticos en `config_paths.py` apuntan a directorios existentes.
 ---
 
 *Think Different PersonalOS v5.1 — 2026-06-28 (Post-Auditoría General PN-2026-06-28)*
+
+---
+
+## 🔧 Sesión 3: Auditoría de Auditores — Validación v5.0 (2026-07-09)
+
+**Objetivo:** Validar que todos los auditores del OS reflejen el estado real v5.0 SOTA.
+
+### Correcciones Aplicadas
+
+| # | Archivo | Fix |
+|---|---------|-----|
+| 1 | `26_Parallel_Audit_Pro.py` | Shebang movido de línea 5 → línea 1 |
+| 2 | `27_Skill_Auditor.py` | Shebang movido de línea 5 → línea 1 |
+| 3 | `03_SOTA_Integrity_Check.py` | Shebang movido de línea 5 → línea 1 |
+| 4 | `03_SOTA_Integrity_Check.py` | Reversionado completo: v4.9 Consequences → v5.0 SOTA. 6 paths corregidos, métricas actualizadas (22+ skills, 11+ MCPs, 24+ HUBs, 14 rules), 1 metodología añadida (System Mapper) |
+| 5 | `12_Auditors_Os/README.md` | Header, tabla SOTA y footer actualizados a v5.0 SOTA |
+
+### SOTA Integrity Check: PASSED 9/9
+
+Resultado consolidado tras correcciones — todos los checks pasan.
+
+### Nuevos Bugs/Pendientes
+
+| ID | Hallazgo | Detalle |
+|----|----------|---------|
+| B009 | Auto-Improvement Engine path legacy | `check_methodologies()` no encuentra `05_Scripts/01_Auto_Improvement/01_Engine` (ruta v4.9). El directorio real está en `03_Learning/`. |
+| B010 | Imports muertos en 3 auditores | `import logging` y `import typing` sin uso real en 26_Parallel_Audit_Pro.py, 27_Skill_Auditor.py, 03_SOTA_Integrity_Check.py. Inyectados por SOTA Modernizer. No afectan ejecución. |
+
+### Skills Count (2026-07-09)
+- Skills (SKILL.md): 17/17 áreas funcionales con al menos 1 SKILL.md (Total: 437 skills)
+- HUBs: 37 scripts numerados en `03_Scripts_Os/`
+- Rules: 14 .mdc en `00_Core/01_Rules/`
+- MCPs: 11 en `.mcp.json`
+
+---
+
+---
+
+## ⚙️ Regla Permanente: Documentar en los 3 Sitios
+
+> Activada: 2026-07-09 | Topic Key: `rule/regla-3-sitios-engram`
+
+Siempre que se documente algo (el usuario diga "documentar" o "guarda esto"), guardar en **los 3 sitios**:
+
+| # | Sitio | Ruta / Método |
+|---|-------|--------------|
+| 1 | 📄 **Notas de Proceso** | `01_Personal_Os/01_Memory/Notas_de_Proceso.md` |
+| 2 | 🧠 **Context Memory** | `01_Personal_Os/01_Memory/00_Context_LLM/Context_Memory.md` |
+| 3 | 🔷 **Engram** | `mem_save` con topic_key (granular) |
+
+Antes de guardar, validar regla existente para no duplicar.
+
+---
+
+*Think Different PersonalOS v5.0 SOTA — 2026-07-09 (Post-Auditoría de Auditores PN-Sesión 3)*

@@ -45,7 +45,8 @@ Located: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 | **SEO**                                        | SEO_SOTA_Master                                          | Technical SEO                                                                                       |
 | **Taste**                                      | taste-skill, soft-skill                                  | Premium frontend                                                                                    |
 | **Graphify/Knowledge Graph**                   | 31_Graphify_Hub.py                                       | Hub centralizador de Graphify para conocimiento estructural                                         |
-| **Graphify/Knowledge Graph**                   | 32_Graphify_Update.py                                    | Actualización automática del grafo Graphify                                                         |
+| **Graphify/Knowledge Graph**                   | 32_Graphify_Update.py                                    | Actualización automática del grafo Graphify |
+| **Strong MKT**                                 | 26 skills (equipo estoico)                               | Marketing team with Stoic identities — 25 specialists + 1 orchestrator |
 
 ## Agent Rules
 

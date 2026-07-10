@@ -1,6 +1,16 @@
 # Equipo AI Strong — Skills con identidad de Estoicos Romanos
 
-19 skills, cada una con la identidad de un filósofo o figura estoica romana, mapeada sobre un rol de la alineación original del post de `mr_villa`. Cada `SKILL.md` incluye: identidad histórica, rol y misión, perfil de habilidades nivel SOTA, cómo debe operar, preguntas clave, tono, entregables, qué evita, cómo colabora con el equipo, un caso de aplicación concreto y un mantra.
+26 skills: 25 especialistas y un Agente Orquestador que decide cuál(es) activar y en qué orden. Cada `SKILL.md` incluye: identidad histórica, rol y misión, perfil de habilidades nivel SOTA, cómo debe operar, preguntas clave, tono, entregables, qué evita, cómo colabora con el equipo, casos de uso, checklist, un caso de aplicación concreto y un mantra.
+
+## Agente Orquestador
+
+| Skill (carpeta) | Identidad | Función |
+|---|---|---|
+| `zenon-agente-orquestador` | Zenón de Citio | Decide qué skill(s) activar, en qué orden, y resuelve conflictos entre sus recomendaciones |
+
+Zenón es el punto de entrada natural cuando una solicitud no tiene un único dueño obvio dentro del equipo, o cuando involucra una secuencia de varios roles (ver "Flujos predefinidos de coordinación" dentro de su propio `SKILL.md`).
+
+
 
 ## Titulares
 
@@ -36,8 +46,25 @@
 |---|---|---|
 | `epicteto-estratega-viralidad` | Epicteto | Estratega de Viralidad |
 
+## Incorporaciones nuevas (gaps identificados para nivel SOTA)
+
+La alineación original cubre marketing, ventas y operación de contenido, pero deja descubiertas seis funciones que cualquier negocio digital serio necesita, sobre todo uno que vende conocimiento sobre IA y construye su propia infraestructura de agentes. Se añaden como refuerzos, no reemplazan a nadie del equipo original.
+
+| Skill (carpeta) | Identidad estoica | Función que cubre | Por qué faltaba |
+|---|---|---|---|
+| `barea-soranus-finanzas` | Barea Soranus | Finanzas / CFO | Nadie modelaba márgenes, unit economics ni flujo de caja; Posidonio mide marketing, no rentabilidad. |
+| `quinto-elio-tuberon-legal` | Quinto Elio Tuberón | Legal & Compliance | Contratos, términos de servicio y derechos de autor no tenían dueño en el equipo. |
+| `gayo-blosio-producto` | Gayo Blosio de Cumas | Producto (Head of Product) | Catón ejecuta proyectos y Musonio Rufo diseña procesos, pero nadie decidía qué construir ni en qué orden. |
+| `atenodoro-etica-ia` | Atenodoro de Tarso | Ética y Gobernanza de IA | En un negocio que divulga IA, nadie revisaba el riesgo de desinformación o alucinación antes de publicar. |
+| `apolonio-calcis-ingenieria-ia` | Apolonio de Calcis | Ingeniería de IA / Arquitectura de Agentes | Quinto Sextio automatiza procesos de negocio, no construye ni depura la arquitectura técnica de agentes. |
+| `herodes-atico-oratoria` | Herodes Ático | Oratoria y Presencia en Cámara | Persio y Lucano escriben el mensaje; nadie preparaba cómo se dice en voz alta frente a cámara o público. |
+
+Con estas seis, el equipo pasa de cubrir marketing y ventas a cubrir el ciclo completo de un negocio: qué se construye, cuánto cuesta, qué riesgo legal y ético implica, y cómo se comunica —por escrito y en voz alta.
+
 ## Nota sobre las identidades históricas
-Cada nota biográfica es una referencia real y verificable, elegida por resonancia con la función del rol (disciplina, sistema, mentoría, propagación de ideas, etc.), no una atribución textual de citas. Epicteto, Lucano y Persio no fueron "estoicos romanos" en sentido estricto de nacimiento —Epicteto nació griego y fue esclavo en Roma; Lucano y Persio fueron poetas romanos dentro del círculo estoico de Séneca y Cornuto—, pero los tres vivieron, enseñaron o escribieron en Roma dentro de esa tradición, y se incluyen aquí por esa razón.
+Zenón de Citio es, técnicamente, griego y no romano: es el fundador de la escuela estoica en Atenas, el sistema sobre el que se construyeron todos los demás. Se incluye como excepción deliberada, igual que Epicteto, Lucano, Persio y Herodes Ático, porque el rol de orquestador —quien diseña cómo encajan los demás roles entre sí— es, en esencia, lo que Zenón hizo con la escuela estoica misma.
+
+Cada nota biográfica del resto del equipo es una referencia real y verificable, elegida por resonancia con la función del rol (disciplina, sistema, mentoría, propagación de ideas, rigor legal, administración honesta, etc.), no una atribución textual de citas.
 
 ## Cómo usarlas
 Cada carpeta es una skill independiente e instalable por separado. Se pueden cargar todas para simular al equipo completo trabajando en conjunto, o activar solo la que corresponda según la tarea puntual.

@@ -1,8 +1,6 @@
+#!/usr/bin/env python3
 import logging
 import typing
-
-logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
 SKILL AUDITOR & FIXER
 Audita la estructura de 00_Core/02_Tools/02_Skills y corrige la numeración.
@@ -13,10 +11,14 @@ import sys
 import re
 from pathlib import Path
 
-# Usar ruta absoluta basada en la ubicación del script
-SCRIPT_DIR = Path(__file__).resolve().parent
-ROOT_DIR = SCRIPT_DIR.parent.parent.parent.parent  # 27_Skill_Auditor -> 03_Scripts_Os -> 00_HUBs -> 05_Scripts -> raíz
-Skills_ROOT = ROOT_DIR / "01_Personal_Os" / "00_Core" / "02_Tools" / "02_Skills"
+# Path resolution via config_paths (v5.0 dynamic protocol)
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+REPO_ROOT: Path = ROOT_DIR
+Skills_ROOT = REPO_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "02_Skills"
 
 # Las categorías son los directorios dentro de Skills_ROOT
 CATEGORIES = []  # Se llenará automáticamente

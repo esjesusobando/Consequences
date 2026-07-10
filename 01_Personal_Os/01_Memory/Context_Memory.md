@@ -12,7 +12,7 @@
 
 | Métrica              | Valor Verificado                    |
 |----------------------|-------------------------------------|
-| Skills (SKILL.md)    | 411 (16 áreas) — +RealEstate (14 skills + 1 orchestrator) |
+| Skills (SKILL.md)    | 437 (17 áreas) — +Strong MKT: 26 skills estoicas |
 | Scripts Python       | 57+ actualizados (logging + typing) |
 | READMEs beautificados| 393 archivos                        |
 | Reglas (.mdc)        | 14                                  |
@@ -51,7 +51,7 @@ Think_Different/
 
 ---
 
-## Skills System (16 áreas funcionales — 411 skills)
+## Skills System (17 áreas funcionales — 437 skills)
 
 | Área | Skills | Descripción |
 |------|--------|-------------|
@@ -71,6 +71,7 @@ Think_Different/
 | 08_JAO | 7 | Entrevistador, Humanizador, Superpowers |
 | **09_RealEstate** | **15** | **Real estate analysis (NEW)** |
 | 10_Laia_Learning | 1 | Laia Learning |
+| **11_Strong_MKT** | **26** | **Equipo estoico de marketing (NEW)** |
 
 ## Convenciones del Sistema
 

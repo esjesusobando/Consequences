@@ -19,7 +19,7 @@ from pathlib import Path
 # ─────────────────────────────────────────────────────────────
 # RUTAS
 # ─────────────────────────────────────────────────────────────
-REPO_ROOT = Path(__file__).parent.parent.parent.parent
+REPO_ROOT = Path(__file__).parent.parent.parent.parent.parent
 SKILLS_DIR = REPO_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "02_Skills"
 EXCLUDE_DIRS = {"09_Legacy_Archive", "10_Backup", ".git"}
 

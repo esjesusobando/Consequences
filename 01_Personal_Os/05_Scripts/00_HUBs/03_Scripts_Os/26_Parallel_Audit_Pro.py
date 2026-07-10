@@ -1,8 +1,6 @@
+#!/usr/bin/env python3
 import logging
 import typing
-
-logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 import os
 import sys
 import time

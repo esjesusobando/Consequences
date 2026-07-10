@@ -1,0 +1,15 @@
++==============================================================+
+|       LEGACY PATH CLEANUP -- SCAN REPORT                |
++==============================================================+
+|  Archivos con refs legacy:   0                        |
+|  Total refs legacy:           0                        |
++==============================================================+
+|  Por tipo de ref legacy:                                |
++==============================================================+
+|  Archivos afectados (primeros 20):                       |
++==============================================================+
+|  ESTRATEGIA:                                             |
+|    1. Archivos criticos -> fix MANUAL                     |
+|    2. Skills/Agentes -> script --dry-run primero          |
+|    3. Archive/Backup -> MARCAR con <!-- LEGACY-OK -->    |
++==============================================================+

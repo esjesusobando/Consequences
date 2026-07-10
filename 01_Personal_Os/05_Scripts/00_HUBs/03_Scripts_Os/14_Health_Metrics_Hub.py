@@ -25,16 +25,15 @@ from pathlib import Path
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-# Path resolution con fallback (v2.0 Consequences)
-_SCRIPT_DIR = Path(__file__).parent.resolve()
-sys.path.insert(0, str(_SCRIPT_DIR))
+# Path resolution via config_paths (v5.0 dynamic protocol)
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR, MEMORY_CTX_DIR
+REPO_ROOT: Path = ROOT_DIR
 
-try:
-    from config_paths import PROJECT_ROOT
-except ImportError:
-    PROJECT_ROOT = _SCRIPT_DIR.parent.parent.parent
-
-REPORTS_DIR = PROJECT_ROOT / "01_Personal_Os" / "05_Scripts" / "00_Context_LLM" / "11_Reports"
+REPORTS_DIR = MEMORY_CTX_DIR / "11_Reports"
 METRICS_CSV = REPORTS_DIR / "health_history.csv"
 
 
@@ -44,7 +43,7 @@ def run_test(script_path):
         result = subprocess.run(
             [sys.executable, str(script_path)],
             capture_output=True, text=True, timeout=120,
-            cwd=str(PROJECT_ROOT), encoding="utf-8", errors="replace"
+            cwd=str(REPO_ROOT), encoding="utf-8", errors="replace"
         )
         out = (result.stdout or "") + (result.stderr or "")
         # Buscar patrón "X/Y tests pasaron"
@@ -66,8 +65,8 @@ def record():
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().isoformat(timespec="seconds")
 
-    structural = PROJECT_ROOT / "02_Playground" / "00_OS_Health_Test.py"
-    runtime = PROJECT_ROOT / "02_Playground" / "01_OS_Runtime_Test.py"
+    structural = REPO_ROOT / "02_Playground" / "00_OS_Health_Test.py"
+    runtime = REPO_ROOT / "02_Playground" / "01_OS_Runtime_Test.py"
 
     print(f"📊 Recording health metrics — {timestamp}")
     s_pass, s_total, s_exit = run_test(structural) if structural.exists() else (0, 0, -1)
@@ -132,7 +131,7 @@ def report():
 
     # Guardar en 03_Resultado/04_Reportes/
     try:
-        reports_dir = PROJECT_ROOT / "03_Resultado" / "04_Reportes"
+        reports_dir = REPO_ROOT / "03_Resultado" / "04_Reportes"
         reports_dir.mkdir(parents=True, exist_ok=True)
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         report_path = reports_dir / f"health_metrics_{ts}.txt"

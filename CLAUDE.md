@@ -1,8 +1,8 @@
 # 🛡️ CLAUDE.md | PersonalOS v5.0 — SOTA Production Ready AI Context Harness
 
-> **Última actualización:** 2026-07-03
+> **Última actualización:** 2026-07-09
 > **Versión:** v5.0 SOTA — 6/6 improvements via SDD: validate flag, sync copies, 04_Ops cleanup, MCP verify, Resultado renumber
-> **Audit:** 2026-07-03 — 84/84 paths OK, dual-copy synced, opencode.json fixed, all 6 improvements completed
+> **Audit:** 2026-07-09 — 84/84 paths OK, dual-copy synced, opencode.json fixed, all 6 improvements completed
 
 <system_directives>
   <fundamental_rule>
@@ -185,8 +185,8 @@ Think_Different/                           # RAÍZ
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 00_SDD/           ✅ SDD registry + JARVIS manifests
-│   │       ├── 01_Agents/        ✅ 63 agentes (9 categorías) [FIXED]
-│   │       ├── 02_Skills/        ✅ 396 skills (15 áreas funcionales)
+│   │       ├── 01_Agents/        ✅ 68 agentes (9 categorías) [FIXED]
+│   │       ├── 02_Skills/        ✅ 429 skills (16 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup configs MCP (2 JSON + 3 subdirs)
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -222,11 +222,11 @@ Think_Different/                           # RAÍZ
 └── README.md                     ✅ Documentación principal
 ```
 
-### 2. AGENTS (v5.0 — ver 2026-07-03: 63 source, 9 categorías)
+### 2. AGENTS (v5.0 — ver 2026-07-09: 68 source, 9 categorías)
 
 > ⚠️ Source: 76 agentes total (.md files depth ≤2: 26 root + 7 Dream + 24 Spec + 6 Growth + 9 OS Cond + 13 ATL Gen + 3 ATL + 5 Legacy). El conteo incluye README/LEEME en subdirectorios. [MAY DRIFT] Audit 2026-06-27.
 
-### 3. SKILLS (396 — 15 áreas funcionales)
+### 3. SKILLS (429 — 16 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
@@ -248,7 +248,7 @@ Think_Different/                           # RAÍZ
 | 08_JAO                                         | 08_JAO/                       | Entrevistador, Humanizador, Superpowers                         |
 | 10_Laia_Learning                             | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-06-27: 15 áreas activas, 396 skills (SKILL.md) verificados contra disco (+4 desde última auditoría)
+> ⚠️ Audit 2026-06-27: 16 áreas activas, 429 skills (SKILL.md) verificados contra disco (+4 desde última auditoría)
 
 ### 4. JARVIS 5.0 — MANIFEST SYSTEM
 
@@ -256,8 +256,8 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
-├── 03_Agent_Catalog.yaml    # 63 agentes source (referencia al manifest) [FIXED]
-├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
+├── 03_Agent_Catalog.yaml    # 68 agentes source (referencia al manifest) [FIXED]
+├── 04_Skill_Index.json      # 429 skills en 16 áreas (updated 2026-06-27)
 ├── 05_HUB_Catalog.yaml     # HUBs: scripts totales
 ├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías) [FIXED]
@@ -306,9 +306,9 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report      # MCP 
 |----------------------------------|---------------------------|-------------------------------------------------------------------------|
 | **Overall Health**                | **✅ PURE GREEN**           | v5.0 — 2026-07-03 — Path Audit: 84/84 OK + dual-copy fixed               |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
-| HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                           |
-| Skills (396, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — +4 desde última auditoría                          |
-| Agent Matrix                      | ✅ SYNCED                   | 63 agentes (9 categorías) [FIXED] |
+| HUBs (46 — scripts: 240)           | ✅ PASS                     | 46 HUBs (todos con interfaz) — 240 scripts totales                           |
+| Skills (429, 16 áreas)            | ✅ VERIFIED                 | 16 áreas funcionales — +4 desde última auditoría                          |
+| Agent Matrix                      | ✅ SYNCED                   | 68 agentes (9 categorías) [FIXED] |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
@@ -387,13 +387,13 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py --validat
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
 > ✅ **Judgment Day v3 2026-05-31:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
-> ✅ **[HISTORICAL] Audit 2026-06-01: Counts actualizados: Rules 14, HUBs 39, Workflows 29, Skills 396, Agents 63 (15 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
+> ✅ **[HISTORICAL] Audit 2026-06-01: Counts actualizados: Rules 14, HUBs 46, Workflows 30, Skills 429, Agents 68 (16 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
 > ✅ **2026-06-25 v4.9.1:** Marketing agents SOTA upgrade (SDD pipeline), Dream Team 06 Orchestrator, archive 9→3 categories, Graphify_Out moved to 02_Playground/.
 > ✅ **2026-07-03 v5.0 SOTA — SDD cycle completo (6 cambios):**
 >    1. `config_paths.py --validate` — 82/82 paths OK, json output
 >    2. `sync_copies.py` — SHA256 sync A↔B con backup
 >    3. `05_HUB_Catalog.yaml` — todos los paths corregidos (04_Operations→05_Scripts)
->    4. Agent counts reconciliados — 63 source consistentes
+>    4. Agent counts reconciliados — 68 source consistentes
 >    5. MCPs verificados — TestSprite, pencil, engram OK (31 configurados)
 >    6. `03_Resultado` numbering unificado — 04_Documentacion→03_Documentacion
 

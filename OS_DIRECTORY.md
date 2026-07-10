@@ -1,6 +1,6 @@
 # OS_DIRECTORY.md — Personal OS v5.0 SOTA
 
-**Updated:** 2026-07-05
+**Updated:** 2026-07-09
 **Status:** 🟢 PRODUCTION READY
 
 ## Project Root
@@ -8,10 +8,10 @@
 
 ## Overview
 Think Different PersonalOS — Multi-agent orchestration system powered by AI.
-- **Skills:** 396+ (15 functional areas, CoT injected)
-- **Agents:** 63 source | 72 backup
+- **Skills:** 429 (15 functional areas, CoT injected)
+- **Agents:** 68 source | 72 backup
 - **MCPs:** 11 Claude | 45 OpenCode
-- **HUBs:** 42 (166+ total scripts)
+- **HUBs:** 46 (240 total scripts)
 - **Workflows:** 30 (8 categories)
 
 ## Directory Map
@@ -31,12 +31,12 @@ Think Different PersonalOS — Multi-agent orchestration system powered by AI.
 ### 01_Personal_Os (Source of Truth)
 | Directory | Contents |
 |-----------|----------|
-| `00_Core/` | Workflows (30), Rules (14 .mdc), Tools (Agents 63, Skills 396+, MCPs, Hooks 10, Plugins, Evals, Templates) |
+| `00_Core/` | Workflows (30), Rules (14 .mdc), Tools (Agents 63, Skills 429, MCPs, Hooks 10, Plugins, Evals, Templates) |
 | `01_Memory/` | Context LLM (00-12), Process Notes, Solutions, Plans, Telemetry |
 | `02_Knowledge/` | Examples, Research, Docs, Unicorn, Invictus, Anthropic |
 | `03_Learning/` | Shared Org (Capital Token), Auto-Improvement (every 8h), Content, Telemetry |
 | `04_Tasks/` | Active tasks (YAML frontmatter) |
-| `05_Scripts/` | 42 HUBs (166+ scripts), Installer, Agent Teams Lite |
+| `05_Scripts/` | 46 HUBs (240+ scripts), Installer, Agent Teams Lite |
 | `06_Projects/` | Active projects — Efrain, Cassette, Macano, OBAND, OIM, Elite |
 | `07_Archive/` | Plans, backups, repos reference, legacy |
 

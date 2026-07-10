@@ -1,0 +1,42 @@
++==============================================================+
+|       WATCHDOG HUB -- HEALTH REPORT (SOTA)                   |
+|  Timestamp: 2026-07-09T21:03:13.451839 |
++==============================================================+
+
+|  1. MANIFEST INTEGRITY (7 archivos):               |
+|    [OK] 01_OS_Inventory.json                     |
+|    [OK] 02_MCP_Registry.yaml                     |
+|    [OK] 03_Agent_Catalog.yaml                    |
+|    [OK] 04_Skill_Index.json                      |
+|    [OK] 05_HUB_Catalog.yaml                      |
+|    [OK] 06_Workflow_Graph.yaml                   |
+|    [OK] 07_Hook_Registry.yaml                    |
+
+|  2. MCP SYNC STATUS:                            |
+|    Claude MCPs:    0                              |
+|    OpenCode:     0                              |
+|    Status:     error                |
+
+|  3. LEGACY DRIFT:                               |
+|    [OK] Total refs:   0                           |
+
+|  4. SKILLS FRONTMATTER:                         |
+|    [!!] Sin frontmatter:   1                      |
+
+|  5. RULES COUNT CONSISTENCY:                   |
+|    [!!] 01_Personal_Os/00_Core/01_Rules/12_Audit_OS_Integrity.mdc |
+|         MISMATCH: dice 39, manifest dice 46          |
+|    [!!] 01_Personal_Os/00_Core/01_Rules/12_Audit_OS_Integrity.mdc |
+|         MISMATCH: dice 163, manifest dice 148        |
+|    [!!] 01_Personal_Os/00_Core/01_Rules/12_Audit_OS_Integrity.mdc |
+|         MISMATCH: dice 396, manifest dice 429        |
+|    [!!] 01_Personal_Os/00_Core/01_Rules/12_Audit_OS_Integrity.mdc |
+|         MISMATCH: dice 63, manifest dice 68          |
+|    [!!] 01_Personal_Os/00_Core/01_Rules/12_Audit_OS_Integrity.mdc |
+|         MISMATCH: dice 29, manifest dice 30          |
+|    [!!] 01_Personal_Os/00_Core/01_Rules/12_Audit_OS_Integrity.mdc |
+|         MISMATCH: dice 8, manifest dice 11           |
+|         ... y 16 más                        |
++==============================================================+
+|  >> OVERALL: [!!] 2 ISSUES DETECTED                |
++==============================================================+

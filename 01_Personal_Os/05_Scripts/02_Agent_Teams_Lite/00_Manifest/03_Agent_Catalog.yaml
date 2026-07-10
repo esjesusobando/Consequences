@@ -1,24 +1,24 @@
-# Agent Catalog — generated 2026-07-03T00:32:10
+# Agent Catalog — generated 2026-07-09T21:33:38
 # Source of truth: 01_Personal_Os/00_Core/02_Tools/01_Agents/
 
 version: v3.0
-generated: "2026-07-03T00:32:10"
+generated: "2026-07-09T21:33:38"
 policy:
   source_of_truth: 01_Personal_Os/00_Core/02_Tools/01_Agents/
   backup: .agent/01_Agents/
   sync_direction: source -> backup (uni-directional)
 totals:
-  source: 63
+  source: 68
   backup: 72
   in_sync: 63
-  drift: 9
+  drift: 14
 by_category:
   atl_gen: 3
   dream_team: 6
   growth: 5
   individual: 0
   os_conductor: 1
-  other: 0
+  other: 5
   root: 25
   specialists: 23
 drift_files:
@@ -31,3 +31,8 @@ drift_files:
   - 06_Plantillas/05_Plantillas/linkedin-post.md
   - 06_Plantillas/05_Plantillas/newsletter.md
   - 06_Plantillas/05_Plantillas/youtube-script.md
+  - 08_RealEstate/realestate-comps.md
+  - 08_RealEstate/realestate-invest.md
+  - 08_RealEstate/realestate-market.md
+  - 08_RealEstate/realestate-neighborhood.md
+  - 08_RealEstate/realestate-rental.md

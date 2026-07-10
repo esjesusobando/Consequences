@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--5.0--SOTA-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 396+ skills SOTA (CoT injected), 63 agentes (source) | 72 backup, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 429 skills SOTA (CoT injected), 68 agentes (source) | 72 backup, metodologías integradas y automatización completa.
 
 ---
 
@@ -21,11 +21,11 @@
 | **Overall Health**       | **100%** 🟢                                         |
 | **Every CE**             | v3.8.4 ✅                                           |
 | **gentle-ai**            | v1.30.6 ✅                                          |
-| **Skills**               | **396+** (15 áreas funcionales, CoT injected)       |
+| **Skills**               | **429** (15 áreas funcionales, CoT injected)       |
 | **Rules**                | **14** (.mdc)                                      |
 | **MCPs**                 | **45** OpenCode (35 active)                        |
-| **HUBs**                 | **42** HUBs + **166** scripts totales              |
-| **Agentes**              | **63** (source) + **72** (backup) — drift 9        |
+| **HUBs**                 | **46** HUBs + **240** scripts totales              |
+| **Agentes**              | **68** (source) + **72** (backup) — drift 9        |
 | **Workflows**            | **30** (8 categorías)                              |
 | **Hooks**                | **10** (6 fases)                                   |
 | **Paths validated**      | **84/84 OK** (both copies, 2026-07-03)             |
@@ -64,7 +64,7 @@ Think_Different/
 │   │   └── 04_Telemetry/          ✅ Telemetría y monitoreo
 │   ├── 04_Tasks/                  ✅ Tareas activas (00-02)
 │   ├── 05_Scripts/                ✅ Scripts operativos (00-02)
-│   │   ├── 00_HUBs/03_Scripts_Os/ ✅ 42 HUBs funcionales — 166+ scripts
+│   │   ├── 00_HUBs/03_Scripts_Os/ ✅ 46 HUBs funcionales — 240+ scripts
 │   │   ├── 01_Installer/          ✅ Instalador del OS
 │   │   └── 02_Agent_Teams_Lite/   ✅ Agent Teams, JARVIS manifests
 │   ├── 06_Projects/               ✅ Proyectos activos (00-01)
@@ -84,7 +84,7 @@ Think_Different/
 
 ---
 
-## 🛠️ Skills System (16 áreas funcionales — 411 skills)
+## 🛠️ Skills System (16 áreas funcionales — 429 skills)
 
 | Área                          | Skills       | Descripción                                   |
 |-------------------------------|--------------|-----------------------------------------------|
@@ -100,7 +100,7 @@ Think_Different/
 
 ---
 
-## 🤖 Agentes (63 total — 9 categorías) [FIXED]
+## 🤖 Agentes (68 total — 9 categorías) [FIXED]
 
 | Categoría                                | Cantidad       | Ubicación                                                         |
 |------------------------------------------|----------------|-------------------------------------------------------------------|
@@ -195,5 +195,5 @@ CC BY-NC-SA 4.0 — Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-07-03_
+_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-07-09_
 _SOTA v5.0: CoT Skills + Type Hints + Ground Truth Sync + Reference Integrity Audit (17 bugs fixed, 1 structural consolidation)_

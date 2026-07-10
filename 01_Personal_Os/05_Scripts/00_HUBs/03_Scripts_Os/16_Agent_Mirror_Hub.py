@@ -20,9 +20,15 @@ import sys
 from pathlib import Path
 
 # ─────────────────────────────────────────────────────────────
-# RUTAS
+# RUTAS — usando config_paths como fuente de verdad
 # ─────────────────────────────────────────────────────────────
-REPO_ROOT = Path(__file__).parent.parent.parent.parent
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+
+REPO_ROOT: Path = ROOT_DIR
 SOURCE_DIR = REPO_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "01_Agents"
 BACKUP_DIR = REPO_ROOT / ".agent" / "01_Agents"
 

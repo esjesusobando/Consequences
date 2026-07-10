@@ -1,19 +1,17 @@
+#!/usr/bin/env python3
 import logging
 import typing
-
-logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
-15_SOTA_Integrity_Check.py — PersonalOS v4.9 Consequences
+03_SOTA_Integrity_Check.py — PersonalOS v5.0 SOTA
 
 Script de integridad que valida las dimensiones del sistema:
 - Submódulos git
-- Skills (9 áreas funcionales con SKILL.md en subcarpetas)
-- MCPs (30+ configurados)
+- Skills (22+ categorías con SKILL.md)
+- MCPs (11+ configurados)
 - Agents
 - Hooks
-- HUBs (12+)
-- Rules (10 consolidadas)
+- HUBs (24+ raíz + engines)
+- Rules (14 consolidadas)
 - Metodologías integradas
 
 Usage:
@@ -76,9 +74,9 @@ def check_submodules():
     return len(issues) == 0
 
 def check_skills():
-    """Verifica skills en v4.9: 9 áreas funcionales + extras con SKILL.md."""
+    """Verifica skills en v5.0: 22+ categorías con SKILL.md."""
     print("-" * 50)
-    print("CHECKING: Skills (v4.9)")
+    print("CHECKING: Skills (v5.0)")
     print("-" * 50)
 
     skills_path = ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "02_Skills"
@@ -103,7 +101,7 @@ def check_skills():
 
     print(f"Total: {len(categories_with_skills)}/{len(categories)} áreas con al menos 1 SKILL.md")
 
-    # v4.9 tiene 12 áreas (9 funcionales + extras); requerir que todas tengan SKILL.md
+    # v5.0: todas las categorías deben tener SKILL.md
     return len(categories_with_skills) == len(categories)
 
 def check_mcps():
@@ -122,7 +120,7 @@ def check_mcps():
             data = json.load(f)
         mcp_count = len(data.get("mcpServers", {}))
         log(f"MCPs configured: {mcp_count}", "OK")
-        return mcp_count >= 25  # Expect at least 25
+        return mcp_count >= 8  # Expect at least 8 (v5.0: ~11 locales)
     except json.JSONDecodeError as e:
         log(f"JSON error in .mcp.json: {e}", "ERROR")
         return False
@@ -170,12 +168,12 @@ def check_hooks():
     return True
 
 def check_hubs():
-    """Verifica HUBs (11 activos)."""
+    """Verifica HUBs (24+ raíz + engines en v5.0)."""
     log("=" * 50)
-    log("CHECKING: HUBs (11)")
+    log("CHECKING: HUBs (24+)")
     log("=" * 50)
 
-    hubs_path = ROOT / "01_Personal_Os" / "05_Scripts" / "03_Scripts_Os"
+    hubs_path = ROOT / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"
     if not hubs_path.exists():
         log("03_Scripts_Os not found", "ERROR")
         return False
@@ -194,9 +192,9 @@ def check_hubs():
     return len(hub_files) >= 10
 
 def check_rules():
-    """Verifica reglas (10 consolidadas en v1.1 Alpha)."""
+    """Verifica reglas (14 consolidadas en v5.0 SOTA)."""
     log("=" * 50)
-    log("CHECKING: Rules (10 consolidadas)")
+    log("CHECKING: Rules (14)")
     log("=" * 50)
 
     rules_path = ROOT / "01_Personal_Os" / "00_Core" / "01_Rules"
@@ -222,13 +220,13 @@ def check_rules():
     return len(mdc_files) >= 8
 
 def check_methodologies():
-    """Verifica metodologías integradas en v4.9 Consequences."""
+    """Verifica metodologías integradas en v5.0 SOTA."""
     log("=" * 50)
-    log("CHECKING: Metodologias Integradas (v4.9)")
+    log("CHECKING: Metodologias Integradas (v5.0)")
     log("=" * 50)
 
     _tools = ROOT / "01_Personal_Os" / "00_Core" / "02_Tools"
-    _scripts = ROOT / "01_Personal_Os" / "05_Scripts" / "03_Scripts_Os"
+    _scripts = ROOT / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"
     checks = [
         ("Super Campeones / Agent Teams", ROOT / "00_Winter_is_Coming" / "AGENTS.md"),
         ("Compound Engineering", _tools / "02_Skills" / "00_Compound_Engineering" / "SKILL.md"),
@@ -236,6 +234,7 @@ def check_methodologies():
         ("Design SOTA", _tools / "02_Skills" / "02_Diseno_Ui_Ux"),
         ("Automatizacion", _tools / "02_Skills" / "04_Automatizacion"),
         ("Auditor Hub", _scripts / "01_Auditor_Hub.py"),
+        ("System Mapper", _scripts / "20_System_Mapper_Hub.py"),
         ("Auto-Improvement Engine", ROOT / "01_Personal_Os" / "05_Scripts" / "01_Auto_Improvement" / "01_Engine"),
     ]
 
@@ -248,17 +247,17 @@ def check_methodologies():
     return True  # Warn only — no falla el sistema
 
 def check_core_structure():
-    """Verifica estructura core de v4.9 Consequences."""
+    """Verifica estructura core de v5.0 SOTA."""
     log("=" * 50)
-    log("CHECKING: Core Structure (v4.9 Consequences)")
+    log("CHECKING: Core Structure (v5.0 SOTA)")
     log("=" * 50)
 
     _os = ROOT / "01_Personal_Os"
     required_paths = [
-        ("01_Personal_Os/00_Core/01_Rules",   _os / "00_Core" / "01_Rules"),
-        ("01_Personal_Os/00_Core/02_Tools",   _os / "00_Core" / "02_Tools"),
-        ("01_Personal_Os/05_Scripts",       _os / "05_Scripts"),
-        ("03_Scripts_Os",                      _os / "05_Scripts" / "03_Scripts_Os"),
+        ("01_Personal_Os/00_Core/01_Rules",     _os / "00_Core" / "01_Rules"),
+        ("01_Personal_Os/00_Core/02_Tools",     _os / "00_Core" / "02_Tools"),
+        ("01_Personal_Os/05_Scripts",           _os / "05_Scripts"),
+        ("00_HUBs/03_Scripts_Os",               _os / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"),
         ("02_Playground",                      ROOT / "02_Playground"),
         ("03_Resultado",                       ROOT / "03_Resultado"),
         ("00_Winter_is_Coming",                ROOT / "00_Winter_is_Coming"),
@@ -277,7 +276,7 @@ def check_core_structure():
 def main():
     """Ejecutar todos los checks."""
     print("\n===========================================")
-    print(" SOTA INTEGRITY CHECK -- PersonalOS v4.9")
+    print(" SOTA INTEGRITY CHECK -- PersonalOS v5.0")
     print("===========================================\n")
 
     results = {
@@ -316,7 +315,7 @@ def main():
         reports_dir.mkdir(parents=True, exist_ok=True)
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         report_path = reports_dir / f"sota_integrity_{ts}.txt"
-        lines = [f"SOTA INTEGRITY CHECK — PersonalOS v4.9\n", f"Fecha: {ts}\n\n"]
+        lines = [f"SOTA INTEGRITY CHECK — PersonalOS v5.0\n", f"Fecha: {ts}\n\n"]
         for name, status in results.items():
             icon = "[OK]" if status else "[FAIL]"
             lines.append(f"{icon} {name}\n")

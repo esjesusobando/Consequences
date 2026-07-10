@@ -1,10 +1,10 @@
 # 📁 12_Auditors_Os — Auditors Utilities
 
-> **Versión**: v4.9 Consequences
-> **Última actualización**: 2026-05-28
+> **Versión**: v5.0 SOTA
+> **Última actualización**: 2026-07-09
 > **Estado**: ✅ ACTUALIZADO
 
-Utilities para auditors del PersonalOS v4.9 Consequences:
+Utilities para auditors del PersonalOS v5.0 SOTA:
 
 > **⚠️ NOTE:** These utilities are used by `config_paths.py` for systematic project operations.
 - Beautify Tables
@@ -27,7 +27,7 @@ Utilities para auditors del PersonalOS v4.9 Consequences:
 
 ---
 
-## 📍 Ubicación en v4.9 Consequences
+## 📍 Ubicación en v5.0 SOTA
 
 ```
 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/
@@ -63,14 +63,14 @@ El script `03_SOTA_Integrity_Check.py` valida:
 | Check          | Descripción                        |
 | -------------- | ---------------------------------- |
 | submodules     | Git submodules verificados         |
-| skills         | 12+ áreas funcionales con SKILL.md |
-| mcps           | 7+ MCPs activos configurados       |
+| skills         | 22+ áreas funcionales con SKILL.md |
+| mcps           | 11+ MCPs activos configurados      |
 | agents         | Agentes en .agent/ y core/         |
 | hooks          | Hooks instalados                   |
-| hubs           | 30+ HUBs activos                   |
-| rules          | 13+ reglas consolidadas            |
+| hubs           | 37+ HUBs activos                   |
+| rules          | 14 reglas consolidadas             |
 | methodologies  | Metodologías integradas            |
-| core_structure | Estructura v4.9 completa           |
+| core_structure | Estructura v5.0 SOTA completa      |
 
 **Uso:**
 ```bash
@@ -80,5 +80,5 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/12_Auditors_Os/scripts/03
 
 ---
 
-**Última actualización**: 2026-05-28
-**Estado**: ✅ ACTUALIZADO — v4.9 Consequences
+**Última actualización**: 2026-07-09
+**Estado**: ✅ ACTUALIZADO — v5.0 SOTA

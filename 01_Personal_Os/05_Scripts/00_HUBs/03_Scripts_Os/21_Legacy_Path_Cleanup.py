@@ -17,9 +17,15 @@ import sys
 from pathlib import Path
 
 # ─────────────────────────────────────────────────────────────
-# RUTAS Y CONFIG
+# RUTAS Y CONFIG — usando config_paths como fuente de verdad
 # ─────────────────────────────────────────────────────────────
-REPO_ROOT = Path(__file__).parent.parent.parent.parent
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+
+REPO_ROOT: Path = ROOT_DIR
 LEGACY_PATTERNS = [
     ("08_Scripts_Os", "05_Scripts/03_Scripts_Os"),
     ("00_Core/02_Tools/02_Skills", "01_Personal_Os/00_Core/02_Tools/02_Skills"),
@@ -28,7 +34,7 @@ LEGACY_PATTERNS = [
 
 EXCLUDE_DIRS = {"05_Archive", "06_Snapshots", "10_Backup", ".git", "node_modules", ".next"}
 
-REPORT_DIR = REPO_ROOT / "03_Resultado" / "04_Reportes"
+REPORT_DIR = REPO_ROOT / "03_Resultado" / "07_Reports"
 
 
 def scan_file(path: Path, patterns: list) -> list:

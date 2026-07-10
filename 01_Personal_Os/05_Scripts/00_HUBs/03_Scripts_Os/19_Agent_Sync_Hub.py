@@ -28,17 +28,16 @@ from pathlib import Path
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
-# Path resolution
-_SCRIPT_DIR = Path(__file__).parent.resolve()
-sys.path.insert(0, str(_SCRIPT_DIR))
+# Path resolution via config_paths (v5.0 dynamic protocol)
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+REPO_ROOT: Path = ROOT_DIR
 
-try:
-    from config_paths import PROJECT_ROOT
-except ImportError:
-    PROJECT_ROOT = _SCRIPT_DIR.parent.parent.parent  # ROOT
-
-CORE = PROJECT_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools"
-BACKUP = PROJECT_ROOT / ".agent"
+CORE = REPO_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools"
+BACKUP = REPO_ROOT / ".agent"
 ARCHIVE = BACKUP / "archive"
 TRASH_DAYS = 90  # Retention en días antes de purgar
 
@@ -77,7 +76,7 @@ def archive_deleted(backup_root, subdir, only_backup_files, backup_dict):
             dst_dir.mkdir(parents=True, exist_ok=True)
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(str(src), str(dst))
-            print(f"     → archivado en {dst.relative_to(PROJECT_ROOT)}")
+            print(f"     → archivado en {dst.relative_to(REPO_ROOT)}")
         archived.append(rel_path)
     return archived
 
@@ -118,8 +117,8 @@ def sync_pair(subdir, label):
 
     print(f"\n{'=' * 60}")
     print(f"  📂 {label}: {subdir}")
-    print(f"  Live:   {live_dir.relative_to(PROJECT_ROOT)}")
-    print(f"  Backup: {backup_dir.relative_to(PROJECT_ROOT)}")
+    print(f"  Live:   {live_dir.relative_to(REPO_ROOT)}")
+    print(f"  Backup: {backup_dir.relative_to(REPO_ROOT)}")
     print(f"{'=' * 60}")
 
     if not live_dir.exists():
@@ -183,7 +182,7 @@ def sync_pair(subdir, label):
 
 def mark_synced(subdir, action):
     """Marca en el manifest que este subdir fue sincronizado."""
-    manifest_dir = PROJECT_ROOT / "01_Personal_Os" / "05_Scripts" / "02_Agent_Teams_Lite" / "00_Manifest"
+    manifest_dir = REPO_ROOT / "01_Personal_Os" / "05_Scripts" / "02_Agent_Teams_Lite" / "00_Manifest"
     manifest_dir.mkdir(parents=True, exist_ok=True)
     sync_log = manifest_dir / "08_Sync_Log.json"
 

@@ -1,16 +1,16 @@
-# HUB Catalog — generated 2026-07-03T00:32:10
+# HUB Catalog — generated 2026-07-09T21:33:39
 
 version: v3.0
-generated: "2026-07-03T00:32:10"
+generated: "2026-07-09T21:33:39"
 base_path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/
 totals:
-  hubs: 45
-  hubs_scripts_raiz: 36
+  hubs: 46
+  hubs_scripts_raiz: 37
   hubs_directorios: 9
   scripts: 111
-  hubs_numerados: 36
-  hubs_con_interfaz: 35
-  scripts_totales: 147
+  hubs_numerados: 37
+  hubs_con_interfaz: 36
+  scripts_totales: 148
   scripts_no_hub: 111
 hubs:
   - name: 00_Sound_Engine
@@ -208,6 +208,13 @@ hubs:
     interfaz:
       has_main: True
       has_args: False
+      is_numerado: True
+  - name: 29_Beautify_Tables
+    path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/29_Beautify_Tables.py
+    command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/29_Beautify_Tables.py
+    interfaz:
+      has_main: True
+      has_args: True
       is_numerado: True
   - name: 29_Repo_Sync_Auditor
     path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/29_Repo_Sync_Auditor.py

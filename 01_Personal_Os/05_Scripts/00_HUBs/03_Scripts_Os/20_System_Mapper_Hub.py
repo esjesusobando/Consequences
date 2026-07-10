@@ -31,27 +31,26 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
-# Path resolution con fallback (v2.0 Consequences)
-_SCRIPT_DIR = Path(__file__).parent.resolve()
-sys.path.insert(0, str(_SCRIPT_DIR))
-
-try:
-    from config_paths import PROJECT_ROOT
-except ImportError:
-    PROJECT_ROOT = _SCRIPT_DIR.parent.parent.parent
+# Path resolution via config_paths (v5.0 dynamic protocol)
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+REPO_ROOT: Path = ROOT_DIR
 
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 # Manifest dir
 MANIFEST_DIR = (
-    PROJECT_ROOT
+    REPO_ROOT
     / "01_Personal_Os"
     / "05_Scripts"
     / "02_Agent_Teams_Lite"
     / "00_Manifest"
 )
-REPORTS_DIR = PROJECT_ROOT / "03_Resultado" / "07_Reports"
+REPORTS_DIR = REPO_ROOT / "03_Resultado" / "07_Reports"
 
 # Excluded directories for scanning
 EXCLUDE_DIRS = {
@@ -64,6 +63,8 @@ EXCLUDE_DIRS = {
 
 def walk_files(root: Path, ext_filter: tuple = None):
     """os.walk con poda agresiva."""
+    if not root.exists():
+        return
     for dirpath, dirnames, filenames in os.walk(root):
         dirnames[:] = [
             d for d in dirnames
@@ -118,7 +119,7 @@ def yaml_dump(data, indent=0):
 
 def scan_mcps():
     """Escanea MCPs de Claude Code y OpenCode con drift detection."""
-    claude_mcp_path = PROJECT_ROOT / ".mcp.json"
+    claude_mcp_path = REPO_ROOT / ".mcp.json"
     opencode_path = Path.home() / ".config" / "opencode" / "opencode.json"
 
     claude_mcps = {}
@@ -172,7 +173,7 @@ def scan_mcps():
 
 def scan_skills():
     """Escanea skills (SKILL.md) por área."""
-    skills_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/02_Tools/02_Skills"
+    skills_dir = REPO_ROOT / "01_Personal_Os/00_Core/02_Tools/02_Skills"
     by_area = defaultdict(list)
 
     for skill_md in walk_files(skills_dir, ext_filter=("SKILL.md",)):
@@ -233,8 +234,8 @@ AGENT_CATEGORIES = {
 
 def scan_agents():
     """Escanea agentes (source: 01_Agents en core, backup: .agent)."""
-    source_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/02_Tools/01_Agents"
-    backup_dir = PROJECT_ROOT / ".agent/01_Agents"
+    source_dir = REPO_ROOT / "01_Personal_Os/00_Core/02_Tools/01_Agents"
+    backup_dir = REPO_ROOT / ".agent/01_Agents"
 
     # Non-agent files to exclude from count (READMEs, LEEMEs, SKILLs, support files)
     NON_AGENT_FILES = {"README.md", "LEEME.md", "SKILL.md", "registry.md", "AGENTS.md"}
@@ -324,7 +325,7 @@ def scan_hubs():
     HUBs = (scripts .py con prefijo numerico en raiz de Scripts_Os/)
           + (subdirectorios funcionales con contenido numerado)
     """
-    hubs_dir = PROJECT_ROOT / "01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os"
+    hubs_dir = REPO_ROOT / "01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os"
 
     hubs = []
     scripts = []
@@ -339,8 +340,8 @@ def scan_hubs():
         iface = _detect_hub_interface(f)
         hubs.append({
             "name": f.stem,
-            "path": str(f.relative_to(PROJECT_ROOT)).replace("\\", "/"),
-            "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
+            "path": str(f.relative_to(REPO_ROOT)).replace("\\", "/"),
+            "command": f"python {f.relative_to(REPO_ROOT)}".replace("\\", "/"),
             "interfaz": iface,
         })
 
@@ -359,7 +360,7 @@ def scan_hubs():
             py_count = sum(1 for f in subdir.rglob("*.py") if f.is_file() and f.stem[:2].isdigit())
             hub_dirs.append({
                 "name": subdir.name,
-                "path": str(subdir.relative_to(PROJECT_ROOT)).replace("\\", "/"),
+                "path": str(subdir.relative_to(REPO_ROOT)).replace("\\", "/"),
                 "type": "subdir",
                 "scripts_count": py_count,
             })
@@ -372,8 +373,8 @@ def scan_hubs():
             iface = _detect_hub_interface(f)
             scripts.append({
                 "name": f.stem,
-                "path": str(f.relative_to(PROJECT_ROOT)).replace("\\", "/"),
-                "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
+                "path": str(f.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "command": f"python {f.relative_to(REPO_ROOT)}".replace("\\", "/"),
                 "interfaz": iface,
             })
 
@@ -406,7 +407,7 @@ def scan_hubs():
 
 def scan_workflows():
     """Escanea workflows por categoría."""
-    workflows_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/00_Workflows"
+    workflows_dir = REPO_ROOT / "01_Personal_Os/00_Core/00_Workflows"
 
     by_cat = defaultdict(list)
     for f in walk_files(workflows_dir, ext_filter=(".md",)):
@@ -432,7 +433,7 @@ def scan_workflows():
 
 def scan_hooks():
     """Escanea hooks por fase."""
-    hooks_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/02_Tools/05_Hooks"
+    hooks_dir = REPO_ROOT / "01_Personal_Os/00_Core/02_Tools/05_Hooks"
 
     by_phase = defaultdict(list)
     for f in walk_files(hooks_dir, ext_filter=(".py", ".ps1")):
@@ -465,10 +466,10 @@ def scan_inventory():
     hooks_data = scan_hooks()
     mcps_data = scan_mcps()
 
-    rules_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/01_Rules"
+    rules_dir = REPO_ROOT / "01_Personal_Os/00_Core/01_Rules"
     rules_count = len(list(rules_dir.glob("*.mdc"))) if rules_dir.exists() else 0
 
-    integrations_dir = PROJECT_ROOT / "01_Personal_Os/00_Core/02_Tools/04_Integrations"
+    integrations_dir = REPO_ROOT / "01_Personal_Os/00_Core/02_Tools/04_Integrations"
     integrations = []
     if integrations_dir.exists():
         integrations = [d.name for d in integrations_dir.iterdir() if d.is_dir()]
@@ -491,7 +492,7 @@ def scan_inventory():
         "personal_os": {
             "name": "PersonalOS",
             "version": "v4.9 Consequences",
-            "root": str(PROJECT_ROOT.name),
+            "root": str(REPO_ROOT.name),
         },
         "totals": {
             "mcps_claude": mcps_data["totals"]["claude_code"],
@@ -675,7 +676,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py -
 """
     (MANIFEST_DIR / "README.md").write_text(readme, encoding="utf-8")
 
-    print(f"\n✅ Manifest generado en: {MANIFEST_DIR.relative_to(PROJECT_ROOT)}")
+    print(f"\n✅ Manifest generado en: {MANIFEST_DIR.relative_to(REPO_ROOT)}")
     print(f"   Total archivos: 8 (7 manifest + README)")
     return inventory
 
@@ -745,10 +746,10 @@ def _get_inventory_value(inv: dict, dotted_key: str):
 def _check_doc_drift(inventory: dict) -> int:
     """Lee los 4 docs maestros y compara sus métricas contra el manifest."""
     docs = {
-        "OS_DIRECTORY.md": PROJECT_ROOT / "00_Winter_is_Coming" / "OS_DIRECTORY.md",
-        "CLAUDE.md": PROJECT_ROOT / "CLAUDE.md",
-        "AGENTS.md": PROJECT_ROOT / "00_Winter_is_Coming" / "AGENTS.md",
-        "README.md": PROJECT_ROOT / "README.md",
+        "OS_DIRECTORY.md": REPO_ROOT / "00_Winter_is_Coming" / "OS_DIRECTORY.md",
+        "CLAUDE.md": REPO_ROOT / "CLAUDE.md",
+        "AGENTS.md": REPO_ROOT / "00_Winter_is_Coming" / "AGENTS.md",
+        "README.md": REPO_ROOT / "README.md",
     }
 
     print("\n📋 Health Dashboard — SSOT vs Docs\n")
@@ -824,7 +825,7 @@ def validate():
     skill_idx = MANIFEST_DIR / "04_Skill_Index.json"
     if skill_idx.exists():
         data = json.loads(skill_idx.read_text(encoding="utf-8"))
-        base = PROJECT_ROOT / data["base_path"]
+        base = REPO_ROOT / data["base_path"]
         missing = 0
         for area_data in data["by_area"].values():
             for skill in area_data["skills"]:
@@ -851,9 +852,9 @@ def validate():
     # 5. Rules file count consistency (12_Audit_OS_Integrity.mdc)
     if inventory:
         rules_files = [
-            PROJECT_ROOT / "01_Personal_Os" / "00_Core" / "01_Rules" / "12_Audit_OS_Integrity.mdc",
-            PROJECT_ROOT / ".claude" / "02_Rules" / "12_Audit_OS_Integrity.mdc",
-            PROJECT_ROOT / ".agent" / "00_Rules" / "12_Audit_OS_Integrity.mdc",
+            REPO_ROOT / "01_Personal_Os" / "00_Core" / "01_Rules" / "12_Audit_OS_Integrity.mdc",
+            REPO_ROOT / ".claude" / "02_Rules" / "12_Audit_OS_Integrity.mdc",
+            REPO_ROOT / ".agent" / "00_Rules" / "12_Audit_OS_Integrity.mdc",
         ]
         for rf in rules_files:
             if not rf.exists():

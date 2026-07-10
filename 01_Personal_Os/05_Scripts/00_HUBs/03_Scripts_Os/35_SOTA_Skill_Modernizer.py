@@ -19,8 +19,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger("SkillModernizer")
 
-# Rutas
-REPO_ROOT: Path = Path(__file__).resolve().parent.parent.parent.parent
+# Rutas — usando config_paths como fuente de verdad
+_current = Path(__file__).resolve()
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
+if _root:
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"))
+from config_paths import ROOT_DIR
+
+REPO_ROOT: Path = ROOT_DIR
 SKILLS_DIR: Path = REPO_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "02_Skills"
 
 SOTA_APPENDIX: str = """

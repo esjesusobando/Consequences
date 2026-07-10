@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-07-03 (v5.0.1 — Path audit: 04_Tasks → 04_Tasks)
+**Última actualización:** 2026-07-09 (v5.0.1 — Path audit: 04_Tasks → 04_Tasks)
 
 ---
 
@@ -47,10 +47,10 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (396, 15 áreas)                         | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (429, 16 áreas)                         | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (14 .mdc)                               | `01_Personal_Os/00_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (63 source | 72 backup) [FIXED]                       | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (36 HUBs — 168 scripts)            | `01_Personal_Os/05_Scripts/00_HUBs/`                                       | Operaciones de sistema — 168 scripts totales                       |
+| **Agentes** (68 source | 72 backup) [FIXED]                       | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (46 HUBs — 240 scripts)            | `01_Personal_Os/05_Scripts/00_HUBs/`                                       | Operaciones de sistema — 240 scripts totales                       |
 | **MCPs** (11 root + configs globales)              | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
@@ -180,8 +180,8 @@ Think_Different/                           # v5.0.1 — 4 carpetas raíz
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 00_SDD/                   # SDD registry + JARVIS manifests
-│   │       ├── 01_Agents/               # 63 agentes (referencia al manifest) [FIXED]
-│   │       ├── 02_Skills/                # 396 skills (15 áreas)
+│   │       ├── 01_Agents/               # 68 agentes (referencia al manifest) [FIXED]
+│   │       ├── 02_Skills/                # 429 skills (16 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -392,7 +392,7 @@ Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos**.
 
 ---
 
-## 7. HUB SCRIPTS (36 raíz activos — 168 scripts totales)
+## 7. HUB SCRIPTS (46 raíz activos — 240 scripts totales)
 
 Centralized HUBs in `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/`:
 
