@@ -58,7 +58,7 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **Adaptive Boot**                                  | `01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py`                 | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/03_Learning/01_Auto_Improvement/`                          | Detección y fix recursivo de issues                                |
-| **Workflows** | **29** (7 categorías) [FIXED] en 7 categorías                                      |
+| **Workflows** | **30** (8 categorías) [FIXED]                                      |
 
 ---
 
@@ -176,7 +176,7 @@ Think_Different/                           # v5.0.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                           # Motor del OS
-│   │   ├── 00_Workflows/              # 29 Workflows (7 categorías)
+│   │   ├── 00_Workflows/              # 30 Workflows (8 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 00_SDD/                   # SDD registry + JARVIS manifests
@@ -507,7 +507,7 @@ gr --agents    # Solo 3 agents
 | Marvel                                      | `02_Marvel/`                                 | 8 workflows (Iron Man, Spider, Thor, etc.)      |
 | Gentleman                                   | `03_Gentleman/`                              | 2 workflows (Frontend, Docs)                    |
 | Hillary                                     | `04_Hillary/`                                | 2 workflows (Captura, Life OS)                  |
-| Compound Engineering                        | `05_Compound_Engineering/`                   | 4 workflows (Deep Work, Ship It, etc.)          |
+| Compound Engineering                        | `05_Compound_Engineering/`                   | 5 workflows (Deep Work, Ship It, Every Trigger, etc.)          |
 | Youtube Full Video                          | `06_Youtube_Full_Video/`                     | 1 workflow                                      |
 | README only                                 | (root)                                       | 1 (README.md — no workflow)                     |
 
@@ -553,6 +553,7 @@ gr --agents    # Solo 3 agents
 | **Plan Feature**                        | `/ce:brainstorm` or `/sdd-propose`                                   |
 | **Execute**                             | `/ce:work` or `/sdd-apply`                                           |
 | **Review**                              | GGA or `/ce:review`                                                  |
+| **Quality post-cambio**                 | **"Every"** → `ce:review` → `ce:compound` → `judgment-day`          |
 | **Document**                            | `/ce:compound`                                                       |
 | **Compound Knowledge**                  | `skill("learning-always")` → Fase 4 (Compound)                       |
 | **Validate**                            | `gr` or `01_Auditor_Hub.py`                                          |

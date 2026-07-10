@@ -118,6 +118,11 @@ Reglas:
 
 **[Trigger] Ante Errores Estructurales o de Nomenclatura:**
 - DETENTE. "El código es temporal, las reglas son eternas". Corrige el plan, documenta qué está mal, y espera aprobación para el fix.
+
+**[Trigger] "Every" — Quality Gate Pipeline:**
+- Cuando el usuario diga **"Every"** → ejecutar `ce:review` → `ce:compound` → `judgment-day` en ese orden.
+- Workflow completo en `01_Personal_Os/00_Core/00_Workflows/05_Compound_Engineering/20_Every_Trigger.md`.
+- No saltar pasos. Si CRITICAL en review → detener.
 </active_triggers>
 
 ---
@@ -176,7 +181,7 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows/      ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/      ✅ 30 workflows (8 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 00_SDD/           ✅ SDD registry + JARVIS manifests
@@ -254,7 +259,7 @@ Think_Different/                           # RAÍZ
 ├── 03_Agent_Catalog.yaml    # 63 agentes source (referencia al manifest) [FIXED]
 ├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
 ├── 05_HUB_Catalog.yaml     # HUBs: scripts totales
-├── 06_Workflow_Graph.yaml   # 29 workflows
+├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías) [FIXED]
 ```
 
@@ -273,6 +278,7 @@ Think_Different/                           # RAÍZ
 
 **Compound Engineering (CE):**
 - Comandos: `/ce:ideate`, `/ce:brainstorm`, `/ce:plan`, `/ce:work`, `/ce:review`, `/ce:compound`.
+- **`Every` trigger:** `ce:review` → `ce:compound` → `judgment-day`. Quality gate pipeline post-cambio. Workflow: `01_Personal_Os/00_Core/00_Workflows/05_Compound_Engineering/20_Every_Trigger.md`.
 
 **GGA (Guardian Angel) Code Review:**
 - `.agent/05_GGA/bin/gga run` (Revisar archivos staged).
@@ -306,7 +312,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report      # MCP 
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
-| Workflows (29)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows/ (1+10+8+2+2+4+1)                        |
+| Workflows (30)                    | ✅ ACTIVE                   | 8 categorías en 00_Workflows/ (1+10+8+2+2+5+1)                        |
 | Hooks (10, 6 fases) [MAY DRIFT]   | ✅ ACTIVE                   | 05_Hooks/ + nuevo 04_Extensions/hooks/                                   |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                          |
 

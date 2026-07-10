@@ -50,7 +50,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/          # ESTRATÉGICO: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
 │   ├── 00_Core/                  # MOTOR DEL OS
-│   │   ├── 00_Workflows/     # 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/     # 30 workflows (8 categorías)
 │   │   ├── 01_Rules/            # 14 reglas .mdc (00-13)
 │   │   └── 02_Tools/
 │   │       ├── 00_SDD/          # SDD Registry

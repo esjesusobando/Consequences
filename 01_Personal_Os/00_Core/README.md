@@ -13,7 +13,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/       # Strategy, backlog, DNA
 ├── 01_Personal_Os/
 │   ├── 00_Core/               # OS Engine: Workflows, Rules, Tools (SOURCE OF TRUTH)
-│   │   ├── 00_Workflows/      # 29 workflows (7 categories)
+│   │   ├── 00_Workflows/      # 30 workflows (8 categories)
 │   │   ├── 01_Rules/          # 14 rules (.mdc)
 │   │   ├── 02_Tools/          # Agents, Skills, MCPs, Hooks, Plugins, Evals
 │   │   ├── 03_Content/        # Content templates and assets
@@ -35,7 +35,7 @@ Think_Different/
 
 | #     | Directory          | Content                                                                               | Status   |
 |-------|--------------------|---------------------------------------------------------------------------------------|----------|
-| 01    | `00_Workflows/`    | 29 workflows (7 categories: MKT, Personal, Marvel, Gentleman, Hillary, CE, YouTube)   | ACTIVE   |
+| 01    | `00_Workflows/`    | 30 workflows (8 categories: Learning, Personal, Marvel, Gentleman, Hillary, CE, YouTube, Readme)   | ACTIVE   |
 | 02    | `01_Rules/`        | 14 rules .mdc (00-13)                                                                 | ACTIVE   |
 | 03    | `02_Tools/`        | Agents, Skills, MCPs, Hooks, Plugins, Server, Evals                                   | ACTIVE   |
 | 04    | `03_Content/`      | Content templates and marketing assets                                                | ACTIVE   |

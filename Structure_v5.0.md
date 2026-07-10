@@ -37,7 +37,7 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 00_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows/          # 29 workflows (7 categorías)
+│   ├── 00_Workflows/          # 30 workflows (8 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   ├── 02_Tools/                 # Herramientas del OS
 │   │   ├── 00_SDD/               # SDD registry + JARVIS manifests
@@ -224,7 +224,7 @@ Think_Different/                    # RAÍZ
 | Skills (SKILL.md)     | 396 (15 áreas)                 | [FIXED]      |
 | Reglas (.mdc)         | 14                             | [FIXED]      |
 | Hooks (.py + .ps1)    | 10 (6 fases)                   | [FIXED]      |
-| Workflows (.md)       | 29 (7 categorías)              | [FIXED]      |
+| Workflows (.md)       | 30 (8 categorías)              | [FIXED]      |
 | Agentes (source)      | 63                             | [FIXED]      |
 | Agentes (backup)      | 72 (drift: 9)                  | [VERIFIED]   |
 | HUBs funcionales      | 42 (33 .py + 9 subdirs)        | [FIXED]      |

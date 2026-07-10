@@ -39,7 +39,7 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 | MCPs OpenCode         | 45          | ✅ ACTIVE                               |
 | HUBs                  | 42          | ✅ ACTIVE (33 .py + 9 dirs)             |
 | Scripts totales       | 166         | ✅ DOCUMENTED                           |
-| Workflows             | 29          | ✅ ACTIVE — 7 categorías                |
+| Workflows             | 30          | ✅ ACTIVE — 8 categorías                |
 | Hooks                 | 10          | ✅ ACTIVE — 6 fases                     |
 | Rules                 | 14          | ✅ DEFINED (.mdc)                       |
 

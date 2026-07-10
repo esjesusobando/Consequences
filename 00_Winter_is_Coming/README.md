@@ -31,7 +31,7 @@
 - **MCPs**: 11 root Claude + 45 OpenCode
 - **Skills**: 396 SKILL.md activas (15 áreas funcionales)
 - **HUBs**: 42 HUBs + 166 scripts totales
-- **Workflows**: 29 (7 categorías)
+- **Workflows**: 30 (8 categorías)
 - **Rules**: 14 .mdc (00-13)
 - **Error Taxonomy**: `os_errors.py` — 6 excepciones tipadas ✅
 - **Path Guardian**: `path_guardian.py` — 5 resolvedores centralizados ✅

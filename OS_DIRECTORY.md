@@ -12,7 +12,7 @@ Think Different PersonalOS — Multi-agent orchestration system powered by AI.
 - **Agents:** 63 source | 72 backup
 - **MCPs:** 11 Claude | 45 OpenCode
 - **HUBs:** 42 (166+ total scripts)
-- **Workflows:** 29 (7 categories)
+- **Workflows:** 30 (8 categories)
 
 ## Directory Map
 
@@ -31,7 +31,7 @@ Think Different PersonalOS — Multi-agent orchestration system powered by AI.
 ### 01_Personal_Os (Source of Truth)
 | Directory | Contents |
 |-----------|----------|
-| `00_Core/` | Workflows (29), Rules (14 .mdc), Tools (Agents 63, Skills 396+, MCPs, Hooks 10, Plugins, Evals, Templates) |
+| `00_Core/` | Workflows (30), Rules (14 .mdc), Tools (Agents 63, Skills 396+, MCPs, Hooks 10, Plugins, Evals, Templates) |
 | `01_Memory/` | Context LLM (00-12), Process Notes, Solutions, Plans, Telemetry |
 | `02_Knowledge/` | Examples, Research, Docs, Unicorn, Invictus, Anthropic |
 | `03_Learning/` | Shared Org (Capital Token), Auto-Improvement (every 8h), Content, Telemetry |

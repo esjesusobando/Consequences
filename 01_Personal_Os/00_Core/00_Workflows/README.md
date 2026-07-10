@@ -1,9 +1,9 @@
-# 🔄 PersonalOS Workflows v4.9 Consequences — Think Different
+# 🔄 PersonalOS Workflows v5.0 SOTA — Think Different
 
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 
 **Ruta:** `01_Personal_Os/00_Core/00_Workflows/`
-**Total:** 27 workflows en 7 categorías
+**Total:** 30 workflows en 8 categorías
 
 ---
 
@@ -54,6 +54,7 @@ Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los f
 - `17_Ship_It.md` — Workflow de entrega
 - `18_Anthropic_Harness.md` — Harness Anthropic
 - `19_Multi_Agent_Roles.md` — Roles multi-agente
+- `20_Every_Trigger.md` — Quality gate post-cambio (Every)
 
 ### 06_Youtube_Full_Video — Video Production Pipeline
 *Pipeline completo de producción de video para YouTube.*
@@ -81,4 +82,4 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/08_Workflow_Hub.py run <w
 
 ---
 
-*Actualizado: 2026-05-26 | v4.9 Consequences*
+*Actualizado: 2026-07-09 | v5.0 SOTA*

@@ -25,7 +25,7 @@
 | Open Design                         | 62 creative skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.1 — Full Project Audit + Count Corrections
-> Skills: 396. HUBs: 39. Workflows: 29. Rules: 14. Scripts: 163. Agentes: 63. Hooks: 10.
+> Skills: 396. HUBs: 39. Workflows: 30. Rules: 14. Scripts: 163. Agentes: 63. Hooks: 10.
 
 ---
 
@@ -33,7 +33,7 @@
 
 1. **🌕 Capital Token Fase 1**: `10_Shared_Org/` en Knowledge — 1 playbook, 1 ADR, 3 agent templates, MCP Bridge v0.1
 2. **🔄 Auto-Improvement validado**: 29+ días autónomo, Task Scheduler cada 8h, 6 fixers reales
-3. **Full Project Audit**: Conteo completo de agentes (63 source | 72 backup), workflows (29), HUBs (39), scripts (163), hooks (10)
+3. **Full Project Audit**: Conteo completo de agentes (63 source | 72 backup), workflows (30), HUBs (39), scripts (163), hooks (10)
 4. **Count Corrections**: Todos los docs actualizados con valores verificados contra disco
 5. **Skills verified**: 396 SKILL.md activas en 15 áreas funcionales — 0 sin frontmatter
 
@@ -82,7 +82,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows/     ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/     ✅ 30 workflows (8 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 00_SDD/          ✅ SDD Registry + JARVIS manifests
@@ -265,4 +265,4 @@ ls 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-28 | PersonalOS v5.0 — Paths updated to new layout (00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive) | 396 skills | 63 agents source | 72 backup | 39 HUBs | 29 workflows | 14 rules | 10 hooks [FIXED] [MAY DRIFT]*
+*Actualizado: 2026-06-28 | PersonalOS v5.0 — Paths updated to new layout (00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive) | 396 skills | 63 agents source | 72 backup | 39 HUBs | 30 workflows | 14 rules | 10 hooks [FIXED] [MAY DRIFT]*

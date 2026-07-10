@@ -26,7 +26,7 @@
 | **MCPs**                 | **45** OpenCode (35 active)                        |
 | **HUBs**                 | **42** HUBs + **166** scripts totales              |
 | **Agentes**              | **63** (source) + **72** (backup) — drift 9        |
-| **Workflows**            | **29** (7 categorías)                              |
+| **Workflows**            | **30** (8 categorías)                              |
 | **Hooks**                | **10** (6 fases)                                   |
 | **Paths validated**      | **84/84 OK** (both copies, 2026-07-03)             |
 
@@ -39,7 +39,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 00_Core/                   ✅ Motor del OS
-│   │   ├── 00_Workflows/       ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows/       ✅ 30 workflows (8 categorías)
 │   │   ├── 01_Rules/              ✅ 14 reglas .mdc
 │   │   ├── 02_Tools/              ✅ Herramientas (00-09)
 │   │   │   ├── 00_SDD/            ✅ SDD Registry + JARVIS manifests
