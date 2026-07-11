@@ -1,6 +1,6 @@
 # 00_Manifest — JARVIS Ground Truth
 
-**Generated:** 2026-07-09T21:33:38
+**Generated:** 2026-07-11T13:23:20
 **Version:** v4.9 Consequences
 
 ## ¿Qué es esto?
@@ -46,7 +46,7 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/20_System_Mapper_Hub.py -
 - **Scripts totales:** 148 (111 no-HUB)
 - **Workflows:** 30
 - **Hooks:** 10
-- **Rules:** 14
+- **Rules:** 15
 - **Integrations:** 2 (01_Fireflies, 02_Granola)
 
 ## 📋 Health Dashboard
