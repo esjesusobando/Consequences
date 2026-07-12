@@ -13,7 +13,7 @@ Sistema de telemetría que registra cada ejecución de HUB para análisis poster
 ## Ubicación
 
 ```
-01_Personal_Os/04_Operations/00_Context_LLM/12_Telemetry/
+01_Personal_Os/01_Memory/12_Telemetry/
 ├── events.jsonl           # Una línea por evento
 ├── hourly_summary.json   # Resumen por hora
 └── daily_summary.json  # Resumen por día

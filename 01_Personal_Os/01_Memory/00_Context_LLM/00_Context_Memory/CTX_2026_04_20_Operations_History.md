@@ -9,7 +9,7 @@
 
 ### 🔴 v6.1 Refactor (Marzo - Abril 2026)
 - **Logro**: Migración total a la estructura `01_Core` liderada por Gentleman.
-- **Resultado**: Sistema SSOT funcional en `03_Tasks`. Limpieza masiva de legacy files.
+- **Resultado**: Sistema SSOT funcional en `04_Tasks`. Limpieza masiva de legacy files.
 
 ### 🔵 OIM Website Build — SOTA v2 (Abril 2026)
 - **Logro**: Reconstrucción COMPLETA de la web OIM usando Next.js 16.2.2 (Turbopack), Tailwind v4, React 19.

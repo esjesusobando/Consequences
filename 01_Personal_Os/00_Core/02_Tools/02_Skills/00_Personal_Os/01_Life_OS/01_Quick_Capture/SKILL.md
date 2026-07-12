@@ -31,10 +31,10 @@ Input → PARSE(tags) → PROCESS(type,slug) → SAVE(filename,content)
 
 ### 1. Filename Generation
 
-**Pattern**: `03_Tasks/02_Hillary_Inbox/YYYY-MM-DD-HHmm-{slug}.md`
+**Pattern**: `04_Tasks/02_Hillary_Inbox/YYYY-MM-DD-HHmm-{slug}.md`
 
 - Lowercase, spaces→hyphens, max 50 chars, fallback "captura"
-- Collision → random 4-char suffix: `03_Tasks/02_Hillary_Inbox/2026-03-31-1430-captura-a1b2.md`
+- Collision → random 4-char suffix: `04_Tasks/02_Hillary_Inbox/2026-03-31-1430-captura-a1b2.md`
 - Retry 3x, then UUID fallback
 
 ### 2. Tag Parsing
@@ -100,7 +100,7 @@ tags: []
 - **Special Chars in Tags**: Strip non-alphanumeric except hyphen
 - **Whitespace-Only After Tag Removal**: error "Captura vacía"
 - **Malformed YAML in Input**: Wrap body in `|` block
-- **Missing .gitkeep**: Create in 03_Tasks/02_Hillary_Inbox/ on init
+- **Missing .gitkeep**: Create in 04_Tasks/02_Hillary_Inbox/ on init
 - **Permission Denied**: Return clear error
 - **Disk Full**: Catch exception, return "Error: disco lleno"
 - **Invalid Filename Chars**: Filter `<>:"/\|?*`

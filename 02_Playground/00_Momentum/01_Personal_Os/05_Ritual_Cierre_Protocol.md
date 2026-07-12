@@ -30,7 +30,7 @@ Ejecutar al finalizar cada sesión de trabajo. Garantiza que el sistema quede en
 
 ### 3. Guardar Notas de Proceso
 
-1. Crear o actualizar archivo en `04_Operations/03_Process_Notes/` con resumen de la sesión + ejecutar `mem_save()` en Engram:
+1. Crear o actualizar archivo en `05_Scripts/03_Process_Notes/` con resumen de la sesión + ejecutar `mem_save()` en Engram:
    - Qué se hizo
    - Decisiones tomadas
    - Pendientes para la próxima sesión

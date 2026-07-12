@@ -25,7 +25,7 @@ Reflexionar sobre la semana pasada, celebrar logros, y planificar la siguiente s
 ### Paso 1: Celebrar wins
 
 Revisar qué se logró esta semana:
-- Tareas completadas en `03_Tasks/`
+- Tareas completadas en `04_Tasks/`
 - Commits realizados
 - Goals progresados
 

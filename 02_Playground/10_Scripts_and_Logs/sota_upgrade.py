@@ -2,10 +2,11 @@ import os
 import glob
 import logging
 import shutil
+from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
-ROOT_DIR = r"c:\Users\sebas\Desktop\Think_Different\01_Personal_Os"
+ROOT_DIR = Path(__file__).resolve().parents[2] / "01_Personal_Os"
 
 def check_and_fix_structure():
     logging.info("--- Fase 1: Estructura y Rutas ---")

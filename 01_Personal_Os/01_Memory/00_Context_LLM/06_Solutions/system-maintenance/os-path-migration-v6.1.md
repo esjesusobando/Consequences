@@ -78,11 +78,11 @@ REPLACEMENTS = [
 ## Cross-References
 
 - `00_Plan_Automejora_Recursiva_v6.1.md` - Plan maestro del sistema
-- `04_Operations/01_Auto_Improvement/` - Motor de automejora
+- `05_Scripts/01_Auto_Improvement/` - Motor de automejora
 - `.agent/03_Workflows/` - Workflows del sistema
 
 ## Lessons Learned
 
 - Los false positives del detectoreran excesivamente agresivos
-- La estructura `04_Operations/01_Auto_Improvement/` necesita exclusion patterns para `_Fixed` y `Legacy_Backup`
+- La estructura `05_Scripts/01_Auto_Improvement/` necesita exclusion patterns para `_Fixed` y `Legacy_Backup`
 - Los archivos en `Legacy_Backup` y `05_Archive` NO deben tocarse - son referencia histórica

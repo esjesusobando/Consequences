@@ -5,7 +5,7 @@ priority: P1
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/07_OIM_Website/
+  - 01_Personal_Os/06_Projects/01_Projects_Lab/07_OIM_Website/
 ---
 
 # Task: OIM Website — Browser Verification
@@ -98,7 +98,7 @@ npx playwright test --project=chromium
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/11_Task_OIM_Website_P1.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/11_Task_OIM_Website_P1.md`
 - **Keywords:** `oim website`, `browser verification`, `playwright`
 - **Bloqueado por:** —
 - **Related:** `03_Resultado/09b_World_OIM/` tiene 3 instancias

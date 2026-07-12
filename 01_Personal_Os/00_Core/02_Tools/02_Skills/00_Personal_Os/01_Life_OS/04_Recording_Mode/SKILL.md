@@ -157,8 +157,8 @@ duration: 45min
 
 ## Destinos (Single Source of Truth)
 
-- **Transcripts**: `03_Tasks/02_Hillary_Inbox/Transcripts/`
-- **Audio Backup**: `03_Tasks/01_Tasks_Done/Audio_Vault/` (Si se requiere persistencia)
+- **Transcripts**: `04_Tasks/02_Hillary_Inbox/Transcripts/`
+- **Audio Backup**: `04_Tasks/01_Tasks_Done/Audio_Vault/` (Si se requiere persistencia)
 
 ---
 

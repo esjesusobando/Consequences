@@ -314,7 +314,7 @@ Este proyecto tiene **dos copias** del directorio `01_Personal_Os/`:
 - **Regla:** Copy B es la fuente de verdad. Copy A es un mirror plano para scripts.
 - **Env var:** `PERSONAL_OS_ROOT=C:/Users/sebas/Desktop/Think_Different` → apunta a Copy B
 - **Path audit:** 84/84 paths OK en ambas copias (2026-07-03)
-- **⚠️ `04_Operations/`** no existe en ninguna copia — todas las rutas legacy que lo referencian están obsoletas
-- **05_HUB_Catalog.yaml** corregido: todos los paths `04_Operations/→05_Scripts/00_HUBs/` (2026-07-03)
+- **⚠️ `05_Scripts/`** no existe en ninguna copia — todas las rutas legacy que lo referencian están obsoletas
+- **05_HUB_Catalog.yaml** corregido: todos los paths `05_Scripts/→05_Scripts/00_HUBs/` (2026-07-03)
 - **config_paths.py --validate**: 82/82 paths OK, salida JSON disponible
 - **sync_copies.py**: sync B→A con SHA256, backup y dry-run

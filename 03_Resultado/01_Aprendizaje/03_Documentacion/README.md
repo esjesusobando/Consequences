@@ -73,7 +73,7 @@ Carpeta de resultados y outputs de proyectos. Aquí terminan los entregables de 
 
 - **Source:** Proyectos provenientes de `01_Personal_Os/05_Projects/`
 - **Docs:** `01_Personal_Os/02_Knowledge/` para contexto de cada proyecto
-- **Tasks:** `01_Personal_Os/03_Task/` para tracking
+- **Tasks:** `01_Personal_Os/04_Tasks/` para tracking
 
 ---
 

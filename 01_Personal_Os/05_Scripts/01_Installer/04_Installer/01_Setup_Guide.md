@@ -34,10 +34,10 @@ From the project root, install Python dependencies using either `uv` (recommende
 
 ```bash
 # Using uv (faster)
-uv pip install -r 01_Personal_Os/04_Operations/04_Installer/requirements.txt
+uv pip install -r 01_Personal_Os/05_Scripts/01_Installer/requirements.txt
 
 # Using pip (fallback)
-pip install -r 01_Personal_Os/04_Operations/04_Installer/requirements.txt
+pip install -r 01_Personal_Os/05_Scripts/01_Installer/requirements.txt
 ```
 
 **requirements.txt includes:**
@@ -91,7 +91,7 @@ The installer configures MCP servers automatically via `.mcp.template.json`. Thi
 
 ### MCP Template Location
 
-`01_Personal_Os/04_Operations/04_Installer/.mcp.template.json`
+`01_Personal_Os/05_Scripts/01_Installer/.mcp.template.json`
 
 ### Placeholders Replaced During Installation
 
@@ -149,7 +149,7 @@ If you need to configure manually:
 
 ```bash
 cd Think_Different
-python 01_Personal_Os/04_Operations/04_Installer/installer.py
+python 01_Personal_Os/05_Scripts/01_Installer/installer.py
 ```
 
 ### What the Installer Does

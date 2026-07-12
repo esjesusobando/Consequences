@@ -16,7 +16,7 @@ El PersonalOS tiene la siguiente estructura:
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Agentes
 ├── 00_Core/               # Skills, Agents, Evals, MCP, Server
 ├── 02_Knowledge/          # Base de conocimiento
-├── 03_Tasks/              # Tareas activas (YAML frontmatter)
+├── 04_Tasks/              # Tareas activas (YAML frontmatter)
 ├── 05_Scripts/         # Memoria, Brain, Notas
 ├── 05_Archive/           # Archive: Repos, legacy
 ├── 03_Resultado/          # Outputs: Learning Always, OIM, Projects

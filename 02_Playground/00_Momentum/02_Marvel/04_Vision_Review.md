@@ -57,8 +57,8 @@ First, I need to determine the review target type and set up the code for analys
 <protected_artifacts>
 The following paths are compound-engineering pipeline artifacts and must never be flagged for deletion, removal, or gitignore by any review agent:
 
-- `04_Operations/05_Plans/*.md` — Plan files created by `/workflows:plan`. These are living documents that track implementation progress (checkboxes are checked off by `/workflows:work`).
-- `04_Operations/06_Solutions/*.md` — Solution documents created during the pipeline.
+- `05_Scripts/05_Plans/*.md` — Plan files created by `/workflows:plan`. These are living documents that track implementation progress (checkboxes are checked off by `/workflows:work`).
+- `05_Scripts/06_Solutions/*.md` — Solution documents created during the pipeline.
 
 If a review agent flags any file in these directories for cleanup or removal, discard that finding during synthesis. Do not create a todo for it.
 </protected_artifacts>
@@ -208,7 +208,7 @@ Run the Task code-simplicity-reviewer() to see if we can simplify the code.
 
 ### 5. Findings Synthesis and Todo Creation Using file-todos Skill
 
-<critical_requirement> ALL findings MUST be stored in the 03_Tasks/ directory using the file-todos skill. Create todo files immediately after synthesis - do NOT present findings for user approval first. Use the skill for structured todo management. </critical_requirement>
+<critical_requirement> ALL findings MUST be stored in the 04_Tasks/ directory using the file-todos skill. Create todo files immediately after synthesis - do NOT present findings for user approval first. Use the skill for structured todo management. </critical_requirement>
 
 #### Step 1: Synthesize All Findings
 
@@ -220,7 +220,7 @@ Remove duplicates, prioritize by severity and impact.
 <synthesis_tasks>
 
 - [ ] Collect findings from all parallel agents
-- [ ] Discard any findings that recommend deleting or gitignoring files in `04_Operations/05_Plans/` or `04_Operations/06_Solutions/` (see Protected Artifacts above)
+- [ ] Discard any findings that recommend deleting or gitignoring files in `05_Scripts/05_Plans/` or `05_Scripts/06_Solutions/` (see Protected Artifacts above)
 - [ ] Categorize by type: security, performance, architecture, quality, etc.
 - [ ] Assign severity levels: 🔴 CRITICAL (P1), 🟡 IMPORTANT (P2), 🔵 NICE-TO-HAVE (P3)
 - [ ] Remove duplicate or overlapping findings
@@ -238,7 +238,7 @@ Remove duplicates, prioritize by severity and impact.
 
 - Create todo files directly using Write tool
 - All findings in parallel for speed
-- Use standard template from `01_Personal_Os/00_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
+- Use standard template from `01_Personal_Os/00_Core/02_Tools/02_Skills/file-04_Tasks/assets/todo-template.md`
 - Follow naming convention: `{issue_id}-pending-{priority}-{description}.md`
 
 **Option B: Sub-Agents in Parallel (Recommended for Scale)** For large PRs with 15+ findings, use sub-agents to create finding files in parallel:
@@ -284,7 +284,7 @@ Sub-agents can:
    ```
 
    The skill provides:
-   - Template location: `01_Personal_Os/00_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
+   - Template location: `01_Personal_Os/00_Core/02_Tools/02_Skills/file-04_Tasks/assets/todo-template.md`
    - Naming convention: `{issue_id}-{status}-{priority}-{description}.md`
    - YAML frontmatter structure: status, priority, issue_id, tags, dependencies
    - All required sections: Problem Statement, Findings, Solutions, etc.
@@ -304,7 +304,7 @@ Sub-agents can:
    004-pending-p3-unused-parameter.md
    ```
 
-5. Follow template structure from file-todos skill: `01_Personal_Os/00_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md`
+5. Follow template structure from file-todos skill: `01_Personal_Os/00_Core/02_Tools/02_Skills/file-04_Tasks/assets/todo-template.md`
 
 **Todo File Structure (from template):**
 
@@ -395,7 +395,7 @@ After creating all todo files, present comprehensive summary:
 
 2. **Triage All Todos**:
    ```bash
-   ls 03_Tasks/*-pending-*.md  # View all pending todos
+   ls 04_Tasks/*-pending-*.md  # View all pending todos
    /triage                  # Use slash command for interactive triage
    ```
 ````
@@ -409,7 +409,7 @@ After creating all todo files, present comprehensive summary:
 4. **Track Progress**:
    - Rename file when status changes: pending → ready → complete
    - Update Work Log as you work
-   - Commit todos: `git add 03_Tasks/ && git commit -m "refactor: add code review findings"`
+   - Commit todos: `git add 04_Tasks/ && git commit -m "refactor: add code review findings"`
 
 ### Severity Breakdown:
 

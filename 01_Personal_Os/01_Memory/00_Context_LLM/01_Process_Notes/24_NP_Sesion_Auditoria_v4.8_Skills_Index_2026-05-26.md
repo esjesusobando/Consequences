@@ -34,10 +34,10 @@ Auditar focalizadamente el Área 01 (Creación de Contenidos) de skills tras mig
 
 ## 3. Hallazgos
 
-### Bug 1 — Path hardcodeado `04_Operations/03_Scripts_Os` en `18_Generacion_Contenido.py`
+### Bug 1 — Path hardcodeado `05_Scripts` en `18_Generacion_Contenido.py`
 
 **Archivo:** `20_Marketing_Scripts/18_Generacion_Contenido.py`
-**Problema:** El script referenciaba `_root / "04_Operations/03_Scripts_Os"` para auto-detectar la raíz del proyecto, pero `04_Operations/03_Scripts_Os/` fue renombrado a `04_Operations/03_Scripts_Os/` durante la migración v4.6→v4.7.
+**Problema:** El script referenciaba `_root / "05_Scripts"` para auto-detectar la raíz del proyecto, pero `05_Scripts/` fue renombrado a `05_Scripts/` durante la migración v4.6→v4.7.
 **Fix:** Cambiado a `_root / "04_Operations" / "03_Scripts_Os"`.
 
 ### Bug 2 — Banner version string inconsistente

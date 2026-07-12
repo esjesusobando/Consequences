@@ -52,5 +52,5 @@ Ser el sistema operativo de conocimiento que permite a un equipo reducido operar
 | Proyecto | Área | Estado |
 |----------|------|--------|
 | Capital Token — Fase 1 | 10_Shared_Org | 🟡 En progreso |
-| Auto-Improvement | 04_Operations/01_Auto_Improvement | ✅ Activo (cada 8h) |
+| Auto-Improvement | 05_Scripts/01_Auto_Improvement | ✅ Activo (cada 8h) |
 | [TBD: proyectos de clientes] | — | — |

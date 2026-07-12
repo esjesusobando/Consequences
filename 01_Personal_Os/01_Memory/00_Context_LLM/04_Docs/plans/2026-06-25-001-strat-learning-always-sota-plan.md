@@ -173,7 +173,7 @@ steps:
 **Qué:** Crear un CLAUDE.md para cada proyecto de marketing del OS
 
 **Archivos:**
-- `01_Personal_Os/04_Operations/05_Projects/XX_Nombre_Proyecto/CLAUDE.md`
+- `01_Personal_Os/06_Projects/XX_Nombre_Proyecto/CLAUDE.md`
 - O en la raíz del proyecto correspondiente
 
 **Contenido mínimo:**
@@ -190,7 +190,7 @@ steps:
 
 **Archivos:**
 - Skills YAML (incluir `plan: true` o step de planning)
-- Posible script hook en `01_Personal_Os/04_Operations/03_Scripts_Os/`
+- Posible script hook en `01_Personal_Os/05_Scripts/`
 
 **Ganancia directa:** Reducción de errores costosos. El video dice que `/plan` ahorra tokens significativamente porque evita ejecución ciega.
 

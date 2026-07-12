@@ -15,14 +15,14 @@ Ejecutar al inicio de cada sesión para cargar el contexto completo del sistema:
 
 2. **Cargar Memoria de Largo Plazo (AGENTE)**:
    - Ejecutar `mem_search()` con project="Think_Different" para recuperar contexto previo.
-   - Leer `04_Operations/04_Memory_Brain/` — mapa del sistema actualizado.
+   - Leer `05_Scripts/04_Memory_Brain/` — mapa del sistema actualizado.
 
 3. **Revisar Notas de Proceso (USUARIO)**:
-   - Leer los archivos más recientes en `04_Operations/03_Process_Notes/`.
+   - Leer los archivos más recientes en `05_Scripts/03_Process_Notes/`.
    - Ejecutar `mem_save()` para guardar aprendizajes clave de cada sesión.
 
 4. **Sincronizar Estado de Tareas**:
-   - Leer `03_Tasks/` — identificar tareas `status: s` (en progreso) y `status: b` (bloqueadas).
+   - Leer `04_Tasks/` — identificar tareas `status: s` (en progreso) y `status: b` (bloqueadas).
    - Leer `00_Winter_is_Coming/GOALS.md` para alinear foco del día.
 
 5. **Verificar MCPs disponibles** (opcional):

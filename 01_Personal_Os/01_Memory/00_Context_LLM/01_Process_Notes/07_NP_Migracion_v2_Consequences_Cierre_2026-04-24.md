@@ -28,7 +28,7 @@ Todos los documentos del backup estratégico actualizados a v2.0:
 ### 2. Fix Beautifier — COMPLETADO
 **Problema:** `35_Beautify_Tables.py` detectaba líneas `|---` en árboles de directorio dentro de code blocks y las convertía en tablas markdown enormes.
 
-**Fix aplicado** en `01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/35_Beautify_Tables.py`:
+**Fix aplicado** en `01_Personal_Os/05_Scripts/10_Legacy/35_Beautify_Tables.py`:
 - Variable `in_code_block = False` para trackear estado
 - Al detectar triple-backtick: flush de tabla pendiente + toggle estado
 - Dentro de code block: lines pasan directo sin procesamiento
@@ -44,7 +44,7 @@ Todos los documentos del backup estratégico actualizados a v2.0:
 - skills: `00_Core/03_Skills` → `01_Personal_Os/00_Core/02_Tools/02_Skills`
 - agents: `00_Core/04_Agents` → `01_Personal_Os/00_Core/02_Tools/01_Agents`
 - hooks: `00_Core/07_Hooks` → `01_Personal_Os/00_Core/02_Tools/05_Hooks`
-- hubs: `03_Scripts_Os` → `01_Personal_Os/04_Operations/03_Scripts_Os`
+- hubs: `03_Scripts_Os` → `01_Personal_Os/05_Scripts`
 - rules: `00_Core/01_Rules` → `01_Personal_Os/00_Core/01_Rules`
 
 ### 4. Claude Code — COMPLETADO
@@ -80,7 +80,7 @@ El usuario pidió un check de que todas las metodologías estén integradas y ac
 - Hillary (inbox, tareas)
 - Auto-Improvement Engine (`01_Auto_Improvement/` — detector, analyzer, executor, learner)
 
-Explorar: `01_Personal_Os/04_Operations/01_Auto_Improvement/`
+Explorar: `01_Personal_Os/05_Scripts/01_Auto_Improvement/`
 
 ### P3 — Validar Engram funcionando al 100%
 Usuario pidió validar que Engram esté activo y funcional. Hacer:

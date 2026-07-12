@@ -122,7 +122,7 @@ El backup `.agent/02_Skills/` NO refleja la estructura actual del source. Las á
 
 | Componente    | Path                                                       | Estado |
 |---------------|------------------------------------------------------------|--------|
-| Sound Engine  | `01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py` | ✅ OK  |
+| Sound Engine  | `01_Personal_Os/05_Scripts/00_Sound_Engine.py` | ✅ OK  |
 | Sound Hook    | `01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/notification.py` | ✅ OK  |
 | Claude Hooks  | `.claude/settings.json` → `.agent/04_Extensions/01_Hooks/`        | ✅ OK  |
 | Codex Hooks   | `.codex/hooks.json` → `.agent/04_Extensions/01_Hooks/` (FIXED)   | ✅ OK  |

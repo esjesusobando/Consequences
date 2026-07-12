@@ -1,6 +1,6 @@
 ﻿---
 description: PILAR 04: Gestión Estratégica, Flujos y Observabilidad (Mente AI-Prime)
-globs: **/*.md, 03_Tasks/**/_, 01_Personal_Os/04_Operations/03_Scripts_Os/**/_
+globs: **/*.md, 04_Tasks/**/_, 01_Personal_Os/05_Scripts/**/_
 alwaysApply: true
 ---
 
@@ -21,12 +21,12 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
 ├── 01_Core/               # Motor: Skills, Agents, MCPs 💾
 ├── 02_Knowledge/          # Documentación
-├── 03_Tasks/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
+├── 04_Tasks/            # Tareas activas
+├── 05_Scripts/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 01_Personal_Os/04_Operations/05_Projects/        
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/06_Projects/        
+├── 01_Personal_Os/05_Scripts/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -37,7 +37,7 @@ Think_Different/
 
 1.  **Contexto Atómico**: Una Tarea = Un Chat. Resetear el contexto al cambiar de objetivo para evitar la degradación y el ruido.
 2.  **Ciclo de Tarea**: Triage -> Plan -> Ejecución (Progreso 10%) -> Verificación (Walkthrough) -> Aprendizaje (Reglas).
-3.  **The Golden Loop**: Cada error debe inyectarse en las reglas. Las Notas de Proceso (`04_Operations/03_Process_Notes/`) son la memoria persistente del sistema.
+3.  **The Golden Loop**: Cada error debe inyectarse en las reglas. Las Notas de Proceso (`05_Scripts/03_Process_Notes/`) son la memoria persistente del sistema.
 4.  **Ingesta de Contexto**: Todo workflow DEBE comenzar obligando al asistente a leer las reglas vigentes.
 5.  **Observabilidad CoT**: El razonamiento (`thought_process`) debe ser transparente y documentado.
 6.  **Eficiencia de Tokens**: Monitorear el ratio `CoT / Response`.

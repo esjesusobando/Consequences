@@ -69,7 +69,7 @@
 │  Ubicaciones:                                                 │
 │    - 02_Playground/07_Zero_Consequences/.../node_modules/    │
 │    - 03_Resultado/02_Experimentos/00_World_OIM/.../node_modules/ │
-│    - 01_Personal_Os/04_Operations/05_Projects/.../node_modules/  │
+│    - 01_Personal_Os/06_Projects/.../node_modules/  │
 │                                                              │
 │  Acción: Agregar node_modules/ a .gitignore si no está       │
 │  Impacto: -462 archivos de ruido en git                      │
@@ -98,7 +98,7 @@
 Los 462 READMEs en node_modules son de proyectos en:
 - `02_Playground/07_Zero_Consequences/` — App React/Firebase
 - `03_Resultado/02_Experimentos/00_World_OIM/` — Website Next.js
-- `01_Personal_Os/04_Operations/05_Projects/09_Valeria/` — Proyecto Valeria
+- `01_Personal_Os/06_Projects/09_Valeria/` — Proyecto Valeria
 
 **Recomendación:** Verificar si `.gitignore` ya excluye `node_modules/`. Si no, agregarlo.
 

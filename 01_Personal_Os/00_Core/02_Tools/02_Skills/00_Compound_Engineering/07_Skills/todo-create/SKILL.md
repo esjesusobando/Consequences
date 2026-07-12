@@ -9,16 +9,16 @@ sota_upgraded: true
 
 ## Overview
 
-The `.context/compound-engineering/03_Tasks/` directory is a file-based tracking system for code review feedback, technical debt, feature requests, and work items. Each todo is a markdown file with YAML frontmatter.
+The `.context/compound-engineering/04_Tasks/` directory is a file-based tracking system for code review feedback, technical debt, feature requests, and work items. Each todo is a markdown file with YAML frontmatter.
 
-> **Legacy support:** Always check both `.context/compound-engineering/03_Tasks/` (canonical) and `03_Tasks/` (legacy) when reading. Write new todos only to the canonical path. This directory has a multi-session lifecycle -- do not clean it up as scratch.
+> **Legacy support:** Always check both `.context/compound-engineering/04_Tasks/` (canonical) and `04_Tasks/` (legacy) when reading. Write new todos only to the canonical path. This directory has a multi-session lifecycle -- do not clean it up as scratch.
 
 ## Directory Paths
 
 | Purpose                                                     | Path                                                                       |
 |------------------------------------------------------------|---------------------------------------------------------------------------|
-| **Canonical (write here)**                                  | `.context/compound-engineering/03_Tasks/`                                  |
-| **Legacy (read-only)**                                      | `03_Tasks/`                                                                |
+| **Canonical (write here)**                                  | `.context/compound-engineering/04_Tasks/`                                  |
+| **Legacy (read-only)**                                      | `04_Tasks/`                                                                |
 
 ## File Naming Convention
 
@@ -57,7 +57,7 @@ dependencies: ["001"]     # Issue IDs this is blocked by
 
 ### Creating a New Todo
 
-1. `mkdir -p .context/compound-engineering/03_Tasks/`
+1. `mkdir -p .context/compound-engineering/04_Tasks/`
 2. Search both paths for `[0-9]*-*.md`, find the highest numeric prefix, increment, zero-pad to 3 digits.
 3. Read [todo-template.md](./assets/todo-template.md), write to canonical path as `{NEXT_ID}-pending-{priority}-{description}.md`.
 4. Fill Problem Statement, Findings, Proposed Solutions, Acceptance Criteria, and initial Work Log entry.

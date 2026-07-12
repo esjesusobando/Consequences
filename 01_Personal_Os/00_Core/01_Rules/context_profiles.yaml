@@ -14,7 +14,7 @@ admin:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/processes/01-proyecto-kickoff.md"
   optional:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/processes/02-reporte-semanal.md"
-    - "01_Personal_Os/03_Task/"
+    - "01_Personal_Os/04_Tasks/"
   excluded:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/finance-agent.md"
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/hr-agent.md"
@@ -26,7 +26,7 @@ finance:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/metrics/capital-token-dashboard.md"
   optional:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/processes/02-reporte-semanal.md"
-    - "01_Personal_Os/03_Task/"
+    - "01_Personal_Os/04_Tasks/"
   excluded:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/admin-config.yaml"
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/hr-agent.md"
@@ -38,7 +38,7 @@ hr:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/processes/01-proyecto-kickoff.md"
   optional:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/decisions/001-capital-token-hibrido.md"
-    - "01_Personal_Os/03_Task/"
+    - "01_Personal_Os/04_Tasks/"
   excluded:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/admin-config.yaml"
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/finance-agent.md"
@@ -50,7 +50,7 @@ marketing_strategist:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/decisions/001-capital-token-hibrido.md"
   optional:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/playbooks/01-onboarding-nuevo-cliente.md"
-    - "01_Personal_Os/03_Task/"
+    - "01_Personal_Os/04_Tasks/"
   excluded:
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/admin-config.yaml"
     - "01_Personal_Os/02_Knowledge/10_Shared_Org/agents/finance-agent.md"
@@ -93,4 +93,4 @@ task_types:
   coordination:
     boost:
       - "01_Personal_Os/02_Knowledge/10_Shared_Org/processes/01-proyecto-kickoff.md"
-      - "01_Personal_Os/03_Task/"
+      - "01_Personal_Os/04_Tasks/"

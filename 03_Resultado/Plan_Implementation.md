@@ -31,7 +31,7 @@ Unificar las métricas del sistema PersonalOS (agentes, skills, HUBs, scripts, w
 
 ## FASE 1 — System_Mapper_Hub.py ✅
 
-**Archivo:** `01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py`
+**Archivo:** `01_Personal_Os/05_Scripts/03_Scripts_Os/20_System_Mapper_Hub.py`
 
 ### 1.1 scan_agents() — Categorización por subdirectorio
 
@@ -103,9 +103,9 @@ Se genera README.md en `00_Manifest/` con tabla de counts, ground truth, y refer
 | `01_Personal_Os/00_Core/01_Inventario_Core.md` | Counts sync |
 | `01_Personal_Os/00_Core/02_Tools/README.md` | Agent/skill tree + table update |
 | `01_Personal_Os/00_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md` | Tree + footer sync |
-| `01_Personal_Os/04_Operations/README.md` | Agent count sync |
-| `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/README.md` | JARVIS tree + manifest table |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md` | Counts + table entries |
+| `01_Personal_Os/05_Scripts/README.md` | Agent count sync |
+| `01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/README.md` | JARVIS tree + manifest table |
+| `01_Personal_Os/05_Scripts/03_Scripts_Os/SCRIPTS_INDEX.md` | Counts + table entries |
 | `Structure_v4.9.md` | Tree + agent table sync |
 | `.agent/CLAUDE.md` | Mirror doc - 11 stale fixes |
 | `.agent/README.md` | Mirror doc - 9 stale fixes |

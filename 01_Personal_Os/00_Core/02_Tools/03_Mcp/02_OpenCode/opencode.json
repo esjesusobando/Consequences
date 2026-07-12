@@ -268,7 +268,7 @@
       "type": "local",
       "command": [
         "bash",
-        "04_Operations/03_Scripts_Os/testsprite_failover.sh"
+        "05_Scripts/testsprite_failover.sh"
       ]
     },
     "Linear": {

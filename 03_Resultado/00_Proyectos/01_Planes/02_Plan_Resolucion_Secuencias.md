@@ -24,8 +24,8 @@ Las carpetas `00_*` **NO se tocan** — son carpetas quemadas/fijas del sistema.
 
 | Ubicación                         | Estado Esperado                      | Estado Actual                    |
 |----------------------------------|-------------------------------------|---------------------------------|
-| `04_Operations/`                  | 00_, 01_, 02_, 03_, 04_              | Faltan carpetas 04               |
-| `03_Task/`                        | 00_-07                               | Solo 00_, 01_, 08_               |
+| `05_Scripts/`                  | 00_, 01_, 02_, 03_, 04_              | Faltan carpetas 04               |
+| `04_Tasks/`                        | 00_-07                               | Solo 00_, 01_, 08_               |
 | `02_Tools/` (skills)              | Secuencial por área                  | Requiere validación              |
 
 ---
@@ -75,7 +75,7 @@ Archivo: `03_Resultado/04_Reportes/SEQUENCE_INVENTORY.md`
 ### Formato del reporte
 
 ```markdown
-## Directorio: 01_Personal_Os/04_Operations/
+## Directorio: 01_Personal_Os/05_Scripts/
 
 | #                 | Carpeta                       | Status                | Acción                         |
 |------------------|------------------------------|----------------------|-------------------------------|
@@ -90,8 +90,8 @@ Archivo: `03_Resultado/04_Reportes/SEQUENCE_INVENTORY.md`
 
 | Prioridad                | Directorio                                      | Razón                                |
 |-------------------------|------------------------------------------------|-------------------------------------|
-| 🔴 ALTA                   | `01_Personal_Os/04_Operations/`                 | HUBs + Scripts críticos              |
-| 🔴 ALTA                   | `01_Personal_Os/03_Task/`                       | Tareas activas                       |
+| 🔴 ALTA                   | `01_Personal_Os/05_Scripts/`                 | HUBs + Scripts críticos              |
+| 🔴 ALTA                   | `01_Personal_Os/04_Tasks/`                       | Tareas activas                       |
 | 🟡 MEDIA                  | `01_Personal_Os/00_Core/02_Tools/`              | Skills + Agents                      |
 | 🟡 MEDIA                  | `01_Personal_Os/00_Core/01_Rules/`              | Reglas del sistema                   |
 | 🟡 MEDIA                  | `02_Playground/`                                | Zones de prueba                      |
@@ -124,10 +124,10 @@ git branch backup-pre-sequence-fix
 
 ```bash
 # 1. Generar inventario
-python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/16_System_Mapper_Hub.py --scan
 
 # 2. Generar reporte
-python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --sequence-report
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/16_System_Mapper_Hub.py --sequence-report
 
 # 3. Aplicar fixes manualmente (uno por uno)
 # 4. Validar después de cada fix

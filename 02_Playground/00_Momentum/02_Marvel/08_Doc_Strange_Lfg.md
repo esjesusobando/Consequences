@@ -13,14 +13,14 @@ Ejecutar en orden. No saltarse pasos.
 
 ### FASE 1 — Contexto y Arquitectura
 
-1. **Cargar contexto completo**: `AGENTS.md` + `00_Core/01_Rules/` + `04_Operations/00_Context_Memory/` + **Engram** + `04_Operations/03_Process_Notes/`
+1. **Cargar contexto completo**: `AGENTS.md` + `00_Core/01_Rules/` + `05_Scripts/00_Context_Memory/` + **Engram** + `05_Scripts/03_Process_Notes/`
 2. **Mapear impacto**: Identificar todos los archivos, módulos y dependencias afectados
 3. **Brainstorm**: Ejecutar `01_Spider_Brainstorm` — explorar 2-3 enfoques antes de comprometerse
 4. **Checkpoint 1**: Confirmar enfoque con el usuario antes de continuar
 
 ### FASE 2 — Plan y Tests
 
-1. **Plan detallado**: Ejecutar `02_Professor_X_Plan` — plan formal en `03_Tasks/`
+1. **Plan detallado**: Ejecutar `02_Professor_X_Plan` — plan formal en `04_Tasks/`
 2. **Tests RED** *(si aplica)*: Escribir tests que fallen primero (TDD)
 3. **Checkpoint 2**: Validar que el plan cubre todos los casos edge
 

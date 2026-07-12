@@ -29,7 +29,7 @@
 | **Main Issue**                                 | Old path still referenced in 3600+ locations                              |
 
 **Primary Source of Truth File:**
-- `04_Operations/01_Auto_Improvement/99_Utils/update_workflows.py` - Contains the migration logic
+- `05_Scripts/01_Auto_Improvement/99_Utils/update_workflows.py` - Contains the migration logic
 
 **Common Broken References:**
 - Import statements
@@ -67,14 +67,14 @@
 
 ---
 
-### 1.4 Path: `03_Tasks/` (Should be `.context/compound-engineering/03_Tasks/`)
+### 1.4 Path: `04_Tasks/` (Should be `.context/compound-engineering/04_Tasks/`)
 
 | Metric                                         | Value                                                           |
 |-----------------------------------------------|----------------------------------------------------------------|
 | **Matches Found**                              | 125                                                             |
 | **Status**                                     | ⚠️ MEDIUM - Legacy todo references                              |
 
-**Note:** New canonical path is `.context/compound-engineering/03_Tasks/` but legacy `03_Tasks/` still referenced in documentation and some skills.
+**Note:** New canonical path is `.context/compound-engineering/04_Tasks/` but legacy `04_Tasks/` still referenced in documentation and some skills.
 
 ---
 
@@ -159,9 +159,9 @@
 | Directory                                     | Expected Path                                                     | Status                                |
 |----------------------------------------------|------------------------------------------------------------------|--------------------------------------|
 | Skills                                        | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                      | ✅ EXISTS                              |
-| Auto-Improvement                              | `04_Operations/01_Auto_Improvement/`                              | ✅ EXISTS                              |
+| Auto-Improvement                              | `05_Scripts/01_Auto_Improvement/`                              | ✅ EXISTS                              |
 | Scripts OS                                    | `03_Scripts_Os/`                                                  | ✅ EXISTS                              |
-| Tasks                                         | `03_Tasks/`                                                       | ✅ EXISTS                              |
+| Tasks                                         | `04_Tasks/`                                                       | ✅ EXISTS                              |
 
 ---
 
@@ -200,7 +200,7 @@ Output:
    - 580 references in scripts
    - Risk: Script failures
 
-4. **Todo System Path: `03_Tasks/` → `.context/compound-engineering/03_Tasks/`**
+4. **Todo System Path: `04_Tasks/` → `.context/compound-engineering/04_Tasks/`**
    - 125 references
    - Risk: Lost todo items
 
@@ -209,12 +209,12 @@ Output:
 ## 6. RECOMMENDATIONS
 
 ### Priority 1 (Critical)
-- [ ] Run `04_Operations/01_Auto_Improvement/99_Utils/update_workflows.py` to fix `04_Operations` → `04_Operations`
+- [ ] Run `05_Scripts/01_Auto_Improvement/99_Utils/update_workflows.py` to fix `04_Operations` → `04_Operations`
 - [ ] Audit and migrate `00_Core/03_Skills` references
 
 ### Priority 2 (Important)
 - [ ] Update all scripts referencing `04_Operations` → `04_Operations`
-- [ ] Update documentation to reflect canonical `.context/compound-engineering/03_Tasks/`
+- [ ] Update documentation to reflect canonical `.context/compound-engineering/04_Tasks/`
 
 ### Priority 3 (Nice to Have)
 - [ ] Clean up legacy backup directories
@@ -238,7 +238,7 @@ Output:
 ## 8. ARTIFACTS
 
 This audit saved to:
-- `04_Operations/01_Auto_Improvement/99_Utils/AUDIT_REPORT_SDD_2026-03-30.md`
+- `05_Scripts/01_Auto_Improvement/99_Utils/AUDIT_REPORT_SDD_2026-03-30.md`
 
 ---
 

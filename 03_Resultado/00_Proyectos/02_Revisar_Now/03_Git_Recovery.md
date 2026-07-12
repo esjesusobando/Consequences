@@ -50,8 +50,8 @@ cp Think_Different_Backup_2026-04-21.zip ~/OneDrive/Backups/
 ## Documentación Creada
 
 - `03_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`
-- `04_Operations/03_Process_Notes/05_NP_Auditoria_Rutas_Correccion_2026-04-21.md`
-- `04_Operations/00_Context_Memory/04_CTX_Auditoria_Rutas_2026-04-21.md`
+- `05_Scripts/03_Process_Notes/05_NP_Auditoria_Rutas_Correccion_2026-04-21.md`
+- `05_Scripts/00_Context_Memory/04_CTX_Auditoria_Rutas_2026-04-21.md`
 - `Now/02_Revisar_Now/01_Revision_Sesion.md`
 
 ---

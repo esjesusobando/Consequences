@@ -19,7 +19,7 @@ Esta habilidad implementa el sistema de 5 pasos para el desarrollo impulsado por
 1.  **Investigación Profunda**: Analiza el codebase actual, dependencias, esquemas de base de datos y patrones arquitectónicos. No asumas nada; verifica los archivos reales.
 2.  **Análisis de Enfoques**: Considera al menos 2 o 3 formas de resolver el problema. Evalúa pros y contras.
 3.  **Generación de la Recomendación**: Elige el mejor enfoque y justifica por qué es la solución técnica superior.
-4.  **Redacción de la Tarea**: Crea un archivo en `03_Task/` usando la plantilla estándar. Asegúrate de incluir:
+4.  **Redacción de la Tarea**: Crea un archivo en `04_Tasks/` usando la plantilla estándar. Asegúrate de incluir:
     - Criterios de éxito medibles.
     - Requisitos funcionales y no funcionales.
     - Análisis de impacto de segundo orden.

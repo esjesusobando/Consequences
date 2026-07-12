@@ -34,8 +34,8 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | `00_Winter_is_Coming/`                          | ✅                                 | ✅ 01_Personal_Os/11_AGENTS.md v1.0                          | PASS                              |
 | `00_Core/`                                      | ✅                                 | ✅ Skills/Rules/MCPs/Hooks                                   | PASS                              |
 | `02_Knowledge/`                                 | ✅                                 | ✅ Audit + Edge Cases                                        | PASS                              |
-| `03_Tasks/`                                     | ✅                                 | ✅ Templates + YAML                                          | PASS                              |
-| `04_Operations/`                                | ✅                                 | ✅ Auto-Improvement Engine                                   | PASS                              |
+| `04_Tasks/`                                     | ✅                                 | ✅ Templates + YAML                                          | PASS                              |
+| `05_Scripts/`                                | ✅                                 | ✅ Auto-Improvement Engine                                   | PASS                              |
 | `05_Archive/`                                   | ✅                                 | ✅ Legacy archivado                                          | PASS                              |
 | `06_Playground/`                                | ✅                                 | ✅ Área experimental                                         | PASS                              |
 | `07_Projects/`                                  | ✅                                 | ✅ 8 proyectos históricos                                    | PASS                              |

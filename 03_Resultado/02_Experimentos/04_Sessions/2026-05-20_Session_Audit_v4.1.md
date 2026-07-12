@@ -17,7 +17,7 @@ Auditoría completa del sistema operativo personal. Objetivo: llevar health scor
 ### 1. Auditoría de Salud
 - **Inicio:** 92/100 ❌
 - **Final:** 100/100 ✅ **PURE GREEN**
-- Health check: `python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py`
+- Health check: `python 01_Personal_Os/05_Scripts/03_Scripts_Os/17_Watchdog_Hub.py`
 
 ### 2. Limpieza de Playground
 Carpetas eliminadas (ya integradas al OS):

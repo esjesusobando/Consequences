@@ -39,7 +39,7 @@ sota_upgraded: true
 ## 💾 State Persistence
 
 Seguimiento de ejecución en:
-- `03_Tasks/` — Tasks en progreso
+- `04_Tasks/` — Tasks en progreso
 - Checkpoint reports entre batches
 
 # Executing Plans

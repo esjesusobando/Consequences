@@ -20,7 +20,7 @@ Ejecutar en orden. No saltarse pasos.
 
 ### FASE 2 — Plan y Tests
 
-1. **Plan detallado**: Ejecutar `02_Professor_X_Plan` — plan formal en `03_Tasks/`
+1. **Plan detallado**: Ejecutar `02_Professor_X_Plan` — plan formal en `04_Tasks/`
 2. **Tests RED** *(si aplica)*: Escribir tests que fallen primero (TDD)
 3. **Checkpoint 2**: Validar que el plan cubre todos los casos edge
 

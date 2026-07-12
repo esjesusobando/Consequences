@@ -474,7 +474,7 @@ El sistema entero esta indexado. No hay informacion perdida.
 
 ```bash
 # Desde raiz del proyecto:
-cd 01_Personal_Os/04_Operations/01_Auto_Improvement
+cd 01_Personal_Os/05_Scripts/01_Auto_Improvement
 
 # Escaneo rapido
 python -X utf8 04_Triggers/manual_trigger.py --scan --path "C:/Users/sebas/Desktop/Think_Different"

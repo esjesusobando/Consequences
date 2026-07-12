@@ -183,8 +183,8 @@ Template: mismo formato con sus sub-áreas reales en disco.
 |-----------------------------------------------------------------------------|-------------------------------------------|
 | `01_Personal_Os/00_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`         | Paths stale + duplicados                   |
 | `01_Personal_Os/02_Knowledge/02_Research/04_INVENTARIO_INTEGRADO_SISTEMAS.md`| Paths stale                                |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                | Número de área                             |
-| `01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md`   | Path stale                                 |
+| `01_Personal_Os/05_Scripts/03_Scripts_Os/SCRIPTS_INDEX.md`                | Número de área                             |
+| `01_Personal_Os/05_Scripts/01_Auto_Improvement/AUDITORIA_2026-04-23.md`   | Path stale                                 |
 | `.claude-plugin/plugin.json`                                                 | Glob pattern de skills **SOLO si está mal**|
 
 ---

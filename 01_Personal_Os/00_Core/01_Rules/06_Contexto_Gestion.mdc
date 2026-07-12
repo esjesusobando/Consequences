@@ -82,7 +82,7 @@ alwaysApply: true
 
 ### Fallback
 
-- Si Engram unavailable → Leer archivos en 01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/
+- Si Engram unavailable → Leer archivos en 01_Personal_Os/01_Memory/00_Context_Memory/
 - Buscar SUMMARY*.md más reciente
 
 ---

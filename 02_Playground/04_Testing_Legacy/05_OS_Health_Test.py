@@ -26,7 +26,7 @@ if sys.platform == "win32":
 
 # Resolver ROOT
 ROOT = Path(__file__).parent.parent
-SCRIPTS_OS = ROOT / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
+SCRIPTS_OS = ROOT / "01_Personal_Os" / "05_Scripts" / "03_Scripts_Os"
 sys.path.insert(0, str(SCRIPTS_OS))
 
 # ─────────────────────────────────────────────────────────────
@@ -327,7 +327,7 @@ def t09_beautifier():
 
 def t10_auto_improvement():
     """Auto-Improvement Engine — importa sin errores."""
-    engine_dir = ROOT / "01_Personal_Os" / "04_Operations" / "01_Auto_Improvement" / "01_Engine"
+    engine_dir = ROOT / "01_Personal_Os" / "05_Scripts" / "01_Auto_Improvement" / "01_Engine"
     engine_py  = engine_dir / "recursive_improvement_engine.py"
     if not engine_py.exists():
         return TestResult("T10", "Auto-Improvement Engine — import", False,
@@ -377,7 +377,7 @@ def t11_mcps():
 
 def t12_hillary():
     """Hillary / Task — estructura presente."""
-    task_dir  = ROOT / "01_Personal_Os" / "03_Task"
+    task_dir  = ROOT / "01_Personal_Os" / "04_Tasks"
     inbox     = task_dir / "02_Hillary_Inbox"
     done      = task_dir / "01_Tasks_Done"
     templates = task_dir / "00_Templates"

@@ -84,8 +84,8 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - ✅ Solo se eliminó información cuando fue necesario corregir errores (rutas incorrectas, etc.)
 
 ### 5. DOCUMENTACIÓN CREADA
-- NOTAS_DE_PROCESO.md → 01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/22_NP_Sesion_Auditoria_Estado_del_Arte_v4.7.md
-- Context_Memory.md → 01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/01_CTX_Sesion_Auditoria_Estado_del_Arte_v4.7.md
+- NOTAS_DE_PROCESO.md → 01_Personal_Os/05_Scripts/00_Context_LLM/01_Process_Notes/22_NP_Sesion_Auditoria_Estado_del_Arte_v4.7.md
+- Context_Memory.md → 01_Personal_Os/05_Scripts/00_Context_LLM/00_Context_Memory/01_CTX_Sesion_Auditoria_Estado_del_Arte_v4.7.md
 - ORGANIZACION_SUMMARY.md → 03_Resultado/ORGANIZACION_SUMMARY.md
 - READMEs para cada área de 03_Resultado
 - COMPLETION_SUMMARY.md (este documento)
@@ -183,7 +183,7 @@ Ejecutar pipeline completo de SOTA upgrade para agentes de marketing (15, 16, 17
   - .opencode/plugins/graphify.js.bak — updated
   - .cursor/rules/graphify.mdc — updated
   - .claude/settings.json — updated
-  - 01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py — GRAPHIFY_BASE path updated
+  - 01_Personal_Os/05_Scripts/03_Scripts_Os/config_paths.py — GRAPHIFY_BASE path updated
 - ✅ 00_Winter_is_Coming/AGENTS.md verificado: sin referencias — no update needed
 
 ### 6. LEARNING ALWAYS
@@ -225,7 +225,7 @@ Ejecutar pipeline completo de SOTA upgrade para agentes de marketing (15, 16, 17
 - `01_Personal_Os/00_Core/02_Tools/01_Agents/01_Dream_Team/README.md` — updated
 - `openspec/changes/marketing-agents-sota-upgrade/` — full SDD artifacts
 - `02_Playground/Graphify_Out/` — moved from root
-- `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py` — path updated
+- `01_Personal_Os/05_Scripts/03_Scripts_Os/config_paths.py` — path updated
 - `AGENTS.md` (root) — reference updated
 - `CLAUDE.md` (root) — reference updated
 - `.opencode/plugins/graphify.js` — reference updated

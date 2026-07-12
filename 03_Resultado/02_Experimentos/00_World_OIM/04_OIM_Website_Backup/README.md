@@ -6,8 +6,8 @@
 > **Paths actualizados en v4.0:**
 > - `00_Core/` → `01_Personal_Os/00_Core/`
 > - `03_Skills/` → `01_Personal_Os/00_Core/02_Tools/02_Skills/`
-> - `03_Tasks/` → `01_Personal_Os/03_Task/`
-> - `03_Scripts_Os/` → `01_Personal_Os/04_Operations/03_Scripts_Os/`
+> - `04_Tasks/` → `01_Personal_Os/04_Tasks/`
+> - `03_Scripts_Os/` → `01_Personal_Os/05_Scripts/03_Scripts_Os/`
 > - `05_Archive/` → `01_Personal_Os/05_Archive/`
 
 ---
@@ -47,8 +47,8 @@ Think_Different/
 │   ├── 05_Mcp/              # Configuración MCP (Claude Code + OpenCode)
 │   └── 07_Hooks/            # Sistema de hooks (Pre/Post/Lifecycle/Sound)
 ├── 02_Knowledge/            ✅ Base de conocimiento, Docs, Research
-├── 03_Tasks/                ✅ Tareas activas con YAML frontmatter
-├── 04_Operations/           ✅ Auto-Improvement Engine (detector→analyzer→executor→learner)
+├── 04_Tasks/                ✅ Tareas activas con YAML frontmatter
+├── 05_Scripts/           ✅ Auto-Improvement Engine (detector→analyzer→executor→learner)
 ├── 05_Archive/              ✅ Repos, Legacy archivado
 ├── 06_Playground/           ✅ Área de pruebas y experimentos
 ├── 07_Projects/             ✅ Proyectos activos (8 historiales)
@@ -219,7 +219,7 @@ Code review automático integrado:
 
 | Tipo            | Patrón                | Ejemplo                      |
 | --------------- | --------------------- | ---------------------------- |
-| **Directorios** | `XX_Nombre/`          | `00_Core/`, `04_Operations/` |
+| **Directorios** | `XX_Nombre/`          | `00_Core/`, `05_Scripts/` |
 | **Archivos**    | `XX_Nombre.ext`       | `01_Report_Status.md`        |
 | **Scripts**     | `##_Nombre_Script.py` | `01_Auditor_Hub.py`          |
 | **Skills**      | `SKILL.md`            | En cada skill                |
@@ -252,7 +252,7 @@ Code review automático integrado:
 | **Super Campeones**      | Orquestación de agentes en equipo                  | Activado por defecto    |
 | **Compound Engineering** | Cada unidad de trabajo hace la siguiente más fácil | `/ce:*`                 |
 | **GGA**                  | Code review automático pre-commit                  | `.agent/05_GGA/bin/gga` |
-| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `04_Operations/`        |
+| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `05_Scripts/`        |
 
 ### Cómo funciona la orquestación
 

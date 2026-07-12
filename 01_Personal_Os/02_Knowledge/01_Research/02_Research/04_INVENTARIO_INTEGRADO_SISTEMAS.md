@@ -52,8 +52,8 @@ Framework operativo personal que integra agents, skills, workflows, y automatiza
 │       └── 07_Server/        ← Engram server
 ├── 02_Knowledge/
 │   └── 01_Research/          ← SOTA 2026, MCP Catalog
-├── 03_Task/                  ← Hillary system
-├── 04_Operations/
+├── 04_Tasks/                  ← Hillary system
+├── 05_Scripts/
 │   ├── 01_Auto_Improvement/  ← Sistema recursivo
 │   ├── 02_Agent_Teams_Lite/  ← SDD workflow
 │   └── 03_Scripts_Os/       ← 28 HUBs
@@ -66,7 +66,7 @@ Framework operativo personal que integra agents, skills, workflows, y automatiza
 | Agent Teams Lite                     | `02_Skills/05_Workflows/01_Agent_Teams_Lite/`                | SDD orchestration                 |
 | PM Agent Orchestrator                | `02_Skills/05_Workflows/04_PM_Orchestrator/`                 | Project management                |
 | Personal Life OS                     | `02_Skills/07_Personal_Os/01_Life_OS/`                       | Life optimization                 |
-| Hillary Integration                  | `03_Task/02_Hillary_Inbox/`                                  | Task capture                      |
+| Hillary Integration                  | `04_Tasks/02_Hillary_Inbox/`                                  | Task capture                      |
 
 ### Workflows
 | Workflow                           | File                                                  | Invoca                               |
@@ -284,7 +284,7 @@ Sistema de captura, clasificación y procesamiento de tareas con inbox y templat
 
 ### Arquitectura en PersonalOS
 ```
-01_Personal_Os/03_Task/
+01_Personal_Os/04_Tasks/
 ├── README.md                    ← Sistema Hillary
 ├── 00_Templates/                 ← 6 templates
 │   ├── 00_Task_Template_Skeleton.md
@@ -339,12 +339,12 @@ Motor de mejora recursiva que ejecuta ciclos Detect → Analyze → Execute → 
 
 ### Base (Origen)
 ```
-01_Personal_Os/04_Operations/01_Auto_Improvement/
+01_Personal_Os/05_Scripts/01_Auto_Improvement/
 ```
 
 ### Arquitectura Completa
 ```
-01_Personal_Os/04_Operations/01_Auto_Improvement/01_Auto_Improvement/
+01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Auto_Improvement/
 ├── 01_Engine/
 │   ├── detector.py         ← Detecta issues
 │   ├── analyzer.py         ← Prioriza
@@ -610,8 +610,8 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 |--------------------------------------------------------------------------------------------------|-------------------------------------------|
 | `00_Winter_is_Coming/AGENTS.md`                                                                   | Sistema operativo principal                |
 | `01_Personal_Os/00_Core/01_Rules/*.mdc`                                                           | 10 rules de calidad                        |
-| `01_Personal_Os/04_Operations/01_Auto_Improvement/recursive_improvement_engine.py`                | Motor recursivo                            |
-| `01_Personal_Os/03_Task/README.md`                                                                | Sistema Hillary                            |
+| `01_Personal_Os/05_Scripts/01_Auto_Improvement/recursive_improvement_engine.py`                | Motor recursivo                            |
+| `01_Personal_Os/04_Tasks/README.md`                                                                | Sistema Hillary                            |
 | `01_Personal_Os/00_Core/02_Tools/02_Skills/00_Compound_Engineering/SKILL.md`                      | Compound main                              |
 | `01_Personal_Os/07_Archive/05_Repos/07_Repos_Gentleman/`                                                   | Bases originales                           |
 

@@ -5,7 +5,7 @@ priority: P0
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/
+  - 01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio/
 ---
 
 # SDD — Elite_Portfolio Migration

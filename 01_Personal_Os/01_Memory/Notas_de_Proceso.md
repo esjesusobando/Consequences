@@ -72,11 +72,11 @@
 | 5  | `AGENTS.md` (Winter_is_Coming)     | `Hillary Life OS skill` apunta a `18_Personal_Life_OS/` (no existe)                                                                                 | 🔴 Broken     |
 | 6  | `AGENTS.md` (Winter_is_Coming)     | Section 7 HUBs header sin `03_Scripts_Os/`                                                                                                          | 🟡 Path       |
 | 7  | `AGENTS.md` (raíz)                 | 5 paths `05_Archive/` → deben ser `07_Archive/`                                                                                                     | 🔴 Broken     |
-| 8  | `GOALS.md`                         | `04_Operations/00_Context_LLM/` → debe ser `01_Memory/00_Context_LLM/`                                                                              | 🔴 Broken     |
-| 9  | `GOALS.md`                         | `04_Operations/03_Scripts_Os/` → debe ser `05_Scripts/00_HUBs/03_Scripts_Os/`                                                                       | 🔴 Broken     |
+| 8  | `GOALS.md`                         | `01_Memory/` → debe ser `01_Memory/00_Context_LLM/`                                                                              | 🔴 Broken     |
+| 9  | `GOALS.md`                         | `05_Scripts/` → debe ser `05_Scripts/00_HUBs/03_Scripts_Os/`                                                                       | 🔴 Broken     |
 | 10 | `GOALS.md`                         | `03_Task/` (2 ocurrencias) → debe ser `04_Tasks/`                                                                                                   | 🔴 Broken     |
 | 11 | `GOALS.md`                         | `RUNBOOK` sin `02_Docs/`                                                                                                                            | 🔴 Broken     |
-| 12 | `BACKLOG.md`                       | `04_Operations/07_Reports/` → debe ser `03_Resultado/07_Reports/`                                                                                   | 🔴 Broken     |
+| 12 | `BACKLOG.md`                       | `06_Projects/07_Reports/` → debe ser `03_Resultado/07_Reports/`                                                                                   | 🔴 Broken     |
 | 13 | `config_paths.py`                  | `AUTO_IMPROVEMENT_DIR` apunta a `05_Scripts/01_Auto_Improvement/` (inexistente) → el real es `03_Learning/01_Auto_Improvement/01_Auto_Improvement/` | 🔴 Broken     |
 | 14 | `01_Auditor_Hub.py`                | Shebang en línea 5 (debe ser línea 1)                                                                                                               | 🟡 Shebang    |
 | 15 | `20_System_Mapper_Hub.py`          | Shebang en línea 5 (debe ser línea 1) + nombre obsoleto `16_System_Mapper_Hub`                                                                      | 🟡 Shebang    |
@@ -95,11 +95,11 @@
 | `AGENTS.md` — Hillary Life OS skill       | `02_Skills/00_Personal_Os/18_Personal_Life_OS/` | `02_Skills/00_Personal_Os/04_Hillary_Life_OS/`                   | Path        |
 | `AGENTS.md` — Section 7 header            | `05_Scripts/00_HUBs/` (sin `03_Scripts_Os/`)    | `05_Scripts/00_HUBs/03_Scripts_Os/`                              | Path        |
 | `AGENTS.md` (raíz) — 5 refs               | `...07_Archive/...05_Archive/...`               | `...07_Archive/...07_Archive/...`                                | Path        |
-| `GOALS.md` — Context LLM                  | `04_Operations/00_Context_LLM/`                 | `01_Memory/00_Context_LLM/`                                      | Path        |
-| `GOALS.md` — Scripts de Motor             | `04_Operations/03_Scripts_Os/`                  | `05_Scripts/00_HUBs/03_Scripts_Os/`                              | Path        |
+| `GOALS.md` — Context LLM                  | `01_Memory/`                 | `01_Memory/00_Context_LLM/`                                      | Path        |
+| `GOALS.md` — Scripts de Motor             | `05_Scripts/`                  | `05_Scripts/00_HUBs/03_Scripts_Os/`                              | Path        |
 | `GOALS.md` — Tasks x2                     | `03_Task/ → 03_Task/`                           | `04_Tasks/ → 04_Tasks/`                                          | Path        |
 | `GOALS.md` — RUNBOOK                      | `02_Knowledge/04_Docs/` (falta segmento)        | `02_Knowledge/02_Docs/04_Docs/`                                  | Path        |
-| `BACKLOG.md` — Reports                    | `04_Operations/07_Reports/`                     | `03_Resultado/07_Reports/`                                       | Path        |
+| `BACKLOG.md` — Reports                    | `06_Projects/07_Reports/`                     | `03_Resultado/07_Reports/`                                       | Path        |
 | `config_paths.py` — AutoImprove           | `05_Scripts/01_Auto_Improvement/` (no existe)   | `03_Learning/01_Auto_Improvement/01_Auto_Improvement/`           | Path        |
 | `11_Auto_Learn_Hub.py` — error msg        | `05_Scripts/01_Auto_Improvement/01_Engine/`     | `03_Learning/01_Auto_Improvement/01_Auto_Improvement/01_Engine/` | Path        |
 | `01_Auditor_Hub.py`                       | Shebang en línea 5                              | Shebang en línea 1                                               | Shebang     |

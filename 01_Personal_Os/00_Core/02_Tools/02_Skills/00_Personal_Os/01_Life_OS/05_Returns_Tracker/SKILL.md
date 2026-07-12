@@ -22,10 +22,10 @@ Observación → DETECTAR → PATRON → GENERAR → SKILL
 
 | Source                                      | Data                                             | Target Path                                                         | Weight                                |
 |--------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------|--------------------------------------|
-| Quick Capture                               | Frecuencia de tags                               | `03_Tasks/02_Hillary_Inbox/`                                        | Alta                                  |
-| Daily Notes                                 | Patrones temporales                              | `03_Tasks/Daily_Activity_Log.md`                                    | Alta                                  |
-| Recording Mode                              | Temas recurrentes                                | `03_Tasks/02_Hillary_Inbox/Transcripts/`                            | Media                                 |
-| Plan My Day                                 | Tareas repetitivas                               | `03_Tasks/` (Backlog)                                               | Alta                                  |
+| Quick Capture                               | Frecuencia de tags                               | `04_Tasks/02_Hillary_Inbox/`                                        | Alta                                  |
+| Daily Notes                                 | Patrones temporales                              | `04_Tasks/Daily_Activity_Log.md`                                    | Alta                                  |
+| Recording Mode                              | Temas recurrentes                                | `04_Tasks/02_Hillary_Inbox/Transcripts/`                            | Media                                 |
+| Plan My Day                                 | Tareas repetitivas                               | `04_Tasks/` (Backlog)                                               | Alta                                  |
 
 ### Detectable Patterns
 

@@ -65,7 +65,7 @@
 ## Nuevo: Auto-Improvement Engine
 
 ### Ubicación
-`04_Operations/01_Auto_Improvement/`
+`05_Scripts/01_Auto_Improvement/`
 
 ### Componentes
 | Archivo                                                  | Propósito                                                                 |
@@ -104,7 +104,7 @@ feat(ops): auditoría integral del PersonalOS Think_Different v1.2
 - Actualiza paths desactualizados en AGENTS.md
 - Reconcilia duplicados: 09_LEGACY, 09_Marketing, 04_Content_Creation
 - Migra contenido de 09_Marketing → 01_Creacion_Contenidos/
-- Implementa Auto-Improvement Engine en 04_Operations/01_Auto_Improvement/
+- Implementa Auto-Improvement Engine en 05_Scripts/01_Auto_Improvement/
 - Actualiza README.md, CLAUDE.md, RULES_INDEX.md a v1.2
 - Sincroniza .agent/00_Rules/ con 00_Core/01_Rules/
 - Valida 100% en 8 checks de salud

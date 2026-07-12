@@ -1,6 +1,6 @@
 ﻿---
 description: PILAR 09: Protocolo de Gestión de Contexto Atómico (Atomic Context Management) - Una Tarea = Un Chat.
-globs: 03_Tasks/*.md, 00_Winter_is_Coming/BACKLOG.md
+globs: 04_Tasks/*.md, 00_Winter_is_Coming/BACKLOG.md
 alwaysApply: true
 ---
 
@@ -21,12 +21,12 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
 ├── 01_Core/               # Motor: Skills, Agents, MCPs 💾
 ├── 02_Knowledge/          # Documentación
-├── 03_Tasks/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
+├── 04_Tasks/            # Tareas activas
+├── 05_Scripts/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 01_Personal_Os/04_Operations/05_Projects/        
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/06_Projects/        
+├── 01_Personal_Os/05_Scripts/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -35,7 +35,7 @@ Think_Different/
 ## Rule: Protocolo de Ignición y Aislamiento
 <ignition_protocol>
 
-1.  **Identificación**: Al detectar el inicio de una nueva tarea en `03_Tasks/`, se DEBE evaluar la carga del contexto actual.
+1.  **Identificación**: Al detectar el inicio de una nueva tarea en `04_Tasks/`, se DEBE evaluar la carga del contexto actual.
 2.  **Recomendación de Reset**: La IA DEBE sugerir al usuario: _"Iniciemos un nuevo chat para esta tarea para mantener el contexto puro."_
 3.  **Cebado (Briefing)**: Proporcionar siempre el bloque de texto `## 🧩 Context Briefing` de la tarea como primer mensaje del nuevo chat.
 4.  **Monitoreo de Salud**: Vigilar síntomas de saturación (Latencia alta, Alucinación, Ruido de archivos irrelevantes).

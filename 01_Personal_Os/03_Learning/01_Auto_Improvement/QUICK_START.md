@@ -31,7 +31,7 @@ Tarea: `AutoImprovementPersonalOS`
 ```bash
 # Desde Git Bash / PowerShell / CMD en la raiz del proyecto:
 
-cd 01_Personal_Os/04_Operations/01_Auto_Improvement
+cd 01_Personal_Os/05_Scripts/01_Auto_Improvement
 
 # Escaneo rapido (dry-run, no toca nada):
 python -X utf8 04_Triggers/manual_trigger.py --scan --path "C:/Users/sebas/Desktop/Think_Different"
@@ -63,7 +63,7 @@ python -X utf8 04_Triggers/manual_trigger.py --report --path "C:/Users/sebas/Des
 ## Arquitectura
 
 ```
-04_Operations/01_Auto_Improvement/
+05_Scripts/01_Auto_Improvement/
   01_Engine/              # Motor: detector, analyzer, executor, learner
   02_Rules/               # Reglas de deteccion y auto-fix
   03_Metrics/             # Logs y metricas de ejecucion

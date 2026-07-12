@@ -19,7 +19,7 @@ El usuario pidió auditar carpeta por carpeta (00 a 08) usando el framework "Sup
 1. **00_Winter_is_Coming/** - Goals, Backlog, Memoria Estratégica
 2. **00_Core/** - Motor: Skills, Agents, MCPs, Workflows
 3. **02_Knowledge/** - Documentación, Research, Notas
-4. **03_Tasks/** - Tareas activas
+4. **04_Tasks/** - Tareas activas
 5. **04_Operations/** - Memoria, Brain, Notas
 6. **05_Archive/** - Legacy archivado
 7. **06_Playground/** - Pruebas y experimentos

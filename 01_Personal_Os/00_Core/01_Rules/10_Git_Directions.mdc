@@ -30,7 +30,7 @@ globs: **/*.py, **/*.ts, **/*.md, **/*.json, **/*.mdc
 - **Remote**: SEPARADO (NO es parte de Think Different)
 - **URL**: `https://github.com/esjesusobando/invitacion_honores_de_grado.git`
 - **Rama**: `master`
-- **Path local**: `personal-os/Think_Different/01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/09_Valeria`
+- **Path local**: `personal-os/Think_Different/01_Personal_Os/06_Projects/01_Projects_Lab/09_Valeria`
 - **Push command**: `git push origin master` (desde el folder de Valeria)
 
 ## Antes de Hacer Push - Checklist
@@ -63,7 +63,7 @@ git log --oneline -3
 
 ## Configuracion Guardada
 
-Ver archivo: `01_Personal_Os/04_Operations/01_Auto_Improvement/REPO_CONFIG.md`
+Ver archivo: `01_Personal_Os/05_Scripts/01_Auto_Improvement/REPO_CONFIG.md`
 
 ## Simbolos de Warning
 

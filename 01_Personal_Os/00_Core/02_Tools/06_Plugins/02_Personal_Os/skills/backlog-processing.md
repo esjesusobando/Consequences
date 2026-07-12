@@ -53,7 +53,7 @@ Para cada ítem:
 - Verificar si ya existe tarea similar (dedup)
 - Vincular con objetivos en GOALS.md
 
-### Paso 4: Crear Tareas en 03_Tasks/
+### Paso 4: Crear Tareas en 04_Tasks/
 
 **Template básico (usar según complejidad):**
 
@@ -89,9 +89,9 @@ Vinculado a: Meta "[nombre de meta]"
 
 | Complejidad                                    | Template                               | Ubicación                                                                      |
 |-----------------------------------------------|---------------------------------------|-------------------------------------------------------------------------------|
-| Alta (1-8 horas)                               | SOTA                                   | `03_Tasks/00_Templates/03_Task_Template_SOTA.md`                               |
-| Media (1-4 horas)                              | Medio                                  | `03_Tasks/00_Templates/04_Task_Template_Medio.md`                              |
-| Baja (30min-2h)                                | Corto                                  | `03_Tasks/00_Templates/05_Task_Template_Corto.md`                              |
+| Alta (1-8 horas)                               | SOTA                                   | `04_Tasks/00_Templates/03_Task_Template_SOTA.md`                               |
+| Media (1-4 horas)                              | Medio                                  | `04_Tasks/00_Templates/04_Task_Template_Medio.md`                              |
+| Baja (30min-2h)                                | Corto                                  | `04_Tasks/00_Templates/05_Task_Template_Corto.md`                              |
 
 ### Paso 6: Limpiar BACKLOG.md
 
@@ -142,7 +142,7 @@ engram mem_save: "Backlog Processing - [fecha]"
 ## Deduplicación
 
 Antes de crear tarea, verificar:
-1. Buscar en `03_Tasks/` por título similar
+1. Buscar en `04_Tasks/` por título similar
 2. Usar script de dedup si existe
 3. Si existe相近 → actualizar en vez de crear nueva
 
@@ -180,16 +180,16 @@ Antes de crear tarea, verificar:
 
 ```bash
 # Ver tareas activas
-ls 03_Tasks/*.md
+ls 04_Tasks/*.md
 
 # Buscar tarea específica
-grep -r "title:" 03_Tasks/
+grep -r "title:" 04_Tasks/
 
 # Ver estado de prioridades
-grep "priority:" 03_Tasks/*.md
+grep "priority:" 04_Tasks/*.md
 
 # Contar tareas por estado
-grep "status:" 03_Tasks/*.md | sort | uniq -c
+grep "status:" 04_Tasks/*.md | sort | uniq -c
 ```
 
 ---

@@ -33,8 +33,8 @@ Think_Different/
 │   │       ├── 01_Agents/    ✅ 52+ agentes
 │   │       └── 02_Skills/    ✅ 300+ skills (11 areas)
 │   ├── 02_Knowledge/         ✅
-│   ├── 03_Task/              ✅
-│   └── 04_Operations/        ✅
+│   ├── 04_Tasks/              ✅
+│   └── 05_Scripts/        ✅
 │       └── 05_Projects/      ✅
 ├── 02_Playground/             ✅
 ├── 03_Resultado/              ✅

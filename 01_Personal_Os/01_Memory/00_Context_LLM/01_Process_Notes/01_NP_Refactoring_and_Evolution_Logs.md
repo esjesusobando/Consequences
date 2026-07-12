@@ -16,7 +16,7 @@ El sistema evolucionó de una estructura dispersa a una **Arquitectura de Núcle
 
 ### Decisiones Técnicas Clave:
 - **Consolidación en 01_Core**: Movimiento de Workflows, Agentes y Skills para evitar búsquedas recursivas profundas.
-- **Eliminación de Duplicate Tasks**: Establecer `03_Tasks` como el buffer único para evitar alucinaciones de contexto.
+- **Eliminación de Duplicate Tasks**: Establecer `04_Tasks` como el buffer único para evitar alucinaciones de contexto.
 - **Estabilización de Sub-módulos (SOTA)**: Purga total del índice de Git para eliminar marcadores huérfanos (.git archivados) y restauración de la fuente de verdad .gitmodules.
 - **Motor Engine Installer**: Implementación de scripts de auditoría para asegurar que el OS se autodocumente (README Auto-Gen).
 

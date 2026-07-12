@@ -28,9 +28,9 @@
 
 **Comandos ejecutados:**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
-python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py --apply
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/19_Agent_Sync_Hub.py --apply
+python 01_Personal_Os/05_Scripts/17_Watchdog_Hub.py
 ```
 
 **Resultado:** ALL SYSTEMS GREEN ✅
@@ -66,7 +66,7 @@ python 19_Agent_Sync_Hub.py --apply
 
 **Archivos creados:**
 - `AUDITORIA_INTEGRAL_2026-05-20.md` (raíz)
-- `01_Personal_Os/04_Operations/03_Scripts_Os/README_Structure.md` (explica inflation de 152 scripts)
+- `01_Personal_Os/05_Scripts/README_Structure.md` (explica inflation de 152 scripts)
 - `.claude/memory/audit-2026-05-20.md` (contexto para memoria)
 
 ---
@@ -91,8 +91,8 @@ python 19_Agent_Sync_Hub.py --apply
 - `02_Tools/03_Mcp/README.md`
 - `02_Tools/06_Plugins/README.md`
 - `02_Tools/09_Templates/README.md`
-- `04_Operations/00_Context_LLM/README.md`
-- `04_Operations/02_Agent_Teams_Lite/README.md`
+- `01_Memory/README.md`
+- `05_Scripts/02_Agent_Teams_Lite/README.md`
 
 ---
 

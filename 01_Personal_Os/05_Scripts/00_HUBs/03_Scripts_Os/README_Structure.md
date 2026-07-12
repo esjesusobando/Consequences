@@ -136,11 +136,11 @@ Los scripts reportados en el HUB_Catalog incluyen:
 
 ```bash
 # HUBs principales
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
-python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py --apply
+python 01_Personal_Os/05_Scripts/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/17_Watchdog_Hub.py
+python 01_Personal_Os/05_Scripts/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/05_Scripts/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/05_Scripts/19_Agent_Sync_Hub.py --apply
 ```
 
 ---

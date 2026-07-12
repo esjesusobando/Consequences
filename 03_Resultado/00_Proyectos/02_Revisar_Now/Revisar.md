@@ -19,7 +19,7 @@
 | **00_Winter_is_Coming**                      | 🟡 WARN                          | GOALS.md desactualizado (Q1 2026 en abril)                                        |
 | **01_Core**                                  | 🟡 WARN                          | Skills sin numerar (gap 22→25), README desactualizado                             |
 | **02_Knowledge**                             | ✅ PASS                          | Estructura limpia                                                                 |
-| **03_Tasks**                                 | 🟡 WARN                          | Tareas sin limpiar (P0 test, consolidated)                                        |
+| **04_Tasks**                                 | 🟡 WARN                          | Tareas sin limpiar (P0 test, consolidated)                                        |
 | **04_Operations**                            | ✅ PASS                          | 12 subdirectorios, gap en #10 (no `10_*`)                                         |
 | **05_Archive**                               | ✅ PASS                          | 10 subdirectorios, carpeta `10_To_Delete` pendiente                               |
 | **06_Playground**                            | ✅ PASS                          | 7 directorios activos                                                             |
@@ -90,9 +90,9 @@ Tres submodules apuntan a paths que **no existen** en la estructura actual:
 
 | Archivo                                                                                                                                                                                                         | Debería estar en                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Avengers_Plan.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Avengers_Plan.md)                                            | `04_Operations/05_Plans/` o archivar                      |
+| [Avengers_Plan.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Avengers_Plan.md)                                            | `05_Scripts/05_Plans/` o archivar                      |
 | [Learning_Always.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Learning_Always.md)                                        | `02_Knowledge/04_Docs/`                                   |
-| [Optimizar_Scripts_Skills.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Optimizar_Scripts_Skills.md)                      | `04_Operations/05_Plans/` o archivar                      |
+| [Optimizar_Scripts_Skills.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Optimizar_Scripts_Skills.md)                      | `05_Scripts/05_Plans/` o archivar                      |
 | [excalidraw.log](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/excalidraw.log)                                                | Añadir a `.gitignore`                                     |
 | `Now/` (directorio)                                                                                                                                                                                             | `06_Playground/` o `07_Projects/`                         |
 
@@ -232,7 +232,7 @@ El directorio existe pero su contenido está marcado para eliminación. Verifica
 - [ ] **CHANGELOG.md:** Documentar cambios desde v1.8.0 hasta estado actual
 - [ ] **excalidraw.log:** Añadir a `.gitignore`
 - [ ] **05_Archive/10_To_Delete:** Verificar contenido y eliminar
-- [ ] **03_Tasks:** Limpiar tareas completadas/obsoletas
+- [ ] **04_Tasks:** Limpiar tareas completadas/obsoletas
 - [ ] **`Now/.opencode/`:** Eliminar residuo de sesión
 
 ### P3 — Backlog

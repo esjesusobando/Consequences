@@ -132,8 +132,8 @@ ui-ux-pro-max/
 ### 5. BUG: Referencias a Carpetas que No Existen
 
 **Mencionado en docs pero NO existen:**
-- `04_Operations/01_Auto_Improvement/` - NO EXISTE (lo acabo de crear)
-- `04_Operations/02_Knowledge_Brain/` - NO EXISTE
+- `05_Scripts/01_Auto_Improvement/` - NO EXISTE (lo acabo de crear)
+- `05_Scripts/02_Knowledge_Brain/` - NO EXISTE
 - `02_Evals/` - Verificar si existe
 - `03_Knowledge/` - NO EXISTE (debería ser 02_Knowledge)
 
@@ -160,8 +160,8 @@ El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Person
 | `00_Core/02_Dream_Team.md`                                  | ❌ NO EXISTE como .md - Existe `00_Core/02_Dream_Team.md`?                                                 |
 | `03_Knowledge/`                                             | ❌ NO EXISTE - Es `02_Knowledge/`                                                                          |
 | `04_Docs/`                                                  | ❌ DEPRECATED - Es `02_Knowledge/04_Docs/`                                                                 |
-| `04_Operations/01_Auto_Improvement/`                        | ❌ NO EXISTE - Creado ahora                                                                                |
-| `04_Operations/02_Knowledge_Brain/`                         | ❌ NO EXISTE                                                                                               |
+| `05_Scripts/01_Auto_Improvement/`                        | ❌ NO EXISTE - Creado ahora                                                                                |
+| `05_Scripts/02_Knowledge_Brain/`                         | ❌ NO EXISTE                                                                                               |
 | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                | ✅ EXISTE - Es backup de `01_Personal_Os/00_Core/02_Tools/02_Skills/`                                      |
 | `.agent/03_Workflows/`                                      | ⚠️ DUPLICADO - `00_Core/00_Workflows/` no existe                                                          |
 
@@ -197,7 +197,7 @@ El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Person
 3. **README.md** - Versión y estructura
 4. **CLAUDE.md** - Actualizar referencias
 5. **.opencode/skills/** - Sincronizar con skills del sistema
-6. **Crear carpetas faltantes** - `04_Operations/01_Auto_Improvement/`
+6. **Crear carpetas faltantes** - `05_Scripts/01_Auto_Improvement/`
 
 ---
 
@@ -207,7 +207,7 @@ El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Person
 
 - [ ] 1. Actualizar `00_Winter_is_Coming/AGENTS.md` footer v6.1 → v1.2
 - [ ] 2. Corregir paths en AGENTS.md (03_Knowledge → 02_Knowledge)
-- [ ] 3. Crear `04_Operations/01_Auto_Improvement/` con estructura documentada
+- [ ] 3. Crear `05_Scripts/01_Auto_Improvement/` con estructura documentada
 - [ ] 4. Actualizar `skill-registry.md` para reflejar estructura real v2.0
 - [ ] 5. Actualizar `.opencode/skills/` con skills symlink o leer de 01_Core
 

@@ -63,7 +63,7 @@ En `05_Workflows`: 4 de 6 skills tienen subdirs legacy numerados
 - .agent: 01_Gcierr + 02_Gcierr (mismo nombre?) + 03_Gcierr + 02_Hooks + 04_Hooks + 05_Hooks
 
 ### C9. Auto_Improvement referenciado pero no vinculado
-- Existe en `04_Operations/01_Auto_Improvement/` con 6 módulos
+- Existe en `05_Scripts/01_Auto_Improvement/` con 6 módulos
 - Plan dice "reactivarlo" pero no hay trigger periódico activo
 
 ---

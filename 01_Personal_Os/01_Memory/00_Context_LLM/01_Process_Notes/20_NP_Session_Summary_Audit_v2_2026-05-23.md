@@ -29,7 +29,7 @@
 - **`10_Git_Directions.mdc`**: typos fixed
 - **`02_Tools/README.md`** and **`02_Skills/README.md`**: version bump v4.5→v4.7
 - **`02_Knowledge/README.md`**: version bump
-- **`03_Task/README.md`**: version bump
+- **`04_Tasks/README.md`**: version bump
 - **`04_Operations/README.md`**: version bump
 - **`05_Archive/README.md`**: version bump, backup count update
 

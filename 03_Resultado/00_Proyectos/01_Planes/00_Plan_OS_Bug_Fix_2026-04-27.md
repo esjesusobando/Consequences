@@ -47,7 +47,7 @@
 
 ## Pendientes Fríos (P3 — post bugs)
 
-- [ ] Automatizar generación de `04_Operations/10_Reports/` con `01_Auditor_Hub.py`
+- [ ] Automatizar generación de `05_Scripts/10_Reports/` con `01_Auditor_Hub.py`
 - [ ] Revisar y ejecutar Workflows Marvel (Iron Man, Vision, Thor, Hulk)
 - [ ] Revisar Ritual de Cierre (`04_Ritual_Hub.py`)
 - [ ] Evaluar Avengers Plan — ejecutar, actualizar o archivar

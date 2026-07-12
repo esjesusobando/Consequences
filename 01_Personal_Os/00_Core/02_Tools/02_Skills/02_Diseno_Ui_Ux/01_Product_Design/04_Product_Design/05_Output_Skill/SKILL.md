@@ -41,7 +41,7 @@ sota_upgraded: true
 ## 💾 State Persistence
 
 Tracking de outputs en:
-- `03_Tasks/` — Tasks en progreso
+- `04_Tasks/` — Tasks en progreso
 
 ## Baseline
 

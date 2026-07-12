@@ -46,7 +46,7 @@
 
 ```bash
 # Desde la raiz del proyecto:
-cd 04_Operations/01_Auto_Improvement
+cd 05_Scripts/01_Auto_Improvement
 
 # Solo escanear (dry-run, sin modificar nada)
 python -X utf8 run --scan
@@ -147,7 +147,7 @@ python executor.py /ruta               # dry-run en ruta especifica
 
 | Sistema                | Rol           | Que hace                                  | Donde vive                           |
 | ---------------------- | ------------- | ----------------------------------------- | ------------------------------------ |
-| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `04_Operations/01_Auto_Improvement/` |
+| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `05_Scripts/01_Auto_Improvement/` |
 | 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`        |
 
 **Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.

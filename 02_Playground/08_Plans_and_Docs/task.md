@@ -5,8 +5,8 @@
   - [ ] Revisar referencias cruzadas e imports
   - [ ] Actualizar dependencias (requirements.txt, package.json si los hay)
 - [ ] Fase 2: Análisis y Mejora de Scripts (Operations & Hubs)
-  - [ ] Auditar `01_Personal_Os/04_Operations/03_Scripts_Os`
-  - [ ] Auditar `01_Personal_Os/04_Operations/01_Auto_Improvement`
+  - [ ] Auditar `01_Personal_Os/05_Scripts`
+  - [ ] Auditar `01_Personal_Os/05_Scripts/01_Auto_Improvement`
   - [ ] Refactorizar con Clean Code, Type Hints, manejo de excepciones (sin eliminar lógica)
 - [ ] Fase 3: Modernización de Skills
   - [ ] Auditar `01_Personal_Os/00_Core/02_Tools/02_Skills`

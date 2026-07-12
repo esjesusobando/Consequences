@@ -23,7 +23,7 @@
 
 ### Política "No-Delete Legacy"
 - **Decisión**: Mantener carpetas vacías pero funcionales en skills antiguas.
-- **Por qué**: Evitar romper scripts de terceros que dependen de esas rutas, forzando la lógica de IA a usar `03_Tasks`.
+- **Por qué**: Evitar romper scripts de terceros que dependen de esas rutas, forzando la lógica de IA a usar `04_Tasks`.
 
 ## 📂 Archivo de Sesiones
 Este volumen resume las 29 sesiones tácticas donde se construyó el ecosistema Hillary, la web de OIM y la base de PersonalOS v6.1.

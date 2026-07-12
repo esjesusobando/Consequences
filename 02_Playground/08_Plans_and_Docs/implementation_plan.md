@@ -5,7 +5,7 @@ Este plan de implementación aborda la revisión integral, corrección de errore
 ## 🎯 Objetivos Principales
 
 1. **Revisión Integral & Identificación de Errores**: Auditar rutas, dependencias, referencias cruzadas y posibles bugs en toda la estructura del proyecto.
-2. **Actualización al Estado del Arte (SOTA)**: Mejorar y complementar (sin eliminar) los scripts y skills (`00_Core/02_Tools/02_Skills` y `04_Operations/03_Scripts_Os`).
+2. **Actualización al Estado del Arte (SOTA)**: Mejorar y complementar (sin eliminar) los scripts y skills (`00_Core/02_Tools/02_Skills` y `05_Scripts`).
 3. **Optimización de Estructuras**: Validar que la estructura de carpetas coincida con `Structure_v5.0.md` y corregir desviaciones.
 4. **Documentación Completa**: Registrar todos los hallazgos y acciones en `Context_Memory.md` y la carpeta `01_Process_Notes`.
 5. **Cuadro Comparativo**: Generar un reporte final mostrando el *Antes* y el *Después* de las mejoras.
@@ -18,7 +18,7 @@ Este plan de implementación aborda la revisión integral, corrección de errore
 - Analizar `requirements.txt` / dependencias para actualizarlos a las últimas convenciones de IA y automatización.
 
 ### Fase 2: Análisis y Mejora de Scripts (Operations & Hubs)
-- Revisar scripts en `01_Personal_Os/04_Operations/03_Scripts_Os` y `01_Personal_Os/04_Operations/01_Auto_Improvement`.
+- Revisar scripts en `01_Personal_Os/05_Scripts` y `01_Personal_Os/05_Scripts/01_Auto_Improvement`.
 - Aplicar mejoras de *clean code*, inyección de dependencias, tipado estricto (Type Hints de Python) y manejo avanzado de excepciones.
 - Añadir comentarios descriptivos y docstrings mejorados.
 - **Regla Estricta**: Ninguna lógica funcional será removida, solo se envolverá en código más robusto (SOTA).
@@ -30,7 +30,7 @@ Este plan de implementación aborda la revisión integral, corrección de errore
 - Asegurar que el formato de salida sea consistente (JSON/Markdown).
 
 ### Fase 4: Documentación y Cuadro Comparativo
-- Actualizar el archivo `Context_Memory.md` (`01_Personal_Os/04_Operations/00_Context_LLM/Context_Memory.md`) con las nuevas estrategias.
+- Actualizar el archivo `Context_Memory.md` (`01_Personal_Os/01_Memory/Context_Memory.md`) con las nuevas estrategias.
 - Crear una nueva nota de proceso en `01_Process_Notes` detallando la ejecución (ej. `NN_Auditoria_SOTA_v5.0.md`).
 - Generar un artefacto o informe markdown con el **Cuadro Comparativo** detallando estado anterior y nuevo.
 

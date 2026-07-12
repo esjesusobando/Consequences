@@ -60,7 +60,7 @@ El código se implementó en `C:\Users\sebas\01_Personal_Os\04_Operations\03_Scr
 | Acción | Detalle |
 |--------|---------|
 | ✅ `04_Operations/` **eliminado** del Desktop | Era residuo v4 que contenía solo `00_Context_LLM/13_Model_Evals` |
-| ✅ `13_Model_Evals/` **movido** | De `04_Operations/00_Context_LLM/13_Model_Evals/` → `01_Memory/00_Context_LLM/08_Model_Evals/` |
+| ✅ `13_Model_Evals/` **movido** | De `01_Memory/13_Model_Evals/` → `01_Memory/00_Context_LLM/08_Model_Evals/` |
 | ✅ `08_Model_Evals/` **creado** | Con 3 archivos JSON de runs (`eval_20260703_*.json`) |
 | ⚠️ **14 archivos engine** | PENDIENTE de sync al Desktop (root tiene los nuevos, Desktop no) |
 | ⚠️ `config_paths.py` Desktop | PENDIENTE agregar MODEL_EVALS_DIR apuntando a `01_Memory/00_Context_LLM/08_Model_Evals/` |

@@ -11,7 +11,7 @@
 
 > **Estado actual:** v2.1 Hardened (35/35 tests, ZERO drift). Pero hay residuos de v1.x en código activo y skills no se auto-invocan por contexto.
 
-> **⚠️ UPDATE 2026-04-25:** Issues A1, A2, A3 FUERON CORREGIDOS en sesión v6.2 (protocolo actualizado a `01_Personal_Os/04_Operations/03_Scripts_Os`). A4-A7 siguen PENDIENTES.
+> **⚠️ UPDATE 2026-04-25:** Issues A1, A2, A3 FUERON CORREGIDOS en sesión v6.2 (protocolo actualizado a `01_Personal_Os/05_Scripts/03_Scripts_Os`). A4-A7 siguen PENDIENTES.
 
 ---
 
@@ -24,7 +24,7 @@
 | ~~**A1**~~              | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~               | ~~`01_Auditor_Hub.py`~~                                                                                                                 | ~~31~~               | ~~Import legacy roto en v2.1~~                  | ✅ **FIXED** (v6.2)              |
 | ~~**A2**~~              | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~               | ~~`02_Git_Hub.py`~~                                                                                                                     | ~~19~~               | ~~Mismo problema~~                              | ✅ **FIXED** (v6.2)              |
 | ~~**A3**~~              | ~~Dimensión `"03_Scripts_Os"` listada como ENGINE_DIR~~              | ~~`01_Auditor_Hub.py`~~                                                                                                                 | ~~65~~               | ~~Reportes muestran nombre viejo~~              | ✅ **FIXED** (v6.2)              |
-| **A4**                  | 12 reportes huérfanos                                                | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar              |---------------------| 🔴 PENDIENTE                                     |
+| **A4**                  | 12 reportes huérfanos                                                | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/05_Scripts/00_Context_LLM/11_Reports/` o consolidar              |---------------------| 🔴 PENDIENTE                                     |
 | **A5**                  | `04_Engine` mencionado por usuario                                   | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)                       |---------------------| 🟡 PENDIENTE                                     |
 | **A6**                  | Skills NO auto-cargan por contexto                                   | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                                |---------------------| 🟡 PENDIENTE                                     |
 | **A7**                  | `skill-registry.md` incompleto                                       | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                                    |---------------------| 🟡 PENDIENTE                                     |
@@ -36,7 +36,7 @@
 
 | #                   | Issue                                           | Detalle                                                                                                                                 |
 |--------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| **A4**              | 12 reportes huérfanos                           | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar              |
+| **A4**              | 12 reportes huérfanos                           | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/05_Scripts/00_Context_LLM/11_Reports/` o consolidar              |
 | **A5**              | `04_Engine` mencionado por usuario              | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)                       |
 | **A6**              | Skills NO auto-cargan por contexto              | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                                |
 | **A7**              | `skill-registry.md` incompleto                  | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                                    |
@@ -86,8 +86,8 @@ Si aparecen fuera de `01_Auto_Improvement/`, son creadas por scripts con paths r
 
 **A.4 — Consolidar reports huérfanos**
 ```bash
-mkdir -p 01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/legacy_health_logs/
-mv 02_Playground/reports/health_*.txt 01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/legacy_health_logs/
+mkdir -p 01_Personal_Os/05_Scripts/00_Context_LLM/11_Reports/legacy_health_logs/
+mv 02_Playground/reports/health_*.txt 01_Personal_Os/05_Scripts/00_Context_LLM/11_Reports/legacy_health_logs/
 ```
 Decidir si `02_Playground/reports/` debe seguir existiendo o eliminarse.
 
@@ -97,8 +97,8 @@ Script grep en todo el repo (excluir `05_Archive`, `04_Maerks`):
 - `04_Engine` huérfano
 - `00_Core/03_Skills` (sin `02_Tools/`)
 - `06_Playground` → `02_Playground`
-- `07_Projects` → `04_Operations/05_Projects`
-- `03_Tasks` → `03_Task` (singular)
+- `07_Projects` → `05_Scripts/05_Projects`
+- `03_Tasks` → `04_Tasks`
 
 Reportar TODOS los matches en archivos activos.
 
@@ -120,31 +120,31 @@ python 02_Playground/01_OS_Runtime_Test.py
 
 **B.3 — Agent Sync drift**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/15_Agent_Sync_Hub.py
 # Expected: ZERO DRIFT
 ```
 
 **B.4 — SOTA Integrity**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
 # Expected: 9/9 PASSED
 ```
 
 **B.5 — Auditor Hub completo**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --dry-run
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/01_Auditor_Hub.py --dry-run
 # Expected: PASS sin warnings de imports
 ```
 
 **B.6 — Git Hub**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py --status
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/02_Git_Hub.py --status
 # Expected: PASS
 ```
 
 **B.7 — Validator Hub completo**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/05_Validator_Hub.py
 # Expected: PASS
 ```
 
@@ -155,7 +155,7 @@ for hub in 00_Sound_Engine 01_Auditor_Hub 02_Git_Hub 03_AIPM_Hub \
           04_Ritual_Hub 05_Validator_Hub 06_Tool_Hub 07_Integration_Hub \
           08_Workflow_Hub 09_Data_Hub 10_General_Hub 11_Auto_Learn_Hub \
           12_Context_Usage_Bar 13_Beautify_Tables; do
-    python 01_Personal_Os/04_Operations/03_Scripts_Os/${hub}.py --help 2>&1 | head -5
+    python 01_Personal_Os/05_Scripts/03_Scripts_Os/${hub}.py --help 2>&1 | head -5
 done
 ```
 **Expected:** Todos responden sin crash.
@@ -172,7 +172,7 @@ find 01_Personal_Os/00_Core/02_Tools/02_Skills/ -name "SKILL.md" | wc -l
 
 **C.2 — Validador masivo**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_validator.py --all
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/03_Validator/skill_validator.py --all
 ```
 
 **C.3 — Skills sin SKILL.md (huérfanas)**
@@ -199,13 +199,13 @@ Decidir cuáles integrar al live, cuáles archivar.
 
 **D.1 — Scan rápido**
 ```bash
-python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
 ```
 **Verificar:** No crashea, output parseable, escribe en `01_Auto_Improvement/03_Metrics/improvement_log.json`.
 
 **D.2 — Full cycle**
 ```bash
-python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --full --dry-run
+python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --full --dry-run
 ```
 **Verificar:** Detector → Analyzer → Executor → Learner ejecutan en orden.
 
@@ -219,7 +219,7 @@ python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_impr
 Decidir: cron / hook SessionEnd / `/schedule` semanal.
 ```bash
 # /schedule weekly
-python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
 ```
 
 ---
@@ -271,7 +271,7 @@ Skills con >500 líneas → crear versión COMPACT en mismo SKILL.md (frontmatte
 Documentar en CLAUDE.md:
 ```
 TODO output de auditor/script va a:
-  01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/<categoría>/
+  01_Personal_Os/05_Scripts/00_Context_LLM/11_Reports/<categoría>/
 
 TODO plan/propuesta para usuario va a:
   03_Resultado/  (raíz)
@@ -299,17 +299,17 @@ python 02_Playground/00_OS_Health_Test.py
 # 2. Runtime
 python 02_Playground/01_OS_Runtime_Test.py
 # 3. Drift
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/15_Agent_Sync_Hub.py
 # 4. SOTA
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
 # 5. Auto-Improvement
-python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
 # 6. Skill validation masiva
-python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_validator.py --all
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/03_Validator/skill_validator.py --all
 # 7. Audit completo
-python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --dry-run
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/01_Auditor_Hub.py --dry-run
 # 8. Métricas finales
-python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py --record --report
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/14_Health_Metrics_Hub.py --record --report
 ```
 
 **Criterios SOTA Integrated:**

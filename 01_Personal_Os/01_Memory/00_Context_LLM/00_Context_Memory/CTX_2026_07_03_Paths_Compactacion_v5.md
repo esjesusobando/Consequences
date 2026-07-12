@@ -10,9 +10,9 @@ Corrección de todos los paths hardcodeados que referenciaban `04_Operations/` (
 ### 1. Python scripts críticos (6 files)
 - `backlog-triage.py` — `get_tasks_dir()`: `04_Operations/02_Tasks` → `04_Tasks`
 - `03_Validate_Rules.py` — path key `"04_Operations/02_Tasks"` → `"04_Tasks"`
-- `62_Tool_Shed.py` — `sys.path.insert`: `04_Operations/03_Scripts_Os` → `05_Scripts/00_HUBs/03_Scripts_Os`
+- `62_Tool_Shed.py` — `sys.path.insert`: `05_Scripts` → `05_Scripts/00_HUBs/03_Scripts_Os`
 - 4x `00_Notifier.py` (17/19/21/22_System_Master) — mismo sys.path.insert fix
-- `post_hulk_compound.py` — double path `04_Operations/04_Operations/03_Scripts_Os` → path correcto
+- `post_hulk_compound.py` — double path `04_Operations/05_Scripts` → path correcto
 
 ### 2. batch_replace_paths.py actualizado
 - Regla `04_Operations/02_Tasks/` → `04_Tasks/` agregada (con y sin trailing slash)

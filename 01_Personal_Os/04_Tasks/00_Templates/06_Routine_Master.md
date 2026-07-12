@@ -20,7 +20,7 @@
 > **Enfoque**: Review, Higiene de Sistema, Preparación de Mañana.
 
 - [ ] [ ] Registro de Daily Notes
-- [ ] [ ] Triage de `03_Tasks/02_Hillary_Inbox/`
+- [ ] [ ] Triage de `04_Tasks/02_Hillary_Inbox/`
 - [ ] [ ] Reporte a @gentleman (ver `01_Hillary_Report_Template.md`)
 
 ---

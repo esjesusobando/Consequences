@@ -28,7 +28,7 @@ INBOX ──► ANALYZE ──► PRIORITIZE ──► SCHEDULE
 ## Inputs
 
 ### 1. Inbox (Fase 1)
-`03_Tasks/02_Hillary_Inbox/*.md` → extrae `created`, `type`, `tags`, body
+`04_Tasks/02_Hillary_Inbox/*.md` → extrae `created`, `type`, `tags`, body
 
 ### 2. Preferencias
 `templates/preferencias.md`: energía por horario, constraints, observaciones

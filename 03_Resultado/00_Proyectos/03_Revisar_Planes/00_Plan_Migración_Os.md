@@ -34,12 +34,12 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 | `00_Winter_is_Coming/`              | `00_Winter_is_Coming/`                                      | Sin cambio                             |
 | `00_Core/`                          | `01_Personal_Os/00_Core/`                                   | Mover dentro de OS                     |
 | `02_Knowledge/`                     | `01_Personal_Os/02_Knowledge/`                              | Mover dentro de OS                     |
-| `03_Tasks/`                         | `01_Personal_Os/03_Task/`                                   | Mover + rename (singular)              |
-| `04_Operations/`                    | `01_Personal_Os/04_Operations/00_Context_LLM/`              | Mover + restructurar                   |
+| `04_Tasks/`                         | `01_Personal_Os/04_Tasks/`                                   | Mover + rename                        |
+| `05_Scripts/`                    | `01_Personal_Os/05_Scripts/00_Context_LLM/`              | Mover + restructurar                   |
 | `05_Archive/`                       | `01_Personal_Os/05_Archive/`                                | Mover dentro de OS                     |
 | `06_Playground/`                    | `02_Playground/`                                            | Mover a raíz                           |
-| `07_Projects/`                      | `01_Personal_Os/04_Operations/05_Projects/`                 | Mover a Operations                     |
-| `03_Scripts_Os/`                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`               | Mover a Operations                     |
+| `07_Projects/`                      | `01_Personal_Os/05_Scripts/05_Projects/`                 | Mover a Operations                     |
+| `03_Scripts_Os/`                    | `01_Personal_Os/05_Scripts/03_Scripts_Os/`               | Mover a Operations                     |
 | `Now/`                              | `03_Resultado/`                                             | Renombrar                              |
 
 ### `00_Core/` → `01_Personal_Os/00_Core/`
@@ -58,20 +58,20 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 | `00_Core/09_Server/`                                  | `01_Personal_Os/00_Core/02_Tools/07_Server/`                    |
 | `00_Core/10_Templates/`                               | `01_Personal_Os/00_Core/02_Tools/09_Templates/`                 |
 
-### `04_Operations/` → `01_Personal_Os/04_Operations/00_Context_LLM/`
+### `05_Scripts/` → `01_Personal_Os/05_Scripts/00_Context_LLM/`
 
 | Actual                                            | Destino                                                         |
 |--------------------------------------------------|----------------------------------------------------------------|
-| `04_Operations/00_Context_Memory/`                | `04_Operations/00_Context_LLM/00_Context_Memory/`               |
-| `04_Operations/02_Knowledge_Brain/`               | `04_Operations/00_Context_LLM/02_Knowledge_Brain/`              |
-| `04_Operations/03_Process_Notes/`                 | `04_Operations/00_Context_LLM/01_Process_Notes/`                |
-| `04_Operations/04_Memory_Brain/`                  | `04_Operations/00_Context_LLM/02_Memory_Brain/`                 |
-| `04_Operations/05_Plans/`                         | `04_Operations/00_Context_LLM/05_Plans/`                        |
-| `04_Operations/06_Solutions/`                     | `04_Operations/00_Context_LLM/06_Solutions/`                    |
-| `04_Operations/08_Auditorias/`                    | `04_Operations/00_Context_LLM/08_Auditorias/`                   |
-| `04_Operations/09_Agent_Teams_Lite/`              | `04_Operations/02_Agent_Teams_Lite/`                            |
-| `04_Operations/11_Reports/`                       | `04_Operations/00_Context_LLM/11_Reports/`                      |
-| `04_Operations/01_Auto_Improvement/`              | `04_Operations/01_Auto_Improvement/` (igual)                    |
+| `05_Scripts/00_Context_Memory/`                | `05_Scripts/00_Context_LLM/00_Context_Memory/`               |
+| `05_Scripts/02_Knowledge_Brain/`               | `05_Scripts/00_Context_LLM/02_Knowledge_Brain/`              |
+| `05_Scripts/03_Process_Notes/`                 | `05_Scripts/00_Context_LLM/01_Process_Notes/`                |
+| `05_Scripts/04_Memory_Brain/`                  | `05_Scripts/00_Context_LLM/02_Memory_Brain/`                 |
+| `05_Scripts/05_Plans/`                         | `05_Scripts/00_Context_LLM/05_Plans/`                        |
+| `05_Scripts/06_Solutions/`                     | `05_Scripts/00_Context_LLM/06_Solutions/`                    |
+| `05_Scripts/08_Auditorias/`                    | `05_Scripts/00_Context_LLM/08_Auditorias/`                   |
+| `05_Scripts/09_Agent_Teams_Lite/`              | `05_Scripts/02_Agent_Teams_Lite/`                            |
+| `05_Scripts/11_Reports/`                       | `05_Scripts/00_Context_LLM/11_Reports/`                      |
+| `05_Scripts/01_Auto_Improvement/`              | `05_Scripts/01_Auto_Improvement/` (igual)                    |
 
 ---
 
@@ -103,8 +103,8 @@ PersonalOS/
 │   │       └── 09_Templates/
 │   │
 │   ├── 02_Knowledge/
-│   ├── 03_Task/                  ← (singular, antes 03_Tasks)
-│   ├── 04_Operations/
+│   ├── 04_Tasks/                  ← Tareas activas
+│   ├── 05_Scripts/
 │   │   ├── 00_Context_LLM/       ← Memoria LLM
 │   │   ├── 01_Auto_Improvement/
 │   │   ├── 02_Agent_Teams_Lite/
@@ -195,7 +195,7 @@ SCRIPTS_DIR = ENGINE_DIR
 |-----------------------------------|-----------------------------------------------------------------|
 | MCPs activos                       | 33                                                               |
 | Rules (fuente verdad)              | 10 .mdc en `00_Core/01_Rules/`                                   |
-| HUBs                               | 14 (→ `04_Operations/03_Scripts_Os/`)                            |
+| HUBs                               | 14 (→ `05_Scripts/03_Scripts_Os/`)                            |
 | Skills                             | 165+ en 9 áreas funcionales                                      |
 | `.mcp.json`                        | ✅ JSON válido                                                    |
 | `config_paths.py`                  | ✅ Auto-detección por `01_Core` (survives migration)              |

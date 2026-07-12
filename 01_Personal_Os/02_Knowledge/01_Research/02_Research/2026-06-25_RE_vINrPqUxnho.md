@@ -154,4 +154,4 @@ Este video valida y expande decisiones que ya tomamos en el OS:
 
 ## 📋 Plan SOTA Asociado
 
-> Este análisis generó el plan estratégico `2026-06-25-001-strat-learning-always-sota-plan.md` en `04_Operations/00_Context_LLM/04_Docs/plans/` para transformar Learning Always de documentación pasiva a mejora activa del OS.
+> Este análisis generó el plan estratégico `2026-06-25-001-strat-learning-always-sota-plan.md` en `01_Memory/04_Docs/plans/` para transformar Learning Always de documentación pasiva a mejora activa del OS.

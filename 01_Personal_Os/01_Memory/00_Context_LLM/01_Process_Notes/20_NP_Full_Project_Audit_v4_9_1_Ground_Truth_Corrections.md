@@ -78,10 +78,10 @@ find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/00_Workflows/
 find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/00_Core/02_Tools/05_Hooks/ -name "*.py" -type f | wc -l
 
 # Conteo de HUBs
-ls /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/ | grep -E "^[0-9]" | wc -l
+ls /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/05_Scripts/ | grep -E "^[0-9]" | wc -l
 
 # Conteo de scripts Python
-find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/ -maxdepth 2 -name "*.py" -type f | wc -l
+find /c/Users/sebas/Desktop/Think_Different/01_Personal_Os/05_Scripts/ -maxdepth 2 -name "*.py" -type f | wc -l
 ```
 
 ---

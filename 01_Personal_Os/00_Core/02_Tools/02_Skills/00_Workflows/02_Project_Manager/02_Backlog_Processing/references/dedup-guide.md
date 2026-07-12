@@ -8,7 +8,7 @@ Duplicate tasks waste time, create confusion, and dilute focus. Every task shoul
 
 ### Step 1: Check Existing Tasks
 
-Before creating a new task, search `03_Tasks/` for:
+Before creating a new task, search `04_Tasks/` for:
 
 1. **Similar titles** - Check if the new task already exists
 2. **Same goal** - Multiple tasks pointing to the same objective

@@ -1,15 +1,15 @@
 ---
-title: "Automatizar Reportes — 04_Operations/07_Reports/"
+title: "Automatizar Reportes — 06_Projects/07_Reports/"
 category: technical
 priority: P3
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/04_Operations/07_Reports/
-  - 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+  - 01_Personal_Os/06_Projects/07_Reports/
+  - 01_Personal_Os/05_Scripts/01_Auditor_Hub.py
 ---
 
-# Task: Automatizar Reportes — 04_Operations/07_Reports/
+# Task: Automatizar Reportes — 06_Projects/07_Reports/
 
 **Prioridad:** P3
 **Fecha creación:** 2026-05-22
@@ -23,7 +23,7 @@ resource_refs:
 
 ### Hallazgo
 
-**La carpeta oficial es `04_Operations/07_Reports/` (la 10 fue eliminada por duplicación).**
+**La carpeta oficial es `06_Projects/07_Reports/` (la 10 fue eliminada por duplicación).**
 
 ```
 01_Personal_Os/04_Operations/
@@ -63,7 +63,7 @@ Ya existen scripts que generan outputs relevantes:
 
 ## 🎯 Definición de Terminado
 
-1. **Carpeta existe** — `04_Operations/07_Reports/`
+1. **Carpeta existe** — `06_Projects/07_Reports/`
 2. **Reportes automáticos** — al menos 2 tipos de reportes configurados
 3. **Scheduling** — weekly o triggered by ritual
 4. **Output accesible** — humanos pueden leer los reportes
@@ -76,7 +76,7 @@ Ya existen scripts que generan outputs relevantes:
 
 ```bash
 # Verificar estructura
-ls 01_Personal_Os/04_Operations/07_Reports/
+ls 01_Personal_Os/06_Projects/07_Reports/
 # Debe tener: README.md, 00_Templates/, 01_Generated/
 ```
 
@@ -84,7 +84,7 @@ ls 01_Personal_Os/04_Operations/07_Reports/
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/14_Task_Automate_Reports_P3.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/14_Task_Automate_Reports_P3.md`
 - **Keywords:** `reports`, `automation`, `04_Operations`, `07_Reports`
 - **Bloqueado por:** —
 - **Related:** HUBs existentes (Telemetry, Watchdog, Auditor)

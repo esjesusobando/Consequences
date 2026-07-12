@@ -50,7 +50,7 @@ python 03_Scripts_Os/04_Ritual_Hub.py --standup  # Ver prioridades del día
 git status                                # Estado limpio antes de empezar
 ```
 
-Leer la tarea en `03_Tasks/` — entender el scope completo.
+Leer la tarea en `04_Tasks/` — entender el scope completo.
 
 ### 3. Cerrar lo que distrae
 
@@ -86,9 +86,9 @@ Al finalizar cada bloque, evaluar en 1 segundo:
 
 ### Cierre de sesión (5 min)
 
-1. **Documentar**: ¿Qué logré? ¿Qué quedó pendiente? → `04_Operations/03_Process_Notes/` + **Engram**
+1. **Documentar**: ¿Qué logré? ¿Qué quedó pendiente? → `05_Scripts/03_Process_Notes/` + **Engram**
 2. **Commit**: Si hay código → commit atómico descriptivo
-3. **Actualizar tarea**: Cambiar `status` en `03_Tasks/`
+3. **Actualizar tarea**: Cambiar `status` en `04_Tasks/`
 4. **Captura de aprendizajes**: ¿Qué aprendí hoy que vale la pena guardar?
 
 ```bash

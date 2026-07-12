@@ -77,7 +77,7 @@ Combine Fireflies context + Tasks + Goals
 ### 2. PersonalOS Context
 ```markdown
 1. Read: 00_Winter_is_Coming/GOALS.md
-2. List: Tasks in 03_Tasks/ (P0/P1)
+2. List: Tasks in 04_Tasks/ (P0/P1)
 3. Check: Blocked tasks (status: b)
 ```
 
@@ -143,7 +143,7 @@ What action items did I commit to in my recent meetings?
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Fireflies Tool Guide                              | `00_Core/05_Mcp/00_Config_Mcp/mcp-tools/06_productivity/02_fireflies.md`                              |
 | Goals                                             | `00_Winter_is_Coming/GOALS.md`                                                                        |
-| Tasks                                             | `03_Tasks/*.md`                                                                                       |
+| Tasks                                             | `04_Tasks/*.md`                                                                                       |
 | Meeting Transcripts                               | `03_Knowledge/Transcripts/`                                                                           |
 
 ---

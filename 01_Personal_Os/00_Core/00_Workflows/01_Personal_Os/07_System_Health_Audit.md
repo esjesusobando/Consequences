@@ -40,7 +40,7 @@ Resultado esperado: **0 líneas**. Cualquier resultado es una referencia rota.
 Confirmar que las carpetas v6.1 existen:
 
 ```
-00_Winter_is_Coming / 01_Core / 02_Knowledge / 03_Tasks /
+00_Winter_is_Coming / 01_Core / 02_Knowledge / 04_Tasks /
 00_Winter_is_Coming / 01_Personal_Os/00_Core / 02_Knowledge / 03_Learning /
 05_Scripts / 00_HUBs / .agent
 ```

@@ -172,8 +172,8 @@ function gra { python "C:\Users\TU_USUARIO\Documents\Think_Different\01_Personal
 
 ```bash
 # Agregar a ~/.bashrc o ~/.profile
-alias gr='python "C:/Users/TU_USUARIO/Documents/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/79_System_Guardian.py"'
-alias gra='python "C:/Users/TU_USUARIO/Documents/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/79_System_Guardian.py" --apply'
+alias gr='python "C:/Users/TU_USUARIO/Documents/Think_Different/01_Personal_Os/05_Scripts/10_Legacy/79_System_Guardian.py"'
+alias gra='python "C:/Users/TU_USUARIO/Documents/Think_Different/01_Personal_Os/05_Scripts/10_Legacy/79_System_Guardian.py" --apply'
 ```
 
 ### Hooks Configurados
@@ -321,7 +321,7 @@ gra
 | **AGENTS.md**                      | 00_Winter_is_Coming/                                       | Configuración de agentes                |
 | **CLAUDE.md**                      | Raíz del proyecto                                          | Reglas del sistema                      |
 | **OS_DIRECTORY.md**                | Raíz del proyecto                                          | JARVIS discovery                        |
-| **HUBs**                           | 01_Personal_Os/04_Operations/03_Scripts_Os/                | Automatizaciones                        |
+| **HUBs**                           | 01_Personal_Os/05_Scripts/                | Automatizaciones                        |
 | **Skills**                         | 01_Personal_Os/00_Core/02_Tools/02_Skills/                 | 299+ skills (14 áreas)                  |
 
 ---
@@ -353,7 +353,7 @@ Si algo falla:
 1. **Revisar este documento** — Sección Troubleshooting
 2. **Ejecutar `gr`** — System Guardian indica problemas específicos
 3. **Consultar AGENTS.md** — Configuración de agentes
-4. **Revisar Process Notes** — `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/`
+4. **Revisar Process Notes** — `01_Personal_Os/01_Memory/01_Process_Notes/`
 
 ---
 

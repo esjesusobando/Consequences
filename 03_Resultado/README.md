@@ -38,7 +38,7 @@
 | Proyectos validados      | `01_Personal_Os/00_Core/`                                    |
 | Aprendizaje integrado    | `01_Personal_Os/02_Knowledge/`                               |
 | Experiments → Playground | `02_Playground/`                                             |
-| Reportes operativos      | `01_Personal_Os/04_Operations/00_Context_LLM/07_Auditorias/` |
+| Reportes operativos      | `01_Personal_Os/05_Scripts/00_Context_LLM/07_Auditorias/` |
 
 ---
 

@@ -61,7 +61,7 @@ TIMEOUT="300"
 SKILL_VALIDATION_ENABLED="true"
 
 # Path to skill validator script (ruta completa desde raíz del proyecto)
-SKILL_VALIDATOR_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_validator.py"
+SKILL_VALIDATOR_SCRIPT="01_Personal_Os/05_Scripts/03_Validator/skill_validator.py"
 
 # Minimum score threshold (FAIL if below)
 SKILL_MIN_SCORE="50"
@@ -73,7 +73,7 @@ SKILL_PATHS="01_Personal_Os/01_Core/02_Tools/02_Skills/"
 SKILL_SECURITY_SCAN="true"
 
 # Security scanner script (ruta completa desde raíz del proyecto)
-SKILL_SECURITY_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_security_scan.py"
+SKILL_SECURITY_SCRIPT="01_Personal_Os/05_Scripts/03_Validator/skill_security_scan.py"
 
 # Block commit on CRITICAL security issues
 SKILL_BLOCK_ON_CRITICAL="true"

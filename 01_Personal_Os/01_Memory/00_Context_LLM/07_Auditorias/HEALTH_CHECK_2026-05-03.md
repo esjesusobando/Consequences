@@ -51,12 +51,12 @@
 
 ### Scripts (Medium)
 ```
-01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/34_Skill_Auditor.py  # Comment fix
+01_Personal_Os/05_Scripts/03_Validator/34_Skill_Auditor.py  # Comment fix
 ```
 
 ### Catalogs (Medium)
 ```
-01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/05_HUB_Catalog.yaml  # Numbers + category
+01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/05_HUB_Catalog.yaml  # Numbers + category
 ```
 
 ### Documentación Nueva
@@ -83,7 +83,7 @@ MCP_CONFIG_AUDIT.md                       # Drift de configs MCP
 |----------------------------------------------------------|----------------------|-------------------------------|
 | `03_Resultado/`                                           | 14                    | ~32                            |
 | `02_Playground/04_Maerks/`                                | 28                    | ~105                           |
-| `01_Personal_Os/04_Operations/00_Context_LLM/`            | 32                    | ~76                            |
+| `01_Personal_Os/01_Memory/`            | 32                    | ~76                            |
 | `01_Personal_Os/07_Archive/05_Repos/`                              | ~50                   | ~50                            |
 | **TOTAL**                                                 | **124+**              | **~1,700+**                    |
 

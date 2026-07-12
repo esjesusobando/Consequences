@@ -103,9 +103,9 @@ Limpiar pendientes del proyecto Think Different + auditoría interna de auditore
 
 | Archivo                                                                           | Rol                                                          |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------|
-| `01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py`                    | Hub de auditorías                                            |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`                      | Rutas centralizadas (SCRIPT_LOCATION_MAP corregido)          |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py`          | Monitor de salud (paths corregidos)                          |
+| `01_Personal_Os/05_Scripts/01_Auditor_Hub.py`                    | Hub de auditorías                                            |
+| `01_Personal_Os/05_Scripts/config_paths.py`                      | Rutas centralizadas (SCRIPT_LOCATION_MAP corregido)          |
+| `01_Personal_Os/05_Scripts/50_System_Health_Monitor.py`          | Monitor de salud (paths corregidos)                          |
 | `03_Resultado/04_Reportes/`                                                       | Carpeta de reportes (limpiada)                               |
 | `09_Valeria/Honores_Grado_Noel.html`                                              | Template base copiado                                        |
 | `10_Clinica_Infantil/`                                                            | Nuevo proyecto para invitación                               |

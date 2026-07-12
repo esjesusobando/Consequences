@@ -24,10 +24,10 @@ Do not proceed until you have a clear feature description from the user.
 
 **Check for brainstorm output first:**
 
-Before asking questions, look for recent brainstorm documents in `04_Operations/07_Brain_Storming/` that match this feature:
+Before asking questions, look for recent brainstorm documents in `05_Scripts/07_Brain_Storming/` that match this feature:
 
 ```bash
-ls -la 04_Operations/07_Brain_Storming/*.md 2>/dev/null | head -10
+ls -la 05_Scripts/07_Brain_Storming/*.md 2>/dev/null | head -10
 ```
 
 **Relevance criteria:** A brainstorm is relevant if:
@@ -82,7 +82,7 @@ Run these agents **in parallel** to gather local context:
 **What to look for:**
 
 - **Repo research:** existing patterns, CLAUDE.md guidance, technology familiarity, pattern consistency
-- **Learnings:** documented solutions in `04_Operations/06_Solutions/` that might apply (gotchas, patterns, lessons learned)
+- **Learnings:** documented solutions in `05_Scripts/06_Solutions/` that might apply (gotchas, patterns, lessons learned)
 
 These findings inform the next step.
 
@@ -117,7 +117,7 @@ Run these agents in parallel:
 After all research steps complete, consolidate findings:
 
 - Document relevant file paths from repo research (e.g., `app/services/example_service.rb:42`)
-- **Include relevant institutional learnings** from `04_Operations/06_Solutions/` (key insights, gotchas to avoid)
+- **Include relevant institutional learnings** from `05_Scripts/06_Solutions/` (key insights, gotchas to avoid)
 - Note external documentation URLs and best practices (if external research was done)
 - List related issues or PRs discovered
 - Capture CLAUDE.md conventions
@@ -480,24 +480,24 @@ end
 **Filename:** Use the date and kebab-case filename from Step 2 Title & Categorization.
 
 ```
-04_Operations/05_Plans/YYYY-MM-DD-<type>-<descriptive-name>-plan.md
+05_Scripts/05_Plans/YYYY-MM-DD-<type>-<descriptive-name>-plan.md
 ```
 
 Examples:
 
-- ✅ `04_Operations/05_Plans/2026-01-15-feat-user-authentication-flow-plan.md`
-- ✅ `04_Operations/05_Plans/2026-02-03-fix-checkout-race-condition-plan.md`
-- ✅ `04_Operations/05_Plans/2026-03-10-refactor-api-client-extraction-plan.md`
-- ❌ `04_Operations/05_Plans/2026-01-15-feat-thing-plan.md` (not descriptive - what "thing"?)
-- ❌ `04_Operations/05_Plans/2026-01-15-feat-new-feature-plan.md` (too vague - what feature?)
-- ❌ `04_Operations/05_Plans/2026-01-15-feat: user auth-plan.md` (invalid characters - colon and space)
-- ❌ `04_Operations/05_Plans/feat-user-auth-plan.md` (missing date prefix)
+- ✅ `05_Scripts/05_Plans/2026-01-15-feat-user-authentication-flow-plan.md`
+- ✅ `05_Scripts/05_Plans/2026-02-03-fix-checkout-race-condition-plan.md`
+- ✅ `05_Scripts/05_Plans/2026-03-10-refactor-api-client-extraction-plan.md`
+- ❌ `05_Scripts/05_Plans/2026-01-15-feat-thing-plan.md` (not descriptive - what "thing"?)
+- ❌ `05_Scripts/05_Plans/2026-01-15-feat-new-feature-plan.md` (too vague - what feature?)
+- ❌ `05_Scripts/05_Plans/2026-01-15-feat: user auth-plan.md` (invalid characters - colon and space)
+- ❌ `05_Scripts/05_Plans/feat-user-auth-plan.md` (missing date prefix)
 
 ## Post-Generation Options
 
 After writing the plan file, use the **AskUserQuestion tool** to present these options:
 
-**Question:** "Plan ready at `04_Operations/05_Plans/YYYY-MM-DD-<type>-<name>-plan.md`. What would you like to do next?"
+**Question:** "Plan ready at `05_Scripts/05_Plans/YYYY-MM-DD-<type>-<name>-plan.md`. What would you like to do next?"
 
 **Options:**
 
@@ -511,11 +511,11 @@ After writing the plan file, use the **AskUserQuestion tool** to present these o
 
 Based on selection:
 
-- **Open plan in editor** → Run `open 04_Operations/05_Plans/<plan_filename>.md` to open the file in the user's default editor
+- **Open plan in editor** → Run `open 05_Scripts/05_Plans/<plan_filename>.md` to open the file in the user's default editor
 - **`/deepen-plan`** → Call the /deepen-plan command with the plan file path to enhance with research
 - **`/plan_review`** → Call the /plan_review command with the plan file path
 - **`/workflows:work`** → Call the /workflows:work command with the plan file path
-- **`/workflows:work` on remote** → Run `/workflows:work 04_Operations/05_Plans/<plan_filename>.md &` to start work in background for Claude Code web
+- **`/workflows:work` on remote** → Run `/workflows:work 05_Scripts/05_Plans/<plan_filename>.md &` to start work in background for Claude Code web
 - **Create Issue** → See "Issue Creation" section below
 - **Simplify** → Ask "What should I simplify?" then regenerate simpler version
 - **Other** (automatically provided) → Accept free text for rework or specific changes

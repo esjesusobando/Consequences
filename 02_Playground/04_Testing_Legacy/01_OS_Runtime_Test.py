@@ -33,7 +33,7 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS_OS = ROOT / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
+SCRIPTS_OS = ROOT / "01_Personal_Os" / "05_Scripts" / "03_Scripts_Os"
 VERBOSE = "--verbose" in sys.argv
 
 
@@ -168,7 +168,7 @@ def r13_gga_present():
 
 def r14_auto_improvement_scan():
     """Auto-Improvement Engine corre --scan sin crash."""
-    engine = (ROOT / "01_Personal_Os" / "04_Operations" / "01_Auto_Improvement"
+    engine = (ROOT / "01_Personal_Os" / "05_Scripts" / "01_Auto_Improvement"
               / "01_Engine" / "recursive_improvement_engine.py")
     if not engine.exists():
         return TestResult("R14", "Auto-Improvement — scan", False, "No existe")
@@ -220,7 +220,7 @@ def r17_skills_have_skill_md():
     skills_dir = ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
     if not skills_dir.exists():
         return TestResult("R17", "Skills — SKILL.md presente", False, "Skills dir no existe")
-    manifest = (ROOT / "01_Personal_Os" / "04_Operations" / "02_Agent_Teams_Lite"
+    manifest = (ROOT / "01_Personal_Os" / "05_Scripts" / "02_Agent_Teams_Lite"
                 / "00_Manifest" / "04_Skill_Index.json")
     if manifest.exists():
         import json

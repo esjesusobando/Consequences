@@ -11,10 +11,10 @@ Ciclo de ingeniería autónomo para tareas cotidianas. Completa desde análisis 
 ## 📋 Pasos de Ejecución
 
 1. **Cargar contexto**: Leer `AGENTS.md` + `00_Core/01_Rules/` + **Engram**
-2. **Entender estado actual**: `git status` + revisar tareas activas en `03_Tasks/`
+2. **Entender estado actual**: `git status` + revisar tareas activas en `04_Tasks/`
 3. **Analizar impacto**: Identificar archivos y módulos afectados por `$ARGUMENTS`
 4. **Reproducir bug** *(solo si es bug)*: Documentar pasos mínimos para reproducir + logs
-5. **Planear**: Ejecutar `02_Professor_X_Plan` — crear plan en `03_Tasks/`
+5. **Planear**: Ejecutar `02_Professor_X_Plan` — crear plan en `04_Tasks/`
 6. **Implementar**: Ejecutar `04_Thor_Work` — cambios incrementales con commits atómicos
 7. **Resolver TODOs pendientes**: Revisar y cerrar cualquier TODO generado durante implementación
 8. **Calidad de código**: `python 03_Scripts_Os/05_Validator_Hub.py --lint` + verificar tests

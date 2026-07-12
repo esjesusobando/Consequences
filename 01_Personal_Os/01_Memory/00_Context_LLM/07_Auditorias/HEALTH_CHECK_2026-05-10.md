@@ -72,16 +72,16 @@
 
 **Antes:**
 ```bash
-SKILL_VALIDATOR_SCRIPT="04_Operations/03_Scripts_Os/03_Validator/skill_validator.py"
+SKILL_VALIDATOR_SCRIPT="05_Scripts/03_Validator/skill_validator.py"
 SKILL_PATHS="00_Core/03_Skills/"
-SKILL_SECURITY_SCRIPT="04_Operations/03_Scripts_Os/03_Validator/skill_security_scan.py"
+SKILL_SECURITY_SCRIPT="05_Scripts/03_Validator/skill_security_scan.py"
 ```
 
 **Después:**
 ```bash
-SKILL_VALIDATOR_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_validator.py"
+SKILL_VALIDATOR_SCRIPT="01_Personal_Os/05_Scripts/03_Validator/skill_validator.py"
 SKILL_PATHS="01_Personal_Os/00_Core/02_Tools/02_Skills/"
-SKILL_SECURITY_SCRIPT="01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/skill_security_scan.py"
+SKILL_SECURITY_SCRIPT="01_Personal_Os/05_Scripts/03_Validator/skill_security_scan.py"
 ```
 
 ---

@@ -72,6 +72,6 @@ cat 01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Ritual_Cierre_Protocol
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/16_Task_Revisar_Ritual_Cierre_P3.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/16_Task_Revisar_Ritual_Cierre_P3.md`
 - **Keywords:** `ritual`, `cierre`, `workflow`
 - **Bloqueado por:** —

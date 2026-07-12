@@ -21,12 +21,12 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
 ├── 01_Core/               # Motor: Skills, Agents, MCPs 💾
 ├── 02_Knowledge/          # Documentación
-├── 03_Tasks/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
+├── 04_Tasks/            # Tareas activas
+├── 05_Scripts/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 01_Personal_Os/04_Operations/05_Projects/        
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/06_Projects/        
+├── 01_Personal_Os/05_Scripts/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -38,14 +38,14 @@ Think_Different/
 ### 1. Ejecutar Script (Automático)
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py
+python 01_Personal_Os/05_Scripts/Ritual_Fixed/14_Morning_Standup.py
 ```
 
 El script internamente:
 - Lee inventario vivo (`01_Inventario_Total.md`)
 - Recupera CTX previo (`00_Context_Memory/CTX_*.md`)
-- Lee Process Notes (`04_Operations/03_Process_Notes/*.md`)
-- Analiza tareas activas en `03_Tasks/`
+- Lee Process Notes (`05_Scripts/03_Process_Notes/*.md`)
+- Analiza tareas activas en `04_Tasks/`
 - Genera "The Big 3" basado en prioridades P0/P1
 
 ### 2. Presentar Reporte (Obligatorio)

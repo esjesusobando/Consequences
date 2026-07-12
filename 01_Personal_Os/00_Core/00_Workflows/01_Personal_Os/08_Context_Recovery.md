@@ -64,7 +64,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/  # GOALS, BACKLOG, AGENTS
 ├── 00_Core/              # Inventario, Rules, Config
 ├── 02_Knowledge/         # Examples, Resources
-├── 03_Tasks/             # Tareas activas
+├── 04_Tasks/             # Tareas activas
 ├── 05_Scripts/        # Context_Memory, Process_Notes, Memory_Brain, Plans, Solutions
 ├── 05_Archive/           # Legacy
 ├── 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/        # HUBs y scripts Python

@@ -21,8 +21,8 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
 ├── 01_Core/               # Motor: Skills, Agents, MCPs 💾
 ├── 02_Knowledge/          # Documentación
-├── 03_Tasks/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
+├── 04_Tasks/            # Tareas activas
+├── 05_Scripts/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
 ├── 07_Projects/        

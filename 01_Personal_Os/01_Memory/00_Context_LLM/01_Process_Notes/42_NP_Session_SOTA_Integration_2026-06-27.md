@@ -29,7 +29,7 @@ Ejecutar las 3 mejoras de mayor impacto identificadas en la auditoría del OS:
 - Debugged executor.py — root cause: paths absolutos vs relativos
 - Truncated learnings.json: 17,881 → 2,332 líneas (87% reducción)
 - Backup creado: learnings.json.bak
-- Directorio recursivo eliminado: 04_Operations/01_Auto_Improvement/04_Operations/
+- Directorio recursivo eliminado: 05_Scripts/01_Auto_Improvement/04_Operations/
 - Smoke test implementado (`--smoke` flag)
 - Self-scan exclusion agregada a detector.py
 

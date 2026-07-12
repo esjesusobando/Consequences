@@ -30,7 +30,7 @@
 | 01_Auto_Improvement| **Existe en 04_Operations/ con 48 archivos** — engine completo pero sin ejecucion periodica| Baja       |
 | Archive            | Bien organizado (00_Skills_Legacy con 22 dirs)                                             | Ok         |
 
-> **Correccion:** Auto_Improvement NO esta en 02_Tools/09. Vive en `04_Operations/01_Auto_Improvement/` con 6 modulos (Engine, Rules, Metrics, Triggers, Backups, Utils) + 48 archivos. No hay que crearlo, hay que reactivarlo.
+> **Correccion:** Auto_Improvement NO esta en 02_Tools/09. Vive en `05_Scripts/01_Auto_Improvement/` con 6 modulos (Engine, Rules, Metrics, Triggers, Backups, Utils) + 48 archivos. No hay que crearlo, hay que reactivarlo.
 
 ---
 

@@ -129,4 +129,4 @@ El video confirma que la dirección del OS es correcta pero falta el salto de "t
 
 ## 📋 Plan SOTA Asociado
 
-> Este aprendizaje generó el plan estratégico `2026-06-25-001-strat-learning-always-sota-plan.md` en `04_Operations/00_Context_LLM/04_Docs/plans/` para transformar Learning Always de documentación pasiva a mejora activa del OS. Ver plan para unidades de implementación concretas.
+> Este aprendizaje generó el plan estratégico `2026-06-25-001-strat-learning-always-sota-plan.md` en `01_Memory/04_Docs/plans/` para transformar Learning Always de documentación pasiva a mejora activa del OS. Ver plan para unidades de implementación concretas.

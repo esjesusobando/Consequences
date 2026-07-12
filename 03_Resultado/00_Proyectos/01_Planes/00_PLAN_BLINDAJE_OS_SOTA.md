@@ -54,7 +54,7 @@ except ImportError:
     PROJECT_ROOT = _SCRIPTS_OS.parent.parent.parent
     ENGINE_DIR = _SCRIPTS_OS
 ```
-**Archivo:** `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/80_Edge_Case_Validator.py`
+**Archivo:** `01_Personal_Os/05_Scripts/03_Scripts_Os/03_Validator/80_Edge_Case_Validator.py`
 
 ### B2 — Agentes integrados y renumerados ✅
 **Problema:** 7 agentes en `.agent/01_Agents/` backup sin equivalente en live.
@@ -104,14 +104,14 @@ Subcarpetas creadas: `03_Growth/`, `04_Contexto/`, `05_Marca/`, `06_Plantillas/`
 | R20                  | Docs activos sin refs v1.x (`00_Core/03_Skills`, `03_Scripts_Os`)              |
 
 ### G5 — Health Metrics Hub ✅
-**Archivo creado:** `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`
+**Archivo creado:** `01_Personal_Os/05_Scripts/03_Scripts_Os/14_Health_Metrics_Hub.py`
 - `--record`: corre ambos tests y graba en CSV
 - `--report`: gráfico ASCII de últimos 30 registros
-- CSV en: `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/health_history.csv`
+- CSV en: `01_Personal_Os/05_Scripts/00_Context_LLM/11_Reports/health_history.csv`
 - Primera entrada: structural 15/15 + runtime 20/20 = **100.0%**
 
 ### G3 — Agent Sync Hub ✅
-**Archivo creado:** `01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`
+**Archivo creado:** `01_Personal_Os/05_Scripts/03_Scripts_Os/15_Agent_Sync_Hub.py`
 - Compara live ↔ backup por relative path (no solo nombre)
 - `--dry-run` (default): reporta drift sin tocar nada
 - `--apply`: copia bidireccional para sincronizar
@@ -177,15 +177,15 @@ Pre-commit hook en producción (`a1fa1e1`): Secret Scanner → GGA → commit ex
 **Qué hacer:**
 1. Verificar que el engine corre OK:
    ```bash
-   python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+   python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
    ```
 2. Agregar al hook de fin de sesión en `.agent/04_Extensions/01_Hooks/03_Lifecycle/` o crear cron:
    ```bash
    # Opción A — Hook SessionEnd
-   python $PROJECT_ROOT/01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+   python $PROJECT_ROOT/01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
    
    # Opción B — Usar /schedule en Claude Code
-   # /schedule weekly: python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+   # /schedule weekly: python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
    ```
 3. Verificar que `--scan` produce output parseable (no crash)
 
@@ -246,7 +246,7 @@ python 02_Playground/01_OS_Runtime_Test.py    # → 20/20
 
 Al terminar FASE 3:
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py --record --report
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/14_Health_Metrics_Hub.py --record --report
 ```
 
 ---
@@ -265,10 +265,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py --rec
 python 02_Playground/00_OS_Health_Test.py && python 02_Playground/01_OS_Runtime_Test.py
 
 # 2. Ver health history
-python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py --report
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/14_Health_Metrics_Hub.py --report
 
 # 3. Verificar sync
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/15_Agent_Sync_Hub.py
 ```
 
 ### Archivos clave del blindaje
@@ -276,8 +276,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
 |--------------------------------------------------------------------------------------|----------------------------------------|
 | `02_Playground/00_OS_Health_Test.py`                                                  | 15 tests estructurales                  |
 | `02_Playground/01_OS_Runtime_Test.py`                                                 | 20 tests de ejecución                   |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`                 | Dashboard histórico                     |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`                     | Sync live ↔ .agent                      |
+| `01_Personal_Os/05_Scripts/03_Scripts_Os/14_Health_Metrics_Hub.py`                 | Dashboard histórico                     |
+| `01_Personal_Os/05_Scripts/03_Scripts_Os/15_Agent_Sync_Hub.py`                     | Sync live ↔ .agent                      |
 | `01_Personal_Os/00_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`              | Scanner pre-commit                      |
 | `.git/hooks/pre-commit`                                                               | Hook: Secret Scanner → GGA              |
 
@@ -286,9 +286,9 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
 # Gate completa (lo que se corre antes de declarar SOTA)
 python 02_Playground/00_OS_Health_Test.py
 python 02_Playground/01_OS_Runtime_Test.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
-python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/15_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
 ```
 
 ### Convenciones a mantener
@@ -333,7 +333,7 @@ _Próximo milestone: FASE 3 P2 (~3h opcional) o Elite Portfolio_
 ## ✅ SESIÓN COMPACTACIÓN 2026-04-25 — FIXES ADICIONALES
 
 ### Fix sys.path en legacy health monitor (50_System_Health_Monitor.py) ✅
-**Problema:** Script usaba `sys.path.append(os.path.join("..", ".."))` que desde `10_Legacy/` sube 2 niveles → cae en `04_Operations/` (no `03_Scripts_Os/`), causando que Python encontrará otro `config_paths.py` con paths v1.x.
+**Problema:** Script usaba `sys.path.append(os.path.join("..", ".."))` que desde `10_Legacy/` sube 2 niveles → cae en `05_Scripts/` (no `03_Scripts_Os/`), causando que Python encontrará otro `config_paths.py` con paths v1.x.
 
 **Fix:** Cambiar a `sys.path.insert(0, os.path.join(".."))` (solo 1 nivel):
 ```python
@@ -344,7 +344,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 ```
 
-**Archivo:** `01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_System_Health_Monitor.py`
+**Archivo:** `01_Personal_Os/05_Scripts/03_Scripts_Os/10_Legacy/50_System_Health_Monitor.py`
 
 ### 01_PLAN_VALIDACION_TOTAL_OS.md actualizado ✅
 **Cambios:**

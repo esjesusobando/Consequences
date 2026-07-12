@@ -96,7 +96,7 @@ Reemplazadas referencias a paths obsoletos con estructura v2.0:
 ## 4. Nuevo: Auto-Improvement Engine
 
 ### 4.1 Ubicación
-`04_Operations/01_Auto_Improvement/`
+`05_Scripts/01_Auto_Improvement/`
 
 ### 4.2 Componentes
 | Archivo                                                  | Propósito                                                                 |
@@ -216,7 +216,7 @@ feat(ops): auditoría integral del PersonalOS Think_Different v1.2
 - Actualiza paths desactualizados en AGENTS.md
 - Reconcilia duplicados: 09_LEGACY, 09_Marketing, 04_Content_Creation
 - Migra contenido de 09_Marketing → 01_Creacion_Contenidos/
-- Implementa Auto-Improvement Engine en 04_Operations/01_Auto_Improvement/
+- Implementa Auto-Improvement Engine en 05_Scripts/01_Auto_Improvement/
 - Actualiza README.md, CLAUDE.md, RULES_INDEX.md a v1.2
 - Sincroniza .agent/00_Rules/ con 00_Core/01_Rules/
 - Valida 100% en 8 checks de salud
@@ -291,5 +291,5 @@ La auditoría de hoy fue posible gracias a:
 
 Se documentó la auditoría y estabilización del proyecto respetando la regla de preservar información y no modificar contenido web. Ver:
 
-- `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/17_NP_SOTA_Audit_2026-05-24.md`
-- `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/23_CTX_SOTA_Audit_2026-05-24.md`
+- `01_Personal_Os/01_Memory/01_Process_Notes/17_NP_SOTA_Audit_2026-05-24.md`
+- `01_Personal_Os/01_Memory/00_Context_Memory/23_CTX_SOTA_Audit_2026-05-24.md`

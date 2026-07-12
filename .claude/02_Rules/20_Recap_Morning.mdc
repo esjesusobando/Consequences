@@ -21,12 +21,12 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
 ├── 01_Core/               # Motor: Skills, Agents, MCPs 💾
 ├── 02_Knowledge/          # Documentación
-├── 03_Tasks/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
+├── 04_Tasks/            # Tareas activas
+├── 05_Scripts/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 01_Personal_Os/04_Operations/05_Projects/        
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/06_Projects/        
+├── 01_Personal_Os/05_Scripts/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -35,8 +35,8 @@ Think_Different/
 ## 📋 Protocolo de Enfoque Avanzado
 <protocol>
 
-1.  **Sincronización Fireflies**: Ejecutar `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/39_Recap_Planning.py` para identificar reuniones recientes y alinear prioridades.
-2.  **Revisión de Prioridades**: Inspeccionar `00_Winter_is_Coming/GOALS.md` y `03_Tasks/` para identificar tareas P0 y P1 mediante MCP.
+1.  **Sincronización Fireflies**: Ejecutar `python 01_Personal_Os/05_Scripts/Ritual_Fixed/39_Recap_Planning.py` para identificar reuniones recientes y alinear prioridades.
+2.  **Revisión de Prioridades**: Inspeccionar `00_Winter_is_Coming/GOALS.md` y `04_Tasks/` para identificar tareas P0 y P1 mediante MCP.
 3.  **Análisis de Bloqueos**: Identificar tareas con status `b` (blocked) y proponer soluciones inmediatas.
 4.  **Selección del Día (The Big 3)**: Sugerir exactamente 3 tareas para el día que maximicen el avance hacia los objetivos trimestrales.
 5.  **Victorias Rápidas**: Identificar tareas de baja fricción para generar momentum.

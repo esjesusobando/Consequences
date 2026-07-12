@@ -38,7 +38,7 @@
 - **Qué:** Aplicar `13_Beautify_Tables.py` a todos los README.md del sistema
 - **Cómo:**
   ```bash
-  python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py --all
+  python 01_Personal_Os/05_Scripts/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py --all
   ```
 - **Archivos clave a revisar manualmente:**
   - `README.md` (raíz)
@@ -65,7 +65,7 @@
 pip install git-filter-repo
 git filter-repo --path-glob "*.exe" --invert-paths
 git filter-repo --path-glob "*.pdf" --invert-paths
-git filter-repo --path "01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json" --invert-paths
+git filter-repo --path "01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json" --invert-paths
 
 # Opción B: BFG Repo Cleaner (más simple)
 java -jar bfg.jar --strip-blobs-bigger-than 10M .
@@ -77,7 +77,7 @@ git gc --prune=now --aggressive
 ### 3. Actualizar manifests JARVIS (números desactualizados)
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 ```
 - `03_Agent_Catalog.yaml`: actualizar conteo (52+ agents)
 - `04_Skill_Index.json`: actualizar a 11 áreas (sin Legacy Archive)
@@ -86,8 +86,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 ### 4. Sincronizar .agent/ con 00_Core/ (Agent Mirror)
 
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/16_Agent_Mirror_Hub.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/19_Agent_Sync_Hub.py
 ```
 
 ---
@@ -100,10 +100,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 - Fecha: 2026-04-24 (debería ser 2026-04-28)
 - **Fix:** Actualizar manualmente las secciones de Skills y HUBs
 
-### 6. Crear directorios faltantes en 04_Operations/
-- `04_Operations/05_Plans/` (referenciado en agentes pero no existe)
-- `04_Operations/06_Solutions/` (referenciado en agentes pero no existe)
-- `04_Operations/10_Reports/` (referenciado en agentes pero no existe)
+### 6. Crear directorios faltantes en 05_Scripts/
+- `05_Scripts/05_Plans/` (referenciado en agentes pero no existe)
+- `05_Scripts/06_Solutions/` (referenciado en agentes pero no existe)
+- `05_Scripts/10_Reports/` (referenciado en agentes pero no existe)
 
 ### 7. Fix referencia en .claude/rules/tech-defaults.md
 - Apunta a `03_Pilar_Motor.mdc` que NO existe
@@ -165,10 +165,10 @@ engram_mem_context(limit=10)
 cat 00_PLAN_PENDIENTES_2026-04-28.md
 
 # 3. Ejecutar desde tarea #1 (beauty tables)
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py
 
 # 4. Regenerar manifests
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/05_Scripts/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 ```
 
 ---

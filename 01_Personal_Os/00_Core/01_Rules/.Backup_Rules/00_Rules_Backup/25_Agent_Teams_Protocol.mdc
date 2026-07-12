@@ -137,10 +137,10 @@ Cuando el orquestador detecta issues estructurales en el OS:
 
 ```bash
 # Ejecutar ciclo completo de auto-mejora
-python 04_Operations/01_Auto_Improvement/recursive_improvement_engine.py --full
+python 05_Scripts/01_Auto_Improvement/recursive_improvement_engine.py --full
 
 # Solo escaneo
-python 04_Operations/01_Auto_Improvement/recursive_improvement_engine.py --scan
+python 05_Scripts/01_Auto_Improvement/recursive_improvement_engine.py --scan
 ```
 
 El engine detecta → analiza → ejecuta fixes → aprende de ellos.

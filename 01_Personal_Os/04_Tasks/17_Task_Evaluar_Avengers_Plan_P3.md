@@ -73,6 +73,6 @@ cat 01_Personal_Os/07_Archive/05_Repos/03_Backups_Audits/05_Legacy_Scripts_Backu
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/17_Task_ Evaluar_Avengers_Plan_P3.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/17_Task_ Evaluar_Avengers_Plan_P3.md`
 - **Keywords:** `avengers`, `plan`, `evaluation`
 - **Bloqueado por:** —

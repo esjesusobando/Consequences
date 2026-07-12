@@ -222,7 +222,7 @@
 - Hooks `04_Sound/notification.py` y `task-complete-sound.ps1` — existen
 
 - **Git reparado**: 52 tags corruptas eliminadas (SHAs de otro repo copiados por backup) — git gc, fsck y reflog 100% limpios
-- **gitignore corregido**: ruta `Side_Project_Backup` actualizada de `07_Projects/` → `01_Personal_Os/04_Operations/05_Projects/` (ruta Consequences v3.0 real)
+- **gitignore corregido**: ruta `Side_Project_Backup` actualizada de `07_Projects/` → `01_Personal_Os/05_Scripts/05_Projects/` (ruta Consequences v3.0 real)
 - **Repo embebido resuelto**: `03_Side_Project_Backup` (Obandrilling_calculator) removido del índice del OS — tiene su propio repo independiente, ahora correctamente ignorado
 
 ### Ground Truth (2026-04-27)

@@ -93,12 +93,12 @@ Los workflows están integrados con el sistema de skills en:
 
 ### Ejecutar Workflow
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <nombre>
+python 01_Personal_Os/05_Scripts/08_Workflow_Hub.py run <nombre>
 ```
 
 ### Ver Workflows Disponibles
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py list
+python 01_Personal_Os/05_Scripts/08_Workflow_Hub.py list
 ```
 
 ---

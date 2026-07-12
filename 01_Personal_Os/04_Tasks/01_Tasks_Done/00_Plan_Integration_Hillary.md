@@ -82,7 +82,7 @@
 2. **Orquestación con flujos existentes** — Compatible con CE commands y SDD workflows
 3. **Sin colisiones** — No sobrescribir nada existente
 4. **Documentación unificada** — RUNBOOK integrado al sistema de docs
-5. **Inbox conectado** — Quick Capture → 03_Tasks/ para conversión a tareas
+5. **Inbox conectado** — Quick Capture → 04_Tasks/ para conversión a tareas
 
 ---
 
@@ -125,7 +125,7 @@
 | **Skills Registry**                             | ✅                                        | Agregar `18_Personal_Life_OS` al registry                                            |
 | **SCRIPTS_INDEX.md**                            | ✅                                        | Agregar referencia a nuevos skills                                                   |
 | **workflows**                                   | ✅                                        | Crear workflow `24_Hillary_Life_OS.md` que orqueste los 5                            |
-| **03_Tasks/**                                   | ✅                                        | Quick Capture inbox → linker a tareas                                                |
+| **04_Tasks/**                                   | ✅                                        | Quick Capture inbox → linker a tareas                                                |
 | **04_Operations/**                              | ✅                                        | Daily Notes → 04_Operations/03_Process_Notes                                         |
 | **HOOKs**                                       | ✅                                        | Usar notification.py existente para alertas                                          |
 | **Engram**                                      | ✅                                        | Guardar sesión summary a memoria                                                     |
@@ -199,8 +199,8 @@
 
 | #                              | Tarea                                                    | Archivo/Path                                                                  | Estado                              |
 |-------------------------------|---------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------|
-| 4.1                            | Crear symlink o referencia                               | `03_Tasks/02_Hillary_Inbox/` → Quick Capture inbox                            | ⏳                                   |
-| 4.2                            | Configurar hook de conversión                            | Quick Capture → task en 03_Tasks/                                             | ⏳                                   |
+| 4.1                            | Crear symlink o referencia                               | `04_Tasks/02_Hillary_Inbox/` → Quick Capture inbox                            | ⏳                                   |
+| 4.2                            | Configurar hook de conversión                            | Quick Capture → task en 04_Tasks/                                             | ⏳                                   |
 | 4.3                            | Agregar a GOALS.md                                       | Referencia a Hillary Life OS                                                  | ⏳                                   |
 
 ---
@@ -270,7 +270,7 @@
 - [ ] 3.1 Crear workflow 24_Hillary_Life_OS.md
 - [ ] 3.2 Definir triggers
 - [ ] 3.3 Vincular a 01_Personal_Os/11_AGENTS.md
-- [ ] 4.1 Vincular inbox a 03_Tasks/
+- [ ] 4.1 Vincular inbox a 04_Tasks/
 - [ ] 4.2 Configurar hook de conversión
 - [ ] 4.3 Agregar a GOALS.md
 - [ ] 5.1 Validar skills (100%)
@@ -322,7 +322,7 @@ Una vez integrado, los skills se invocarán con:
 | Trigger覆盖率                                       | 100% (todos los triggers funcionando)                            |
 | Documentación                                    | RUNBOOK + README + SESSION_SUMMARY                               |
 | Git commits                                      | 1 commit por fase                                                |
-| Integración con Tasks                            | Quick Capture → 03_Tasks/ funcionando                            |
+| Integración con Tasks                            | Quick Capture → 04_Tasks/ funcionando                            |
 
 ---
 
@@ -338,7 +338,7 @@ Una vez integrado, los skills se invocarán con:
 *Think Different PersonalOS v6.1 — Hillary Life OS Integration Plan*
 *Generated: 2026-04-01*
 
-"captura: tengo una idea [ideas]"     → Quick Capture → 03_Tasks/02_Hillary_Inbox/
+"captura: tengo una idea [ideas]"     → Quick Capture → 04_Tasks/02_Hillary_Inbox/
 "plan my day"                          → Plan My Day   → schedule desde inbox
 "daily notes"                          → Daily Notes   → log de actividad
 "record meeting"                       → Recording Mode → transcripción anonimizada

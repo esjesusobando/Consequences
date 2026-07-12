@@ -62,7 +62,7 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 |------------------------------------------------------|-----------------------------------------------------------|------------------------------------------|
 | `01_Personal_Os/00_Core/02_Tools/02_Skills/`          | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               | ✅ CORREGIDO                               |
 | `01_Personal_Os/00_Core/02_Tools/02_Skills/`          | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               | ⚠️ Documentación actualizada              |
-| `03_Scripts_Os/`                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/`              | ✅ CORREGIDO en plugin.json                |
+| `03_Scripts_Os/`                                      | `01_Personal_Os/05_Scripts/03_Scripts_Os/`              | ✅ CORREGIDO en plugin.json                |
 
 ### Archivos Actualizados
 - `.claude-plugin/plugin.json` — Struktura + HUBs + paths ✅
@@ -148,7 +148,7 @@ FASE 7 → SOTA          (telemetría + JARVIS capability)
   - [x] `CLAUDE.md` (20546B)
   - [x] `.mcp.json` (7845B)
   - [x] `~/.config/opencode/opencode.json` (25454B)
-  - [x] `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py` (13769B)
+  - [x] `01_Personal_Os/05_Scripts/03_Scripts_Os/config_paths.py` (13769B)
   - [x] `00_Winter_is_Coming/AGENTS.md` (31007B)
   - [x] `.atl/skill-registry.md` (5932B)
 - [x] Validar baseline:
@@ -176,7 +176,7 @@ FASE 7 → SOTA          (telemetría + JARVIS capability)
 
 ### Estructura nueva
 
-Crear `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`:
+Crear `01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/`:
 
 ```
 00_Manifest/
@@ -192,7 +192,7 @@ Crear `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`:
 
 ### HUB nuevo
 
-`01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py`:
+`01_Personal_Os/05_Scripts/03_Scripts_Os/16_System_Mapper_Hub.py`:
 
 ```python
 # Modos:
@@ -330,7 +330,7 @@ Documento ÚNICO, **<2KB**, que cada agente lee al boot.
 ## ¿Cómo invoco X?
 - MCP: usar como tool en Claude Code
 - Skill: trigger con keyword en CLAUDE.md
-- HUB: `python 01_Personal_Os/04_Operations/03_Scripts_Os/<NN>_<Name>_Hub.py`
+- HUB: `python 01_Personal_Os/05_Scripts/03_Scripts_Os/<NN>_<Name>_Hub.py`
 - Workflow: ver Workflow_Graph.yaml para precedencia
 - Agent: invocar via Task tool con subagent_type
 
@@ -535,7 +535,7 @@ Hook `PreToolUse` (`02_Tools/05_Hooks/01_Pre_Tool/`):
 Cuando se edita uno de:
 - `CLAUDE.md`
 - `.mcp.json`
-- `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`
+- `01_Personal_Os/05_Scripts/03_Scripts_Os/config_paths.py`
 - `00_Winter_is_Coming/AGENTS.md`
 - `.atl/skill-registry.md`
 
@@ -593,7 +593,7 @@ Script `validate_skill_frontmatter.py`:
 
 ### 7.1 — Telemetría
 
-- Cada HUB registra ejecución en `01_Personal_Os/04_Operations/00_Context_LLM/12_Telemetry/`.
+- Cada HUB registra ejecución en `01_Personal_Os/05_Scripts/00_Context_LLM/12_Telemetry/`.
 - Métricas: timestamp, duration_ms, success/fail, who_called, exit_code.
 - Format: JSONL (line per event).
 - Dashboard ASCII en HUB nuevo `18_Telemetry_Hub.py`.
@@ -694,7 +694,7 @@ Mejora del trigger system en CLAUDE.md:
 | `git status` limpio                                    | `git status`                                                                                           |
 | Tests baseline 35/35                                   | `python 02_Playground/00_OS_Health_Test.py && python 02_Playground/01_OS_Runtime_Test.py`              |
 | `.mcp.json` válido                                     | `python -c "import json; json.load(open('.mcp.json'))"`                                                |
-| `config_paths.py` operativo                            | `python 01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`                                    |
+| `config_paths.py` operativo                            | `python 01_Personal_Os/05_Scripts/03_Scripts_Os/config_paths.py`                                    |
 | Backup snapshot inicial                                | Ver FASE 0                                                                                             |
 | **Decisión sobre 4 Fantásticos/Octopus**               | ⚠️ Pendiente input usuario antes de FASE 5                                                             |
 | **Decisión sobre `.agent` ↔ core mirror**              | ⚠️ Pendiente investigación en FASE 2.2                                                                 |

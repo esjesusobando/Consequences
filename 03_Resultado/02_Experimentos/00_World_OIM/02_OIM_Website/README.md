@@ -35,12 +35,12 @@ Think_Different/
 │   ├── 05_Mcp/              # Configuración MCP (Claude Code + OpenCode)
 │   └── 07_Hooks/            # Sistema de hooks (Pre/Post/Lifecycle/Sound)
 ├── 02_Knowledge/            ✅ Base de conocimiento, Docs, Research
-├── 03_Tasks/                ✅ Tareas activas con YAML frontmatter
-├── 04_Operations/           ✅ Auto-Improvement Engine (detector→analyzer→executor→learner)
+├── 04_Tasks/                ✅ Tareas activas con YAML frontmatter
+├── 05_Scripts/           ✅ Auto-Improvement Engine (detector→analyzer→executor→learner)
 ├── 05_Archive/              ✅ Repos, Legacy archivado
 ├── 06_Playground/           ✅ Área de pruebas y experimentos
 ├── 07_Projects/             ✅ Proyectos activos (8 historiales)
-├── 04_Operations/03_Scripts_Os/           ✅ 14 HUBs operativos
+├── 05_Scripts/03_Scripts_Os/           ✅ 14 HUBs operativos
 ├── .agent/                  ✅ Backup estratégico (71 agentes, 24 reglas, GGA)
 ├── .atl/                    ✅ SDD Registry + openspec changes
 └── .mcp.json                ✅ MCPs activos para Claude Code (36 servidores)
@@ -89,7 +89,7 @@ Think_Different/
 | **18_Personal_Life_OS**      | Life OS | Hillary integration          |
 | **19_Video_Intel**           | Video   | Video AI                     |
 
-### HUBs (04_Operations/03_Scripts_Os/) — 14 HUBs
+### HUBs (05_Scripts/03_Scripts_Os/) — 14 HUBs
 
 | Hub              | Script                    | Propósito                         |
 | ---------------- | ------------------------- | --------------------------------- |
@@ -112,8 +112,8 @@ Think_Different/
 
 | Tool                       | Ubicación                                   | Función                |
 | -------------------------- | ------------------------------------------- | ---------------------- |
-| **skill_validator.py**     | `04_Operations/03_Scripts_Os/03_Validator/` | Valida estructura SOTA |
-| **skill_security_scan.py** | `04_Operations/03_Scripts_Os/03_Validator/` | Escaneo de seguridad   |
+| **skill_validator.py**     | `05_Scripts/03_Scripts_Os/03_Validator/` | Valida estructura SOTA |
+| **skill_security_scan.py** | `05_Scripts/03_Scripts_Os/03_Validator/` | Escaneo de seguridad   |
 
 ### MCPs (29 activos)
 
@@ -207,7 +207,7 @@ Code review automático integrado:
 
 | Tipo            | Patrón                | Ejemplo                      |
 | --------------- | --------------------- | ---------------------------- |
-| **Directorios** | `XX_Nombre/`          | `00_Core/`, `04_Operations/` |
+| **Directorios** | `XX_Nombre/`          | `00_Core/`, `05_Scripts/` |
 | **Archivos**    | `XX_Nombre.ext`       | `01_Report_Status.md`        |
 | **Scripts**     | `##_Nombre_Script.py` | `01_Auditor_Hub.py`          |
 | **Skills**      | `SKILL.md`            | En cada skill                |
@@ -221,7 +221,7 @@ Code review automático integrado:
 | **AGENTS.md**            | `00_Winter_is_Coming/AGENTS.md`                         |
 | **RULES_INDEX**          | `00_Core/01_Rules/RULES_INDEX.md`                       |
 | **Skills README**        | `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`   |
-| **Scripts INDEX**        | `04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`          |
+| **Scripts INDEX**        | `05_Scripts/03_Scripts_Os/SCRIPTS_INDEX.md`          |
 | **OS Integration Audit** | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`     |
 | **Edge Cases**           | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`        |
 | **Chris Orwig Style**    | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`   |
@@ -240,7 +240,7 @@ Code review automático integrado:
 | **Super Campeones**      | Orquestación de agentes en equipo                  | Activado por defecto    |
 | **Compound Engineering** | Cada unidad de trabajo hace la siguiente más fácil | `/ce:*`                 |
 | **GGA**                  | Code review automático pre-commit                  | `.agent/05_GGA/bin/gga` |
-| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `04_Operations/`        |
+| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `05_Scripts/`        |
 
 ### Cómo funciona la orquestación
 

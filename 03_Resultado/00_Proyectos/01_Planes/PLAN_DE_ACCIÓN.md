@@ -85,7 +85,7 @@ Según el BACKLOG.md actualizado a 2026-04-01, las tareas pendientes son:
    grep -A5 -B5 "41_Logic_Restorer\|42_Audit_Engineering" 03_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py
    
    # Verificar referencias en documentación activa (no archivada)
-   find 02_Knowledge/ 04_Operations/ -name "*.md" -exec grep -l "41_\|42_" {} \;
+   find 02_Knowledge/ 05_Scripts/ -name "*.md" -exec grep -l "41_\|42_" {} \;
    ```
 
 ### Para la Tarea 3: Smoke test de hubs

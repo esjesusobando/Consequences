@@ -164,9 +164,9 @@ Notes: Terminando script de bash
 
 ## Destinos (Single Source of Truth)
 
-- **Daily Log**: `03_Tasks/Daily_Activity_Log.md`
-- **Daily Summary**: `03_Tasks/Daily_Report.md` (Integrado en reporte de Hillary)
-- **Weekly Insight**: `03_Tasks/Weekly_Insights.md`
+- **Daily Log**: `04_Tasks/Daily_Activity_Log.md`
+- **Daily Summary**: `04_Tasks/Daily_Report.md` (Integrado en reporte de Hillary)
+- **Weekly Insight**: `04_Tasks/Weekly_Insights.md`
 
 ---
 

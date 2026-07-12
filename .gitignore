@@ -10,10 +10,10 @@
 # PERSONAL OS CORE
 # =============================================================================
 
-# Personal task files (path: 01_Personal_Os/03_Task/)
-01_Personal_Os/03_Task/*.md
-!01_Personal_Os/03_Task/.gitkeep
-!01_Personal_Os/03_Task/README.md
+# Personal task files (path: 01_Personal_Os/04_Tasks/)
+01_Personal_Os/04_Tasks/*.md
+!01_Personal_Os/04_Tasks/.gitkeep
+!01_Personal_Os/04_Tasks/README.md
 
 # Matrix files (personal)
 00_Winter_is_Coming/BACKLOG.md
@@ -124,7 +124,7 @@ claude-plugins-official/
 01_Core/08_Plugins/01_Claude-Plugins_Official/
 01_Core/05_Mcp/mcp.json                # LEGACY: 01_Core/05_Mcp/ no longer exists; MCP configs moved to 01_Personal_Os/01_Core/02_Tools/03_Mcp/
 01_Core/05_Mcp/opencode.json           # LEGACY: same as above
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/03_Side_Project_Backup/
+01_Personal_Os/06_Projects/01_Projects_Lab/03_Side_Project_Backup/
 
 # Frontend Slides - Predeterminada para presentaciones HTML (TRACKED)
 # Clonar de: https://github.com/zarazhangrui/frontend-slides
@@ -167,14 +167,14 @@ Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kep
 01_Personal_Os/01_Core/02_Tools/07_Server/Engram/cmd/
 
 # PDFs de biblioteca (solo referencia local, no commitear)
-01_Personal_Os/04_Operations/00_Context_LLM/02_Knowledge_Brain/00_Library_PDFs/*.pdf
+01_Personal_Os/01_Memory/02_Knowledge_Brain/00_Library_PDFs/*.pdf
 
 # Imágenes grandes (carpeta Now/ ya no existe pero por si vuelve)
 Now/03_Imagenes_Finales/                # LEGACY: Now/ dir no longer exists, kept for reference
 Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kept for reference
 
 # JSON de métricas auto-generados (se regeneran solos)
-01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json
+01_Personal_Os/05_Scripts/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json
 
 # =============================================================================
 # EX-SUBMODULES — carpetas locales, no trackear
@@ -226,7 +226,7 @@ node_modules/
 .next/
 out/
 *.tsbuildinfo
-01_Personal_Os/04_Operations/04_Installer/.machine_id
+01_Personal_Os/05_Scripts/01_Installer/04_Installer/.machine_id
 01_Personal_Os/05_Archive/07_Repos_Gentleman/curso-ai-devs/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/design-system/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/

@@ -23,8 +23,8 @@ Se auditaron los scripts principales:
 
 ### 4. Documentación y Memoria Transaccional
 Como paso final, se aseguró que todo quedara guardado:
-- Se creó la **Nota de Proceso:** [44_NP_Auditoria_SOTA_v5.1.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/44_NP_Auditoria_SOTA_v5.1.md).
-- Se actualizó el **Context Memory:** [Context_Memory.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/00_Context_LLM/Context_Memory.md) con los deltas de esta versión 5.1 y el **cuadro comparativo de SOTA**.
+- Se creó la **Nota de Proceso:** [44_NP_Auditoria_SOTA_v5.1.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Memory/01_Process_Notes/44_NP_Auditoria_SOTA_v5.1.md).
+- Se actualizó el **Context Memory:** [Context_Memory.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Memory/Context_Memory.md) con los deltas de esta versión 5.1 y el **cuadro comparativo de SOTA**.
 
 ---
 

@@ -8,7 +8,7 @@ Batch path replacement script for OS filesystem restructuring.
 Maps old paths → new paths:
   01_Core/ → 00_Core/
   03_Task/ → 04_Tasks/
-  04_Operations/03_Scripts_Os/ → 05_Scripts/00_HUBs/03_Scripts_Os/
+  05_Scripts/ → 05_Scripts/00_HUBs/03_Scripts_Os/
   04_Operations/ → 05_Scripts/ (general)
 """
 
@@ -35,14 +35,14 @@ EXCLUDED_DIRS = {
 # Covers both string paths and pathlib concatenation patterns
 REPLACEMENTS: List[Tuple[str, str]] = [
     # Full pathlib path segments (with slash)
-    ("04_Operations/03_Scripts_Os/", "05_Scripts/00_HUBs/03_Scripts_Os/"),
+    ("05_Scripts/", "05_Scripts/00_HUBs/03_Scripts_Os/"),
     ("04_Operations/02_Tasks/", "04_Tasks/"),
     ("04_Operations/02_Tasks", "04_Tasks"),  # no trailing slash
     ("04_Operations/06_Solutions/", "01_Memory/00_Context_LLM/06_Solutions/"),
     ("04_Operations/05_Plans/", "01_Memory/00_Context_LLM/05_Plans/"),
-    ("04_Operations/05_Projects/", "06_Projects/"),
-    ("04_Operations/00_Context_LLM/", "01_Memory/00_Context_LLM/"),
-    ("04_Operations/01_Auto_Improvement/", "03_Learning/01_Auto_Improvement/"),
+    ("06_Projects/", "06_Projects/"),
+    ("01_Memory/", "01_Memory/00_Context_LLM/"),
+    ("05_Scripts/01_Auto_Improvement/", "03_Learning/01_Auto_Improvement/"),
     ("04_Operations/", "05_Scripts/"),  # generic fallback — keep LAST for 04_Operations/*
     ("01_Core/", "00_Core/"),
     ("03_Task/", "04_Tasks/"),
@@ -59,15 +59,15 @@ REPLACEMENTS: List[Tuple[str, str]] = [
     ('"01_Core"', '"00_Core"'),
     ('"03_Task"', '"04_Tasks"'),
     ('"04_Operations"', '"05_Scripts"'),
-    ('"04_Operations/03_Scripts_Os"', '"05_Scripts/00_HUBs/03_Scripts_Os"'),
-    ('"04_Operations/03_Scripts_Os/', '"05_Scripts/00_HUBs/03_Scripts_Os/'),
+    ('"05_Scripts"', '"05_Scripts/00_HUBs/03_Scripts_Os"'),
+    ('"05_Scripts/', '"05_Scripts/00_HUBs/03_Scripts_Os/'),
     
     # String paths (single-quoted)
     ("'01_Core'", "'00_Core'"),
     ("'03_Task'", "'04_Tasks'"),
     ("'04_Operations'", "'05_Scripts'"),
-    ("'04_Operations/03_Scripts_Os'", "'05_Scripts/00_HUBs/03_Scripts_Os'"),
-    ("'04_Operations/03_Scripts_Os/", "'05_Scripts/00_HUBs/03_Scripts_Os/"),
+    ("'05_Scripts'", "'05_Scripts/00_HUBs/03_Scripts_Os'"),
+    ("'05_Scripts/", "'05_Scripts/00_HUBs/03_Scripts_Os/"),
     
     # Comments/documentation references
     ("01_Personal_Os/01_Core", "01_Personal_Os/00_Core"),
@@ -76,13 +76,13 @@ REPLACEMENTS: List[Tuple[str, str]] = [
     ("01_Core/02_Tools", "00_Core/02_Tools"),
     ("01_Core/01_Rules", "00_Core/01_Rules"),
     ("00_Core/00_Workflows_Os", "00_Core/00_Workflows"),
-    ("04_Operations/03_Scripts_Os", "05_Scripts/00_HUBs/03_Scripts_Os"),
+    ("05_Scripts", "05_Scripts/00_HUBs/03_Scripts_Os"),
     ("04_Operations/02_Agent_Teams", "05_Scripts/02_Agent_Teams"),
     ("04_Operations/06_Solutions", "01_Memory/00_Context_LLM/06_Solutions"),
     ("04_Operations/05_Plans", "01_Memory/00_Context_LLM/05_Plans"),
-    ("04_Operations/05_Projects", "06_Projects"),
-    ("04_Operations/00_Context_LLM", "01_Memory/00_Context_LLM"),
-    ("04_Operations/01_Auto_Improvement", "03_Learning/01_Auto_Improvement"),
+    ("06_Projects", "06_Projects"),
+    ("01_Memory", "01_Memory/00_Context_LLM"),
+    ("05_Scripts/01_Auto_Improvement", "03_Learning/01_Auto_Improvement"),
     ("03_Task/", "04_Tasks/"),
 ]
 

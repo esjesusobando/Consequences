@@ -35,7 +35,7 @@ Think_Different/
 │   │       ├── 03_Mcp/       ✅ 36 MCPs configurados
 │   │       └── [...]
 │   ├── 02_Knowledge/        ✅ Base de conocimiento
-│   ├── 03_Task/             ✅ Tareas activas
+│   ├── 04_Tasks/             ✅ Tareas activas
 │   ├── 04_Operations/       ✅ Motor operativo (14 HUBs)
 │   └── 05_Archive/           ✅ Legacy
 ├── 02_Playground/           ✅ Zona de pruebas
@@ -130,7 +130,7 @@ OpenCode: 1.14.25 ✅
 
 1. **Paths critiques documentados:**
    - Skills: `01_Personal_Os/00_Core/02_Tools/02_Skills/`
-   - HUBs: `01_Personal_Os/04_Operations/03_Scripts_Os/`
+   - HUBs: `01_Personal_Os/05_Scripts/`
    - Rules: `01_Personal_Os/00_Core/01_Rules/`
 
 2. **Referencias obsoletas no eliminadas:**

@@ -73,6 +73,6 @@ head -20 01_Personal_Os/00_Core/00_Workflows/02_Marvel/05_Thor_Work.md
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/15_Task_Revisar_Marvel_Workflows_P3.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/15_Task_Revisar_Marvel_Workflows_P3.md`
 - **Keywords:** `marvel`, `workflows`, `avengers`
 - **Bloqueado por:** —

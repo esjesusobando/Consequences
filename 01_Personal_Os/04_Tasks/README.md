@@ -113,7 +113,7 @@ Vincular con goals y referenciar material.
 ```
 1. Agregar notas a BACKLOG.md (00_Winter_is_Coming/)
 2. Decir "process my backlog" al AI
-3. AI crea tareas en 01_Personal_Os/03_Task/
+3. AI crea tareas en 01_Personal_Os/04_Tasks/
 4. Tareas se vinculan con GOALS.md
 5. AI sugiere qué trabajar según prioridades
 ```

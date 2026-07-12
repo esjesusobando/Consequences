@@ -1,7 +1,7 @@
 # 🧠 01_CTX_System_Architecture_Foundations
 
 **Estatus**: DOCUMENTO MAESTRO (Compactación v6.1)  
-**Fuente de Verdad (SSOT)**: `03_Tasks/`  
+**Fuente de Verdad (SSOT)**: `04_Tasks/`  
 **Root**: `00_Core/`
 
 ---
@@ -10,7 +10,7 @@
 PersonalOS v6.1 se rige por una estructura jerárquica modular diseñada para la máxima eficiencia de contexto en LLM (AI-Prime):
 
 1.  **01_Core**: El cerebro del sistema. Contiene Workflows, Agentes (#01-13) y Skills (#01-18+).
-2.  **03_Tasks**: Dimensión dinámica. Es la **única fuente de verdad** para tareas, proyectos activos y rutinas.
+2.  **04_Tasks**: Dimensión dinámica. Es la **única fuente de verdad** para tareas, proyectos activos y rutinas.
 3.  **04_Operations**: Dimensión de memoria y procesos (Context Memory, Process Notes).
 4.  **03_Scripts_Os**: Automatizaciones y herramientas de auditoría.
 
@@ -18,7 +18,7 @@ PersonalOS v6.1 se rige por una estructura jerárquica modular diseñada para la
 - **Plan-First**: Nunca ejecutar código complejo sin un plan aprobado. 
 - **Idioma**: Comunicación externa siempre en Español. Código en Inglés.
 - **Higiene**: Numeración estricta en carpetas (00-XX) para prevenir degradación de contexto.
-- **SSOT**: Prohibido duplicar información de tareas fuera de `03_Tasks`.
+- **SSOT**: Prohibido duplicar información de tareas fuera de `04_Tasks`.
 
 ## 📂 Mapeo de Skills Relevantes
 - **Skill 01 (Agent Teams Lite)**: Orquestador SDD.

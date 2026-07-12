@@ -13,7 +13,7 @@ Los scripts que ejecutan operaciones del sistema tenían paths hardcodeados sin 
 - `backlog-triage.py`: `get_tasks_dir()` retornaba `04_Operations/02_Tasks` en vez de `04_Tasks`
 - `03_Validate_Rules.py`: path key del diccionario de rutas
 - `62_Tool_Shed.py` + 4x `00_Notifier.py`: `sys.path.insert` apuntando a ubicación vieja
-- `post_hulk_compound.py`: tenía doble path anidado `04_Operations/04_Operations/03_Scripts_Os`
+- `post_hulk_compound.py`: tenía doble path anidado `04_Operations/05_Scripts`
 
 **Lección:** `config_paths.py` es la fuente de verdad — scripts que hardcodean paths directamente son fragiles. Pero en scripts legacy con `sys.path.insert()`, no hay alternativa, hay que fixear directo.
 

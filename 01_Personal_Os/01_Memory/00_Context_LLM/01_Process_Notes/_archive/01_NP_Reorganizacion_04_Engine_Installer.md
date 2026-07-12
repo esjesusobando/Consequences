@@ -37,7 +37,7 @@ Reorganizar la estructura del 04_Operations y crear un installer para migrar Per
 
 ### 3. Mover Scripts a 03_Scripts_Os
 
-- 65 scripts Python movidos de 04_Operations/ a 04_Operations/03_Scripts_Os/
+- 65 scripts Python movidos de 04_Operations/ a 05_Scripts/
 - Actualizar rutas hardcodeadas en 58 y 59 para usar config.json
 
 ### 4. Actualizar Referencias

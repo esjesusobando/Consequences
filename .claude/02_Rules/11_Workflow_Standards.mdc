@@ -21,12 +21,12 @@ Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
 ├── 01_Core/               # Motor: Skills, Agents, MCPs 💾
 ├── 02_Knowledge/          # Documentación
-├── 03_Tasks/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
+├── 04_Tasks/            # Tareas activas
+├── 05_Scripts/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 01_Personal_Os/04_Operations/05_Projects/        
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/06_Projects/        
+├── 01_Personal_Os/05_Scripts/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -37,7 +37,7 @@ Think_Different/
 
 1.  **Traceability**: Siempre trazar el origen de cada petición desde `00_Winter_is_Coming/BACKLOG.md` o `Rules_Registry.md`.
 2.  **The Golden Loop**: Cada error detectado (lógica, ruta, formato) DEBE inyectarse como una corrección en las reglas `.mdc`.
-3.  **Memoria Persistente**: Mantener las "Notas de Proceso" (`04_Operations/03_Process_Notes/`) de forma obsesiva tras cada sesión.
+3.  **Memoria Persistente**: Mantener las "Notas de Proceso" (`05_Scripts/03_Process_Notes/`) de forma obsesiva tras cada sesión.
 4.  **Integridad de Inventario**: Antes de actualizar metadatos (`plugin.json`, `README.md`), realizar un audito físico (`ls`) para validar que el conteo coincida con la realidad.
 5.  **Guardianes del Contexto**: Usar la Skill 13 (Fork) y 14 (Parallel) para tareas complejas para evitar la degradación del contexto.
 6.  **Auto-Sanación**: Corregir links rotos o rutas inconsistentes en el momento de detección y actualizar scripts de motor.

@@ -35,7 +35,7 @@
 ### 5. Considerar LTX Video para Producción
 **Observación**: LTX Video (open source) permite generación local con 6GB VRAM.
 **Acción**: Evaluar integrar LTX Video en workflows de contenido del OS.
-**Ubicación**: Investigar en `01_Personal_Os/04_Operations/05_Projects/`
+**Ubicación**: Investigar en `01_Personal_Os/05_Scripts/05_Projects/`
 
 ---
 

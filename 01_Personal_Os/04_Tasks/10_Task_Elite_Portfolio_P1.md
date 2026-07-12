@@ -5,8 +5,8 @@ priority: P1
 status: n
 created_date: 2026-05-22
 resource_refs:
-  - 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/
-  - 01_Personal_Os/04_Operations/05_Projects/00_Context/05_Elite_Portfolio.md
+  - 01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio/
+  - 01_Personal_Os/06_Projects/00_Context/05_Elite_Portfolio.md
 ---
 
 # Task: Elite Portfolio — Rediseño Exaggerated Minimalism
@@ -21,8 +21,8 @@ resource_refs:
 ## 📍 Contexto
 
 Elite Portfolio es un proyecto existente en:
-- **Local:** `01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/`
-- **Documentación:** `01_Personal_Os/04_Operations/05_Projects/00_Context/05_Elite_Portfolio.md`
+- **Local:** `01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio/`
+- **Documentación:** `01_Personal_Os/06_Projects/00_Context/05_Elite_Portfolio.md`
 - **Output:** `03_Resultado/Elite_Portfolio/` (futuro deploy)
 
 ### Estado Actual
@@ -81,7 +81,7 @@ src/
 **Verificar estado actual del proyecto:**
 
 ```bash
-cd 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio
+cd 01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio
 npm run build
 npm run dev  # verificar visual
 ```
@@ -94,6 +94,6 @@ npm run dev  # verificar visual
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/10_Task_Elite_Portfolio_P1.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/10_Task_Elite_Portfolio_P1.md`
 - **Keywords:** `elite portfolio`, `rediseño`, `exaggerated minimalism`
 - **Bloqueado por:** —

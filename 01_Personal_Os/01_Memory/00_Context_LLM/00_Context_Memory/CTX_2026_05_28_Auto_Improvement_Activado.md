@@ -25,7 +25,7 @@ Corre cada 8 horas en dry-run (solo escanea, no modifica).
 
 ## Ubicacion del motor
 
-`01_Personal_Os/04_Operations/01_Auto_Improvement/`
+`01_Personal_Os/05_Scripts/01_Auto_Improvement/`
 
 ## Archivos clave
 

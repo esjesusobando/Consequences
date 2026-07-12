@@ -42,7 +42,7 @@ Acá vive el conocimiento organizacional que trasciende al individuo:
 | Sistema                | Rol           | Que hace                                  | Donde vive                           |
 | ---------------------- | ------------- | ----------------------------------------- | ------------------------------------ |
 | 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`        |
-| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `04_Operations/01_Auto_Improvement/` |
+| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `05_Scripts/01_Auto_Improvement/` |
 
 **Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.
 **Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.
@@ -139,7 +139,7 @@ Los agentes pueden usar el bridge en modo JSON-RPC via `--serve` para consultar 
 
 ## 🔄 Sistemas Hermanos
 
-Este sistema se complementa con el **Auto-Improvement** (`01_Personal_Os/04_Operations/01_Auto_Improvement/`):
+Este sistema se complementa con el **Auto-Improvement** (`01_Personal_Os/05_Scripts/01_Auto_Improvement/`):
 
 ```
 🌕 Capital Token  (captura el valor ORGANIZACIONAL)

@@ -25,5 +25,5 @@ This loads:
 - Session rules (.claude/02_Rules/)
 - Long-term memory (engram_mem_context)
 - Process notes (04_Operations/03_Process_Notes/)
-- Task status (03_Tasks/)
+- Task status (04_Tasks/)
 - Goals & Backlog (00_Winter_is_Coming/)

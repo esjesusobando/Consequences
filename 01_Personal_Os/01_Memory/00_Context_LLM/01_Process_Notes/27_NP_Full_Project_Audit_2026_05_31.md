@@ -188,19 +188,19 @@ Estos scripts solo contienen `echo` y placeholders. **No se eliminaron** (por di
 ## 7. Archivos Modificados (Lista Completa)
 
 ```
-01_Personal_Os/04_Operations/03_Scripts_Os/11_Audits/audit_skills_routes.ps1
-01_Personal_Os/04_Operations/03_Scripts_Os/11_Audits/migrate_skills_routes.ps1
-01_Personal_Os/04_Operations/03_Scripts_Os/tarea_lista.bat
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/05_OBAND/.env.example          [NEW]
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/06_OIM_Original/package.json
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/06_OIM_Original/tsconfig.json
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/06_OIM_Original/vite.config.ts
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/07_Backup_OIM/package.json
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/07_Backup_OIM/tsconfig.json
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/07_Backup_OIM/vite.config.ts
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/.gitignore
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/package.json
-01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/08_Elite_Portfolio/start.bat
+01_Personal_Os/05_Scripts/11_Audits/audit_skills_routes.ps1
+01_Personal_Os/05_Scripts/11_Audits/migrate_skills_routes.ps1
+01_Personal_Os/05_Scripts/tarea_lista.bat
+01_Personal_Os/06_Projects/01_Projects_Lab/05_OBAND/.env.example          [NEW]
+01_Personal_Os/06_Projects/01_Projects_Lab/06_OIM_Original/package.json
+01_Personal_Os/06_Projects/01_Projects_Lab/06_OIM_Original/tsconfig.json
+01_Personal_Os/06_Projects/01_Projects_Lab/06_OIM_Original/vite.config.ts
+01_Personal_Os/06_Projects/01_Projects_Lab/07_Backup_OIM/package.json
+01_Personal_Os/06_Projects/01_Projects_Lab/07_Backup_OIM/tsconfig.json
+01_Personal_Os/06_Projects/01_Projects_Lab/07_Backup_OIM/vite.config.ts
+01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio/.gitignore
+01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio/package.json
+01_Personal_Os/06_Projects/01_Projects_Lab/08_Elite_Portfolio/start.bat
 01_Personal_Os/00_Core/02_Tools/05_Hooks/04_Sound/task-complete.bat
 .agent/04_Extensions/01_Hooks/04_Sound/task-complete.bat
 .agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1

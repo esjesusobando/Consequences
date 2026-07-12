@@ -97,7 +97,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 #### Pasos
 1. Crear `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/05_Content_Pipeline.md`
 2. Crear `03_Resultado/Contenido/`
-3. Crear `01_Personal_Os/04_Operations/07_Reports/content_log.md`
+3. Crear `01_Personal_Os/06_Projects/07_Reports/content_log.md`
 4. Añadir métrica "Piezas publicadas" a GOALS.md
 
 **Esfuerzo:** 2h | **Impacto:** ⭐⭐⭐⭐⭐
@@ -113,7 +113,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 #### Pasos
 1. Crear skill `identificando-oportunidades-ai-strong` con template de propuesta
 2. Crear `01_Personal_Os/00_Core/00_Workflows/01_Personal_Os/06_Monetization_Pipeline.md`
-3. Crear `01_Personal_Os/04_Operations/07_Reports/revenue_log.md`
+3. Crear `01_Personal_Os/06_Projects/07_Reports/revenue_log.md`
 4. Añadir a Weekly Review: revisión de pipeline de monetización
 
 **Esfuerzo:** 4-5h | **Impacto:** ⭐⭐⭐⭐⭐
@@ -147,7 +147,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 #### Pasos
 1. Crear skill `practicando-ingles-tecnico` con 4 modos (traducción, corrección, shadowing, vocabulary)
 2. Añadir métrica semanal a GOALS.md
-3. Crear tarea en 03_Task/ con práctica diaria 15min
+3. Crear tarea en 04_Tasks/ con práctica diaria 15min
 
 **Esfuerzo:** 3h | **Impacto:** ⭐⭐⭐⭐
 
@@ -160,7 +160,7 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 **Solución:** Estado persistente en texto plano.
 
 #### Pasos
-1. Crear `01_Personal_Os/04_Operations/00_Context_LLM/SESSION_STATE.md`
+1. Crear `01_Personal_Os/01_Memory/SESSION_STATE.md`
 2. Añadir al boot protocol: si Engram falla → leer SESSION_STATE.md
 3. Añadir al cierre de sesión: actualizar SESSION_STATE.md
 
@@ -194,8 +194,8 @@ El OS tiene 396 skills, 74 agentes, 30 HUBs, 28 workflows — **infraestructura 
 #### Pasos
 1. Revisar y actualizar `EVAL_PROTOCOL.md` (ya existe template)
 2. Ejecutar primera eval real sobre el Dream Team (7 agentes)
-3. Conectar con Auto-Improvement Learner (ya documentado en `04_Operations/01_Auto_Improvement/`)
-4. Registrar en `01_Personal_Os/04_Operations/07_Reports/agent_evals.md`
+3. Conectar con Auto-Improvement Learner (ya documentado en `05_Scripts/01_Auto_Improvement/`)
+4. Registrar en `01_Personal_Os/06_Projects/07_Reports/agent_evals.md`
 
 **Esfuerzo:** 3-4h | **Impacto:** ⭐⭐⭐⭐
 

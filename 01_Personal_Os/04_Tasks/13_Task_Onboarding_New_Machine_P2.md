@@ -72,6 +72,6 @@ find . -maxdepth 4 -name "*setup*" -o -name "*onboard*" -o -name "*install*"
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/13_Task_Onboarding_New_Machine_P2.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/13_Task_Onboarding_New_Machine_P2.md`
 - **Keywords:** `onboarding`, `setup`, `install`, `new machine`
 - **Bloqueado por:** —

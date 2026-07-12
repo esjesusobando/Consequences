@@ -78,7 +78,7 @@ cat 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/05_Validator/skill_security_
 
 ## 📋 Metadata
 
-- **Ubicación tarea:** `01_Personal_Os/03_Task/12_Task_PreCommit_API_Keys_P2.md`
+- **Ubicación tarea:** `01_Personal_Os/04_Tasks/12_Task_PreCommit_API_Keys_P2.md`
 - **Keywords:** `pre-commit`, `api keys`, `security`, `hook`
 - **Bloqueado por:** —
 - **Related:** GGA ya tiene workflow de PR validation

@@ -55,7 +55,7 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
 
 ## 📜 Rules
 
-1.  **No Duplicates**: Verificar que la tarea no exista en `03_Task`.
+1.  **No Duplicates**: Verificar que la tarea no exista en `04_Tasks`.
 2.  **Tag First**: Siempre usar brackets `[]` para identificar categorías.
 3.  **Proactive Triage**: Hillary debe procesar el inbox al inicio de cada sesión de "Life OS".
 

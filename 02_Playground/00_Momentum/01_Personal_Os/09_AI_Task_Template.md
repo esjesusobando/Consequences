@@ -21,7 +21,7 @@ argument-hint: "[nombre o descripción de la tarea a planificar]"
 Actúa como un experto en PersonalOS. Mi objetivo es completar la tarea: [Título].
 Contexto relevante: [Metas/Refs].
 Estado actual: [Resumen corto].
-Por favor, lee el archivo de la tarea en `03_Tasks/[archivo].md` y propón los primeros pasos.
+Por favor, lee el archivo de la tarea en `04_Tasks/[archivo].md` y propón los primeros pasos.
 ```
 
 ---

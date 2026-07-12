@@ -32,8 +32,8 @@ Think_Different/ (RAÍZ)
 │   │       ├── 08_Evals/         # 🆕 (antes 02_Evals)
 │   │       └── 09_Templates/     # 🆕 (antes 10_Templates)
 │   ├── 02_Knowledge/
-│   ├── 03_Task/                  # 🆕 (antes 03_Tasks - singular)
-│   ├── 04_Operations/
+│   ├── 04_Tasks/                  # Tareas activas
+│   ├── 05_Scripts/
 │   │   ├── 00_Context_LLM/       # 🆕 (antes 04_Operations subcarpetas)
 │   │   ├── 01_Auto_Improvement/
 │   │   ├── 02_Agent_Teams_Lite/
@@ -58,12 +58,12 @@ Think_Different/ (RAÍZ)
 |------------------------------|-----------------------------------------------------------|
 | `00_Core/`                    | `01_Personal_Os/00_Core/`                                  |
 | `02_Knowledge/`               | `01_Personal_Os/02_Knowledge/`                             |
-| `03_Tasks/`                   | `01_Personal_Os/03_Task/`                                  |
-| `04_Operations/`              | `01_Personal_Os/04_Operations/`                            |
+| `04_Tasks/`                   | `01_Personal_Os/04_Tasks/`                                  |
+| `05_Scripts/`              | `01_Personal_Os/05_Scripts/`                            |
 | `05_Archive/`                 | `01_Personal_Os/05_Archive/`                               |
 | `06_Playground/`              | `02_Playground/`                                           |
-| `07_Projects/`                | `01_Personal_Os/04_Operations/05_Projects/`                |
-| `03_Scripts_Os/`              | `01_Personal_Os/04_Operations/03_Scripts_Os/`              |
+| `07_Projects/`                | `01_Personal_Os/05_Scripts/05_Projects/`                |
+| `03_Scripts_Os/`              | `01_Personal_Os/05_Scripts/03_Scripts_Os/`              |
 | `Now/`                        | `03_Resultado/`                                            |
 
 ### Subdirectorios Core
@@ -99,9 +99,9 @@ Think_Different/ (RAÍZ)
 - [ ] `00_Core/README.md` - Múltiples referencias
 - [ ] `00_Core/01_Rules/RULES_INDEX.md` - Paths
 - [ ] `02_Knowledge/README.md` - Estructura
-- [ ] `03_Task/README.md` - Estructura
-- [ ] `04_Operations/README.md` - Múltiples refs
-- [ ] `04_Operations/03_Scripts_Os/README.md` - Paths
+- [ ] `04_Tasks/README.md` - Estructura
+- [ ] `05_Scripts/README.md` - Múltiples refs
+- [ ] `05_Scripts/03_Scripts_Os/README.md` - Paths
 
 ### 02_Playground
 - [ ] `02_Playground/README.md` - Título y estructura
@@ -115,9 +115,9 @@ Think_Different/ (RAÍZ)
 | `config_paths.py`                             | ✅ YA ACTUALIZADO                                                          | Listo                  |
 | Buscar en docs: `00_Core/`                    | Reemplazar por `01_Personal_Os/00_Core/`                                  | Pendiente              |
 | Buscar en docs: `02_Knowledge/`               | Reemplazar por `01_Personal_Os/02_Knowledge/`                             | Pendiente              |
-| Buscar en docs: `04_Operations/`              | Reemplazar por `01_Personal_Os/04_Operations/`                            | Pendiente              |
+| Buscar en docs: `05_Scripts/`              | Reemplazar por `01_Personal_Os/05_Scripts/`                            | Pendiente              |
 | Buscar en docs: `06_Playground/`              | Reemplazar por `02_Playground/`                                           | Pendiente              |
-| Buscar en docs: `03_Scripts_Os/`              | Reemplazar por `01_Personal_Os/04_Operations/03_Scripts_Os/`              | Pendiente              |
+| Buscar en docs: `03_Scripts_Os/`              | Reemplazar por `01_Personal_Os/05_Scripts/03_Scripts_Os/`              | Pendiente              |
 
 ---
 
@@ -127,7 +127,7 @@ Think_Different/ (RAÍZ)
 # Buscar rutas antiguas en todos los .md
 grep -r "00_Core/" --include="*.md" .
 grep -r "02_Knowledge/" --include="*.md" .
-grep -r "04_Operations/" --include="*.md" .
+grep -r "05_Scripts/" --include="*.md" .
 grep -r "06_Playground/" --include="*.md" .
 grep -r "03_Scripts_Os/" --include="*.md" .
 ```

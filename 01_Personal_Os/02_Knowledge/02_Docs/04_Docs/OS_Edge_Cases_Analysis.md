@@ -88,14 +88,14 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 | File/Location                                                                                  | Type                                  | Severity                                | Description                                                              | Recommendation                                                    |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|----------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------|
 | `CHANGELOG.md`                                                                                 | TEMPORAL                              | **LOW**                                 | Last updated 2026-03-29                                                  | Verify current version is documented                              |
-| Multiple dated process notes in `04_Operations/03_Process_Notes/`                              | TEMPORAL                              | **LOW**                                 | Dates in filenames may cause sorting issues                              | Use ISO date format consistently                                  |
+| Multiple dated process notes in `05_Scripts/03_Process_Notes/`                              | TEMPORAL                              | **LOW**                                 | Dates in filenames may cause sorting issues                              | Use ISO date format consistently                                  |
 
 ### 2.7 SYSTEM — Backup/Cache Files
 
 | File/Location                                                                     | Type                                | Severity                                | Description                                             | Recommendation                                                |
 |----------------------------------------------------------------------------------|------------------------------------|----------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|
 | `03_Scripts_Os/__pycache__/`                                                      | SYSTEM                              | **LOW**                                 | Python cache files present                              | Add to .gitignore if not already                              |
-| `04_Operations/01_Auto_Improvement/98_Backups/*.bak`                              | SYSTEM                              | **LOW**                                 | 10+ .bak backup files                                   | Review and clean up                                           |
+| `05_Scripts/01_Auto_Improvement/98_Backups/*.bak`                              | SYSTEM                              | **LOW**                                 | 10+ .bak backup files                                   | Review and clean up                                           |
 | `.ruff_cache/`                                                                    | SYSTEM                              | **LOW**                                 | Ruff linter cache                                       | Add to .gitignore                                             |
 
 ---
@@ -148,7 +148,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 | CHANGELOG.md                                         | ✅ PASS                                 | Updated 2026-03-29                                           |
 | .mcp.json                                            | ❌ INVALID                              | Not JSON, needs fix or deletion                              |
 
-### 3.6 03_Tasks/ — Task Files
+### 3.6 04_Tasks/ — Task Files
 
 | Check                                              | Status                                | Notes                                                       |
 |---------------------------------------------------|--------------------------------------|------------------------------------------------------------|
@@ -157,7 +157,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 | YAML frontmatter                                   | ✅ PASS                                | Tasks use proper frontmatter                                |
 | No orphaned tasks                                  | ✅ PASS                                | All tasks properly categorized                              |
 
-### 3.7 04_Operations/ — Auto Improvement
+### 3.7 05_Scripts/ — Auto Improvement
 
 | Check                                             | Status                                | Notes                                                         |
 |--------------------------------------------------|--------------------------------------|--------------------------------------------------------------|
