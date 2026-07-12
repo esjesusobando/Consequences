@@ -55,7 +55,7 @@ backup_agents = list(agents_backup.rglob("*.md")) if agents_backup.exists() else
 print(f"\n  Agentes core: {len(main_agents)}")
 print(f"  Agentes .agent: {len(backup_agents)}")
 
-hubs_dir = ROOT / "01_Personal_Os/05_Scripts/03_Scripts_Os"
+hubs_dir = ROOT / "01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os"
 hubs = sorted([f.stem for f in hubs_dir.glob("*.py")
                if f.stem not in ["config_paths", "__init__"] and f.stem[:2].isdigit()])
 print(f"\n  HUBs: {len(hubs)}")

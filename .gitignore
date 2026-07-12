@@ -167,7 +167,7 @@ Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kep
 01_Personal_Os/01_Core/02_Tools/07_Server/Engram/cmd/
 
 # PDFs de biblioteca (solo referencia local, no commitear)
-01_Personal_Os/01_Memory/02_Knowledge_Brain/00_Library_PDFs/*.pdf
+01_Personal_Os/01_Memory/00_Context_LLM/02_Knowledge_Brain/00_Library_PDFs/*.pdf
 
 # Imágenes grandes (carpeta Now/ ya no existe pero por si vuelve)
 Now/03_Imagenes_Finales/                # LEGACY: Now/ dir no longer exists, kept for reference
@@ -237,6 +237,7 @@ out/
 .atl/
 !.atl/*.md
 !.atl/openspec/
+!.atl/openspec/**
 
 # Strong MKT SDD artifacts (engram-backed)
 02_Playground/07_Zero_Consequences/06_Equipo_Strong_MKT/openspec/

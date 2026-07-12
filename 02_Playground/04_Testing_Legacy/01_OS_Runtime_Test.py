@@ -33,7 +33,7 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS_OS = ROOT / "01_Personal_Os" / "05_Scripts" / "03_Scripts_Os"
+SCRIPTS_OS = ROOT / "01_Personal_Os" / "05_Scripts" / "00_HUBs" / "03_Scripts_Os"
 VERBOSE = "--verbose" in sys.argv
 
 
@@ -168,7 +168,7 @@ def r13_gga_present():
 
 def r14_auto_improvement_scan():
     """Auto-Improvement Engine corre --scan sin crash."""
-    engine = (ROOT / "01_Personal_Os" / "05_Scripts" / "01_Auto_Improvement"
+    engine = (ROOT / "01_Personal_Os" / "03_Learning" / "01_Auto_Improvement"
               / "01_Engine" / "recursive_improvement_engine.py")
     if not engine.exists():
         return TestResult("R14", "Auto-Improvement — scan", False, "No existe")
