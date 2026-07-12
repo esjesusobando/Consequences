@@ -47,18 +47,18 @@ plugins=(... suse)
 
 ## Request commands
 
-| Alias         | Commands                   | Description                                          |
-| ------------- | -------------------------- | ---------------------------------------------------- |
-| zif           | `zypper if`                | display info about packages                          |
-| zpa           | `zypper pa`                | list packages                                        |
-| zpatch-info   | `zypper patch-info`        | display info about patches                           |
-| zpattern-info | `zypper pattern-info`      | display info about patterns                          |
-| zproduct-info | `zypper product-info`      | display info about products                          |
-| zpch          | `zypper pch`               | list all patches                                     |
-| zpd           | `zypper pd`                | list products                                        |
-| zpt           | `zypper pt`                | list patterns                                        |
-| zse           | `zypper se`                | search for packages                                  |
-| zwp           | `zypper wp`                | list all packages providing the specified capability |
+| Alias         | Commands              | Description                                          |
+| ------------- | --------------------- | ---------------------------------------------------- |
+| zif           | `zypper if`           | display info about packages                          |
+| zpa           | `zypper pa`           | list packages                                        |
+| zpatch-info   | `zypper patch-info`   | display info about patches                           |
+| zpattern-info | `zypper pattern-info` | display info about patterns                          |
+| zproduct-info | `zypper product-info` | display info about products                          |
+| zpch          | `zypper pch`          | list all patches                                     |
+| zpd           | `zypper pd`           | list products                                        |
+| zpt           | `zypper pt`           | list patterns                                        |
+| zse           | `zypper se`           | search for packages                                  |
+| zwp           | `zypper wp`           | list all packages providing the specified capability |
 
 NOTE: `--no-refresh` is passed to zypper for speeding up the calls and avoid errors due to lack
 of root privileges. If you need to refresh the repositories, call `sudo zypper ref` (`zref` alias)

@@ -13,10 +13,10 @@ plugins=(... rbenv)
 
 ## Alias
 
-| Alias            | Command               | Description                        |
-| ---------------- | --------------------- | ---------------------------------- |
-| rubies           | `rbenv versions`      | List the installed Ruby versions   |
-| gemsets          | `rbenv gemset list`   | List the existing gemsets          |
+| Alias   | Command             | Description                      |
+| ------- | ------------------- | -------------------------------- |
+| rubies  | `rbenv versions`    | List the installed Ruby versions |
+| gemsets | `rbenv gemset list` | List the existing gemsets        |
 
 ## Functions
 

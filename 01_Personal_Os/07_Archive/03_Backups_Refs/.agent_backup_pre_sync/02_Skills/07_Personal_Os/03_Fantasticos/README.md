@@ -84,11 +84,11 @@ doc = {
 
 ## Comparación con otras Formaciones
 
-| Formación       | Complejidad   | Verificación   | Docs    | Memoria   |
-| --------------- | ------------- | -------------- | ------- | --------- |
-| **Octopus**     | Baja          | ❌              | ❌       | ❌         |
-| **4 Fantásticos** | Media         | ✅              | ✅       | ✅         |
-| **Super Campeones** | Alta          | ✅              | ✅       | ✅         |
+| Formación           | Complejidad | Verificación | Docs | Memoria |
+| ------------------- | ----------- | ------------ | ---- | ------- |
+| **Octopus**         | Baja        | ❌            | ❌    | ❌       |
+| **4 Fantásticos**   | Media       | ✅            | ✅    | ✅       |
+| **Super Campeones** | Alta        | ✅            | ✅    | ✅       |
 
 ## Gotchas
 

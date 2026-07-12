@@ -112,16 +112,16 @@ The skill will:
 
 This skill uses **progressive disclosure** — the main `SKILL.md` is a concise map (~180 lines), with supporting files loaded on-demand only when needed:
 
-| File                              | Purpose                                | Loaded When                       |
-| --------------------------------- | -------------------------------------- | --------------------------------- |
-| `SKILL.md`                        | Core workflow and rules                | Always (skill invocation)         |
-| `STYLE_PRESETS.md`                | 12 curated visual presets              | Phase 2 (style selection)         |
-| `viewport-base.css`               | Mandatory responsive CSS               | Phase 3 (generation)              |
-| `html-template.md`                | HTML structure and JS features         | Phase 3 (generation)              |
-| `animation-patterns.md`           | CSS/JS animation reference             | Phase 3 (generation)              |
-| `scripts/extract-pptx.py`         | PPT content extraction                 | Phase 4 (conversion)              |
-| `scripts/deploy.sh`               | Deploy to Vercel                       | Phase 6 (sharing)                 |
-| `scripts/export-pdf.sh`           | Export slides to PDF                   | Phase 6 (sharing)                 |
+| File                      | Purpose                        | Loaded When               |
+| ------------------------- | ------------------------------ | ------------------------- |
+| `SKILL.md`                | Core workflow and rules        | Always (skill invocation) |
+| `STYLE_PRESETS.md`        | 12 curated visual presets      | Phase 2 (style selection) |
+| `viewport-base.css`       | Mandatory responsive CSS       | Phase 3 (generation)      |
+| `html-template.md`        | HTML structure and JS features | Phase 3 (generation)      |
+| `animation-patterns.md`   | CSS/JS animation reference     | Phase 3 (generation)      |
+| `scripts/extract-pptx.py` | PPT content extraction         | Phase 4 (conversion)      |
+| `scripts/deploy.sh`       | Deploy to Vercel               | Phase 6 (sharing)         |
+| `scripts/export-pdf.sh`   | Export slides to PDF           | Phase 6 (sharing)         |
 
 This design follows [OpenAI's harness engineering](https://openai.com/index/harness-engineering/) principle: "give the agent a map, not a 1,000-page instruction manual."
 

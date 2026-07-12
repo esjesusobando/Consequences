@@ -396,7 +396,7 @@ function saveCustomPresets(presets: Preset[]) {
   localStorage.setItem(CUSTOM_PRESETS_KEY, JSON.stringify(presets));
 }
 
-export default function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) {
+export function PhotoEditor({ accent, onLogMessage }: PhotoEditorProps) {
   const [img, setImg] = useState<HTMLImageElement | null>(null);
   const [adj, setAdj] = useState<Adjustments>({ ...DEF });
   const [preset, setPreset] = useState<string>('none');

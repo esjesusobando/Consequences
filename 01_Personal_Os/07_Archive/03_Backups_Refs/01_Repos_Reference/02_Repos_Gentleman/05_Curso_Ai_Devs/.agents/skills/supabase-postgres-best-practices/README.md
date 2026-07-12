@@ -105,12 +105,12 @@ See `references/_contributing.md` for detailed guidelines. Key principles:
 
 ## Impact Levels
 
-| Level       | Improvement   | Examples                               |
-| ----------- | ------------- | -------------------------------------- |
-| CRITICAL    | 10-100x       | Missing indexes, connection exhaustion |
-| HIGH        | 5-20x         | Wrong index types, poor partitioning   |
-| MEDIUM-HIGH | 2-5x          | N+1 queries, RLS optimization          |
-| MEDIUM      | 1.5-3x        | Redundant indexes, stale statistics    |
-| LOW-MEDIUM  | 1.2-2x        | VACUUM tuning, config tweaks           |
-| LOW         | Incremental   | Advanced patterns, edge cases          |
+| Level       | Improvement | Examples                               |
+| ----------- | ----------- | -------------------------------------- |
+| CRITICAL    | 10-100x     | Missing indexes, connection exhaustion |
+| HIGH        | 5-20x       | Wrong index types, poor partitioning   |
+| MEDIUM-HIGH | 2-5x        | N+1 queries, RLS optimization          |
+| MEDIUM      | 1.5-3x      | Redundant indexes, stale statistics    |
+| LOW-MEDIUM  | 1.2-2x      | VACUUM tuning, config tweaks           |
+| LOW         | Incremental | Advanced patterns, edge cases          |
 ```

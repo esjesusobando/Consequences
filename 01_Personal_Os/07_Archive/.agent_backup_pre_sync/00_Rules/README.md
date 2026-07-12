@@ -10,20 +10,20 @@ Este directorio contiene la inteligencia operativa de **PersonalOS**, consolidad
 
 ## 📋 Índice de Reglas (12 archivos)
 
-| #    | Regla                          | Propósito                                          |
-| ---- | ------------------------------ | -------------------------------------------------- |
-| 00   | `00_Core_Protocol.mdc`         | Protocolo core — ADN operativo                     |
-| 01   | `01_Pilares_Sistema.mdc`       | Pilares fundamentales del sistema                  |
-| 02   | `02_Motor_Agent.mdc`           | Motor, Agent Integration y Stack Técnico           |
-| 03   | `03_Protocolos_Ejecucion.mdc`  | Protocolos de ejecución                            |
-| 04   | `04_Observabilidad.mdc`        | Observabilidad y monitoreo                         |
-| 05   | `05_Reporting.mdc`             | Reporting de élite                                 |
-| 06   | `06_Contexto_Gestion.mdc`      | Gestión de contexto                                |
-| 07   | `07_Docs_Guias.mdc`            | Documentación y guías                              |
-| 08   | `08_Token_Economy.mdc`         | Economía de tokens                                 |
-| 09   | `09_Agent_Teams_Protocol.mdc`  | Protocolo de Agent Teams                           |
-| 10   | `10_Git_Directions.mdc`        | Direcciones Git y flujo de trabajo                 |
-| 11   | `11_Minimax.mdc`               | Configuración Minimax                              |
+| #  | Regla                         | Propósito                                |
+| --- | ----------------------------- | ---------------------------------------- |
+| 00 | `00_Core_Protocol.mdc`        | Protocolo core — ADN operativo           |
+| 01 | `01_Pilares_Sistema.mdc`      | Pilares fundamentales del sistema        |
+| 02 | `02_Motor_Agent.mdc`          | Motor, Agent Integration y Stack Técnico |
+| 03 | `03_Protocolos_Ejecucion.mdc` | Protocolos de ejecución                  |
+| 04 | `04_Observabilidad.mdc`       | Observabilidad y monitoreo               |
+| 05 | `05_Reporting.mdc`            | Reporting de élite                       |
+| 06 | `06_Contexto_Gestion.mdc`     | Gestión de contexto                      |
+| 07 | `07_Docs_Guias.mdc`           | Documentación y guías                    |
+| 08 | `08_Token_Economy.mdc`        | Economía de tokens                       |
+| 09 | `09_Agent_Teams_Protocol.mdc` | Protocolo de Agent Teams                 |
+| 10 | `10_Git_Directions.mdc`       | Direcciones Git y flujo de trabajo       |
+| 11 | `11_Minimax.mdc`              | Configuración Minimax                    |
 
 ## 🔄 El Bucle de Oro (The Golden Loop)
 

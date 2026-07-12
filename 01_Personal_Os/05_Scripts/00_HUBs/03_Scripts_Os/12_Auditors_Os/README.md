@@ -17,13 +17,13 @@ Utilities para auditors del PersonalOS v5.0 SOTA:
 
 ## 📦 Scripts (5 en `scripts/`)
 
-| #   | Script                       | Propósito                              |
+| #  | Script                       | Propósito                              |
 | --- | ---------------------------- | -------------------------------------- |
-| 00  | `00_Context_Usage_Bar.py`    | Barra de uso de contexto para OpenCode |
-| 01  | `01_Beautify_Tables.py`      | Embellecedor de tablas markdown        |
-| 02  | `02_Beauty_Doc.py`           | Embellecedor de documentos markdown    |
-| 03  | `03_SOTA_Integrity_Check.py` | Validación de integridad SOTA          |
-| 04  | `04_Carousel_Engine.py`      | Motor de carruseles estratégicos       |
+| 00 | `00_Context_Usage_Bar.py`    | Barra de uso de contexto para OpenCode |
+| 01 | `01_Beautify_Tables.py`      | Embellecedor de tablas markdown        |
+| 02 | `02_Beauty_Doc.py`           | Embellecedor de documentos markdown    |
+| 03 | `03_SOTA_Integrity_Check.py` | Validación de integridad SOTA          |
+| 04 | `04_Carousel_Engine.py`      | Motor de carruseles estratégicos       |
 
 ---
 

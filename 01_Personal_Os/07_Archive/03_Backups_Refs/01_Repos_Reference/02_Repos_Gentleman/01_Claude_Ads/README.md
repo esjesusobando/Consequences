@@ -107,24 +107,24 @@ claude
 
 ## Commands
 
-| Command                    | Description                                                                                 |
-| -------------------------- | ------------------------------------------------------------------------------------------- |
-| `/ads audit`               | Full multi-platform audit with parallel subagent delegation                                 |
-| `/ads google`              | Google Ads deep analysis (Search, PMax, Display, YouTube, Demand Gen)                       |
-| `/ads meta`                | Meta Ads deep analysis (FB, IG, Advantage+ Shopping)                                        |
-| `/ads youtube`             | YouTube Ads specific analysis (Skippable, Shorts, Demand Gen)                               |
-| `/ads linkedin`            | LinkedIn Ads deep analysis (B2B, Lead Gen, TLA)                                             |
-| `/ads tiktok`              | TikTok Ads deep analysis (Creative, Shop, Smart+)                                           |
-| `/ads microsoft`           | Microsoft/Bing Ads deep analysis (Copilot, Import validation)                               |
-| `/ads creative`            | Cross-platform creative quality audit and fatigue detection                                 |
-| `/ads landing`             | Landing page quality assessment for ad campaigns                                            |
-| `/ads budget`              | Budget allocation and bidding strategy review                                               |
-| `/ads apple`               | Apple Ads deep analysis (campaign structure, bids, CPPs, Maximize Conversions, TAP)         |
-| `/ads plan <type>`         | Strategic ad plan with industry templates                                                   |
-| `/ads competitor`          | Competitor ad intelligence across all platforms                                             |
-| `/ads math`                | PPC financial calculator (CPA, ROAS, break-even, budget forecasting, LTV:CAC)               |
-| `/ads test`                | A/B test design (hypothesis framework, significance, sample size, duration)                 |
-| `/ads report`              | Generate PDF audit report for client deliverables                                           |
+| Command            | Description                                                                         |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| `/ads audit`       | Full multi-platform audit with parallel subagent delegation                         |
+| `/ads google`      | Google Ads deep analysis (Search, PMax, Display, YouTube, Demand Gen)               |
+| `/ads meta`        | Meta Ads deep analysis (FB, IG, Advantage+ Shopping)                                |
+| `/ads youtube`     | YouTube Ads specific analysis (Skippable, Shorts, Demand Gen)                       |
+| `/ads linkedin`    | LinkedIn Ads deep analysis (B2B, Lead Gen, TLA)                                     |
+| `/ads tiktok`      | TikTok Ads deep analysis (Creative, Shop, Smart+)                                   |
+| `/ads microsoft`   | Microsoft/Bing Ads deep analysis (Copilot, Import validation)                       |
+| `/ads creative`    | Cross-platform creative quality audit and fatigue detection                         |
+| `/ads landing`     | Landing page quality assessment for ad campaigns                                    |
+| `/ads budget`      | Budget allocation and bidding strategy review                                       |
+| `/ads apple`       | Apple Ads deep analysis (campaign structure, bids, CPPs, Maximize Conversions, TAP) |
+| `/ads plan <type>` | Strategic ad plan with industry templates                                           |
+| `/ads competitor`  | Competitor ad intelligence across all platforms                                     |
+| `/ads math`        | PPC financial calculator (CPA, ROAS, break-even, budget forecasting, LTV:CAC)       |
+| `/ads test`        | A/B test design (hypothesis framework, significance, sample size, duration)         |
+| `/ads report`      | Generate PDF audit report for client deliverables                                   |
 
 ### `/ads audit`
 **Full Multi-Platform Audit**
@@ -189,15 +189,15 @@ Generate professional PDF audit reports for client deliverables with health scor
 ### 250+ Audit Checks
 Comprehensive coverage across all platforms with weighted severity scoring:
 
-| Platform               | Checks           | Key Areas                                                                |
-| ---------------------- | ---------------- | ------------------------------------------------------------------------ |
-| Google Ads             | 80               | Search, PMax, AI Max, Demand Gen, CTV, YouTube                           |
-| Meta Ads               | 50               | Pixel/CAPI, Andromeda creative diversity, Structure, Audience            |
-| LinkedIn Ads           | 27               | B2B targeting, TLA, Lead Gen, CRM integration                            |
-| TikTok Ads             | 28               | Creative-first, Smart+, GMV Max, Search Ads, Events API                  |
-| Microsoft Ads          | 24               | Google import safety, Copilot, CTV, LinkedIn targeting, video            |
-| Apple Ads              | 35+              | Campaign structure, CPPs, Maximize Conversions, AdAttributionKit         |
-| Cross-platform         | 3                | Privacy infrastructure, creative diversity, refresh cadence              |
+| Platform       | Checks | Key Areas                                                        |
+| -------------- | ------ | ---------------------------------------------------------------- |
+| Google Ads     | 80     | Search, PMax, AI Max, Demand Gen, CTV, YouTube                   |
+| Meta Ads       | 50     | Pixel/CAPI, Andromeda creative diversity, Structure, Audience    |
+| LinkedIn Ads   | 27     | B2B targeting, TLA, Lead Gen, CRM integration                    |
+| TikTok Ads     | 28     | Creative-first, Smart+, GMV Max, Search Ads, Events API          |
+| Microsoft Ads  | 24     | Google import safety, Copilot, CTV, LinkedIn targeting, video    |
+| Apple Ads      | 35+    | Campaign structure, CPPs, Maximize Conversions, AdAttributionKit |
+| Cross-platform | 3      | Privacy infrastructure, creative diversity, refresh cadence      |
 
 <p align="center">
   <img src="assets/diagrams/15-platform-grid.svg" alt="Platform Coverage Grid" width="100%">
@@ -210,13 +210,13 @@ Comprehensive coverage across all platforms with weighted severity scoring:
 ### Ads Health Score (0-100)
 Weighted scoring algorithm with severity multipliers:
 
-| Grade           | Score           | Action Required                        |
-| --------------- | --------------- | -------------------------------------- |
-| A               | 90-100          | Minor optimizations only               |
-| B               | 75-89           | Some improvement opportunities         |
-| C               | 60-74           | Notable issues need attention          |
-| D               | 40-59           | Significant problems present           |
-| F               | <40             | Urgent intervention required           |
+| Grade | Score  | Action Required                |
+| ----- | ------ | ------------------------------ |
+| A     | 90-100 | Minor optimizations only       |
+| B     | 75-89  | Some improvement opportunities |
+| C     | 60-74  | Notable issues need attention  |
+| D     | 40-59  | Significant problems present   |
+| F     | <40    | Urgent intervention required   |
 
 <p align="center">
   <img src="assets/diagrams/13-scoring-algorithm.svg" alt="Scoring Algorithm" width="100%">

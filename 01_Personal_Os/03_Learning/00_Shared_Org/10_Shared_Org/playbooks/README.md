@@ -32,9 +32,9 @@ outputs:
 
 ## Playbooks
 
-| #   | Playbook | Estado      | Owner |
+| # | Playbook | Estado      | Owner |
 | --- | -------- | ----------- | ----- |
-| 1   | —        | 📝 Pendiente | —     |
+| 1 | —        | 📝 Pendiente | —     |
 
 ---
 

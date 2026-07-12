@@ -31,17 +31,17 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 
 > Fuente: `20_System_Mapper_Hub.py --scan` — 2026-07-03 (auditoría de integridad referencial)
 
-| Componente            | Total       | Estado                                 |
-|-----------------------|-------------|----------------------------------------|
-| Skills                | 396         | ✅ SOTA — CoT injected (15 áreas)       |
-| Agents (source)       | 63          | ✅ VERIFIED — backup 72 (drift 9)       |
-| MCPs Claude           | 11          | ✅ ACTIVE                               |
-| MCPs OpenCode         | 45          | ✅ ACTIVE                               |
-| HUBs                  | 42          | ✅ ACTIVE (33 .py + 9 dirs)             |
-| Scripts totales       | 166         | ✅ DOCUMENTED                           |
-| Workflows             | 30          | ✅ ACTIVE — 8 categorías                |
-| Hooks                 | 10          | ✅ ACTIVE — 6 fases                     |
-| Rules                 | 14          | ✅ DEFINED (.mdc)                       |
+| Componente      | Total | Estado                           |
+| --------------- | ----- | -------------------------------- |
+| Skills          | 396   | ✅ SOTA — CoT injected (15 áreas) |
+| Agents (source) | 63    | ✅ VERIFIED — backup 72 (drift 9) |
+| MCPs Claude     | 11    | ✅ ACTIVE                         |
+| MCPs OpenCode   | 45    | ✅ ACTIVE                         |
+| HUBs            | 42    | ✅ ACTIVE (33 .py + 9 dirs)       |
+| Scripts totales | 166   | ✅ DOCUMENTED                     |
+| Workflows       | 30    | ✅ ACTIVE — 8 categorías          |
+| Hooks           | 10    | ✅ ACTIVE — 6 fases               |
+| Rules           | 14    | ✅ DEFINED (.mdc)                 |
 
 ---
 
@@ -65,13 +65,13 @@ python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/18_Telemetry_Hub.py --das
 
 ## 📖 DOCUMENTACIÓN
 
-| Recurso                                     | Descripción                            |
-|---------------------------------------------|----------------------------------------|
-| `00_Core/README.md`                         | Motor del OS — herramientas core       |
-| `02_Knowledge/README.md`                    | Base de conocimiento                   |
-| `04_Tasks/README.md`                        | Gestión de tareas                      |
-| `07_Archive/README.md`                      | Archivo y legacy                       |
-| `00_Core/02_Tools/08_Evals/README.md`       | Evaluadores y métricas                 |
+| Recurso                               | Descripción                      |
+| ------------------------------------- | -------------------------------- |
+| `00_Core/README.md`                   | Motor del OS — herramientas core |
+| `02_Knowledge/README.md`              | Base de conocimiento             |
+| `04_Tasks/README.md`                  | Gestión de tareas                |
+| `07_Archive/README.md`                | Archivo y legacy                 |
+| `00_Core/02_Tools/08_Evals/README.md` | Evaluadores y métricas           |
 
 ---
 

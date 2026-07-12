@@ -59,16 +59,16 @@ that supports AgentSkills can author presentations by asking things like:
 
 ## What's in the box
 
-|                                        | Count           | Where                                      |
-| -------------------------------------- | --------------- | ------------------------------------------ |
-| 🎤 **Presenter mode**                   | **NEW**         | `S` key / `?preview=N`                     |
-| 🎨 **Themes**                           | **36**          | `assets/themes/*.css`                      |
-| 📑 **Full-deck templates**              | **15**          | `templates/full-decks/<name>/`             |
-| 🧩 **Single-page layouts**              | **31**          | `templates/single-page/*.html`             |
-| ✨ **CSS animations**                   | **27**          | `assets/animations/animations.css`         |
-| 💥 **Canvas FX animations**             | **20**          | `assets/animations/fx/*.js`                |
-| 🖼️ **Showcase decks**                  | 4               | `templates/*-showcase.html`                |
-| 📸 **Verification screenshots**         | 56              | `scripts/verify-output/`                   |
+|                                | Count   | Where                              |
+| ------------------------------ | ------- | ---------------------------------- |
+| 🎤 **Presenter mode**           | **NEW** | `S` key / `?preview=N`             |
+| 🎨 **Themes**                   | **36**  | `assets/themes/*.css`              |
+| 📑 **Full-deck templates**      | **15**  | `templates/full-decks/<name>/`     |
+| 🧩 **Single-page layouts**      | **31**  | `templates/single-page/*.html`     |
+| ✨ **CSS animations**           | **27**  | `assets/animations/animations.css` |
+| 💥 **Canvas FX animations**     | **20**  | `assets/animations/fx/*.js`        |
+| 🖼️ **Showcase decks**          | 4       | `templates/*-showcase.html`        |
+| 📸 **Verification screenshots** | 56      | `scripts/verify-output/`           |
 
 ### 36 Themes
 

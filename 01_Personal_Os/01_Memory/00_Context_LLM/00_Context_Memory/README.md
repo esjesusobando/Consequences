@@ -33,30 +33,30 @@
 
 Archivos de sesiones cerradas (< 2026-04), compactadas y preservadas en `_archive/` (22 archivos, numeración original 01-21).
 
-| #   | Documento                                     | Fecha      |
+| #  | Documento                                     | Fecha      |
 | --- | --------------------------------------------- | ---------- |
-| 01  | `01_Sesion_Template.md`                       | —          |
-| 02  | `02_CTX_Sistema_SOTA_Skills_v2.md`            | 2026-03-20 |
-| 03  | `03_CTX_Context_Memory.md`                    | 2026-03-16 |
-| 04  | `04_CTX_Context_Memory.md`                    | 2026-03-16 |
-| 05  | `05_CTX_Context_Memory.md`                    | 2026-03-16 |
-| 06  | `06_CTX_AIPM_Metricas_Trazas.md`              | 2026-03-20 |
-| 07  | `07_CTX_AIPM_Context_Robbery.md`              | 2026-03-21 |
-| 08  | `08_CTX_AIPM_Auditoria_Riesgos.md`            | 2026-03-21 |
-| 09  | `09_CTX_AIPM_Analisis_Forense.md`             | 2026-03-21 |
-| 10  | `10_CTX_AIPM_Control_Presupuesto.md`          | 2026-03-21 |
-| 11  | `11_CTX_AIPM_Validacion_Final.md`             | 2026-03-23 |
-| 12  | `12_CTX_Session_001.md`                       | —          |
-| 13  | `13_CTX_Session_002.md`                       | —          |
-| 14  | `14_CTX_Session_003.md`                       | —          |
-| 15  | `15_CTX_AUTO_Intelligence.md`                 | —          |
-| 16  | `16_CTX_Session_004.md`                       | —          |
-| 17  | `17_CTX_OIM_Vite_Fallback_Opencode_Repair.md` | —          |
-| 18  | `18_CTX_OIM_Website_SOTA_Build.md`            | —          |
-| 19  | `19_CTX_Hillary_Integration_Master.md`        | —          |
-| 19  | `19_CTX_Hillary_System_Mapping.md`            | —          |
-| 20  | `20_CTX_Hillary_Life_OS_Flows.md`             | —          |
-| 21  | `21_CTX_Hillary_Safety_Integrity.md`          | —          |
+| 01 | `01_Sesion_Template.md`                       | —          |
+| 02 | `02_CTX_Sistema_SOTA_Skills_v2.md`            | 2026-03-20 |
+| 03 | `03_CTX_Context_Memory.md`                    | 2026-03-16 |
+| 04 | `04_CTX_Context_Memory.md`                    | 2026-03-16 |
+| 05 | `05_CTX_Context_Memory.md`                    | 2026-03-16 |
+| 06 | `06_CTX_AIPM_Metricas_Trazas.md`              | 2026-03-20 |
+| 07 | `07_CTX_AIPM_Context_Robbery.md`              | 2026-03-21 |
+| 08 | `08_CTX_AIPM_Auditoria_Riesgos.md`            | 2026-03-21 |
+| 09 | `09_CTX_AIPM_Analisis_Forense.md`             | 2026-03-21 |
+| 10 | `10_CTX_AIPM_Control_Presupuesto.md`          | 2026-03-21 |
+| 11 | `11_CTX_AIPM_Validacion_Final.md`             | 2026-03-23 |
+| 12 | `12_CTX_Session_001.md`                       | —          |
+| 13 | `13_CTX_Session_002.md`                       | —          |
+| 14 | `14_CTX_Session_003.md`                       | —          |
+| 15 | `15_CTX_AUTO_Intelligence.md`                 | —          |
+| 16 | `16_CTX_Session_004.md`                       | —          |
+| 17 | `17_CTX_OIM_Vite_Fallback_Opencode_Repair.md` | —          |
+| 18 | `18_CTX_OIM_Website_SOTA_Build.md`            | —          |
+| 19 | `19_CTX_Hillary_Integration_Master.md`        | —          |
+| 19 | `19_CTX_Hillary_System_Mapping.md`            | —          |
+| 20 | `20_CTX_Hillary_Life_OS_Flows.md`             | —          |
+| 21 | `21_CTX_Hillary_Safety_Integrity.md`          | —          |
 
 ---
 

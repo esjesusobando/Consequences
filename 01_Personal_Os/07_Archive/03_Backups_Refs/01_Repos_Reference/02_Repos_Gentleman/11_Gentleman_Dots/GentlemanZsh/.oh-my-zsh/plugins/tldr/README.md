@@ -10,6 +10,6 @@ plugins=(... tldr)
 ```
 
 # Keyboard Shortcuts
-| Shortcut                             | Description                                                                  |
-| ------------------------------------ | ---------------------------------------------------------------------------- |
-| <kbd>Esc</kbd> + tldr                | add tldr before the previous command to see the tldr page for this command   |
+| Shortcut              | Description                                                                |
+| --------------------- | -------------------------------------------------------------------------- |
+| <kbd>Esc</kbd> + tldr | add tldr before the previous command to see the tldr page for this command |

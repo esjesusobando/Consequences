@@ -16,19 +16,19 @@
 
 > Fuente: `20_System_Mapper_Hub.py --scan` — 2026-07-05 (manifest regenerado post-fix)
 
-| Métrica                  | Valor                                              |
-|--------------------------|----------------------------------------------------|
-| **Overall Health**       | **100%** 🟢                                         |
-| **Every CE**             | v3.8.4 ✅                                           |
-| **gentle-ai**            | v1.30.6 ✅                                          |
-| **Skills**               | **429** (15 áreas funcionales, CoT injected)       |
-| **Rules**                | **14** (.mdc)                                      |
-| **MCPs**                 | **45** OpenCode (35 active)                        |
-| **HUBs**                 | **46** HUBs + **240** scripts totales              |
-| **Agentes**              | **68** (source) + **72** (backup) — drift 9        |
-| **Workflows**            | **30** (8 categorías)                              |
-| **Hooks**                | **10** (6 fases)                                   |
-| **Paths validated**      | **84/84 OK** (both copies, 2026-07-03)             |
+| Métrica             | Valor                                        |
+| ------------------- | -------------------------------------------- |
+| **Overall Health**  | **100%** 🟢                                   |
+| **Every CE**        | v3.8.4 ✅                                     |
+| **gentle-ai**       | v1.30.6 ✅                                    |
+| **Skills**          | **429** (15 áreas funcionales, CoT injected) |
+| **Rules**           | **14** (.mdc)                                |
+| **MCPs**            | **45** OpenCode (35 active)                  |
+| **HUBs**            | **46** HUBs + **240** scripts totales        |
+| **Agentes**         | **68** (source) + **72** (backup) — drift 9  |
+| **Workflows**       | **30** (8 categorías)                        |
+| **Hooks**           | **10** (6 fases)                             |
+| **Paths validated** | **84/84 OK** (both copies, 2026-07-03)       |
 
 ---
 
@@ -86,32 +86,32 @@ Think_Different/
 
 ## 🛠️ Skills System (16 áreas funcionales — 429 skills)
 
-| Área                          | Skills       | Descripción                                   |
-|-------------------------------|--------------|-----------------------------------------------|
-| 00_Agent_Teams_Lite           | 14           | SDD sub-agentes + JARVIS manifests            |
-| 00_Compound_Engineering       | 63           | Core CE — SDD + Compound Engineering          |
-| 00_Personal_Os                | 24           | Life OS, Hillary, Rituales                    |
-| 01_Creacion_Contenidos        | 52           | Brand, YouTube, SEO, Marketing                |
-| 02_Diseno_Ui_Ux               | 34           | Product Design, UI/UX, Taste                  |
-| 06_Tools                      | 83           | Skill Creator, Testing, DevOps                |
-| 08_JAO                        | 7            | Entrevistador, Humanizador, Superpowers       |
-| **09_RealEstate**             | **15**       | **Real estate analysis (NEW)**                |
-| + 7 áreas más                 | 119          | Video, Ads, Automation, Workflows, etc.       |
+| Área                    | Skills | Descripción                             |
+| ----------------------- | ------ | --------------------------------------- |
+| 00_Agent_Teams_Lite     | 14     | SDD sub-agentes + JARVIS manifests      |
+| 00_Compound_Engineering | 63     | Core CE — SDD + Compound Engineering    |
+| 00_Personal_Os          | 24     | Life OS, Hillary, Rituales              |
+| 01_Creacion_Contenidos  | 52     | Brand, YouTube, SEO, Marketing          |
+| 02_Diseno_Ui_Ux         | 34     | Product Design, UI/UX, Taste            |
+| 06_Tools                | 83     | Skill Creator, Testing, DevOps          |
+| 08_JAO                  | 7      | Entrevistador, Humanizador, Superpowers |
+| **09_RealEstate**       | **15** | **Real estate analysis (NEW)**          |
+| + 7 áreas más           | 119    | Video, Ads, Automation, Workflows, etc. |
 
 ---
 
 ## 🤖 Agentes (68 total — 9 categorías) [FIXED]
 
-| Categoría                                | Cantidad       | Ubicación                                                         |
-|------------------------------------------|----------------|-------------------------------------------------------------------|
-| Root (agent .md files)                   | 25             | `01_Agents/` (root level, excluye README/AGENTS/SKILL)            |
-| Dream Team                               | 6              | `01_Dream_Team/`                                                  |
-| Specialists Compound                     | 23             | `02_Specialists_Compound/`                                        |
-| Growth                                   | 5              | `03_Growth/`                                                      |
-| OS Conductor                             | 1              | `00_OS_Conductor/`                                                |
-| ATL Gen                                  | 3              | `07_Agent_Teams_Lite_Gen/00_Shared/`                              |
-| Agent Teams Lite                         | 0              | `00_Agent_Teams_Lite/` (AGENTS/SKILL/README excluidos)            |
-| Legacy (Contexto/Marca/Plantillas)       | 0              | `04_Contexto/, 05_Marca/, 06_Plantillas/` (LEEME excluidos)       |
+| Categoría                          | Cantidad | Ubicación                                                   |
+| ---------------------------------- | -------- | ----------------------------------------------------------- |
+| Root (agent .md files)             | 25       | `01_Agents/` (root level, excluye README/AGENTS/SKILL)      |
+| Dream Team                         | 6        | `01_Dream_Team/`                                            |
+| Specialists Compound               | 23       | `02_Specialists_Compound/`                                  |
+| Growth                             | 5        | `03_Growth/`                                                |
+| OS Conductor                       | 1        | `00_OS_Conductor/`                                          |
+| ATL Gen                            | 3        | `07_Agent_Teams_Lite_Gen/00_Shared/`                        |
+| Agent Teams Lite                   | 0        | `00_Agent_Teams_Lite/` (AGENTS/SKILL/README excluidos)      |
+| Legacy (Contexto/Marca/Plantillas) | 0        | `04_Contexto/, 05_Marca/, 06_Plantillas/` (LEEME excluidos) |
 
 > ⚠️ Conteo source = 63 (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Backup = 72. Drift = 9. Verificado 2026-06-27 por System Mapper.
 
@@ -119,16 +119,16 @@ Think_Different/
 
 ## 📋 Comandos Principales
 
-| Comando                              | Descripción                            |
-|--------------------------------------|----------------------------------------|
-| `Process my backlog`                 | Backlog processing (4 workflows)       |
-| `What should I work on today?`       | Morning standup                        |
-| `Write a blog post`                  | Content generation                     |
-| `Weekly review`                      | Weekly reflection                      |
-| `/sdd-*`                             | SDD Workflow                           |
-| `/ce:*`                              | Compound Engineering                   |
-| `/claude-seo-ai:*`                   | SEO + AI-search audit & fix            |
-| `gr`                                 | System Guardian                        |
+| Comando                        | Descripción                      |
+| ------------------------------ | -------------------------------- |
+| `Process my backlog`           | Backlog processing (4 workflows) |
+| `What should I work on today?` | Morning standup                  |
+| `Write a blog post`            | Content generation               |
+| `Weekly review`                | Weekly reflection                |
+| `/sdd-*`                       | SDD Workflow                     |
+| `/ce:*`                        | Compound Engineering             |
+| `/claude-seo-ai:*`             | SEO + AI-search audit & fix      |
+| `gr`                           | System Guardian                  |
 
 ---
 
@@ -166,16 +166,16 @@ Think_Different/
 
 ## 📚 Documentación
 
-| Documento                         | Ubicación                                                                  |
-|-----------------------------------|----------------------------------------------------------------------------|
-| **Structure_v5.0.md**             | Raíz — Estructura completa                                                 |
-| **OS_DIRECTORY.md**               | `00_Winter_is_Coming/OS_DIRECTORY.md`                                      |
-| **AGENTS.md**                     | `00_Winter_is_Coming/AGENTS.md`                                            |
-| **CLAUDE.md**                     | Raíz — Config IAs                                                          |
-| **Capital Token Plan**            | `02_Playground/00_Capital_Token_Plan.md`                                   |
-| **Capital Token README**          | `01_Personal_Os/03_Learning/00_Shared_Org/README.md`                       |
-| **Auto-Improvement README**       | `01_Personal_Os/03_Learning/01_Auto_Improvement/README.md`                 |
-| **Session Summary**               | `01_Personal_Os/07_Archive/01_Plans_Completed/03_Session_Summaries/`       |
+| Documento                   | Ubicación                                                            |
+| --------------------------- | -------------------------------------------------------------------- |
+| **Structure_v5.0.md**       | Raíz — Estructura completa                                           |
+| **OS_DIRECTORY.md**         | `00_Winter_is_Coming/OS_DIRECTORY.md`                                |
+| **AGENTS.md**               | `00_Winter_is_Coming/AGENTS.md`                                      |
+| **CLAUDE.md**               | Raíz — Config IAs                                                    |
+| **Capital Token Plan**      | `02_Playground/00_Capital_Token_Plan.md`                             |
+| **Capital Token README**    | `01_Personal_Os/03_Learning/00_Shared_Org/README.md`                 |
+| **Auto-Improvement README** | `01_Personal_Os/03_Learning/01_Auto_Improvement/README.md`           |
+| **Session Summary**         | `01_Personal_Os/07_Archive/01_Plans_Completed/03_Session_Summaries/` |
 
 ---
 

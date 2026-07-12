@@ -11,12 +11,12 @@ plugins=(... jump)
 
 ## Commands
 
-| Command                | Description                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------- |
-| `jump <mark-name>`     | Jump to the given mark                                                                            |
-| `mark [mark-name]`     | Create a mark with the given name or with the name of the current directory if none is provided   |
-| `unmark <mark-name>`   | Remove the given mark                                                                             |
-| `marks`                | List the existing marks and the directories they point to                                         |
+| Command              | Description                                                                                     |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| `jump <mark-name>`   | Jump to the given mark                                                                          |
+| `mark [mark-name]`   | Create a mark with the given name or with the name of the current directory if none is provided |
+| `unmark <mark-name>` | Remove the given mark                                                                           |
+| `marks`              | List the existing marks and the directories they point to                                       |
 
 ## Key bindings
 

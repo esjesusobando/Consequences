@@ -9,8 +9,8 @@ plugins=(... cakephp3)
 
 ## Aliases
 
-| Alias       | Command                         |
-| ----------- | ------------------------------- |
-| c3          | `bin/cake`                      |
-| c3cache     | `bin/cake orm_cache clear`      |
-| c3migrate   | `bin/cake migrations migrate`   |
+| Alias     | Command                       |
+| --------- | ----------------------------- |
+| c3        | `bin/cake`                    |
+| c3cache   | `bin/cake orm_cache clear`    |
+| c3migrate | `bin/cake migrations migrate` |

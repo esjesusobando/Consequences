@@ -14,8 +14,8 @@ This plugin assumes you already have jruby installed and available in your [path
 
 ## Aliases
 
-| Alias        | Command                                                          |
-| ------------ | ---------------------------------------------------------------- |
-| `jrspec`     | `jruby --debug -S rspec --debug`                                 |
-| `jprofile`   | `jruby --profile.api -S rspec`                                   |
-| `jexec`      | `jruby -S`                                                       |
+| Alias      | Command                          |
+| ---------- | -------------------------------- |
+| `jrspec`   | `jruby --debug -S rspec --debug` |
+| `jprofile` | `jruby --profile.api -S rspec`   |
+| `jexec`    | `jruby -S`                       |

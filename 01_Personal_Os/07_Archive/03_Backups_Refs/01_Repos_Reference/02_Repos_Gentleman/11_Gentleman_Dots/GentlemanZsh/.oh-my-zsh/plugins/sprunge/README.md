@@ -10,12 +10,12 @@ plugins=(... sprunge)
 
 ## Usage
 
-| Command                        | Description                                 |
-| ------------------------------ | ------------------------------------------- | ------------------------------- |
-| `sprunge filename.txt`         | Uploads filename.txt                        |
-| `sprunge "this is a string"`   | Uploads plain text                          |
-| `sprunge < filename.txt`       | Redirects filename.txt content to sprunge   |
-| `echo data \                   | sprunge`                                    | Any piped data will be uploaded |
+| Command                      | Description                               |                                 |
+| ---------------------------- | ----------------------------------------- | ------------------------------- |
+| `sprunge filename.txt`       | Uploads filename.txt                      |                                 |
+| `sprunge "this is a string"` | Uploads plain text                        |                                 |
+| `sprunge < filename.txt`     | Redirects filename.txt content to sprunge |                                 |
+| `echo data \                 | sprunge`                                  | Any piped data will be uploaded |
 
 Once sprunge has processed the input it will give you a unique HTTP address:
 

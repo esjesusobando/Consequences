@@ -43,23 +43,23 @@ The symbols are as follows:
 
 ### Local Status Symbols
 
-| Symbol   | Meaning                          |
-| -------- | -------------------------------- |
-| ✔        | repository clean                 |
-| ●n       | there are `n` staged files       |
-| ✖n       | there are `n` unmerged files     |
-| ✚n       | there are `n` unstaged files     |
-| -n       | there are `n` deleted files      |
-| ⚑n       | there are `n` stashed changes    |
-| …        | there are some untracked files   |
+| Symbol | Meaning                        |
+| ------ | ------------------------------ |
+| ✔      | repository clean               |
+| ●n     | there are `n` staged files     |
+| ✖n     | there are `n` unmerged files   |
+| ✚n     | there are `n` unstaged files   |
+| -n     | there are `n` deleted files    |
+| ⚑n     | there are `n` stashed changes  |
+| …      | there are some untracked files |
 
 ### Branch Tracking Symbols
 
-| Symbol   | Meaning                                                         |
-| -------- | --------------------------------------------------------------- |
-| ↑n       | ahead of remote by `n` commits                                  |
-| ↓n       | behind remote by `n` commits                                    |
-| ↓m↑n     | branches diverged: other by `m` commits, yours by `n` commits   |
+| Symbol | Meaning                                                       |
+| ------ | ------------------------------------------------------------- |
+| ↑n     | ahead of remote by `n` commits                                |
+| ↓n     | behind remote by `n` commits                                  |
+| ↓m↑n   | branches diverged: other by `m` commits, yours by `n` commits |
 
 ## Customisation
 

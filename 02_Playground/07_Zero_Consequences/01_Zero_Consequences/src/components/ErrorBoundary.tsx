@@ -16,19 +16,7 @@ interface State {
 // lifecycle hooks directly to give TypeScript proper type coverage.
 export default class ErrorBoundary extends Component<Props, State> {
   state: State = { hasError: false, error: null, retryCount: 0 };
-  props: Props;
 
-  constructor(props: Props) {
-    super(props);
-    this.props = props;
-  }
-
-  setState<K extends keyof State>(
-    state: State | ((prev: State, props: Props) => State) | Pick<State, K>,
-    callback?: () => void,
-  ): void {
-    super.setState(state as any, callback);
-  }
 
   static getDerivedStateFromError(error: Error): State {
     return { hasError: true, error, retryCount: 0 };

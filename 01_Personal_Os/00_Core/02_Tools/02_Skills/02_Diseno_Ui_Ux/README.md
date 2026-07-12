@@ -8,19 +8,19 @@
 
 ## Navegacion Rapida
 
-| #   | Directorio                 | Skill                | Descripcion                                 |
+| #  | Directorio                 | Skill                | Descripcion                                 |
 | --- | -------------------------- | -------------------- | ------------------------------------------- |
-| 01  | `01_Product_Design/`       | Product Design       | Fundamentos de diseno de producto           |
-| 02  | `02_Taste_Skills/`         | Taste/Design Taste   | Criterio estetico y diseno con criterio     |
-| 03  | `03_Diseno_Minimalista/`   | Diseno Minimalista   | Diseno minimalista exagerado                |
-| 04  | `04_Directrices_Marca/`    | Brand Guidelines     | Guias de marca y consistencia               |
-| 05  | `05_Excalidraw_Flowchart/` | Excalidraw/Diagramas | Diagramas y flowcharts                      |
-| 06  | `06_Design_Sota/`          | Design SOTA          | Estado del arte en diseno                   |
-| 07  | `07_Ui_Ux_Pro_Max/`        | UI/UX Pro Max        | UI/UX con base de datos consultable         |
-| 08  | `08_Huashu_Design/`        | Huashu Design        | HTML prototipado de alta fidelidad          |
-| 09  | `09_Dumbledor_Design/`     | Dumbledor Design     | Diseno editorial de alto impacto            |
-| 10  | `10_Design_Systems/`       | Design Systems       | Atomic design, tokens, Storybook, shadcn/ui |
-| 11  | `11_Marvel_Avengers/`      | Marvel/UI Theme      | Tematica Marvel para interfaces             |
+| 01 | `01_Product_Design/`       | Product Design       | Fundamentos de diseno de producto           |
+| 02 | `02_Taste_Skills/`         | Taste/Design Taste   | Criterio estetico y diseno con criterio     |
+| 03 | `03_Diseno_Minimalista/`   | Diseno Minimalista   | Diseno minimalista exagerado                |
+| 04 | `04_Directrices_Marca/`    | Brand Guidelines     | Guias de marca y consistencia               |
+| 05 | `05_Excalidraw_Flowchart/` | Excalidraw/Diagramas | Diagramas y flowcharts                      |
+| 06 | `06_Design_Sota/`          | Design SOTA          | Estado del arte en diseno                   |
+| 07 | `07_Ui_Ux_Pro_Max/`        | UI/UX Pro Max        | UI/UX con base de datos consultable         |
+| 08 | `08_Huashu_Design/`        | Huashu Design        | HTML prototipado de alta fidelidad          |
+| 09 | `09_Dumbledor_Design/`     | Dumbledor Design     | Diseno editorial de alto impacto            |
+| 10 | `10_Design_Systems/`       | Design Systems       | Atomic design, tokens, Storybook, shadcn/ui |
+| 11 | `11_Marvel_Avengers/`      | Marvel/UI Theme      | Tematica Marvel para interfaces             |
 
 ---
 

@@ -60,16 +60,16 @@ Basada en samples del OS (AGENTS.md, GOALS.md, conversation history):
 
 ## ✅ Criterios de Éxito
 
-| #   | Criterio                                           | Peso   | Resultado   |
-| --- | -------------------------------------------------- | ------ | ----------- |
-| 1   | Hook que engancha en línea 1                       | Alto   |             |
-| 2   | Framework 10/100/1000/10000 explicado claramente   | Alto   |             |
-| 3   | Conexión con filosofía Consequences                | Medio  |             |
-| 4   | Sin clichés AI ("key insight", "here's the thing") | Alto   |             |
-| 5   | Tono consistente (rioplatense natural)             | Medio  |             |
-| 6   | Longitud adecuada para LinkedIn (~800-1200 chars)  | Medio  |             |
-| 7   | Call-to-action claro                               | Bajo   |             |
-| 8   | Se lee como humano, no como AI                     | Alto   |             |
+| # | Criterio                                           | Peso  | Resultado |
+| --- | -------------------------------------------------- | ----- | --------- |
+| 1 | Hook que engancha en línea 1                       | Alto  |           |
+| 2 | Framework 10/100/1000/10000 explicado claramente   | Alto  |           |
+| 3 | Conexión con filosofía Consequences                | Medio |           |
+| 4 | Sin clichés AI ("key insight", "here's the thing") | Alto  |           |
+| 5 | Tono consistente (rioplatense natural)             | Medio |           |
+| 6 | Longitud adecuada para LinkedIn (~800-1200 chars)  | Medio |           |
+| 7 | Call-to-action claro                               | Bajo  |           |
+| 8 | Se lee como humano, no como AI                     | Alto  |           |
 
 ---
 

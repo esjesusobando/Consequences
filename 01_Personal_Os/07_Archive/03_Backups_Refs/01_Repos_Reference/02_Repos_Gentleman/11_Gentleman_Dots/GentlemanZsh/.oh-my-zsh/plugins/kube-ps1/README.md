@@ -121,21 +121,21 @@ kubeoff -g : turn off kube-ps1 status globally
 The default settings can be overridden in `~/.bashrc` or `~/.zshrc` by setting
 the following environment variables:
 
-| Variable                    | Default                           | Meaning                                                                               |
-| --------------------------- | --------------------------------- | ------------------------------------------------------------------------------------- |
-| `KUBE_PS1_BINARY`           | `kubectl`                         | Default Kubernetes binary                                                             |
-| `KUBE_PS1_NS_ENABLE`        | `true`                            | Display the namespace. If set to `false`, this will also disable `KUBE_PS1_DIVIDER`   |
-| `KUBE_PS1_PREFIX`           | `(`                               | Prompt opening character                                                              |
-| `KUBE_PS1_SYMBOL_ENABLE`    | `true `                           | Display the prompt Symbol. If set to `false`, this will also disable `KUBE_PS1_SEPARATOR` |
-| `KUBE_PS1_SYMBOL_PADDING`   | `false`                           | Adds a space (padding) after the symbol to prevent clobbering prompt characters       |
-| `KUBE_PS1_SYMBOL_DEFAULT`   | `⎈ `                              | Default prompt symbol. Unicode `\u2388`                                               |
-| `KUBE_PS1_SYMBOL_USE_IMG`   | `false`                           | ☸️  ,  Unicode `\u2638` as the prompt symbol                                          |
-| `KUBE_PS1_SEPARATOR`        | &#124;                            | Separator between symbol and context name                                             |
-| `KUBE_PS1_DIVIDER`          | `:`                               | Separator between context and namespace                                               |
-| `KUBE_PS1_SUFFIX`           | `)`                               | Prompt closing character                                                              |
-| `KUBE_PS1_CLUSTER_FUNCTION` | No default, must be user supplied | Function to customize how cluster is displayed                                        |
-| `KUBE_PS1_NAMESPACE_FUNCTION` | No default, must be user supplied | Function to customize how namespace is displayed                                      |
-| `KUBE_PS1_KUBECONFIG_SYMLINK` | `false`                           | Treat `KUBECONFIG` and `~/.kube/config` files as symbolic links                       |
+| Variable                      | Default                           | Meaning                                                                                   |
+| ----------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------- |
+| `KUBE_PS1_BINARY`             | `kubectl`                         | Default Kubernetes binary                                                                 |
+| `KUBE_PS1_NS_ENABLE`          | `true`                            | Display the namespace. If set to `false`, this will also disable `KUBE_PS1_DIVIDER`       |
+| `KUBE_PS1_PREFIX`             | `(`                               | Prompt opening character                                                                  |
+| `KUBE_PS1_SYMBOL_ENABLE`      | `true `                           | Display the prompt Symbol. If set to `false`, this will also disable `KUBE_PS1_SEPARATOR` |
+| `KUBE_PS1_SYMBOL_PADDING`     | `false`                           | Adds a space (padding) after the symbol to prevent clobbering prompt characters           |
+| `KUBE_PS1_SYMBOL_DEFAULT`     | `⎈ `                              | Default prompt symbol. Unicode `\u2388`                                                   |
+| `KUBE_PS1_SYMBOL_USE_IMG`     | `false`                           | ☸️  ,  Unicode `\u2638` as the prompt symbol                                              |
+| `KUBE_PS1_SEPARATOR`          | &#124;                            | Separator between symbol and context name                                                 |
+| `KUBE_PS1_DIVIDER`            | `:`                               | Separator between context and namespace                                                   |
+| `KUBE_PS1_SUFFIX`             | `)`                               | Prompt closing character                                                                  |
+| `KUBE_PS1_CLUSTER_FUNCTION`   | No default, must be user supplied | Function to customize how cluster is displayed                                            |
+| `KUBE_PS1_NAMESPACE_FUNCTION` | No default, must be user supplied | Function to customize how namespace is displayed                                          |
+| `KUBE_PS1_KUBECONFIG_SYMLINK` | `false`                           | Treat `KUBECONFIG` and `~/.kube/config` files as symbolic links                           |
 
 For terminals that do not support UTF-8, the symbol will be replaced with the
 string `k8s`.
@@ -150,14 +150,14 @@ KUBE_PS1_SEPARATOR=''
 
 The default colors are set with the following environment variables:
 
-| Variable              | Default | Meaning                                    |
-| --------------------- | ------- | ------------------------------------------ |
+| Variable                | Default | Meaning                                    |
+| ----------------------- | ------- | ------------------------------------------ |
 | `KUBE_PS1_PREFIX_COLOR` | `null`  | Set default color of the prompt prefix     |
 | `KUBE_PS1_SYMBOL_COLOR` | `blue`  | Set default color of the Kubernetes symbol |
-| `KUBE_PS1_CTX_COLOR`  | `red`   | Set default color of the context           |
+| `KUBE_PS1_CTX_COLOR`    | `red`   | Set default color of the context           |
 | `KUBE_PS1_SUFFIX_COLOR` | `null`  | Set default color of the prompt suffix     |
-| `KUBE_PS1_NS_COLOR`   | `cyan`  | Set default color of the namespace         |
-| `KUBE_PS1_BG_COLOR`   | `null`  | Set default color of the prompt background |
+| `KUBE_PS1_NS_COLOR`     | `cyan`  | Set default color of the namespace         |
+| `KUBE_PS1_BG_COLOR`     | `null`  | Set default color of the prompt background |
 
 Blue was used for the default symbol to match the Kubernetes color as closely
 as possible. Red was chosen as the context name to stand out, and cyan for the

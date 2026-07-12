@@ -15,11 +15,12 @@ import os
 import re
 import sys
 from pathlib import Path
+from config_paths import ROOT_DIR
 
 # ─────────────────────────────────────────────────────────────
 # RUTAS
 # ─────────────────────────────────────────────────────────────
-REPO_ROOT = Path(__file__).parent.parent.parent.parent.parent
+REPO_ROOT = ROOT_DIR
 SKILLS_DIR = REPO_ROOT / "01_Personal_Os" / "00_Core" / "02_Tools" / "02_Skills"
 EXCLUDE_DIRS = {"09_Legacy_Archive", "10_Backup", ".git"}
 

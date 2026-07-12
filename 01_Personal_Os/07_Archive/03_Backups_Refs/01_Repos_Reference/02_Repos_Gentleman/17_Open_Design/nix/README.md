@@ -9,14 +9,14 @@ both.
 
 ## Outputs
 
-| Output                                             | What it is                                                                                     |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `packages.<system>.daemon`                         | The `@open-design/daemon` package — produces `bin/od`. Default output.                         |
-| `packages.<system>.web`                            | The Next.js static export (`apps/web/out/`) ready to drop into any static file server.         |
-| `apps.<system>.default`                            | `nix run github:nexu-io/open-design` — boots the daemon.                                       |
-| `devShells.<system>.default`                       | Node 24 + Corepack-pinned pnpm 10.33 — reproduces `pnpm install` locally.                      |
-| `homeManagerModules.{default,open-design}`         | Home Manager module — primary individual-developer interface.                                  |
-| `nixosModules.{default,open-design}`               | NixOS module — secondary, for shared/server installs.                                          |
+| Output                                     | What it is                                                                             |
+| ------------------------------------------ | -------------------------------------------------------------------------------------- |
+| `packages.<system>.daemon`                 | The `@open-design/daemon` package — produces `bin/od`. Default output.                 |
+| `packages.<system>.web`                    | The Next.js static export (`apps/web/out/`) ready to drop into any static file server. |
+| `apps.<system>.default`                    | `nix run github:nexu-io/open-design` — boots the daemon.                               |
+| `devShells.<system>.default`               | Node 24 + Corepack-pinned pnpm 10.33 — reproduces `pnpm install` locally.              |
+| `homeManagerModules.{default,open-design}` | Home Manager module — primary individual-developer interface.                          |
+| `nixosModules.{default,open-design}`       | NixOS module — secondary, for shared/server installs.                                  |
 
 ## Try it without installing
 
@@ -87,11 +87,11 @@ configuration prefer the Home Manager module.
 Open Design's frontend is a static SPA that issues relative `/api/*`,
 `/artifacts/*`, and `/frames/*` requests. Three serving options:
 
-| Option                                         | When                                                                                                                                                                                                                      |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `webFrontend.enable = true`                    | You want one-line setup. The module spawns a tiny Caddy file server on `webFrontend.port` (default `5174`) that serves the SPA and reverse-proxies the three path prefixes to the daemon.                                 |
-| `webFrontend.enable = false` (default)         | You're running nginx / Caddy / Apache / Traefik yourself. Point your server's document root at `${pkgs.open-design.web}` (or the `packages.<system>.web` output) and replicate the proxy contract in section (4).         |
-| Skip the frontend entirely                     | You only need the daemon's API for headless agent dispatch.                                                                                                                                                               |
+| Option                                 | When                                                                                                                                                                                                              |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `webFrontend.enable = true`            | You want one-line setup. The module spawns a tiny Caddy file server on `webFrontend.port` (default `5174`) that serves the SPA and reverse-proxies the three path prefixes to the daemon.                         |
+| `webFrontend.enable = false` (default) | You're running nginx / Caddy / Apache / Traefik yourself. Point your server's document root at `${pkgs.open-design.web}` (or the `packages.<system>.web` output) and replicate the proxy contract in section (4). |
+| Skip the frontend entirely             | You only need the daemon's API for headless agent dispatch.                                                                                                                                                       |
 
 The two services are independent. `autoStart` controls the daemon;
 `webFrontend.enable` controls the static server. Mix freely.
@@ -182,11 +182,11 @@ included). The browser's `Origin` and `Host` are whatever your proxy
 exposes, so unless that matches `127.0.0.1:<daemon-port>` exactly,
 the daemon will 403 every PUT/POST until told otherwise:
 
-| Your custom-server setup                                                                                                                            | What to set on the daemon                                                                                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Proxy at `http://127.0.0.1:<daemon-port>` (same host, same port — unusual)                                                                          | Nothing.                                                                                                                                                  |
-| Proxy at a loopback host but different port (e.g. `http://127.0.0.1:8080` while daemon is on `:7457`)                                               | Either `extraEnv.OD_WEB_PORT = "8080"` (whitelists `8080` on every loopback host) or `services.open-design.webFrontend.allowedOrigins`.                   |
-| Proxy on any non-loopback host (LAN IP, mDNS name, Tailscale name, public domain — `https://od.example.com`, `http://laptop.local:5174`, …)         | `services.open-design.webFrontend.allowedOrigins = [ "<full origin>" ]`. List every scheme + host[:port] combo a browser might load the SPA from.         |
+| Your custom-server setup                                                                                                                    | What to set on the daemon                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Proxy at `http://127.0.0.1:<daemon-port>` (same host, same port — unusual)                                                                  | Nothing.                                                                                                                                          |
+| Proxy at a loopback host but different port (e.g. `http://127.0.0.1:8080` while daemon is on `:7457`)                                       | Either `extraEnv.OD_WEB_PORT = "8080"` (whitelists `8080` on every loopback host) or `services.open-design.webFrontend.allowedOrigins`.           |
+| Proxy on any non-loopback host (LAN IP, mDNS name, Tailscale name, public domain — `https://od.example.com`, `http://laptop.local:5174`, …) | `services.open-design.webFrontend.allowedOrigins = [ "<full origin>" ]`. List every scheme + host[:port] combo a browser might load the SPA from. |
 
 `webFrontend.allowedOrigins` is forwarded to the daemon as
 `OD_ALLOWED_ORIGINS`; if you run the daemon outside the modules,

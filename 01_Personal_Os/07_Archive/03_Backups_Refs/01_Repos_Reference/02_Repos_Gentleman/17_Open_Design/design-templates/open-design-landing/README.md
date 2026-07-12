@@ -35,11 +35,11 @@ edit the fields (the schema is self-documenting — see
 
 ## The three image strategies
 
-| Strategy                 | Cost           | Latency         | When                                                  |
-| ------------------------ | -------------- | --------------- | ----------------------------------------------------- |
-| `placeholder`            | $0             | <1s             | First pass, demo, internal review.                    |
-| `generate`               | ~$0.40         | ~6 min          | Final delivery; original collage plates.              |
-| `bring-your-own`         | $0             | 0s              | You have art direction PNGs ready to drop in.         |
+| Strategy         | Cost   | Latency | When                                          |
+| ---------------- | ------ | ------- | --------------------------------------------- |
+| `placeholder`    | $0     | <1s     | First pass, demo, internal review.            |
+| `generate`       | ~$0.40 | ~6 min  | Final delivery; original collage plates.      |
+| `bring-your-own` | $0     | 0s      | You have art direction PNGs ready to drop in. |
 
 Set `inputs.imagery.strategy` to one of the three.
 

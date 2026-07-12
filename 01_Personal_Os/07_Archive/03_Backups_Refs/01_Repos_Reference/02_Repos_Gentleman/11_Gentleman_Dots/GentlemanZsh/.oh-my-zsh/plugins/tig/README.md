@@ -9,8 +9,8 @@ plugins=(... tig)
 
 ## Features
 
-| Alias   | Command          | Description                                       |
-| ------- | ---------------- | ------------------------------------------------- |
-| `tis`   | `tig status`     | Show git status                                   |
-| `til`   | `tig log`        | Show git log                                      |
-| `tib`   | `tig blame -C`   | `git-blame` a file detecting copies and renames   |
+| Alias | Command        | Description                                     |
+| ----- | -------------- | ----------------------------------------------- |
+| `tis` | `tig status`   | Show git status                                 |
+| `til` | `tig log`      | Show git log                                    |
+| `tib` | `tig blame -C` | `git-blame` a file detecting copies and renames |

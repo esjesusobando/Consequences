@@ -56,13 +56,13 @@ a shortcut named `"hello world"` corresponds with `§hello_world`.
 
 ## Aliases
 
-| Alias    | Function           |
-| -------- | ------------------ |
-| ff       | `fastfile`         |
-| ffp      | `fastfile_print`   |
-| ffrm     | `fastfile_rm`      |
-| ffls     | `fastfile_ls`      |
-| ffsync   | `fastfile_sync`    |
+| Alias  | Function         |
+| ------ | ---------------- |
+| ff     | `fastfile`       |
+| ffp    | `fastfile_print` |
+| ffrm   | `fastfile_rm`    |
+| ffls   | `fastfile_ls`    |
+| ffsync | `fastfile_sync`  |
 
 ## Options
 

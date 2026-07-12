@@ -10,8 +10,8 @@ plugins=(... gem)
 
 ## Aliases
 
-| Alias                  | Command                         | Description                                  |
-| ---------------------- | ------------------------------- | -------------------------------------------- |
-| gemb                   | `gem build *.gemspec`           | Build a gem from a gemspec                   |
-| gemp                   | `gem push *.gem`                | Push a gem up to the gem server              |
-| gemy [gem] [version]   | `gem yank [gem] -v [version]`   | Remove a pushed gem version from the index   |
+| Alias                | Command                       | Description                                |
+| -------------------- | ----------------------------- | ------------------------------------------ |
+| gemb                 | `gem build *.gemspec`         | Build a gem from a gemspec                 |
+| gemp                 | `gem push *.gem`              | Push a gem up to the gem server            |
+| gemy [gem] [version] | `gem yank [gem] -v [version]` | Remove a pushed gem version from the index |

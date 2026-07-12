@@ -88,33 +88,33 @@ straight `html_template_v1` substitution.
 
 ### Top-level scalars
 
-| Key                              | Example                                          | Notes                                                                             |
-| -------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------- |
-| `brand_name`                     | `"ST. LUKES"`                                    | Sidebar wordmark. Keep ≤14 characters.                                            |
-| `greeting`                       | `"Hey Lukmon, glad to have you back! 🙌"`         | Single emoji allowed at the end; no other emoji anywhere in the artifact.         |
-| `search_placeholder`             | `"Search doctors, patients, rooms…"`             | Greeting-row search input ghost text.                                             |
-| `search_shortcut`                | `"⌘K"`                                           | Right-side keycap label.                                                          |
-| `secondary_action_label`         | `"Export CSV"`                                   | Greeting-row secondary button text.                                               |
-| `primary_action_label`           | `"Add new"`                                      | Greeting-row primary mint CTA text.                                               |
+| Key                      | Example                                  | Notes                                                                     |
+| ------------------------ | ---------------------------------------- | ------------------------------------------------------------------------- |
+| `brand_name`             | `"ST. LUKES"`                            | Sidebar wordmark. Keep ≤14 characters.                                    |
+| `greeting`               | `"Hey Lukmon, glad to have you back! 🙌"` | Single emoji allowed at the end; no other emoji anywhere in the artifact. |
+| `search_placeholder`     | `"Search doctors, patients, rooms…"`     | Greeting-row search input ghost text.                                     |
+| `search_shortcut`        | `"⌘K"`                                   | Right-side keycap label.                                                  |
+| `secondary_action_label` | `"Export CSV"`                           | Greeting-row secondary button text.                                       |
+| `primary_action_label`   | `"Add new"`                              | Greeting-row primary mint CTA text.                                       |
 
 ### `user`
 
-| Key                | Example                    | Notes                                                                                            |
-| ------------------ | -------------------------- | ------------------------------------------------------------------------------------------------ |
-| `name`             | `"Lukmon Olabode"`         | Sidebar bottom row.                                                                              |
-| `role`             | `"Admin"`                  | One-word role; longer roles wrap.                                                                |
-| `av_class`         | `"av-orange"`              | One of `av-orange`, `av-pink`, `av-mint`, `av-blue`, `av-violet`, `av-amber`, `av-rose`.         |
-| `initial`          | `"L"`                      | Single uppercase letter.                                                                         |
+| Key        | Example            | Notes                                                                                    |
+| ---------- | ------------------ | ---------------------------------------------------------------------------------------- |
+| `name`     | `"Lukmon Olabode"` | Sidebar bottom row.                                                                      |
+| `role`     | `"Admin"`          | One-word role; longer roles wrap.                                                        |
+| `av_class` | `"av-orange"`      | One of `av-orange`, `av-pink`, `av-mint`, `av-blue`, `av-violet`, `av-amber`, `av-rose`. |
+| `initial`  | `"L"`              | Single uppercase letter.                                                                 |
 
 ### `nav_main` and `nav_management` (5 items each)
 
 Each item shape:
 
-| Key                    | Example                    | Notes                                                                        |
-| ---------------------- | -------------------------- | ---------------------------------------------------------------------------- |
-| `label`                | `"Dashboard"`              | Nav text.                                                                    |
-| `active_class`         | `""` or `"active"`         | Set to `"active"` on exactly one nav item across both groups.                |
-| `count`                | `""` or `"10"`             | Empty string hides the count badge (CSS `:empty { display: none }`).         |
+| Key            | Example            | Notes                                                                |
+| -------------- | ------------------ | -------------------------------------------------------------------- |
+| `label`        | `"Dashboard"`      | Nav text.                                                            |
+| `active_class` | `""` or `"active"` | Set to `"active"` on exactly one nav item across both groups.        |
+| `count`        | `""` or `"10"`     | Empty string hides the count badge (CSS `:empty { display: none }`). |
 
 > **Icons are template-locked.** Each nav slot's icon is hardcoded inside
 > `template.html` (see [Icons are template-locked](#icons-are-template-locked)
@@ -128,13 +128,13 @@ Each item shape:
 
 ### `pro_card`
 
-| Key                       | Example                                          | Notes                                                       |
-| ------------------------- | ------------------------------------------------ | ----------------------------------------------------------- |
-| `tag`                     | `"Pro"`                                          | Black pill in the upgrade card. Keep ≤6 characters.         |
-| `title`                   | `"Pssst!"`                                       | Display title.                                              |
-| `body`                    | `"Your subscription expires in 9 days."`         | One-sentence nudge.                                         |
-| `primary_label`           | `"Renew"`                                        | Mint primary action.                                        |
-| `secondary_label`         | `"Cancel"`                                       | Outlined secondary action.                                  |
+| Key               | Example                                  | Notes                                               |
+| ----------------- | ---------------------------------------- | --------------------------------------------------- |
+| `tag`             | `"Pro"`                                  | Black pill in the upgrade card. Keep ≤6 characters. |
+| `title`           | `"Pssst!"`                               | Display title.                                      |
+| `body`            | `"Your subscription expires in 9 days."` | One-sentence nudge.                                 |
+| `primary_label`   | `"Renew"`                                | Mint primary action.                                |
+| `secondary_label` | `"Cancel"`                               | Outlined secondary action.                          |
 
 ### KPI tiles `kpi_a` `kpi_b` `kpi_c` `kpi_d`
 
@@ -144,104 +144,104 @@ mini-list — never bare.
 
 Common keys:
 
-| Key                   | Example                    | Notes                                                                 |
-| --------------------- | -------------------------- | --------------------------------------------------------------------- |
-| `label`               | `"Total doctors"`          | Tile label.                                                           |
-| `value`               | `"1,089"`                  | Big number (Plus Jakarta Sans 700). Use commas for thousands.         |
-| `trend_class`         | `"up"` or `"down"`         | Pill grammar — `up` = mint, `down` = rose.                            |
-| `trend_label`         | `"↑ 5.5%"`                 | Always include the arrow glyph.                                       |
+| Key           | Example            | Notes                                                         |
+| ------------- | ------------------ | ------------------------------------------------------------- |
+| `label`       | `"Total doctors"`  | Tile label.                                                   |
+| `value`       | `"1,089"`          | Big number (Plus Jakarta Sans 700). Use commas for thousands. |
+| `trend_class` | `"up"` or `"down"` | Pill grammar — `up` = mint, `down` = rose.                    |
+| `trend_label` | `"↑ 5.5%"`         | Always include the arrow glyph.                               |
 
 > KPI icons are also template-locked — see
 > [Icons are template-locked](#icons-are-template-locked) below.
 
 A / B / D additional keys:
 
-| Key                              | Example                                                   | Notes                                                                                              |
-| -------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `caption`                        | `"An increase of 20 doctors in the last 7 days."`         | One sentence answering "compared to what".                                                         |
-| `strip_class`                    | `"stripe-amber"`                                          | One of `stripe-amber`, `stripe-blue`, `stripe-mint`. Adjacent tiles should alternate hues.         |
-| `mini_stat` (B / D only)         | `"1,635 today"`                                           | Right-aligned tiny caption below the strip.                                                        |
+| Key                      | Example                                           | Notes                                                                                      |
+| ------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `caption`                | `"An increase of 20 doctors in the last 7 days."` | One sentence answering "compared to what".                                                 |
+| `strip_class`            | `"stripe-amber"`                                  | One of `stripe-amber`, `stripe-blue`, `stripe-mint`. Adjacent tiles should alternate hues. |
+| `mini_stat` (B / D only) | `"1,635 today"`                                   | Right-aligned tiny caption below the strip.                                                |
 
 C (`kpi_c`) additional keys:
 
-| Key            | Example                                                                   |
-| -------------- | ------------------------------------------------------------------------- |
-| `rows`         | array of 2 objects: `{ "label": "General room", "value": "100" }`         |
+| Key    | Example                                                           |
+| ------ | ----------------------------------------------------------------- |
+| `rows` | array of 2 objects: `{ "label": "General room", "value": "100" }` |
 
 ### `chart`
 
-| Key                                      | Example                                                             | Notes                                                                                                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`                                  | `"Patient overview"`                                                | Card title.                                                                                                                                  |
-| `dropdown_label`                         | `"Last 6 months"`                                                   | Time-range chip text.                                                                                                                        |
-| `legend_a` `legend_b` `legend_c`         | `"Total patients"` etc.                                             | Three legend captions.                                                                                                                       |
-| `bars`                                   | array of 14 objects: `{ "x": "34", "y": "148", "h": "92" }`         | 7 month pairs (mint back, blue front). Bar 5 (index 5) is the highlighted month — the template adds a 2px mint stroke to bar 5 only.         |
-| `x_labels`                               | `["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]`                 | Seven month labels matching the seven bar pairs.                                                                                             |
+| Key                              | Example                                                     | Notes                                                                                                                                |
+| -------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `title`                          | `"Patient overview"`                                        | Card title.                                                                                                                          |
+| `dropdown_label`                 | `"Last 6 months"`                                           | Time-range chip text.                                                                                                                |
+| `legend_a` `legend_b` `legend_c` | `"Total patients"` etc.                                     | Three legend captions.                                                                                                               |
+| `bars`                           | array of 14 objects: `{ "x": "34", "y": "148", "h": "92" }` | 7 month pairs (mint back, blue front). Bar 5 (index 5) is the highlighted month — the template adds a 2px mint stroke to bar 5 only. |
+| `x_labels`                       | `["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]`         | Seven month labels matching the seven bar pairs.                                                                                     |
 
 ### `calendar`
 
-| Key                   | Example                                                                     | Notes                                                                                                                                 |
-| --------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `month_label`         | `"March 2025"`                                                              | Header.                                                                                                                               |
-| `dow`                 | `["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]`                         | Always 7 items.                                                                                                                       |
-| `days`                | array of exactly **35** objects: `{ "label": "1", "modifier": "" }`         | 5 weeks × 7 days. `modifier` = `""`, `"muted"` (leading/trailing month), or `"active"` (single highlighted day, mint circle).         |
+| Key           | Example                                                             | Notes                                                                                                                         |
+| ------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `month_label` | `"March 2025"`                                                      | Header.                                                                                                                       |
+| `dow`         | `["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]`                 | Always 7 items.                                                                                                               |
+| `days`        | array of exactly **35** objects: `{ "label": "1", "modifier": "" }` | 5 weeks × 7 days. `modifier` = `""`, `"muted"` (leading/trailing month), or `"active"` (single highlighted day, mint circle). |
 
 ### `activity`
 
-| Key                 | Example                                                                                                                | Notes                                                                         |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| `title`             | `"Activity Detail · Mar 8"`                                                                                            | Popover header — should reference the active calendar day.                    |
-| `events`            | array of exactly 3 objects: `{ "av_class": "blue", "name": "Dr. Sarah · post-op review", "time": "11:00 am" }`         | Three events. `av_class` ∈ `blue`, `pink`, `violet`, `mint`, `amber`.         |
-| `add_label`         | `"＋ Add item"`                                                                                                         | Footer link.                                                                  |
+| Key         | Example                                                                                                        | Notes                                                                 |
+| ----------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `title`     | `"Activity Detail · Mar 8"`                                                                                    | Popover header — should reference the active calendar day.            |
+| `events`    | array of exactly 3 objects: `{ "av_class": "blue", "name": "Dr. Sarah · post-op review", "time": "11:00 am" }` | Three events. `av_class` ∈ `blue`, `pink`, `violet`, `mint`, `amber`. |
+| `add_label` | `"＋ Add item"`                                                                                                 | Footer link.                                                          |
 
 ### `donut`
 
-| Key                    | Example                                                                     | Notes                                                                                                                                  |
-| ---------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`                | `"Top 3 most requested clinics"`                                            | Card title.                                                                                                                            |
-| `center_label`         | `"Total patients"`                                                          | Above the center number.                                                                                                               |
-| `center_num`           | `"534"`                                                                     | The big tabular number in the donut hole.                                                                                              |
-| `segment_b`            | `{ "dasharray": "120 240", "dashoffset": "0" }`                             | SVG `stroke-dasharray` + `stroke-dashoffset` for the pink slice. Sum of arc lengths over a r=38 circle equals `2π × 38 ≈ 239`.         |
-| `segment_c`            | `{ "dasharray": "35 240", "dashoffset": "-120" }`                           | Same for the mint slice. The blue background ring is the full circumference — no per-segment math needed.                              |
-| `legend`               | array of exactly 3 objects: `{ "value": "120", "label": "Dental" }`         | Three entries in blue / pink / mint order.                                                                                             |
+| Key            | Example                                                             | Notes                                                                                                                          |
+| -------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `title`        | `"Top 3 most requested clinics"`                                    | Card title.                                                                                                                    |
+| `center_label` | `"Total patients"`                                                  | Above the center number.                                                                                                       |
+| `center_num`   | `"534"`                                                             | The big tabular number in the donut hole.                                                                                      |
+| `segment_b`    | `{ "dasharray": "120 240", "dashoffset": "0" }`                     | SVG `stroke-dasharray` + `stroke-dashoffset` for the pink slice. Sum of arc lengths over a r=38 circle equals `2π × 38 ≈ 239`. |
+| `segment_c`    | `{ "dasharray": "35 240", "dashoffset": "-120" }`                   | Same for the mint slice. The blue background ring is the full circumference — no per-segment math needed.                      |
+| `legend`       | array of exactly 3 objects: `{ "value": "120", "label": "Dental" }` | Three entries in blue / pink / mint order.                                                                                     |
 
 ### `schedule`
 
-| Key                         | Example                                                                                         | Notes                                                              |
-| --------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `title`                     | `"Doctors's schedule"`                                                                          | Card title.                                                        |
-| `stats`                     | array of exactly 3 objects: `{ "value": "51", "small": "Total", "label": "Available" }`         | Available / Unavailable / Leave counts in a 3-column grid.         |
-| `list_header_label`         | `"List of Doctor"`                                                                              | Sortable list header label.                                        |
-| `doctors`                   | array of exactly 4 objects                                                                      | See below.                                                         |
+| Key                 | Example                                                                                 | Notes                                                      |
+| ------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `title`             | `"Doctors's schedule"`                                                                  | Card title.                                                |
+| `stats`             | array of exactly 3 objects: `{ "value": "51", "small": "Total", "label": "Available" }` | Available / Unavailable / Leave counts in a 3-column grid. |
+| `list_header_label` | `"List of Doctor"`                                                                      | Sortable list header label.                                |
+| `doctors`           | array of exactly 4 objects                                                              | See below.                                                 |
 
 Each `doctors` row:
 
-| Key                    | Example                                         | Notes                            |
-| ---------------------- | ----------------------------------------------- | -------------------------------- |
-| `av_class`             | `"av-blue"`                                     | Avatar gradient.                 |
-| `initial`              | `"P"`                                           | Single uppercase letter.         |
-| `name`                 | `"Peter Bashir"`                                | Real-feeling name.               |
-| `role`                 | `"Anesthesiologist"`                            | Specialty.                       |
-| `status_class`         | `"avail"` `"unav"` `"leave"`                    | Pill grammar.                    |
-| `status_label`         | `"Available"` `"Unavailable"` `"Leave"`         | Pill text.                       |
+| Key            | Example                                 | Notes                    |
+| -------------- | --------------------------------------- | ------------------------ |
+| `av_class`     | `"av-blue"`                             | Avatar gradient.         |
+| `initial`      | `"P"`                                   | Single uppercase letter. |
+| `name`         | `"Peter Bashir"`                        | Real-feeling name.       |
+| `role`         | `"Anesthesiologist"`                    | Specialty.               |
+| `status_class` | `"avail"` `"unav"` `"leave"`            | Pill grammar.            |
+| `status_label` | `"Available"` `"Unavailable"` `"Leave"` | Pill text.               |
 
 ### `appointments`
 
-| Key             | Example                            |
-| --------------- | ---------------------------------- |
-| `title`         | `"Today's appointments"`           |
-| `list`          | array of exactly 5 objects         |
+| Key     | Example                    |
+| ------- | -------------------------- |
+| `title` | `"Today's appointments"`   |
+| `list`  | array of exactly 5 objects |
 
 Each `list` row:
 
-| Key                | Example                                 | Notes                                                                           |
-| ------------------ | --------------------------------------- | ------------------------------------------------------------------------------- |
-| `av_class`         | `"av-pink"`                             | Avatar gradient.                                                                |
-| `initial`          | `"R"`                                   | Single uppercase letter.                                                        |
-| `name`             | `"Ruth Tubonimi"`                       | Real-feeling name.                                                              |
-| `role`             | `"Gastroenterology · room 204"`         | Specialty + venue / mode hint (`room N`, `video call`, `telemedicine`).         |
-| `date`             | `"Today"`                               | Short date label.                                                               |
-| `time`             | `"09:40"`                               | 24h or 12h, pick one and stay consistent.                                       |
+| Key        | Example                         | Notes                                                                   |
+| ---------- | ------------------------------- | ----------------------------------------------------------------------- |
+| `av_class` | `"av-pink"`                     | Avatar gradient.                                                        |
+| `initial`  | `"R"`                           | Single uppercase letter.                                                |
+| `name`     | `"Ruth Tubonimi"`               | Real-feeling name.                                                      |
+| `role`     | `"Gastroenterology · room 204"` | Specialty + venue / mode hint (`room N`, `video call`, `telemedicine`). |
+| `date`     | `"Today"`                       | Short date label.                                                       |
+| `time`     | `"09:40"`                       | 24h or 12h, pick one and stay consistent.                               |
 
 ## Icons are template-locked
 
@@ -257,35 +257,35 @@ attributes.
 This template therefore hardcodes every `<use href="#icon-…">` reference in
 `template.html` itself. Each slot has a fixed icon id:
 
-| Slot                                    | Hardcoded icon id                             |
-| --------------------------------------- | --------------------------------------------- |
-| Sidebar brand mark                      | `#icon-leaf`                                  |
-| Sidebar collapse toggle                 | `#icon-collapse`                              |
-| `nav_main[0]` Dashboard                 | `#icon-dashboard`                             |
-| `nav_main[1]` Message                   | `#icon-message`                               |
-| `nav_main[2]` Schedule                  | `#icon-schedule`                              |
-| `nav_main[3]` Notification              | `#icon-bell`                                  |
-| `nav_main[4]` Transaction               | `#icon-card`                                  |
-| `nav_management[0]` Doctor              | `#icon-user`                                  |
-| `nav_management[1]` Medicine            | `#icon-pill`                                  |
-| `nav_management[2]` Bedroom             | `#icon-bed`                                   |
-| `nav_management[3]` Appointment         | `#icon-check-square`                          |
-| `nav_management[4]` Patient             | `#icon-people`                                |
-| Sidebar logout                          | `#icon-logout`                                |
-| Greeting-row search                     | `#icon-search`                                |
-| Greeting-row secondary CTA              | `#icon-download`                              |
-| Greeting-row primary CTA                | `#icon-plus`                                  |
-| `kpi_a` glyph                           | `#icon-user`                                  |
-| `kpi_b` glyph                           | `#icon-schedule`                              |
-| `kpi_c` glyph                           | `#icon-bed`                                   |
-| `kpi_d` glyph                           | `#icon-people`                                |
-| Patient-overview card                   | `#icon-clock`                                 |
-| Time-range dropdown chevron             | `#icon-chev-down`                             |
-| Calendar prev / next                    | `#icon-chev-left`, `#icon-chev-right`         |
-| Top-clinics card                        | `#icon-stethoscope`                           |
-| Doctor-schedule card                    | `#icon-schedule`                              |
-| List header chevron                     | `#icon-chev-down`                             |
-| Today's-appointments card               | `#icon-check-square`                          |
+| Slot                            | Hardcoded icon id                     |
+| ------------------------------- | ------------------------------------- |
+| Sidebar brand mark              | `#icon-leaf`                          |
+| Sidebar collapse toggle         | `#icon-collapse`                      |
+| `nav_main[0]` Dashboard         | `#icon-dashboard`                     |
+| `nav_main[1]` Message           | `#icon-message`                       |
+| `nav_main[2]` Schedule          | `#icon-schedule`                      |
+| `nav_main[3]` Notification      | `#icon-bell`                          |
+| `nav_main[4]` Transaction       | `#icon-card`                          |
+| `nav_management[0]` Doctor      | `#icon-user`                          |
+| `nav_management[1]` Medicine    | `#icon-pill`                          |
+| `nav_management[2]` Bedroom     | `#icon-bed`                           |
+| `nav_management[3]` Appointment | `#icon-check-square`                  |
+| `nav_management[4]` Patient     | `#icon-people`                        |
+| Sidebar logout                  | `#icon-logout`                        |
+| Greeting-row search             | `#icon-search`                        |
+| Greeting-row secondary CTA      | `#icon-download`                      |
+| Greeting-row primary CTA        | `#icon-plus`                          |
+| `kpi_a` glyph                   | `#icon-user`                          |
+| `kpi_b` glyph                   | `#icon-schedule`                      |
+| `kpi_c` glyph                   | `#icon-bed`                           |
+| `kpi_d` glyph                   | `#icon-people`                        |
+| Patient-overview card           | `#icon-clock`                         |
+| Time-range dropdown chevron     | `#icon-chev-down`                     |
+| Calendar prev / next            | `#icon-chev-left`, `#icon-chev-right` |
+| Top-clinics card                | `#icon-stethoscope`                   |
+| Doctor-schedule card            | `#icon-schedule`                      |
+| List header chevron             | `#icon-chev-down`                     |
+| Today's-appointments card       | `#icon-check-square`                  |
 
 If you re-purpose a slot (e.g. swap `nav_main[2] Schedule` for
 `nav_main[2] Reports`), edit the corresponding `<use href="#icon-…">` literal
@@ -329,13 +329,13 @@ For all variants, **do not** introduce new colors, fonts, or radii. Every visual
 This default `data.json` is well within the live-artifact bounded JSON
 constraints:
 
-| Constraint                 | Limit                | This sample                |
-| -------------------------- | -------------------- | -------------------------- |
-| Object/array depth         | 8                    | 4                          |
-| Object keys                | 100 / object         | ≤20                        |
-| Array length               | 500                  | 35 (calendar.days)         |
-| String length              | 16 KiB               | <100 chars                 |
-| Serialized size            | 256 KiB              | ~7 KiB                     |
+| Constraint         | Limit        | This sample        |
+| ------------------ | ------------ | ------------------ |
+| Object/array depth | 8            | 4                  |
+| Object keys        | 100 / object | ≤20                |
+| Array length       | 500          | 35 (calendar.days) |
+| String length      | 16 KiB       | <100 chars         |
+| Serialized size    | 256 KiB      | ~7 KiB             |
 
 If you scale up the bar count, calendar density, or list rows, stay well
 under these limits. Refresh writes go through the same validation, so

@@ -8,16 +8,16 @@ Módulo de instalación del PersonalOS. Instala el sistema operativo en una nuev
 
 ## Contenido
 
-| #   | Archivo              | Descripción                       |
+| # | Archivo              | Descripción                       |
 | --- | -------------------- | --------------------------------- |
-| 1   | README.md            | Este archivo                      |
-| 2   | __pycache__          | Cache de Python                   |
-| 3   | config.json          | Configuración actual              |
-| 4   | config.template.json | Template de configuración         |
-| 5   | installer.py         | Script principal de instalación   |
-| 6   | requirements.txt     | Dependencias Python               |
-| 7   | scripts              | Scripts auxiliares de instalación |
-| 8   | .mcp.template.json   | Template MCP (añadido 2026-04-24) |
+| 1 | README.md            | Este archivo                      |
+| 2 | __pycache__          | Cache de Python                   |
+| 3 | config.json          | Configuración actual              |
+| 4 | config.template.json | Template de configuración         |
+| 5 | installer.py         | Script principal de instalación   |
+| 6 | requirements.txt     | Dependencias Python               |
+| 7 | scripts              | Scripts auxiliares de instalación |
+| 8 | .mcp.template.json   | Template MCP (añadido 2026-04-24) |
 
 ## Estructura v2.0
 

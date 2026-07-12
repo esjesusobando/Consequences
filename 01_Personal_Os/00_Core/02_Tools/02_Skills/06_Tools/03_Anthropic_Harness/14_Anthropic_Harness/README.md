@@ -8,27 +8,27 @@ Skills para implementar el patrón de Anthropic para agentes de larga duración.
 
 ## 📦 Skills
 
-| #   | Skill                    | Propósito                            |
+| #  | Skill                    | Propósito                            |
 | --- | ------------------------ | ------------------------------------ |
-| 01  | `01_Evaluator_Pattern/`  | Adversarial Evaluation (GAN pattern) |
-| 02  | `02_Context_Management/` | Reset vs Compaction según modelo     |
-| 03  | `03_Sprint_Contract/`    | Negotiate "done" antes de build      |
-| 04  | `04_Auto_Mode_Security/` | Security wrapper para Auto Mode      |
-| 05  | `05_Pass_At_Metrics/`    | Métricas de evaluación               |
-| 06  | `06_Eval_Awareness/`     | Detección de contexto                |
-| 07  | `07_Feature_List_JSON/`  | Generación de features               |
-| 08  | `08_Graders_Framework/`  | Framework de grading                 |
+| 01 | `01_Evaluator_Pattern/`  | Adversarial Evaluation (GAN pattern) |
+| 02 | `02_Context_Management/` | Reset vs Compaction según modelo     |
+| 03 | `03_Sprint_Contract/`    | Negotiate "done" antes de build      |
+| 04 | `04_Auto_Mode_Security/` | Security wrapper para Auto Mode      |
+| 05 | `05_Pass_At_Metrics/`    | Métricas de evaluación               |
+| 06 | `06_Eval_Awareness/`     | Detección de contexto                |
+| 07 | `07_Feature_List_JSON/`  | Generación de features               |
+| 08 | `08_Graders_Framework/`  | Framework de grading                 |
 
 ---
 
 ## 🔌 Claude Code Plugins Instalados
 
-| #   | Plugin              | Ubicación             | Propósito                               |
+| # | Plugin              | Ubicación             | Propósito                               |
 | --- | ------------------- | --------------------- | --------------------------------------- |
-| 1   | `pr-review-toolkit` | `.claude/plugins/...` | 6 agentes de code review especializados |
-| 2   | `security-guidance` | `.claude/plugins/...` | Guías de seguridad oficiales            |
-| 3   | `agent-sdk-dev`     | `.claude/plugins/...` | Desarrollo Agent SDK apps               |
-| 4   | `claude-code-setup` | `.claude/plugins/...` | Analizador de automatizaciones          |
+| 1 | `pr-review-toolkit` | `.claude/plugins/...` | 6 agentes de code review especializados |
+| 2 | `security-guidance` | `.claude/plugins/...` | Guías de seguridad oficiales            |
+| 3 | `agent-sdk-dev`     | `.claude/plugins/...` | Desarrollo Agent SDK apps               |
+| 4 | `claude-code-setup` | `.claude/plugins/...` | Analizador de automatizaciones          |
 
 > **Instalación**: Manual (bug en marketplace) - GitHub clone + registered in `installed_plugins.json`
 

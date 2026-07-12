@@ -28,14 +28,14 @@ The point is not ceremony. The point is leverage. A good brainstorm makes the pl
 
 The core loop is six steps: **brainstorm** the requirements, **plan** the implementation, **work** through the plan, **simplify** what you wrote, **review** the result, then **compound** the learning -- and repeat with better context.
 
-| Skill             | Purpose                                                                                        |
-| ----------------- | ---------------------------------------------------------------------------------------------- |
-| `/ce-brainstorm`  | Interactive Q&A to think through a feature or problem and write a right-sized requirements doc |
-| `/ce-plan`        | Turn the requirements into a detailed implementation plan with guardrails                      |
-| `/ce-work`        | Execute the plan with worktrees and task tracking                                              |
+| Skill               | Purpose                                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------------------- |
+| `/ce-brainstorm`    | Interactive Q&A to think through a feature or problem and write a right-sized requirements doc |
+| `/ce-plan`          | Turn the requirements into a detailed implementation plan with guardrails                      |
+| `/ce-work`          | Execute the plan with worktrees and task tracking                                              |
 | `/ce-simplify-code` | Refine the freshly written code for clarity and reuse before review                            |
-| `/ce-code-review` | Multi-agent review against the plan before merging                                             |
-| `/ce-compound`    | Capture the learning into `docs/solutions/` so the next loop starts smarter                    |
+| `/ce-code-review`   | Multi-agent review against the plan before merging                                             |
+| `/ce-compound`      | Capture the learning into `docs/solutions/` so the next loop starts smarter                    |
 
 Each cycle compounds: `/ce-compound` writes learnings that the next `/ce-brainstorm` and `/ce-plan` read as grounding -- brainstorms sharpen plans, plans inform future plans, reviews catch more issues, patterns get documented. That return arrow is the whole point.
 
@@ -43,12 +43,12 @@ Each cycle compounds: `/ce-compound` writes learnings that the next `/ce-brainst
 
 These sit around the loop or get reached for on demand -- not every cycle needs them.
 
-| Skill             | When to reach for it                                                                                                                                                                         |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/ce-ideate`      | *Before the loop*, when you don't yet know what to build -- generates and critically ranks grounded ideas, then routes the strongest one into `/ce-brainstorm`                               |
-| `/ce-strategy`    | *Upstream anchor* -- creates and maintains `STRATEGY.md`, read as grounding by ideate, brainstorm, and plan so strategy choices flow into every feature                                      |
+| Skill               | When to reach for it                                                                                                                                                                             |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/ce-ideate`        | *Before the loop*, when you don't yet know what to build -- generates and critically ranks grounded ideas, then routes the strongest one into `/ce-brainstorm`                                   |
+| `/ce-strategy`      | *Upstream anchor* -- creates and maintains `STRATEGY.md`, read as grounding by ideate, brainstorm, and plan so strategy choices flow into every feature                                          |
 | `/ce-product-pulse` | *Outer loop* -- a time-windowed report on what users actually experienced (usage, performance, errors), saved to `docs/pulse-reports/`; its follow-ups feed back into ideation and brainstorming |
-| `/ce-debug`       | *Instead of brainstorm -> plan -> work* when the input is a bug rather than a feature -- reproduce, trace the causal chain to root cause, then fix                                           |
+| `/ce-debug`         | *Instead of brainstorm -> plan -> work* when the input is a bug rather than a feature -- reproduce, trace the causal chain to root cause, then fix                                               |
 
 For the full catalog and how each skill chains together, see [docs/skills](docs/skills/README.md). The complete inventory is [below](#full-skill-inventory).
 
@@ -109,35 +109,35 @@ The `compound-engineering` plugin currently ships 27 skills and 0 standalone age
 
 ### Full Skill Inventory
 
-| Skill                         | Purpose                                                       |
-| ----------------------------- | ------------------------------------------------------------- |
-| `/ce-strategy`                | Create or maintain `STRATEGY.md`                              |
-| `/ce-ideate`                  | Generate and critically evaluate grounded ideas               |
-| `/ce-brainstorm`              | Explore requirements and write a right-sized requirements doc |
-| `/ce-plan`                    | Create structured implementation plans                        |
-| `/ce-work`                    | Execute implementation plans systematically                   |
-| `/ce-code-review`             | Review code with skill-local reviewer personas                |
-| `/ce-doc-review`              | Review requirements and plan documents                        |
-| `/ce-debug`                   | Reproduce failures, trace root cause, and fix bugs            |
-| `/ce-compound`                | Document solved problems to compound team knowledge           |
-| `/ce-compound-refresh`        | Refresh stale or drifting learnings                           |
-| `/ce-optimize`                | Run iterative optimization loops                              |
-| `/ce-product-pulse`           | Generate time-windowed product pulse reports                  |
+| Skill                           | Purpose                                                       |
+| ------------------------------- | ------------------------------------------------------------- |
+| `/ce-strategy`                  | Create or maintain `STRATEGY.md`                              |
+| `/ce-ideate`                    | Generate and critically evaluate grounded ideas               |
+| `/ce-brainstorm`                | Explore requirements and write a right-sized requirements doc |
+| `/ce-plan`                      | Create structured implementation plans                        |
+| `/ce-work`                      | Execute implementation plans systematically                   |
+| `/ce-code-review`               | Review code with skill-local reviewer personas                |
+| `/ce-doc-review`                | Review requirements and plan documents                        |
+| `/ce-debug`                     | Reproduce failures, trace root cause, and fix bugs            |
+| `/ce-compound`                  | Document solved problems to compound team knowledge           |
+| `/ce-compound-refresh`          | Refresh stale or drifting learnings                           |
+| `/ce-optimize`                  | Run iterative optimization loops                              |
+| `/ce-product-pulse`             | Generate time-windowed product pulse reports                  |
 | `/ce-riffrec-feedback-analysis` | Convert Riffrec recordings or notes into structured feedback  |
-| `/ce-resolve-pr-feedback`     | Resolve PR review feedback                                    |
-| `/ce-commit`                  | Create a git commit with a clear message                      |
-| `/ce-commit-push-pr`          | Commit, push, and open a PR                                   |
-| `/ce-worktree`                | Ensure work happens in an isolated git worktree               |
-| `/ce-promote`                 | Draft user-facing announcement copy                           |
-| `/ce-test-browser`            | Run browser tests on PR-affected pages                        |
-| `/ce-test-xcode`              | Build and test iOS apps on simulator                          |
-| `/ce-setup`                   | Diagnose optional tool capabilities and project config        |
-| `/ce-simplify-code`           | Simplify recent code changes                                  |
-| `/ce-polish`                  | Start a dev server and iterate on UX polish                   |
-| `/ce-proof`                   | Create, edit, and share Proof documents                       |
-| `/ce-dogfood-beta`            | Diff-scoped browser QA of the active branch                   |
-| `/ce-work-beta`               | Experimental execution workflow with Codex delegation mode    |
-| `/lfg`                        | Full autonomous engineering workflow                          |
+| `/ce-resolve-pr-feedback`       | Resolve PR review feedback                                    |
+| `/ce-commit`                    | Create a git commit with a clear message                      |
+| `/ce-commit-push-pr`            | Commit, push, and open a PR                                   |
+| `/ce-worktree`                  | Ensure work happens in an isolated git worktree               |
+| `/ce-promote`                   | Draft user-facing announcement copy                           |
+| `/ce-test-browser`              | Run browser tests on PR-affected pages                        |
+| `/ce-test-xcode`                | Build and test iOS apps on simulator                          |
+| `/ce-setup`                     | Diagnose optional tool capabilities and project config        |
+| `/ce-simplify-code`             | Simplify recent code changes                                  |
+| `/ce-polish`                    | Start a dev server and iterate on UX polish                   |
+| `/ce-proof`                     | Create, edit, and share Proof documents                       |
+| `/ce-dogfood-beta`              | Diff-scoped browser QA of the active branch                   |
+| `/ce-work-beta`                 | Experimental execution workflow with Codex delegation mode    |
+| `/lfg`                          | Full autonomous engineering workflow                          |
 
 ---
 
@@ -170,11 +170,11 @@ Compound Engineering is not listed in Codex's built-in plugin marketplace yet. A
 2. Click **Add** / **Add plugin marketplace**.
 3. Enter:
 
-| Field        | Value                                |
-| ------------ | ------------------------------------ |
+| Field        | Value                                  |
+| ------------ | -------------------------------------- |
 | Source       | `EveryInc/compound-engineering-plugin` |
-| Git ref      | `main`                               |
-| Sparse paths | leave blank                          |
+| Git ref      | `main`                                 |
+| Sparse paths | leave blank                            |
 
 4. Click **Add marketplace**.
 5. Select **Compound Engineering**, install **compound-engineering**, then restart Codex.

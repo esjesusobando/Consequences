@@ -10,16 +10,16 @@ plugins=(... lando)
 
 ## Wrapped Commands
 
-| Alias        | Description        |
-| ------------ | ------------------ |
-| `artisan`    | `lando artisan`    |
-| `composer`   | `lando composer`   |
-| `drush`      | `lando drush`      |
-| `gulp`       | `lando gulp`       |
-| `npm`        | `lando npm`        |
-| `php`        | `lando php`        |
-| `wp`         | `lando wp`         |
-| `yarn`       | `lando yarn`       |
+| Alias      | Description      |
+| ---------- | ---------------- |
+| `artisan`  | `lando artisan`  |
+| `composer` | `lando composer` |
+| `drush`    | `lando drush`    |
+| `gulp`     | `lando gulp`     |
+| `npm`      | `lando npm`      |
+| `php`      | `lando php`      |
+| `wp`       | `lando wp`       |
+| `yarn`     | `lando yarn`     |
 
 More or different commands can be wrapped by setting the `LANDO_ZSH_WRAPPED_COMMANDS` setting, see [Settings](#settings) below.
 

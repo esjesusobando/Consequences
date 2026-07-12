@@ -7,18 +7,18 @@
 
 ## Skills en esta categoría
 
-| #   | Skill                                                 | Script                    | Propósito                           |
+| #  | Skill                                                 | Script                    | Propósito                           |
 | --- | ----------------------------------------------------- | ------------------------- | ----------------------------------- |
-| 01  | [01_Universal_Doc_Reader](./01_Universal_Doc_Reader/) | `83_Universal_Parser.py`  | Extracción individual de archivos   |
-| 02  | [02_Batch_Doc_Processor](./02_Batch_Doc_Processor/)   | `84_Batch_Parser.py`      | Procesamiento masivo de directorios |
-| 03  | [03_Resumen_Extractor](./03_Resumen_Extractor/)       | `85_Resumen_Extractor.py` | Extracción de CVs y resúmenes       |
+| 01 | [01_Universal_Doc_Reader](./01_Universal_Doc_Reader/) | `83_Universal_Parser.py`  | Extracción individual de archivos   |
+| 02 | [02_Batch_Doc_Processor](./02_Batch_Doc_Processor/)   | `84_Batch_Parser.py`      | Procesamiento masivo de directorios |
+| 03 | [03_Resumen_Extractor](./03_Resumen_Extractor/)       | `85_Resumen_Extractor.py` | Extracción de CVs y resúmenes       |
 
 ---
 
 ## Scripts asociados
 
-| Script                    | Ubicación                                        | Función                        |
-| ------------------------- | ------------------------------------------------ | ------------------------------ |
+| Script                    | Ubicación                                          | Función                        |
+| ------------------------- | -------------------------------------------------- | ------------------------------ |
 | `83_Universal_Parser.py`  | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` | Motor de extracción individual |
 | `84_Batch_Parser.py`      | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` | Orquestador batch              |
 | `85_Resumen_Extractor.py` | `01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/` | Extracción de CVs/resúmenes    |

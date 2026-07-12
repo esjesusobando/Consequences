@@ -1,0 +1,13 @@
+{
+  "name": "product-studio",
+  "version": "0.4.0",
+  "description": "Professional AI product photography and video, faithful to the real product. Turns low-quality product photos (or a store URL) into professional images in 3 styles (minimalist, elegant, UGC) and subtle product videos. Never invents product details.",
+  "author": {
+    "name": "Lorena Bordonaba",
+    "email": "lorenabordonaba.com@gmail.com"
+  },
+  "homepage": "https://github.com/lorena-bordonaba-pau/product-studio",
+  "repository": "https://github.com/lorena-bordonaba-pau/product-studio",
+  "license": "MIT",
+  "keywords": ["product-photography", "ecommerce", "higgsfield", "fal-ai", "product-video", "ugc"]
+}

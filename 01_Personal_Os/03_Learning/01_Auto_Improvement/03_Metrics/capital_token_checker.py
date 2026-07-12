@@ -9,7 +9,15 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent.parent.parent
+def _find_repo_root() -> Path:
+    """Find repo root by walking up until sentinel '00_Winter_is_Coming' is found."""
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "00_Winter_is_Coming").exists():
+            return parent
+    raise RuntimeError("Could not find repo root — sentinel '00_Winter_is_Coming' not found")
+
+
+PROJECT_ROOT = _find_repo_root()
 SHARED_ORG_DIR = PROJECT_ROOT / "01_Personal_Os" / "02_Knowledge" / "10_Shared_Org"
 QUALITY_FILE = Path(__file__).parent / "capital_token_quality.json"
 

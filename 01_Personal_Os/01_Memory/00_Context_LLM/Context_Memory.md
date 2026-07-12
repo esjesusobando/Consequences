@@ -194,3 +194,40 @@ Antes de guardar, validar regla existente para no duplicar.
 ---
 
 *Think Different PersonalOS v5.0 SOTA — 2026-07-09 (Post-Auditoría de Auditores PN-Sesión 3)*
+
+---
+
+## 🧹 Sesión 6: Root Cleanup + Every Trigger Pipeline (2026-07-12)
+
+**Estado del sistema tras cleanup de raíz y pipeline Every Trigger completado.**
+
+### Every Trigger Pipeline
+- ✅ **ce:review**: review-readability sobre cambios ZC — APPROVED con 2 findings (fixeados)
+- ✅ **ce:compound**: solution doc creado en `06_Solutions/logic-errors/path-traversal-sentinel-detection-2026-07-11.md`
+- ✅ **judgment-day**: ya completado en sesión anterior
+
+### Root Cleanup (8/8 items ejecutados)
+- Items 1-4 verificados ya en destino
+- Items 5-8 ejecutados (openspec archive merge, _sdd_backup move, excalidraw.log + .pytest_cache delete, documentación)
+- `.gitignore` actualizado con `openspec/changes/archive/`
+
+### Zero Consequences Fixes
+| Archivo | Fix | Severidad |
+|---------|-----|-----------|
+| `googleAuth.ts` | `any` → `AuthUser` type | 🔴 Type leak |
+| `DashboardView.tsx` | Dead `GoogleCalendarItem` removido; props tipadas | 🟡 Cleanup |
+| `ErrorBoundary.tsx` | Constructor redundante removido | 🟡 Cleanup |
+
+### Git State Snapshot
+```
+Modified (unstaged): 346 archivos
+Deleted (unstaged): 1428 archivos (skills/agentes legacy en .agent/.pi/.agents)
+Untracked: .claude/skills/, skills video, Claude Ads project, HyperFrames repos reference
+```
+
+### Pendiente
+- ⏳ Migración de 12 scripts a path sentinel (abortado — documentado en solution doc)
+- ⏳ Engram `mem_save` no disponible en sesión — pendiente para próxima
+- ⏳ Commit+PR del cleanup completo (esperando dirección del usuario)
+
+*Actualizado: 2026-07-12 | PersonalOS v5.0.2+ | Root Cleanup | Every Trigger Pipeline Completo*

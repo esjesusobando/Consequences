@@ -10,7 +10,15 @@ import subprocess
 from datetime import datetime
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
+def _find_repo_root() -> Path:
+    """Find repo root by walking up until sentinel '00_Winter_is_Coming' is found."""
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "00_Winter_is_Coming").exists():
+            return parent
+    raise RuntimeError("Could not find repo root — sentinel '00_Winter_is_Coming' not found")
+
+
+PROJECT_ROOT = _find_repo_root()
 ENGINE_DIR = PROJECT_ROOT / "01_Personal_Os" / "05_Scripts" / "01_Auto_Improvement"
 AGGREGATOR_SCRIPT = ENGINE_DIR / "03_Metrics" / "pattern_aggregator.py"
 QUALITY_CHECKER = ENGINE_DIR / "03_Metrics" / "capital_token_checker.py"

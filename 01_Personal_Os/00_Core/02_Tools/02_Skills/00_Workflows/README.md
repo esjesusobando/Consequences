@@ -8,13 +8,13 @@
 
 ## Navegacion Rapida
 
-| #   | Directorio             | Skill            | Descripcion                           |
+| #  | Directorio             | Skill            | Descripcion                           |
 | --- | ---------------------- | ---------------- | ------------------------------------- |
-| 01  | `01_Agent_Teams_Lite/` | Agent Teams Lite | Gestion de equipos de agentes ligeros |
-| 02  | `02_Project_Manager/`  | Project Manager  | Gestion de proyectos y tareas         |
-| 03  | `03_Product_Manager/`  | Product Manager  | Gestion de producto y roadmaps        |
-| 04  | `04_PM_Orchestrator/`  | PM Orchestrator  | Orquestador de project managers       |
-| 05  | `05_Super_Campeones/`  | Super Campeones  | Workflows de alto rendimiento         |
+| 01 | `01_Agent_Teams_Lite/` | Agent Teams Lite | Gestion de equipos de agentes ligeros |
+| 02 | `02_Project_Manager/`  | Project Manager  | Gestion de proyectos y tareas         |
+| 03 | `03_Product_Manager/`  | Product Manager  | Gestion de producto y roadmaps        |
+| 04 | `04_PM_Orchestrator/`  | PM Orchestrator  | Orquestador de project managers       |
+| 05 | `05_Super_Campeones/`  | Super Campeones  | Workflows de alto rendimiento         |
 
 ### Documentos de Orquestacion
 

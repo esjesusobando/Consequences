@@ -27,7 +27,7 @@ import {
   ChevronDown,
   GripVertical,
 } from 'lucide-react';
-import { SignalEvent, AccentColor } from '../types';
+import { SignalEvent, AccentColor, PresentationConfig } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   googleSignIn, 
@@ -45,14 +45,31 @@ interface DashboardViewProps {
   nodeStatus: string;
   onLogMessage: (type: 'info' | 'ok' | 'warn' | 'err', text: string) => void;
   hideRightPanel: boolean;
-  config: any;
-  user: any;
-  setUser: any;
+  config: PresentationConfig;
+  user: GoogleUser | null;
+  setUser: React.Dispatch<React.SetStateAction<GoogleUser | null>>;
   googleToken: string | null;
   setGoogleToken: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
-export default function DashboardView({
+interface GoogleUser {
+  uid: string;
+  displayName: string | null;
+  email: string | null;
+  photoURL: string | null;
+}
+
+interface GoogleCalendarItem {
+  id: string;
+  summary?: string;
+  description?: string;
+  start?: {
+    dateTime?: string;
+    date?: string;
+  };
+}
+
+export function DashboardView({
   signals,
   setSignals,
   accent,
@@ -265,7 +282,7 @@ export default function DashboardView({
 
         setSignals(prev => {
           let currentList = [...prev];
-          items.forEach((item: any) => {
+          items.forEach((item: GoogleCalendarItem) => {
             const googleId = item.id;
             const summary = item.summary || 'Reunión agendada';
             const desc = item.description || 'Detalles sincronizados vía Google Workspace API.';
@@ -316,12 +333,12 @@ export default function DashboardView({
           onLogMessage('ok', `Google Calendar: ${newCount} nuevas reuniones añadidas, ${updatedCount} actualizadas.`);
         }
         setCalendarSyncStatus('synchronized');
-      } catch (err: any) {
+      } catch (err: unknown) {
         console.warn('Bidirectional pull failed:', err);
         setCalendarSyncStatus('offline');
       }
     };
-
+ 
     pullAndSync();
     const interval = setInterval(pullAndSync, 30000);
     return () => clearInterval(interval);
@@ -364,7 +381,7 @@ export default function DashboardView({
         }
       } catch (err: any) {
         setCalendarSyncStatus('offline');
-        onLogMessage('err', `Fallo de sincronización: ${err.message}`);
+        onLogMessage('err', `Fallo de sincronización: ${err instanceof Error ? err.message : String(err)}`);
       }
     } else {
       // Offline Simulation fallback

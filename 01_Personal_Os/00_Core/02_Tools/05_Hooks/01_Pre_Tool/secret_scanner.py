@@ -135,7 +135,15 @@ def find_project_root(sentinel: str = ".git") -> Path:
         if parent == current:
             break
         current = parent
-    return Path(__file__).resolve().parent.parent.parent.parent.parent.parent
+    return _find_repo_root()
+
+
+def _find_repo_root() -> Path:
+    """Find repo root by walking up until sentinel '00_Winter_is_Coming' is found."""
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "00_Winter_is_Coming").exists():
+            return parent
+    raise RuntimeError("Could not find repo root — sentinel '00_Winter_is_Coming' not found")
 
 
 def _infer_var_name(match_text: str) -> str:

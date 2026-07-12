@@ -53,14 +53,14 @@ plugins=(... common-aliases)
 
 ### Other Aliases
 
-| Alias    | Command            | Description                                                 |
-| -------- | ------------------ | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| h        | `history`          | Lists all recently used commands                            |
-| hgrep    | `fc -El 0 \        | grep`                                                       | Searches for a word in the list of previously used commands |
-| help     | `man`              | Opens up the man page for a command                         |
-| p        | `ps -f`            | Displays currently executing processes                      |
-| sortnr   | `sort -n -r`       | Used to sort the lines of a text file                       |
-| unexport | `unset`            | Used to unset an environment variable                       |
+| Alias    | Command      | Description                            |                                                             |
+| -------- | ------------ | -------------------------------------- | ----------------------------------------------------------- |
+| h        | `history`    | Lists all recently used commands       |                                                             |
+| hgrep    | `fc -El 0 \  | grep`                                  | Searches for a word in the list of previously used commands |
+| help     | `man`        | Opens up the man page for a command    |                                                             |
+| p        | `ps -f`      | Displays currently executing processes |                                                             |
+| sortnr   | `sort -n -r` | Used to sort the lines of a text file  |                                                             |
+| unexport | `unset`      | Used to unset an environment variable  |                                                             |
 
 ## Global aliases
 
@@ -83,18 +83,18 @@ $ find . -type f NE
 $ find . -type f 2>/dev/null
 ```
 
-| Alias | Command                     | Description                                                 |
-| ----- | --------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| H     | `\                          | head`                                                       | Pipes output to head which outputs the first part of a file |
-| T     | `\                          | tail`                                                       | Pipes output to tail which outputs the last part of a file  |
-| G     | `\                          | grep`                                                       | Pipes output to grep to search for some word                |
-| L     | `\                          | less`                                                       | Pipes output to less, useful for paging                     |
-| M     | `\                          | most`                                                       | Pipes output to more, useful for paging                     |
-| LL    | `2>&1 \                     | less`                                                       | Writes stderr to stdout and passes it to less               |
-| CA    | `2>&1 \                     | cat -A`                                                     | Writes stderr to stdout and passes it to cat                |
-| NE    | `2 > /dev/null`             | Silences stderr                                             |
-| NUL   | `> /dev/null 2>&1`          | Silences both stdout and stderr                             |
-| P     | `2>&1\                      | pygmentize -l pytb`                                         | Writes stderr to stdout and passes it to pygmentize         |
+| Alias | Command            | Description                     |                                                             |
+| ----- | ------------------ | ------------------------------- | ----------------------------------------------------------- |
+| H     | `\                 | head`                           | Pipes output to head which outputs the first part of a file |
+| T     | `\                 | tail`                           | Pipes output to tail which outputs the last part of a file  |
+| G     | `\                 | grep`                           | Pipes output to grep to search for some word                |
+| L     | `\                 | less`                           | Pipes output to less, useful for paging                     |
+| M     | `\                 | most`                           | Pipes output to more, useful for paging                     |
+| LL    | `2>&1 \            | less`                           | Writes stderr to stdout and passes it to less               |
+| CA    | `2>&1 \            | cat -A`                         | Writes stderr to stdout and passes it to cat                |
+| NE    | `2 > /dev/null`    | Silences stderr                 |                                                             |
+| NUL   | `> /dev/null 2>&1` | Silences both stdout and stderr |                                                             |
+| P     | `2>&1\             | pygmentize -l pytb`             | Writes stderr to stdout and passes it to pygmentize         |
 
 ## File extension aliases
 

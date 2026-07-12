@@ -189,10 +189,17 @@ Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kep
 # AGENT TOOLS — config directories
 # =============================================================================
 .codex/
+.agent/
+.pi/
 
 # Embedded git repos (not submodules)
 01_Personal_Os/05_Archive/07_Repos_Gentleman/21_Sub_Agent_Statusline/.git
 01_Personal_Os/05_Archive/07_Repos_Gentleman/23_Tubemaster/.git
+01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/03_Repos_Hyperframes/
+01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/03_Repos_Karpathy/
+01_Personal_Os/07_Archive/05_Repos/ai-marketing-claude/
+02_Playground/OpenMontage/
+_temp_product_studio/
 
 # Embedded git repos (local copies, not submodules)  
 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
@@ -202,6 +209,9 @@ Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kep
 # SDD generated artifacts (NOT the registry itself — .atl/*.md and .atl/openspec/ are tracked)
 .atl/.skill-registry.cache.json
 .atl/openspec/changes/pattern-intelligence-v1/
+
+# Root openspec archive (moved to .atl/openspec/changes/archive/)
+openspec/changes/archive/
 
 # Pattern Intelligence Engine cache (regeneratable)
 **/pattern_index.db
@@ -231,3 +241,6 @@ out/
 # Strong MKT SDD artifacts (engram-backed)
 02_Playground/07_Zero_Consequences/06_Equipo_Strong_MKT/openspec/
 .agent/.playwright-mcp/
+
+# Temp directories (cleanup)
+_temp_product_studio/

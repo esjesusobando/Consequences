@@ -8,11 +8,11 @@ Your personal task files live here. Each task is a markdown file with YAML front
 
 ## Quick Reference
 
-| Field                                    | Values                                                                                                         |
-| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **priority**                             | `P0` (today) · `P1` (this week) · `P2` (scheduled) · `P3` (someday)                                            |
-| **status**                               | `n` (not started) · `s` (started) · `b` (blocked) · `d` (done)                                                 |
-| **category**                             | `technical` · `outreach` · `research` · `writing` · `admin` · `personal` · `other`                             |
+| Field        | Values                                                                             |
+| ------------ | ---------------------------------------------------------------------------------- |
+| **priority** | `P0` (today) · `P1` (this week) · `P2` (scheduled) · `P3` (someday)                |
+| **status**   | `n` (not started) · `s` (started) · `b` (blocked) · `d` (done)                     |
+| **category** | `technical` · `outreach` · `research` · `writing` · `admin` · `personal` · `other` |
 
 ---
 

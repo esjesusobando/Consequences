@@ -126,10 +126,10 @@ Normal memory activity also updates the status bar with short progress/result te
 
 When a tool call fails because Engram cannot determine which project to use, the status bar shows an actionable label instead of the generic `error`:
 
-| Status bar label            | Meaning                                                                                                                                                                   |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Status bar label              | Meaning                                                                                                                                                                       |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `🧠 repos · ambiguous project` | Pi was started from a directory that contains multiple git repos. Run Pi from inside a single repo, or add `.engram/config.json` with `project_name` to the parent directory. |
-| `🧠 repos · error`           | A different tool or network error occurred. Expand the tool output in Pi for the full error message.                                                                      |
+| `🧠 repos · error`             | A different tool or network error occurred. Expand the tool output in Pi for the full error message.                                                                          |
 
 Full tool details remain available by expanding the tool output in Pi. If `gentle-engram` or the Engram server is not installed/running, the compact tool reports an error instead of implying memory is available.
 

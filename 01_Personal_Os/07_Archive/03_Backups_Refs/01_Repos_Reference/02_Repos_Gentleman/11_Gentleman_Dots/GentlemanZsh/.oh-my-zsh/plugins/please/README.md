@@ -15,11 +15,11 @@ plugins=(... please)
 
 ## Aliases
 
-| Alias   | Command       |
-| ------- | ------------- |
-| `pb`    | `plz build`   |
-| `pt`    | `plz test`    |
-| `pw`    | `plz watch`   |
+| Alias | Command     |
+| ----- | ----------- |
+| `pb`  | `plz build` |
+| `pt`  | `plz test`  |
+| `pw`  | `plz watch` |
 
 ## Maintainer
 

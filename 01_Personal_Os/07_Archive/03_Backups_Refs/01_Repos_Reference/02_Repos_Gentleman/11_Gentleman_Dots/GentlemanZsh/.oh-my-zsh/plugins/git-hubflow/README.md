@@ -14,11 +14,11 @@ plugins=(... git-hubflow)
 
 ## Aliases
 
-| Alias   | Command            | Description                                                        |
-| ------- | ------------------ | ------------------------------------------------------------------ |
-| ghf     | `git hf`           | Print command overview                                             |
-| ghff    | `git hf feature`   | Manage your feature branches                                       |
-| ghfr    | `git hf release`   | Manage your release branches                                       |
-| ghfh    | `git hf hotfix`    | Manage your hotfix branches                                        |
-| ghfs    | `git hf support`   | Manage your support branches                                       |
-| ghfu    | `git hf update`    | Pull upstream changes down into your master and develop branches   |
+| Alias | Command          | Description                                                      |
+| ----- | ---------------- | ---------------------------------------------------------------- |
+| ghf   | `git hf`         | Print command overview                                           |
+| ghff  | `git hf feature` | Manage your feature branches                                     |
+| ghfr  | `git hf release` | Manage your release branches                                     |
+| ghfh  | `git hf hotfix`  | Manage your hotfix branches                                      |
+| ghfs  | `git hf support` | Manage your support branches                                     |
+| ghfu  | `git hf update`  | Pull upstream changes down into your master and develop branches |

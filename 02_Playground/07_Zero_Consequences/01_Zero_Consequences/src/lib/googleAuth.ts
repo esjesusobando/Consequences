@@ -28,9 +28,17 @@ if (!isDummyConfig) {
 let isSigningIn = false;
 let cachedAccessToken: string | null = null;
 
+// Union type for Firebase User or simulated user
+export type AuthUser = {
+  uid: string;
+  displayName: string | null;
+  email: string | null;
+  photoURL: string | null;
+};
+
 // Initialize Auth Listener
 export const initAuth = (
-  onAuthSuccess?: (user: any, token: string) => void,
+  onAuthSuccess?: (user: AuthUser, token: string) => void,
   onAuthFailure?: () => void
 ) => {
   if (isDummyConfig || !auth) {
@@ -69,7 +77,7 @@ export const initAuth = (
 };
 
 // Google Sign-In trigger
-export const googleSignIn = async (): Promise<{ user: any; accessToken: string } | null> => {
+export const googleSignIn = async (): Promise<{ user: AuthUser; accessToken: string } | null> => {
   if (isDummyConfig || !auth) {
     // Elegant high-fidelity Simulation sign-in
     console.log("Using High-Fidelity Simulated Google Session...");

@@ -32,12 +32,12 @@ Memory and context system for LLMs. Stores system state, process notes, knowledg
 
 ## Memory Process
 
-| Step   | Action                     | Tool                             |
-|--------|----------------------------|----------------------------------|
-| 1      | Load context on start      | `engram_mem_context()`           |
-| 2      | Save key decisions         | `mem_save()`                     |
-| 3      | Save session on close      | `engram_mem_session_summary()`   |
-| 4      | Keep notes updated         | `01_Process_Notes/`              |
+| Step | Action                | Tool                           |
+| ---- | --------------------- | ------------------------------ |
+| 1    | Load context on start | `engram_mem_context()`         |
+| 2    | Save key decisions    | `mem_save()`                   |
+| 3    | Save session on close | `engram_mem_session_summary()` |
+| 4    | Keep notes updated    | `01_Process_Notes/`            |
 
 ---
 

@@ -10,6 +10,6 @@ plugins=(... yii)
 
 ## Aliases
 
-| Alias    | Command                |
-| -------- | ---------------------- |
-| yiic     | `protected/yiic`       |
+| Alias | Command          |
+| ----- | ---------------- |
+| yiic  | `protected/yiic` |

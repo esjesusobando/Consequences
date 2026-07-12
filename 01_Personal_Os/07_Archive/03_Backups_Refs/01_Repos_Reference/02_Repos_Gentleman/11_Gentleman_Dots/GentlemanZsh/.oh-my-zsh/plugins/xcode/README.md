@@ -11,13 +11,13 @@ plugins=(... xcode)
 
 ## Aliases
 
-| Alias   | Description                                | Command                                          |
-| ------- | ------------------------------------------ | ------------------------------------------------ |
-| xcb     | Build Xcode projects and workspaces        | xcodebuild                                       |
-| xcdd    | Purge all temporary build information      | rm -rf ~/Library/Developer/Xcode/DerivedData/*   |
-| xcp     | Show currently selected Xcode directory    | xcode-select --print-path                        |
-| xcsel   | Select different Xcode directory by path   | sudo xcode-select --switch                       |
-| xx      | Opens the files listed in Xcode            | open -a "Xcode.app"                              |
+| Alias | Description                              | Command                                        |
+| ----- | ---------------------------------------- | ---------------------------------------------- |
+| xcb   | Build Xcode projects and workspaces      | xcodebuild                                     |
+| xcdd  | Purge all temporary build information    | rm -rf ~/Library/Developer/Xcode/DerivedData/* |
+| xcp   | Show currently selected Xcode directory  | xcode-select --print-path                      |
+| xcsel | Select different Xcode directory by path | sudo xcode-select --switch                     |
+| xx    | Opens the files listed in Xcode          | open -a "Xcode.app"                            |
 
 
 ## Functions

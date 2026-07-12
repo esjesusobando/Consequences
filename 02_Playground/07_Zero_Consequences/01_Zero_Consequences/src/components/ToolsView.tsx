@@ -47,7 +47,7 @@ import { AccentColor } from '../types';
 import { nanoid } from 'nanoid';
 import QRCode from 'qrcode';
 import { removeBackground } from '@imgly/background-removal';
-import PhotoEditor from './PhotoEditor';
+import { PhotoEditor } from './PhotoEditor';
 
 // ── Title Normalizer ──────────────────────────────────────────────
 

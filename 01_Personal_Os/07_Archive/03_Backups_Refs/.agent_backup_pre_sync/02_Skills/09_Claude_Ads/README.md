@@ -189,15 +189,15 @@ Generate professional PDF audit reports for client deliverables with health scor
 ### 250+ Audit Checks
 Comprehensive coverage across all platforms with weighted severity scoring:
 
-| Platform       | Checks   | Key Areas                                                        |
-| -------------- | -------- | ---------------------------------------------------------------- |
-| Google Ads     | 80       | Search, PMax, AI Max, Demand Gen, CTV, YouTube                   |
-| Meta Ads       | 50       | Pixel/CAPI, Andromeda creative diversity, Structure, Audience    |
-| LinkedIn Ads   | 27       | B2B targeting, TLA, Lead Gen, CRM integration                    |
-| TikTok Ads     | 28       | Creative-first, Smart+, GMV Max, Search Ads, Events API          |
-| Microsoft Ads  | 24       | Google import safety, Copilot, CTV, LinkedIn targeting, video    |
-| Apple Ads      | 35+      | Campaign structure, CPPs, Maximize Conversions, AdAttributionKit |
-| Cross-platform | 3        | Privacy infrastructure, creative diversity, refresh cadence      |
+| Platform       | Checks | Key Areas                                                        |
+| -------------- | ------ | ---------------------------------------------------------------- |
+| Google Ads     | 80     | Search, PMax, AI Max, Demand Gen, CTV, YouTube                   |
+| Meta Ads       | 50     | Pixel/CAPI, Andromeda creative diversity, Structure, Audience    |
+| LinkedIn Ads   | 27     | B2B targeting, TLA, Lead Gen, CRM integration                    |
+| TikTok Ads     | 28     | Creative-first, Smart+, GMV Max, Search Ads, Events API          |
+| Microsoft Ads  | 24     | Google import safety, Copilot, CTV, LinkedIn targeting, video    |
+| Apple Ads      | 35+    | Campaign structure, CPPs, Maximize Conversions, AdAttributionKit |
+| Cross-platform | 3      | Privacy infrastructure, creative diversity, refresh cadence      |
 
 <p align="center">
   <img src="assets/diagrams/15-platform-grid.svg" alt="Platform Coverage Grid" width="100%">
@@ -210,13 +210,13 @@ Comprehensive coverage across all platforms with weighted severity scoring:
 ### Ads Health Score (0-100)
 Weighted scoring algorithm with severity multipliers:
 
-| Grade   | Score   | Action Required                |
-| ------- | ------- | ------------------------------ |
-| A       | 90-100  | Minor optimizations only       |
-| B       | 75-89   | Some improvement opportunities |
-| C       | 60-74   | Notable issues need attention  |
-| D       | 40-59   | Significant problems present   |
-| F       | <40     | Urgent intervention required   |
+| Grade | Score  | Action Required                |
+| ----- | ------ | ------------------------------ |
+| A     | 90-100 | Minor optimizations only       |
+| B     | 75-89  | Some improvement opportunities |
+| C     | 60-74  | Notable issues need attention  |
+| D     | 40-59  | Significant problems present   |
+| F     | <40    | Urgent intervention required   |
 
 <p align="center">
   <img src="assets/diagrams/13-scoring-algorithm.svg" alt="Scoring Algorithm" width="100%">

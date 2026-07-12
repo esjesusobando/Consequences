@@ -107,20 +107,20 @@
 
 ## 🎯 Quick Reference
 
-| Qué necesitas                                           | Ve a                                                 |
-| ------------------------------------------------------- | ---------------------------------------------------- |
-| Core Engineering (CE)                                   | `00_Compound_Engineering/`                           |
-| Stack base del OS                                       | `00_System_Core/`                                    |
-| Contenido (Brand, YouTube)                              | `01_Creacion_Contenidos/`                            |
-| UI/UX Design                                            | `02_Diseno_Ui_Ux/`                                   |
-| Video & Media                                           | `03_Video_Media/`                                    |
-| Automatización (N8N, Firecrawl)                         | `04_Automatizacion/`                                 |
-| Workflows (Agent Teams, PM)                             | `05_Workflows/`                                      |
-| Tools (Testing, DevOps)                                 | `06_Tools/`                                          |
-| Personal OS (Hillary, Life OS)                          | `07_Personal_Os/`                                    |
-| Invictus Web                                            | `08_Invictus_Web/`                                   |
-| Claude Ads                                              | `09_Claude_Ads/`                                     |
-| Skill Auditor                                           | `10_Skill_Auditor/`                                  |
+| Qué necesitas                   | Ve a                       |
+| ------------------------------- | -------------------------- |
+| Core Engineering (CE)           | `00_Compound_Engineering/` |
+| Stack base del OS               | `00_System_Core/`          |
+| Contenido (Brand, YouTube)      | `01_Creacion_Contenidos/`  |
+| UI/UX Design                    | `02_Diseno_Ui_Ux/`         |
+| Video & Media                   | `03_Video_Media/`          |
+| Automatización (N8N, Firecrawl) | `04_Automatizacion/`       |
+| Workflows (Agent Teams, PM)     | `05_Workflows/`            |
+| Tools (Testing, DevOps)         | `06_Tools/`                |
+| Personal OS (Hillary, Life OS)  | `07_Personal_Os/`          |
+| Invictus Web                    | `08_Invictus_Web/`         |
+| Claude Ads                      | `09_Claude_Ads/`           |
+| Skill Auditor                   | `10_Skill_Auditor/`        |
 
 ---
 

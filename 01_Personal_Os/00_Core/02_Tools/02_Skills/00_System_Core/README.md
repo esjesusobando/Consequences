@@ -10,10 +10,10 @@
 
 ### Skills
 
-| #   | Directorio   | Skill  | Descripcion                              |
+| #  | Directorio   | Skill  | Descripcion                              |
 | --- | ------------ | ------ | ---------------------------------------- |
-| 01  | `01_Gcierr/` | GCIERR | Sistema de branding y diseno consistente |
-| 02  | `02_Hooks/`  | Hooks  | Hooks y automatizaciones del sistema     |
+| 01 | `01_Gcierr/` | GCIERR | Sistema de branding y diseno consistente |
+| 02 | `02_Hooks/`  | Hooks  | Hooks y automatizaciones del sistema     |
 
 ### Documentos de Sistema
 

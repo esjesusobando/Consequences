@@ -21,33 +21,33 @@ That's it. `gentle-ai` detects your installed tools, installs all skills, config
 
 ### What you get with gentle-ai that ATL didn't have
 
-| Feature                                                                     | Agent Teams Lite                           | gentle-ai                           |
-| --------------------------------------------------------------------------- | ------------------------------------------ | ----------------------------------- |
-| SDD orchestration (9 phases + judgment-day)                                 | ✅                                          | ✅                                   |
-| Skill registry + compact rules                                              | ✅                                          | ✅                                   |
-| branch-pr + issue-creation skills                                           | ✅                                          | ✅                                   |
-| Engram persistent memory (installed + configured)                           | ❌                                          | ✅                                   |
-| Context7 documentation MCP                                                  | ❌                                          | ✅                                   |
-| Persona injection                                                           | ❌                                          | ✅                                   |
-| Automatic self-updates                                                      | ❌                                          | ✅                                   |
-| Backup and rollback                                                         | ❌                                          | ✅                                   |
-| Config sync and migration                                                   | ❌                                          | ✅                                   |
-| GGA configuration                                                           | ❌                                          | ✅                                   |
-| Permission management                                                       | ❌                                          | ✅                                   |
-| TUI interactive installer                                                   | ❌                                          | ✅                                   |
+| Feature                                           | Agent Teams Lite | gentle-ai |
+| ------------------------------------------------- | ---------------- | --------- |
+| SDD orchestration (9 phases + judgment-day)       | ✅                | ✅         |
+| Skill registry + compact rules                    | ✅                | ✅         |
+| branch-pr + issue-creation skills                 | ✅                | ✅         |
+| Engram persistent memory (installed + configured) | ❌                | ✅         |
+| Context7 documentation MCP                        | ❌                | ✅         |
+| Persona injection                                 | ❌                | ✅         |
+| Automatic self-updates                            | ❌                | ✅         |
+| Backup and rollback                               | ❌                | ✅         |
+| Config sync and migration                         | ❌                | ✅         |
+| GGA configuration                                 | ❌                | ✅         |
+| Permission management                             | ❌                | ✅         |
+| TUI interactive installer                         | ❌                | ✅         |
 
 ### Supported agents (all 8)
 
-| Agent                                     | Sub-agent support                                   |
-| ----------------------------------------- | --------------------------------------------------- |
-| Claude Code                               | Full                                                |
-| OpenCode                                  | Full                                                |
-| Gemini CLI                                | Full                                                |
-| Codex                                     | Full                                                |
-| Cursor                                    | Inline                                              |
-| VS Code Copilot                           | Inline                                              |
-| Antigravity                               | Single-agent                                        |
-| Windsurf                                  | Hybrid (Plan + Code mode)                           |
+| Agent           | Sub-agent support         |
+| --------------- | ------------------------- |
+| Claude Code     | Full                      |
+| OpenCode        | Full                      |
+| Gemini CLI      | Full                      |
+| Codex           | Full                      |
+| Cursor          | Inline                    |
+| VS Code Copilot | Inline                    |
+| Antigravity     | Single-agent              |
+| Windsurf        | Hybrid (Plan + Code mode) |
 
 ### If you already have ATL installed
 

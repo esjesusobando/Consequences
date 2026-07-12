@@ -1,25 +1,40 @@
-import logging
-import typing
-
-logging.basicConfig(level=logging.INFO)
 #!/usr/bin/env python3
 """
-README Table Beautifier — Pixel Perfect
-Recorre todos los READMEs del PersonalOS y alinea las tablas markdown perfectamente.
+README Table Beautifier — Pixel Perfect v2
+Recorre todos los README.md del PersonalOS y alinea las tablas markdown perfectamente.
+Detecta ROOT automáticamente por sentinel (00_Winter_is_Coming/).
 """
 import re
 import sys
 from pathlib import Path
 
-ROOT = Path(r"c:\Users\sebas\Desktop\Think_Different")
 
-# READMEs del sistema operativo (excluye proyectos externos, node_modules, archive)
+def find_repo_root() -> Path:
+    """Detecta raíz del repo buscando el sentinel 00_Winter_is_Coming/."""
+    cwd = Path.cwd()
+    for parent in [cwd] + list(cwd.parents):
+        if (parent / "00_Winter_is_Coming").is_dir():
+            return parent
+    # Fallback: el directorio del script
+    return Path(__file__).parent.parent.parent.parent.parent
+
+
+ROOT = find_repo_root()
+
+# READMEs del sistema operativo (excluye proyectos externos, node_modules, backups)
 SKIP_PATTERNS = [
-    "node_modules", "05_Archive", "02_Skills_Legacy",
-    "01_Projects_Lab", "00_Side Project", "02_OIM_Website",
-    "01_OIM_Website_v2", "04_OIM_Website_Backup", "drilling-calculator",
-    "python-engine", "07_Clinica_Infantil", "08_Suerte_Repeticion_Test",
-    "Dashboar-Conteo", "Zero_Consequences-main",
+    "node_modules",
+    ".git",
+    "__pycache__",
+    ".venv",
+    ".mypy_cache",
+    ".pytest_cache",
+    # Archivos/backups de terceros
+    "01_Repos_Reference",
+    "04_Operations_Backup",
+    "_sdd_backup",
+    ".agent_backup_pre_sync",
+    "Zero_Consequences-main",
 ]
 
 
@@ -122,10 +137,15 @@ def beautify_tables(content: str) -> tuple[str, int]:
 
 
 def main():
+    dry_run = "--dry-run" in sys.argv
+
     readmes = list(ROOT.rglob("README.md"))
     processed = 0
     fixed = 0
     skipped = 0
+
+    if dry_run:
+        print("[DRY-RUN] No files will be modified\n")
 
     for readme in sorted(readmes):
         if should_skip(readme):
@@ -142,16 +162,22 @@ def main():
         processed += 1
 
         if tables_fixed > 0:
-            # Preserve original line endings
-            if "\r\n" in original:
-                new_content = new_content.replace("\n", "\r\n")
-            readme.write_text(new_content, encoding="utf-8")
-            print(f"  [OK] Fixed {tables_fixed} table(s): {readme.relative_to(ROOT)}")
+            rel = readme.relative_to(ROOT)
+            if dry_run:
+                print(f"  [DRY] Would fix {tables_fixed} table(s): {rel}")
+            else:
+                # Preserve original line endings
+                if "\r\n" in original:
+                    new_content = new_content.replace("\n", "\r\n")
+                readme.write_text(new_content, encoding="utf-8")
+                print(f"  [OK] Fixed {tables_fixed} table(s): {rel}")
             fixed += 1
         else:
             print(f"  [SKIP] Already OK: {readme.relative_to(ROOT)}")
 
-    print(f"\n📊 Results: {processed} READMEs checked, {fixed} fixed, {skipped} skipped.")
+    print(f"\n== Results: {processed} READMEs checked, {fixed} need fixing, {skipped} skipped.")
+    if dry_run and fixed > 0:
+        print("[TIP] Run without --dry-run to apply fixes.")
 
 
 if __name__ == "__main__":

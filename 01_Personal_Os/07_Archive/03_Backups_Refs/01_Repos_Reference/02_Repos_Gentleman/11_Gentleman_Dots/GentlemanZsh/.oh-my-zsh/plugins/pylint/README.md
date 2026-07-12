@@ -11,6 +11,6 @@ plugins=(... pylint)
 
 ## Aliases
 
-| Alias         | Command              | Description                                                                                                               |
-| ------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| pylint-quick  | `pylint --reports=n` | Displays a set of reports each one focusing on a particular aspect of the project, default set `no` for multiple reports  |
+| Alias        | Command              | Description                                                                                                              |
+| ------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| pylint-quick | `pylint --reports=n` | Displays a set of reports each one focusing on a particular aspect of the project, default set `no` for multiple reports |

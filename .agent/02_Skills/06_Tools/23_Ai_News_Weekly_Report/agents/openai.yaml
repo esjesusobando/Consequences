@@ -1,4 +1,0 @@
-interface:
-  display_name: "AI News Weekly"
-  short_description: "Weekly AI news PDF and HTML briefing."
-  default_prompt: "Investiga las noticias de IA de la última semana y genera un PDF y una presentación HTML en 03_Resultado."

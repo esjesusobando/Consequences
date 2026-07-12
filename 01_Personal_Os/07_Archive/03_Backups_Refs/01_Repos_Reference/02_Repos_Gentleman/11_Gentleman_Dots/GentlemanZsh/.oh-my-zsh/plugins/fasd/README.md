@@ -14,8 +14,8 @@ Please find detailed installation guide [`here`](https://github.com/whjvenyl/fas
 
 ## Aliases
 
-| Alias   | Command                                     | Description                                                   |
-| ------- | ------------------------------------------- | ------------------------------------------------------------- |
-| v       | `fasd -f -e "$EDITOR"`                      | List frequent/recent files matching the given filename.       |
-| o       | `fasd -a -e xdg-open`                       | List frequent/recent files and directories matching.          |
-| j       | `fasd_cd -d -i`                             | cd with interactive selection                                 |
+| Alias | Command                | Description                                             |
+| ----- | ---------------------- | ------------------------------------------------------- |
+| v     | `fasd -f -e "$EDITOR"` | List frequent/recent files matching the given filename. |
+| o     | `fasd -a -e xdg-open`  | List frequent/recent files and directories matching.    |
+| j     | `fasd_cd -d -i`        | cd with interactive selection                           |

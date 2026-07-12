@@ -8,7 +8,15 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
+def _find_repo_root() -> Path:
+    """Find repo root by walking up until sentinel '00_Winter_is_Coming' is found."""
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "00_Winter_is_Coming").exists():
+            return parent
+    raise RuntimeError("Could not find repo root — sentinel '00_Winter_is_Coming' not found")
+
+
+PROJECT_ROOT = _find_repo_root()
 CACHE_DIR = PROJECT_ROOT / "01_Personal_Os" / "05_Scripts" / "00_Context_LLM" / ".lazy_cache"
 METRICS_FILE = PROJECT_ROOT / "01_Personal_Os" / "05_Scripts" / "00_Context_LLM" / "boot_metrics.json"
 

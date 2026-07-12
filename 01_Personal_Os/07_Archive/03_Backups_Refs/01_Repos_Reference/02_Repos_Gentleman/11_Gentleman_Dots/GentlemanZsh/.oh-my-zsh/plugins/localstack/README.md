@@ -15,9 +15,9 @@ This plugin supplies one command, `lsk`, through which all its features are expo
 
 ## Commands
 
-| Command                             | Description                                                           |
-| ----------------------------------- | --------------------------------------------------------------------- |
-| `lsk sqs-send <queue> <message.json>` | sends a given message in sqs to a given queue                         |
+| Command                               | Description                                   |
+| ------------------------------------- | --------------------------------------------- |
+| `lsk sqs-send <queue> <message.json>` | sends a given message in sqs to a given queue |
 
 ## Examples
 

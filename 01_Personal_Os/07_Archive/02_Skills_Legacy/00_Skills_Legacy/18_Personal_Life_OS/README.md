@@ -8,13 +8,13 @@
 
 ## 5 Skills del Sistema
 
-| #   | Skill           | Trigger                                            | Propósito                                                   |
-| --- | --------------- | -------------------------------------------------- | ----------------------------------------------------------- |
-| 01  | **Quick Capture** | "capture", "quick add", "captura"                  | Capturar ideas/tareas a markdown con frontmatter automático |
-| 02  | **Plan My Day** | "plan my day", "plan día", "organizar día"         | Transformar inbox en schedule por bloques de energía        |
-| 03  | **Daily Notes** | "daily notes", "log this", "registro diario"       | Observación activa — Yapper's API pattern                   |
-| 04  | **Recording Mode** | "record", "transcribe", "recording mode"           | Transcripción + anonimización PII automática                |
-| 05  | **Returns Tracker** | "create skill from", "auto-skill", "track returns" | Detecta patrones → genera skills automáticos                |
+| #  | Skill               | Trigger                                            | Propósito                                                   |
+| --- | ------------------- | -------------------------------------------------- | ----------------------------------------------------------- |
+| 01 | **Quick Capture**   | "capture", "quick add", "captura"                  | Capturar ideas/tareas a markdown con frontmatter automático |
+| 02 | **Plan My Day**     | "plan my day", "plan día", "organizar día"         | Transformar inbox en schedule por bloques de energía        |
+| 03 | **Daily Notes**     | "daily notes", "log this", "registro diario"       | Observación activa — Yapper's API pattern                   |
+| 04 | **Recording Mode**  | "record", "transcribe", "recording mode"           | Transcripción + anonimización PII automática                |
+| 05 | **Returns Tracker** | "create skill from", "auto-skill", "track returns" | Detecta patrones → genera skills automáticos                |
 
 ---
 
@@ -49,4 +49,3 @@ Returns Tracker → 01_Personal_Os/01_Core/02_Tools/02_Skills/ (auto-generated s
 ## RUNBOOK
 
 Ver `02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md` para guía completa de uso.
-

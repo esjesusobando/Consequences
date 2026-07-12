@@ -21,13 +21,13 @@ Agentes especializados en creación y transformación de contenido para canales 
 
 ## Agentes
 
-| Agente                             | Proposito                        | Input                                  | Output                                     |
-| ---------------------------------- | -------------------------------- | -------------------------------------- | ------------------------------------------ |
-| Content Transformer                | Repurposing de contenido         | Raw notes, articulos, research         | Contenido estructurado multi-canal         |
-| Youtube Script Writer              | Guiones para videos              | Tema + audiencia                       | Script completo con hook                   |
-| Youtube Thumbnail Prompter         | Prompts de thumbnails            | Titulo del video                       | Prompt para Midjourney/DALL-E              |
-| Youtube Title Generator            | Titulos optimizados              | Tema del video                         | 10 opciones con SEO                        |
-| Carousel Strategist                | Carruseles virales               | Idea o tema                            | Estructura + copy de cada slide            |
+| Agente                     | Proposito                | Input                          | Output                             |
+| -------------------------- | ------------------------ | ------------------------------ | ---------------------------------- |
+| Content Transformer        | Repurposing de contenido | Raw notes, articulos, research | Contenido estructurado multi-canal |
+| Youtube Script Writer      | Guiones para videos      | Tema + audiencia               | Script completo con hook           |
+| Youtube Thumbnail Prompter | Prompts de thumbnails    | Titulo del video               | Prompt para Midjourney/DALL-E      |
+| Youtube Title Generator    | Titulos optimizados      | Tema del video                 | 10 opciones con SEO                |
+| Carousel Strategist        | Carruseles virales       | Idea o tema                    | Estructura + copy de cada slide    |
 
 ---
 

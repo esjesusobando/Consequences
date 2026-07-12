@@ -18,7 +18,15 @@ if sys.platform == "win32":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 # Importar utilities con fallback
-_ext_root = Path(__file__).parent.parent.parent
+def _find_repo_root() -> Path:
+    """Find repo root by walking up until sentinel '00_Winter_is_Coming' is found."""
+    for parent in Path(__file__).resolve().parents:
+        if (parent / "00_Winter_is_Coming").exists():
+            return parent
+    raise RuntimeError("Could not find repo root — sentinel '00_Winter_is_Coming' not found")
+
+
+_ext_root = _find_repo_root() / "01_Personal_Os" / "00_Core" / "02_Tools"
 sys.path.insert(0, str(_ext_root))
 
 _speak = None
@@ -77,7 +85,7 @@ def run_guardian_if_needed():
         print("Cambios detectados - Ejecutando validacion...\n")
 
         # Buscar script guardian
-        project_root = _ext_root.parent.parent
+        project_root = _find_repo_root()
         guardian_path = project_root / "05_Scripts" / "03_Scripts_Os" / "79_System_Guardian.py"
         if guardian_path.exists():
             try:

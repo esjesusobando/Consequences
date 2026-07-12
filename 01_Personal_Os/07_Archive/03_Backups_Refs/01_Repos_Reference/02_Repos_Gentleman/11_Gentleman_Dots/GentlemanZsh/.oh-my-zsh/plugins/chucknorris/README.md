@@ -26,8 +26,8 @@ Last login: Fri Jan 30 23:12:26 on ttys001
         o   ^__^
          o  (oo)\_______
             (__)\       )\/\
-                ||----w |
-                ||     ||
+| ----w |
+| ----- |
 ```
 
 ## Requirements

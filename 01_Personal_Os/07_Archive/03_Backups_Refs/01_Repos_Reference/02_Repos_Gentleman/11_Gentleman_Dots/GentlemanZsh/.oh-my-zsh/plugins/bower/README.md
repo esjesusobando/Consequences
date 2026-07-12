@@ -10,8 +10,8 @@ plugins=(... bower)
 
 ## Aliases
 
-| Alias   | Command           | Description                                              |
-| ------- | ----------------- | -------------------------------------------------------- |
-| bi      | `bower install`   | Installs the project dependencies listed in bower.json   |
-| bl      | `bower list`      | List local packages and possible updates                 |
-| bs      | `bower search`    | Finds all packages or a specific package.                |
+| Alias | Command         | Description                                            |
+| ----- | --------------- | ------------------------------------------------------ |
+| bi    | `bower install` | Installs the project dependencies listed in bower.json |
+| bl    | `bower list`    | List local packages and possible updates               |
+| bs    | `bower search`  | Finds all packages or a specific package.              |

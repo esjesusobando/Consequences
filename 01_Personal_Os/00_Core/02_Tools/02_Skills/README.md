@@ -91,21 +91,21 @@
 
 ## 🎯 Quick Reference
 
-| Qué necesitas                                        | Ve a                                                      |
-|------------------------------------------------------|-----------------------------------------------------------|
-| Core Engineering (CE)                                | `00_Compound_Engineering/`                                |
-| Contenido (Brand, YouTube)                           | `01_Creacion_Contenidos/`                                 |
-| UI/UX Design                                         | `02_Diseno_Ui_Ux/`                                        |
-| Video & Media                                        | `03_Video_Media/`                                         |
-| Automatización (N8N, Firecrawl)                      | `04_Automatizacion/`                                      |
-| Workflows (Agent Teams, PM)                          | `00_Workflows/`                                           |
-| Tools (Testing, Qmd, System Master)                  | `06_Tools/`                                               |
-| Personal OS (Hillary, Life OS, Workflows)            | `00_Personal_Os/`                                         |
-| Aprendizaje continuo con IA                          | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`       |
-| Pipeline completo de ejecución                       | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`     |
-| Invictus Web                                         | `07_Invictus_Web/`                                        |
-| Claude Ads                                           | `05_Claude_Ads/`                                          |
-| Context Engineering & Onboarding (Laia Learning)     | `11_Laia_Learning/`                                       |
+| Qué necesitas                                    | Ve a                                                  |
+| ------------------------------------------------ | ----------------------------------------------------- |
+| Core Engineering (CE)                            | `00_Compound_Engineering/`                            |
+| Contenido (Brand, YouTube)                       | `01_Creacion_Contenidos/`                             |
+| UI/UX Design                                     | `02_Diseno_Ui_Ux/`                                    |
+| Video & Media                                    | `03_Video_Media/`                                     |
+| Automatización (N8N, Firecrawl)                  | `04_Automatizacion/`                                  |
+| Workflows (Agent Teams, PM)                      | `00_Workflows/`                                       |
+| Tools (Testing, Qmd, System Master)              | `06_Tools/`                                           |
+| Personal OS (Hillary, Life OS, Workflows)        | `00_Personal_Os/`                                     |
+| Aprendizaje continuo con IA                      | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`   |
+| Pipeline completo de ejecución                   | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/` |
+| Invictus Web                                     | `07_Invictus_Web/`                                    |
+| Claude Ads                                       | `05_Claude_Ads/`                                      |
+| Context Engineering & Onboarding (Laia Learning) | `11_Laia_Learning/`                                   |
 
 ---
 

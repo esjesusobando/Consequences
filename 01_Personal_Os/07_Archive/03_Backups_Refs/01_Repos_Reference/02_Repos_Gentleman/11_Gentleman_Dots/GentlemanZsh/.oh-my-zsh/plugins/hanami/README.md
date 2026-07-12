@@ -17,26 +17,26 @@ these commands [on the official website](https://hanamirb.org/guides/command-lin
 
 ## Aliases
 
-| Alias   | Command                       | Description                                               |
-| ------- | ----------------------------- | --------------------------------------------------------- | ----------------------------------------- |
-| HED\*   | `HANAMI_ENV=development`      | Set environment variable HANAMI_ENV to development        |
-| HEP\*   | `HANAMI_ENV=production`       | Set environment variable HANAMI_ENV to production         |
-| HET\*   | `HANAMI_ENV=test`             | Set environment variable HANAMI_ENV to test               |
-| hc      | `hanami console`              | Run application console                                   |
-| hd      | `hanami destroy`              | Remove specified hanami resource                          |
-| hg      | `hanami generate`             | Create specified hanami resource                          |
-| hgm     | `hanami generate migration`   | Create migration file                                     |
-| hs      | `hanami server`               | Launch server with hanami application                     |
-| hsp     | `hanami server -p`            | Launch server with specified port                         |
-| hr      | `hanami routes`               | List application routes                                   |
-| hdc     | `hanami db create`            | Create application database                               |
-| hdd     | `hanami db drop`              | Delete application database                               |
-| hdp     | `hanami db prepare`           | Prepare database for the current environment              |
-| hda     | `hanami db apply`             | Recreates a fresh schema after migrations (destructive)   |
-| hdv     | `hanami db version`           | Print current database version                            |
-| hdrs    | `hdd && hdp`                  | Drop and recreate application database                    |
-| hdtp    | `HET hdp`                     | Actualize test environment database                       |
-| hrg     | `hr                           | grep`                                                     | Grep hanami routes with specified pattern |
+| Alias | Command                     | Description                                             |                                           |
+| ----- | --------------------------- | ------------------------------------------------------- | ----------------------------------------- |
+| HED\* | `HANAMI_ENV=development`    | Set environment variable HANAMI_ENV to development      |                                           |
+| HEP\* | `HANAMI_ENV=production`     | Set environment variable HANAMI_ENV to production       |                                           |
+| HET\* | `HANAMI_ENV=test`           | Set environment variable HANAMI_ENV to test             |                                           |
+| hc    | `hanami console`            | Run application console                                 |                                           |
+| hd    | `hanami destroy`            | Remove specified hanami resource                        |                                           |
+| hg    | `hanami generate`           | Create specified hanami resource                        |                                           |
+| hgm   | `hanami generate migration` | Create migration file                                   |                                           |
+| hs    | `hanami server`             | Launch server with hanami application                   |                                           |
+| hsp   | `hanami server -p`          | Launch server with specified port                       |                                           |
+| hr    | `hanami routes`             | List application routes                                 |                                           |
+| hdc   | `hanami db create`          | Create application database                             |                                           |
+| hdd   | `hanami db drop`            | Delete application database                             |                                           |
+| hdp   | `hanami db prepare`         | Prepare database for the current environment            |                                           |
+| hda   | `hanami db apply`           | Recreates a fresh schema after migrations (destructive) |                                           |
+| hdv   | `hanami db version`         | Print current database version                          |                                           |
+| hdrs  | `hdd && hdp`                | Drop and recreate application database                  |                                           |
+| hdtp  | `HET hdp`                   | Actualize test environment database                     |                                           |
+| hrg   | `hr                         | grep`                                                   | Grep hanami routes with specified pattern |
 
 \* You should use these at the beginning of a command, for example:
 

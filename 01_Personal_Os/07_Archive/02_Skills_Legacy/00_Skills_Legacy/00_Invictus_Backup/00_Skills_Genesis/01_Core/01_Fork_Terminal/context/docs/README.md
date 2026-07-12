@@ -54,13 +54,13 @@ python .claude/skills/fork-terminal/tools/fork_terminal.py "claude --model claud
 
 ## 📚 Documentación
 
-| Documento                                         | Descripción                     | Para Quién             |
-| ------------------------------------------------- | ------------------------------- | ---------------------- |
-| **[📊 EXECUTIVE_REPORT.md](EXECUTIVE_REPORT.md)**  | Reporte completo de la sesión   | Managers, Stakeholders |
-| **[📖 SKILL.md](SKILL.md)**                        | Especificación técnica          | Desarrolladores        |
-| **[🧪 ADVANCED_TESTS.md](ADVANCED_TESTS.md)**      | Suite de pruebas                | QA, Testers            |
-| **[📚 INDEX.md](INDEX.md)**                        | Índice de toda la documentación | Todos                  |
-| **[⚠️ COMPATIBILITY.md](COMPATIBILITY.md)**       | Notas de compatibilidad         | DevOps, Sysadmins      |
+| Documento                                        | Descripción                     | Para Quién             |
+| ------------------------------------------------ | ------------------------------- | ---------------------- |
+| **[📊 EXECUTIVE_REPORT.md](EXECUTIVE_REPORT.md)** | Reporte completo de la sesión   | Managers, Stakeholders |
+| **[📖 SKILL.md](SKILL.md)**                       | Especificación técnica          | Desarrolladores        |
+| **[🧪 ADVANCED_TESTS.md](ADVANCED_TESTS.md)**     | Suite de pruebas                | QA, Testers            |
+| **[📚 INDEX.md](INDEX.md)**                       | Índice de toda la documentación | Todos                  |
+| **[⚠️ COMPATIBILITY.md](COMPATIBILITY.md)**      | Notas de compatibilidad         | DevOps, Sysadmins      |
 
 ---
 
@@ -94,12 +94,12 @@ python tools/fork_terminal.py "python tools/claude_fork_demo.py"
 
 ## 🛠️ Herramientas Soportadas
 
-| Herramienta     | Cookbook                                  | Estado       |
-| --------------- | ----------------------------------------- | ------------ |
-| **Claude Code** | [claude-code.md](cookbook/claude-code.md) | ✅ Funcional  |
-| **Gemini CLI**  | [gemini-cli.md](cookbook/gemini-cli.md)   | ✅ Funcional  |
-| **Codex CLI**   | [codex-cli.md](cookbook/codex-cli.md)     | ✅ Funcional  |
-| **Raw CLI**     | [cli-command.md](cookbook/cli-command.md) | ✅ Funcional  |
+| Herramienta     | Cookbook                                  | Estado      |
+| --------------- | ----------------------------------------- | ----------- |
+| **Claude Code** | [claude-code.md](cookbook/claude-code.md) | ✅ Funcional |
+| **Gemini CLI**  | [gemini-cli.md](cookbook/gemini-cli.md)   | ✅ Funcional |
+| **Codex CLI**   | [codex-cli.md](cookbook/codex-cli.md)     | ✅ Funcional |
+| **Raw CLI**     | [cli-command.md](cookbook/cli-command.md) | ✅ Funcional |
 
 ---
 

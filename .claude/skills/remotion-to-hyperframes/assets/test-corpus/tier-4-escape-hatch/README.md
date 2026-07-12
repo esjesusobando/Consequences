@@ -25,16 +25,16 @@ demonstrates one specific pattern. The skill should:
 
 ## Cases
 
-| #   | File                       | Expected finding                    | Notes                                           |
+| #  | File                       | Expected finding                    | Notes                                           |
 | --- | -------------------------- | ----------------------------------- | ----------------------------------------------- |
-| 01  | `01-use-state.tsx`         | blocker `r2hf/use-state`            | useState driving animation                      |
-| 02  | `02-use-effect-deps.tsx`   | blocker `r2hf/use-effect-deps`      | useEffect/useLayoutEffect with non-empty deps   |
-| 03  | `03-async-metadata.tsx`    | blocker `r2hf/async-metadata`       | calculateMetadata returns a Promise             |
-| 04  | `04-third-party-react.tsx` | blocker `r2hf/third-party-react-ui` | imports `@mui/material`                         |
-| 05  | `05-lambda-config.tsx`     | warning `r2hf/lambda-import`        | imports `@remotion/lambda` — drops, translates  |
-| 06  | `06-warnings-only.tsx`     | warnings only                       | delayRender / useCallback / useMemo             |
-| 07  | `07-custom-hook.tsx`       | warning `r2hf/custom-hook`          | locally-defined `useFadeIn` (export const form) |
-| 08  | `08-mixed.tsx`             | 3 blockers + 1 warning              | aggregate-findings test                         |
+| 01 | `01-use-state.tsx`         | blocker `r2hf/use-state`            | useState driving animation                      |
+| 02 | `02-use-effect-deps.tsx`   | blocker `r2hf/use-effect-deps`      | useEffect/useLayoutEffect with non-empty deps   |
+| 03 | `03-async-metadata.tsx`    | blocker `r2hf/async-metadata`       | calculateMetadata returns a Promise             |
+| 04 | `04-third-party-react.tsx` | blocker `r2hf/third-party-react-ui` | imports `@mui/material`                         |
+| 05 | `05-lambda-config.tsx`     | warning `r2hf/lambda-import`        | imports `@remotion/lambda` — drops, translates  |
+| 06 | `06-warnings-only.tsx`     | warnings only                       | delayRender / useCallback / useMemo             |
+| 07 | `07-custom-hook.tsx`       | warning `r2hf/custom-hook`          | locally-defined `useFadeIn` (export const form) |
+| 08 | `08-mixed.tsx`             | 3 blockers + 1 warning              | aggregate-findings test                         |
 
 ## Validation
 

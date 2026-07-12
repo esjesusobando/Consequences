@@ -13,10 +13,10 @@ plugins=(... postgres)
 
 ## Aliases
 
-| Alias         | Command                                                                           | Description                                                   |
-| ------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| startpost     | `pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start`   | Start postgres server                                         |
-| stoppost      | `pg_ctl -D /usr/local/var/postgres stop -s -m fast`                               | Stop postgres server                                          |
-| restartpost   | `stoppost && sleep 1 && startpost`                                                | Restart (calls stop, then start)                              |
-| reloadpost    | `pg_ctl reload -D /usr/local/var/postgres -s`                                     | Reload postgres configuration (some setting require restart)  |
-| statuspost    | `pg_ctl status -D /usr/local/var/postgres -s`                                     | Check status of postgres server (running, stopped)            |
+| Alias       | Command                                                                         | Description                                                  |
+| ----------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| startpost   | `pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start` | Start postgres server                                        |
+| stoppost    | `pg_ctl -D /usr/local/var/postgres stop -s -m fast`                             | Stop postgres server                                         |
+| restartpost | `stoppost && sleep 1 && startpost`                                              | Restart (calls stop, then start)                             |
+| reloadpost  | `pg_ctl reload -D /usr/local/var/postgres -s`                                   | Reload postgres configuration (some setting require restart) |
+| statuspost  | `pg_ctl status -D /usr/local/var/postgres -s`                                   | Check status of postgres server (running, stopped)           |

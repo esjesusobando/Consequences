@@ -6,9 +6,9 @@ El skill está listo y funcional.
 
 ## Estructura
 
-| Directorio  | Propósito                                   |
-| ----------- | ------------------------------------------- |
-| **tools/**  | Scripts de orquestación y logs de ejecución |
+| Directorio   | Propósito                                   |
+| ------------ | ------------------------------------------- |
+| **tools/**   | Scripts de orquestación y logs de ejecución |
 | **SKILL.md** | Documentación completa                      |
 
 ## 📚 Documentación Completa

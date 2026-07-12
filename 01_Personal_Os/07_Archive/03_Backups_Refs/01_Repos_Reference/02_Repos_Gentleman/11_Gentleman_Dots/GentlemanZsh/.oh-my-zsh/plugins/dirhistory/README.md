@@ -10,12 +10,12 @@ plugins=(... dirhistory)
 
 ## Keyboard Shortcuts
 
-| Shortcut                            | Description                                                 |
-| ----------------------------------- | ----------------------------------------------------------- |
-| <kbd>Alt</kbd> + <kbd>Left</kbd>    | Go to previous directory                                    |
-| <kbd>Alt</kbd> + <kbd>Right</kbd>   | Go to next directory                                        |
-| <kbd>Alt</kbd> + <kbd>Up</kbd>      | Move into the parent directory                              |
-| <kbd>Alt</kbd> + <kbd>Down</kbd>    | Move into the first child directory by alphabetical order   |
+| Shortcut                          | Description                                               |
+| --------------------------------- | --------------------------------------------------------- |
+| <kbd>Alt</kbd> + <kbd>Left</kbd>  | Go to previous directory                                  |
+| <kbd>Alt</kbd> + <kbd>Right</kbd> | Go to next directory                                      |
+| <kbd>Alt</kbd> + <kbd>Up</kbd>    | Move into the parent directory                            |
+| <kbd>Alt</kbd> + <kbd>Down</kbd>  | Move into the first child directory by alphabetical order |
 
 **For macOS: use the Option key (<kbd>⌥</kbd>) instead of <kbd>Alt</kbd>**.
 

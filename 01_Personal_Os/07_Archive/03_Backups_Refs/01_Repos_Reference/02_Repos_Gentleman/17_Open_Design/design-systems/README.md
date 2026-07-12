@@ -31,17 +31,17 @@ will read it as part of its system prompt.
   full bundled catalog is larger once you include the hand-authored starters
   and the separate design-skill systems listed above. One folder per brand:
 
-| Category                    | Systems                                                                                                                                    |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| AI & LLM                    | claude · cohere · elevenlabs · minimax · mistral-ai · ollama · opencode-ai · replicate · runwayml · together-ai · voltagent · x-ai         |
-| Developer Tools             | cursor · expo · lovable · raycast · superhuman · vercel · warp                                                                             |
-| Productivity & SaaS         | cal · intercom · linear-app · mintlify · notion · resend · webex · zapier                                                                  |
-| Backend & Data              | cisco · clickhouse · composio · hashicorp · mongodb · posthog · sanity · sentry · supabase                                                 |
-| Design & Creative           | airtable · clay · figma · framer · miro · webflow                                                                                          |
-| Fintech & Crypto            | binance · coinbase · kraken · mastercard · revolut · stripe · wise                                                                         |
-| E-Commerce & Retail         | airbnb · meta · nike · shopify · starbucks                                                                                                 |
-| Media & Consumer            | apple · ibm · nvidia · pinterest · playstation · spacex · spotify · theverge · uber · vodafone · wired · xiaohongshu                       |
-| Automotive                  | bmw · bugatti · ferrari · lamborghini · renault · tesla                                                                                    |
+| Category            | Systems                                                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| AI & LLM            | claude · cohere · elevenlabs · minimax · mistral-ai · ollama · opencode-ai · replicate · runwayml · together-ai · voltagent · x-ai |
+| Developer Tools     | cursor · expo · lovable · raycast · superhuman · vercel · warp                                                                     |
+| Productivity & SaaS | cal · intercom · linear-app · mintlify · notion · resend · webex · zapier                                                          |
+| Backend & Data      | cisco · clickhouse · composio · hashicorp · mongodb · posthog · sanity · sentry · supabase                                         |
+| Design & Creative   | airtable · clay · figma · framer · miro · webflow                                                                                  |
+| Fintech & Crypto    | binance · coinbase · kraken · mastercard · revolut · stripe · wise                                                                 |
+| E-Commerce & Retail | airbnb · meta · nike · shopify · starbucks                                                                                         |
+| Media & Consumer    | apple · ibm · nvidia · pinterest · playstation · spacex · spotify · theverge · uber · vodafone · wired · xiaohongshu               |
+| Automotive          | bmw · bugatti · ferrari · lamborghini · renault · tesla                                                                            |
 
 Folders use ASCII slugs — dotted brands are normalized (`linear.app` →
 `linear-app`, `x.ai` → `x-ai`, etc.).

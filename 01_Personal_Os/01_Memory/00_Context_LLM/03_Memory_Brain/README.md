@@ -29,12 +29,12 @@
 
 ## 🔥 Documentos Activos (00_Active/)
 
-| #   | Documento             | Propósito                                       |
+| #  | Documento             | Propósito                                       |
 | --- | --------------------- | ----------------------------------------------- |
-| 01  | Reglas_Sistema        | Reglas fundamentales del OS (v5.0)              |
-| 02  | Errores_Learning      | Errores + soluciones (incluye Matrix Recargado) |
-| 03  | Perfiles_Arquitectura | Estructura perfiles + CE (440 componentes)      |
-| 04  | Inventario            | Estado actual: 440 skills, 35 MCPs, 13 scripts  |
+| 01 | Reglas_Sistema        | Reglas fundamentales del OS (v5.0)              |
+| 02 | Errores_Learning      | Errores + soluciones (incluye Matrix Recargado) |
+| 03 | Perfiles_Arquitectura | Estructura perfiles + CE (440 componentes)      |
+| 04 | Inventario            | Estado actual: 440 skills, 35 MCPs, 13 scripts  |
 
 ---
 

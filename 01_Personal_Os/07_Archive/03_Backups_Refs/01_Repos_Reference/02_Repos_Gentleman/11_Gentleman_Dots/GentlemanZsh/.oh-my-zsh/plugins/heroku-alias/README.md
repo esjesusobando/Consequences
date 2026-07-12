@@ -28,13 +28,13 @@ plugins=(... heroku-alias)
 
 ### config
 
-| Alias  | Command                |
-| ------ | ---------------------- |
-| hc     | heroku config          |
-| hca    | heroku config -a       |
-| hcr    | heroku config -r       |
-| hcs    | heroku config:set      |
-| hcu    | heroku config:unset    |
+| Alias | Command             |
+| ----- | ------------------- |
+| hc    | heroku config       |
+| hca   | heroku config -a    |
+| hcr   | heroku config -r    |
+| hcs   | heroku config:set   |
+| hcu   | heroku config:unset |
 
 Also, you can use the `hcfile` function to set multiple config variables from a file,
 which asks you for a platform and a config file to read the configuration from.

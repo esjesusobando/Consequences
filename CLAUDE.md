@@ -253,7 +253,7 @@ Think_Different/                           # RAÍZ
 ### 4. JARVIS 5.0 — MANIFEST SYSTEM
 
 ```text
-01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
+01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
 ├── 03_Agent_Catalog.yaml    # 68 agentes source (referencia al manifest) [FIXED]

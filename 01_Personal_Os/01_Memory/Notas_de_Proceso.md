@@ -42,15 +42,15 @@
 
 ## Cuadro Comparativo: Antes vs. Después
 
-| Componente / Archivo              | Antes                                        | Después                                            | Motivo                                 |
-|-----------------------------------|----------------------------------------------|-----------------------------------------------------|----------------------------------------|
-| `04_Operations/` (raíz OS)        | Carpeta huérfana no estándar                 | Archivada en `07_Archive/04_Operations_Backup`      | Alinear con `Structure_v5.0.md`        |
-| Scripts Python HUBs (57 archivos) | Sin logging ni typing estandarizado          | `import logging, typing` + `basicConfig` inyectado | Trazabilidad SOTA                      |
-| Skills *.md (110+ archivos)       | Instrucciones planas, sin CoT explícito      | Bloque Chain-of-Thought añadido al final            | Forzar razonamiento en agentes LLM     |
-| `02_Playground/` raíz             | 14 archivos sueltos sin clasificar           | Organizados en 3 nuevas carpetas temáticas          | Limpieza y orden del workspace         |
-| READMEs del proyecto (393)        | Tablas con alineación inconsistente          | Columnas perfectamente alineadas                    | `58_Batch_Beautify_README.py`          |
-| `Structure_v5.0.md`               | Fecha 2026-06-28, sin carpetas 08/09/10      | Fecha 2026-06-29, 3 nuevas carpetas documentadas    | Mantener el Ground Truth actualizado   |
-| `01_Personal_Os/01_Memory/`       | Sin archivos de contexto de proceso          | `Notas_de_Proceso.md` + `Context_Memory.md`         | Documentar la auditoría y su resultado |
+| Componente / Archivo              | Antes                                   | Después                                            | Motivo                                 |
+| --------------------------------- | --------------------------------------- | -------------------------------------------------- | -------------------------------------- |
+| `04_Operations/` (raíz OS)        | Carpeta huérfana no estándar            | Archivada en `07_Archive/04_Operations_Backup`     | Alinear con `Structure_v5.0.md`        |
+| Scripts Python HUBs (57 archivos) | Sin logging ni typing estandarizado     | `import logging, typing` + `basicConfig` inyectado | Trazabilidad SOTA                      |
+| Skills *.md (110+ archivos)       | Instrucciones planas, sin CoT explícito | Bloque Chain-of-Thought añadido al final           | Forzar razonamiento en agentes LLM     |
+| `02_Playground/` raíz             | 14 archivos sueltos sin clasificar      | Organizados en 3 nuevas carpetas temáticas         | Limpieza y orden del workspace         |
+| READMEs del proyecto (393)        | Tablas con alineación inconsistente     | Columnas perfectamente alineadas                   | `58_Batch_Beautify_README.py`          |
+| `Structure_v5.0.md`               | Fecha 2026-06-28, sin carpetas 08/09/10 | Fecha 2026-06-29, 3 nuevas carpetas documentadas   | Mantener el Ground Truth actualizado   |
+| `01_Personal_Os/01_Memory/`       | Sin archivos de contexto de proceso     | `Notas_de_Proceso.md` + `Context_Memory.md`        | Documentar la auditoría y su resultado |
 
 ---
 
@@ -62,49 +62,49 @@
 
 ### Problemas Encontrados
 
-| # | Archivo | Problema | Severidad |
-|---|---------|----------|-----------|
-| 1 | `AGENTS.md` (Winter_is_Coming) | `adaptive_boot.py` en `03_Task/` → debe ser `04_Tasks/` (2 ocurrencias) | 🔴 Broken |
-| 2 | `AGENTS.md` (Winter_is_Coming) | `Sound Engine` path sin prefijo `03_Scripts_Os/` (2 ocurrencias) | 🔴 Broken |
-| 3 | `AGENTS.md` (Winter_is_Coming) | `cat` sobre directorio → debe ser `ls` | 🔴 Bug |
-| 3b | `20_System_Mapper_Hub.py` | `hubs_dir` faltaba `00_HUBs/` en la ruta — crash al escanear | 🔴 Bug |
-| 4 | `AGENTS.md` (Winter_is_Coming) | `Hillary RUNBOOK` sin segmento `02_Docs/` | 🔴 Broken |
-| 5 | `AGENTS.md` (Winter_is_Coming) | `Hillary Life OS skill` apunta a `18_Personal_Life_OS/` (no existe) | 🔴 Broken |
-| 6 | `AGENTS.md` (Winter_is_Coming) | Section 7 HUBs header sin `03_Scripts_Os/` | 🟡 Path |
-| 7 | `AGENTS.md` (raíz) | 5 paths `05_Archive/` → deben ser `07_Archive/` | 🔴 Broken |
-| 8 | `GOALS.md` | `04_Operations/00_Context_LLM/` → debe ser `01_Memory/00_Context_LLM/` | 🔴 Broken |
-| 9 | `GOALS.md` | `04_Operations/03_Scripts_Os/` → debe ser `05_Scripts/00_HUBs/03_Scripts_Os/` | 🔴 Broken |
-| 10 | `GOALS.md` | `03_Task/` (2 ocurrencias) → debe ser `04_Tasks/` | 🔴 Broken |
-| 11 | `GOALS.md` | `RUNBOOK` sin `02_Docs/` | 🔴 Broken |
-| 12 | `BACKLOG.md` | `04_Operations/07_Reports/` → debe ser `03_Resultado/07_Reports/` | 🔴 Broken |
-| 13 | `config_paths.py` | `AUTO_IMPROVEMENT_DIR` apunta a `05_Scripts/01_Auto_Improvement/` (inexistente) → el real es `03_Learning/01_Auto_Improvement/01_Auto_Improvement/` | 🔴 Broken |
-| 14 | `01_Auditor_Hub.py` | Shebang en línea 5 (debe ser línea 1) | 🟡 Shebang |
-| 15 | `20_System_Mapper_Hub.py` | Shebang en línea 5 (debe ser línea 1) + nombre obsoleto `16_System_Mapper_Hub` | 🟡 Shebang |
-| 16 | `11_Auto_Learn_Hub.py` | Mensaje de error apunta a ruta inexistente | 🟡 Error msg |
-| 17 | 4 SOTA Engines | `26_Model_Eval_Engine/`, `28_Model_Router_Engine/`, `29_Health_Eval_Engine/`, `30_Adversarial_Eval_Engine/` — existen pero son stubs | 🟡 Stub |
-| 18 | `03_Learning/01_Auto_Improvement/` | Redundancia `01_Auto_Improvement/01_Auto_Improvement/` (anidamiento duplicado) | 🟡 Estructura |
+| #  | Archivo                            | Problema                                                                                                                                            | Severidad    |
+| --- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| 1  | `AGENTS.md` (Winter_is_Coming)     | `adaptive_boot.py` en `03_Task/` → debe ser `04_Tasks/` (2 ocurrencias)                                                                             | 🔴 Broken     |
+| 2  | `AGENTS.md` (Winter_is_Coming)     | `Sound Engine` path sin prefijo `03_Scripts_Os/` (2 ocurrencias)                                                                                    | 🔴 Broken     |
+| 3  | `AGENTS.md` (Winter_is_Coming)     | `cat` sobre directorio → debe ser `ls`                                                                                                              | 🔴 Bug        |
+| 3b | `20_System_Mapper_Hub.py`          | `hubs_dir` faltaba `00_HUBs/` en la ruta — crash al escanear                                                                                        | 🔴 Bug        |
+| 4  | `AGENTS.md` (Winter_is_Coming)     | `Hillary RUNBOOK` sin segmento `02_Docs/`                                                                                                           | 🔴 Broken     |
+| 5  | `AGENTS.md` (Winter_is_Coming)     | `Hillary Life OS skill` apunta a `18_Personal_Life_OS/` (no existe)                                                                                 | 🔴 Broken     |
+| 6  | `AGENTS.md` (Winter_is_Coming)     | Section 7 HUBs header sin `03_Scripts_Os/`                                                                                                          | 🟡 Path       |
+| 7  | `AGENTS.md` (raíz)                 | 5 paths `05_Archive/` → deben ser `07_Archive/`                                                                                                     | 🔴 Broken     |
+| 8  | `GOALS.md`                         | `04_Operations/00_Context_LLM/` → debe ser `01_Memory/00_Context_LLM/`                                                                              | 🔴 Broken     |
+| 9  | `GOALS.md`                         | `04_Operations/03_Scripts_Os/` → debe ser `05_Scripts/00_HUBs/03_Scripts_Os/`                                                                       | 🔴 Broken     |
+| 10 | `GOALS.md`                         | `03_Task/` (2 ocurrencias) → debe ser `04_Tasks/`                                                                                                   | 🔴 Broken     |
+| 11 | `GOALS.md`                         | `RUNBOOK` sin `02_Docs/`                                                                                                                            | 🔴 Broken     |
+| 12 | `BACKLOG.md`                       | `04_Operations/07_Reports/` → debe ser `03_Resultado/07_Reports/`                                                                                   | 🔴 Broken     |
+| 13 | `config_paths.py`                  | `AUTO_IMPROVEMENT_DIR` apunta a `05_Scripts/01_Auto_Improvement/` (inexistente) → el real es `03_Learning/01_Auto_Improvement/01_Auto_Improvement/` | 🔴 Broken     |
+| 14 | `01_Auditor_Hub.py`                | Shebang en línea 5 (debe ser línea 1)                                                                                                               | 🟡 Shebang    |
+| 15 | `20_System_Mapper_Hub.py`          | Shebang en línea 5 (debe ser línea 1) + nombre obsoleto `16_System_Mapper_Hub`                                                                      | 🟡 Shebang    |
+| 16 | `11_Auto_Learn_Hub.py`             | Mensaje de error apunta a ruta inexistente                                                                                                          | 🟡 Error msg  |
+| 17 | 4 SOTA Engines                     | `26_Model_Eval_Engine/`, `28_Model_Router_Engine/`, `29_Health_Eval_Engine/`, `30_Adversarial_Eval_Engine/` — existen pero son stubs                | 🟡 Stub       |
+| 18 | `03_Learning/01_Auto_Improvement/` | Redundancia `01_Auto_Improvement/01_Auto_Improvement/` (anidamiento duplicado)                                                                      | 🟡 Estructura |
 
 ### Cuadro Comparativo: Antes vs. Después
 
-| Archivo / Componente | Antes (roto) | Después (corregido) | Tipo de Fix |
-|---|---|---|---|
-| `AGENTS.md` — `adaptive_boot` x2 | `03_Task/00_Context_LLM/adaptive_boot.py` | `04_Tasks/00_Context_LLM/adaptive_boot.py` | Path |
-| `AGENTS.md` — Sound Engine x2 | `02_Tools/05_Hooks/04_Sound/` | `02_Tools/05_Hooks/04_Sound/03_Scripts_Os/` | Path |
-| `AGENTS.md` — `cat` comando | `cat 01_Personal_Os/05_Scripts/` | `ls 01_Personal_Os/05_Scripts/` | Bug |
-| `AGENTS.md` — Hillary RUNBOOK | `02_Knowledge/04_Docs/` (falta segmento) | `02_Knowledge/02_Docs/04_Docs/` | Path |
-| `AGENTS.md` — Hillary Life OS skill | `02_Skills/00_Personal_Os/18_Personal_Life_OS/` | `02_Skills/00_Personal_Os/04_Hillary_Life_OS/` | Path |
-| `AGENTS.md` — Section 7 header | `05_Scripts/00_HUBs/` (sin `03_Scripts_Os/`) | `05_Scripts/00_HUBs/03_Scripts_Os/` | Path |
-| `AGENTS.md` (raíz) — 5 refs | `...07_Archive/...05_Archive/...` | `...07_Archive/...07_Archive/...` | Path |
-| `GOALS.md` — Context LLM | `04_Operations/00_Context_LLM/` | `01_Memory/00_Context_LLM/` | Path |
-| `GOALS.md` — Scripts de Motor | `04_Operations/03_Scripts_Os/` | `05_Scripts/00_HUBs/03_Scripts_Os/` | Path |
-| `GOALS.md` — Tasks x2 | `03_Task/ → 03_Task/` | `04_Tasks/ → 04_Tasks/` | Path |
-| `GOALS.md` — RUNBOOK | `02_Knowledge/04_Docs/` (falta segmento) | `02_Knowledge/02_Docs/04_Docs/` | Path |
-| `BACKLOG.md` — Reports | `04_Operations/07_Reports/` | `03_Resultado/07_Reports/` | Path |
-| `config_paths.py` — AutoImprove | `05_Scripts/01_Auto_Improvement/` (no existe) | `03_Learning/01_Auto_Improvement/01_Auto_Improvement/` | Path |
-| `11_Auto_Learn_Hub.py` — error msg | `05_Scripts/01_Auto_Improvement/01_Engine/` | `03_Learning/01_Auto_Improvement/01_Auto_Improvement/01_Engine/` | Path |
-| `01_Auditor_Hub.py` | Shebang en línea 5 | Shebang en línea 1 | Shebang |
-| `20_System_Mapper_Hub.py` | Shebang en línea 5 + nombre `16_` | Shebang en línea 1 + nombre `20_` | Shebang |
-| `20_System_Mapper_Hub.py` (ruta hubs_dir) | `05_Scripts/03_Scripts_Os` (crash) | `05_Scripts/00_HUBs/03_Scripts_Os` (funciona) | Path |
+| Archivo / Componente                      | Antes (roto)                                    | Después (corregido)                                              | Tipo de Fix |
+| ----------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------- | ----------- |
+| `AGENTS.md` — `adaptive_boot` x2          | `03_Task/00_Context_LLM/adaptive_boot.py`       | `04_Tasks/00_Context_LLM/adaptive_boot.py`                       | Path        |
+| `AGENTS.md` — Sound Engine x2             | `02_Tools/05_Hooks/04_Sound/`                   | `02_Tools/05_Hooks/04_Sound/03_Scripts_Os/`                      | Path        |
+| `AGENTS.md` — `cat` comando               | `cat 01_Personal_Os/05_Scripts/`                | `ls 01_Personal_Os/05_Scripts/`                                  | Bug         |
+| `AGENTS.md` — Hillary RUNBOOK             | `02_Knowledge/04_Docs/` (falta segmento)        | `02_Knowledge/02_Docs/04_Docs/`                                  | Path        |
+| `AGENTS.md` — Hillary Life OS skill       | `02_Skills/00_Personal_Os/18_Personal_Life_OS/` | `02_Skills/00_Personal_Os/04_Hillary_Life_OS/`                   | Path        |
+| `AGENTS.md` — Section 7 header            | `05_Scripts/00_HUBs/` (sin `03_Scripts_Os/`)    | `05_Scripts/00_HUBs/03_Scripts_Os/`                              | Path        |
+| `AGENTS.md` (raíz) — 5 refs               | `...07_Archive/...05_Archive/...`               | `...07_Archive/...07_Archive/...`                                | Path        |
+| `GOALS.md` — Context LLM                  | `04_Operations/00_Context_LLM/`                 | `01_Memory/00_Context_LLM/`                                      | Path        |
+| `GOALS.md` — Scripts de Motor             | `04_Operations/03_Scripts_Os/`                  | `05_Scripts/00_HUBs/03_Scripts_Os/`                              | Path        |
+| `GOALS.md` — Tasks x2                     | `03_Task/ → 03_Task/`                           | `04_Tasks/ → 04_Tasks/`                                          | Path        |
+| `GOALS.md` — RUNBOOK                      | `02_Knowledge/04_Docs/` (falta segmento)        | `02_Knowledge/02_Docs/04_Docs/`                                  | Path        |
+| `BACKLOG.md` — Reports                    | `04_Operations/07_Reports/`                     | `03_Resultado/07_Reports/`                                       | Path        |
+| `config_paths.py` — AutoImprove           | `05_Scripts/01_Auto_Improvement/` (no existe)   | `03_Learning/01_Auto_Improvement/01_Auto_Improvement/`           | Path        |
+| `11_Auto_Learn_Hub.py` — error msg        | `05_Scripts/01_Auto_Improvement/01_Engine/`     | `03_Learning/01_Auto_Improvement/01_Auto_Improvement/01_Engine/` | Path        |
+| `01_Auditor_Hub.py`                       | Shebang en línea 5                              | Shebang en línea 1                                               | Shebang     |
+| `20_System_Mapper_Hub.py`                 | Shebang en línea 5 + nombre `16_`               | Shebang en línea 1 + nombre `20_`                                | Shebang     |
+| `20_System_Mapper_Hub.py` (ruta hubs_dir) | `05_Scripts/03_Scripts_Os` (crash)              | `05_Scripts/00_HUBs/03_Scripts_Os` (funciona)                    | Path        |
 
 ### Archivos Verificados (sin errores)
 - ✅ `HUB_CATALOG.md` — Rutas correctas (actualizado en sesión anterior)
@@ -124,11 +124,11 @@
 
 Se integraron **14 skills** + **1 orquestador** + **5 agentes** + **1 script** desde `~/Downloads/realestate-skills/`.
 
-| Componente | Destino | Cantidad |
-|---|---|---|
-| Skills | `02_Skills/09_RealEstate/` | 14 skills + SKILL.md |
-| Agentes | `01_Agents/08_RealEstate/` | 5 agentes |
-| Scripts | `03_Scripts_Os/30_RealEstate/` | 1 script (PDF gen) |
+| Componente | Destino                        | Cantidad             |
+| ---------- | ------------------------------ | -------------------- |
+| Skills     | `02_Skills/09_RealEstate/`     | 14 skills + SKILL.md |
+| Agentes    | `01_Agents/08_RealEstate/`     | 5 agentes            |
+| Scripts    | `03_Scripts_Os/30_RealEstate/` | 1 script (PDF gen)   |
 
 **Comandos disponibles:** `/realestate analyze`, `comps`, `rental`, `listing`, `invest`, `neighborhood`, `flip`, `commercial`, `mortgage`, `market`, `compare`, `screen`, `report-pdf`, `quick`
 
@@ -146,17 +146,17 @@ Se integraron **14 skills** + **1 orquestador** + **5 agentes** + **1 script** d
 
 ### Problemas Encontrados y Corregidos
 
-| # | Archivo | Problema | Severidad | Fix |
-|---|---------|----------|-----------|-----|
-| 1 | `26_Parallel_Audit_Pro.py` | Shebang en línea 5 (después de imports muertos) | 🟡 Shebang | Movido a línea 1 |
-| 2 | `27_Skill_Auditor.py` | Shebang en línea 5 (después de imports muertos) | 🟡 Shebang | Movido a línea 1 |
-| 3 | `03_SOTA_Integrity_Check.py` | Shebang en línea 5 (después de imports muertos) | 🟡 Shebang | Movido a línea 1 |
-| 4 | `03_SOTA_Integrity_Check.py` | Header dice "v4.9 Consequences" | 🔴 Version | Actualizado a "v5.0 SOTA" |
-| 5 | `03_SOTA_Integrity_Check.py` | check_skills menciona 9 áreas, 30+ MCPs, 12+ HUBs, 10 rules | 🔴 Metrics | Actualizado: 22+ skills, 11+ MCPs, 24+ HUBs, 14 rules |
-| 6 | `03_SOTA_Integrity_Check.py` | check_hubs() apunta a `05_Scripts/03_Scripts_Os` (sin `00_HUBs/`) | 🔴 Path | Corregido a `05_Scripts/00_HUBs/03_Scripts_Os` |
-| 7 | `03_SOTA_Integrity_Check.py` | check_methodologies() apunta a `05_Scripts/03_Scripts_Os` (sin `00_HUBs/`) | 🔴 Path | Corregido a `05_Scripts/00_HUBs/03_Scripts_Os` |
-| 8 | `03_SOTA_Integrity_Check.py` | check_core_structure() lista `03_Scripts_Os` sin `00_HUBs/` | 🔴 Path | Corregido a `00_HUBs/03_Scripts_Os` |
-| 9 | `12_Auditors_Os/README.md` | Dice "v4.9 Consequences" en header, tabla y footer | 🔴 Version | Actualizado a "v5.0 SOTA" |
+| # | Archivo                      | Problema                                                                   | Severidad | Fix                                                   |
+| --- | ---------------------------- | -------------------------------------------------------------------------- | --------- | ----------------------------------------------------- |
+| 1 | `26_Parallel_Audit_Pro.py`   | Shebang en línea 5 (después de imports muertos)                            | 🟡 Shebang | Movido a línea 1                                      |
+| 2 | `27_Skill_Auditor.py`        | Shebang en línea 5 (después de imports muertos)                            | 🟡 Shebang | Movido a línea 1                                      |
+| 3 | `03_SOTA_Integrity_Check.py` | Shebang en línea 5 (después de imports muertos)                            | 🟡 Shebang | Movido a línea 1                                      |
+| 4 | `03_SOTA_Integrity_Check.py` | Header dice "v4.9 Consequences"                                            | 🔴 Version | Actualizado a "v5.0 SOTA"                             |
+| 5 | `03_SOTA_Integrity_Check.py` | check_skills menciona 9 áreas, 30+ MCPs, 12+ HUBs, 10 rules                | 🔴 Metrics | Actualizado: 22+ skills, 11+ MCPs, 24+ HUBs, 14 rules |
+| 6 | `03_SOTA_Integrity_Check.py` | check_hubs() apunta a `05_Scripts/03_Scripts_Os` (sin `00_HUBs/`)          | 🔴 Path    | Corregido a `05_Scripts/00_HUBs/03_Scripts_Os`        |
+| 7 | `03_SOTA_Integrity_Check.py` | check_methodologies() apunta a `05_Scripts/03_Scripts_Os` (sin `00_HUBs/`) | 🔴 Path    | Corregido a `05_Scripts/00_HUBs/03_Scripts_Os`        |
+| 8 | `03_SOTA_Integrity_Check.py` | check_core_structure() lista `03_Scripts_Os` sin `00_HUBs/`                | 🔴 Path    | Corregido a `00_HUBs/03_Scripts_Os`                   |
+| 9 | `12_Auditors_Os/README.md`   | Dice "v4.9 Consequences" en header, tabla y footer                         | 🔴 Version | Actualizado a "v5.0 SOTA"                             |
 
 ### Resultado SOTA Integrity Check
 
@@ -174,12 +174,12 @@ SOTA INTEGRITY: PASSED (9/9)
 
 ### Hallazgos Adicionales (Documentados, No Corregidos)
 
-| # | Hallazgo | Detalle | Estado |
-|---|----------|---------|--------|
-| A | `Notas_de_Proceso.md` vive en `01_Memory/` raíz, no en `01_Process_Notes/` | El archivo de bitácora principal está separado de las NP numeradas en `01_Process_Notes/`. | ✅ Estructura real |
-| B | `01_Process_Notes/` existe dentro de `00_Context_LLM/`, no como subdirectorio directo de `01_Memory/` | `config_paths.py` apunta correctamente. Structure_v5.0.md coincide. | ✅ Documentado |
-| C | `03_SOTA_Integrity_Check.py` importa `logging` y `typing` sin usarlos | Imports muertos del SOTA Modernizer v5.1. No afectan ejecución. | 🟡 Dead imports |
-| D | Auto-Improvement Engine path no existe en disco | Metodología `Auto-Improvement Engine` no encuentra path `05_Scripts/01_Auto_Improvement/01_Engine` (referencia legacy) | 🟡 WARN |
+| # | Hallazgo                                                                                              | Detalle                                                                                                                | Estado            |
+| --- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| A | `Notas_de_Proceso.md` vive en `01_Memory/` raíz, no en `01_Process_Notes/`                            | El archivo de bitácora principal está separado de las NP numeradas en `01_Process_Notes/`.                             | ✅ Estructura real |
+| B | `01_Process_Notes/` existe dentro de `00_Context_LLM/`, no como subdirectorio directo de `01_Memory/` | `config_paths.py` apunta correctamente. Structure_v5.0.md coincide.                                                    | ✅ Documentado     |
+| C | `03_SOTA_Integrity_Check.py` importa `logging` y `typing` sin usarlos                                 | Imports muertos del SOTA Modernizer v5.1. No afectan ejecución.                                                        | 🟡 Dead imports    |
+| D | Auto-Improvement Engine path no existe en disco                                                       | Metodología `Auto-Improvement Engine` no encuentra path `05_Scripts/01_Auto_Improvement/01_Engine` (referencia legacy) | 🟡 WARN            |
 
 *Sesión 3 completada. 3 shebangs corregidos + 6 paths actualizados + 1 README reversionado. SOTA Integrity: 9/9 PASSED.*
 
@@ -191,11 +191,11 @@ SOTA INTEGRITY: PASSED (9/9)
 
 Siempre que se documente algo (el usuario diga "documentar" o "guarda esto"), guardar en **los 3 sitios**:
 
-| # | Sitio | Ruta / Método |
-|---|-------|--------------|
-| 1 | 📄 **Notas de Proceso** | `01_Personal_Os/01_Memory/Notas_de_Proceso.md` |
-| 2 | 🧠 **Context Memory** | `01_Personal_Os/01_Memory/00_Context_LLM/Context_Memory.md` |
-| 3 | 🔷 **Engram** | `mem_save` con topic_key (granular) |
+| # | Sitio                  | Ruta / Método                                               |
+| --- | ---------------------- | ----------------------------------------------------------- |
+| 1 | 📄 **Notas de Proceso** | `01_Personal_Os/01_Memory/Notas_de_Proceso.md`              |
+| 2 | 🧠 **Context Memory**   | `01_Personal_Os/01_Memory/00_Context_LLM/Context_Memory.md` |
+| 3 | 🔷 **Engram**           | `mem_save` con topic_key (granular)                         |
 
 Antes de guardar, validar regla existente para no duplicar.
 
@@ -215,17 +215,118 @@ Antes de guardar, validar regla existente para no duplicar.
 
 ### Archivos Actualizados
 
-| Archivo | Cambio |
-|---------|--------|
-| `.atl/skill-registry.md` | 19 → 26 skills (añadidos orchestrator + 6 refuerzos) |
-| `03_ATL/skill-registry.md` | Nueva categoría "Strong MKT" con 26 skills |
-| `Context_Memory.md` (raíz) | Skills count: 411 → 437, 16 → 17 áreas |
-| `Context_Memory.md` (Context LLM) | Skills count actualizado |
+| Archivo                           | Cambio                                               |
+| --------------------------------- | ---------------------------------------------------- |
+| `.atl/skill-registry.md`          | 19 → 26 skills (añadidos orchestrator + 6 refuerzos) |
+| `03_ATL/skill-registry.md`        | Nueva categoría "Strong MKT" con 26 skills           |
+| `Context_Memory.md` (raíz)        | Skills count: 411 → 437, 16 → 17 áreas               |
+| `Context_Memory.md` (Context LLM) | Skills count actualizado                             |
 
 ### Impacto en Métricas del OS
 
-| Métrica | Antes | Después |
-|---------|-------|---------|
-| Skills totales | 411 | 437 |
-| Áreas funcionales | 16 | 17 |
-| Nuevas skills | — | 26 |
+| Métrica           | Antes | Después |
+| ----------------- | ----- | ------- |
+| Skills totales    | 411   | 437     |
+| Áreas funcionales | 16    | 17      |
+| Nuevas skills     | —     | 26      |
+
+---
+
+## Sesión 5: Auditoría SOTA v5.0.2 y Fixes Zero Consequences (2026-07-10)
+
+**Alcance:** Auditoría completa del proyecto y reparación de la web app Zero Consequences.
+
+### Problemas Encontrados y Corregidos
+- ✅ **Zero Consequences Vite Build**: `@imgly/background-removal` causaba crash de WASM (`TypeError: import_meta.url is not a string` / incompatibilidad con Top-level Await y pre-bundling). Resuelto excluyendo el paquete de `optimizeDeps` en Vite.
+- ✅ **Zero Consequences ErrorBoundary**: Override custom inestable de `setState` causaba problemas de compatibilidad en React 19. Refactorizado al patrón estándar de clase React.
+- ✅ **Zero Consequences Types**: Faltaban dependencias `@types/react-dom` y `vitest`. Añadidas.
+- ✅ **Métricas del Sistema**: Inventario desactualizado debido a las adiciones recientes (Strong MKT, HyperFrames, etc).
+  - Skills: Actualizado a 429
+  - Agentes: Actualizado a 85
+  - Workflows: 31
+  - HUBs: 44
+  - Rules: 15 (15_Graphify.mdc añadida)
+- ✅ **Documentación Maestro (JARVIS)**: Actualizados `OS_DIRECTORY.md` (raíz y Winter), `01_OS_Inventory.json` y `AGENTS.md` (Winter).
+- ✅ **Build exitoso**: Validado mediante `tsc --noEmit` exitoso y `npm run build` limpio y sin errores.
+
+*Sesión 5 completada. 3 fixes en ZC App + SOTA audit completada (v5.0.2).*
+## 2026-07-12 — Root Cleanup (Cleanup items migrated)
+
+Items 1-4 ya estaban en destino:
+- CLAUDE.marketing.md → `.claude/CLAUDE.marketing.md`
+- Structure_v5.0.md → `00_Winter_is_Coming/Structure_v5.0.md`
+- skills-lock.json → solo en `.atl/skills-lock.json` (no duplicado)
+- Plan_General.md → `00_Winter_is_Coming/Plan_General.md`
+
+Items 5-8 ejecutados:
+- openspec/changes/archive/2026-07-11-os-integrity-cleanup/ → copiado a `.atl/openspec/changes/archive/`, git rm del source, `openspec/changes/archive/` añadido a .gitignore
+- _sdd_backup/ → zips copiados a `01_Personal_Os/07_Archive/01_Plans_Completed/_sdd_backup/`, dir raíz eliminado (untracked)
+- excalidraw.log + .pytest_cache/ → eliminados
+- Engram: no disponible en sesión, pendiente guardar en próxima sesión con MCP tools
+
+Nota: `openspec/changes/os-reorganize` es un cambio activo, se queda.
+
+---
+
+## Sesión 6: Root Cleanup + Every Trigger Pipeline + Documentación 3 Sitios (2026-07-12)
+
+**Alcance:** Cleanup de raíz del repo + Every Trigger pipeline completo + actualización masiva de documentación del OS.
+
+### Every Trigger Pipeline (Completado)
+
+| Fase | Resultado | Detalle |
+|------|-----------|---------|
+| 1. ce:review | ✅ APPROVED | review-readability sobre cambios ZC uncommitted. Findings: dead `GoogleCalendarItem` + `any` leak en googleAuth.ts. Ambos fixeados. |
+| 2. ce:compound | ✅ COMPLETED | Doc creado: `06_Solutions/logic-errors/path-traversal-sentinel-detection-2026-07-11.md` con YAML frontmatter, before/after, 15 scripts remanentes identificados. |
+| 3. judgment-day | ✅ YA HECHO | Completado en sesión anterior para SDD change `os-integrity-cleanup`. |
+
+### ZC Fixes (Zero Consequences)
+
+|#|Archivo|Fix|Severidad|
+|--|-------|---|---------|
+|1|`src/lib/googleAuth.ts`|`(user: any)` → `(user: AuthUser)` en callback + return | 🔴 Type leak |
+|2|`src/components/DashboardView.tsx`|`GoogleCalendarItem` interface muerta removida; props tipadas (any → PresentationConfig, GoogleUser)| 🟡 Dead code |
+|3|`src/components/ErrorBoundary.tsx`|Constructor redundante + override setState removidos| 🟡 Cleanup |
+
+### Root Cleanup (Items Usuario)
+
+|#|Ítem|Estado|Detalle|
+|--|----|------|-------|
+|1|CLAUDE.marketing.md → .claude/|✅ Ya en destino|Git mv: `R CLAUDE.marketing.md -> .claude/CLAUDE.marketing.md`|
+|2|Structure_v5.0.md → 00_Winter_is_Coming/|✅ Ya en destino|Untracked en Winter, D en raíz|
+|3|skills-lock.json raíz|✅ Solo en .atl/|Ya no existe duplicado en raíz|
+|4|Plan_General.md → 00_Winter_is_Coming/|✅ Ya en destino|Untracked en Winter, D en raíz|
+|5|openspec archive merge|✅ Ejecutado|6 archivos copiados a `.atl/openspec/changes/archive/`, git rm del source, `openspec/changes/archive/` añadido a .gitignore|
+|6|_sdd_backup/ move|✅ Movido|Zips → `01_Personal_Os/07_Archive/01_Plans_Completed/_sdd_backup/`|
+|7|excalidraw.log + .pytest_cache/|✅ Eliminados|Ambos borrados del disco|
+|8|Documentar cleanup|✅ Notas_de_Proceso.md|Esta entrada|
+
+### Pendiente: Migración de 12 Scripts a Path Sentinel
+
+Identificados pero NO migrados (abortado para priorizar limpieza y documentación):
+
+|#|Script|Solución|
+|--|------|--------|
+|1|`22_Validate_Skill_Frontmatter.py`|Puede importar `config_paths` directo|
+|2-12|11 scripts en hooks/memory|Necesitan inline `_find_repo_root()` con sentinel|
+
+### Sistema de Documentación — Regla 3 Sitios
+
+Siguiendo la regla permanente `rule/regla-3-sitios-engram`:
+
+|Sitio|Estado|
+|-----|------|
+|1. 📄 Notas_de_Proceso.md|✅ Actualizado (esta entrada)|
+|2. 🧠 Context_Memory.md|✅ Actualizado|
+|3. 🔷 Engram|⏳ Pendiente — MCP tools no disponibles en esta sesión. Guardar en próxima sesión con: `mem_session_summary` + `mem_save` con topic_keys `session/2026-07-12-root-cleanup`, `fix/google-auth-any-type`, `sdd/root-cleanup`, `rule/regla-3-sitios-engram`|
+
+### Estado del Git (2026-07-12 02:20)
+
+```
+Modified (unstaged): 346 archivos (mayoría README.md beautify + modificaciones menores)
+Deleted (unstaged): 1428 archivos (skills/agentes legacy en .agent/.pi/.agents)
+Untracked: .claude/skills/, nuevas skills video (.agent/02_Skills/hyperframes-*), 
+          01_Personal_Os/06_Projects/05_Claude_Ads/, 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/03_Repos_Hyperframes/
+```
+
+*Sesión 6 completada. Every Trigger pipeline: 3/3 fases. Root cleanup: 8/8 items. Pendientes: Engram save + 12 scripts migration + commit.*

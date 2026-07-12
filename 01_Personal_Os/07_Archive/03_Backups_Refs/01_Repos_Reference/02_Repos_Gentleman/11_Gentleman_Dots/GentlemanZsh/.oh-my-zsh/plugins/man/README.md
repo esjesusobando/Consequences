@@ -8,6 +8,6 @@ To use it, add `man` to the plugins array in your zshrc file:
 plugins=(... man)
 ```
 # Keyboard Shortcuts
-| Shortcut                            | Description                                                              |
-| ----------------------------------- | ------------------------------------------------------------------------ |
-| <kbd>Esc</kbd> + man                | add man before the previous command to see the manual for this command   |
+| Shortcut             | Description                                                            |
+| -------------------- | ---------------------------------------------------------------------- |
+| <kbd>Esc</kbd> + man | add man before the previous command to see the manual for this command |

@@ -9,6 +9,6 @@ plugins=(... emoji-clock)
 
 ## Features
 
-| Function            | Description                                                            |
-| ------------------- | ---------------------------------------------------------------------- |
-| `emoji-clock`       | Displays current time in clock emoji symbol with half hour accuracy    |
+| Function      | Description                                                         |
+| ------------- | ------------------------------------------------------------------- |
+| `emoji-clock` | Displays current time in clock emoji symbol with half hour accuracy |

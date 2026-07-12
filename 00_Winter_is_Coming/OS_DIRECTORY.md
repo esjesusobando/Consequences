@@ -1,56 +1,64 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v5.0.1** | 2026-07-03 — Path audit: 04_Tasks → 04_Tasks
+**v5.0.2+** | 2026-07-12 — Root Cleanup, Every Trigger Pipeline, y fixes ZC
 
 ---
 
 ## 🚨 ESTADO DEL SISTEMA
 
-| Componente                          | Total                                                                  | Estado                                       |
-|------------------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| Auto-Improvement                    | 🔄 Activo cada 8h (Task Scheduler)                                     | ✅ 29+ días autónomo — 6 fixers              |
-| Capital Token                       | 🌕 Fase 1 Foundation — 10_Shared_Org/                                  | ✅ 1 playbook, 1 ADR, 3 agent templates       |
-| MCPs root                           | **11** (en .mcp.json)                                                  | ✅ SYNCED — drift 0                           |
-| MCPs backup                         | **4** (2 JSON + 3 subdirs en 03_Mcp/)                                 | ✅ VERIFIED                                   |
-| Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
-| gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
-| Skills                              | **396** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes | **63** (source) | **72** (backup) [FIXED]                                      | ✅ SYNCED                                     |
-| HUBs | **39** funcionales [FIXED]                                                     | ✅ VERIFIED                                   |
-| Scripts totales                     | **167** (.py en Scripts_Os/ y subdirs)                                 | ✅ DOCUMENTED                                 |
-| Workflows | **29** (7 categorías) [FIXED]                                                  | ✅ VERIFIED                                   |
-| Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
-| Hooks                               | **9** (.py en 05_Hooks/) [MAY DRIFT]                                  | ✅ ACTIVE                                     |
-| JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
-| Open Design                         | 62 creative skills + 138 design systems                                         | ✅ INTEGRATED                                 |
+| Componente       | Total                                       | Estado                                 |
+| ---------------- | ------------------------------------------- | -------------------------------------- |
+| Auto-Improvement | 🔄 Activo cada 8h (Task Scheduler)           | ✅ 29+ días autónomo — 6 fixers         |
+| Capital Token    | 🌕 Fase 1 Foundation — 10_Shared_Org/        | ✅ 1 playbook, 1 ADR, 3 agent templates |
+| MCPs root        | **11** (en .mcp.json)                       | ⚠️ Engram CAÍDO (timeout)              |
+| MCPs backup      | **4** (2 JSON + 3 subdirs en 03_Mcp/)       | ✅ VERIFIED                             |
+| Every CE         | v3.8.4 (local repo)                         | ✅ ACTIVE — Local version               |
+| gentle-ai        | v1.30.6                                     | ✅ AVAILABLE                            |
+| Skills           | **429** (16 áreas funcionales en 02_Skills) | ✅ VERIFIED — 0 sin frontmatter         |
+| Agentes          | **85** (source)                             | ✅ SYNCED                               |
+| HUBs             | **44** funcionales (en 03_Scripts_Os)       | ✅ VERIFIED                             |
+| Scripts totales  | **241** (.py en Scripts_Os/ y subdirs)      | ✅ DOCUMENTED                           |
+| Workflows        | **31**                                      | ✅ VERIFIED                             |
+| Rules            | **15 (.mdc)** en 01_Rules                   | ✅ DEFINED                              |
+| Hooks            | **9** (.py en 05_Hooks/) [MAY DRIFT]        | ✅ ACTIVE                               |
+| JARVIS Manifests | 7 en 00_Manifest/                           | ✅ VALIDATED                            |
+| Open Design      | 62 creative skills + 138 design systems     | ✅ INTEGRATED                           |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-27 — v4.9.1 — Full Project Audit + Count Corrections
-> Skills: 396. HUBs: 39. Workflows: 30. Rules: 14. Scripts: 163. Agentes: 63. Hooks: 10.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-07-12 — v5.0.2+ — Root Cleanup + Every Trigger Pipeline
+> Skills: 429. HUBs: 44. Workflows: 31. Rules: 15. Scripts: 241. Agentes: 85. Hooks: 9.
 
 ---
 
-## 🆕 v4.9.1 Changes (2026-06-27)
+## 🆕 v5.0 Changes (2026-07-10)
 
-1. **🌕 Capital Token Fase 1**: `10_Shared_Org/` en Knowledge — 1 playbook, 1 ADR, 3 agent templates, MCP Bridge v0.1
-2. **🔄 Auto-Improvement validado**: 29+ días autónomo, Task Scheduler cada 8h, 6 fixers reales
-3. **Full Project Audit**: Conteo completo de agentes (63 source | 72 backup), workflows (30), HUBs (39), scripts (163), hooks (10)
-4. **Count Corrections**: Todos los docs actualizados con valores verificados contra disco
-5. **Skills verified**: 396 SKILL.md activas en 15 áreas funcionales — 0 sin frontmatter
+1. **HyperFrames Suite**: 17 nuevas skills en 03_Video_Media
+2. **Equipo Strong MKT**: 7 nuevos agentes en Playground
+3. **Full Project Audit**: Conteo completo de agentes (85 source), workflows (31), HUBs (44), scripts (241)
+4. **Zero Consequences Fix**: TypeScript strictness, ErrorBoundary fixes para React 19, y @imgly exclude WASM
+5. **Rules Update**: 15_Graphify.mdc añadida (total 15)
+
+## 🧹 v5.0.2+ Changes (2026-07-12)
+
+1. **Root Cleanup**: 8 items ejecutados — CLAUDE.marketing.md git mv a .claude/, openspec archive mergeado a .atl/, _sdd_backup movido a archive, excalidraw.log + .pytest_cache eliminados, .gitignore actualizado
+2. **Every Trigger Pipeline**: ce:review → ce:compound → judgment-day completado (quality post-cambio)
+3. **ZC Fixes**: `any` leak en googleAuth.ts fixeado (→ AuthUser), dead code en DashboardView.tsx removido
+4. **Solution Doc**: `06_Solutions/logic-errors/path-traversal-sentinel-detection-2026-07-11.md` creado
+5. **Nuevos directorios**: `.claude/skills/` (skills copy), `01_Personal_Os/06_Projects/05_Claude_Ads/`, `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/03_Repos_Hyperframes/`
 
 ---
 
 ## 📍 UBICACIONES CRÍTICAS
 
-| Recurso                               | Path                                                                           |
-|--------------------------------------|-------------------------------------------------------------------------------|
-| **Skills (Sistema)**                  | `01_Personal_Os/00_Core/02_Tools/02_Skills/`                                   |
-| **Agents**                            | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                                   |
-| **Rules**                             | `01_Personal_Os/00_Core/01_Rules/`                                             |
-| **HUBs**                              | `01_Personal_Os/05_Scripts/00_HUBs/`                                           |
-| **Manifests**                         | `01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/`                          |
-| **Workflows**                         | `01_Personal_Os/00_Core/00_Workflows/`                                      |
-| **Skills Globales**                   | `~/.config/opencode/skills/`                                                   |
-| **Skills Locales**                    | `.opencode/skills/`                                                            |
+| Recurso              | Path                                                  |
+| -------------------- | ----------------------------------------------------- |
+| **Skills (Sistema)** | `01_Personal_Os/00_Core/02_Tools/02_Skills/`          |
+| **Agents**           | `01_Personal_Os/00_Core/02_Tools/01_Agents/`          |
+| **Rules**            | `01_Personal_Os/00_Core/01_Rules/`                    |
+| **HUBs**             | `01_Personal_Os/05_Scripts/00_HUBs/`                  |
+| **Manifests**        | `01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/` |
+| **Workflows**        | `01_Personal_Os/00_Core/00_Workflows/`                |
+| **Skills Globales**  | `~/.config/opencode/skills/`                          |
+| **Skills Locales**   | `.opencode/skills/`                                   |
 
 ---
 
@@ -127,23 +135,23 @@ Think_Different/
 
 ## 🧠 SKILLS — 15 ÁREAS FUNCIONALES (396 skills)
 
-| Área                                         | Descripción                                               | Skills  |
-|---------------------------------------------|----------------------------------------------------------|--------|
-| 00_Agent_Teams_Lite                          | SDD sub-agentes + JARVIS manifests                        | 14      |
-| 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                      | 63      |
-| 00_Personal_Os                               | Life OS, Hillary, Rituales                                | 24      |
-| 00_Skill_Auditor                             | Auditoría de skills                                       | 1       |
-| 00_System_Core                               | Stack base OS + Gcierr                                    | 1       |
-| 00_Workflows                                 | Workflows OS                                              | 39      |
-| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Marketing — 16 sub-áreas             | 52      |
-| 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 34      |
-| 03_Video_Media                               | Video Intel, James Cameron                                | 11      |
-| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 27      |
-| 05_Claude_Ads                                | Claude Ads & Promoted Content                             | 21      |
-| 06_Tools                                     | Skill Creator, Testing, DevOps, Data                      | 83      |
-| 07_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 18      |
-| 08_JAO                                       | Entrevistador, Humanizador, Optimizador, Superpowers      | 7       |
-| 10_Laia_Learning                             | Sistema de aprendizaje personal                           | 1       |
+| Área                    | Descripción                                          | Skills |
+| ----------------------- | ---------------------------------------------------- | ------ |
+| 00_Agent_Teams_Lite     | SDD sub-agentes + JARVIS manifests                   | 14     |
+| 00_Compound_Engineering | Core CE — SDD + Compound Engineering                 | 63     |
+| 00_Personal_Os          | Life OS, Hillary, Rituales                           | 24     |
+| 00_Skill_Auditor        | Auditoría de skills                                  | 1      |
+| 00_System_Core          | Stack base OS + Gcierr                               | 1      |
+| 00_Workflows            | Workflows OS                                         | 39     |
+| 01_Creacion_Contenidos  | Brand, YouTube, SEO, Marketing — 16 sub-áreas        | 52     |
+| 02_Diseno_Ui_Ux         | Product Design, UI/UX, Taste, Minimal                | 34     |
+| 03_Video_Media          | Video Intel, James Cameron                           | 11     |
+| 04_Automatizacion       | N8N, Firecrawl, GWS Client                           | 27     |
+| 05_Claude_Ads           | Claude Ads & Promoted Content                        | 21     |
+| 06_Tools                | Skill Creator, Testing, DevOps, Data                 | 83     |
+| 07_Invictus_Web         | Playwright, Superpowers, Browser Auto                | 18     |
+| 08_JAO                  | Entrevistador, Humanizador, Optimizador, Superpowers | 7      |
+| 10_Laia_Learning        | Sistema de aprendizaje personal                      | 1      |
 
 > **Skill global destacada:** `claude-seo-ai` (Hainrixz) — `~/.config/opencode/skills/claude-seo-ai/` — 5 sub-skills: audit, fix, geo, score, seo-orchestrator. Auditoría SEO + AI Visibility.
 
@@ -153,18 +161,18 @@ Think_Different/
 
 Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos** + 4 configs de backup en `03_Mcp/`.
 
-| Categoría                      | Servidores                                                                          |
-|-------------------------------|------------------------------------------------------------------------------------|
-| 🔍 Research                    | context7                                                                            |
-| 🧠 Memory                       | aim-memory-bank                                                                     |
-| 📝 Notes                        | obsidian-mcp                                                                        |
-| 🌐 Browser                      | (via Playwright en .opencode/)                                                      |
-| 🤖 AI & Code                    | @magicuidesign/mcp                                                                  |
-| 🖼️ Image                        | higgsfield, magnific                                                                |
-| 🎬 Video                        | heygen                                                                              |
-| 📐 Design                       | mobbin                                                                              |
-| 💬 Communication                | google-workspace                                                                    |
-| 🔗 Integration                  | eagle                                                                               |
+| Categoría       | Servidores                     |
+| --------------- | ------------------------------ |
+| 🔍 Research      | context7                       |
+| 🧠 Memory        | aim-memory-bank                |
+| 📝 Notes         | obsidian-mcp                   |
+| 🌐 Browser       | (via Playwright en .opencode/) |
+| 🤖 AI & Code     | @magicuidesign/mcp             |
+| 🖼️ Image        | higgsfield, magnific           |
+| 🎬 Video         | heygen                         |
+| 📐 Design        | mobbin                         |
+| 💬 Communication | google-workspace               |
+| 🔗 Integration   | eagle                          |
 
 > **Nota:** La lista anterior de 36 MCPs incluía MCPs configurados en `~/.config/opencode/opencode.json` (OpenCode), no solo los del proyecto. Los 11 activos en `.mcp.json` son los de este proyecto específico.
 
@@ -172,16 +180,16 @@ Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos**
 
 ## ⚡ AGENTES — 76 CONFIGURADOS (8 categorías) [MAY DRIFT]
 
-| Categoría                               | Cantidad                  | Ubicación                                                                    |
-|----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
-| Root (Orchestrator + Template)          | 26                        | Raíz `01_Agents/` (00_Template, 00_Orchestrator, 01-22 + README)            |
-| Dream Team                              | 7                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform + README)      |
-| Specialists Compound                    | 24                        | `02_Specialists_Compound/` (24 archivos .md + README)                        |
-| Growth                                  | 6                         | `03_Growth/` (Content Transformer → Carousel + README)                       |
-| OS Conductor                            | 9                         | `00_OS_Conductor/` (SKILL.md, registry, unified registry + 6 refs)           |
-| ATL Gen                                 | 13                        | `07_Agent_Teams_Lite_Gen/` (SDD sub-agentes 01-09 + 4 shared)                |
-| Agent Teams Lite                        | 3                         | `00_Agent_Teams_Lite/` (AGENTS.md, README.md, skills/sdd-apply/)             |
-| Legacy (Contexto/Marca/Plantillas)      | 5                         | `04_Contexto/, 05_Marca/, 06_Plantillas/` (LEEME + README)                   |
+| Categoría                          | Cantidad | Ubicación                                                              |
+| ---------------------------------- | -------- | ---------------------------------------------------------------------- |
+| Root (Orchestrator + Template)     | 26       | Raíz `01_Agents/` (00_Template, 00_Orchestrator, 01-22 + README)       |
+| Dream Team                         | 7        | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform + README) |
+| Specialists Compound               | 24       | `02_Specialists_Compound/` (24 archivos .md + README)                  |
+| Growth                             | 6        | `03_Growth/` (Content Transformer → Carousel + README)                 |
+| OS Conductor                       | 9        | `00_OS_Conductor/` (SKILL.md, registry, unified registry + 6 refs)     |
+| ATL Gen                            | 13       | `07_Agent_Teams_Lite_Gen/` (SDD sub-agentes 01-09 + 4 shared)          |
+| Agent Teams Lite                   | 3        | `00_Agent_Teams_Lite/` (AGENTS.md, README.md, skills/sdd-apply/)       |
+| Legacy (Contexto/Marca/Plantillas) | 5        | `04_Contexto/, 05_Marca/, 06_Plantillas/` (LEEME + README)             |
 
 > ⚠️ Conteo incluye todos los .md hasta profundidad 2, incluyendo README/LEEME. El número exacto puede variar. Verificado 2026-06-27.
 
@@ -191,42 +199,42 @@ Configurados en `.mcp.json` (raíz del proyecto). **11 servidores root activos**
 
 ### HUBs Principales (en raíz de 05_Scripts/00_HUBs/)
 
-| #   | Hub                                      | Script                                                         | Propósito                                             |
-|----|-----------------------------------------|---------------------------------------------------------------|------------------------------------------------------|
-| 00  | Sound Engine                             | `00_Sound_Engine.py`                                           | Notificaciones sonoras                                |
-| 01  | Auditor                                  | `01_Auditor_Hub.py`                                            | Auditorías del sistema                                |
-| 02  | Git                                      | `02_Git_Hub.py`                                                | Operaciones Git                                       |
-| 03  | AIPM                                     | `03_AIPM_Hub.py`                                               | AI Performance Monitoring                             |
-| 04  | Ritual                                   | `04_Ritual_Hub.py`                                             | Rituales de sesión                                    |
-| 05  | Validator                                | `05_Validator_Hub.py`                                          | Validación de código                                  |
-| 06  | Tool                                     | `06_Tool_Hub.py`                                               | Gestión de herramientas                               |
-| 07  | Integration                              | `07_Integration_Hub.py`                                        | Integraciones MCP                                     |
-| 08  | Workflow                                 | `08_Workflow_Hub.py`                                           | Automatización de workflows                           |
-| 09  | Data                                     | `09_Data_Hub.py`                                               | Procesamiento de datos                                |
-| 10  | General                                  | `10_General_Hub.py`                                            | Utilidades generales                                  |
-| 11  | Auto Learn                               | `11_Auto_Learn_Hub.py`                                         | Motor de automejora                                   |
-| 14  | Health Metrics ★                         | `14_Health_Metrics_Hub.py`                                     | Métricas de salud del OS                              |
-| 15  | MCP Sync ★                               | `15_MCP_Sync_Hub.py`                                           | Sync drift Claude ↔ OpenCode                          |
-| 16  | Agent Mirror                             | `16_Agent_Mirror_Hub.py`                                       | Mirror agentes source → backup                        |
-| 17  | Watchdog ★                               | `17_Watchdog_Hub.py`                                           | Health watchdog                                       |
-| 18  | Telemetry ★                              | `18_Telemetry_Hub.py`                                          | Dashboard de métricas                                 |
-| 19  | Agent Sync                               | `19_Agent_Sync_Hub.py`                                         | Sync .agent ↔ 00_Core                                 |
-| 20  | System Mapper ★                          | `20_System_Mapper_Hub.py`                                      | Genera 7 manifests JARVIS                             |
-| 25  | Minimax Optimizer                        | `25_Minimax_Optimizer_Hub.py`                                  | Optimización MiniMax                                  |
-| —   | HUB SOTA                                 | `HUB_SOTA.py`                                                  | HUB de HUBs SOTA                                      |
+| #  | Hub               | Script                        | Propósito                      |
+| --- | ----------------- | ----------------------------- | ------------------------------ |
+| 00 | Sound Engine      | `00_Sound_Engine.py`          | Notificaciones sonoras         |
+| 01 | Auditor           | `01_Auditor_Hub.py`           | Auditorías del sistema         |
+| 02 | Git               | `02_Git_Hub.py`               | Operaciones Git                |
+| 03 | AIPM              | `03_AIPM_Hub.py`              | AI Performance Monitoring      |
+| 04 | Ritual            | `04_Ritual_Hub.py`            | Rituales de sesión             |
+| 05 | Validator         | `05_Validator_Hub.py`         | Validación de código           |
+| 06 | Tool              | `06_Tool_Hub.py`              | Gestión de herramientas        |
+| 07 | Integration       | `07_Integration_Hub.py`       | Integraciones MCP              |
+| 08 | Workflow          | `08_Workflow_Hub.py`          | Automatización de workflows    |
+| 09 | Data              | `09_Data_Hub.py`              | Procesamiento de datos         |
+| 10 | General           | `10_General_Hub.py`           | Utilidades generales           |
+| 11 | Auto Learn        | `11_Auto_Learn_Hub.py`        | Motor de automejora            |
+| 14 | Health Metrics ★  | `14_Health_Metrics_Hub.py`    | Métricas de salud del OS       |
+| 15 | MCP Sync ★        | `15_MCP_Sync_Hub.py`          | Sync drift Claude ↔ OpenCode   |
+| 16 | Agent Mirror      | `16_Agent_Mirror_Hub.py`      | Mirror agentes source → backup |
+| 17 | Watchdog ★        | `17_Watchdog_Hub.py`          | Health watchdog                |
+| 18 | Telemetry ★       | `18_Telemetry_Hub.py`         | Dashboard de métricas          |
+| 19 | Agent Sync        | `19_Agent_Sync_Hub.py`        | Sync .agent ↔ 00_Core          |
+| 20 | System Mapper ★   | `20_System_Mapper_Hub.py`     | Genera 7 manifests JARVIS      |
+| 25 | Minimax Optimizer | `25_Minimax_Optimizer_Hub.py` | Optimización MiniMax           |
+| —  | HUB SOTA          | `HUB_SOTA.py`                 | HUB de HUBs SOTA               |
 
 ### Scripts Auxiliares
 
-| #   | Script                                           | Propósito                                                      |
-|----|-------------------------------------------------|---------------------------------------------------------------|
-| 21  | `21_Legacy_Path_Cleanup.py`                      | Limpia paths legacy v2.x                                       |
-| 22  | `22_Validate_Skill_Frontmatter.py`               | Detecta skills sin frontmatter YAML                            |
-| 24  | `24_mass_path_migration.py`                      | Migración masiva de paths                                      |
-| 26  | `26_Parallel_Audit_Pro.py`                       | Auditoría paralela avanzada                                    |
-| 27  | `27_Skill_Auditor.py`                            | Auditoría específica de skills                                 |
-| 28  | `28_System_Health_Monitor.py`                    | Monitor de salud del sistema                                   |
-| 29  | `29_Repo_Sync_Auditor.py`                        | Auditor de sincronización de repos                             |
-| 30  | `30_path_replacement.py`                         | Reemplazo de paths en archivos                                 |
+| #  | Script                             | Propósito                           |
+| --- | ---------------------------------- | ----------------------------------- |
+| 21 | `21_Legacy_Path_Cleanup.py`        | Limpia paths legacy v2.x            |
+| 22 | `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML |
+| 24 | `24_mass_path_migration.py`        | Migración masiva de paths           |
+| 26 | `26_Parallel_Audit_Pro.py`         | Auditoría paralela avanzada         |
+| 27 | `27_Skill_Auditor.py`              | Auditoría específica de skills      |
+| 28 | `28_System_Health_Monitor.py`      | Monitor de salud del sistema        |
+| 29 | `29_Repo_Sync_Auditor.py`          | Auditor de sincronización de repos  |
+| 30 | `30_path_replacement.py`           | Reemplazo de paths en archivos      |
 
 > ★ = HUB canónico JARVIS 4.5
 
@@ -248,21 +256,21 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report
 cat .atl/skill-registry.md
 
 # JARVIS manifests
-ls 01_Personal_Os/00_Core/02_Tools/00_SDD/00_Manifest/
+ls 01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/
 ```
 
 ---
 
 ## 🎨 TOP 5 DESIGN SKILLS
 
-| Rank  | Skill                                   | Valor  | SOTA  | Diseño  | Total  |
-|------|----------------------------------------|-------|------|--------|-------|
-| 🥇 1   | **Dumbledor Design**                    | 10     | 9     | 10      | **29** |
-| 🥈 2   | **Huashu Design**                       | 10     | 10    | 9       | **29** |
-| 🥉 3   | **Ui Ux Pro Max**                       | 9      | 8     | 9       | **26** |
-| 4     | **Frontend Slides**                     | 10     | 9     | 7       | **26** |
-| 5     | **Design SOTA**                         | 8      | 9     | 8       | **25** |
+| Rank | Skill                | Valor | SOTA | Diseño | Total  |
+| ---- | -------------------- | ----- | ---- | ------ | ------ |
+| 🥇 1  | **Dumbledor Design** | 10    | 9    | 10     | **29** |
+| 🥈 2  | **Huashu Design**    | 10    | 10   | 9      | **29** |
+| 🥉 3  | **Ui Ux Pro Max**    | 9     | 8    | 9      | **26** |
+| 4    | **Frontend Slides**  | 10    | 9    | 7      | **26** |
+| 5    | **Design SOTA**      | 8     | 9    | 8      | **25** |
 
 ---
 
-*Actualizado: 2026-06-28 | PersonalOS v5.0 — Paths updated to new layout (00_Core, 03_Learning, 05_Scripts, 04_Tasks, 07_Archive) | 396 skills | 63 agents source | 72 backup | 39 HUBs | 30 workflows | 14 rules | 10 hooks [FIXED] [MAY DRIFT]*
+*Actualizado: 2026-07-12 | PersonalOS v5.0.2+ | 429 skills | 85 agents source | 44 HUBs | 31 workflows | 15 rules*

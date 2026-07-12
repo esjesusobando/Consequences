@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import TopNavBar from './components/TopNavBar';
 import SideNavBar from './components/SideNavBar';
-import DashboardView from './components/DashboardView';
+import { DashboardView } from './components/DashboardView';
 import DesignSystemView from './components/DesignSystemView';
 import TerminalLogs from './components/TerminalLogs';
 import { initAuth } from './lib/googleAuth';
