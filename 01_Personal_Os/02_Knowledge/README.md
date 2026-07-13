@@ -13,6 +13,7 @@
 ├── 00_Examples_Personal_Os/    # Tutorials, workflows, example files
 ├── 01_Research/                # Tech research, SOTA rankings
 ├── 02_Docs/                    # Official documentation (audits, runbooks, ATL)
+├── 03_Templates/               # 📄 Plantillas operativas (propuestas, ofertas, etc.)
 ├── 03_Unicorn/                 # Unicorn Engineering — 6 areas SOTA
 │   ├── 01_Pm/                  # Project Management
 │   ├── 02_Pdm/                 # Product Management
@@ -23,10 +24,9 @@
 ├── 04_Invictus/                # Invictus web project resources
 └── 05_Anthropic/               # Anthropic SDK and API resources
 ```
-+--- 04_Invictus/                     # Metodologia de creacion de agentes Invictus
-```
 
-> Nota: `02_Perfiles_Team` fue eliminado en una sesion anterior. El indice salta de 01 a 03.
+> ⚠️ Nota: `03_Templates/` y `03_Unicorn/` comparten prefijo numérico por diseño — Templates son archivos operativos, Unicorn es knowledge base.
+> `02_Perfiles_Team` fue eliminado en una sesion anterior. El indice salta de 01 a 03.
 
 ---
 

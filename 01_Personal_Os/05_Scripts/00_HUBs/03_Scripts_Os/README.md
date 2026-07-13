@@ -33,7 +33,7 @@
 
 **Total subdirectorios**: 19 (excluyendo `__pycache__/` y `.backup/`)
 **Total archivos en subdirectorios**: 158
-**Total root scripts**: 44 (43 .py + 1 .js)
+**Total root scripts**: 45 (44 .py + 1 .js)
 **Total general**: 202
 
 ---
@@ -94,6 +94,7 @@
 | `os_errors.py`             | Manejo de errores del sistema                  |
 | `refactor_revert_id.py`    | Utilidad one-off para revertir IDs             |
 | `test_slow_legacy.py`      | Test de scripts legacy lentos                  |
+| `track_leads.py`           | Pipeline de monetización — leads, propuestas   |
 | `qmd.sh`                   | Quick Make script                              |
 | `testsprite_failover.sh`   | Failover TestSprite                            |
 | `tarea_lista.bat`          | Notificación tarea completada (Windows)        |
@@ -144,6 +145,7 @@ PYTHONPATH configurado vía `config_paths.py` — todos los HUBs lo importan.
 | Fecha      | Acción                                                      |
 | ---------- | ----------------------------------------------------------- |
 | 2026-07-12 | v5.0.2 — README reescrito con estructura real verificada    |
+| 2026-07-12 | +track_leads.py — Pipeline de monetización (Gap #1 SOTA)    |
 | 2026-06-27 | v5.0 — 22 HUBs funcionales, primer mapeo con System Mapper  |
 | 2026-05-23 | v4.9 — README inicial con estructura legacy                 |
 

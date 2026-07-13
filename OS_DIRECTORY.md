@@ -27,7 +27,7 @@
 | JARVIS Manifests | 7 en 00_Manifest/                           | ✅ VALIDATED                            |
 | Open Design      | 62 creative skills + 138 design systems     | ✅ INTEGRATED                           |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-07-12 — v5.0.2 — Directory sync + numbering audit
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-07-12 — v5.0.2 — Monetization Pipeline (track_leads.py) + full auditor run
 > Skills: 430. HUBs: 44. Workflows: 31. Rules: 15. Scripts: 241. Agentes: 98. Hooks: 18.
 
 ## Directory Map

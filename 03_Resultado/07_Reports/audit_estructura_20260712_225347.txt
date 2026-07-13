@@ -1,0 +1,4 @@
+Audit estructura — 20260712_225347
+Dimension errors: 0
+Numbering errors: 6
+Total errors: 6
