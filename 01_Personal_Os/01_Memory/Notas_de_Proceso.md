@@ -369,5 +369,38 @@ Resolver todo lo pendiente de la obs-95806345f83eb0cb: completar integración Pr
 ### Próximos Pasos
 1. Commitear los cambios en ~/.config/opencode/skills/ (Skill Registry + orquestador)
 2. Cargar skill-registry actualizado via skill() en próxima sesión
-3. Reparar GGA hook (TypeScript violations en Zero Consequences son pre-existentes)
+3. ~~Reparar GGA hook (TypeScript violations en Zero Consequences son pre-existentes)~~ ✅
 4. Considerar fusión de .agent/ backup con archive/
+
+---
+
+## Sesión 8: OpenCode Config Repo Cleanup + GGA Upgrade (2026-07-12)
+
+### Alcance
+Limpieza completa del repo `~/.config/opencode/` (opencode config, no OS), upgrade de GGA v2.10.0→v2.10.1, y fix del pre-commit hook para Zero Consequences.
+
+### OpenCode Config Repo Cleanup
+- **4 commits**: `d80fa63c` (cleanup mayor + .gitignore), `58a08f29` (fix inline comment en .gitignore), `75635329` (+ *.bak.*, bun.lock), `94cb79a3` (+ *.bak_*)
+- `.claude/` tracked selectivamente: `02_Rules/` (28 reglas), `01_Commands/` (10 comandos), `03_Agents/` (20 agentes) — 855 skills duplicados en `04_Skills/` ignorados
+- `.pi/` tracked
+- **Inline comment bug**: Git NO soporta `#` mid-line en `.gitignore` — tratado como literal
+
+### GGA Hook Fixes
+| Issue | Fix |
+|-------|-----|
+| Secret scanner path `01_Core`→`00_Core` | Path corregido en `.git/hooks/pre-commit` |
+| Skill validator path roto | Ruta corregida en `.gga` |
+| Skill security path roto | Ruta corregida en `.gga` |
+| GGA bloquea en ZC commits | Hook skip si 100% archivos son ZC |
+
+### GGA v2.10.0 → v2.10.1
+- Instalado via `git clone` + `install.sh` local
+- Nueva ubicación: `/c/Users/sebas/bin/gga`
+- Lección: `curl | bash` del README falla en Windows — requiere clonar repo y ejecutar desde el directorio
+
+### Estado Final
+- ✅ `~/.config/opencode/` limpio (226 eliminaciones, 79 adiciones)
+- ✅ `.claude/04_Skills/` ignorado (14MB de skills duplicados)
+- ✅ GGA v2.10.1 instalado y funcional
+- ✅ Pre-commit hook no bloquea commits ZC
+- ✅ Secret scanner apunta a `00_Core/`
