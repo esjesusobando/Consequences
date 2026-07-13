@@ -34,25 +34,25 @@ Think_Different/
 | #  | Directory       | Content                                                                                          | Status |
 | --- | --------------- | ------------------------------------------------------------------------------------------------ | ------ |
 | 01 | `00_Workflows/` | 31 workflows (8 categories: Learning, Personal, Marvel, Gentleman, Hillary, CE, YouTube, Readme) | ACTIVE |
-| 02 | `01_Rules/`     | 15 rules .mdc (00-14)                                                                          | ACTIVE |
+| 02 | `01_Rules/`     | 15 rules .mdc (00-14)                                                                            | ACTIVE |
 | 03 | `02_Tools/`     | Agents, Skills, MCPs, Hooks, Plugins, Server, Evals                                              | ACTIVE |
 
 ---
 
 ## 02_Tools Structure
 
-| #  | Directory          | Content                                                       | Status |
-| --- | ------------------ | ------------------------------------------------------------- | ------ |
-| 00 | `00_SDD/`          | SDD Registry + JARVIS manifests (7 manifests)                 | ACTIVE |
+| #  | Directory          | Content                                                              | Status |
+| --- | ------------------ | -------------------------------------------------------------------- | ------ |
+| 00 | `00_SDD/`          | SDD Registry + JARVIS manifests (7 manifests)                        | ACTIVE |
 | 01 | `01_Agents/`       | 98 source agents (9 categories: Root, Dream Team, Specialists, etc.) | ACTIVE |
-| 02 | `02_Skills/`       | 35+ skill areas (~3600+ files)                                | ACTIVE |
-| 03 | `03_Mcp/`          | MCP server backup configs                                     | ACTIVE |
-| 04 | `04_Integrations/` | Fireflies, Granola integrations                               | ACTIVE |
-| 05 | `05_Hooks/`        | 10 hooks (6 phases) — Secret Scanner v2, Pre-Tool WMI→CIM     | ACTIVE |
-| 06 | `06_Plugins/`      | OS plugins                                                    | ACTIVE |
-| 07 | `07_Server/`       | Engram MCP server                                             | ACTIVE |
-| 08 | `08_Evals/`        | Evaluators and metrics                                        | ACTIVE |
-| 09 | `09_Templates/`    | Templates                                                     | ACTIVE |
+| 02 | `02_Skills/`       | 35+ skill areas (~3600+ files)                                       | ACTIVE |
+| 03 | `03_Mcp/`          | MCP server backup configs                                            | ACTIVE |
+| 04 | `04_Integrations/` | Fireflies, Granola integrations                                      | ACTIVE |
+| 05 | `05_Hooks/`        | 10 hooks (6 phases) — Secret Scanner v2, Pre-Tool WMI→CIM            | ACTIVE |
+| 06 | `06_Plugins/`      | OS plugins                                                           | ACTIVE |
+| 07 | `07_Server/`       | Engram MCP server                                                    | ACTIVE |
+| 08 | `08_Evals/`        | Evaluators and metrics                                               | ACTIVE |
+| 09 | `09_Templates/`    | Templates                                                            | ACTIVE |
 
 ---
 

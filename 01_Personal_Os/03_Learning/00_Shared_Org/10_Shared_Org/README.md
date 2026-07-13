@@ -39,9 +39,9 @@ Acá vive el conocimiento organizacional que trasciende al individuo:
 
 > `Capital Token` + `Auto-Improvement` = Conocimiento que se acumula + Infraestructura saludable
 
-| Sistema                | Rol           | Que hace                                  | Donde vive                           |
-| ---------------------- | ------------- | ----------------------------------------- | ------------------------------------ |
-| 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`        |
+| Sistema                | Rol           | Que hace                                  | Donde vive                        |
+| ---------------------- | ------------- | ----------------------------------------- | --------------------------------- |
+| 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`     |
 | 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `05_Scripts/01_Auto_Improvement/` |
 
 **Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.

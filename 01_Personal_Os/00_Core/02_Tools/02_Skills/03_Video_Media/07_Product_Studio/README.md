@@ -6,11 +6,11 @@ product. Built to be shared with a team.
 
 ## What's included
 
-| Command | What it does |
-|---------|--------------|
-| `/product-setup` | One-time setup per person: choose your generation provider |
+| Command          | What it does                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------ |
+| `/product-setup` | One-time setup per person: choose your generation provider                           |
 | `/product-image` | Generates 3 or 5 professional photos per product in minimalist, elegant or UGC style |
-| `/product-video` | Generates a subtle product video (locked camera, slow motion, ~5s) |
+| `/product-video` | Generates a subtle product video (locked camera, slow motion, ~5s)                   |
 
 Works in any language — the skill replies in whatever language you speak to it.
 

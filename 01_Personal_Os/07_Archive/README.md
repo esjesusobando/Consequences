@@ -45,8 +45,8 @@ Carpeta de legado y archivo del sistema. Contenido preservado por razones histó
 
 ## 🔄 Historial
 
-| Fecha      | Cambio                                                                  |
-| ---------- | ----------------------------------------------------------------------- |
+| Fecha      | Cambio                                                                 |
+| ---------- | ---------------------------------------------------------------------- |
 | 2026-07-12 | **v5.0.2** — README reescrito con estructura real. 04_Plans → 06_Plans |
 | 2026-06-01 | v4.9 — README original con estructura legacy                           |
 

@@ -217,12 +217,12 @@ Code review automático integrado:
 
 ## 📁 Convenciones de Nombres
 
-| Tipo            | Patrón                | Ejemplo                      |
-| --------------- | --------------------- | ---------------------------- |
+| Tipo            | Patrón                | Ejemplo                   |
+| --------------- | --------------------- | ------------------------- |
 | **Directorios** | `XX_Nombre/`          | `00_Core/`, `05_Scripts/` |
-| **Archivos**    | `XX_Nombre.ext`       | `01_Report_Status.md`        |
-| **Scripts**     | `##_Nombre_Script.py` | `01_Auditor_Hub.py`          |
-| **Skills**      | `SKILL.md`            | En cada skill                |
+| **Archivos**    | `XX_Nombre.ext`       | `01_Report_Status.md`     |
+| **Scripts**     | `##_Nombre_Script.py` | `01_Auditor_Hub.py`       |
+| **Skills**      | `SKILL.md`            | En cada skill             |
 
 - --
 
@@ -252,7 +252,7 @@ Code review automático integrado:
 | **Super Campeones**      | Orquestación de agentes en equipo                  | Activado por defecto    |
 | **Compound Engineering** | Cada unidad de trabajo hace la siguiente más fácil | `/ce:*`                 |
 | **GGA**                  | Code review automático pre-commit                  | `.agent/05_GGA/bin/gga` |
-| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `05_Scripts/`        |
+| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `05_Scripts/`           |
 
 ### Cómo funciona la orquestación
 

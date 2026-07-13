@@ -55,9 +55,9 @@ Almacena **proyectos activos, laboratorios de pruebas, y documentación estraté
 
 ## 🧪 Proyectos Activos
 
-| Proyecto            | Descripción            | Estado          |
-| ------------------- | ---------------------- | --------------- |
-| **01_Efrain_World** | Invitación interactiva | En desarrollo   |
+| Proyecto            | Descripción            | Estado        |
+| ------------------- | ---------------------- | ------------- |
+| **01_Efrain_World** | Invitación interactiva | En desarrollo |
 
 ---
 

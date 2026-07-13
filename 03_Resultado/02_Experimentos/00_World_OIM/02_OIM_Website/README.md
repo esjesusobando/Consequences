@@ -110,8 +110,8 @@ Think_Different/
 
 ### Validators
 
-| Tool                       | Ubicación                                   | Función                |
-| -------------------------- | ------------------------------------------- | ---------------------- |
+| Tool                       | Ubicación                                | Función                |
+| -------------------------- | ---------------------------------------- | ---------------------- |
 | **skill_validator.py**     | `05_Scripts/03_Scripts_Os/03_Validator/` | Valida estructura SOTA |
 | **skill_security_scan.py** | `05_Scripts/03_Scripts_Os/03_Validator/` | Escaneo de seguridad   |
 
@@ -205,12 +205,12 @@ Code review automático integrado:
 
 ## 📁 Convenciones de Nombres
 
-| Tipo            | Patrón                | Ejemplo                      |
-| --------------- | --------------------- | ---------------------------- |
+| Tipo            | Patrón                | Ejemplo                   |
+| --------------- | --------------------- | ------------------------- |
 | **Directorios** | `XX_Nombre/`          | `00_Core/`, `05_Scripts/` |
-| **Archivos**    | `XX_Nombre.ext`       | `01_Report_Status.md`        |
-| **Scripts**     | `##_Nombre_Script.py` | `01_Auditor_Hub.py`          |
-| **Skills**      | `SKILL.md`            | En cada skill                |
+| **Archivos**    | `XX_Nombre.ext`       | `01_Report_Status.md`     |
+| **Scripts**     | `##_Nombre_Script.py` | `01_Auditor_Hub.py`       |
+| **Skills**      | `SKILL.md`            | En cada skill             |
 
 - --
 
@@ -221,7 +221,7 @@ Code review automático integrado:
 | **AGENTS.md**            | `00_Winter_is_Coming/AGENTS.md`                         |
 | **RULES_INDEX**          | `00_Core/01_Rules/RULES_INDEX.md`                       |
 | **Skills README**        | `01_Personal_Os/00_Core/02_Tools/02_Skills/README.md`   |
-| **Scripts INDEX**        | `05_Scripts/03_Scripts_Os/SCRIPTS_INDEX.md`          |
+| **Scripts INDEX**        | `05_Scripts/03_Scripts_Os/SCRIPTS_INDEX.md`             |
 | **OS Integration Audit** | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`     |
 | **Edge Cases**           | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`        |
 | **Chris Orwig Style**    | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`   |
@@ -240,7 +240,7 @@ Code review automático integrado:
 | **Super Campeones**      | Orquestación de agentes en equipo                  | Activado por defecto    |
 | **Compound Engineering** | Cada unidad de trabajo hace la siguiente más fácil | `/ce:*`                 |
 | **GGA**                  | Code review automático pre-commit                  | `.agent/05_GGA/bin/gga` |
-| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `05_Scripts/`        |
+| **Auto-Improvement**     | Detección y corrección recursiva de issues         | `05_Scripts/`           |
 
 ### Cómo funciona la orquestación
 

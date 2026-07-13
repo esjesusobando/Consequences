@@ -10,9 +10,9 @@
 
 ## 🏛️ Sistema Dual de Reglas
 
-| Sistema                        | Ubicación                          | Qty                                | Estado     |
-| ------------------------------ | ---------------------------------- | ---------------------------------- | ---------- |
-| **Triada AI-Prime (Legacy)**   | `.claude/02_Rules/`                | 25 rules (01-35, algunos saltados) | Convive    |
+| Sistema                          | Ubicación                          | Qty                                | Estado     |
+| -------------------------------- | ---------------------------------- | ---------------------------------- | ---------- |
+| **Triada AI-Prime (Legacy)**     | `.claude/02_Rules/`                | 25 rules (01-35, algunos saltados) | Convive    |
 | **Consequences v5.0.2 (Active)** | `01_Personal_Os/00_Core/01_Rules/` | 16 rules (00-15)                   | **ACTIVO** |
 
 > 📂 Los sistemas paralelos `.claude/02_Rules/` (Legacy) y `.agent/00_Rules/` (Backup) coexisten por compatibilidad.

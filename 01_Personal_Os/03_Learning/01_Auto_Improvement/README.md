@@ -145,10 +145,10 @@ python executor.py /ruta               # dry-run en ruta especifica
 
 > `Auto-Improvement` + `Capital Token` = Infraestructura saludable + Conocimiento que se acumula
 
-| Sistema                | Rol           | Que hace                                  | Donde vive                           |
-| ---------------------- | ------------- | ----------------------------------------- | ------------------------------------ |
+| Sistema                | Rol           | Que hace                                  | Donde vive                        |
+| ---------------------- | ------------- | ----------------------------------------- | --------------------------------- |
 | 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `05_Scripts/01_Auto_Improvement/` |
-| 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`        |
+| 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`     |
 
 **Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.
 **Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.
