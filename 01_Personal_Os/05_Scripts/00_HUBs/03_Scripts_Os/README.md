@@ -2,7 +2,7 @@
 
 > **Versión**: v5.0 SOTA
 > **Fecha**: 2026-06-27
-> **Estado**: ✅ PRODUCCIÓN — 42 HUBs funcionales, 166 scripts (33 root NN_ + 133 subdirs)
+> **Estado**: ✅ PRODUCCIÓN — 22 HUBs funcionales, 170 scripts (44 root + 126 subdirs)
 > **Fuente**: `20_System_Mapper_Hub.py --scan` — 2026-06-27T13:19:17
 
 ---
@@ -13,18 +13,14 @@
 | --- | ----------------------- | ------------ | ------------------ |
 | 01 | `01_Ritual/`            | 0            | ✅ Migrado a skills |
 | 02 | `02_Tool/`              | 0            | ✅ Migrado a skills |
-| 03 | `03_Validator/`         | 8            | ✅ Activo           |
-| 04 | `04_Workflow/`          | 0            | ✅ Migrado a skills |
-| 05 | `05_AIPM/`              | 10           | ✅ Activo           |
-| 06 | `06_Auditor/`           | 0            | 🗑️ Vacío           |
+| 03 | `03_Validator/`         | 2            | ✅ Activo           |
+| 04 | `03_AIPM/`              | 9            | ✅ Activo           |
 | 07 | `07_Data/`              | 4            | ✅ Activo           |
 | 08 | `08_General/`           | 4            | ✅ Activo           |
 | 09 | `09_Integration/`       | 3            | ✅ Activo           |
-| 10 | `10_Legacy/`            | 92           | 🗄️ Archivo         |
-| 11 | `11_Anthropic_Harness/` | 12           | ✅ Activo           |
-| 12 | `12_Audits/`            | 6            | ✅ Activo           |
-| 12 | `12_Auditors_Os/`       | 1 + scripts/ | ✅ Activo           |
-| 14 | `14_Otros/`             | 5            | ✅ Recién creado    |
+| 10 | `10_Anthropic/`         | 10           | ✅ Activo           |
+| 11 | `13_Legacy/`            | 67           | 🗄️ Archivo         |
+| 12 | `12_Auditors_Os/`       | 5 (scripts/) | ✅ Activo           |
 
 ---
 
@@ -80,7 +76,6 @@ Think_Different/03_Scripts_Os/
 ## ⚠️ Notas
 
 - **Total scripts en skills**: 22
-- **14_Otros**: Scripts de valor medio
 - **Fallback automático**:get_skill_script() busca en skills + legacy
 - **v1.0 ALFA**: Listo para producción
 

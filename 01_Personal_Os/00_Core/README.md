@@ -13,11 +13,9 @@ Think_Different/
 ├── 00_Winter_is_Coming/       # Strategy, backlog, DNA
 ├── 01_Personal_Os/
 │   ├── 00_Core/               # OS Engine: Workflows, Rules, Tools (SOURCE OF TRUTH)
-│   │   ├── 00_Workflows/      # 30 workflows (8 categories)
-│   │   ├── 01_Rules/          # 14 rules (.mdc)
-│   │   ├── 02_Tools/          # Agents, Skills, MCPs, Hooks, Plugins, Evals
-│   │   ├── 03_Content/        # Content templates and assets
-│   │   └── 04_Telemetry/      # Telemetry configuration
+│   │   ├── 00_Workflows/      # 31 workflows (8 categories)
+│   │   ├── 01_Rules/          # 15 rules (.mdc)
+│   │   └── 02_Tools/          # Agents, Skills, MCPs, Hooks, Plugins, Evals
 │   ├── 01_Memory/             # LLM memory, process notes, context LLM
 │   ├── 02_Knowledge/          # Knowledge base, research, docs
 │   ├── 03_Learning/           # Active knowledge, auto-improvement
@@ -35,11 +33,9 @@ Think_Different/
 
 | #  | Directory       | Content                                                                                          | Status |
 | --- | --------------- | ------------------------------------------------------------------------------------------------ | ------ |
-| 01 | `00_Workflows/` | 30 workflows (8 categories: Learning, Personal, Marvel, Gentleman, Hillary, CE, YouTube, Readme) | ACTIVE |
-| 02 | `01_Rules/`     | 14 rules .mdc (00-13)                                                                            | ACTIVE |
+| 01 | `00_Workflows/` | 31 workflows (8 categories: Learning, Personal, Marvel, Gentleman, Hillary, CE, YouTube, Readme) | ACTIVE |
+| 02 | `01_Rules/`     | 15 rules .mdc (00-14)                                                                          | ACTIVE |
 | 03 | `02_Tools/`     | Agents, Skills, MCPs, Hooks, Plugins, Server, Evals                                              | ACTIVE |
-| 04 | `03_Content/`   | Content templates and marketing assets                                                           | ACTIVE |
-| 05 | `04_Telemetry/` | Telemetry and monitoring configuration                                                           | ACTIVE |
 
 ---
 
@@ -48,7 +44,7 @@ Think_Different/
 | #  | Directory          | Content                                                       | Status |
 | --- | ------------------ | ------------------------------------------------------------- | ------ |
 | 00 | `00_SDD/`          | SDD Registry + JARVIS manifests (7 manifests)                 | ACTIVE |
-| 01 | `01_Agents/`       | 63 agents (9 categories: Root, Dream Team, Specialists, etc.) | ACTIVE |
+| 01 | `01_Agents/`       | 98 source agents (9 categories: Root, Dream Team, Specialists, etc.) | ACTIVE |
 | 02 | `02_Skills/`       | 35+ skill areas (~3600+ files)                                | ACTIVE |
 | 03 | `03_Mcp/`          | MCP server backup configs                                     | ACTIVE |
 | 04 | `04_Integrations/` | Fireflies, Granola integrations                               | ACTIVE |

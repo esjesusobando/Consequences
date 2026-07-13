@@ -1,7 +1,7 @@
 # 02_Playground — Pruebas y Experimentos
 
-> **Versión:** v5.0 SOTA
-> **Última actualización:** 2026-07-05
+> **Versión:** v5.0.2
+> **Última actualización:** 2026-07-12
 > **Estado:** 🟢 PRODUCTION READY — Zero Consequences audit complete
 
 ---
@@ -20,28 +20,23 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 ├── 00_Testing_Youtube/       # [SACRED] Testing YouTube pipeline — NO RENOMBRAR
 ├── 01_Branders_Skills/       # Skills de branding
 ├── 02_Workflow_N8N/          # Workflows N8N
-├── 03_Reports/               # Último reporte como referencia
-├── 04_Testing_Legacy/        # Tests legacy
-├── 05_Obanlover/             # Proyecto Obanlover
+├── 03_Reports/               # Reportes activos de referencia
 ├── 06_JAO/                   # JAO — Jose Antonio Obando
-├── 07_Zero_Consequences/     # 🟢 Zero Consequences — Full audit 2026-07-05 (26 hallazgos, 20 corregidos)
-│   ├── 01_Zero_Consequences/ # Repo principal — React 19 + Vite 6 + Tailwind v4
-│   │   ├── src/              # 22 componentes, types, hooks, lib
-│   │   ├── scripts/          # backup-skills.py, scan-skills.py
-│   │   ├── server.ts         # Express + Gemini 2.5 + OAuth proxy
-│   │   └── openspec/         # SDD artifacts (gitignored)
-│   ├── 02_Planificacion_y_Docs/ # PRD + Implementation Guide + Notas de Proceso
-│   │   ├── Notas_de_Proceso/ # auditoria-2026-07.md
-│   │   └── Context_Memory/   # audit-2026-07.md
+├── 07_Zero_Consequences/     # 🟢 Active project — React 19 + Vite 6 + Gemini
+│   ├── 00_Bases/             # Bases compartidas
+│   ├── 01_Zero_Consequences/ # Repo principal
+│   ├── 02_Planificacion_y_Docs/ # PRD, Implementation Guide
 │   ├── 03_Marketing_Preview/ # HTML preview con DS brandkit
-│   └── 04_Metodos_Consistencia_Magnific/ # PDF consistency + branding
-├── Kit_Diseño_Top.md         # Guía de diseño legacy
-└── README.md                 # Este archivo
+│   ├── 04_Metodos_Consistencia_Magnific/ # PDF consistency
+│   ├── 05_Setup_Marketing/   # Setup de marketing
+│   └── 06_Equipo_Strong_MKT/ # 28 agent skills
+├── Graphify_Out/             # 🧠 Knowledge graph output
+└── README.md
 ```
 
 > **Reglas:**
 > - **00_** = SACRED — prefijos de sistema, NO se renombran
-> - **01-07** = secuencia activa de proyectos
+> - Directorios archivados: 04_Testing_Legacy, 05_Obanlover, 08_Plans_and_Docs, 09_Skills_Drafts, 10_Scripts_and_Logs, OpenMontage → movidos a `07_Archive/`
 > - Al eliminar/archivar una carpeta, renumerar para mantener secuencia limpia
 
 ---
@@ -60,6 +55,7 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 
 | Fecha      | Acción                                                                                  |
 | ---------- | --------------------------------------------------------------------------------------- |
+| 2026-07-12 | v5.0.2 — Playground cleanup: archivados 6 directorios legacy, README sync               |
 | 2026-07-05 | v5.0 — Zero Consequences audit: 20 fixes (Gemini model, XSS, scripts, configs)          |
 | 2026-05-31 | v4.9 — README actualizado con estructura real                                           |
 | 2026-05-31 | Limpieza post-auditoría — eliminados Maerks, New_Skills, Hillary_Life_OS, Focus_Now_Lab |
@@ -75,4 +71,4 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 
 ---
 
-*Think Different PersonalOS v4.9 Consequences — Playground 2026-05-31*
+*Think Different PersonalOS v5.0.2 — Playground 2026-07-12*

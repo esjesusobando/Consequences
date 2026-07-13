@@ -1,6 +1,6 @@
-# 📦 05_Archive — Think Different PersonalOS v4.9
+# 📦 07_Archive — Think Different PersonalOS v5.0.2
 
-> **Versión:** 4.9 Consequences
+> **Versión:** 5.0.2 Consequences
 > **Última actualización:** 2026-06-01
 > **Estado:** ✅ Archivado histórico
 

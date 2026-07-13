@@ -30,14 +30,30 @@ Think_Different/
 
 ```
 01_Personal_Os/04_Tasks/
-├── 00_Templates/                   # Plantillas oficiales (SOTA, Skeleton, AI)
-├── 01_Tasks_Done/                 # Historial de hitos logrados
-├── 02_Hillary_Inbox/               # Entrada de tareas sin procesar
-├── 02-10_Consolidated_Tasks.md   # Logs consolidados v6.1
-├── 00_P0_*.md                       # Tareas CRÍTICAS (System Guardian, Audience)
-├── 03-10_P1_*.md                    # Tareas prioritarias (MCPs, Documentación)
-└── *.md                             # Tareas activas (P2, etc.)
+├── 00_Templates/                      # Plantillas oficiales
+├── 01_Tasks_Done/                     # Historial de hitos logrados
+├── 02_Hillary_Inbox/                  # Entrada de tareas sin procesar
+├── 02_P1_Consolidated_Tasks.md        # Logs consolidados
+├── 00_SDD_Elite_Portfolio_Migration.md
+├── 08_P2_Deuda_Tecnica_Paths_Legacy.md
+├── 10_Task_Elite_Portfolio_P1.md
+├── 11_Task_OIM_Website_P1.md
+├── 12_Task_PreCommit_API_Keys_P2.md
+├── 13_Task_Onboarding_New_Machine_P2.md
+├── 14_Task_Automate_Reports_P3.md
+├── 15_Task_Revisar_Marvel_Workflows_P3.md
+├── 16_Task_Revisar_Ritual_Cierre_P3.md
+├── 17_Task_Evaluar_Avengers_Plan_P3.md
+└── README.md
 ```
+
+### Convención de nombres
+
+```
+{num}_Task_{Nombre_Corto}_{P0|P1|P2|P3}.md
+```
+
+Los archivos consolidados (`*_Consolidated_Tasks.md`) y los especiales (sin prefijo `Task_`) existen pero no siguen el patrón estándar.
 
 ---
 

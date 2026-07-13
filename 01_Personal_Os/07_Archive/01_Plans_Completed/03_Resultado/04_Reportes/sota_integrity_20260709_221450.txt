@@ -1,0 +1,14 @@
+SOTA INTEGRITY CHECK — PersonalOS v4.9
+Fecha: 20260709_221450
+
+[OK] submodules
+[OK] skills
+[OK] mcps
+[OK] agents
+[OK] hooks
+[OK] hubs
+[OK] rules
+[OK] methodologies
+[FAIL] core_structure
+
+Resultado: FAILED (8/9)

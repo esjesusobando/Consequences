@@ -13,7 +13,7 @@
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
 ├── 01_Personal_Os/         # El Sistema Operativo
-│   ├── 00_Core/01_Rules/  # ← AQUÍ: 13 reglas .mdc
+│   ├── 00_Core/01_Rules/  # ← AQUÍ: 15 reglas .mdc
 │   └── ...
 ├── 02_Playground/         # Zona de pruebas
 └── 03_Resultado/          # Outputs de proyectos
@@ -54,7 +54,7 @@ Think_Different/
 
 ---
 
-## 🔘 Reglas Activas (14 archivos .mdc)
+## 🔘 Reglas Activas (15 archivos .mdc)
 
 | #                              | Regla                                                                                   | Nombre                                                 | Función                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -72,6 +72,7 @@ Think_Different/
 | 11                             | [11_Minimax.mdc](./11_Minimax.mdc)                                                      | **Minimax**                                            | Configuración y integración con Minimax                                      |
 | 12                             | [12_Audit_OS_Integrity.mdc](./12_Audit_OS_Integrity.mdc)                                | **Integridad y Auditoría OS**                          | Auditoría no destructiva, preservación histórica y verificación estructural  |
 | 13                             | [13_HTML_Visualization.mdc](./13_HTML_Visualization.mdc)                                | **Visualización HTML**                                 | Toda salida del sistema debe incluir visualización HTML                      |
+| 14                             | [14_Graphify.mdc](./14_Graphify.mdc)                                                    | **Graphify**                                           | Graphify — Indexación y consulta del grafo de conocimiento del proyecto       |
 
 ---
 
@@ -106,8 +107,8 @@ Think_Different/
 
 ---
 
-_Total Reglas activas: 13 (.mdc files)_
-_Total Skills: 394 source / 407 backup_
-_Total Reglas: 13 (v4.9 Consequences)_
+_Total Reglas activas: 15 (.mdc files)_
+_Total Skills: 430 (per latest Context_Memory)_
+_Total Reglas: 15 (v4.9 Consequences)_
 _Framework: Anthropic SOTA 2026 + PersonalOS v4.9 Consequences_
 _Open Design: 62 skills + 138 design systems integrados_
