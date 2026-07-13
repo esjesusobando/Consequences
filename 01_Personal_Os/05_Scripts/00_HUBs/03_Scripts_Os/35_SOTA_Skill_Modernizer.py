@@ -10,6 +10,7 @@ import logging
 from pathlib import Path
 from datetime import datetime
 from typing import List, Tuple
+import sys
 
 # Configuración de Logging SOTA
 logging.basicConfig(
