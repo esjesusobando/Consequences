@@ -1,7 +1,7 @@
-# HUB Catalog — generated 2026-07-11T13:23:21
+# HUB Catalog — generated 2026-07-12T22:57:46
 
 version: v3.0
-generated: "2026-07-11T13:23:21"
+generated: "2026-07-12T22:57:46"
 base_path: 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/
 totals:
   hubs: 46
@@ -270,7 +270,7 @@ hubs:
     command: python 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/36_README_Table_Beautifier.py
     interfaz:
       has_main: True
-      has_args: False
+      has_args: True
       is_numerado: True
 hubs_directorios:
   - name: 01_Ritual

@@ -1,6 +1,6 @@
 {
   "version": "v4.9",
-  "generated": "2026-07-11T13:23:20",
+  "generated": "2026-07-12T22:57:45",
   "source": "20_System_Mapper_Hub.py --scan",
   "personal_os": {
     "name": "PersonalOS",
@@ -10,10 +10,10 @@
   "totals": {
     "mcps_claude": 11,
     "mcps_opencode": 45,
-    "skills": 429,
+    "skills": 430,
     "skill_areas": 16,
-    "agents_source": 68,
-    "agents_backup": 72,
+    "agents_source": 67,
+    "agents_backup": 71,
     "hubs": 46,
     "scripts": 111,
     "workflows": 30,
@@ -25,11 +25,11 @@
   },
   "agents": {
     "definition": "archivos .md en 00_Core/02_Tools/01_Agents/ (excluye README, templates, references)",
-    "source_count": 68,
-    "backup_count": 72,
-    "total_operational": 68,
+    "source_count": 67,
+    "backup_count": 71,
+    "total_operational": 67,
     "by_category": {
-      "atl_gen": 3,
+      "atl_gen": 2,
       "dream_team": 6,
       "growth": 5,
       "individual": 0,
@@ -38,7 +38,7 @@
       "root": 25,
       "specialists": 23
     },
-    "drift": 14
+    "drift": 64
   },
   "hubs": {
     "definition_hub": "scripts en 03_Scripts_Os/ (raiz numerados + subdirectorios funcionales)",
@@ -51,7 +51,7 @@
     "scripts_no_hub": 111
   },
   "skills_totals": {
-    "total": 429,
+    "total": 430,
     "areas": 16,
     "per_area": {
       "00_Agent_Teams_Lite": 14,
@@ -62,7 +62,7 @@
       "00_Workflows": 39,
       "01_Creacion_Contenidos": 52,
       "02_Diseno_Ui_Ux": 34,
-      "03_Video_Media": 28,
+      "03_Video_Media": 29,
       "04_Automatizacion": 27,
       "05_Claude_Ads": 21,
       "06_Tools": 83,

@@ -1,0 +1,60 @@
+---
+description: >
+  Nunca ejecutar scripts del OS sin validar antes que estén actualizados al OS actual.
+  Los scripts legacy pueden tener paths, estructuras y convenciones obsoletas que pueden
+  dañar el sistema si se ejecutan sin verificación.
+globs: 
+  - 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/*Audit*
+  - 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/*Validator*
+  - 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/*SOTA*
+  - 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/*Hub*
+---
+
+# 🛡️ Regla 15: Validación Pre-Ejecución de Scripts
+
+## Problema
+
+Los scripts del OS (auditores, validadores, HUBs) fueron escritos en distintas versiones del PersonalOS. Un script de v3.x o v4.x puede:
+
+- Referenciar paths que ya no existen (ej: `04_Engine/`, `01_Brain/`, `02_Operations/`)
+- Aplicar renames basados en estructuras antiguas
+- Mover archivos a ubicaciones que ya no son válidas
+- Modificar manifests con convenciones desactualizadas
+
+## Regla Imperativa
+
+> **ANTES de ejecutar CUALQUIER script** del OS (auditor, validador, HUB, migrador, modernizador):
+>
+> 1. **Leer el script** — entender qué paths, directorios y convenciones referencia
+> 2. **Verificar contra el OS actual** — ¿Los paths existen? ¿Las estructuras son vigentes?
+> 3. **Ejecutar solo si está actualizado** — Si referencea estructuras legacy, NO correr
+> 4. **Si duda, preguntar** — "Este script referencea paths de v4.x, ¿lo corro igual?"
+
+## Checklist de Validación
+
+```markdown
+- [ ] ¿Los paths del script existen en el OS actual (v5.0.2)?
+- [ ] ¿Las convenciones de nombres coinciden con el OS actual?
+- [ ] ¿Los directorios que referencea siguen existiendo?
+- [ ] ¿El script modificará archivos del sistema? ¿Cuáles?
+- [ ] ¿Hay un dry-run o modo --dry-run disponible? (usarlo primero)
+```
+
+## Scripts de Alto Riesgo (siempre validar)
+
+| Script | Riesgo | Por qué |
+|--------|--------|---------|
+| `27_Skill_Auditor.py` | 🔴 Alto | Renombra skills en disco basado en convenciones del script |
+| `35_SOTA_Skill_Modernizer.py` | 🔴 Alto | Modifica skills con inyección CoT |
+| `05_Validator_Hub.py` | 🟡 Medio | Valida contra estructura que pudo cambiar |
+| `30_path_replacement.py` | 🔴 Alto | Reemplaza paths en masa |
+| `24_mass_path_migration.py` | 🔴 Alto | Migra paths legacy |
+| `34_HUB_SOTA.py` | 🟡 Medio | Activa/desactiva features del sistema |
+
+## Excepción
+
+Scripts que solo leen y reportan (no modifican archivos) pueden ejecutarse con menor escrutinio, pero siempre revisar que los paths que referencean existan.
+
+---
+
+_Think Different PersonalOS v5.0.2 — Regla #15 — 2026-07-12_

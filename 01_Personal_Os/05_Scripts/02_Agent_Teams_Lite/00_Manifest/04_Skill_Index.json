@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-07-11T13:23:21",
+  "generated": "2026-07-12T22:57:46",
   "base_path": "01_Personal_Os/00_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 16,
-    "skills": 429,
+    "skills": 430,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -1189,7 +1189,7 @@
       ]
     },
     "03_Video_Media": {
-      "count": 28,
+      "count": 29,
       "skills": [
         {
           "name": "03_Video_Media",
@@ -1247,88 +1247,93 @@
           "has_frontmatter": true
         },
         {
-          "name": "embedded-captions",
-          "path": "03_Video_Media/embedded-captions/SKILL.md",
+          "name": "07_Product_Studio",
+          "path": "03_Video_Media/07_Product_Studio/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "faceless-explainer",
-          "path": "03_Video_Media/faceless-explainer/SKILL.md",
+          "name": "08_Figma",
+          "path": "03_Video_Media/08_Figma/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "figma",
-          "path": "03_Video_Media/figma/SKILL.md",
+          "name": "09_Media_Use",
+          "path": "03_Video_Media/09_Media_Use/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "general-video",
-          "path": "03_Video_Media/general-video/SKILL.md",
+          "name": "10_Hyperframes",
+          "path": "03_Video_Media/10_Hyperframes/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes",
-          "path": "03_Video_Media/hyperframes/SKILL.md",
+          "name": "11_Pr_To_Video",
+          "path": "03_Video_Media/11_Pr_To_Video/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes-animation",
-          "path": "03_Video_Media/hyperframes-animation/SKILL.md",
+          "name": "12_General_Video",
+          "path": "03_Video_Media/12_General_Video/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes-cli",
-          "path": "03_Video_Media/hyperframes-cli/SKILL.md",
+          "name": "13_Music_To_Video",
+          "path": "03_Video_Media/13_Music_To_Video/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes-core",
-          "path": "03_Video_Media/hyperframes-core/SKILL.md",
+          "name": "14_Hyperframes_Cli",
+          "path": "03_Video_Media/14_Hyperframes_Cli/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes-creative",
-          "path": "03_Video_Media/hyperframes-creative/SKILL.md",
+          "name": "15_Motion_Graphics",
+          "path": "03_Video_Media/15_Motion_Graphics/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes-keyframes",
-          "path": "03_Video_Media/hyperframes-keyframes/SKILL.md",
+          "name": "16_Hyperframes_Core",
+          "path": "03_Video_Media/16_Hyperframes_Core/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "hyperframes-registry",
-          "path": "03_Video_Media/hyperframes-registry/SKILL.md",
+          "name": "17_Embedded_Captions",
+          "path": "03_Video_Media/17_Embedded_Captions/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "media-use",
-          "path": "03_Video_Media/media-use/SKILL.md",
+          "name": "18_Faceless_Explainer",
+          "path": "03_Video_Media/18_Faceless_Explainer/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "motion-graphics",
-          "path": "03_Video_Media/motion-graphics/SKILL.md",
+          "name": "19_Hyperframes_Creative",
+          "path": "03_Video_Media/19_Hyperframes_Creative/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "music-to-video",
-          "path": "03_Video_Media/music-to-video/SKILL.md",
+          "name": "20_Hyperframes_Registry",
+          "path": "03_Video_Media/20_Hyperframes_Registry/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "pr-to-video",
-          "path": "03_Video_Media/pr-to-video/SKILL.md",
+          "name": "21_Product_Launch_Video",
+          "path": "03_Video_Media/21_Product_Launch_Video/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "product-launch-video",
-          "path": "03_Video_Media/product-launch-video/SKILL.md",
+          "name": "22_Hyperframes_Animation",
+          "path": "03_Video_Media/22_Hyperframes_Animation/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "remotion-to-hyperframes",
-          "path": "03_Video_Media/remotion-to-hyperframes/SKILL.md",
+          "name": "23_Hyperframes_Keyframes",
+          "path": "03_Video_Media/23_Hyperframes_Keyframes/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "24_Remotion_To_Hyperframes",
+          "path": "03_Video_Media/24_Remotion_To_Hyperframes/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -2152,73 +2157,73 @@
           "has_frontmatter": true
         },
         {
-          "name": "realestate-analyze",
-          "path": "09_RealEstate/realestate-analyze/SKILL.md",
+          "name": "01_Realestate_Flip",
+          "path": "09_RealEstate/01_Realestate_Flip/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-commercial",
-          "path": "09_RealEstate/realestate-commercial/SKILL.md",
+          "name": "02_Realestate_Comps",
+          "path": "09_RealEstate/02_Realestate_Comps/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-compare",
-          "path": "09_RealEstate/realestate-compare/SKILL.md",
+          "name": "03_Realestate_Quick",
+          "path": "09_RealEstate/03_Realestate_Quick/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-comps",
-          "path": "09_RealEstate/realestate-comps/SKILL.md",
+          "name": "04_Realestate_Invest",
+          "path": "09_RealEstate/04_Realestate_Invest/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-flip",
-          "path": "09_RealEstate/realestate-flip/SKILL.md",
+          "name": "05_Realestate_Market",
+          "path": "09_RealEstate/05_Realestate_Market/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-invest",
-          "path": "09_RealEstate/realestate-invest/SKILL.md",
+          "name": "06_Realestate_Rental",
+          "path": "09_RealEstate/06_Realestate_Rental/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-listing",
-          "path": "09_RealEstate/realestate-listing/SKILL.md",
+          "name": "07_Realestate_Screen",
+          "path": "09_RealEstate/07_Realestate_Screen/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-market",
-          "path": "09_RealEstate/realestate-market/SKILL.md",
+          "name": "08_Realestate_Analyze",
+          "path": "09_RealEstate/08_Realestate_Analyze/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-mortgage",
-          "path": "09_RealEstate/realestate-mortgage/SKILL.md",
+          "name": "09_Realestate_Compare",
+          "path": "09_RealEstate/09_Realestate_Compare/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-neighborhood",
-          "path": "09_RealEstate/realestate-neighborhood/SKILL.md",
+          "name": "10_Realestate_Listing",
+          "path": "09_RealEstate/10_Realestate_Listing/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-quick",
-          "path": "09_RealEstate/realestate-quick/SKILL.md",
+          "name": "11_Realestate_Mortgage",
+          "path": "09_RealEstate/11_Realestate_Mortgage/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-rental",
-          "path": "09_RealEstate/realestate-rental/SKILL.md",
+          "name": "12_Realestate_Commercial",
+          "path": "09_RealEstate/12_Realestate_Commercial/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-report-pdf",
-          "path": "09_RealEstate/realestate-report-pdf/SKILL.md",
+          "name": "13_Realestate_Report_Pdf",
+          "path": "09_RealEstate/13_Realestate_Report_Pdf/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "realestate-screen",
-          "path": "09_RealEstate/realestate-screen/SKILL.md",
+          "name": "14_Realestate_Neighborhood",
+          "path": "09_RealEstate/14_Realestate_Neighborhood/SKILL.md",
           "has_frontmatter": true
         }
       ]

@@ -107,8 +107,8 @@ Think_Different/
 
 ---
 
-_Total Reglas activas: 15 (.mdc files)_
+_Total Reglas activas: 16 (.mdc files)_
 _Total Skills: 430 (per latest Context_Memory)_
-_Total Reglas: 15 (v4.9 Consequences)_
+_Total Reglas: 16 (v5.0.2 Consequences)_
 _Framework: Anthropic SOTA 2026 + PersonalOS v4.9 Consequences_
 _Open Design: 62 skills + 138 design systems integrados_
