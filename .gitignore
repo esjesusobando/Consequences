@@ -155,6 +155,9 @@ Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kep
 # Watchdog reports (auto-generated, not needed)
 03_Resultado/03_Reportes/watchdog_report_*.txt
 
+# Auditoría transitoria (output generado con timestamp — no versionar)
+03_Resultado/07_Reports/*.txt
+
 # =============================================================================
 # BINARIOS GRANDES — prevenir inflado del .git (392MB issue 2026-04-28)
 # =============================================================================
