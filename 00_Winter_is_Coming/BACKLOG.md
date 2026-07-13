@@ -124,7 +124,7 @@ El sistema tiene GGA para código y Watchdog para salud interna. No hay ningún 
 - [x] Disk cleanup: freed 5.2GB (npm cache, temp files)
 - [x] GGA pre-commit hook: skip Zero Consequences-only changes
 - [x] 00_Winter_is_Coming synced: GOALS.md, BACKLOG.md, Structure_v5.0.md, AGENTS.md, OS_DIRECTORY.md updated
-- [x] Plan_General.md archived to 07_Archive/04_Plans/
+- [x] Plan_General.md archived to 07_Archive/06_Plans/
 - [x] GOALS.md migrated Q2→Q3 2026, all metrics corrected (430 skills, 98 agents, 31 workflows, 44 HUBs, 241 scripts)
 - [x] BACKLOG.md bumped v4.9.1→v5.0.2, date synced to 2026-07-12
 
