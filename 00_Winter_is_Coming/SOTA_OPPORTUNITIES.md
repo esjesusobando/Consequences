@@ -3,6 +3,7 @@
 > **Versión:** v5.0.2
 > **Fecha:** 2026-07-12
 > **Propósito:** Mapa de oportunidades para cerrar los gaps entre el estado actual y un sistema verdaderamente SOTA (State of the Art)
+> **Plan de acción:** [`PLAN_SOTA_GAPS.md`](../PLAN_SOTA_GAPS.md) en la raíz del proyecto
 
 ---
 
