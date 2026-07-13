@@ -11,7 +11,7 @@
 
 | Fase | Prioridad | Gap | Estado | Depende de |
 |------|-----------|-----|--------|------------|
-| **F1** | 🔴 P0 | 1. Monetization Pipeline | 🔴 No iniciado | — |
+| **F1** | 🔴 P0 | 1. Monetization Pipeline | ✅ Completado | — |
 | **F1** | 🔴 P0 | 2. English Learning System | 🔴 No iniciado | — |
 | **F2** | 🟠 P1 | 3. External Feedback Loop | 🔴 No iniciado | F1 |
 | **F2** | 🟠 P1 | 4. Onboarding / Democratization | 🔴 No iniciado | — |
@@ -36,17 +36,17 @@
 
 #### Tareas
 
-- [ ] **M1.1** — Crear template de propuesta profesional en `01_Personal_Os/02_Knowledge/03_Templates/`
-- [ ] **M1.2** — Script `track_leads.py` en HUB: registro de leads con estado, valor estimado, fuente
-- [ ] **M1.3** — Workflow de conversión: recordatorios automáticos por estado (nuevo → contacto → propuesta → negociación → cerrado)
-- [ ] **M1.4** — Integración con Hillary Inbox: leads desde captura rápida → pipeline
-- [ ] **M1.5** — Documentar en `GOALS.md` métrica: "Primer lead calificado registrado"
+- [x] **M1.1** — Crear template de propuesta profesional en `01_Personal_Os/02_Knowledge/03_Templates/`
+- [x] **M1.2** — Script `track_leads.py` en HUB: registro de leads con estado, valor estimado, fuente
+- [x] **M1.3** — Workflow de conversión: recordatorios automáticos por estado (nuevo → contacto → propuesta → negociación → cerrado)
+- [x] **M1.4** — Integración con Hillary Inbox: leads desde captura rápida → pipeline
+- [x] **M1.5** — Documentar en `GOALS.md` métrica: "Primer lead calificado registrado"
 
 #### Verificación
 
-- [ ] Pipeline genera propuesta desde template en < 5 min
-- [ ] `track_leads.py` registra lead y persiste en 03_Learning/04_Telemetry/
-- [ ] Hillary puede capturar un lead por voz/texto y aparece en el pipeline
+- [x] Pipeline genera propuesta desde template en < 5 min
+- [x] `track_leads.py` registra lead y persiste en 03_Learning/04_Telemetry/
+- [x] Hillary puede capturar un lead por voz/texto y aparece en el pipeline
 
 ---
 

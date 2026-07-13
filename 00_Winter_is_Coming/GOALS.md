@@ -199,6 +199,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 - Proyectos de Python completados
 - Calidad de los outputs de agentes
 - **Entregables enviados** (productos/trabajo enviado a usuarios reales)
+- **Leads activos y pipeline de monetización** (`python track_leads.py list` — leads en negociación, valor estimado, conversiones)
 
 ### Quarterly Review
 
