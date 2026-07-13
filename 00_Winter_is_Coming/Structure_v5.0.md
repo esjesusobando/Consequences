@@ -1,12 +1,12 @@
 # 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v5.0 (SOTA)
 
-> **Versión:** 5.0 (SOTA)
-> **Fecha:** 2026-07-05
+> **Versión:** 5.0.2 (SOTA)
+> **Fecha:** 2026-07-12
 > **Estado:** Production Ready — SOTA Upgraded + Full Path Audit (84/84 OK)
 > **Audit v5.0 (Complete Audit):** 2026-06-29 — SOTA upgrade + Playground organizado + 393 READMEs beautificados.
 > **Path Audit 2026-07-03:** 84/84 paths OK, dual-copy arch documented, opencode.json fix, Structure sync.
 > **ZC Audit 2026-07-05:** 26 hallazgos → 20 corregidos (CRITICAL: empty scan-skills.py, HIGH: Gemini model, XSS, tsconfig alias)
-> **Auto-Improvement:** ✅ Activo — Corre cada 8h (01:05, 09:05, 17:05)
+> **Production Audit 2026-07-12:** Full upgrade (gentle-ai 1.49.0, engram 1.19.0, GGA 2.10.1, CE 3.19.0) + OpenCode config cleanup + pre-commit hook fix + GGA path repair. 82/82 paths OK. ✅
 
 ---
 
@@ -16,7 +16,8 @@
 Think_Different/                    # RAÍZ
 ├── 00_Winter_is_Coming/           # Goals, Backlog, Memoria estratégica
 ├── 01_Personal_Os/                # SISTEMA OPERATIVO (FUENTE DE VERDAD)
-├── 02_Playground/                  # Zona de pruebas y experimentos
+├── 02_Playground/                  # Zona de pruebas y experimentos (14 subdirectorios)
+│   ├── 00_Momentum/ → 10_Scripts_and_Logs/  # Experimentos y scripts varios
 │   └── Graphify_Out/              # Knowledge graph (god nodes, communities)
 └── 03_Resultado/                   # Outputs de proyectos
 ```
@@ -145,7 +146,7 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## 🔧 SKILLS POR ÁREA (15 áreas funcionales — 396 total)
+## 🔧 SKILLS POR ÁREA (16 áreas funcionales — 430 total)
 
 | Área                    | Skills | Descripción                                 |
 |-------------------------|--------|---------------------------------------------|
@@ -163,29 +164,31 @@ Think_Different/                    # RAÍZ
 | 06_Tools                |     83 | Skill Creator, Testing, DevOps              |
 | 07_Invictus_Web         |     18 | Playwright, Superpowers                     |
 | 08_JAO                  |      7 | Entrevistador, Humanizador, Superpowers     |
+| 09_Marketing_Tech       |     44 | SEO, ads, analytics, social, email          |
 | 10_Laia_Learning        |      1 | Sistema de aprendizaje personal             |
-| **TOTAL**               |**396** |                                             |
+| **TOTAL**               |**430** |                                             |
 
 ---
 
-## 🤖 AGENTES (63 source — 9 categorías)
+## 🤖 AGENTES (98 source — 9 categorías)
 
 | Categoría                          | Cantidad | Ubicación                                    |
 |------------------------------------|----------|----------------------------------------------|
-| Root (agent .md files)             |       25 | `01_Agents/` (root level)                    |
+| Root (agent .md files)             |       55 | `01_Agents/` (root level)                    |
 | Dream Team                         |        6 | `01_Dream_Team/`                             |
-| Specialists Compound               |       23 | `02_Specialists_Compound/`                   |
+| Specialists Compound               |       24 | `02_Specialists_Compound/`                   |
 | Growth                             |        5 | `03_Growth/`                                 |
 | OS Conductor                       |        1 | `00_OS_Conductor/`                           |
 | ATL Gen                            |        3 | `07_Agent_Teams_Lite_Gen/`                   |
-| Agent Teams Lite                   |        0 | `00_Agent_Teams_Lite/`                       |
-| Legacy/Other                       |        0 | `04_Contexto/, 05_Marca/, 06_Plantillas/`    |
+| Agent Teams Lite                   |        2 | `00_Agent_Teams_Lite/`                       |
+| Hillary Life OS                    |        1 | `13_Hillary.md`                              |
+| Legacy/Other                       |        1 | `04_Contexto/, 05_Marca/, 06_Plantillas/`    |
 
-> ⚠️ Conteo incluye todos los .md en subdirectorios hasta profundidad 2. Excluye README/LEEME/SKILL/AGENTS. Backup = 72. Drift = 9. Verificado 2026-06-27 por System Mapper.
+> ⚠️ Conteo incluye todos los .md en subdirectorios hasta profundidad 2. Excluye README/LEEME/SKILL/AGENTS. Backup = 72. Drift = 26. Verificado 2026-07-12.
 
 ---
 
-## 🔧 HUBs (42 HUBs — 166 scripts totales)
+## 🔧 HUBs (44 HUBs — 241 scripts totales)
 
 | Hub               | Propósito                       |
 |-------------------|---------------------------------|
@@ -215,25 +218,25 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## ✅ Ground Truth (verificado 2026-06-27 — System Mapper v5.0)
+## ✅ Ground Truth (verificado 2026-07-12 — config_paths + disco)
 
-> Fuente: `python 01_Personal_Os/05_Scripts/00_HUBs/20_System_Mapper_Hub.py --scan` ejecutado en vivo el 2026-06-27T13:19:17
+> Fuente: `config_paths.py --validate` + conteo directo en disco
 
 | Métrica               | Valor verificado               | Volatilidad  |
 |-----------------------|--------------------------------|--------------|
-| Skills (SKILL.md)     | 396 (15 áreas)                 | [FIXED]      |
-| Reglas (.mdc)         | 14                             | [FIXED]      |
-| Hooks (.py + .ps1)    | 10 (6 fases)                   | [FIXED]      |
-| Workflows (.md)       | 30 (8 categorías)              | [FIXED]      |
-| Agentes (source)      | 63                             | [FIXED]      |
-| Agentes (backup)      | 72 (drift: 9)                  | [VERIFIED]   |
-| HUBs funcionales      | 42 (33 .py + 9 subdirs)        | [FIXED]      |
-| Scripts totales       | 166 (33 raiz + 133 subdirs)    | [FIXED]      |
-| MCP Claude (root)     | 11                             | [FIXED]      |
-| MCP OpenCode          | 45                             | [VERIFIED]   |
+| Skills (SKILL.md)     | 430 (16 áreas)                 | [FIXED]      |
+| Reglas (.mdc)         | 41                             | [FIXED]      |
+| Hooks (total files)   | 18 (6 fases)                   | [FIXED]      |
+| Workflows (.md)       | 31 (8 categorías)              | [FIXED]      |
+| Agentes (source)      | 98                             | [FIXED]      |
+| Agentes (backup)      | 72 (drift: 26)                 | [VERIFIED]   |
+| HUBs funcionales      | 44 (241 scripts totales)       | [FIXED]      |
+| Scripts totales       | 241                            | [FIXED]      |
+| Paths OK              | 82/82                          | [VERIFIED]   |
+| Playground            | 14 subdirectorios              | [FIXED]      |
 | Integraciones         | 2 (Fireflies, Granola)         | [VERIFIED]   |
 
-> **Nota sobre agentes:** Conteo de archivos .md de definición de agentes (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Categorías: Root 25, Dream Team 6, Specialists 23, Growth 5, OS Conductor 1, ATL Gen 3, ATL 0.
+> **Nota sobre agentes:** Conteo de archivos .md de definición de agentes (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Backup = 72 en .agent/. Drift estimado = 26.
 
 ---
 
@@ -298,7 +301,7 @@ Runner: run_scheduled.bat → cron_trigger.py --once --apply (LIVE)
 
 ---
 
-*Structure v5.0 — 2026-07-05 — Think Different PersonalOS (SOTA) — Restructured + Path Audit (84/84 OK) + ZC Audit (20 fixes)*
+*Structure v5.0.2 — 2026-07-12 — Think Different PersonalOS (SOTA) — Production Ready — Full upgrade + 82/82 paths OK*
 
 ---
 
@@ -313,8 +316,9 @@ Este proyecto tiene **dos copias** del directorio `01_Personal_Os/`:
 
 - **Regla:** Copy B es la fuente de verdad. Copy A es un mirror plano para scripts.
 - **Env var:** `PERSONAL_OS_ROOT=C:/Users/sebas/Desktop/Think_Different` → apunta a Copy B
-- **Path audit:** 84/84 paths OK en ambas copias (2026-07-03)
+- **Path audit:** 82/82 paths OK en ambas copias (2026-07-12)
 - **⚠️ `05_Scripts/`** no existe en ninguna copia — todas las rutas legacy que lo referencian están obsoletas
 - **05_HUB_Catalog.yaml** corregido: todos los paths `05_Scripts/→05_Scripts/00_HUBs/` (2026-07-03)
 - **config_paths.py --validate**: 82/82 paths OK, salida JSON disponible
 - **sync_copies.py**: sync B→A con SHA256, backup y dry-run
+- **Tools upgraded:** gentle-ai 1.49.0, engram 1.19.0, GGA 2.10.1, CE 3.19.0

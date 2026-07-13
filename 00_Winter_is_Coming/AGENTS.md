@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-07-12 (v5.0.2+ — Root Cleanup, Every Trigger Pipeline, fixes ZC)
+**Última actualización:** 2026-07-12 (v5.0.2+ — Production Ready — Full upgrade + Structure sync)
 
 ---
 
@@ -47,12 +47,12 @@ ls 01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 
 | Recurso                               | Ubicación                                                  | Para qué usarlo                                                                         |                                                              |
 | ------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| **Skills** (429, 16 áreas)            | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               | Descubrir capabilities antes de delegar                                                 |                                                              |
-| **Reglas** (15 .mdc)                  | `01_Personal_Os/00_Core/01_Rules/`                         | Governance y comportamiento del sistema                                                 |                                                              |
-| **Agentes** (85 source \              | 72 backup) [FIXED]                                         | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                                            | Delegar tareas a especialistas (ver manifest para breakdown) |
+| **Skills** (430, 16 áreas)            | `01_Personal_Os/00_Core/02_Tools/02_Skills/`               | Descubrir capabilities antes de delegar                                                 |                                                              |
+| **Reglas** (41 .mdc)                  | `01_Personal_Os/00_Core/01_Rules/`                         | Governance y comportamiento del sistema                                                 |                                                              |
+| **Agentes** (98 source \              | 72 backup) [FIXED]                                         | `01_Personal_Os/00_Core/02_Tools/01_Agents/`                                            | Delegar tareas a especialistas (ver manifest para breakdown) |
 | **HUBs** (44 HUBs — 241 scripts)      | `01_Personal_Os/05_Scripts/00_HUBs/`                       | Operaciones de sistema — 241 scripts totales                                            |                                                              |
 | **MCPs** (11 root + configs globales) | `.mcp.json`                                                | Herramientas externas disponibles                                                       |                                                              |
-| **Hooks** (9 hooks, 6 fases)          | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                | Automatizaciones pre/post tool                                                          |                                                              |
+| **Hooks** (18 files, 6 fases)          | `01_Personal_Os/00_Core/02_Tools/05_Hooks/`                | Automatizaciones pre/post tool                                                          |                                                              |
 | **Memory**                            | Engram MCP                                                 | Contexto persistente entre sesiones                                                     |                                                              |
 | **Solutions (compounds)**             | `01_Personal_Os/01_Memory/00_Context_LLM/06_Solutions/`    | Lecciones documentadas de bugs, patrones y decisiones. Buscar aquí antes de implementar |                                                              |
 | **Adaptive Boot**                     | `01_Personal_Os/01_Memory/00_Context_LLM/adaptive_boot.py` | Carga condicional de contexto (60-70% ahorro tokens)                                    |                                                              |

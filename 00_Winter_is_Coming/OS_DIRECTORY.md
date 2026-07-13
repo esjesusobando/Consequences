@@ -12,20 +12,20 @@
 | Capital Token    | 🌕 Fase 1 Foundation — 10_Shared_Org/        | ✅ 1 playbook, 1 ADR, 3 agent templates |
 | MCPs root        | **11** (en .mcp.json)                       | ⚠️ Engram CAÍDO (timeout)              |
 | MCPs backup      | **4** (2 JSON + 3 subdirs en 03_Mcp/)       | ✅ VERIFIED                             |
-| Every CE         | v3.8.4 (local repo)                         | ✅ ACTIVE — Local version               |
-| gentle-ai        | v1.30.6                                     | ✅ AVAILABLE                            |
-| Skills           | **429** (16 áreas funcionales en 02_Skills) | ✅ VERIFIED — 0 sin frontmatter         |
-| Agentes          | **85** (source)                             | ✅ SYNCED                               |
+| Every CE         | v3.19.0 (plugin)                              | ✅ ACTIVE — Upgraded 2026-07-12           |
+| gentle-ai        | v1.49.0                                     | ✅ AVAILABLE                            |
+| Skills           | **430** (16 áreas funcionales en 02_Skills) | ✅ VERIFIED — 0 sin frontmatter         |
+| Agentes          | **98** (source)                             | ✅ SYNCED                               |
 | HUBs             | **44** funcionales (en 03_Scripts_Os)       | ✅ VERIFIED                             |
 | Scripts totales  | **241** (.py en Scripts_Os/ y subdirs)      | ✅ DOCUMENTED                           |
 | Workflows        | **31**                                      | ✅ VERIFIED                             |
-| Rules            | **15 (.mdc)** en 01_Rules                   | ✅ DEFINED                              |
-| Hooks            | **9** (.py en 05_Hooks/) [MAY DRIFT]        | ✅ ACTIVE                               |
+| Rules            | **41 (.mdc)** en 01_Rules                   | ✅ DEFINED                              |
+| Hooks            | **18** (.py en 05_Hooks/) [MAY DRIFT]        | ✅ ACTIVE                               |
 | JARVIS Manifests | 7 en 00_Manifest/                           | ✅ VALIDATED                            |
 | Open Design      | 62 creative skills + 138 design systems     | ✅ INTEGRATED                           |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-07-12 — v5.0.2+ — Root Cleanup + Every Trigger Pipeline
-> Skills: 429. HUBs: 44. Workflows: 31. Rules: 15. Scripts: 241. Agentes: 85. Hooks: 9.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-07-12 — v5.0.2+ — Production Ready — Full upgrade
+> Skills: 430. HUBs: 44. Workflows: 31. Rules: 41. Scripts: 241. Agentes: 98. Hooks: 18.
 
 ---
 
@@ -44,6 +44,12 @@
 3. **ZC Fixes**: `any` leak en googleAuth.ts fixeado (→ AuthUser), dead code en DashboardView.tsx removido
 4. **Solution Doc**: `06_Solutions/logic-errors/path-traversal-sentinel-detection-2026-07-11.md` creado
 5. **Nuevos directorios**: `.claude/skills/` (skills copy), `01_Personal_Os/06_Projects/05_Claude_Ads/`, `01_Personal_Os/07_Archive/03_Backups_Refs/01_Repos_Reference/03_Repos_Hyperframes/`
+6. **OpenCode Config Cleanup**: 4 commits — .claude/ tracked selectivamente, gitignore fixed, 226 stale files removed
+7. **GGA v2.10.0→v2.10.1**: 3 paths reparados (secret scanner, skill validator, skill security)
+8. **Pre-commit hook fix**: skip GGA si 100% staged files son Zero Consequences
+9. **gentle-ai v1.43.4→v1.49.0**: Full upgrade
+10. **engram v1.18.0→v1.19.0**: Full upgrade
+11. **Every CE v3.17.1→v3.19.0**: Full upgrade + local mods restaurados
 
 ---
 
