@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """English Learning System — Vocabulary Spaced Repetition"""
 
 import json
 import os
 import sys
+import io
 from datetime import datetime, date, timedelta
 from pathlib import Path
 import random
+
+# Fix Windows encoding for emoji output
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 DECK_PATH = Path(__file__).parent / "vocabulary_deck.json"
 

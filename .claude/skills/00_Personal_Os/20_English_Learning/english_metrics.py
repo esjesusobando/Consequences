@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """English Learning System — Metrics & Streak Tracker"""
 
 import json
 import os
 import sys
+import io
 from datetime import datetime, date
 from pathlib import Path
+
+# Fix Windows encoding for emoji output
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 METRICS_PATH = Path(__file__).parent.parent.parent.parent / "03_Learning" / "04_Telemetry" / "english_metrics.json"
 
