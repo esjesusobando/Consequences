@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
+
 import logging
-import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
 Batch path replacement script for OS filesystem restructuring.
 Maps old paths → new paths:
@@ -12,12 +12,11 @@ Maps old paths → new paths:
   04_Operations/ → 05_Scripts/ (general)
 """
 
-import os
 import re
 import sys
 import argparse
 from pathlib import Path
-from typing import Dict, List, Tuple, Set
+from typing import Dict, List, Tuple
 
 # Root directory
 ROOT = Path(r"C:\Users\sebas\Desktop\Think_Different")
@@ -205,12 +204,17 @@ def collect_files(category: str) -> List[Path]:
 
 
 def apply_replacements(content: str) -> Tuple[str, int]:
-    """Apply all replacements to content, return (new_content, count)."""
+    """Apply all replacements to content, return (new_content, count).
+    
+    Idempotency guard: if the replacement target (new) is already present
+    in the content, skip that rule to prevent double-nesting.
+    """
     total_replacements = 0
     new_content = content
     for old, new in REPLACEMENTS:
-        # Use word boundaries to avoid partial matches in identifiers
-        # But we need to be careful with path separators
+        # Idempotency: skip if the replacement would create a double-nesting
+        if new in new_content:
+            continue
         pattern = re.escape(old)
         matches = list(re.finditer(pattern, new_content))
         if matches:

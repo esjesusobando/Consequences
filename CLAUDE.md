@@ -185,8 +185,8 @@ Think_Different/                           # RAÍZ
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 00_SDD/           ✅ SDD registry + JARVIS manifests
-│   │       ├── 01_Agents/        ✅ 68 agentes (9 categorías) [FIXED]
-│   │       ├── 02_Skills/        ✅ 429 skills (16 áreas funcionales)
+│   │       ├── 01_Agents/        ✅ 67 agentes (36 OS + 30 Claude + 1 OpenCode)
+│   │       ├── 02_Skills/        ✅ 397 skills (35 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup configs MCP (2 JSON + 3 subdirs)
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -222,11 +222,11 @@ Think_Different/                           # RAÍZ
 └── README.md                     ✅ Documentación principal
 ```
 
-### 2. AGENTS (v5.0 — ver 2026-07-09: 68 source, 9 categorías)
+### 2. AGENTS (v5.0 — ver 2026-07-13: 67 source)
 
 > ⚠️ Source: 76 agentes total (.md files depth ≤2: 26 root + 7 Dream + 24 Spec + 6 Growth + 9 OS Cond + 13 ATL Gen + 3 ATL + 5 Legacy). El conteo incluye README/LEEME en subdirectorios. [MAY DRIFT] Audit 2026-06-27.
 
-### 3. SKILLS (429 — 16 áreas funcionales)
+### 3. SKILLS (397 — 35 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
 
@@ -248,7 +248,7 @@ Think_Different/                           # RAÍZ
 | 08_JAO                                         | 08_JAO/                       | Entrevistador, Humanizador, Superpowers                         |
 | 10_Laia_Learning                             | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-06-27: 16 áreas activas, 429 skills (SKILL.md) verificados contra disco (+4 desde última auditoría)
+> ⚠️ Audit 2026-07-13: 35 áreas activas, 397 skills (SKILL.md) en .agent/02_Skills
 
 ### 4. JARVIS 5.0 — MANIFEST SYSTEM
 
@@ -256,8 +256,8 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/05_Scripts/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
-├── 03_Agent_Catalog.yaml    # 68 agentes source (referencia al manifest) [FIXED]
-├── 04_Skill_Index.json      # 429 skills en 16 áreas (updated 2026-06-27)
+├── 03_Agent_Catalog.yaml    # 67 agentes source (referencia al manifest)
+├── 04_Skill_Index.json      # 397 skills en 35 áreas (updated 2026-07-13)
 ├── 05_HUB_Catalog.yaml     # HUBs: scripts totales
 ├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías) [FIXED]
@@ -307,8 +307,8 @@ python 01_Personal_Os/05_Scripts/00_HUBs/15_MCP_Sync_Hub.py --report      # MCP 
 | **Overall Health**                | **✅ PURE GREEN**           | v5.0 — 2026-07-03 — Path Audit: 84/84 OK + dual-copy fixed               |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (46 — scripts: 240)           | ✅ PASS                     | 46 HUBs (todos con interfaz) — 240 scripts totales                           |
-| Skills (429, 16 áreas)            | ✅ VERIFIED                 | 16 áreas funcionales — +4 desde última auditoría                          |
-| Agent Matrix                      | ✅ SYNCED                   | 68 agentes (9 categorías) [FIXED] |
+| Skills (397, 35 áreas)            | ✅ VERIFIED                 | 35 áreas funcionales                                              |
+| Agent Matrix                      | ✅ SYNCED                   | 67 agentes (36 OS + 30 Claude + 1 OpenCode) |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |

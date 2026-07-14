@@ -248,3 +248,19 @@ out/
 
 # Temp directories (cleanup)
 _temp_product_studio/
+
+# =============================================================================
+# GENERATED / CACHE FILES
+# =============================================================================
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+excalidraw.log
+
+# Lock files (tooling)
+.opencode/bun.lock
+.opencode/package-lock.json

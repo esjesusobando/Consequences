@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
+
 import logging
 import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
 14_Health_Metrics_Hub.py — PersonalOS v4.9 Consequences
 

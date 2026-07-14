@@ -26,17 +26,10 @@ resource_refs:
 **La carpeta oficial es `06_Projects/07_Reports/` (la 10 fue eliminada por duplicación).**
 
 ```
-01_Personal_Os/04_Operations/
-├── 00_Context_LLM/
-├── 01_Auto_Improvement/
-├── 02_Agent_Teams_Lite/
-├── 03_Scripts_Os/
-├── 04_Installer/
-├── 05_Projects/
-├── 06_SOTA_Features/
-├── 07_Reports/                  # ✅ OFICIAL
-├── GOVERNANCE.md
-├── README.md
+01_Personal_Os/05_Scripts/
+├── 00_HUBs/03_Scripts_Os/       # Scripts operacionales
+├── 01_Installer/04_Installer/   # Installer
+├── 02_Agent_Teams_Lite/         # Agent Teams Lite manifests
 └── RUNBOOK.md
 ```
 

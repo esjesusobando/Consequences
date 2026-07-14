@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
+
 import logging
 import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
 15_MCP_Sync_Hub.py — MCP Drift Synchronizer
 FASE 2.1 del Plan Consequences 3.0

@@ -17,8 +17,8 @@
 | MCPs backup      | **4** (2 JSON + 3 subdirs en 03_Mcp/)       | ✅ VERIFIED                             |
 | Every CE         | v3.8.4 (local repo)                         | ✅ ACTIVE — Local version               |
 | gentle-ai        | v1.30.6                                     | ✅ AVAILABLE                            |
-| Skills           | **430** (16 áreas funcionales en 02_Skills) | ✅ VERIFIED — 0 sin frontmatter         |
-| Agentes          | **98** (source)                             | ✅ SYNCED                               |
+| Skills           | **397** (35 áreas funcionales en 02_Skills) | ✅ VERIFIED — 0 sin frontmatter         |
+| Agentes          | **67** (36 OS + 30 Claude + 1 OpenCode)    | ✅ SYNCED                               |
 | HUBs             | **44** funcionales (en 03_Scripts_Os)       | ✅ VERIFIED                             |
 | Scripts totales  | **241** (.py en Scripts_Os/ y subdirs)      | ✅ DOCUMENTED                           |
 | Workflows        | **31**                                      | ✅ VERIFIED                             |
@@ -28,7 +28,7 @@
 | Open Design      | 62 creative skills + 138 design systems     | ✅ INTEGRATED                           |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-07-12 — v5.0.2 — Monetization Pipeline (track_leads.py) + full auditor run
-> Skills: 430. HUBs: 44. Workflows: 31. Rules: 15. Scripts: 241. Agentes: 98. Hooks: 18.
+> Skills: 397. HUBs: 22. Workflows: 7. Rules: 16. Scripts: 241. Agentes: 67. Hooks: 6.
 
 ## Directory Map
 
@@ -47,7 +47,7 @@
 ### 01_Personal_Os (Source of Truth)
 | Directory       | Contents                                                                                                  |
 | --------------- | --------------------------------------------------------------------------------------------------------- |
-| `00_Core/`      | Workflows (31), Rules (15 .mdc), Tools (Agents 98, Skills 430, MCPs, Hooks 18, Plugins, Evals, Templates) |
+| `00_Core/`      | Workflows (7), Rules (16 .mdc), Tools (Agents 67, Skills 397, MCPs, Hooks 6, Plugins, Evals, Templates) |
 | `01_Memory/`    | Context LLM (00-12), Process Notes, Solutions, Plans, Telemetry                                           |
 | `02_Knowledge/` | Examples, Research, Docs, Unicorn, Invictus, Anthropic                                                    |
 | `03_Learning/`  | Shared Org (Capital Token), Auto-Improvement (every 8h), Content, Telemetry                               |

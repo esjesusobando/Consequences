@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--5.0--SOTA-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 429 skills SOTA (CoT injected), 68 agentes (source) | 72 backup, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 397 skills SOTA (CoT injected), 67 agentes (source) | metodologías integradas y automatización completa.
 
 ---
 
@@ -21,11 +21,11 @@
 | **Overall Health**  | **100%** 🟢                                   |
 | **Every CE**        | v3.8.4 ✅                                     |
 | **gentle-ai**       | v1.30.6 ✅                                    |
-| **Skills**          | **429** (15 áreas funcionales, CoT injected) |
+| **Skills**          | **397** (35 áreas funcionales, CoT injected) |
 | **Rules**           | **14** (.mdc)                                |
 | **MCPs**            | **45** OpenCode (35 active)                  |
 | **HUBs**            | **46** HUBs + **240** scripts totales        |
-| **Agentes**         | **68** (source) + **72** (backup) — drift 9  |
+| **Agentes**         | **67** (36 OS + 30 Claude + 1 OpenCode) |
 | **Workflows**       | **30** (8 categorías)                        |
 | **Hooks**           | **10** (6 fases)                             |
 | **Paths validated** | **84/84 OK** (both copies, 2026-07-03)       |
@@ -43,7 +43,7 @@ Think_Different/
 │   │   ├── 01_Rules/              ✅ 14 reglas .mdc
 │   │   ├── 02_Tools/              ✅ Herramientas (00-09)
 │   │   │   ├── 00_SDD/            ✅ SDD Registry + JARVIS manifests
-│   │   │   ├── 01_Agents/         ✅ 63 agentes (9 categorías)
+│   │   │   ├── 01_Agents/         ✅ 36 agentes (OS directory)
 │   │   │   ├── 02_Skills/         ✅ 35+ áreas, ~3600 files
 │   │   │   ├── 03_Mcp/            ✅ Backup MCP configs
 │   │   │   ├── 04_Integrations/   ✅ Fireflies, Granola
@@ -84,7 +84,7 @@ Think_Different/
 
 ---
 
-## 🛠️ Skills System (16 áreas funcionales — 429 skills)
+## 🛠️ Skills System (35 áreas funcionales — 397 skills)
 
 | Área                    | Skills | Descripción                             |
 | ----------------------- | ------ | --------------------------------------- |
@@ -100,7 +100,7 @@ Think_Different/
 
 ---
 
-## 🤖 Agentes (68 total — 9 categorías) [FIXED]
+## 🤖 Agentes (67 total — 36 OS + 30 Claude + 1 OpenCode)
 
 | Categoría                          | Cantidad | Ubicación                                                   |
 | ---------------------------------- | -------- | ----------------------------------------------------------- |

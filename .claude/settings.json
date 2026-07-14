@@ -64,20 +64,20 @@
       "Bash(unzip -o \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/New_Skills/video-prompt-builder.skill\" -d /tmp/video_prompt_extract)",
       "Bash(unzip -o \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/New_Skills/offer-and-bio-writer.skill\" -d /tmp/offer_bio_extract)",
       "Read(//tmp/**)",
-      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/01_Video_Prompt_Builder/references')",
-      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/02_Remotion_Browser_Search')",
-      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/03_Remotion_Cards_Showcase')",
-      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/04_Remotion_Audio_Engine')",
-      "Bash(cp /tmp/brand_voice_extract/brand-voice-guardian/SKILL.md '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/11_Brand_Voice_Guardian/SKILL.md')",
-      "Bash(cp /tmp/content_ideation_extract/content-ideation/SKILL.md '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/12_Content_Ideation/SKILL.md')",
-      "Bash(cp /tmp/offer_bio_extract/offer-and-bio-writer/SKILL.md '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/13_Offer_And_Bio_Writer/SKILL.md')",
+      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/03_Video_Media/02_James_Cameron/01_Video_Prompt_Builder/references')",
+      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/03_Video_Media/02_James_Cameron/02_Remotion_Browser_Search')",
+      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/03_Video_Media/02_James_Cameron/03_Remotion_Cards_Showcase')",
+      "Bash(mkdir -p '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/03_Video_Media/02_James_Cameron/04_Remotion_Audio_Engine')",
+      "Bash(cp /tmp/brand_voice_extract/brand-voice-guardian/SKILL.md '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/11_Brand_Voice_Guardian/SKILL.md')",
+      "Bash(cp /tmp/content_ideation_extract/content-ideation/SKILL.md '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/12_Content_Ideation/SKILL.md')",
+      "Bash(cp /tmp/offer_bio_extract/offer-and-bio-writer/SKILL.md '${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/13_Offer_And_Bio_Writer/SKILL.md')",
       "Read(//c/Users/sebas/.claude/**)",
       "Bash(npm run:*)",
       "mcp__plugin_engram_engram__mem_save"
     ],
     "additionalDirectories": [
       "${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}",
-      "${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/01_Video_Prompt_Builder",
+      "${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/01_Personal_Os/00_Core/02_Tools/02_Skills/03_Video_Media/02_James_Cameron/01_Video_Prompt_Builder",
       "\\tmp\\video_prompt_extract\\references"
     ]
   }

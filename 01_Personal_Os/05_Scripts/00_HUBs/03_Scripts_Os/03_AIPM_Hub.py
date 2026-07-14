@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
+
 import logging
 import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
 03_AIPM_Hub.py — Hub centralizador de AIPM (AI Project Management)
 Reutiliza scripts AIPM: 22, 23, 24, 28, 30

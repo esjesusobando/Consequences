@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
+
 import logging
 import typing
 
 logging.basicConfig(level=logging.INFO)
-#!/usr/bin/env python3
 """
 05_Validator_Hub.py — Hub centralizador de Validaciones del sistema
 Reutiliza scripts de validación: 13, 40, 37, 80

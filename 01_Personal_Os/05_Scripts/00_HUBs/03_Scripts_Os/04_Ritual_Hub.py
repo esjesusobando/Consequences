@@ -1,7 +1,3 @@
-import logging
-import typing
-
-logging.basicConfig(level=logging.INFO)
 #!/usr/bin/env python3
 """
 04_Ritual_Hub.py — Hub centralizador de Rituales y Standups
@@ -13,7 +9,11 @@ import os
 import io
 import sys
 import subprocess
+import logging
+import typing
 from pathlib import Path
+
+logging.basicConfig(level=logging.INFO)
 
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -25,6 +25,7 @@ ROOT = PERSONAL_OS.parent  # Project root
 
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
+from config_paths import get_skill_script
 
 # === COLOR SETUP ===
 try:

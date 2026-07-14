@@ -283,9 +283,9 @@ def run_guardian():
     print("=" * 50)
 
     project_root = os.path.dirname(SCRIPT_DIR)
-    # v2.0: 04_ENGINE/05_Scripts/00_HUBs/03_Scripts_Os/79_System_Guardian.py → 01_Personal_Os/05_Scripts/00_HUBs/03_Scripts_Os/10_Legacy/79_System_Guardian.py
+    # v5.0: System Guardian lives in 13_Legacy (renamed from 10_Legacy in v5.0 migration)
     guardian_path = os.path.join(
-        project_root, "01_Personal_Os", "05_Scripts", "03_Scripts_Os", "10_Legacy", "79_System_Guardian.py"
+        project_root, "01_Personal_Os", "05_Scripts", "00_HUBs", "03_Scripts_Os", "13_Legacy", "79_System_Guardian.py"
     )
 
     if os.path.exists(guardian_path):
@@ -305,7 +305,7 @@ def run_guardian():
             # Mostrar beep si hay issues
             if "FAIL" in result.stdout or "WARN" in result.stdout:
                 print("\n⚠️  ISSUES DETECTADOS - Revisa el reporte:")
-                print("   04_ENGINE/06_Reports/guardian_latest.md")
+                print("   01_Personal_Os/06_Projects/07_Reports/guardian_latest.md")
                 try:
                     import winsound
 
