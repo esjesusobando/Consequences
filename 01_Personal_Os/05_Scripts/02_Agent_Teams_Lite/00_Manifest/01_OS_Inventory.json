@@ -1,6 +1,6 @@
 {
   "version": "v4.9",
-  "generated": "2026-07-12T22:57:45",
+  "generated": "2026-07-13T22:54:57",
   "source": "20_System_Mapper_Hub.py --scan",
   "personal_os": {
     "name": "PersonalOS",
@@ -20,7 +20,7 @@
     "workflow_categories": 7,
     "hooks": 10,
     "hook_phases": 6,
-    "rules": 15,
+    "rules": 16,
     "integrations": 2
   },
   "agents": {
