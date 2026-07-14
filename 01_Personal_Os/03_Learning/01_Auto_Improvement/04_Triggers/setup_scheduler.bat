@@ -14,7 +14,7 @@ set "ROOT_DIR=%CD%"
 popd
 
 set "TASK_NAME=AutoImprovementPersonalOS"
-set "RUNNER_PATH=%ROOT_DIR%\01_Personal_Os\04_Operations\01_Auto_Improvement\04_Triggers\run_scheduled.bat"
+set "RUNNER_PATH=%ROOT_DIR%\01_Personal_Os\03_Learning\01_Auto_Improvement\04_Triggers\run_scheduled.bat"
 set "WORK_DIR=%ROOT_DIR%"
 
 echo ============================================================
@@ -57,7 +57,7 @@ if !errorlevel! equ 0 (
     echo    Editar "%RUNNER_PATH%" y cambiar --once por --once --apply
     echo.
     echo  Para ver el log:
-    echo    %ROOT_DIR%\01_Personal_Os\04_Operations\01_Auto_Improvement\03_Metrics\execution.log
+    echo    %ROOT_DIR%\01_Personal_Os\03_Learning\01_Auto_Improvement\03_Metrics\execution.log
 ) else (
     echo.
     echo  [ERROR] No se pudo crear la tarea.
