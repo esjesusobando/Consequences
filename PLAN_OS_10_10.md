@@ -438,10 +438,10 @@ git push origin --tags
 ## 📋 CHECKLIST MAESTRO 10/10 (Para Tracking)
 
 ### Sprint 1: Foundation
-- [ ] 1.1 Path Sentinel 100% (12 scripts migrados)
-- [ ] 1.2 Auto-Improvement: path fix + dedupe + rotación + métricas
-- [ ] 1.3 Skill Registry: globs + case conflicts + paths validados
-- [ ] 1.4 Git history cleanup (.agent/.pi/.agents removed from history)
+- [x] 1.1 Path Sentinel 100% (12 scripts migrados) ✅ 2026-07-14
+- [x] 1.2 Auto-Improvement: dedupe (214→9) + dedup bug fix + scheduler path ✅ 2026-07-14
+- [x] 1.3 Skill Registry: 430 skills valid, no case conflicts, Graphify removed ✅ 2026-07-14
+- [ ] 1.4 Git history cleanup (.agent/.pi/.agents removed from history) ⏸️ DEFERRED
 
 ### Sprint 2: Intelligence
 - [ ] 2.1 Feedback Loop: capture + normalize + dashboard + weekly workflow
