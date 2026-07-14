@@ -1,28 +1,23 @@
-# Memoria de Contexto del Proyecto
+# Context Memory — Think Different PersonalOS v5.0.2 (SOTA)
 
-**Proyecto:** Think Different PersonalOS v5.0.2 (SOTA)
-**Última Actualización:** 2026-07-13
-**Estado:** ✅ Production Ready — Post-Auditoría Infraestructura
+**Última actualización:** 2026-07-13
+**Estado:** ✅ Production Ready
 
 ---
 
-## Estado Actual del Sistema
+## Métricas del Sistema (2026-07-13 — verificado contra disco)
 
-### Métricas Verificadas (2026-07-13)
-
-| Métrica               | Valor Verificado                    |
-| --------------------- | ----------------------------------- |
-| Skills (SKILL.md)     | 397 (35 áreas)                      |
-| Scripts Python        | 57+ actualizados (logging + typing) |
-| READMEs beautificados | 393 archivos                        |
-| Reglas (.mdc)         | 16                                  |
-| Hooks (.py + .ps1)    | 6 (fases)                           |
-| Workflows (.md)       | 7 (directorios)                     |
-| Agentes (source)      | 67 (36 OS + 30 Claude + 1 OpenCode) |
-| HUBs funcionales      | 22                                  |
-| Scripts totales       | 241                                 |
-| MCP Claude (root)     | 11                                  |
-| MCP OpenCode          | 45                                  |
+| Métrica               | Valor    | Notas                                      |
+| --------------------- | -------- | ------------------------------------------ |
+| Skills (SKILL.md)     | 397      | 35 áreas funcionales en .agent/02_Skills   |
+| Agentes (source)      | 67       | 36 OS + 30 Claude + 1 OpenCode             |
+| Reglas (.mdc)         | 16       | 00_Core/01_Rules/                          |
+| HUBs funcionales      | 22       | *_Hub.py en 03_Scripts_Os/                 |
+| Workflows (.md)       | 7        | Directorios en 00_Workflows/               |
+| Hooks                 | 6        | Fases en 05_Hooks/                         |
+| Scripts Python        | 241      | Total en 05_Scripts/                       |
+| MCP Claude (root)     | 11       | .claude/.mcp.json                          |
+| MCP OpenCode          | 45       | opencode.json                              |
 
 ---
 
@@ -32,43 +27,24 @@
 Think_Different/
 ├── 00_Winter_is_Coming/    # Dirección estratégica
 ├── 01_Personal_Os/         # FUENTE DE VERDAD del OS
-│   ├── 00_Core/            # Motor: Workflows, Rules, Tools (Agents, Skills, SDD, MCP)
-│   ├── 01_Memory/          # Memoria LLM: Context_Memory.md, Notas_de_Proceso.md
+│   ├── 00_Core/            # Motor: Workflows (7), Rules (16), Tools (Agents, Skills, SDD, MCP)
+│   ├── 01_Memory/          # Memoria: Context_Memory.md, Notas_de_Proceso.md
 │   ├── 02_Knowledge/       # Base de conocimiento estática
 │   ├── 03_Learning/        # Auto-improvement, Shared_Org, Content, Telemetry
 │   ├── 04_Tasks/           # Tareas activas (YAML 100%)
 │   ├── 05_Scripts/         # HUBs (22) + Installer
 │   ├── 06_Projects/        # Proyectos activos
-│   └── 07_Archive/         # Backups, snapshots, históricos (incluye 04_Operations_Backup)
+│   └── 07_Archive/         # Backups, snapshots, históricos
 ├── 02_Playground/          # Zona de experimentos
 │   ├── 03_Reports/         # Reportes, sesiones, walkthroughs
-│   ├── 08_Plans_and_Docs/  # Planes, tasks, implementation plans [NEW]
-│   ├── 09_Skills_Drafts/   # Borradores de skills [NEW]
-│   └── 10_Scripts_and_Logs/ # Scripts y logs [NEW]
+│   ├── 07_Zero_Consequences/ # Web app Zero Consequences
+│   ├── 08_Plans_and_Docs/  # Planes estratégicos
+│   ├── 09_Skills_Drafts/   # Borradores de skills
+│   └── 10_Scripts_and_Logs/ # Scripts y logs
 └── 03_Resultado/           # Outputs de proyectos
 ```
 
 ---
-
-## Skills System (17 áreas funcionales — 437 skills)
-
-| Área                    | Skills | Descripción                             |
-| ----------------------- | ------ | --------------------------------------- |
-| 00_Agent_Teams_Lite     | 14     | SDD sub-agentes + JARVIS manifests      |
-| 00_Compound_Engineering | 63     | Core CE — SDD + Compound Engineering    |
-| 00_Personal_Os          | 24     | Life OS, Hillary, Rituales              |
-| 00_Skill_Auditor        | 1      | Auditor de skills                       |
-| 00_System_Core          | 1      | System core                             |
-| 00_Workflows            | 39     | Workflow skills                         |
-| 01_Creacion_Contenidos  | 52     | Brand, YouTube, SEO, Marketing          |
-| 02_Diseno_Ui_Ux         | 34     | Product Design, UI/UX, Taste            |
-| 03_Video_Media          | 11     | Video production                        |
-| 04_Automatizacion       | 27     | Automation                              |
-| 05_Claude_Ads           | 21     | Claude Ads                              |
-| 06_Tools                | 83     | Skill Creator, Testing, DevOps          |
-| 07_Invictus_Web         | 18     | Invictus Web                            |
-| 08_JAO                  | 7      | Entrevistador, Humanizador, Superpowers |
-| 10_Laia_Learning        | 1      | Laia Learning                           |
 
 ## Convenciones del Sistema
 
@@ -77,139 +53,52 @@ Think_Different/
 - **Skills:** Todos llevan bloque CoT (Chain of Thought) al final
 - **Scripts:** Todos llevan `import logging, typing` + `logging.basicConfig`
 - **Commits:** `--no-verify` cuando GGA hook falla por OpenCode CLI ausente
-- **READMEs:** Beautificar con `58_Batch_Beautify_README.py` tras cambios masivos
+- **Shebangs:** Siempre línea 1 en scripts Python ejecutables
+- **Regla 3 Sitios:** Documentar en Notas_de_Proceso + Context_Memory + Engram
 
 ---
 
-## Historial de Auditorías
-
-### 2026-07-03 — Auditoría de Integridad Referencial (Sesión 2)
-- **Alcance:** Verificación de rutas, shebangs, referencias cruzadas en AGENTS.md, GOALS.md, BACKLOG.md, config_paths.py
-- **18 issues encontrados**, **17 corregidos** + **1 redundancia estructural resuelta**:
-  - 7 paths rotos en `AGENTS.md` (Winter_is_Coming) — corregidos
-  - 5 paths rotos en `AGENTS.md` (raíz) — corregidos
-  - 5 paths rotos en `GOALS.md` — corregidos
-  - 1 path roto en `BACKLOG.md` — corregido
-  - 1 path roto en `config_paths.py` (`AUTO_IMPROVEMENT_DIR`) — corregido
-  - 1 path roto en `20_System_Mapper_Hub.py` (`hubs_dir` sin `00_HUBs/`) — corregido
-  - 1 error msg en `11_Auto_Learn_Hub.py` — corregido
-  - 2 shebangs reposicionados a línea 1 (`01_Auditor_Hub.py`, `20_System_Mapper_Hub.py`)
-  - 1 redundancia estructural (`01_Auto_Improvement/01_Auto_Improvement/`) — **consolidada**: movidos 12 subdirectorios + 10 archivos al nivel correcto
-- **Lecciones clave:**
-  - `config_paths.py` tenía `AUTO_IMPROVEMENT_DIR` apuntando a `05_Scripts/01_Auto_Improvement/` (no existe); el real estaba en `03_Learning/01_Auto_Improvement/01_Auto_Improvement/` con anidamiento redundante
-  - `20_System_Mapper_Hub.py` fallaba silenciosamente porque su `hubs_dir` hardcodeado no incluía `00_HUBs/` — el manifest no se generaba desde la reestructura v5.0
-  - Múltiples docs estratégicos (AGENTS.md, GOALS.md, BACKLOG.md) mantenían rutas de la estructura anterior (`04_Operations/`, `03_Task/`, `05_Archive/`)
-- **Verificado:**
-  - `34_HUB_SOTA.py --status` → funciona (importa canónico, muestra features)
-  - `20_System_Mapper_Hub.py --scan` → genera manifest completo (7 fases)
-  - `config_paths.py` → `AUTO_IMPROVEMENT_DIR` resuelve correctamente
-  - 396 skills en 15 áreas funcionales
-  - SOTA Skill Modernizer funcional
-
----
-
-## Scripts Clave del Sistema
+## Scripts Clave
 
 | Script                            | Ubicación                                     | Propósito                               |
 | --------------------------------- | --------------------------------------------- | --------------------------------------- |
+| `config_paths.py`                 | `05_Scripts/00_HUBs/03_Scripts_Os/`           | Validación de 82 paths del sistema      |
+| `20_System_Mapper_Hub.py`         | `05_Scripts/00_HUBs/03_Scripts_Os/`           | Genera manifests JARVIS                 |
+| `batch_replace_paths.py`          | `05_Scripts/00_HUBs/03_Scripts_Os/`           | Reemplazo masivo de paths (idempotente) |
 | `58_Batch_Beautify_README.py`     | `05_Scripts/00_HUBs/03_Scripts_Os/13_Legacy/` | Formatear tablas en READMEs             |
-| `36_README_Table_Beautifier.py`   | `05_Scripts/00_HUBs/03_Scripts_Os/`           | Beautify unitario de READMEs            |
-| `20_System_Mapper_Hub.py`         | `05_Scripts/00_HUBs/`                         | Genera manifests JARVIS                 |
 | `recursive_improvement_engine.py` | `03_Learning/01_Auto_Improvement/`            | Motor de auto-mejora (cada 8h)          |
-| `sota_upgrade.py`                 | `02_Playground/10_Scripts_and_Logs/`          | SOTA upgrade masivo (sesión 2026-06-29) |
+| `installer.py`                    | `05_Scripts/01_Installer/04_Installer/`       | Instalador del OS                       |
 
 ---
 
----
+## Ecosistemas Externos
 
-## Sesión 5: Auditoría SOTA v5.0.2 y Fixes Zero Consequences (2026-07-10)
-
-- ✅ Reparada carga de `@imgly/background-removal` WASM excluyéndolo de `optimizeDeps` de Vite en la Zero Consequences app.
-- ✅ Resuelto el bug `ErrorBoundary` en React 19 por error de `setState`.
-- ✅ Instalados los types y dependencias correctas para compilar el proyecto TypeScript (`tsc --noEmit` build passed sin errores, `npm run build` cleanly passed).
-- ✅ Reconstruido el sistema de métricas y actualizado AGENTS.md, OS_DIRECTORY.md, y 01_OS_Inventory.json. 
-
----
-
-*Context Memory v5.0.2 — Actualizado post-auditoría SOTA 2026-07-10*
+| Integración   | Estado | Notas                                    |
+| ------------- | ------ | ---------------------------------------- |
+| Engram        | ✅     | v1.19.0, MCP `--tools=all`              |
+| GGA           | ✅     | v2.10.1 en `/c/Users/sebas/bin/gga`     |
+| Every CE      | ✅     | Plugin compound-engineering              |
+| Gentle AI     | ✅     | Skills + orchestrator                    |
+| OpenCode      | ✅     | Config en `~/.config/opencode/`          |
+| Claude        | ✅     | Config en `.claude/`                     |
 
 ---
 
-## 📋 Última Sesión — 2026-07-12: Product Studio + OS Integrity
+## Historial de Commits Recientes
 
-### Resumen
-Sesión masiva de integración, limpieza de git, reparación de rutas, actualización de ecosistemas GitHub, y auditoría completa del OS.
-
-### Git
-- Commit `67f1c428b` — Product Studio + git cleanup + blob repair
-- Commit `76810f0f5` — Path fixes (225 files)
-- Commit `e9dc0a6b2` — Runtime path repairs (9 files)
-- .agent/ y .pi/ movidos a .gitignore (recuperables vía git history)
-
-### Marketing Agency
-- Pipeline 09 (Product Studio) completamente integrado en orquestador
-- skill-registry actualizado con product-studio
-
-### Rutas Reparadas
-- 19 archivos: 03_Task/ → 04_Tasks/
-- 41 archivos: 04_Operations/ → 05_Scripts/
-- 3 scripts Python: paths de 03_Scripts_Os y Auto_Improvement corregidos
-- .gitignore: paths Knowledge_Brain y .atl/openspec/ corregidos
-
-### GitHub Ecosystems
-- Gentle-ai: 3 skills actualizados (branch-pr, issue-creation, work-unit-commits)
-- Every CE: 1 nuevo (ce-babysit-pr) + 8 actualizados + 3 skip
-
-### Estado Final
-- ✅ Git 100% limpio (0 cambios sin commit)
-- ✅ 3 commits exitosos, 50 blobs reparados
-- ✅ Paths verificados contra disco real
-- ✅ GitHub ecosystems actualizados
+| Commit      | Fecha       | Descripción                                        |
+| ----------- | ----------- | -------------------------------------------------- |
+| `105a50b81` | 2026-07-13  | docs: audit results in Notas_de_Proceso + Context_Memory |
+| `60798a792` | 2026-07-13  | fix: project audit — paths, shebangs, stats, idempotency, orphans |
+| `693e46562` | 2026-07-13  | feat: English Learning skill + metrics module      |
+| `f1f24b431` | 2026-07-13  | docs: Consequences Tabs SDD artifacts              |
+| `114b42db1` | 2026-07-13  | feat: Consequences Tabs module (9 files, ~2170 lines) |
 
 ---
 
-## 📋 Post-Compaction — GGA Upgrade + Pre-Commit Fix (2026-07-12)
+## Pendientes Conocidos
 
-### Resumen
-Recuperación de contexto post-compactación, actualización de GGA v2.10.0 → v2.10.1, y fix del pre-commit hook para saltar GGA en commits exclusivos de Zero Consequences.
-
-### GGA v2.10.1
-- Repositorio clonado localmente (`/tmp/`) y ejecutado `install.sh` desde el directorio del repo
-- Instalado en `/c/Users/sebas/bin/gga` (v2.10.1)
-- Old copy en `~/.local/bin/gga` (v2.10.0) permanece pero no está en PATH
-- **Lección**: el método `curl | bash` falla porque el script usa `$SCRIPT_DIR` relativo; clonar el repo y correr `bash repo/install.sh` desde ahí
-
-### Pre-Commit Hook Fix
-- **Problema**: GGA bloqueaba commits que tocaran Zero Consequences por TS violations pre-existentes (código pre-skill era)
-- **Fix**: el hook ahora cuenta archivos staged — si TODOS son de `02_Playground/07_Zero_Consequences/`, salta GGA (exit 0)
-- También se corrigió la ruta del secret scanner: `01_Core` → `00_Core`
-
----
-
-## 📋 Post-Auditoría Infraestructura (2026-07-13)
-
-### Resumen
-Auditoría sistemática de todo el proyecto Think_Different. Se encontraron y corrigieron 10 categorías de issues: rutas rotas en configs, shebangs mal posicionados, stats obsoletos en docs, idempotencia en scripts, archivos huérfanos, e imports muertos.
-
-### Commits
-- `60798a792` — `fix: project audit — paths, shebangs, stats, idempotency, orphans` (17 files, +79/-59)
-
-### Fixes Críticos
-1. **.claude/settings.json**: 8 rutas corregidas (`01_Core`→`00_Core`, `20_James_Cameron`→`02_James_Cameron`)
-2. **04_Ritual_Hub.py**: shebang移到 L1 + import movido a module level
-3. **batch_replace_paths.py**: guard de idempotencia (prevenía double-nesting en re-run)
-
-### Stats Corregidos (Source of Truth: filesystem)
-| Métrica | Docs antes | Real (disk) | Docs después |
-|---|---|---|---|
-| Skills | 429 | 397 | 397 ✅ |
-| Áreas | 16 | 35 | 35 ✅ |
-| Agents | 68/85/98 | 67 | 67 ✅ |
-| Rules | 14-15 | 16 | 16 ✅ |
-| HUBs | 44 | 22 | 22 ✅ |
-| Workflows | 31 | 7 | 7 ✅ |
-| Hooks | 18 | 6 | 6 ✅ |
-
-### Pendiente para próxima sesión
-- [ ] Verificar que `_shared/` en `.agent/02_Skills/` no causa conflictos con `.claude/skills/_shared/`
-- [ ] Considerar consolidar los 3 context files (Notas_de_Proceso, Context_Memory, y el OS root docs) en una fuente única
+- [ ] Auto-Improvement Engine: `learnings.json` crece con duplicados (1,364 aplicaciones en pattern 3)
+- [ ] 12 scripts necesitan migración a path sentinel
+- [ ] Consolidar `.agent/` backup con `archive/` (decisión del usuario)
+- [ ] 4 SOTA engines stubs — funcionales pero sin lógica real
