@@ -256,3 +256,32 @@ export interface FocusSession {
   status: 'active' | 'paused' | 'completed' | 'cancelled';
 }
 
+// === Consequences Tabs (URL Organization) ===
+export interface TabItem {
+  id: string;            // nanoid
+  url: string;
+  title?: string;
+  favicon?: string;      // derived from url (google favicon service)
+  note?: string;
+  reminder?: string;     // ISO date
+  tags: string[];
+  order: number;
+  locked?: boolean;       // no se borra en limpieza
+  starred?: boolean;
+}
+
+export interface TabSession {
+  id: string;
+  name: string;
+  emoji?: string;
+  createdAt: number;
+  items: TabItem[];
+  isWorkspace?: boolean;  // dashboard vs lista simple
+}
+
+export interface TabsState {
+  sessions: TabSession[];
+  bin: TabSession[];      // papelera
+  activeView: 'list' | 'dashboard';
+}
+
