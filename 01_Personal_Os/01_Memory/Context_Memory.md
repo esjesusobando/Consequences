@@ -1,26 +1,25 @@
 # Memoria de Contexto del Proyecto
 
 **Proyecto:** Think Different PersonalOS v5.0.2 (SOTA)
-**Última Actualización:** 2026-07-10
-**Estado:** ✅ Production Ready — Post-Auditoría SOTA v5.0.2
+**Última Actualización:** 2026-07-13
+**Estado:** ✅ Production Ready — Post-Auditoría Infraestructura
 
 ---
 
 ## Estado Actual del Sistema
 
-### Métricas Verificadas (2026-07-10)
+### Métricas Verificadas (2026-07-13)
 
 | Métrica               | Valor Verificado                    |
 | --------------------- | ----------------------------------- |
-| Skills (SKILL.md)     | 429 (16 áreas)                      |
+| Skills (SKILL.md)     | 397 (35 áreas)                      |
 | Scripts Python        | 57+ actualizados (logging + typing) |
 | READMEs beautificados | 393 archivos                        |
-| Reglas (.mdc)         | 15                                  |
-| Hooks (.py + .ps1)    | 9 (6 fases)                         |
-| Workflows (.md)       | 31 (8 categorías)                   |
-| Agentes (source)      | 85                                  |
-| Agentes (backup)      | 72 (drift: 13)                      |
-| HUBs funcionales      | 44                                  |
+| Reglas (.mdc)         | 16                                  |
+| Hooks (.py + .ps1)    | 6 (fases)                           |
+| Workflows (.md)       | 7 (directorios)                     |
+| Agentes (source)      | 67 (36 OS + 30 Claude + 1 OpenCode) |
+| HUBs funcionales      | 22                                  |
 | Scripts totales       | 241                                 |
 | MCP Claude (root)     | 11                                  |
 | MCP OpenCode          | 45                                  |
@@ -38,7 +37,7 @@ Think_Different/
 │   ├── 02_Knowledge/       # Base de conocimiento estática
 │   ├── 03_Learning/        # Auto-improvement, Shared_Org, Content, Telemetry
 │   ├── 04_Tasks/           # Tareas activas (YAML 100%)
-│   ├── 05_Scripts/         # HUBs (42) + Installer
+│   ├── 05_Scripts/         # HUBs (22) + Installer
 │   ├── 06_Projects/        # Proyectos activos
 │   └── 07_Archive/         # Backups, snapshots, históricos (incluye 04_Operations_Backup)
 ├── 02_Playground/          # Zona de experimentos
@@ -184,3 +183,33 @@ Recuperación de contexto post-compactación, actualización de GGA v2.10.0 → 
 - **Problema**: GGA bloqueaba commits que tocaran Zero Consequences por TS violations pre-existentes (código pre-skill era)
 - **Fix**: el hook ahora cuenta archivos staged — si TODOS son de `02_Playground/07_Zero_Consequences/`, salta GGA (exit 0)
 - También se corrigió la ruta del secret scanner: `01_Core` → `00_Core`
+
+---
+
+## 📋 Post-Auditoría Infraestructura (2026-07-13)
+
+### Resumen
+Auditoría sistemática de todo el proyecto Think_Different. Se encontraron y corrigieron 10 categorías de issues: rutas rotas en configs, shebangs mal posicionados, stats obsoletos en docs, idempotencia en scripts, archivos huérfanos, e imports muertos.
+
+### Commits
+- `60798a792` — `fix: project audit — paths, shebangs, stats, idempotency, orphans` (17 files, +79/-59)
+
+### Fixes Críticos
+1. **.claude/settings.json**: 8 rutas corregidas (`01_Core`→`00_Core`, `20_James_Cameron`→`02_James_Cameron`)
+2. **04_Ritual_Hub.py**: shebang移到 L1 + import movido a module level
+3. **batch_replace_paths.py**: guard de idempotencia (prevenía double-nesting en re-run)
+
+### Stats Corregidos (Source of Truth: filesystem)
+| Métrica | Docs antes | Real (disk) | Docs después |
+|---|---|---|---|
+| Skills | 429 | 397 | 397 ✅ |
+| Áreas | 16 | 35 | 35 ✅ |
+| Agents | 68/85/98 | 67 | 67 ✅ |
+| Rules | 14-15 | 16 | 16 ✅ |
+| HUBs | 44 | 22 | 22 ✅ |
+| Workflows | 31 | 7 | 7 ✅ |
+| Hooks | 18 | 6 | 6 ✅ |
+
+### Pendiente para próxima sesión
+- [ ] Verificar que `_shared/` en `.agent/02_Skills/` no causa conflictos con `.claude/skills/_shared/`
+- [ ] Considerar consolidar los 3 context files (Notas_de_Proceso, Context_Memory, y el OS root docs) en una fuente única

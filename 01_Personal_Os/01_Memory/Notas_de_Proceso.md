@@ -404,3 +404,66 @@ Limpieza completa del repo `~/.config/opencode/` (opencode config, no OS), upgra
 - ✅ GGA v2.10.1 instalado y funcional
 - ✅ Pre-commit hook no bloquea commits ZC
 - ✅ Secret scanner apunta a `00_Core/`
+
+---
+
+## Auditoría de Infraestructura (2026-07-13)
+
+**Commit:** `60798a792` — `fix: project audit — paths, shebangs, stats, idempotency, orphans`
+**Alcance:** Rutas rotas, shebangs mal posicionados, stats obsoletos, idempotencia, archivos huérfanos
+
+### Fase 1: Rutas Rotas (.claude/settings.json)
+- **CRÍTICO**: 8 rutas en `.claude/settings.json` apuntaban a `01_Core/` (inexistente) y `20_James_Cameron/`
+- **Fix**: Corregidas a `00_Core/` y `02_James_Cameron/` (paths reales del OS)
+
+### Fase 2: Shebangs y Scope de Imports
+- **CRÍTICO**: `04_Ritual_Hub.py` tenía shebang en línea incorrecta + `get_skill_script` importado dentro de función
+- **Fix**: Shebang移到 línea 1, import movido a module level
+- **6 scripts adicionales**: shebangs movidos a línea 1 (02_Git_Hub, 03_AIPM_Hub, 05_Validator_Hub, 14_Health_Metrics_Hub, 15_MCP_Sync_Hub, refactor_revert_id)
+
+### Fase 3: installer.py
+- **Fix**: `10_Legacy` → `13_Legacy` (directorio renombrado)
+- **Fix**: Agregado `00_HUBs` al scan de scripts
+- **Fix**: Path de reporte corregido
+
+### Fase 4: Referencias Rotas
+- **14_Task_Automate_Reports_P3.md**: Referencia a `04_Operations` → `05_Scripts`
+
+### Fase 5: batch_replace_paths.py Idempotency
+- **MEDIUM**: Re-ejecutar el script creaba doble-nesting (`05_Scripts/00_HUBs/03_Scripts_Os/00_HUBs/03_Scripts_Os/`)
+- **Fix**: Guard de idempotencia — si el valor destino ya existe en el contenido, skip
+
+### Fase 6: .gitignore
+- **Fix**: Agregados `__pycache__/`, `*.pyc`, `excalidraw.log`
+
+### Fase 7: Archivos Huérfanos
+- **Move**: `CONSEQUENCES_TABS_PLAN.md` (root) → `02_Playground/07_Zero_Consequences/`
+- **Move**: `PLAN_SOTA_GAPS.md` (root) → `00_Winter_is_Coming/`
+
+### Fase 8: Stats Reconcile
+- **Skills**: 429 → **397** (35 áreas, verificado contra disco)
+- **Agents**: 68 → **67** (36 OS + 30 Claude + 1 OpenCode)
+- **Rules**: 14-15 → **16** (.mdc files)
+- **HUBs**: 44 → **22** (*_Hub.py scripts)
+- **Workflows**: 31 → **7** (directorios)
+- **Hooks**: 18 → **6** (fases)
+- Actualizado en: CLAUDE.md, README.md, OS_DIRECTORY.md
+
+### Cuadro Comparativo
+
+| Componente | Antes | Después | Fix |
+|---|---|---|---|
+| `.claude/settings.json` paths | 8 rutas rotas (01_Core, 20_James) | 8 paths corregidos (00_Core, 02_James) | CRÍTICO |
+| `04_Ritual_Hub.py` shebang + import | Shebang línea incorrecta, import en función | L1 shebang, module-level import | CRÍTICO |
+| 6 scripts shebangs | Shebangs en posición incorrecta | Shebangs en línea 1 | MEDIUM |
+| `installer.py` paths | `10_Legacy` (inexistente), sin `00_HUBs` | `13_Legacy`, `00_HUBs` incluido | MEDIUM |
+| Task 14 ref | `04_Operations` (obsoleto) | `05_Scripts` (correcto) | LOW |
+| `batch_replace_paths.py` | Double-nesting en re-run | Guard de idempotencia | MEDIUM |
+| `.gitignore` | Sin `__pycache__`, `*.pyc`, logs | Entradas agregadas | LOW |
+| Root orphans | 2 planes sueltos en root | Movidos a carpetas correctas | LOW |
+| Stats (CLAUDE/README/OS_DIR) | 429 skills, 68 agents | 397 skills, 67 agents | DOCS |
+| Dead imports | `os`, `typing`, `Set` unused | Removidos | LOW |
+
+### Fase 9: _shared/ para SDD Skills
+- Copiado `.claude/skills/_shared/` → `.agent/02_Skills/_shared/` (local, gitignored)
+- Resuelve 98 referencias rotas de skills SDD en workspace local
