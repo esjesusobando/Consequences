@@ -1,0 +1,8 @@
+# Test Queries for Skill Discovery
+# One query per line. Lines starting with # are ignored.
+
+quiero analizar competidores SEO
+necesito crear un post para LinkedIn
+how do I debug this error
+quiero automatizar un workflow con n8n
+necesito revisar mi sitio web

@@ -444,7 +444,7 @@ git push origin --tags
 - [ ] 1.4 Git history cleanup (.agent/.pi/.agents removed from history) ⏸️ DEFERRED
 
 ### Sprint 2: Intelligence
-- [ ] 2.1 Feedback Loop: capture + normalize + dashboard + weekly workflow
+- [x] 2.1 Feedback Loop: capture + normalize + dashboard + weekly workflow ✅ 2026-07-14
 - [ ] 2.2 Skill Discovery: NL → skill + cache embeddings + ritual integration
 - [ ] 2.3 Content Pipeline: draft → review → publish → analytics → compound (1 comando)
 

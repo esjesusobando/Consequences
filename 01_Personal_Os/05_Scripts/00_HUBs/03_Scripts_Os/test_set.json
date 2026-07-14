@@ -1,0 +1,27 @@
+[
+  {
+    "query": "quiero analizar competidores SEO",
+    "expected_skill": "market",
+    "min_confidence": 0.3
+  },
+  {
+    "query": "copywriting para LinkedIn",
+    "expected_skill": "market-copy",
+    "min_confidence": 0.3
+  },
+  {
+    "query": "debug error",
+    "expected_skill": "ce-debug",
+    "min_confidence": 0.5
+  },
+  {
+    "query": "automatizar workflow n8n",
+    "expected_skill": "automatizacion",
+    "min_confidence": 0.3
+  },
+  {
+    "query": "revisar sitio web",
+    "expected_skill": "claude-seo-ai",
+    "min_confidence": 0.3
+  }
+]
