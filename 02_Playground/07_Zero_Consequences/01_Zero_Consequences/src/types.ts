@@ -277,6 +277,8 @@ export interface TabSession {
   createdAt: number;
   items: TabItem[];
   isWorkspace?: boolean;  // dashboard vs lista simple
+  starred?: boolean;
+  locked?: boolean;
 }
 
 export interface TabsState {

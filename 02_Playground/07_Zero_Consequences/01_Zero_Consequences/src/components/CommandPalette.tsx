@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Command, Search, X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -16,6 +16,7 @@ const allCommands = [
   { id: 'analytics', label: 'REPORTES & QR', description: 'Reportes, QR codes y métricas', category: 'Navegación' },
   { id: 'specs', label: 'ESTILOS', description: 'Sistema de diseño y guías de estilos', category: 'Navegación' },
   { id: 'terminal', label: 'TERMINAL', description: 'Consola de comandos CLI', category: 'Navegación' },
+  { id: 'tabs', label: 'CONSEQUENCES TABS', description: 'Capturar y organizar URLs guardadas', category: 'Navegación' },
 ];
 
 const categories = ['Navegación', 'Sistema', 'Git', 'Debug', 'Custom'];

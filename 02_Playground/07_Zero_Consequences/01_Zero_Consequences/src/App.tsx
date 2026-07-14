@@ -1035,6 +1035,17 @@ export default function App() {
               />
             </ErrorBoundary>
           )}
+
+          {/* TAB: CONSEQUENCES TABS (URL Capture & Organization) */}
+          {activeTab === 'tabs' && (
+            <ErrorBoundary>
+              <ToolsView
+                accent={accent}
+                onLogMessage={logMessage}
+                initialTool="tabs"
+              />
+            </ErrorBoundary>
+          )}
         </motion.div>
         )}
 

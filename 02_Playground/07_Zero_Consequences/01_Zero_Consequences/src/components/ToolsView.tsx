@@ -42,6 +42,7 @@ import {
   Calendar,
   AlignLeft,
   LayoutGrid,
+  Bookmark,
 } from 'lucide-react';
 import { AccentColor } from '../types';
 import { nanoid } from 'nanoid';
@@ -81,10 +82,12 @@ const TOOLS: ToolDef[] = [
   { id: 'qr',         label: 'QR Generator',    icon: QrCode,     desc: 'Texto a código QR' },
   { id: 'passwords',  label: 'Passwords',       icon: KeyRound,   desc: 'Generador estilo ProtonVPN' },
   { id: 'skills',     label: 'Skills Library',  icon: Cpu,        desc: 'CRUD de skills nivel SOTA' },
+  { id: 'tabs',       label: 'Consequences Tabs', icon: Bookmark, desc: 'Capturar y organizar URLs' },
 ];
 
 import { IMPORTED_PROMPTS } from '../data/importedPrompts';
 import SkillsLibrary from './SkillsLibrary';
+import { ConsequenceTabs } from './tabs/ConsequenceTabs';
 
 // ── Seed data ─────────────────────────────────────────────────────
 
@@ -1469,8 +1472,12 @@ function PromptLibrary() {
 
 // ── Main ToolsView ─────────────────────────────────────────────────
 
-export default function ToolsView({ accent, onLogMessage }: ToolsViewProps) {
-  const [activeTool, setActiveTool] = useState('prompts');
+interface ToolsViewComponentProps extends ToolsViewProps {
+  initialTool?: string;
+}
+
+export default function ToolsView({ accent, onLogMessage, initialTool }: ToolsViewComponentProps) {
+  const [activeTool, setActiveTool] = useState(initialTool || 'prompts');
 
   const getAccentClasses = () => {
     switch (accent) {
@@ -1481,7 +1488,7 @@ export default function ToolsView({ accent, onLogMessage }: ToolsViewProps) {
     }
   };
 
-  const activeDef = TOOLS.find(t => t.id === activeTool)!;
+  const activeDef = TOOLS.find(t => t.id === activeTool) ?? TOOLS[0];
 
   return (
     <div className="flex-1 flex h-full overflow-hidden bg-void">
@@ -1537,6 +1544,7 @@ export default function ToolsView({ accent, onLogMessage }: ToolsViewProps) {
           {activeTool === 'qr' && <QrGeneratorMock />}
           {activeTool === 'passwords' && <PasswordGenerator />}
           {activeTool === 'skills' && <SkillsLibrary />}
+          {activeTool === 'tabs' && <ConsequenceTabs onLogMessage={onLogMessage} />}
         </div>
       </div>
     </div>
