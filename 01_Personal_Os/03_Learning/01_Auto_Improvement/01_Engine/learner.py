@@ -36,18 +36,20 @@ class Learner:
         """Registra un fix aplicado (con dedup automático)"""
         issue_hash = self._hash_issue(issue)
 
-        # Dedup: no registrar si el último registro idéntico tiene < 1 hora
+        # Dedup: skip if same issue_hash exists within last 24 hours
+        from datetime import timedelta
         recent = self.learnings.get("fixes_history", [])
-        if recent and recent[-1].get("issue_hash") == issue_hash:
-            last_ts = recent[-1].get("timestamp", "")
-            if last_ts:
-                try:
-                    from datetime import timedelta
-                    last_time = datetime.fromisoformat(last_ts)
-                    if datetime.now() - last_time < timedelta(hours=1):
-                        return  # skip: mismo issue registrado recientemente
-                except (ValueError, TypeError):
-                    pass  # si falla parseo, registrar igual
+        for existing in reversed(recent):
+            if existing.get("issue_hash") == issue_hash:
+                existing_ts = existing.get("timestamp", "")
+                if existing_ts:
+                    try:
+                        last_time = datetime.fromisoformat(existing_ts)
+                        if datetime.now() - last_time < timedelta(hours=24):
+                            return  # skip: same issue registered within 24h
+                    except (ValueError, TypeError):
+                        pass
+                break  # stop scanning after first hash match
 
         record = {
             "timestamp": datetime.now().isoformat(),
