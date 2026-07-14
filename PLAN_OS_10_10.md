@@ -445,7 +445,7 @@ git push origin --tags
 
 ### Sprint 2: Intelligence
 - [x] 2.1 Feedback Loop: capture + normalize + dashboard + weekly workflow ✅ 2026-07-14
-- [ ] 2.2 Skill Discovery: NL → skill + cache embeddings + ritual integration
+- [x] 2.2 Skill Discovery: NL → skill + cache embeddings + ritual integration ✅ 2026-07-14
 - [ ] 2.3 Content Pipeline: draft → review → publish → analytics → compound (1 comando)
 
 ### Sprint 3: Resilience
