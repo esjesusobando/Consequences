@@ -248,6 +248,7 @@ out/
 
 # Temp directories (cleanup)
 _temp_product_studio/
+.cache/
 
 # =============================================================================
 # GENERATED / CACHE FILES
