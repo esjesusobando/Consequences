@@ -1,8 +1,8 @@
-# MCP Registry — generated 2026-07-13T22:54:57
+# MCP Registry — generated 2026-07-14T22:03:17
 # Drift Claude<->OpenCode: claude_only=4, opencode_only=38
 
 version: v3.0
-generated: "2026-07-13T22:54:57"
+generated: "2026-07-14T22:03:17"
 totals:
   claude_code: 11
   opencode: 45

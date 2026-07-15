@@ -1,0 +1,56 @@
+# prototype_chain_default.yaml
+# Default Prototype Chain — Theo Taba Labs Page Model
+# Full pipeline: idea → tested prototype
+
+name: "Default Prototype Chain"
+description: "Full pipeline: idea → hypothesis → build → test → feedback → synthesis → V2 plan"
+version: "1.0"
+
+steps:
+  - id: 1
+    skill: "hypothesis_generator"
+    name: "Generate Hypothesis"
+    input: "{idea}, {brand}, {style}"
+    output: "hypothesis_{id}.json"
+    description: "Transform raw idea into structured hypothesis with problem statement, target user, success metrics, and acceptance criteria."
+
+  - id: 2
+    skill: "prototype_builder"
+    name: "Build Prototype"
+    input: "{hypothesis_{id}.json}"
+    output: "prototype_{id}.html"
+    depends_on: 1
+    description: "Generate interactive, self-contained HTML prototype from hypothesis. Uses brand design system for styling."
+
+  - id: 3
+    skill: "usability_test_generator"
+    name: "Generate Usability Test"
+    input: "{prototype_{id}.html}"
+    output: "test_{id}.html"
+    depends_on: 2
+    description: "Create structured usability test with 5-8 questions mixing task scenarios and satisfaction metrics."
+
+  - id: 4
+    skill: "feedback_collector"
+    name: "Collect Feedback"
+    input: "{test_{id}.html}"
+    output: "feedback_{id}.json"
+    depends_on: 3
+    wait_for: "min-responses"
+    description: "Collect and validate user feedback responses. Waits until minimum response threshold is met."
+
+  - id: 5
+    skill: "feedback_synthesizer"
+    name: "Synthesize Feedback"
+    input: "{feedback_{id}.json}"
+    output: "synthesis_{id}.json"
+    depends_on: 4
+    description: "Group feedback by theme, calculate satisfaction scores, identify top strengths and weaknesses."
+
+  - id: 6
+    skill: "v2_planner"
+    name: "Generate V2 Plan"
+    input: "{synthesis_{id}.json}"
+    output: "v2_plan_{id}.md"
+    depends_on: 5
+    description: "Generate prioritized V2 plan with must-have fixes, feature improvements, and design changes."

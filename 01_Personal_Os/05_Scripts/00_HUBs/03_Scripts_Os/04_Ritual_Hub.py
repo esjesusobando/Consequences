@@ -12,6 +12,7 @@ import subprocess
 import logging
 import typing
 from pathlib import Path
+from datetime import datetime
 
 logging.basicConfig(level=logging.INFO)
 
@@ -104,6 +105,41 @@ def run_script(script_name, script_subdir="01_Ritual"):
     if result.stderr:
         print(f"{Fore.RED}[STDERR] {result.stderr}{Style.RESET_ALL}")
 
+def print_simple_view():
+    """Modo simplificado: muestra solo los 3 comandos esenciales y la prioridad del dia."""
+    today = datetime.now().strftime("%A %d de %B %Y")
+    print(f"\n{Fore.CYAN}{'=' * 60}{Style.RESET_ALL}")
+    print(f"{Fore.CYAN}  PersonalOS — Vista Simple{Style.RESET_ALL}")
+    print(f"{Fore.CYAN}  {today}{Style.RESET_ALL}")
+    print(f"{Fore.CYAN}{'=' * 60}{Style.RESET_ALL}")
+
+    print(f"\n{Fore.GREEN}  Los 3 comandos que necesitas:{Style.RESET_ALL}\n")
+
+    print(f"  {Fore.YELLOW}1. Tu ritual diario{Style.RESET_ALL}")
+    print(f"     python 04_Ritual_Hub.py standup")
+    print(f"     {Style.DIM}Morning standup: prioridades del dia.{Style.RESET_ALL}\n")
+
+    print(f"  {Fore.YELLOW}2. Buscar lo que necesitas{Style.RESET_ALL}")
+    print(f"     python skill_discovery.py \"lo que queres hacer\"")
+    print(f"     {Style.DIM}Escribi en lenguaje natural y te recomienda.{Style.RESET_ALL}\n")
+
+    print(f"  {Fore.YELLOW}3. Generar contenido{Style.RESET_ALL}")
+    print(f"     python content_pipeline.py run --topic \"tema\" --platform linkedin")
+    print(f"     {Style.DIM}Pipeline completo: draft -> review -> publish.{Style.RESET_ALL}\n")
+
+    # Show today's priority (last workflow step number)
+    tasks_dir = ROOT_DIR / "01_Personal_Os" / "04_Tasks"
+    if tasks_dir.exists():
+        pending = [f for f in tasks_dir.iterdir() if f.suffix == ".md"]
+        if pending:
+            print(f"  {Fore.MAGENTA}Tareas pendientes: {len(pending)} archivos en 04_Tasks/{Style.RESET_ALL}")
+        else:
+            print(f"  {Fore.GREEN}Sin tareas pendientes en 04_Tasks/{Style.RESET_ALL}")
+
+    print(f"\n{Style.DIM}  Para mas opciones: python 04_Ritual_Hub.py --help{Style.RESET_ALL}")
+    print(f"{Fore.CYAN}{'=' * 60}{Style.RESET_ALL}\n")
+
+
 def main():
     print_banner()
 
@@ -116,9 +152,19 @@ def main():
         choices=["genesis", "cierre", "triage", "standup", "weekly", "dominical"],
         help="Modo de ejecución",
     )
+    parser.add_argument(
+        "--simple",
+        action="store_true",
+        help="Modo simplificado: solo 3 comandos esenciales + prioridad del dia",
+    )
     parser.add_argument("command", nargs="?", help="Comando alternativo")
 
     args = parser.parse_args()
+
+    # ── Simple mode: show only essential commands ──
+    if args.simple:
+        print_simple_view()
+        return
 
     # Determinar el comando a ejecutar
     command = args.mode or args.command

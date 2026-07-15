@@ -1,6 +1,6 @@
 {
   "version": "v4.9",
-  "generated": "2026-07-13T22:54:57",
+  "generated": "2026-07-14T22:03:17",
   "source": "20_System_Mapper_Hub.py --scan",
   "personal_os": {
     "name": "PersonalOS",
@@ -10,13 +10,13 @@
   "totals": {
     "mcps_claude": 11,
     "mcps_opencode": 45,
-    "skills": 430,
+    "skills": 432,
     "skill_areas": 16,
     "agents_source": 67,
     "agents_backup": 71,
     "hubs": 46,
     "scripts": 111,
-    "workflows": 30,
+    "workflows": 32,
     "workflow_categories": 7,
     "hooks": 10,
     "hook_phases": 6,
@@ -51,12 +51,12 @@
     "scripts_no_hub": 111
   },
   "skills_totals": {
-    "total": 430,
+    "total": 432,
     "areas": 16,
     "per_area": {
       "00_Agent_Teams_Lite": 14,
       "00_Compound_Engineering": 63,
-      "00_Personal_Os": 24,
+      "00_Personal_Os": 26,
       "00_Skill_Auditor": 1,
       "00_System_Core": 1,
       "00_Workflows": 39,

@@ -1,0 +1,15 @@
+{
+  "content_id": "test_analytics_001",
+  "platform": "linkedin",
+  "fetched_at": "2026-07-14T22:12:56.725605+00:00",
+  "metrics": {
+    "impressions": 3621,
+    "engagement_rate": 0.0348,
+    "clicks": 119,
+    "shares": 6,
+    "comments": 6,
+    "likes": 56,
+    "engagement_rate_pct": 3.48
+  },
+  "source": "mock"
+}

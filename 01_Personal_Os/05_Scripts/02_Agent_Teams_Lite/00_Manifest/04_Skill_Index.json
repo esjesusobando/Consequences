@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-07-13T22:54:58",
+  "generated": "2026-07-14T22:03:17",
   "base_path": "01_Personal_Os/00_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 16,
-    "skills": 430,
+    "skills": 432,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -404,7 +404,7 @@
       ]
     },
     "00_Personal_Os": {
-      "count": 24,
+      "count": 26,
       "skills": [
         {
           "name": "00_Personal_Os",
@@ -524,6 +524,16 @@
         {
           "name": "02_Dynamic_Workflows",
           "path": "00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "21_Prototype_Studio",
+          "path": "00_Personal_Os/21_Prototype_Studio/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "22_Skill_Chain",
+          "path": "00_Personal_Os/22_Skill_Chain/SKILL.md",
           "has_frontmatter": true
         }
       ]

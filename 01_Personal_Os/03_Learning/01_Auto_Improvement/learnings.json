@@ -1,162 +1,18 @@
 {
-  "patterns": [
+  "patterns": [],
+  "fixes_history": [],
+  "signal_patterns": [
     {
-      "severity": "HIGH",
-      "category": "structure",
-      "description_keywords": [
-        "no",
-        "requerido",
-        "directorio",
-        "existe"
+      "fingerprint": "social_mentions:warning",
+      "source": "social_mentions",
+      "issue_type": "warning",
+      "count": 1,
+      "first_seen": "2026-07-14T21:25:43.347950",
+      "last_seen": "2026-07-14T21:25:43.347950",
+      "scores": [
+        20
       ],
-      "method": "auto",
-      "success_rate": 1.0,
-      "times_applied": 156
-    },
-    {
-      "severity": "MEDIUM",
-      "category": "docs",
-      "description_keywords": [
-        "v4.9",
-        "agents:",
-        "v5.0",
-        "readme:"
-      ],
-      "method": "auto",
-      "success_rate": 1.0,
-      "times_applied": 29
-    },
-    {
-      "severity": "MEDIUM",
-      "category": "structure",
-      "description_keywords": [
-        "2",
-        "en",
-        "ubicaciones",
-        "aparece"
-      ],
-      "method": "auto",
-      "success_rate": 1.0,
-      "times_applied": 1393
-    }
-  ],
-  "fixes_history": [
-    {
-      "timestamp": "2026-06-27T17:16:49.203449",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "docs",
-        "path": "Version mismatch entre README y AGENTS",
-        "description": "README: v5.0, AGENTS: v4.9",
-        "suggestion": "Unificar versiones"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|docs|readme: v5.0, agents: v4.9"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:49.160261",
-      "issue": {
-        "severity": "HIGH",
-        "category": "structure",
-        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\01_Core",
-        "description": "Directorio requerido no existe",
-        "suggestion": "Crear 01_Core/"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "high|structure|directorio requerido no existe"
-    },
-    {
-      "timestamp": "2026-06-27T01:05:12.740015",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: __init__.py",
-        "description": "Aparece en 32 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 32 ubicaciones"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:49.229511",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: generate_report.py",
-        "description": "Aparece en 4 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 4 ubicaciones"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:49.235657",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: generate_review.py",
-        "description": "Aparece en 3 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:49.254746",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: run.py",
-        "description": "Aparece en 25 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 25 ubicaciones"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:49.259981",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: 57_Repo_Sync_Auditor.py",
-        "description": "Aparece en 2 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:49.266159",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: engine.py",
-        "description": "Aparece en 5 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 5 ubicaciones"
-    },
-    {
-      "timestamp": "2026-06-27T17:16:54.456471",
-      "issue": {
-        "severity": "MEDIUM",
-        "category": "structure",
-        "path": "Script duplicado: __init__.py",
-        "description": "Aparece en 29 ubicaciones",
-        "suggestion": "Consolidar o eliminar duplicados"
-      },
-      "success": true,
-      "method": "auto",
-      "issue_hash": "medium|structure|aparece en 29 ubicaciones"
+      "suggestion": "Source 'social_mentions' consistently scoring low (category: warning). Review and improve content strategy for this source."
     }
   ]
 }

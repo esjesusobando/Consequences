@@ -1,0 +1,99 @@
+{
+  "certification_id": "cert_20260714",
+  "timestamp": "2026-07-15T02:02:56.584879+00:00",
+  "status": "FAIL",
+  "total": 12,
+  "passed": 10,
+  "failed": 2,
+  "skipped": 0,
+  "duration_sec": 70.08,
+  "results": [
+    {
+      "name": "config_paths",
+      "status": "PASS",
+      "duration_sec": 0.62,
+      "critical": true,
+      "output": "Validating PersonalOS paths...\n[OK] 84/84 paths OK\n[WARN] 0 paths reference dead 04_Operations/"
+    },
+    {
+      "name": "sync_copies",
+      "status": "FAIL",
+      "duration_sec": 0.84,
+      "critical": true,
+      "output": "[WARN] 1 file(s) drifted:\n  05_Scripts/00_HUBs/03_Scripts_Os/config_paths.py: DIFFERENT (hash mismatch)",
+      "error": "[INFO] Source (B): C:\\Users\\sebas\\Desktop\\Think_Different\n[INFO] Dest   (A): C:\\Users\\sebas\\01_Personal_Os"
+    },
+    {
+      "name": "system_mapper",
+      "status": "PASS",
+      "duration_sec": 19.83,
+      "critical": true,
+      "output": " [5/7] HUB Catalog...\n  [6/7] Workflow Graph...\n  [7/7] Hook Registry...\n\nâœ… Manifest generado en: 01_Personal_Os\\05_Scripts\\02_Agent_Teams_Lite\\00_Manifest\n   Total archivos: 8 (7 manifest + README)"
+    },
+    {
+      "name": "sota_integrity",
+      "status": "PASS",
+      "duration_sec": 0.93,
+      "critical": true,
+      "output": "======\n\n===========================================\n SOTA INTEGRITY: PASSED (9/9)\n===========================================\n\nðŸ“„ Reporte: 03_Resultado/04_Reportes/sota_integrity_20260714_220318.txt"
+    },
+    {
+      "name": "parallel_audit",
+      "status": "PASS",
+      "duration_sec": 41.0,
+      "critical": true,
+      "output": "OK"
+    },
+    {
+      "name": "session_init",
+      "status": "PASS",
+      "duration_sec": 0.69,
+      "critical": true,
+      "output": "OK"
+    },
+    {
+      "name": "telemetry",
+      "status": "PASS",
+      "duration_sec": 0.64,
+      "critical": false,
+      "output": ">> Telemetry Hub -- FASE 7.1"
+    },
+    {
+      "name": "skill_chain",
+      "status": "FAIL",
+      "duration_sec": 0.89,
+      "critical": true,
+      "output": "    \"detail\": \"write + read match\"\n    },\n    {\n      \"name\": \"dry_run_skips_execution\",\n      \"passed\": true,\n      \"detail\": \"completed\"\n    }\n  ],\n  \"passed\": 4,\n  \"failed\": 4,\n  \"status\": \"fail\"\n}",
+      "error": "22:04:01 | INFO     | skill_chain |   [STEP] bad: exit 1\n22:04:01 | INFO     | skill_chain |   [DRY-RUN] Would execute: exit 1\n22:04:01 | INFO     | skill_chain | === SMOKE TEST: 4/8 passed [FAIL] ==="
+    },
+    {
+      "name": "output_eval",
+      "status": "PASS",
+      "duration_sec": 0.72,
+      "critical": true,
+      "output": "      \"detail\": \"Score: 100\"\n    },\n    {\n      \"name\": \"synonyms_boost_completeness\",\n      \"passed\": true,\n      \"detail\": \"Score: 100\"\n    }\n  ],\n  \"passed\": 10,\n  \"failed\": 0,\n  \"status\": \"pass\"\n}"
+    },
+    {
+      "name": "curation_filter",
+      "status": "PASS",
+      "duration_sec": 1.11,
+      "critical": true,
+      "output": "OK"
+    },
+    {
+      "name": "signal_aggregator",
+      "status": "PASS",
+      "duration_sec": 1.92,
+      "critical": true,
+      "output": "OK"
+    },
+    {
+      "name": "prototype_studio",
+      "status": "PASS",
+      "duration_sec": 0.89,
+      "critical": true,
+      "output": "OK"
+    }
+  ],
+  "score": "10/12"
+}

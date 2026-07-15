@@ -1,0 +1,17 @@
+name: "SEO Audit"
+description: "Auditoría SEO completa de un sitio web"
+trigger: "auditar"
+timeout_per_step: 180
+steps:
+  - name: "seo_audit"
+    command: "content_pipeline.py draft --topic {topic} --type audit"
+    required: true
+    timeout: 180
+  - name: "verificador-datos"
+    command: "verificador-datos --input {prev_output}"
+    required: true
+    timeout: 60
+  - name: "humanizador"
+    command: "humanizador --input {prev_output}"
+    required: false
+    timeout: 60

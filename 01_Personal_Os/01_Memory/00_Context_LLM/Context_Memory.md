@@ -102,3 +102,48 @@ Think_Different/
 - [ ] 12 scripts necesitan migración a path sentinel
 - [ ] Consolidar `.agent/` backup con `archive/` (decisión del usuario)
 - [ ] 4 SOTA engines stubs — funcionales pero sin lógica real
+
+---
+
+## 🧠 PersonalOS v5.1.0 — Estado Actual (2026-07-14)
+
+### Qué es este OS
+PersonalOS es un sistema operativo personal con IA que ejecuta tareas automáticamente, aprende de resultados y mejora solo. No es un chatbot — es un sistema cerrado.
+
+### Componentes principales (construidos en esta sesión)
+- **Skill Chain Engine** (`skill_chain.py`, 1029 líneas) — Ejecuta cadenas de skills automáticamente
+- **Prototype Studio** (`prototype_studio.py`, 584 líneas) — Crea prototipos funcionales en minutos
+- **Curation Filter** (`curation_filter.py`, 437 líneas) — Clasifica señales del mundo exterior
+- **Signal Aggregator** (`signal_aggregator.py`, 487 líneas) — Agrega señales de múltiples fuentes
+- **Output Evaluator** (`output_eval.py`, 505 líneas) — Evalúa calidad de outputs (score 0-100)
+- **Disaster Recovery** (`engram_snapshot/restore/verify.py`) — Backup y restore de Engram
+- **Benchmarks** (`benchmark_baseline.py`) — Baselines de performance
+- **Session Init Test** (`session_init_test.py`) — Suite pre-sesión
+- **Certification Suite** (`certify_10_10.py`) — Validador maestro
+- **Onboarding** (`onboarding_checklist.py`, `no_se_por_donde_empezar.py`) — TUI + NL recommendation
+
+### Loop AI Native (Modelo Theo Taba)
+```
+CAPTURE → CURATE → EXECUTE → EVAL → SHIP → SIGNAL → LEARN → REPEAT
+```
+El sistema se cierra solo. Cada ejecución alimenta la siguiente.
+
+### Chains disponibles
+- `proposal_chain` — market-proposal → humanizador → verificador → analytics
+- `content_chain` — draft → humanizador → review → publish
+- `audit_chain` — seo-audit → verificador → humanizador
+- `prototype_chain` — hypothesis → build → test → labs
+
+### Comandos clave
+```bash
+python skill_chain.py run <chain> --param value
+python prototype_studio.py run --idea "X" --brand Y
+python content_pipeline.py run --topic "X" --platform linkedin
+python output_eval.py evaluate --input file.md --type content
+python certify_10_10.py --verbose
+python no_se_por_donde_empezar.py --question "X"
+```
+
+### Estado de planes
+- PLAN_OS_10_10.md: Sprints 1-5 (Sprint 4.2 Dashboard pendiente)
+- PLAN_AI_NATIVE.md: Fases 1-4 completas (2.4 Cron y 4.3 Dashboard pendientes)

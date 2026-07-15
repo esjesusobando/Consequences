@@ -1,46 +1,47 @@
-# 02_Knowledge — Personal OS v5.0 Knowledge Base
+# 02_Knowledge — Base de Conocimiento
 
-**Version:** v5.0 SOTA
-**Last updated:** 2026-07-03 — Path audit, structural alignment
-**Status:** Active
+## Qué hay aquí
+Templates, docs, configs, referencias. El conocimiento estructurado del OS.
 
----
+## Cuándo usarlo
+- Para encontrar templates de documentos
+- Para configuraciones del sistema
+- Para documentación de procesos
 
-## Structure
+## Cómo acceder
+- `04_Config/` — configuraciones
+- `04_Docs/` — documentación
+- `02_Templates/` — templates reutilizables
 
-```
-02_Knowledge/
-├── 00_Examples_Personal_Os/    # Tutorials, workflows, example files
-├── 01_Research/                # Tech research, SOTA rankings
-├── 02_Docs/                    # Official documentation (audits, runbooks, ATL)
-├── 03_Templates/               # 📄 Plantillas operativas (propuestas, ofertas, etc.)
-├── 03_Unicorn/                 # Unicorn Engineering — 6 areas SOTA
-│   ├── 01_Pm/                  # Project Management
-│   ├── 02_Pdm/                 # Product Management
-│   ├── 03_Product_Design/      # UX, wireframes, Design Sprint
-│   ├── 04_Art_Director/        # Visual, branding, design system
-│   ├── 05_Aipm/                # AI patterns, agents, context engineering
-│   └── 06_Engineering/         # Full-stack, architecture, code
-├── 04_Invictus/                # Invictus web project resources
-└── 05_Anthropic/               # Anthropic SDK and API resources
-```
-
-> ⚠️ Nota: `03_Templates/` y `03_Unicorn/` comparten prefijo numérico por diseño — Templates son archivos operativos, Unicorn es knowledge base.
-> `02_Perfiles_Team` fue eliminado en una sesion anterior. El indice salta de 01 a 03.
+## QUÉ NO HACER
+- ❌ No modificar configs sin entender el impacto
+- ❌ No mezclar conocimiento personal con del proyecto
 
 ---
 
-## Proposito
+## 🧠 Componentes AI Native (v5.1.0)
 
-Almacena **documentacion de referencia, investigacion, specs y notas** que las tareas y skills necesitan.
+### Archivos de referencia rápida
 
-| Tipo         | Ejemplos                                  |
-| ------------ | ----------------------------------------- |
-| Specs        | Requisitos de proyecto, specs de features |
-| Research     | Analisis de mercado, hallazgos tecnicos   |
-| Process docs | How-tos, checklists, runbooks             |
-| Unicorn KB   | Decisions, lessons, patterns por area     |
+| Componente | Archivo | Propósito |
+|------------|---------|-----------|
+| Skill Chains | `../05_Scripts/00_HUBs/03_Scripts_Os/skill_chain.py` | Ejecuta flujos automatizados |
+| Prototype Studio | `../05_Scripts/00_HUBs/03_Scripts_Os/prototype_studio.py` | Crea prototipos funcionales |
+| Curation Filter | `../05_Scripts/00_HUBs/03_Scripts_Os/curation_filter.py` | Clasifica señales |
+| Signal Aggregator | `../05_Scripts/00_HUBs/03_Scripts_Os/signal_aggregator.py` | Agrega métricas |
+| Output Evaluator | `../05_Scripts/00_HUBs/03_Scripts_Os/output_eval.py` | Evalúa calidad |
+| DR Snapshot | `../05_Scripts/00_HUBs/03_Scripts_Os/engram_snapshot.py` | Backup Engram |
+| DR Restore | `../05_Scripts/00_HUBs/03_Scripts_Os/engram_restore.py` | Restore Engram |
+| Benchmarks | `../05_Scripts/00_HUBs/03_Scripts_Os/benchmark_baseline.py` | Performance baselines |
+| Certification | `../05_Scripts/00_HUBs/03_Scripts_Os/certify_10_10.py` | Validador maestro |
+| Onboarding | `../05_Scripts/00_HUBs/03_Scripts_Os/onboarding_checklist.py` | TUI de onboarding |
 
----
+### Chain Definitions
+Ubicación: `00_Core/02_Tools/02_Skills/00_System_Core/05_Skill_Chains/`
+- proposal_chain.yaml
+- content_chain.yaml
+- audit_chain.yaml
+- prototype_chain.yaml
 
-*Think Different PersonalOS v6.1 — Conocimiento activo 2026-04-15*
+### Reglas de curation
+Ubicación: `04_Config/curation_rules.yaml`

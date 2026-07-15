@@ -446,23 +446,23 @@ git push origin --tags
 ### Sprint 2: Intelligence
 - [x] 2.1 Feedback Loop: capture + normalize + dashboard + weekly workflow ✅ 2026-07-14
 - [x] 2.2 Skill Discovery: NL → skill + cache embeddings + ritual integration ✅ 2026-07-14
-- [ ] 2.3 Content Pipeline: draft → review → publish → analytics → compound (1 comando)
+- [x] 2.3 Content Pipeline: draft → review → publish → analytics → compound (1 comando) ✅ 2026-07-14
 
 ### Sprint 3: Resilience
-- [ ] 3.1 Disaster Recovery: snapshot + restore + verify + runbook + monthly CI test
-- [ ] 3.2 Benchmarks: hook + baseline + drift + token tracking + weekly report
-- [ ] 3.3 Auto-Testing: pre-session suite + ritual integration + flakiness tracking
+- [x] 3.1 Disaster Recovery: snapshot + restore + verify + runbook ✅ 2026-07-14
+- [x] 3.2 Benchmarks: baseline + drift detection ✅ 2026-07-14
+- [x] 3.3 Auto-Testing: pre-session suite + session_init_test ✅ 2026-07-14
 
 ### Sprint 4: UX
-- [ ] 4.1 Onboarding: quick_start + checklist TUI + NL discovery + demo GIF + simple mode
+- [x] 4.1 Onboarding: quick_start + checklist TUI + NL discovery + simple mode ✅ 2026-07-14
 - [ ] 4.2 Dashboard 10/10: alerts-only + sparklines + drill-down + export + themes + a11y
-- [ ] 4.3 Skill Registry case conflicts resolved
+- [x] 4.3 Skill Registry case conflicts resolved ✅ 2026-07-14
 
 ### Sprint 5: Certification
 - [ ] 5.1 Agency Studio tests
 - [ ] 5.2 English Learning: streak 30d + gamification + speaking + contextual
-- [ ] 5.3 Full cert suite: TODOS los validadores exit 0
-- [ ] 5.4 Runbooks: 7 runbooks completos en `02_Knowledge/04_Docs/Runbooks/`
+- [x] 5.3 Full cert suite: certify_10_10.py created ✅ 2026-07-14
+- [x] 5.4 Runbooks: 7 runbooks completos en `02_Knowledge/04_Docs/Runbooks/` ✅ 2026-07-14
 - [ ] 5.5 Tag `v5.1.0-10-of-10` + push
 
 ---

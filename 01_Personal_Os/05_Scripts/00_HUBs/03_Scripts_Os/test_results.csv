@@ -1,0 +1,6 @@
+query,top_skill,confidence,path,suggested_command,needs_clarification
+quiero analizar competidores SEO,market,0.3667,C:\Users\sebas\.config\opencode\skills\market\SKILL.md,Load skill 'market' and execute: quiero analizar competidores SEO,yes
+necesito crear un post para LinkedIn,none,0,,,yes
+how do I debug this error,ce-debug,0.55,C:\Users\sebas\.pi\agent\skills\ce-debug\SKILL.md,Load skill 'ce-debug' and execute: how do I debug this error,yes
+quiero automatizar un workflow con n8n,automatizacion,0.44,C:\Users\sebas\Desktop\Think_Different\.claude\skills\04_Automatizacion\SKILL.md,Load skill 'automatizacion' and execute: quiero automatizar un workflow con n8n,yes
+necesito revisar mi sitio web,none,0,,,yes

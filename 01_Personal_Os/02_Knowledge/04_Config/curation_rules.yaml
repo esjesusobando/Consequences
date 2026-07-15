@@ -1,0 +1,53 @@
+# Curation Rules for Signal Classification
+# PersonalOS v5.0 — Capture + Signal Pipeline (Fase 2+4)
+# Edit this file to customize classification behavior
+
+classification:
+  actionable_keywords:
+    - "action required"
+    - "deadline"
+    - "please review"
+    - "urgent"
+    - "TODO"
+    - "must fix"
+    - "blocking"
+  reference_keywords:
+    - "for your reference"
+    - "FYI"
+    - "background"
+    - "context"
+    - "informational"
+  noise_patterns:
+    - "unsubscribe"
+    - "newsletter"
+    - "marketing"
+    - "no-reply"
+    - "donotreply"
+    - "automated"
+
+deduplication:
+  window_hours: 24
+  fingerprint_algorithm: "sha256"
+  fingerprint_length: 16
+
+priority_weights:
+  actionable: 1.0
+  reference: 0.5
+  noise: 0.0
+
+routes:
+  actionable: "daily_inbox"
+  reference: "brain_folder"
+  noise: "archive"
+
+aggregator_weights:
+  content_analytics: 0.30
+  proposal_conversion: 0.25
+  prototype_feedback: 0.20
+  social_mentions: 0.25
+
+thresholds:
+  negative_signal: 40
+
+empty_inbox:
+  behavior: "silent_exit"

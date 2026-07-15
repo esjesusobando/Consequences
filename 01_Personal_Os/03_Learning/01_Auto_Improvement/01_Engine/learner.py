@@ -18,12 +18,17 @@ class Learner:
 
     def _load(self) -> Dict:
         """Carga aprendizajes guardados"""
+        default = {"patterns": [], "fixes_history": [], "signal_patterns": []}
         if self.storage.exists():
             try:
-                return json.loads(self.storage.read_text(encoding='utf-8'))
+                data = json.loads(self.storage.read_text(encoding='utf-8'))
+                # Ensure signal_patterns key exists for backward compat
+                if "signal_patterns" not in data:
+                    data["signal_patterns"] = []
+                return data
             except:
-                return {"patterns": [], "fixes_history": []}
-        return {"patterns": [], "fixes_history": []}
+                return default
+        return default
 
     def _save(self):
         """Guarda aprendizajes"""
@@ -194,6 +199,91 @@ class Learner:
             "patterns_learned": patterns_count
         }
 
+    def learn_from_signal(self, signal_report: dict, min_occurrences: int = 3) -> list:
+        """Analyze signal report for negative signals and extract patterns.
+
+        Args:
+            signal_report: A signal report dict (from signal_aggregator output)
+                with keys: sources, composite_score, trends, timestamp.
+            min_occurrences: Minimum times a source must appear negative
+                before a pattern is extracted (default: 3).
+
+        Returns:
+            List of extracted patterns/suggestions (NEVER auto-applied).
+        """
+        threshold = 40  # default negative_signal threshold
+        composite = signal_report.get("composite_score", 100)
+        sources = signal_report.get("sources", {})
+        suggestions = []
+        sources_with_negatives = False
+
+        if composite >= threshold:
+            return suggestions
+
+        # Ensure signal_patterns key exists
+        if "signal_patterns" not in self.learnings:
+            self.learnings["signal_patterns"] = []
+
+        # Check each source for negative signals
+        for source_name, source_data in sources.items():
+            score = source_data.get("score", 100)
+            if score >= threshold:
+                continue
+
+            sources_with_negatives = True
+
+            # Fingerprint: source + category (score bucket)
+            category = "critical" if score < 20 else "warning"
+            fp = f"{source_name}:{category}"
+
+            # Find existing or create new pattern entry
+            existing = None
+            for sp in self.learnings["signal_patterns"]:
+                if sp.get("fingerprint") == fp:
+                    existing = sp
+                    break
+
+            now = datetime.now().isoformat()
+            if existing:
+                existing["count"] = existing.get("count", 0) + 1
+                existing["last_seen"] = now
+                existing["scores"].append(score)
+            else:
+                self.learnings["signal_patterns"].append({
+                    "fingerprint": fp,
+                    "source": source_name,
+                    "issue_type": category,
+                    "count": 1,
+                    "first_seen": now,
+                    "last_seen": now,
+                    "scores": [score],
+                    "suggestion": (
+                        f"Source '{source_name}' consistently scoring low "
+                        f"(category: {category}). Review and improve "
+                        f"content strategy for this source."
+                    ),
+                })
+
+            # Check if threshold reached for pattern extraction
+            entry = existing or self.learnings["signal_patterns"][-1]
+            if entry["count"] >= min_occurrences:
+                avg_score = sum(entry.get("scores", [])) / len(entry.get("scores", [1]))
+                suggestion = (
+                    f"[PATTERN] Source '{source_name}' has {entry['count']} negative "
+                    f"signals (avg score: {avg_score:.1f}). "
+                    f"Suggestion: {entry.get('suggestion', 'Review source quality.')}"
+                )
+                suggestions.append(suggestion)
+                print(f"\n{'='*60}")
+                print(f"SUGGESTION (NOT auto-applied):")
+                print(f"  {suggestion}")
+                print(f"{'='*60}\n")
+
+        if suggestions or sources_with_negatives:
+            self._save()
+
+        return suggestions
+
     def report(self) -> str:
         """Genera reporte de aprendizaje"""
         stats = self.get_stats()
@@ -224,7 +314,47 @@ class Learner:
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Learner — Auto-Improvement Engine")
+    subparsers = parser.add_subparsers(dest="command")
+
+    # Default: report
+    subparsers.add_parser("report", help="Show learning report")
+
+    # learn-from-signal subcommand
+    sig_parser = subparsers.add_parser("learn-from-signal",
+                                        help="Analyze signal report for negative patterns")
+    sig_parser.add_argument("--signal", type=str, required=True,
+                            help="JSON string or path to signal_report_*.json file")
+    sig_parser.add_argument("--min-occurrences", type=int, default=3,
+                            help="Minimum negative signals before pattern extraction (default: 3)")
+
+    args = parser.parse_args()
+
     learner = Learner()
+
+    if args.command == "learn-from-signal":
+        # Load signal report
+        signal_input = args.signal
+        if Path(signal_input).exists():
+            with open(signal_input, "r", encoding="utf-8") as f:
+                signal_report = json.load(f)
+        else:
+            try:
+                signal_report = json.loads(signal_input)
+            except json.JSONDecodeError:
+                print(f"Error: --signal must be a valid JSON string or file path")
+                return 1
+
+        suggestions = learner.learn_from_signal(signal_report,
+                                                min_occurrences=args.min_occurrences)
+        if not suggestions:
+            print("No actionable patterns found (all sources above threshold or below min occurrences).")
+        else:
+            print(f"\n{suggestions.__len__()} pattern(s) extracted.")
+        return 0
+
+    # Default: report + demo
     print(learner.report())
 
     # Demo record

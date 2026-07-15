@@ -1,0 +1,21 @@
+name: "Proposal Generation"
+description: "Genera propuesta profesional completa — market-proposal, humanizacion, verificacion"
+trigger: "nueva propuesta para cliente"
+timeout_per_step: 120
+steps:
+  - name: "market-proposal"
+    command: "market-proposal --client {client} --context {context}"
+    required: true
+    timeout: 120
+  - name: "humanizador"
+    command: "humanizador --input {prev_output}"
+    required: true
+    timeout: 60
+  - name: "verificador-datos"
+    command: "verificador-datos --input {prev_output}"
+    required: true
+    timeout: 60
+  - name: "content_analytics"
+    command: "content_analytics track --id {chain_id}"
+    required: false
+    timeout: 30

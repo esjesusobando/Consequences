@@ -313,25 +313,25 @@ Agregar pestaña "Signal" que muestre:
 ## 📋 CHECKLIST MAESTRO
 
 ### Fase 1: Skill Chains + Brain
-- [ ] 1.1 `skill_chain.py` — engine de chains secuenciales
-- [ ] 1.2 Chain definitions YAML (4 chains pre-built)
-- [ ] 1.3 Brain READMEs (6 carpetas)
-- [ ] 1.4 Integración en `04_Ritual_Hub.py`
+- [x] 1.1 `skill_chain.py` — engine de chains secuenciales ✅ 2026-07-14
+- [x] 1.2 Chain definitions YAML (4 chains pre-built) ✅ 2026-07-14
+- [x] 1.3 Brain READMEs (6 carpetas) ✅ 2026-07-14
+- [x] 1.4 Integración en `04_Ritual_Hub.py` (--simple) ✅ 2026-07-14
 
 ### Fase 2: Capture + Curation
-- [ ] 2.1 `capture_pipeline.py` — multi-source capture
-- [ ] 2.2 `curation_filter.py` — classification + routing
-- [ ] 2.3 `curation_rules.yaml` — configurable rules
+- [x] 2.1 `capture_external_signals.py` — multi-source capture (ya existía) ✅
+- [x] 2.2 `curation_filter.py` — classification + routing ✅ 2026-07-14
+- [x] 2.3 `curation_rules.yaml` — configurable rules ✅ 2026-07-14
 - [ ] 2.4 Cron setup (Task Scheduler)
 
 ### Fase 3: Labs + Eval
-- [ ] 3.1 `labs_page.py` — prototipos rapidos + feedback
-- [ ] 3.2 `output_eval.py` — quality scoring per output
-- [ ] 3.3 Integración eval en skill chains
+- [x] 3.1 `prototype_studio.py` — prototipos rapidos + feedback ✅ 2026-07-14
+- [x] 3.2 `output_eval.py` — quality scoring per output ✅ 2026-07-14
+- [x] 3.3 Integración eval en skill chains (--eval flag) ✅ 2026-07-14
 
 ### Fase 4: Signal Loop
-- [ ] 4.1 `signal_aggregator.py` — multi-source signals
-- [ ] 4.2 Auto-learning from negative signals
+- [x] 4.1 `signal_aggregator.py` — multi-source signals ✅ 2026-07-14
+- [x] 4.2 Auto-learning from negative signals (learner.py edit) ✅ 2026-07-14
 - [ ] 4.3 Dashboard unificado con pestaña Signal
 
 ---

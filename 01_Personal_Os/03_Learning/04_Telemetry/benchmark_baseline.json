@@ -1,0 +1,145 @@
+{
+  "computed_at": "2026-07-15T01:54:16.406756+00:00",
+  "source_files": [
+    "signals.json",
+    "signals_normalized.json"
+  ],
+  "total_signals": 30,
+  "metrics": {
+    "blog.avg_time_on_page": {
+      "p50": 125.0,
+      "p90": 125.0,
+      "p99": 125.0,
+      "min": 125.0,
+      "max": 125.0,
+      "mean": 125.0,
+      "count": 2
+    },
+    "blog.bounce_rate": {
+      "p50": 42.5,
+      "p90": 42.5,
+      "p99": 42.5,
+      "min": 42.5,
+      "max": 42.5,
+      "mean": 42.5,
+      "count": 2
+    },
+    "blog.pageviews": {
+      "p50": 2100.0,
+      "p90": 2100.0,
+      "p99": 2100.0,
+      "min": 2100.0,
+      "max": 2100.0,
+      "mean": 2100.0,
+      "count": 2
+    },
+    "linkedin.engagement_rate": {
+      "p50": 3.2,
+      "p90": 3.2,
+      "p99": 3.2,
+      "min": 3.2,
+      "max": 3.2,
+      "mean": 3.2,
+      "count": 2
+    },
+    "linkedin.followers": {
+      "p50": 1250.0,
+      "p90": 1250.0,
+      "p99": 1250.0,
+      "min": 1250.0,
+      "max": 1250.0,
+      "mean": 1250.0,
+      "count": 2
+    },
+    "linkedin.post_impressions": {
+      "p50": 4500.0,
+      "p90": 4500.0,
+      "p99": 4500.0,
+      "min": 4500.0,
+      "max": 4500.0,
+      "mean": 4500.0,
+      "count": 2
+    },
+    "newsletter.click_rate": {
+      "p50": 4.7,
+      "p90": 4.7,
+      "p99": 4.7,
+      "min": 4.7,
+      "max": 4.7,
+      "mean": 4.7,
+      "count": 2
+    },
+    "newsletter.open_rate": {
+      "p50": 38.2,
+      "p90": 38.2,
+      "p99": 38.2,
+      "min": 38.2,
+      "max": 38.2,
+      "mean": 38.2,
+      "count": 2
+    },
+    "newsletter.subscribers": {
+      "p50": 450.0,
+      "p90": 450.0,
+      "p99": 450.0,
+      "min": 450.0,
+      "max": 450.0,
+      "mean": 450.0,
+      "count": 2
+    },
+    "twitter.engagement_rate": {
+      "p50": 2.1,
+      "p90": 2.1,
+      "p99": 2.1,
+      "min": 2.1,
+      "max": 2.1,
+      "mean": 2.1,
+      "count": 2
+    },
+    "twitter.followers": {
+      "p50": 890.0,
+      "p90": 890.0,
+      "p99": 890.0,
+      "min": 890.0,
+      "max": 890.0,
+      "mean": 890.0,
+      "count": 2
+    },
+    "twitter.impressions": {
+      "p50": 12000.0,
+      "p90": 12000.0,
+      "p99": 12000.0,
+      "min": 12000.0,
+      "max": 12000.0,
+      "mean": 12000.0,
+      "count": 2
+    },
+    "youtube.avg_view_duration": {
+      "p50": 45.3,
+      "p90": 45.3,
+      "p99": 45.3,
+      "min": 45.3,
+      "max": 45.3,
+      "mean": 45.3,
+      "count": 2
+    },
+    "youtube.subscribers": {
+      "p50": 320.0,
+      "p90": 320.0,
+      "p99": 320.0,
+      "min": 320.0,
+      "max": 320.0,
+      "mean": 320.0,
+      "count": 2
+    },
+    "youtube.total_views": {
+      "p50": 15000.0,
+      "p90": 15000.0,
+      "p99": 15000.0,
+      "min": 15000.0,
+      "max": 15000.0,
+      "mean": 15000.0,
+      "count": 2
+    }
+  }
+}
