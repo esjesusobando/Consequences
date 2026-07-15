@@ -88,6 +88,7 @@ const TOOLS: ToolDef[] = [
 import { IMPORTED_PROMPTS } from '../data/importedPrompts';
 import SkillsLibrary from './SkillsLibrary';
 import { ConsequenceTabs } from './tabs/ConsequenceTabs';
+import ProductCreator from './ProductCreator';
 
 // ── Seed data ─────────────────────────────────────────────────────
 
