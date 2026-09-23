@@ -28,4 +28,4 @@ Detailed notes and thoughts.
 - [[ ]]
 
 ---
-**Links:** [[01_Capture|Capture]]
+**Links:** [[00_Inbox|Capture]]

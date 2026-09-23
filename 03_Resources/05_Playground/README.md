@@ -4,7 +4,7 @@
 
 ## Qué es
 
-El vault se organiza top-down por carpetas numeradas (01_Capture → 06_Excalidraw). Los hubs de categorías complementan la navegación: **agregan** notas por su propiedad `categories` sin duplicarlas ni moverlas de su carpeta original.
+El vault se organiza top-down por carpetas numeradas (00_Inbox → 06_Excalidraw). Los hubs de categorías complementan la navegación: **agregan** notas por su propiedad `categories` sin duplicarlas ni moverlas de su carpeta original.
 
 - Una nota vive en UNA sola carpeta.
 - Puede pertenecer a VARIAS categorías mediante la propiedad `categories`.

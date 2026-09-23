@@ -1,6 +1,6 @@
 ---
 type: hub
-categories: [03_Reference]
+categories: [03_Resources]
 ---
 
 # Admin, finance, HR agents

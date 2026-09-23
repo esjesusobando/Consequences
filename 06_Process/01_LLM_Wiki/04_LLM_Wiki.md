@@ -49,7 +49,7 @@ El LLM Wiki es un directorio de archivos markdown generado por LLM que:
 
 ## Uso en Oband_Os
 - Fuentes en `00_Inbox/01_Raw/`
-- Wiki en `02_Process/01_LLM_Wiki/`
+- Wiki en `06_Process/01_LLM_Wiki/`
 - Schema en `02_Process/02_Schema/CLAUDE.md`
 - Index en `index.md`
 - Log en `log.md`

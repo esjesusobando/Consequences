@@ -68,7 +68,7 @@
 - `04_Daily/2026-09/2026-09-22.md` (creada)
 - `Consequences/BACKLOG.md` (creada)
 - `01_Personal_Os/02_Knowledge/LOG.md` — actualizado en Think_Different
-- `02_Process/01_LLM_Wiki/Log.md` — actualizado aquí
+- `06_Process/01_LLM_Wiki/Log.md` — actualizado aquí
 
 ---
 *Última actualización: 2026-09-22*
