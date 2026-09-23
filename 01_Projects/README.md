@@ -3,13 +3,35 @@
 > ⚠️ **PROTECCIÓN**: Estos proyectos son conocimiento académico y de laboratorio.
 > Ningún proyecto se elimina sin triple aprobación.
 
-## Estructura Think_Different → Obsidian
+## Estructura
 
-- **OS**: 00_Backups_Os, 06_Process, 02_Areas
-- **Laboratorio**: 04_Operations/05_Projects/01_Projects_Lab
-- **Resultados**: 03_Resultado/00_Proyectos
+```
+01_Projects/
+├── 00_Think_Labs/          ← Proyectos de Think_Different
+│   ├── 00_Side_Project/    (Oil drilling-calculator)
+│   ├── 01_Efrain_World/    (Juego y diseño)
+│   ├── 02_Cassette/        (Proyecto Cassette)
+│   ├── 04_Macano_Rest/     (App de restaurante Next.js)
+│   ├── 05_OBAND/           (Sitio web OIM)
+│   ├── 06_OIM_Original/    (Sitio web OIM original)
+│   ├── 07_Backup_OIM/      (Backup OIM)
+│   ├── 08_Elite_Portfolio/ (Portfolio de élite)
+│   ├── 09_Valeria/         (Proyecto Valeria)
+│   ├── Oil/                (Motor de inteligencia de perforación)
+│   ├── Oil Brain/          (Análisis de pozos)
+│   ├── docs/               (Documentación técnica)
+│   ├── drilling_calculator_integrated.jsx
+│   ├── WALKTHROUGH_REPORT.md
+│   └── README_00_Proyectos.md
+├── 02_Consequences/        ← Proyecto Consequences
+├── 03_Centurion/           ← Proyecto Centurion
+├── 04_Renacimiento_Digital/ ← Proyecto Renacimiento Digital
+├── 05_Personal_Os_App/     ← Proyecto Personal OS App
+├── index.md                ← Este índice
+└── README.md
+```
 
-## Proyectos Replicados
+## Proyectos en 00_Think_Labs/
 
 | # | Proyecto | Descripción |
 |---|----------|-------------|
@@ -24,7 +46,6 @@
 | 09 | Valeria | Proyecto Valeria |
 | Oil | Motor Oil | Motor de inteligencia de perforación |
 | Oil Brain | Brain | Análisis de pozos |
-| docs | Documentación | Docs técnicos |
 
 ## Archivos Importantes
 

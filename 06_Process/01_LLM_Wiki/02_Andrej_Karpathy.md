@@ -37,7 +37,7 @@ AI researcher and former Director of AI at Tesla. Creator of the LLM Wiki patter
 ## Conexiones
 - [[LLM_Wiki|LLM Wiki]] - Patrón base
 - [[Obsidian|Obsidian]] - Herramienta de notas
-- [[Claude|Claude]] - LLM para mantenimiento
+- [[01_Projects/00_Think_Labs/05_OBAND/CLAUDE|Claude]] - LLM para mantenimiento
 
 ## Fuentes
 - [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)

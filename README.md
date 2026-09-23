@@ -8,7 +8,7 @@
 | # | Carpeta | Descripción |
 |---|---------|-------------|
 | 00 | Inbox | Bandeja de entrada (3 archivos numerados) |
-| 01 | Projects | Proyectos activos |
+| 01 | Projects | Proyectos universitarios (00_Think_Labs, 02_Consequences, 03_Centurion, 04_Renacimiento_Digital, 05_Personal_Os_App) |
 | 02 | Areas | Áreas de conocimiento (00_Engram_Sync a 11_Sesiones) |
 | 03 | Resources | Recursos de investigación (01_AI_Research_OS a 12_README) |
 | 04 | Archive | Archivo histórico: 00_Backups_Os, Context_Memory (21 archivos), Obsidian_Pre_Backup |

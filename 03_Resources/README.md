@@ -14,7 +14,7 @@ Cerebro de investigación viva — metodología AI Research OS.
 | 06 | Migracion_Segundo_Cerebro | Plan de migración |
 | 07 | From_Think_Different | Contenido migrado desde Think_Different |
 | 08 | Graph_Engineering | Ingeniería de grafos |
-| 09 | Platzi | Cursos Platzi (5 cursos + transcript) |
+| 09 | Platzi | Cursos Platzi (6 cursos + transcript) |
 | 10 | Templates | Plantillas de documentos |
 | 11 | Excalidraw | Diagramas y visualizaciones |
 | 12 | README | Este README |

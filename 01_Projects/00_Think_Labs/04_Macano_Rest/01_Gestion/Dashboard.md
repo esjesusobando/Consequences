@@ -11,7 +11,7 @@
 
 ## Acceso Rápido
 
-- [Objetivos](./Objetivos.md) Ver objetivos del gerente
+- [Objetivos](Objetivos.md) Ver objetivos del gerente
 
 - --
 
