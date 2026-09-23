@@ -14,12 +14,12 @@
 | Metodología | Trigger | Ubicación | Estado |
 |------------|---------|-----------|--------|
 | **LLM Wiki + AI Research OS** | `ingest [source]` | `06_Process/01_LLM_Wiki/` | ✅ OPERATIVO |
-| **AI Research OS (Paul Iusztin)** | `research [tema]` | `03_Resources/02_Research/` | ✅ OPERATIVO |
+| **AI Research OS (Paul Iusztin)** | `research [tema]` | `03_Resources/02_Coding_Agent_Architectures/` | ✅ OPERATIVO |
 | **Steph Ango Method** | `daily` / `hábito [nombre]` | `04_Daily/` | ✅ OPERATIVO |
-| **Research Skills (Obsidian)** | `research:command` | `03_Resources/02_Research/` | ✅ OPERATIVO |
-| **Categories/MOC** | `categorizar [nota] en [categoría]` | `03_Resources/04_Playground/` | ✅ OPERATIVO |
-| **Zinking Tone** | `zinking [texto]` | `03_Resources/01_Knowledge/01_Content/` | ✅ OPERATIVO |
-| **Engram Sync** | `mem_save` / `mem_search` | `03_Resources/01_Knowledge/Engram_Sync.md` | ✅ OPERATIVO |
+| **Research Skills (Obsidian)** | `research:command` | `03_Resources/02_Coding_Agent_Architectures/` | ✅ OPERATIVO |
+| **Categories/MOC** | `categorizar [nota] en [categoría]` | `03_Resources/05_Playground/` | ✅ OPERATIVO |
+| **Zinking Tone** | `zinking [texto]` | `03_Resources/01_AI_Research_OS/01_Content/` | ✅ OPERATIVO |
+| **Engram Sync** | `mem_save` / `mem_search` | `03_Resources/01_AI_Research_OS/Engram_Sync.md` | ✅ OPERATIVO |
 
 ---
 
@@ -38,7 +38,7 @@
 | # | Ítem | Descripción | Ubicación | Estado |
 |---|------|-------------|-----------|--------|
 | 4 | **LLM Wiki Sync** | Mantener `06_Process/01_LLM_Wiki/index.md` actualizado con las fuentes procesadas | `06_Process/01_LLM_Wiki/` | ✅ OPERATIVO |
-| 5 | **Index.md Mantenimiento** | Actualizar `03_Resources/02_Research/index.md` con nuevos artifacts | `03_Resources/02_Research/` | ✅ OPERATIVO |
+| 5 | **Index.md Mantenimiento** | Actualizar `03_Resources/02_Coding_Agent_Architectures/index.md` con nuevos artifacts | `03_Resources/02_Coding_Agent_Architectures/` | ✅ OPERATIVO |
 | 6 | **Obsidian.md Wiki** | Mantener `06_Process/01_LLM_Wiki/Obsidian.md` actualizado con notas del vault | `06_Process/01_LLM_Wiki/Obsidian.md` | ✅ OPERATIVO |
 | 7 | **Web Clipper Setup** | Configurar Obsidian Web Clipper extensión para captura rápida | `00_Inbox/` | ✅ CONFIGURADO |
 
@@ -48,12 +48,12 @@
 
 | # | Ítem | Descripción | Ubicación | Estado |
 |---|------|-------------|-----------|--------|
-| 8 | **AI Research OS Deep Dive** | Implementar `03_Resources/02_Research/01_AI_Research_OS/` completamente | `03_Resources/02_Research/` | 📝 EN PROGRESO |
-| 9 | **Categories/MOC Hubs** | Completar `03_Resources/04_Playground/` con hubs: OS, Conocimiento, Investigación, Dirección | `03_Resources/04_Playground/` | 📝 EN PROGRESO |
-| 10 | **Knowledge Base Consolidation** | Consolidar `03_Resources/01_Knowledge/` con patterns, conventions, learnings | `03_Resources/01_Knowledge/` | 📝 EN PROGRESO |
+| 8 | **AI Research OS Deep Dive** | Implementar `03_Resources/02_Coding_Agent_Architectures/01_AI_Research_OS/` completamente | `03_Resources/02_Coding_Agent_Architectures/` | 📝 EN PROGRESO |
+| 9 | **Categories/MOC Hubs** | Completar `03_Resources/05_Playground/` con hubs: OS, Conocimiento, Investigación, Dirección | `03_Resources/05_Playground/` | 📝 EN PROGRESO |
+| 10 | **Knowledge Base Consolidation** | Consolidar `03_Resources/01_AI_Research_OS/` con patterns, conventions, learnings | `03_Resources/01_AI_Research_OS/` | 📝 EN PROGRESO |
 | 11 | **NotebookLM Integration** | Conectar `research:nlm` skill con vault para transcripciones y notas | `06_Process/01_LLM_Wiki/NotebookLM.md` | 📝 EN PROGRESO |
-| 12 | **Readwise Sync** | Sincronizar highlights de Readwise con el vault | `03_Resources/01_Knowledge/` | 📝 EN PROGRESO |
-| 13 | **Engram ↔ Obsidian Sync** | Automatizar sincronización de learnings clave entre vault y Engram | `03_Resources/01_Knowledge/Engram_Sync.md` | 📝 EN PROGRESO |
+| 12 | **Readwise Sync** | Sincronizar highlights de Readwise con el vault | `03_Resources/01_AI_Research_OS/` | 📝 EN PROGRESO |
+| 13 | **Engram ↔ Obsidian Sync** | Automatizar sincronización de learnings clave entre vault y Engram | `03_Resources/01_AI_Research_OS/Engram_Sync.md` | 📝 EN PROGRESO |
 | 14 | **Daily Review Workflow** | Implementar flujo `daily` → `review daily` → `meta [meta]` completo | `04_Daily/` | 📝 EN PROGRESO |
 
 ---
@@ -62,11 +62,11 @@
 
 | # | Ítem | Descripción | Ubicación | Estado |
 |---|------|-------------|-----------|--------|
-| 15 | **MIGRATION_NOTE.md** | Verificar y actualizar `03_Resources/02_Research/MIGRATION_NOTE.md` | `03_Resources/02_Research/` | 📝 PENDIENTE |
-| 16 | **Zinking Tone Full Integration** | Completar integración de `03_Resources/01_Knowledge/01_Content/00_Zinking_Tone.md` | `03_Resources/01_Knowledge/01_Content/` | 📝 PENDIENTE |
-| 17 | **Daily Notes Archival** | Mover notas diarias antiguas de `04_Daily/` a `03_Resources/03_Archive/` | `04_Daily/`, `03_Resources/03_Archive/` | 📝 PENDIENTE |
-| 18 | **Graph Engineering** | Implementar `03_Resources/02_Research/07_Graph_Engineering/` | `03_Resources/02_Research/` | 📝 PENDIENTE |
-| 19 | **Obsidian CLI Integration** | Usar `research:obsidian` skill para gestión programmatica del vault | `03_Resources/02_Research/` | 📝 PENDIENTE |
+| 15 | **MIGRATION_NOTE.md** | Verificar y actualizar `03_Resources/02_Coding_Agent_Architectures/MIGRATION_NOTE.md` | `03_Resources/02_Coding_Agent_Architectures/` | 📝 PENDIENTE |
+| 16 | **Zinking Tone Full Integration** | Completar integración de `03_Resources/01_AI_Research_OS/01_Content/00_Zinking_Tone.md` | `03_Resources/01_AI_Research_OS/01_Content/` | 📝 PENDIENTE |
+| 17 | **Daily Notes Archival** | Mover notas diarias antiguas de `04_Daily/` a `04_Archive/` | `04_Daily/`, `04_Archive/` | 📝 PENDIENTE |
+| 18 | **Graph Engineering** | Implementar `03_Resources/02_Coding_Agent_Architectures/07_Graph_Engineering/` | `03_Resources/02_Coding_Agent_Architectures/` | 📝 PENDIENTE |
+| 19 | **Obsidian CLI Integration** | Usar `research:obsidian` skill para gestión programmatica del vault | `03_Resources/02_Coding_Agent_Architectures/` | 📝 PENDIENTE |
 | 20 | **Steph Ango Method Full** | Implementar flujo completo de hábitos y revisión diaria | `04_Daily/` | 📝 PENDIENTE |
 
 ---
@@ -142,7 +142,7 @@ Consequences/
 | Oband_Os (Obsidian) | Think_Different | Estado |
 |---------------------|-----------------|--------|
 | `06_Process/01_LLM_Wiki/` | `01_Personal_Os/02_Knowledge/06_Research/` | ✅ SYNCED (2026-08-29) |
-| `03_Resources/02_Research/` | `PLAN_3D_Anticolision.md` → `03_Resources/02_Research/` | 🔄 PENDING |
+| `03_Resources/02_Coding_Agent_Architectures/` | `PLAN_3D_Anticolision.md` → `03_Resources/02_Coding_Agent_Architectures/` | 🔄 PENDING |
 | `04_Daily/` | `00_Winter_is_Coming/` daily notes | ✅ SEPARADOS |
 
 > **Nota:** La sincronización es manual por ahora. El protocolo automático Think_Different ↔ Oband_Os fue eliminado durante la reorganización a 6 carpetas.
@@ -153,8 +153,8 @@ Consequences/
 
 - **Daily notes:** 3 notas en `04_Daily/2026-09/`
 - **Wiki pages:** 10+ pages en `06_Process/01_LLM_Wiki/`
-- **Research areas:** 7 carpetas en `03_Resources/02_Research/`
-- **Knowledge areas:** 10 carpetas en `03_Resources/01_Knowledge/`
+- **Research areas:** 7 carpetas en `03_Resources/02_Coding_Agent_Architectures/`
+- **Knowledge areas:** 10 carpetas en `03_Resources/01_AI_Research_OS/`
 - **Research skills:** 7 skills activas (`research:*`)
 - **Methodologies:** 7 metodologías documentadas en README.md
 

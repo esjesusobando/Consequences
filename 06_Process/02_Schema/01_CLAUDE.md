@@ -10,7 +10,7 @@
 ├── 02_Inbox/         ← Cosas por procesar
 └── 03_Attachments/   ← Medios (imágenes, PDFs)
 
-02_Process/           ← Lo que el LLM organiza
+06_Process/           ← Lo que el LLM organiza
 ├── 01_LLM_Wiki/      ← Wiki (páginas generadas por LLM)
 │   ├── index.md      ← Catálogo de contenido
 │   ├── log.md        ← Registro cronológico
@@ -20,15 +20,21 @@
 └── 02_Schema/        ← Reglas (este archivo)
     └── CLAUDE.md
 
-03_Reference/         ← Lo que ya está organizado
-├── 01_Knowledge/     ← Lo que ya aprendí
-├── 02_Research/      ← Investigación activa
-├── 03_Archive/       ← Completado
-└── 04_Playground/    ← Sandbox
+03_Resources/         ← Lo que ya está organizado
+├── 01_AI_Research_OS ← Motor de investigación AI
+├── 02_Coding_Agent_Architectures ← Arquitecturas de agentes
+├── 03_Custom_URLs    ← URLs personalizados
+├── 04_Deep_Research_Example ← Investigación activa
+├── 05_Playground     ← Sandbox
+├── 06_Migracion_Segundo_Cerebro ← Plan de migración
+├── 07_From_Think_Different ← Contenido migrado desde Think_Different
+├── 08_Graph_Engineering ← Ingeniería de grafos
+├── 09_Platzi         ← Cursos Platzi (6 cursos + transcript)
+├── 10_Templates      ← Plantillas de documentos
+└── 11_Excalidraw     ← Diagramas y visualizaciones
 
-04_Daily/             ← Notas diarias
-05_Templates/         ← Plantillas
-06_Excalidraw/        ← Diagramas
+04_Archive/            ← Archivo histórico (Backups, Context_Memory, Obsidian_Pre_Backup)
+05_Daily/              ← Notas diarias (YYYY-MM/DDD.md)
 ```
 
 ## Flujo de Trabajo
@@ -37,7 +43,7 @@
 ```
 Tú: Guardas artículo en 00_Inbox/01_Raw/archivo.md
 Tú: Dices "ingest archivo.md"
-Yo: Leo → Creo páginas en 02_Process/01_LLM_Wiki/ → Actualizo index.md → Registro en log.md
+Yo: Leo → Creo páginas en 06_Process/01_LLM_Wiki/ → Actualizo index.md → Registro en log.md
 ```
 
 ### 2. QUERY (Tú preguntas → Yo respondo)
