@@ -207,6 +207,7 @@
   },
   "active": "1f6834ba265367bd",
   "lastOpenFiles": [
+    "RESEARCH_OS_INTEGRATION.md",
     "03_Resources/01_AI_Research_OS/INTEGRATION_PLAN.md",
     "03_Resources/01_AI_Research_OS/DEPENDENCIES.md",
     "03_Resources/01_AI_Research_OS/README_workshop.md",
@@ -251,7 +252,6 @@
     "03_Resources/01_AI_Research_OS/example_3_ingest_links",
     "03_Resources/01_AI_Research_OS/example_1_deep_research/research-agentic-harness-placeholder.md",
     "03_Resources/01_AI_Research_OS/example_1_deep_research/prompt.md",
-    "03_Resources/01_AI_Research_OS/example_1_deep_research",
-    "01_Projects/00_Think_Labs/README_00_Proyectos.md"
+    "03_Resources/01_AI_Research_OS/example_1_deep_research"
   ]
 }
