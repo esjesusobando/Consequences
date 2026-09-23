@@ -1,0 +1,27 @@
+topic: AI Research OS
+created: '2026-07-30T22:30:48'
+last_updated: '2026-07-30T22:30:48'
+input_summary: Transcript del video de Paul Iusztin y Louis-Fran�ois Bouchard sobre AI Research OS
+rounds_completed: 1
+total_sources: 1
+total_wiki_pages: 0
+sources:
+- uri_highlights: null
+  uri_full: null
+  uri_source_page: null
+  assets: []
+  original_path: raw/2026-07-30-youtube-convierte-10994-notas-en-memoria.md
+  origin: youtube
+  title: Convierte 10,994 notas en memoria - AI Research OS (YouTube)
+  authors: []
+  published_date: null
+  publication: null
+  source_url: https://www.youtube.com/watch?v=ZRM_TfEZcIo
+  relevance_score: 1.0
+  summary: 'Paul Iusztin y Louis-François Bouchard explican AI Research OS: sistema de 3 capas (raw/, index, wiki/) que convierte un second brain en memoria de investigación viva usando skills para agentes.'
+  tags:
+  - second-brain
+  - research-os
+  - wiki
+  - memory
+  wiki_refs: []

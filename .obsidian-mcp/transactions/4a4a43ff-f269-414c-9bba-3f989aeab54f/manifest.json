@@ -1,0 +1,18 @@
+{
+  "id": "4a4a43ff-f269-414c-9bba-3f989aeab54f",
+  "state": "committed",
+  "createdAt": "2026-09-06T03:56:08.185Z",
+  "snapshots": [
+    {
+      "path": "Sistemas/Skills/onboarding-empleado.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "e18f993761b16f6509d9292dafedbecf401a9d80c10456d8b27aec0f605b9a90",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "e18f993761b16f6509d9292dafedbecf401a9d80c10456d8b27aec0f605b9a90"
+    }
+  ],
+  "completedAt": "2026-09-06T03:56:08.246Z"
+}

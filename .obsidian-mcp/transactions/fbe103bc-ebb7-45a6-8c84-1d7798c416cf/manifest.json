@@ -1,0 +1,18 @@
+{
+  "id": "fbe103bc-ebb7-45a6-8c84-1d7798c416cf",
+  "state": "committed",
+  "createdAt": "2026-09-06T01:39:35.889Z",
+  "snapshots": [
+    {
+      "path": "Skills/Review - Curso IA 2026 Skills Ranking.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "528dbae44eee2c688a0073349a31c915ef9824fb3d343e4b01c40235433d6460",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "528dbae44eee2c688a0073349a31c915ef9824fb3d343e4b01c40235433d6460"
+    }
+  ],
+  "completedAt": "2026-09-06T01:39:35.994Z"
+}

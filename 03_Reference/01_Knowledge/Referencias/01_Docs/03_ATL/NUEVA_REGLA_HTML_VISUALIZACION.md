@@ -1,0 +1,8 @@
+---
+source: 'C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\02_Knowledge\02_Docs\01_Docs\03_ATL\NUEVA_REGLA_HTML_VISUALIZACION.md'
+sync_source: "C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\02_Knowledge\02_Docs\01_Docs\03_ATL\NUEVA_REGLA_HTML_VISUALIZACION.md"
+sync_date: "2026-08-01T00:55:48.786960"
+sync_updated: true
+---
+
+## Nueva Regla: Visualización HTML Obligatoria para Todos los Resultados\n\n**Fecha:** 2026-06-01\n**Alcance:** Todos los resultados de habilidades, workflows, entradas de conocimiento y salidas de agentes deben incluir un archivo HTML de visualización.\n\n### Especificaciones:\n1. **HTML Genérico:** Cada resultado debe producir un archivo  en el mismo directorio que el resultado principal.\n2. **Simulación Instagram:** Cuando el resultado esté relacionado con contenido social, insights de marketing o publicaciones simuladas, debe generar una interfaz idéntica a Instagram (móvil y escritorio).\n3. **Ubicación:** Los archivos HTML se almacenarán junto al resultado en la estructura de conocimiento existente.\n\n### Implementación Inmediata:\n- Actualizar  para incluir generación de HTML de salida\n- Crear plantilla base para visualización HTML genérica\n- Desarrollar componente de simulación de Instagram para resultados sociales\n- Integrar en workflows de Learning Always y Document Alignment\n\n### Ejemplos de Aplicación:\n- Entrada de conocimiento de YouTube →  con resumen visual\n- Resultado de skill de análisis →  con métricas y gráficos\n- Insight para redes sociales →  con interfaz real de IG\n\n**Nota:** Esta regla aplica a partir de ahora. Los resultados existentes no requieren retroactividad pero se encourage agregar visualización HTML cuando se revisen o actualicen.

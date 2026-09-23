@@ -1,0 +1,18 @@
+{
+  "id": "ff04b3f9-abb1-4ff1-8ecf-a5180c2aa505",
+  "state": "committed",
+  "createdAt": "2026-09-22T11:55:40.422Z",
+  "snapshots": [
+    {
+      "path": "04_Daily/2026-09-21/02_Ponytail_Dedup_Huashu.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "834243ef4776d234ad78b5d3e7245ed494092b9ec29ee5069c864a04a4b332c6",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "834243ef4776d234ad78b5d3e7245ed494092b9ec29ee5069c864a04a4b332c6"
+    }
+  ],
+  "completedAt": "2026-09-22T11:55:40.475Z"
+}

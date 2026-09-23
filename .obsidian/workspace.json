@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "e57c4fd898b1c9d9",
+    "type": "split",
+    "children": [
+      {
+        "id": "5cdcfc3d2401ae86",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc5be6c366b14e09",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          },
+          {
+            "id": "1f6834ba265367bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "415d77fe10d357f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "8107be5ebb662b3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86ad89d17fa482d6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "d4e3d7f8f53da5ea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "b2964d0d725f4cc9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 231.1050033569336
+  },
+  "right": {
+    "id": "d74f9acc2fda40b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "becfe1201af17a24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "555d03880f2ad36c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          },
+          {
+            "id": "788b1bdd0b0679fe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "6138cfab48a540a5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "dcec63640eefeef7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "2ef1fe66c37fa143",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "612538332a6d8cc8",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 280.29998779296875,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "daily-notes:Abrir la nota de hoy": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "switcher:Abrir selector rápido": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
+    }
+  },
+  "active": "1f6834ba265367bd",
+  "lastOpenFiles": [
+    "Obsidian_Pre_Backup/PLAN_MIGRACION_PAR.md",
+    "Obsidian_Pre_Backup/Log.md",
+    "Obsidian_Pre_Backup/index.yaml",
+    "Obsidian_Pre_Backup/README_Obsidian_Pre_Migration.md",
+    "Obsidian_Pre_Backup/index.md",
+    "Obsidian_Pre_Backup",
+    "00_Backups_Os/Winter_Is_Coming/BACKLOG_Oband_Os.md",
+    "00_Backups_Os/Winter_Is_Coming/GOALS.md",
+    "00_Backups_Os/Root/RENACIMIENTO_DIGITAL.md",
+    "00_Backups_Os/Root/GUIA_RENACIMIENTO_DIGITAL.md",
+    "00_Backups_Os/Winter_Is_Coming/README.md",
+    "00_Backups_Os/README.md",
+    "02_Process/01_LLM_Wiki/index.md",
+    "04_Daily/index.md",
+    "03_Reference/index.md",
+    "03_Reference/04_Playground/index.md",
+    "03_Reference/04_Playground/Direccion.md",
+    "03_Reference/04_Playground/Conocimiento.md",
+    "Notes.md",
+    "BACKLOG.md",
+    "00_Backups_Os/Root/02_Renacimiento_Digital_Base.md",
+    "00_Backups_Os/Root/01_Guia_de_Renacimiento_Digital.md",
+    "00_Backups_Os/Root/Skills/Review - Curso IA 2026 Skills Ranking.md",
+    "00_Backups_Os/Root/Structure_v1.0.0.md",
+    "00_Backups_Os/Root/README.md",
+    "00_Backups_Os/Root/OS_DIRECTORY.md",
+    "00_Backups_Os/Root/Excalidraw_Log.log",
+    "00_Backups_Os/Root/CLAUDE.md",
+    "00_Backups_Os/Root/CHANGELOG.md",
+    "00_Backups_Os/Root/04_Excalidraw_Log.log",
+    "00_Backups_Os/Root",
+    "00_Backups_Os/Excalidraw_Log.log",
+    "sedpw5ia0",
+    "00_Backups_Os/Winter_Is_Coming/00_Complemento_Leer/merge_agents.py",
+    "00_Backups_Os/Winter_Is_Coming/Skills",
+    "00_Backups_Os/Winter_Is_Coming/00_Complemento_Leer"
+  ]
+}

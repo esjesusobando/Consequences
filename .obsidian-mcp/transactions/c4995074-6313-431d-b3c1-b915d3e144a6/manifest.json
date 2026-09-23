@@ -1,0 +1,18 @@
+{
+  "id": "c4995074-6313-431d-b3c1-b915d3e144a6",
+  "state": "committed",
+  "createdAt": "2026-09-20T17:54:01.886Z",
+  "snapshots": [
+    {
+      "path": "03_Reference/01_Knowledge/00_Shared_Org/Tools/Claude_Real_Video.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "cabb1ea5980f63a3f6098b7dd6e4561ae73cd28e2b07a41539c7318107275b1e",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "cabb1ea5980f63a3f6098b7dd6e4561ae73cd28e2b07a41539c7318107275b1e"
+    }
+  ],
+  "completedAt": "2026-09-20T17:54:01.954Z"
+}

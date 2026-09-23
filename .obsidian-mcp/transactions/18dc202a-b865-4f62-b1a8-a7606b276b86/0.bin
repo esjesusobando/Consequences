@@ -1,0 +1,15 @@
+## [2026-09-20] session | AGENTS.md Restore + Documentation
+
+**Noche (21:00-22:00)**
+- AGENTS.md restaurado desde git history (commit `fae5eaea0`, 279 líneas)
+- Versión completa restaurada: Engram Protocol + Persona + Projects + Pre-Commit Rule + Review CLI Fallback
+- Los 3 sitios de logging actualizados (OS LOG.md, Obsidian Log.md, Backlog)
+
+**Contenido restaurado:**
+- Engram Persistent Memory Protocol (proactive save, delivery guarantee, session close)
+- Persona rules (Senior Architect, 15+ years, GDE & MVP)
+- Active Projects (OIM Website, Think_Different, Tools)
+- Pre-Commit Doc & README Rule
+- Review CLI Fallback (5 known gotchas)
+
+---

@@ -1,0 +1,28 @@
+---
+source: "C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\02_Knowledge\05_Frameworks\09_Unicorn\06_Engineering\bugfixes\2026-03-20_Script_Numbering_Conflicts.md"
+sync_source: "C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\02_Knowledge\02_Docs\Frameworks\09_Unicorn\06_Engineering\bugfixes\2026-03-20_Script_Numbering_Conflicts.md"
+sync_date: "2026-08-01T00:55:48.053608"
+sync_updated: true
+---
+
+## Critical: Script Numbering Conflicts in 03_Scripts_Os
+
+### Context
+Audit found 03_Scripts_Os has severe numbering conflicts. 75 scripts claimed but actually have duplicates, causing broken references.
+
+### Problem
+- Numbers 00, 55, 56, 57, 58, 59 have 2-3 files each
+- 3 scripts don't exist on filesystem (55_Sync_Skills, 56_Organize_Solutions, 57_Validate_Skills_Duplicates)
+- 6 scripts in other directories (Installer, Tests, Tools, Templates)
+
+### Solution
+Identify and resolve numbering conflicts. Scripts renumbered or removed as appropriate.
+
+### Location
+`04_Engine/03_Scripts_Os/`
+
+### Lesson
+Script numbering must be unique and verifiable. Use automatic validation.
+
+
+> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]

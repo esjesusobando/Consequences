@@ -1,0 +1,18 @@
+{
+  "id": "2945ff3f-5281-436f-9862-1c9e9feb8faa",
+  "state": "committed",
+  "createdAt": "2026-09-06T03:55:39.063Z",
+  "snapshots": [
+    {
+      "path": "Sistemas/Skills/contenido-multiformato.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "0e391ccc57cab3d4146bf29d0de353846a5d9affc151a83f2ceb7d213454704e",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "0e391ccc57cab3d4146bf29d0de353846a5d9affc151a83f2ceb7d213454704e"
+    }
+  ],
+  "completedAt": "2026-09-06T03:55:39.122Z"
+}

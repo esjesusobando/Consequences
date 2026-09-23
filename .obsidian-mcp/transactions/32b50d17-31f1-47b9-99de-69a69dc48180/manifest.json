@@ -1,0 +1,18 @@
+{
+  "id": "32b50d17-31f1-47b9-99de-69a69dc48180",
+  "state": "committed",
+  "createdAt": "2026-09-06T03:56:20.340Z",
+  "snapshots": [
+    {
+      "path": "Sistemas/Skills/optimizar-curriculum.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "2a160a4b24f559a7a1a9acc0a62fbb5f6186429d0af351995811fa9729c03cfd",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "2a160a4b24f559a7a1a9acc0a62fbb5f6186429d0af351995811fa9729c03cfd"
+    }
+  ],
+  "completedAt": "2026-09-06T03:56:20.401Z"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "0bf3adbc-e6a2-469e-b317-9e602c9ba033",
+  "state": "committed",
+  "createdAt": "2026-09-06T03:57:30.748Z",
+  "snapshots": [
+    {
+      "path": "Sistemas/Skills/traducir-presentacion.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "100f23d4a8bd468cd30f977cb06506da5cd0b5021472795296630819a8fdebf6",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "100f23d4a8bd468cd30f977cb06506da5cd0b5021472795296630819a8fdebf6"
+    }
+  ],
+  "completedAt": "2026-09-06T03:57:30.817Z"
+}

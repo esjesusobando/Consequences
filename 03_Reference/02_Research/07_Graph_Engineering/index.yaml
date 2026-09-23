@@ -1,0 +1,31 @@
+topic: Graph Engineering
+input_summary: "Transcript from AI Labs YouTube channel explaining graph engineering as the evolution of loop engineering for AI agent workflows, covering nodes, edges, graph shapes, verification strategies, and the second opinion pattern."
+created: 2026-08-01
+last_updated: 2026-08-01
+total_sources: 1
+total_wiki_pages: 3
+rounds_completed: 0
+
+sources:
+  - title: "AI Labs — Graph Engineering Video Transcript"
+    origin: web
+    original_path: "youtube://graph-engineering-ai-labs"
+    source_url: "https://www.youtube.com/watch?v=graph-engineering-ai-labs"
+    relevance_score: 1.0
+    summary: "Comprehensive transcript covering loop-to-graph evolution, nodes/edges, graph shapes (diamond, fan-in barrier), verification strategies (built-in skills, Skill Creator, second opinion, orchestrator), model selection for review, and Chrome Headless Shell for browser verification."
+    tags: [graph-engineering, loop-engineering, verification, claude-code, skills, orchestration]
+    author: AI Labs
+    publication: YouTube
+    published_date: "2026-08-01"
+    uri_full: "raw/2026-08-01_AI_Labs_Graph_Engineering_Transcript.md"
+    uri_source_page: "wiki/sources/2026-08-01_AI_Labs_Graph_Engineering.md"
+    uri_highlights: null
+    assets: []
+
+wiki_pages:
+  - path: wiki/overview.md
+    type: overview
+    title: Graph Engineering Research Overview
+  - path: wiki/sources/2026-08-01_AI_Labs_Graph_Engineering.md
+    type: source
+    title: AI Labs — Graph Engineering Video Transcript

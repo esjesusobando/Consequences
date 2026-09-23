@@ -1,0 +1,18 @@
+{
+  "id": "7d4f4466-802a-4850-8ee9-a03e070a8a90",
+  "state": "committed",
+  "createdAt": "2026-09-06T03:57:24.358Z",
+  "snapshots": [
+    {
+      "path": "Sistemas/Skills/seleccion-de-candidatos.md",
+      "operation": "write",
+      "entryType": "file",
+      "phase": "applied",
+      "plannedEtag": "f66b043dcdb4dfdcb7d7ca9b2824b489c64cd7dde1c8423ef64b7b1c1dfa2d85",
+      "recoverable": true,
+      "existed": false,
+      "committedEtag": "f66b043dcdb4dfdcb7d7ca9b2824b489c64cd7dde1c8423ef64b7b1c1dfa2d85"
+    }
+  ],
+  "completedAt": "2026-09-06T03:57:24.421Z"
+}
