@@ -34,6 +34,6 @@ As Louis-François Bouchard explains: "The project is the work, and your second 
 
 ## Related Pages
 
-- [Three-Layer Architecture]([[concepts/three-layer-architecture]])
-- [Context Engineering]([[concepts/context-engineering]])
-- [Memory Management]([[concepts/memory-management]])
+- [Three-Layer Architecture]([[wiki/concepts/three-layer-architecture]])
+- [Context Engineering]([[wiki/concepts/context-engineering]])
+- [Memory Management]([[wiki/concepts/memory-management]])

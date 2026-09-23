@@ -42,7 +42,7 @@ The system is intentionally rough — connectors for Google Drive, Notion, Slack
 
 ## Further Reading
 
-- [Three-Layer Architecture]([[concepts/three-layer-architecture]])
-- [Research OS Concepts]([[concepts/research-os]])
-- [Context Engineering]([[concepts/context-engineering]])
-- [YouTube Source]([[sources/youtube-convierte-10994-notas]])
+- [Three-Layer Architecture]([[wiki/concepts/three-layer-architecture]])
+- [Research OS Concepts]([[wiki/concepts/research-os]])
+- [Context Engineering]([[wiki/concepts/context-engineering]])
+- [YouTube Source]([[wiki/sources/youtube-convierte-10994-notas]])

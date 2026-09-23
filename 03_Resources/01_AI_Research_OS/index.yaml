@@ -1,7 +1,7 @@
 topic: AI Research OS
 created: '2026-07-30T22:30:48'
 last_updated: '2026-09-23T13:30:00'
-input_summary: Workshop de Paul Iusztin y Louis-François Bouchard sobre AI Research OS: sistema de 3 capas (raw/, index, wiki/) que convierte un second brain en memoria de investigación viva usando skills para agentes.
+input_summary: "Workshop de Paul Iusztin y Louis-François Bouchard sobre AI Research OS: sistema de 3 capas (raw/, index, wiki/) que convierte un second brain en memoria de investigación viva usando skills para agentes."
 workshop_repo: https://github.com/iusztinpaul/ai-research-os-workshop
 workshop_repo_stars: 154
 workshop_repo_forks: 28
@@ -59,4 +59,3 @@ wiki_refs:
   - wiki/comparisons/v1-vs-v2-vs-v3.md
   - wiki/open-questions.md
   - wiki/index.md
----

@@ -10,7 +10,7 @@ topic: AI Research OS
 
 ## What Is It?
 
-AI Research OS is a personalized research operating system built by [Paul Iusztin]([[paul-iusztin]]) and [Louis-François Bouchard]([[louis-francois-bouchard]]) that transforms a user's second brain into a living, queryable research memory. The system sits between AI agent harnesses (such as Codex Cloud and Claude Code) and a user's personal knowledge base, enabling agents to efficiently retrieve, synthesize, and compound research over time. It was introduced in the workshop video "[Convierte 10,994 notas en memoria]([[youtube-convierte-10994-notas]])" on the AI Engineer channel (2025).
+AI Research OS is a personalized research operating system built by [Paul Iusztin]([[wiki/entities/paul-iusztin]]) and [Louis-François Bouchard]([[louis-francois-bouchard]]) that transforms a user's second brain into a living, queryable research memory. The system sits between AI agent harnesses (such as Codex Cloud and Claude Code) and a user's personal knowledge base, enabling agents to efficiently retrieve, synthesize, and compound research over time. It was introduced in the workshop video "[Convierte 10,994 notas en memoria]([[youtube-convierte-10994-notas]])" on the AI Engineer channel (2025).
 
 ## Why It Exists: The Three-Version Evolution
 

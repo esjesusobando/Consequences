@@ -39,6 +39,6 @@ This layered approach means most queries are answered without ever touching the 
 
 ## Cross-References
 
-- See [Research OS]([[concepts/research-os]]) for pipeline modes
-- See [Context Engineering]([[concepts/context-engineering]]) for how layers relate to memory
-- See [Sources]([[sources/youtube-convierte-10994-notas]]) for the original video
+- See [Research OS]([[wiki/concepts/research-os]]) for pipeline modes
+- See [Context Engineering]([[wiki/concepts/context-engineering]]) for how layers relate to memory
+- See [Sources]([[wiki/sources/youtube-convierte-10994-notas]]) for the original video

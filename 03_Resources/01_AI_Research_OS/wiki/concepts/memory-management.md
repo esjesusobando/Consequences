@@ -42,6 +42,6 @@ Without memory management, every research session starts from zero. With it, eve
 
 ## Related Pages
 
-- [Context Engineering]([[concepts/context-engineering]])
-- [Research OS]([[concepts/research-os]])
-- [Three-Layer Architecture]([[concepts/three-layer-architecture]])
+- [Context Engineering]([[wiki/concepts/context-engineering]])
+- [Research OS]([[wiki/concepts/research-os]])
+- [Three-Layer Architecture]([[wiki/concepts/three-layer-architecture]])

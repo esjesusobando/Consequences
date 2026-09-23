@@ -43,6 +43,6 @@ The system deliberately avoids vector databases, knowledge graphs, and semantic 
 
 ## Related Pages
 
-- [Three-Layer Architecture]([[concepts/three-layer-architecture]])
-- [Memory Management]([[concepts/memory-management]])
-- [Research OS]([[concepts/research-os]])
+- [Three-Layer Architecture]([[wiki/concepts/three-layer-architecture]])
+- [Memory Management]([[wiki/concepts/memory-management]])
+- [Research OS]([[wiki/concepts/research-os]])

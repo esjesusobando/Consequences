@@ -57,5 +57,5 @@ The speakers note these weren't added because they don't serve the core workflow
 ## Related Pages
 
 - [AI Research OS Overview]([[overview]])
-- [Research OS]([[concepts/research-os]])
-- [Sources]([[sources/youtube-convierte-10994-notas]])
+- [Research OS]([[wiki/concepts/research-os]])
+- [Sources]([[wiki/sources/youtube-convierte-10994-notas]])

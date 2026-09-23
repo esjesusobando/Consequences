@@ -31,6 +31,6 @@ Louis advocates for simplicity and education over product polish. He deliberatel
 
 ## Related Pages
 
-- [Paul Iusztin]([[paul-iusztin]])
+- [Paul Iusztin]([[wiki/entities/paul-iusztin]])
 - [AI Research OS Overview]([[overview]])
-- [Sources]([[sources/youtube-convierte-10994-notas]])
+- [Sources]([[wiki/sources/youtube-convierte-10994-notas]])

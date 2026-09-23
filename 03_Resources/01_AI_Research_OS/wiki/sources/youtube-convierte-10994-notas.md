@@ -14,7 +14,7 @@ tags: [second-brain, research-os, wiki, memory, workshop]
 
 - **Video**: "Turn 10,994 Notes Into Memory"
 - **Channel**: AI Engineer
-- **Speakers**: [Paul Iusztin]([[paul-iusztin]]) & [Louis-François Bouchard]([[louis-francois-bouchard]])
+- **Speakers**: [Paul Iusztin]([[wiki/entities/paul-iusztin]]) & [Louis-François Bouchard]([[louis-francois-bouchard]])
 - **Published**: 2025 (transcript generated 2026-07-31)
 - **Video ID**: ZRM_TfEZcIo
 
@@ -69,6 +69,6 @@ This workshop video introduces the AI Research OS — a personalized system that
 ## Related Pages
 
 - [AI Research OS Overview]([[overview]])
-- [Three-Layer Architecture]([[concepts/three-layer-architecture]])
-- [Research OS]([[concepts/research-os]])
-- [Context Engineering]([[concepts/context-engineering]])
+- [Three-Layer Architecture]([[wiki/concepts/three-layer-architecture]])
+- [Research OS]([[wiki/concepts/research-os]])
+- [Context Engineering]([[wiki/concepts/context-engineering]])

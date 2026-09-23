@@ -31,4 +31,4 @@ Paul emphasizes that the system should be personal — anchored into personal no
 
 - [Louis-François Bouchard]([[louis-francois-bouchard]])
 - [AI Research OS Overview]([[overview]])
-- [Sources]([[sources/youtube-convierte-10994-notas]])
+- [Sources]([[wiki/sources/youtube-convierte-10994-notas]])

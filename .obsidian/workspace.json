@@ -207,6 +207,13 @@
   },
   "active": "1f6834ba265367bd",
   "lastOpenFiles": [
+    "03_Resources/01_AI_Research_OS/wiki/concepts/sedzjUXTZ",
+    "03_Resources/01_AI_Research_OS/wiki/comparisons/sedOLJqOR",
+    "03_Resources/01_AI_Research_OS/sedRJ2b82",
+    "03_Resources/01_AI_Research_OS/lint-missing-comparisons.json",
+    "03_Resources/01_AI_Research_OS/lint-missing-hubs.json",
+    "03_Resources/01_AI_Research_OS/lint-broken-links.json",
+    "03_Resources/01_AI_Research_OS/lint-orphans.json",
     "03_Resources/01_AI_Research_OS/nul",
     "03_Resources/01_AI_Research_OS/wiki/open-questions.md",
     "03_Resources/01_AI_Research_OS/wiki/comparisons/v1-vs-v2-vs-v3.md",
@@ -223,7 +230,6 @@
     "03_Resources/01_AI_Research_OS/wiki/open-questions",
     "03_Resources/01_AI_Research_OS/wiki/comparisons",
     "03_Resources/01_AI_Research_OS/wiki/entities",
-    "03_Resources/01_AI_Research_OS/wiki/concepts",
     "RESEARCH_OS_INTEGRATION.md",
     "03_Resources/01_AI_Research_OS/INTEGRATION_PLAN.md",
     "03_Resources/01_AI_Research_OS/DEPENDENCIES.md",
@@ -238,7 +244,6 @@
     "03_Resources/01_AI_Research_OS/media/example_3_obsidian.png",
     "03_Resources/01_AI_Research_OS/media/example_2_obsidian.png",
     "03_Resources/01_AI_Research_OS/media/example_1_obsidian.png",
-    "03_Resources/01_AI_Research_OS/media",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources/web-inside-neo4js-agent-memory.md",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources/web-from-vibe-coding-to-real-engineering-team.md",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources/web-building-agentic-graphrag-systems.md",
@@ -247,11 +252,6 @@
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities/claude-code.md",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/graphrag.md",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/ontology.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/knowledge-graph.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/raw"
+    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/knowledge-graph.md"
   ]
 }
