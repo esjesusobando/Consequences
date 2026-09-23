@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "tagline": "Instalación Profesional de Muebles de Oficina en Atlanta",
+    "subheadline": "Desde 2018, proporcionando servicios confiables y de alta calidad de ensamblaje y reubicación de muebles para espacios corporativos y residenciales.",
+    "cta": "Obtener una Cotización Gratis",
+    "badges": ["8+ Años", "Bilingüe", "Licenciado", "ATL"]
+  },
+  "services": [
+    {
+      "id": "cubicle",
+      "icon": "LayoutGrid",
+      "title": "Instalación de Cubículos",
+      "description": "Ensamble experto de sistemas modulares de oficina y estaciones de trabajo"
+    },
+    {
+      "id": "relocation",
+      "icon": "Package",
+      "title": "Reubicación de Oficina",
+      "description": "Desmontaje, transporte y reinstalación sin problemas"
+    },
+    {
+      "id": "executive",
+      "icon": "Desk",
+      "title": "Suite Ejecutiva y Escritorios",
+      "description": "Configuración de precisión para muebles de oficina de alta gama"
+    },
+    {
+      "id": "delivery",
+      "icon": "Truck",
+      "title": "Entrega y Ensamblaje",
+      "description": "Servicio de primera categoría desde el almacén hasta el plano final"
+    },
+    {
+      "id": "decommission",
+      "icon": "Trash2",
+      "title": "Descomiso y Liquidación",
+      "description": "Remoción profesional y disposición de activos de oficina antiguos"
+    }
+  ],
+  "about": {
+    "headline": "Experiencia en la Que Puede Confiar",
+    "body": "Con más de 8 años de experiencia en el área de Atlanta, OIM se ha establecido como un socio confiable para servicios de instalación y reubicación de muebles de oficina. Nuestro compromiso con la calidad y la confiabilidad nos ha convertido en la opción preferida para las empresas que buscan transformar su espacio de trabajo.",
+    "bilingualHighlight": "English & Español — Sirviendo a la diversa comunidad empresarial de Atlanta con comunicación fluida en ambos idiomas."
+  },
+  "gallery": {
+    "categories": ["Todos", "Corporativo", "Ejecutivo", "Antes & Después"],
+    "projects": [
+      {
+        "id": "corp-1",
+        "title": "Sede Corporativa Atlanta",
+        "description": "Instalación de Piso Completo",
+        "category": "corporate",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+      },
+      {
+        "id": "exec-1",
+        "title": "Campus Tech SV",
+        "description": "Diseño y Logística",
+        "category": "executive",
+        "image": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1925&auto=format&fit=crop"
+      },
+      {
+        "id": "before-1",
+        "title": "Centro Creativo",
+        "description": "Londres, Reino Unido",
+        "category": "beforeAfter",
+        "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
+      },
+      {
+        "id": "corp-2",
+        "title": "Wall Street Plaza",
+        "description": "Nueva York, NY",
+        "category": "corporate",
+        "image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop"
+      },
+      {
+        "id": "exec-2",
+        "title": "EcoLab Berlín",
+        "description": "Renovación Sostenible",
+        "category": "executive",
+        "image": "https://images.unsplash.com/photo-1518481612222-68bab828fd1d?q=80&w=2070&auto=format&fit=crop"
+      }
+    ]
+  },
+  "contact": {
+    "address": "3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340",
+    "formLabels": {
+      "name": "Nombre Completo",
+      "company": "Empresa",
+      "phone": "Número de Teléfono",
+      "service": "Tipo de Servicio",
+      "message": "Detalles del Proyecto",
+      "submit": "Enviar Solicitud",
+      "success": "Solicitud Enviada — Nos pondremos en contacto pronto."
+    }
+  },
+  "navigation": {
+    "portfolio": "Portafolio",
+    "services": "Servicios",
+    "process": "Proceso",
+    "insights": "Perspectivas",
+    "contact": "Contacto",
+    "getStarted": "Comenzar"
+  },
+  "footer": {
+    "description": "Servicios profesionales de instalación de muebles de oficina en Atlanta desde 2018.",
+    "services": ["Instalación", "Estrategia de Diseño", "Gestión de Activos", "Reubicación"],
+    "company": ["Portafolio", "Perspectivas", "Contacto"],
+    "locations": ["Atlanta, USA"]
+  }
+}

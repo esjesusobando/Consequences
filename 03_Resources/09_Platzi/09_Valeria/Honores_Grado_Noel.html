@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <title>Honores de Grado · Valeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --rojo: #E63946;
+            --rojo-hover: #C1121F;
+            --rojo-glow: rgba(230, 57, 70, 0.4);
+            --negro: #0A0A0A;
+            --blanco: #F5F5F5;
+            --blanco-dim: rgba(245, 245, 245, 0.7);
+            --gris: #888888;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+            --holi-c1: #FF6B6B;
+            --holi-c2: #4ECDC4;
+            --holi-c3: #FFE66D;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--negro);
+            color: var(--blanco);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ========== PARTICLE CANVAS ========== */
+        #particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        #particles.visible {
+            opacity: 1;
+        }
+
+        /* ========== HERO FIJO ========== */
+        .hero {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Imagen FIJA - se queda en su lugar mientras scrollea */
+        .hero-image-wrapper {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 60%;
+            display: block;
+            transform: scale(1.05);
+            transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .hero-image.loaded {
+            transform: scale(1);
+        }
+
+        /* Glow orbs */
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .glow-orb-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--holi-c1);
+            top: 10%;
+            left: -10%;
+        }
+
+        .glow-orb-2 {
+            width: 250px;
+            height: 250px;
+            background: var(--holi-c2);
+            top: 30%;
+            right: -5%;
+            animation-delay: -2s;
+        }
+
+        .glow-orb-3 {
+            width: 200px;
+            height: 200px;
+            background: var(--holi-c3);
+            top: 50%;
+            left: 20%;
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(20px, -20px) scale(1.05); }
+            66% { transform: translate(-10px, 15px) scale(0.95); }
+        }
+
+        /* Gradient mask */
+        .hero-gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 65%;
+            background: linear-gradient(
+                to top,
+                var(--negro) 0%,
+                rgba(10, 10, 10, 0.98) 15%,
+                rgba(10, 10, 10, 0.85) 30%,
+                rgba(10, 10, 10, 0.5) 50%,
+                transparent 75%
+            );
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        /* ========== CONTENT - SCROLLEA SOBRE LA IMAGEN ========== */
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 0 1.25rem 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 600px;
+            margin: -35vh auto 0;
+        }
+
+        /* ========== BADGE ========== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--rojo) 0%, var(--rojo-hover) 100%);
+            color: white;
+            padding: 0.55rem 1.1rem;
+            border-radius: 2rem;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            box-shadow: 0 4px 20px var(--rojo-glow);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.2s;
+            width: fit-content;
+        }
+
+        .badge svg {
+            width: 11px;
+            height: 11px;
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(10deg); }
+        }
+
+        /* ========== HEADLINE ========== */
+        .headline {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.35s;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3.5rem, 15vw, 7rem);
+            font-weight: 400;
+            line-height: 0.88;
+            letter-spacing: 0.02em;
+            color: var(--blanco);
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, var(--rojo) 0%, #FF8A9B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+            color: var(--blanco-dim);
+            margin-top: 0.4rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ========== INFO CARD ========== */
+        .info-card {
+            background: var(--glass);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.5s;
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            transition: background 0.3s ease;
+        }
+
+        .info-row:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--rojo);
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 6px var(--rojo-glow));
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-label {
+            font-size: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--gris);
+            margin-bottom: 0.2rem;
+            font-weight: 600;
+        }
+
+        .info-value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        /* ========== BUTTONS ========== */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.65s;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            padding: 1rem 1.5rem;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: none;
+            text-decoration: none;
+            letter-spacing: -0.01em;
+            min-height: 54px;
+            position: relative;
+            overflow: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.05) 50%,
+                transparent 100%
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .btn:hover::before {
+            opacity: 1;
+        }
+
+        .btn:active {
+            transform: scale(0.965) translateY(2px);
+        }
+
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .btn:hover svg {
+            transform: scale(1.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--rojo) 0%, var(--rojo-hover) 100%);
+            color: white;
+            box-shadow: 
+                0 4px 20px var(--rojo-glow),
+                0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 
+                0 8px 30px var(--rojo-glow),
+                0 4px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.965) translateY(1px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-gate {
+            background: rgba(230, 57, 70, 0.08);
+            color: white;
+            border: 1px solid rgba(230, 57, 70, 0.4);
+        }
+
+        .btn-gate:hover {
+            background: rgba(230, 57, 70, 0.15);
+            border-color: var(--rojo);
+            transform: translateY(-2px);
+        }
+
+        .btn-gate.active {
+            background: linear-gradient(135deg, var(--rojo) 0%, var(--rojo-hover) 100%);
+            border-color: transparent;
+        }
+
+        /* ========== GATE REVEAL ========== */
+        .gate-panel {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .gate-panel.active {
+            max-height: 150px;
+            opacity: 1;
+        }
+
+        .gate-content {
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.15) 0%, rgba(230, 57, 70, 0.05) 100%);
+            border: 1px solid rgba(230, 57, 70, 0.25);
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gate-content::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: translateX(-100%);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            100% { transform: translateX(100%); }
+        }
+
+        .gate-label {
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--blanco-dim);
+            margin-bottom: 0.4rem;
+        }
+
+        .gate-code {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 0.15em;
+            background: linear-gradient(135deg, var(--rojo) 0%, #FF8A9B 50%, var(--rojo) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 15px var(--rojo-glow));
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            text-align: center;
+            font-size: 0.6rem;
+            color: var(--gris);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* ========== SCROLL INDICATOR ========== */
+        .scroll-hint {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gris);
+            font-size: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            z-index: 100;
+            opacity: 1;
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-hint.hidden {
+            opacity: 0;
+            transform: translateX(-50%) translateY(20px);
+            pointer-events: none;
+        }
+
+        .scroll-hint .mouse {
+            width: 20px;
+            height: 32px;
+            border: 1.5px solid var(--gris);
+            border-radius: 10px;
+            position: relative;
+            opacity: 0.6;
+        }
+
+        .scroll-hint .wheel {
+            width: 3px;
+            height: 6px;
+            background: var(--gris);
+            border-radius: 2px;
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scrollWheel 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollWheel {
+            0%, 100% { 
+                transform: translateX(-50%) translateY(0); 
+                opacity: 1;
+            }
+            50% { 
+                transform: translateX(-50%) translateY(8px); 
+                opacity: 0.3;
+            }
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (min-width: 768px) {
+            .content {
+                padding: 0 2.5rem 5rem;
+                gap: 2rem;
+            }
+
+            .hero-image-wrapper {
+                height: 100vh;
+            }
+
+            .buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .buttons .btn {
+                flex: 1;
+                min-width: 180px;
+            }
+
+            .btn {
+                min-height: 58px;
+                font-size: 1rem;
+            }
+
+            .info-card {
+                border-radius: 1.5rem;
+            }
+
+            .info-row {
+                padding: 1.1rem 1.4rem;
+                gap: 1.25rem;
+            }
+
+            .info-icon {
+                width: 22px;
+                height: 22px;
+            }
+
+            .info-value {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: clamp(4rem, 12vw, 7rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-image {
+                object-position: center 55%;
+            }
+
+            .content {
+                margin-top: -40vh;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .content {
+                padding: 0 1rem 3rem;
+                gap: 1.25rem;
+            }
+
+            h1 {
+                font-size: clamp(3rem, 14vw, 4rem);
+            }
+
+            .btn {
+                padding: 0.9rem 1.25rem;
+                min-height: 50px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Safe area insets for notched devices */
+        @supports (padding: env(safe-area-inset-top)) {
+            .content {
+                padding-left: calc(1.25rem + env(safe-area-inset-left));
+                padding-right: calc(1.25rem + env(safe-area-inset-right));
+                padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+            }
+
+            .scroll-hint {
+                bottom: calc(1.5rem + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particles"></canvas>
+
+    <!-- HERO - IMAGEN FIJA MIENTRAS SCROLLEA -->
+    <div class="hero">
+        <div class="hero-image-wrapper">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+            <div class="glow-orb glow-orb-3"></div>
+            <img src="Little_Sister_Holi.png" alt="Honores de Grado" class="hero-image" id="heroImg">
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="content">
+            <div class="badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                Invitación Formal
+            </div>
+
+            <div class="headline">
+                <h1>HONORES<br>DE <span>GRADO</span></h1>
+                <p class="subtitle">Valeria · Mayo 2026</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <div class="info-content">
+                        <div class="info-label">Fecha</div>
+                        <div class="info-value">Sábado 09 de Mayo, 2026</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <div class="info-content">
+                        <div class="info-label">Hora</div>
+                        <div class="info-value">7:30 PM</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <div class="info-content">
+                        <div class="info-label">Lugar</div>
+                        <div class="info-value">Summerfield Community</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="https://wa.me/17866223908?text=Hola%20Yanth,%20confirmo%20mi%20asistencia%20a%20Honores%20de%20Grado" target="_blank" class="btn btn-primary" id="whatsappBtn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Confirmar Asistencia
+                </a>
+
+                <a href="https://www.google.com/maps/search/6542+SE+Twin+Oaks+Circle+Stuart+FL+34997" target="_blank" class="btn btn-secondary" id="mapsBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                    </svg>
+                    Ver Dirección
+                </a>
+
+                <button class="btn btn-gate" id="gateBtn" onclick="toggleGate()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                    <span id="gateText">Gate Code</span>
+                </button>
+            </div>
+
+            <div class="gate-panel" id="gatePanel">
+                <div class="gate-content">
+                    <div class="gate-label">Código de Entrada</div>
+                    <div class="gate-code" id="gateCode">#2424</div>
+                </div>
+            </div>
+
+            <p class="footer">Summerfield Community Associates</p>
+        </div>
+    </div>
+
+    <!-- SCROLL HINT -->
+    <div class="scroll-hint" id="scrollHint">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span>Scroll</span>
+    </div>
+
+    <script>
+        // ========== HERO IMAGE LOAD ==========
+        const heroImg = document.getElementById('heroImg');
+        heroImg.addEventListener('load', () => {
+            heroImg.classList.add('loaded');
+        });
+
+        // ========== PARTICLE SYSTEM ==========
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let particlesStarted = false;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const holiColors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#F38181', '#E63946', '#FF8A9B'];
+
+        class Particle {
+            constructor(x, y, burst = false) {
+                this.x = x || Math.random() * canvas.width;
+                this.y = y || Math.random() * canvas.height;
+                this.size = Math.random() * 2.5 + 1;
+                this.color = holiColors[Math.floor(Math.random() * holiColors.length)];
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3;
+                this.opacity = Math.random() * 0.25 + 0.1;
+                this.life = 1;
+                this.decay = burst ? 0.012 : 0.001;
+                this.isBurst = burst;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.life -= this.decay;
+
+                if (this.isBurst) {
+                    this.speedY += 0.05;
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.opacity * this.life;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function createAmbientParticles() {
+            if (particlesStarted) return;
+            particlesStarted = true;
+            particles = [];
+            for (let i = 0; i < 25; i++) {
+                particles.push(new Particle());
+            }
+            animateParticles();
+            canvas.classList.add('visible');
+        }
+
+        function burstParticles(x, y) {
+            for (let i = 0; i < 15; i++) {
+                particles.push(new Particle(x, y, true));
+            }
+            if (!particlesStarted) {
+                createAmbientParticles();
+            }
+        }
+
+        function animateParticles() {
+            if (particles.length === 0) return;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles = particles.filter(p => p.life > 0);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        // ========== GATE TOGGLE ==========
+        let gateOpen = false;
+        const btn = document.getElementById('gateBtn');
+        const text = document.getElementById('gateText');
+        const panel = document.getElementById('gatePanel');
+        const hint = document.getElementById('scrollHint');
+        const whatsappBtn = document.getElementById('whatsappBtn');
+
+        function toggleGate() {
+            gateOpen = !gateOpen;
+            if (gateOpen) {
+                panel.classList.add('active');
+                btn.classList.add('active');
+                text.textContent = 'Código Revelado';
+
+                const rect = btn.getBoundingClientRect();
+                burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            } else {
+                panel.classList.remove('active');
+                btn.classList.remove('active');
+                text.textContent = 'Gate Code';
+            }
+        }
+
+        whatsappBtn.addEventListener('click', () => {
+            const rect = whatsappBtn.getBoundingClientRect();
+            burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        });
+
+        // Activar partículas al hacer scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                hint.classList.add('hidden');
+                createAmbientParticles();
+            }
+        });
+
+        // Activar partículas en cualquier click inicial
+        document.addEventListener('click', function initParticlesOnClick() {
+            createAmbientParticles();
+            document.removeEventListener('click', initParticlesOnClick);
+        }, { once: true });
+
+        // Timeout como backup
+        setTimeout(() => {
+            createAmbientParticles();
+        }, 3000);
+    </script>
+</body>
+</html>
