@@ -66,4 +66,4 @@ sync_updated: true
 - 18_Generacion_Contenido.py = CRÍTICO para usuarios
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Planes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Planes/README]]

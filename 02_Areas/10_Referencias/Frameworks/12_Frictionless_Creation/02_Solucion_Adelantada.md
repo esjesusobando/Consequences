@@ -75,4 +75,4 @@ Toma 10 minutos AHORA y haz tu lista personal:
 **Compromiso**: Implementa AL MENOS UNA solución adelantada hoy. No mañana. Hoy.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/12_Frictionless_Creation/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/12_Frictionless_Creation/README]]

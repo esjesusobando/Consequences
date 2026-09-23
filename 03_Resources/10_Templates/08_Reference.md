@@ -33,4 +33,4 @@ Detailed notes and thoughts.
 - [[ ]]
 
 ---
-**Links:** [[03_Reference/01_Knowledge/Referencias/README|References Hub]]
+**Links:** [[03_Resources/01_AI_Research_OS/Referencias/README|References Hub]]

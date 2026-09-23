@@ -79,4 +79,4 @@ Non-negotiable: _________________________________
 **Principio LEARNING ALWAYS (207):** Este video es parte de la cultura de aprendizaje continuo
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/Claude/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/Claude/README]]

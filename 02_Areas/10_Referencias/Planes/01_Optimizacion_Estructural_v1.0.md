@@ -278,4 +278,4 @@ Cada fase es **independiente** y puede ejecutarse en cualquier orden si hay rest
 | Context Memory renaming rompe enlaces      | Usar symlinks o archivo de mapeo old→new       |
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Planes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Planes/README]]

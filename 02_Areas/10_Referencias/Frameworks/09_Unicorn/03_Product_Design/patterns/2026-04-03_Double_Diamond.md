@@ -59,4 +59,4 @@ Deliver: Launch in 2 weeks → NPS +15
 - Agentic UX: AI suggests based on patterns
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

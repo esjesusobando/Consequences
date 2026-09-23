@@ -38,4 +38,4 @@ How to avoid this in the future:
 - [ ] Checklist item 2
 
 ---
-**Links:** [[03_Reference/01_Knowledge/Aprendizajes/README|Learnings Hub]]
+**Links:** [[03_Resources/01_AI_Research_OS/Aprendizajes/README|Learnings Hub]]

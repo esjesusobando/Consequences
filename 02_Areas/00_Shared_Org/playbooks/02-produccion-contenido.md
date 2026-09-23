@@ -228,4 +228,4 @@ lecciones:
 | 1.0 | 2026-06-27 | Creación inicial | Capital Token |
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/playbooks/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/playbooks/README]]

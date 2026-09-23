@@ -124,4 +124,4 @@ Este guide define el tono, estilo y voice del OS para contenido público. Cada o
 *Voice Guide v1.0 — Think Different PersonalOS*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]

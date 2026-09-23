@@ -51,4 +51,4 @@ Technical explanation of why this happened.
 How long before we noticed? How could we detect faster?
 
 ---
-**Links:** [[03_Reference/01_Knowledge/Post_Mortems/README|Post-Mortems Hub]]
+**Links:** [[03_Resources/01_AI_Research_OS/Post_Mortems/README|Post-Mortems Hub]]

@@ -89,4 +89,4 @@ Art Director Flow 2026:
 visual, branding, design-system, creative-direction, trends, ai, 2026, silicon-valley
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

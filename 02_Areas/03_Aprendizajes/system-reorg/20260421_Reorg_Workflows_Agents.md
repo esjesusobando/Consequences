@@ -61,4 +61,4 @@ El sistema es ahora 100% jerárquico, portable y coherente con la visión de arq
 > **Aprendizaje Clave**: "Si el cambio afecta a más de 3 archivos de reglas, usa un script de refactorización global en lugar de edición manual. La integridad del orquestador depende de la paridad absoluta de los strings de ruta."
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

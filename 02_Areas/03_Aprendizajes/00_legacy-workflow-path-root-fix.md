@@ -47,4 +47,4 @@ Y se agregó al `.gitignore`:
 - `00_Workflows/01_Personal_Os/weekly_feedback_review.md` (deleted from tracking)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

@@ -105,4 +105,4 @@ Lo ejecuta el Estratega Principal (o un agente Admin delegado) cada vez que arra
 - [ ] Dashboard de métricas actualizado
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/processes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/processes/README]]

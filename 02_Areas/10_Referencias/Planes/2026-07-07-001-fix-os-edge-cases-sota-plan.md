@@ -474,4 +474,4 @@ El OS tiene 396 skills, 63 agents, 42 HUBs, 166 scripts — pero varios patrones
 - **External docs**: https://learn.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell (WMI → CIM migration)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Planes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Planes/README]]

@@ -48,7 +48,7 @@ El LLM Wiki es un directorio de archivos markdown generado por LLM que:
 - Maintenance cost near zero
 
 ## Uso en Oband_Os
-- Fuentes en `01_Capture/01_Raw/`
+- Fuentes en `00_Inbox/01_Raw/`
 - Wiki en `02_Process/01_LLM_Wiki/`
 - Schema en `02_Process/02_Schema/CLAUDE.md`
 - Index en `index.md`
@@ -58,10 +58,10 @@ El LLM Wiki es un directorio de archivos markdown generado por LLM que:
 - [[Andrej_Karpathy|Andrej Karpathy]] - Creator
 - [[RAG_vs_Wiki|RAG vs Wiki]]
 - [[Obsidian|Obsidian]]
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Source]]
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|Source]]
 
 ## Fuentes
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
 
 ---
 *Última actualización: 2026-08-02*

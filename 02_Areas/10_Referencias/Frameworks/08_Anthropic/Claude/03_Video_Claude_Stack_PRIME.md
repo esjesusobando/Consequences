@@ -89,4 +89,4 @@ $20/mes por algo mejor que la mayoría de MBAs y PhDs. Pero necesitas: curiosida
 **Regla asociada:** `00_Core/01_Rules/16_Meta_Skill_Improvement.mdc`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/Claude/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/Claude/README]]

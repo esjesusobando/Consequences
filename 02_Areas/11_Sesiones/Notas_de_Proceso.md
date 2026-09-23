@@ -1334,4 +1334,4 @@ Tras la auditoría, se ejecutaron los siguientes fixes:
 | Skill registry | ✅ 110 skills indexadas |
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Sesiones/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Sesiones/README]]

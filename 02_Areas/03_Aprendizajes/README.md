@@ -18,9 +18,9 @@ Indice de Solutions migrados desde `Think_Different/01_Personal_Os/02_Knowledge/
 **Total: 11 soluciones.**
 
 ## Navegacion
-- [[03_Reference/01_Knowledge/Patterns]] — Engineering Principles
-- [[03_Reference/01_Knowledge/Referencias/index.md|Referencias]] — Documentacion de referencia
-- [[03_Reference/01_Knowledge/Post_Mortems]] — Auditorias y health checks
-- [[03_Reference/01_Knowledge/Sesiones]] — Notas de proceso
+- [[03_Resources/01_AI_Research_OS/Patterns]] — Engineering Principles
+- [[03_Resources/01_AI_Research_OS/Referencias/index.md|Referencias]] — Documentacion de referencia
+- [[03_Resources/01_AI_Research_OS/Post_Mortems]] — Auditorias y health checks
+- [[03_Resources/01_AI_Research_OS/Sesiones]] — Notas de proceso
 
 > 🔗 Zona: [[Aprendizajes]]

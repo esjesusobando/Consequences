@@ -124,4 +124,4 @@ Antes de terminar una sesión de código:
 > **Código limpio no es una cuestión de gustos. Es eliminar fricción para que tu cerebro se enfoque en lo que importa: resolver problemas.**
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/12_Frictionless_Creation/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/12_Frictionless_Creation/README]]

@@ -93,4 +93,4 @@ py -3 -c "import json; d=json.load(open('.mcp.json')); print(len(d['mcpServers']
 *Resolucion: 2026-04-03 -- PersonalOS v6.1*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

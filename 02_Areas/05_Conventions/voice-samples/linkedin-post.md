@@ -27,4 +27,4 @@ Result: review cycle dropped from 3 days to 18 hours.
 What's your team's biggest review bottleneck?
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Conventions/voice-samples/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Conventions/voice-samples/README]]

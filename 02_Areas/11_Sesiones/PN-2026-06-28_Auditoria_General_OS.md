@@ -75,4 +75,4 @@ type: session
 *Procesado por Gentle AI SDD Orchestrator — 2026-06-28*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Sesiones/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Sesiones/README]]

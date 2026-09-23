@@ -63,7 +63,7 @@ Aplicación de gestión de conocimiento basada en markdown. Herramienta recomend
 - [[01_Projects/00_Think_Labs/05_OBAND/CLAUDE|Claude]]
 
 ## Fuentes
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
 
 ---
 *Última actualización: 2026-08-02*

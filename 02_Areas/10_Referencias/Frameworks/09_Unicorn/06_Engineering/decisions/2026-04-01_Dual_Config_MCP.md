@@ -25,4 +25,4 @@ Validate that both files exist and have the same MCPs in each audit.
 - OpenCode v1.3.13 changed `env` → `environment` (breaking change)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

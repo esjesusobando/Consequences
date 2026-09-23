@@ -276,4 +276,4 @@ sessions: id, user_id, token, expires_at
 - SDD Skills: sdd-init, sdd-explore, sdd-propose, sdd-spec, sdd-design, sdd-tasks, sdd-apply, sdd-verify, sdd-archive
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

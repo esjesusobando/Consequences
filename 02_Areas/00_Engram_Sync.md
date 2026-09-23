@@ -1,25 +1,25 @@
 # Engram Sync — Captura Automática de Learnings
 
 > **Propósito:** Sincronizar aprendizajes entre Consequences y Engram.
-> **Regla:** Cada learning importante se guarda en Engram y se refleja en `03_Reference/01_Knowledge/`.
+> **Regla:** Cada learning importante se guarda en Engram y se refleja en `03_Resources/01_AI_Research_OS/`.
 > **Principio de filtrado:** Solo se sincroniza información que suma, es vital e importante. Ruido y contenido de baja relevancia no cruzan la frontera del segundo cerebro.
 
 ## Flujo de Sincronización
 
 ```
-Consequences (03_Reference/01_Knowledge/) ──→ Engram (mem_save) ──→ Engram (persistent memory)
-Engram (mem_search) ────────────────────────────────────────────────→ Consequences (03_Reference/01_Knowledge/)
+Consequences (03_Resources/01_AI_Research_OS/) ──→ Engram (mem_save) ──→ Engram (persistent memory)
+Engram (mem_search) ────────────────────────────────────────────────→ Consequences (03_Resources/01_AI_Research_OS/)
 ```
 
 ## Tipos de Captura
 
 | Tipo | Engram Type | Destino en Consequences |
 |------|-------------|-------------------------|
-| Pattern | `pattern` | `03_Reference/01_Knowledge/Patterns/` |
-| Convention | `pattern` | `03_Reference/01_Knowledge/Conventions/` |
-| Learning | `learning` | `03_Reference/01_Knowledge/Aprendizajes/` |
-| Decision | `decision` | `03_Reference/01_Knowledge/Referencias/` |
-| Post-mortem | `bugfix` | `03_Reference/01_Knowledge/Post_Mortems/` |
+| Pattern | `pattern` | `03_Resources/01_AI_Research_OS/Patterns/` |
+| Convention | `pattern` | `03_Resources/01_AI_Research_OS/Conventions/` |
+| Learning | `learning` | `03_Resources/01_AI_Research_OS/Aprendizajes/` |
+| Decision | `decision` | `03_Resources/01_AI_Research_OS/Referencias/` |
+| Post-mortem | `bugfix` | `03_Resources/01_AI_Research_OS/Post_Mortems/` |
 
 ## Comandos de Sincronización
 

@@ -5,7 +5,7 @@
 ## Configuración
 
 ### Ubicación por defecto
-- **Carpeta:** `01_Capture/01_Raw`
+- **Carpeta:** `00_Inbox/01_Raw`
 - **Formato:** Markdown
 
 ### Template
@@ -35,14 +35,14 @@
 2. Ve a Settings
 3. Configura:
    - **Vault URL:** `obsidian://open?vault=Consequences`
-   - **Default folder:** `01_Capture/01_Raw`
+   - **Default folder:** `00_Inbox/01_Raw`
    - **Template:** (copia el template de arriba)
 
 ### 3. Clippear artículos
 1. Ve al artículo que quieres guardar
 2. Haz clic en el ícono del Web Clipper
 3. Selecciona "Clip to Obsidian"
-4. El artículo se guardará en `01_Capture/01_Raw/`
+4. El artículo se guardará en `00_Inbox/01_Raw/`
 
 ### 4. Procesar con LLM Wiki
 1. Abre OpenCode/Claude

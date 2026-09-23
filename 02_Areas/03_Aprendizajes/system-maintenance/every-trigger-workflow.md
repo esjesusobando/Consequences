@@ -28,4 +28,4 @@ Cada ciclo de trabajo debe compoundear el aprendizaje. Sin un quality gate autom
 - Los nombres de archivo numerados en workflows deben seguir la secuencia existente (16-19 existentes → 20 para el nuevo).
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

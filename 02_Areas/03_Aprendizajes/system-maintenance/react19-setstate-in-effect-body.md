@@ -66,4 +66,4 @@ Siempre que necesités leer `localStorage`/`sessionStorage` para inicializar sta
 - `Now/oim-website/src/app/page.tsx`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

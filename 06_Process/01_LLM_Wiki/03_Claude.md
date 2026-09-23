@@ -42,7 +42,7 @@ LLM de Anthropic. Herramienta recomendada por Karpathy para mantener el wiki en 
 ## Flujo de Trabajo
 
 ### Ingest
-1. Usuario drop source en `01_Capture/01_Raw/`
+1. Usuario drop source en `00_Inbox/01_Raw/`
 2. Claude lee el source
 3. Discute takeaways con usuario
 4. Crea/actualiza páginas en wiki
@@ -70,7 +70,7 @@ LLM de Anthropic. Herramienta recomendada por Karpathy para mantener el wiki en 
 - [[Obsidian|Obsidian]]
 
 ## Fuentes
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
 
 ---
 *Última actualización: 2026-08-02*

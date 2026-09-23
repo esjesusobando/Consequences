@@ -162,4 +162,4 @@ The remaining architectural issues (component extraction, conditional rendering,
 - Reference tags: `zc-ref-countdown-fix`, `zc-ref-editorial-mode`, `zc-ref-css-tokens`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

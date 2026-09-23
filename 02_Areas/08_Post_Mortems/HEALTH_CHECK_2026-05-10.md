@@ -223,4 +223,4 @@ El sistema Think Different PersonalOS v3.2 Consequences está en **PURE GREEN ST
 _Auditoría: 2026-05-10 | PersonalOS v3.2 Consequences | State of the Art Review_
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Post_Mortems/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Post_Mortems/README]]

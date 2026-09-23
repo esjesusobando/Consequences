@@ -59,4 +59,4 @@ Así como no pondrías a tu mejor ingeniero a formatear spreadsheets toda la sem
 | Análisis de datos | Opus |
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/Claude/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/Claude/README]]

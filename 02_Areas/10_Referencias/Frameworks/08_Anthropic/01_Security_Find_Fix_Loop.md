@@ -171,4 +171,4 @@ Anthropic has validated this methodology at scale:
 - [Claude Cookbook: Vulnerability Detection Agent](https://github.com/anthropics/claude-cookbooks/blob/main/claude_agent_sdk/06_The_vulnerability_detection_agent.ipynb)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/README]]

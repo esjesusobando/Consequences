@@ -38,4 +38,4 @@ tags: []
 - [ ] Comunicado al equipo
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/decisions/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/decisions/README]]

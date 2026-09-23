@@ -22,4 +22,4 @@ sync_updated: true
 > no rush, just want to make sure I'm not missing anything
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Conventions/voice-samples/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Conventions/voice-samples/README]]

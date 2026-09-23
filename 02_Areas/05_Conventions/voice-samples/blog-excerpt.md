@@ -22,4 +22,4 @@ What if tutorials embraced the mess instead of hiding it?
 Start with a broken codebase. Introduce one problem at a time. Let the learner experience the decision-making process, not just the final solution.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Conventions/voice-samples/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Conventions/voice-samples/README]]

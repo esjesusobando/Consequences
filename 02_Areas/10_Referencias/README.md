@@ -24,8 +24,8 @@ Indice de documentacion migrada desde `Think_Different/01_Personal_Os/02_Knowled
 - `04_Planes/` — 0 plan(es)
 
 ## Navegacion
-- [[03_Reference/01_Knowledge/Patterns]]
-- [[03_Reference/01_Knowledge/Aprendizajes]]
-- [[03_Reference/01_Knowledge/Post_Mortems]]
+- [[03_Resources/01_AI_Research_OS/Patterns]]
+- [[03_Resources/01_AI_Research_OS/Aprendizajes]]
+- [[03_Resources/01_AI_Research_OS/Post_Mortems]]
 
 > 🔗 Zona: [[Referencias]]

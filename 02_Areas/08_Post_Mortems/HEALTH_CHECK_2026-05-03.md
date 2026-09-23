@@ -163,4 +163,4 @@ MCP_CONFIG_AUDIT.md                       # Drift de configs MCP
 _Generated: 2026-05-03 — Think Different PersonalOS v3.1 Consequences Audit_
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Post_Mortems/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Post_Mortems/README]]

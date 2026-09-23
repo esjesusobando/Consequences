@@ -160,4 +160,4 @@ En `05_Workflows`: 4 de 6 skills tienen subdirs legacy numerados
 6. **Fase F**: Commit + cuadro antes/después
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Post_Mortems/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Post_Mortems/README]]

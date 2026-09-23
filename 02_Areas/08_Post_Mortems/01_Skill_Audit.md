@@ -175,4 +175,4 @@ Este script:
 *PersonalOS — Think Different v6.1*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Post_Mortems/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Post_Mortems/README]]

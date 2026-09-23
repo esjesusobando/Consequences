@@ -27,4 +27,4 @@ User requested to get OS to 100%.
 Verify file types before assuming format. Duplicates reduce quality.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

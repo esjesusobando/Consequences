@@ -51,4 +51,4 @@ A partir del análisis total del sistema operativo local (`Think_Different`), el
 - **3. Flujo Standup Diario (`00_Core/00_Workflows/`):** El "Morning Standup" ahora puede extraer automáticamente la "Mentalidad de Negocio" en el briefing diario utilizando los reportes alojados en esta carpeta `06_Unicorn/01_Pm`.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

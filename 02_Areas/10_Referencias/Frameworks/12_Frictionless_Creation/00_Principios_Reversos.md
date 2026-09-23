@@ -204,4 +204,4 @@ El autor trabaja MEJOR en cafeterías (ruido ambiente) que en su casa (demasiada
 > **Aplicación directa**: Este documento es materia prima. La próxima vez que construyas algo, estos principios ya están aquí. No empiezas de cero.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/12_Frictionless_Creation/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/12_Frictionless_Creation/README]]

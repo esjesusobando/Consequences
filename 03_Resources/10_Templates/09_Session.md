@@ -40,4 +40,4 @@ What I wanted to accomplish in this session.
 |       |     |          |
 
 ---
-**Links:** [[03_Reference/01_Knowledge/Sesiones/README|Session Hub]]
+**Links:** [[03_Resources/01_AI_Research_OS/Sesiones/README|Session Hub]]

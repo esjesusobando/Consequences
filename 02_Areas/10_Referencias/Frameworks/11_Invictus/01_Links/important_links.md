@@ -14,4 +14,4 @@ sync_updated: true
 - [Oban Drilling Calculator](https://obandrilling-calculator.vercel.app/)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/README]]

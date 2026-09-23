@@ -71,4 +71,4 @@ title: "Compound: Eval Harness Phase 1 + OS Cleanup"
 5. **Do not leave compound.yaml config and actual practice out of sync** — either update `compound.yaml` to point to the Memory path, or consolidate all compounds to the Knowledge path. Having two competing conventions will cause compounds to be written to the wrong directory, defeating discoverability.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

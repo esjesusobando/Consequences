@@ -25,4 +25,4 @@ Identify and resolve numbering conflicts. Scripts renumbered or removed as appro
 Script numbering must be unique and verifiable. Use automatic validation.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

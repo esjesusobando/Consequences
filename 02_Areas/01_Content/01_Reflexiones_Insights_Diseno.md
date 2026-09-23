@@ -101,4 +101,4 @@ Figma, Sketch, Adobe, Pen & Paper. Da igual. El tool no hace al designer. La ún
 *Para contenido: threads, posts, videos*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]

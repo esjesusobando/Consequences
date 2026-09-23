@@ -50,4 +50,4 @@ El sistema existente ya tiene la infraestructura para ser el Capital Token de la
 - [ ] MCP Bridge en producción
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/decisions/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/decisions/README]]

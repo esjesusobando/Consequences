@@ -13,9 +13,9 @@ El vault se organiza top-down por carpetas numeradas (01_Capture → 06_Excalidr
 
 | Hub | Categoría | Carpeta |
 |-----|-----------|---------|
-| OS | `os, sistema` | 03_Reference/01_Knowledge |
+| OS | `os, sistema` | 03_Resources/01_AI_Research_OS |
 | Conocimiento | `conocimiento, knowledge` | Knowledge, Memory, Learning |
-| Investigacion | `investigacion, research` | 03_Reference/02_Research |
+| Investigacion | `investigacion, research` | 03_Resources/02_Coding_Agent_Architectures |
 
 ## Cómo agregar una nota a un hub
 

@@ -25,4 +25,4 @@ Use these standards when creating or auditing skills. Reference GOALS.md for the
 `12_Skills_Improvement_Plan_2026-03-24.md`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

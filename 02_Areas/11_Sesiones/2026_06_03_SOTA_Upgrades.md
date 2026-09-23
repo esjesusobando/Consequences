@@ -31,4 +31,4 @@ Se ha llevado a cabo una auditoría profunda, saneamiento de rutas absolutas, y 
 - Continuar la integración profunda de los Agent Teams Lite con `Every_CE`.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Sesiones/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Sesiones/README]]

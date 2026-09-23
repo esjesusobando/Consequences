@@ -147,4 +147,4 @@ This project's **OS Conductor** (`01_Personal_Os/00_Core/02_Tools/01_Agents/00_O
 - [Bun rewrite — byteiota analysis](https://byteiota.com/bun-rust-rewrite-merged-the-13000-unsafe-block-problem/)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/README]]

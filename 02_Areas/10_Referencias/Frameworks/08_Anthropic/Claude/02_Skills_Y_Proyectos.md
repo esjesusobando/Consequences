@@ -53,4 +53,4 @@ Son **instrucciones fijas** para una tarea específica. Se ejecutan SIEMPRE igua
 - Si ya tienes un Project: puedes mover cualquier chat FUERA del Project (Settings → toggle out)
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/Claude/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/Claude/README]]

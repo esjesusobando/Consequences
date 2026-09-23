@@ -136,4 +136,4 @@ python 38_English_Metrics.py add-word --word "notwithstanding" --source "article
 - **Learning Always:** `01_Personal_Os/03_Learning/00_Shared_Org/` — part of the Learning Always ecosystem
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]

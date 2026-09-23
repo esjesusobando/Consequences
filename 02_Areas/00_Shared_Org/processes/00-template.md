@@ -55,4 +55,4 @@ tags: []
 - [ ] {{item 3}}
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/processes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/processes/README]]

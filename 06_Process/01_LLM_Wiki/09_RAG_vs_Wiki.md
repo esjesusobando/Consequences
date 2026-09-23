@@ -70,7 +70,7 @@ Comparación entre Retrieval-Augmented Generation (RAG) y el patrón LLM Wiki pa
 
 ## En Oband_Os
 - Usamos **LLM Wiki** para el second brain
-- Fuentes en `01_Capture/01_Raw/`
+- Fuentes en `00_Inbox/01_Raw/`
 - Wiki en `02_Process/01_LLM_Wiki/`
 - Schema en `02_Process/02_Schema/CLAUDE.md`
 
@@ -80,7 +80,7 @@ Comparación entre Retrieval-Augmented Generation (RAG) y el patrón LLM Wiki pa
 - [[Obsidian|Obsidian]]
 
 ## Fuentes
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
 
 ---
 *Última actualización: 2026-08-02*

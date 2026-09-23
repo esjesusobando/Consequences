@@ -549,4 +549,4 @@ AI:
 - **v1.2** (2026-07-27): Phase 0 obligatorio (Clasificación + Feedback + Aprobación). Phase 3.5 Social Media Approval Gate (ahorra tokens: solo genera si vas a publicar). Triggers actualizados: `LA go`, `/Learning`, `/LA`. Version bump a 1.2.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]

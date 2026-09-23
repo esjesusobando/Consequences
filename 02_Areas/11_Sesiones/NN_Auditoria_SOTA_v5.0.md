@@ -31,4 +31,4 @@ Se solicitó una auditoría exhaustiva y actualización integral del ecosistema 
 - El OS es ahora mucho más resiliente a fallos de casting y silenciamiento de logs, lo que fortalece la telemetría del proyecto y el auto-improvement de la iteración actual.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Sesiones/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Sesiones/README]]

@@ -126,4 +126,4 @@ Lo ejecuta el Analista Agent todos los viernes (o el último día hábil de la s
 - [ ] Dashboard de métricas actualizado
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/processes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/processes/README]]

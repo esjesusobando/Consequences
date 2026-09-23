@@ -203,4 +203,4 @@ video-analysis, agent-manager, pm-skills, lessons, management, feedback-loop, co
 *Analysis based on Shubham Saboo's 2-month experience running 8 AI agents at Unwind AI.*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

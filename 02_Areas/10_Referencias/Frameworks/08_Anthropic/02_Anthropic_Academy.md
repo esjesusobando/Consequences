@@ -96,4 +96,4 @@ Este hub es la **fuente oficial** de conocimiento sobre el ecosistema Anthropic.
 > **Próximo paso:** Explorar los cursos de Skilljar y el /learn/build-with-claude para profundizar en desarrollo con Claude.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/README]]

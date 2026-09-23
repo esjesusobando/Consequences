@@ -59,4 +59,4 @@ Ser el sistema operativo de conocimiento que permite a un equipo reducido operar
 | [TBD: proyectos de clientes] | — | — |
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/context/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/context/README]]

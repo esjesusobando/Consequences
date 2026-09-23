@@ -51,4 +51,4 @@ python -m video_intel.cli analyze "VIDEO_URL" --repo "REPO_URL"
 Production ready
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

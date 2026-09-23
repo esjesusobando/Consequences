@@ -160,4 +160,4 @@ Engineering Flow 2026:
 architecture, ai-coding, typescript, react, patterns, best-practices, 2026, silicon-valley
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

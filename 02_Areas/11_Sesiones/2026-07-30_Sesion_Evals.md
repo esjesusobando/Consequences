@@ -76,4 +76,4 @@ y se sincronizo todo al vault de Obsidian (Oband_Os).
 - `openspec/changes/archive/2026-07-30-eval-health-autopilot/` -- SDD archive
 - `Plan_Eval_Designer_Integration_v2.md` -- plan McKinnon v2
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Sesiones/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Sesiones/README]]

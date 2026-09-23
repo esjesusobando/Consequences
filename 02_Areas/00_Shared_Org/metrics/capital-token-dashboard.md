@@ -109,4 +109,4 @@ source: 'C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\03_Learning\00_Sh
 - [ ] WhatsApp integration
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/metrics/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/metrics/README]]

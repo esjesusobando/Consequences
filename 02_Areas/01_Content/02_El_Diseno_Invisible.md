@@ -145,4 +145,4 @@ Diseñá para que nunca tengan que pensar en el diseño.
 *Nota para contenido: Este piece funciona como LinkedIn post serie (5 partes) o como blog post completo.*
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]

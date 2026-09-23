@@ -28,4 +28,4 @@ More aligned with user objectives, scalable, and follows SOTA pattern of modern 
 `.agent/01_Agents/Perfiles/`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

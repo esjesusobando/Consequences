@@ -30,7 +30,7 @@ AI researcher and former Director of AI at Tesla. Creator of the LLM Wiki patter
 - **Foundations sólidos**: Design patterns, architecture, bundlers antes de frameworks
 
 ## Obras Relacionadas
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|LLM Wiki Gist]]
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|LLM Wiki Gist]]
 - NanoGPT (educational GPT implementation)
 - Karpathy's Neural Networks: Zero to Hero
 
@@ -40,7 +40,7 @@ AI researcher and former Director of AI at Tesla. Creator of the LLM Wiki patter
 - [[01_Projects/00_Think_Labs/05_OBAND/CLAUDE|Claude]] - LLM para mantenimiento
 
 ## Fuentes
-- [[../../01_Capture/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
+- [[../../00_Inbox/01_Raw/Karpathy_LLM_Wiki_Gist|Karpathy LLM Wiki Gist]] (2026-08-02)
 
 ---
 *Última actualización: 2026-08-02*

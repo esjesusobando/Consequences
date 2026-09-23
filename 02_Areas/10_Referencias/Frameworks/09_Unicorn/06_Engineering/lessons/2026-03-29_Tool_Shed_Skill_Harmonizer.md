@@ -32,4 +32,4 @@ Run Skill Harmonizer during audits to validate parity.
 `03_Scripts_Os/Tool_Fixed/`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

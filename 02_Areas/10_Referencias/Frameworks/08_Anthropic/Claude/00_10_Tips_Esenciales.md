@@ -224,4 +224,4 @@ Instalar: Chrome Store → Claude Extension → Sign in
 > **Próximos pasos**: Implementar skills, conectar Gmail/Calendar, probar Co-work, explorar Claude Code para un side project.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/08_Anthropic/Claude/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/08_Anthropic/Claude/README]]

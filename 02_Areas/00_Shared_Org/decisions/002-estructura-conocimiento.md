@@ -63,4 +63,4 @@ Se optó por nombres en inglés (playbooks, decisions, etc.) por consistencia co
 - [ ] Revisión trimestral de la taxonomía para validar que sigue funcionando
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/00_Shared_Org/decisions/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/00_Shared_Org/decisions/README]]

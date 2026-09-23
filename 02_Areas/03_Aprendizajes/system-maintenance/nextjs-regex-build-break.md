@@ -48,4 +48,4 @@ Next.js no permite grupos de captura `(...)` en los patterns `source` de `header
 - `Now/oim-website/next.config.ts`
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Aprendizajes/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Aprendizajes/README]]

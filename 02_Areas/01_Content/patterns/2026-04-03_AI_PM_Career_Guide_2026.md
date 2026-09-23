@@ -104,4 +104,4 @@ Para transitionear a AI PM:
 ai-product-management, career, skills, roadmap, 2026, silicon-valley, hiring
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]

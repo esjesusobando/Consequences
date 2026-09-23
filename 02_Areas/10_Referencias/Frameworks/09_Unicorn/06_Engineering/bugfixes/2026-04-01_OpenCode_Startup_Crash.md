@@ -21,4 +21,4 @@ Legacy `plugins` key in OpenCode config caused crash on startup.
 Deprecated keys must be removed completely. Not using them is not enough.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/Referencias/Frameworks/09_Unicorn/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/Referencias/Frameworks/09_Unicorn/README]]

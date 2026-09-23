@@ -74,4 +74,4 @@ El sistema "Carousel Master" permitirá al usuario generar carruseles completos 
 - Validar la calidad de las imágenes generadas por el agente.
 
 
-> 🔗 Zona: [[03_Reference/01_Knowledge/README]]
+> 🔗 Zona: [[03_Resources/01_AI_Research_OS/README]]
