@@ -6,11 +6,11 @@ Archivo histórico de todo lo que fue parte del sistema en versiones anteriores.
 
 | # | Carpeta | Descripción |
 |---|---------|-------------|
-| 00 | Backups_Os | Backup completo del sistema OS |
-| Context_Memory | Context_Memory | 22 archivos de contexto (01_ a 22_) |
-| Obsidian_Pre_Backup | Obsidian_Pre_Backup | Respaldo pre-migración PARA (01_ a 03_) |
-| Projects | Projects | Proyectos archivados |
-| Sessions | Sessions | Sesiones de evaluación (01_ a 02_) |
+| 00 | Backups_Os/ | Backup completo del sistema OS |
+| — | Context_Memory | 22 archivos de contexto (01_ a 22_) |
+| — | Obsidian_Pre_Backup | Respaldo pre-migración (01_ a 03_) |
+| — | Projects/ | Proyectos archivados |
+| — | Sessions/ | Sesiones de evaluación (01_ a 02_) |
 
 ## 00_Backups_Os/
 

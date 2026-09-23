@@ -8,7 +8,6 @@ Procesos y sistemas internos del OS.
 |---|---------|-------------|
 | 01 | LLM_Wiki/ | Motor de conocimiento (12 páginas) |
 | 02 | Schema/ | Configuración del sistema |
-| 03 | index.md | Este índice |
 
 ## Componentes Principales
 
