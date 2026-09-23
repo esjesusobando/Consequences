@@ -1,7 +1,7 @@
 ---
-name: research:render
+name: research-render
 description: Generate a multi-form answer (Marp slide deck, matplotlib chart, Obsidian Canvas, or social content brief) from one or more wiki pages in a research directory and file the output back into wiki/renders/. Outputs compound — they appear in index.yaml/index.md and can be re-rendered idempotently. One run can render several forms at once. Use when the user wants to "make a slide deck on X", "chart the comparison of A vs B", "build a canvas of how these concepts connect", "render this as Marp", or "extract a post idea / content brief from my research". Trigger on phrasings like "render", "slide deck", "chart", "canvas", "marp", "brief", "post idea", "extract ideas for social".
-user-invocable: true
+user_invocable: true
 ---
 
 # Research Render

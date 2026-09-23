@@ -1,7 +1,6 @@
 ---
-name: research:readwise
+name: readwise-cli
 description: How to use the Readwise CLI — access highlights, documents, and your entire reading library from the command line
-user-invocable: true
 ---
 
 # Readwise CLI

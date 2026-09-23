@@ -1,7 +1,7 @@
 ---
-name: research:research
+name: research
 description: Build, extend, AND query a persistent LLM-maintained wiki for any research topic. Conversational entry point that routes between four modes - query (fast read-only answer from existing wiki), append (ingest the sources the user provided, no discovery), deep (explicit discovery/deep research at a fast/light/deep depth preset), and init (create a new research directory). Ingests from your knowledge sources (Obsidian vault + Readwise + NotebookLM + GitHub repos + YouTube videos + web seeds + user-dropped PDFs) and maintains a wiki layer (per-source pages, entities, concepts, comparisons, overview, synthesis, open questions, contradictions). Use for any research interaction - first-time research on a topic, "what do I have on X", "load my research on Y", "add this PDF to my research", "deep dive on Z", "pull together my notes on Y", "extend my research with this file". Trigger on the phrases above plus "search my research", "use my research", "find sources about X".
-user-invocable: true
+user_invocable: true
 ---
 
 # Research
@@ -21,22 +21,12 @@ deep discovery should never run unless the user clearly asks for it.
 | **query** | Existing research dir + user asks a question, wants context loaded, filters sources, or drills into a topic/source | Read-only path. See **Query path** below. Optional Q&A save-back. No source CLI preflight, no discovery, no raw/wiki rewrite. | Seconds to <1 min |
 | **append** | User provides one or more sources to add (drops files/links/repos/videos/PDFs, or says "add this", "just ingest these", "don't run deep research") | Ingest the provided sources only — **no discovery**, no NLM sweep, no naming sub-tiers. Seeds get `relevance_score: 1.0`; dedup against `index.yaml`; Step 1 -> Steps 6-8. | ~1-10 min |
 | **deep** | User explicitly asks for discovery ("deep research", "find more sources", "discover", "exhaustive"), **or** confirms it at the deep-research gate below. Runs at a depth preset: `fast` / `light` / `deep`. | Discovery. Step 1, Step 2 (pick the preset), Step 3, Step 3b, Step 4, Step 5, then Steps 6-8. Dedup against existing `index.yaml`. | fast ~5-10 min · light ~10-20 min · deep ~20-40+ min |
-| **init** | No matching research dir exists and the user wants a new research topic | Create a new numbered research dir per the **Naming Convention** below, then run **append** or **deep** by the same rules (the deep-research gate applies if sources/links were provided). | ~1-10 min append · ~10-40+ min deep |
-
-### Naming Convention (MANDATORY)
-
-The research directory name MUST follow the user's vault convention:
-
-1. **Numbered prefix**: zero-padded two-digit index in creation order (`01_`, `02_`, ..., `99_`). Use the next free number; never reuse or renumber existing dirs.
-2. **Pascal_Case with underscores**: each word capitalized, joined with `_` (NOT kebab-case, NOT spaces, NOT hyphens). Example: `01_AI_Research_OS`, `02_Coding_Agent_Architectures`, `03_Custom_URLs`.
-3. **`working-dir` = the `06_Research/` folder** in the vault. Final path: `06_Research/NN_Name_With_Underscores/`.
-
-For **files inside** a research dir (raw/, wiki/), keep the same spirit: `YYYY-MM-DD` date prefixes where a date is meaningful, then Pascal_Case with underscores (e.g. `2026-07-30_YouTube_Convierte_10994_Notas.md`). Avoid kebab-case and spaces.
+| **init** | No matching research dir exists and the user wants a new research topic | Create `working-dir/research-<topic-slug>/`, then run **append** or **deep** by the same rules (the deep-research gate applies if sources/links were provided). | ~1-10 min append · ~10-40+ min deep |
 
 **How to decide:**
-1. Compute the candidate `topic_name` from the user's words: Pascal_Case with underscores.
-2. Locate a matching research dir by explicit path, topic name, or scanning
-   `working-dir/*/index.yaml` (i.e. `06_Research/NN_*/index.yaml`) for a semantic topic match.
+1. Compute the candidate `topic_slug` from the user's words (kebab-case).
+2. Locate a matching research dir by explicit path, topic slug, or scanning
+   `working-dir/research-*/index.yaml` for a semantic topic match.
 3. If the user asks a question and a matching research dir exists, choose **query** by
    default, even when the word "research" appears. Query includes "what do I have on X",
    "summarize X", "load my research on X", "which sources mention X", and "how does X
@@ -210,7 +200,7 @@ The knowledge doc carries the substance of the answer:
 
 #### Slim question page — template
 
-Write to `<research_dir>/wiki/questions/YYYY-MM-DD_<Question_Name>.md`. Name the question in Pascal_Case with underscores, ≤ 60 chars (drop articles).
+Write to `<research_dir>/wiki/questions/YYYY-MM-DD-<question-slug>.md`. Slugify the question to ≤ 60 chars (drop articles, lowercase, kebab-case).
 
 ```markdown
 ---
@@ -332,9 +322,9 @@ without it:
 
 | CLI | Powers | If MISSING → |
 |---|---|---|
-| `obsidian` | Obsidian vault search (a research source) | Warn: "⚠️ Obsidian CLI unavailable — skipping your vault as a source. Enable the Obsidian CLI, put `obsidian` on PATH, or set `OBSIDIAN_CLI` to the CLI executable. See the `research:obsidian` skill." Drop Obsidian from `available_clis`; continue with other sources. |
-| `readwise` | Readwise library + feed search | Warn: "⚠️ `readwise` CLI not found — skipping Readwise. See the `research:readwise` skill (`npm install -g @readwise/cli`)." Continue. |
-| `nlm` | NotebookLM search | Warn: "⚠️ `nlm` CLI not found — skipping NotebookLM. See the `research:nlm`." Set `notebook_ids = []`; skip Step 3b's auth check. Continue. |
+| `obsidian` | Obsidian vault search (a research source) | Warn: "⚠️ Obsidian CLI unavailable — skipping your vault as a source. Enable the Obsidian CLI, put `obsidian` on PATH, or set `OBSIDIAN_CLI` to the CLI executable. See the `obsidian-cli` skill." Drop Obsidian from `available_clis`; continue with other sources. |
+| `readwise` | Readwise library + feed search | Warn: "⚠️ `readwise` CLI not found — skipping Readwise. See the `readwise-cli` skill (`npm install -g @readwise/cli`)." Continue. |
+| `nlm` | NotebookLM search | Warn: "⚠️ `nlm` CLI not found — skipping NotebookLM. See the `nlm-skill`." Set `notebook_ids = []`; skip Step 3b's auth check. Continue. |
 | `git` | GitHub repo ingestion (Step 1a) | Warn (only if the brain dump contains a GitHub URL): "⚠️ `git` not found — skipping GitHub repo(s): `<list>`." Skip Step 1a entirely; drop those seeds. Continue. |
 
 YouTube ingestion does not require an API key. It uses public captions via
@@ -400,7 +390,7 @@ the clone. Warn the user clearly: "⚠️ `git` not found — skipping GitHub re
 repo URLs>`. Install git and re-run to include them." Drop those GitHub seeds and continue
 with the rest of the ingest.
 
-The GitHub pipeline never clones *into* the research directory; clones go to a reusable `.github-cache/` placed **as a sibling of the research dir** (i.e. in the research dir's parent — e.g. for `06_Research/01_AI_Research_OS/` the cache lands at `06_Research/.github-cache/`). This keeps each project's reusable clones next to its own folder. Only curated spec docs land in the final research dir.
+The GitHub pipeline never clones *into* the research directory; clones go to a reusable `.github-cache/` placed **as a sibling of the research dir** (i.e. in the research dir's parent — e.g. for `Projects/My Project/research-<slug>/` the cache lands at `Projects/My Project/.github-cache/`). This keeps each project's reusable clones next to its own folder. Only curated spec docs land in the final research dir.
 
 **One index entry per repo.** Each repo produces a `<repo>/ARCHITECTURE.md` that acts as a wiki hub plus a set of `<repo>/<module>.md` neighbor docs. Only `ARCHITECTURE.md` is registered in `index.yaml` (`uri_full: "<repo>/ARCHITECTURE.md"`). The module docs are written to disk alongside it, but they are reached by following links inside ARCHITECTURE — they are not separate entries.
 
@@ -448,7 +438,7 @@ For every unique `https://github.com/<owner>/<repo>[...]` URL in the brain dump:
    - `github_repo_url: "https://github.com/<owner>/<repo>"`
    - `github_commit_sha: <commit_sha>`
    - `github_branch: <branch>`
-   - `github_files`: **union** of every file path referenced across all modules (from the parser output) — used by `/research:distill` for matching, not for indexing individual docs. Empty list in global mode.
+   - `github_files`: **union** of every file path referenced across all modules (from the parser output) — used by `/research-distill` for matching, not for indexing individual docs. Empty list in global mode.
    - `authors: ["<owner>"]` (augment from README if a clear author is declared)
    - `publication: "GitHub"`
    - `staged_spec_path`: absolute path to the staged `ARCHITECTURE.md` (builder copies from here)
@@ -482,8 +472,8 @@ of exactly three **depth presets** — no free-form round/query counts:
 - If the wording doesn't pin a preset, **ask the user to pick** `fast` / `light` / `deep`
   (default `light`) before starting rounds.
 
-Also capture the **topic name** — a short Pascal_Case with underscores name for the output
-directory, following the Naming Convention above (suggest one based on the topic).
+Also capture the **topic slug** — a short kebab-case name for the output directory (suggest
+one based on the topic).
 
 Capture the choice as `total_rounds` and `queries_per_round = (round1_count,
 subsequent_count)` per the table above (`fast` → `total_rounds=1, (3,)`; `light` →
@@ -516,7 +506,7 @@ intentional - we cast the widest possible net only when the user chose deep disc
 and dedup consolidates the findings at the end (nothing is filtered out).
 
 1. **Check presence, then authentication.** If `nlm` was MISSING in Step 0.5, skip this
-   entire step: warn "⚠️ `nlm` CLI not found — skipping NotebookLM (see the `research:nlm`)",
+   entire step: warn "⚠️ `nlm` CLI not found — skipping NotebookLM (see the `nlm-skill`)",
    set `notebook_ids = []`, and continue. If `nlm` is present, run `nlm login --check`. If
    that fails, log a loud warning that NotebookLM will be skipped for this run (auth
    expired/absent), set `notebook_ids = []`, and continue. Do NOT silently skip in either
@@ -632,7 +622,7 @@ nothing is discarded.
 
 The Builder Subagent copies / fetches / pipes raw source content onto disk under `<research_dir>/raw/`. It does NOT build `index.yaml` — that happens in Step 6.5 after the wiki layer is in place, so the index can include `uri_source_page` references. You, the orchestrator, should never see individual source file contents in Step 6.
 
-1. **Compute the research-dir path**. Default: `06_Research/NN_Topic_Name/` (next free number + Pascal_Case with underscores, per the Naming Convention above). Override if the user specified a different output path. Create the v4 layout up front:
+1. **Compute the research-dir path**. Default: `working-dir/research-<topic-slug>/`. Override if the user specified a different output path. Create the v4 layout up front:
    ```bash
    mkdir -p "<research_dir>/raw/assets" "<research_dir>/wiki"
    ```
@@ -649,7 +639,7 @@ The Builder Subagent copies / fetches / pipes raw source content onto disk under
 
 3. **The builder returns**:
    ```json
-   {"built": 25, "skipped": 2, "research_dir": "/path/to/06_Research/05_Example_Topic", "raw_files": [...], "skipped_details": [...]}
+   {"built": 25, "skipped": 2, "research_dir": "/path/to/research-<slug>", "raw_files": [...], "skipped_details": [...]}
    ```
    `raw_files` is a list of `{source_idx, raw_path, original_path, slug, origin}` entries — one per successful source. You'll feed this to Step 6.2 (asset processing) and Step 6.3 (source-page writing). `skipped_details` (truncated to 10) lists sources that fetched no content.
 
@@ -886,9 +876,9 @@ Tell the user:
 
 ## Important notes
 
-**Search strategy — Obsidian**: Use the `obsidian` CLI for search operations: `obsidian search query="<terms>" limit=20`. Once you have the file paths from search results, read the files directly using the Read tool. See the `research:obsidian` skill for full command reference. **Guard:** only run this if `obsidian` is in `available_clis` (presence checked in Step 0.5 via `command -v obsidian`); if it's missing, skip the vault as a source — never let `command not found` abort the search.
+**Search strategy — Obsidian**: Use the `obsidian` CLI for search operations: `obsidian search query="<terms>" limit=20`. Once you have the file paths from search results, read the files directly using the Read tool. See the `obsidian-cli` skill for full command reference. **Guard:** only run this if `obsidian` is in `available_clis` (presence checked in Step 0.5 via `command -v obsidian`); if it's missing, skip the vault as a source — never let `command not found` abort the search.
 
-**Search strategy — Readwise**: Use the `readwise` CLI (not the MCP tool). For the full command reference, access the `research:readwise` skill. **Guard:** only run this if `readwise` is in `available_clis` (presence checked in Step 0.5 via `command -v readwise`); if it's missing, skip Readwise as a source with the Step 0.5 warning — never abort on `command not found`. Readwise splits into two areas and research must cover both:
+**Search strategy — Readwise**: Use the `readwise` CLI (not the MCP tool). For the full command reference, access the `readwise-cli` skill. **Guard:** only run this if `readwise` is in `available_clis` (presence checked in Step 0.5 via `command -v readwise`); if it's missing, skip Readwise as a source with the Step 0.5 warning — never abort on `command not found`. Readwise splits into two areas and research must cover both:
 
 - **Library** — documents the user manually saved. Highest signal; they deliberately chose each one. This is the default scope for `reader-search-documents` (`new`, `later`, `shortlist`, `archive`).
 - **Feed** — RSS subscriptions. Still high signal because the user chose to subscribe, but noisier since every new item auto-ingests. Must be searched explicitly with `--location-in feed`.
@@ -902,7 +892,7 @@ Key commands the researcher subagent uses:
 
 The researcher subagent tags each Readwise finding with `readwise_location: "library" | "feed"` so library hits can be weighted slightly higher than feed hits when two sources look otherwise equivalent, and so future agents can filter by location.
 
-**File naming**: When copying files to the research dir, use Pascal_Case with underscores (NOT kebab-case), remove special characters, and keep filenames under 60 characters. Prefix date-based files with `YYYY-MM-DD_` (e.g. `2026-07-30_YouTube_Convierte_10994_Notas.md`). For Readwise highlights, prefix with `Readwise_`.
+**File naming**: When copying files to the research dir, slugify titles to kebab-case, remove special characters, and keep filenames under 60 characters. For Readwise highlights, prefix with `readwise-`.
 
 **Deduplication matters**: The same note can be found by multiple queries. Always deduplicate by `original_path` before building the output. For NotebookLM sources that have a `source_url`, also deduplicate against Readwise and web sources sharing the same URL — prefer the Readwise version (it carries user-curated highlights and annotations).
 

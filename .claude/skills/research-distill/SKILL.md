@@ -1,7 +1,7 @@
 ---
-name: research:distill
+name: research-distill
 description: Distill a research directory (produced by /research) into a single compact research.md containing a guideline-relative distillation of only the sources that were actually used in a piece of content. Use this skill whenever the user wants to extract used references from research, create a research appendix for an article, distill research into what was actually cited, or produce a portable reference file from a research directory. Trigger when the user says things like "distill my research", "extract used sources", "which research did I actually use", "create research.md", "compile references from research", or after finishing an article that used a research directory.
-user-invocable: true
+user_invocable: true
 ---
 
 # Research Distill

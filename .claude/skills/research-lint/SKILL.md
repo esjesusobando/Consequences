@@ -1,7 +1,7 @@
 ---
-name: research:lint
+name: research-lint
 description: Health-check a research directory produced by /research. Runs seven checks — orphan sources, missing entity/concept hubs, missing comparison candidates, broken wikilinks, stale claims, contradictions, and open-question synthesis. Outputs a report; edits where safe (broken-link flags, open-question append, contradiction surfacing); flags-only otherwise. Always user-triggered, never automated. Trigger when the user says things like "lint my research", "health check my research", "check the wiki", "audit my research dir", "what's wrong with my wiki", "find orphans / contradictions / stale claims".
-user-invocable: true
+user_invocable: true
 ---
 
 # Research Lint

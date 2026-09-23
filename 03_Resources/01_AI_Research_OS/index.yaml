@@ -1,27 +1,53 @@
 topic: AI Research OS
 created: '2026-07-30T22:30:48'
-last_updated: '2026-07-30T22:30:48'
-input_summary: Transcript del video de Paul Iusztin y Louis-Fran�ois Bouchard sobre AI Research OS
+last_updated: '2026-09-23T13:17:00'
+input_summary: Workshop de Paul Iusztin y Louis-François Bouchard sobre AI Research OS: sistema de 3 capas (raw/, index, wiki/) que convierte un second brain en memoria de investigación viva usando skills para agentes.
+workshop_repo: https://github.com/iusztinpaul/ai-research-os-workshop
+workshop_repo_stars: 154
+workshop_repo_forks: 28
 rounds_completed: 1
-total_sources: 1
-total_wiki_pages: 0
+total_sources: 3
+total_wiki_pages: 15
+skills_installed:
+  - research
+  - research-distill
+  - research-lint
+  - research-render
+  - research:nlm
+  - research:obsidian
+  - research:readwise
 sources:
-- uri_highlights: null
-  uri_full: null
-  uri_source_page: null
-  assets: []
-  original_path: raw/2026-07-30-youtube-convierte-10994-notas-en-memoria.md
-  origin: youtube
-  title: Convierte 10,994 notas en memoria - AI Research OS (YouTube)
-  authors: []
-  published_date: null
-  publication: null
-  source_url: https://www.youtube.com/watch?v=ZRM_TfEZcIo
-  relevance_score: 1.0
-  summary: 'Paul Iusztin y Louis-François Bouchard explican AI Research OS: sistema de 3 capas (raw/, index, wiki/) que convierte un second brain en memoria de investigación viva usando skills para agentes.'
-  tags:
-  - second-brain
-  - research-os
-  - wiki
-  - memory
-  wiki_refs: []
+  - uri_source_page: raw/2026-07-30-youtube-convierte-10994-notas-en-memoria.md
+    origin: youtube
+    title: Convierte 10,994 notas en memoria - AI Research OS (YouTube)
+    source_url: https://www.youtube.com/watch?v=ZRM_TfEZcIo
+    relevance_score: 1.0
+    tags: [second-brain, research-os, wiki, memory]
+  - uri_source_page: raw/transcript-autogenerado.md
+    origin: transcript
+    title: Transcript autogenerado
+    relevance_score: 0.9
+    tags: [second-brain, research-os]
+  - uri_source_page: example_1_deep_research/prompt.md
+    origin: workshop
+    title: Deep Research Example 1
+    relevance_score: 0.8
+    tags: [workshop, example, deep-research]
+  - uri_source_page: example_3_ingest_links/research-custom-urls/
+    origin: workshop
+    title: Ingest Links Example 3
+    relevance_score: 0.8
+    tags: [workshop, example, ingest-links]
+  - uri_source_page: README_workshop.md
+    origin: github
+    title: ai-research-os-workshop README
+    source_url: https://github.com/iusztinpaul/ai-research-os-workshop
+    relevance_score: 0.9
+    tags: [workshop, documentation, setup]
+wiki_refs:
+  - wiki/sources/
+  - wiki/concepts/
+  - wiki/entities/
+  - wiki/comparisons/
+  - example_3_ingest_links/research-custom-urls/wiki/
+---
