@@ -35,7 +35,7 @@ Obsidian is not the only source — the system connects to Readwise, Notebook LM
 
 ## Related Pages
 
-- [AI Research OS Overview]([[overview]])
+- [AI Research OS Overview]([[wiki/overview]])
 - [Three-Layer Architecture]([[wiki/concepts/three-layer-architecture]])
 - [Memory Management]([[wiki/concepts/memory-management]])
 - [Paul Iusztin]([[wiki/entities/paul-iusztin]])

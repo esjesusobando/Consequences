@@ -66,6 +66,6 @@ The evolution from V1 to V3 reflects a shift from "research as a one-time output
 
 ## Related Pages
 
-- [AI Research OS Overview]([[overview]])
+- [AI Research OS Overview]([[wiki/overview]])
 - [Research OS]([[wiki/concepts/research-os]])
 - [Sources]([[wiki/sources/youtube-convierte-10994-notas]])

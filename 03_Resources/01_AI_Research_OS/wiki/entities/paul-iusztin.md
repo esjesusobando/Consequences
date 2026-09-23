@@ -29,6 +29,6 @@ Paul emphasizes that the system should be personal — anchored into personal no
 
 ## Related Pages
 
-- [Louis-François Bouchard]([[louis-francois-bouchard]])
-- [AI Research OS Overview]([[overview]])
+- [Louis-François Bouchard]([[wiki/entities/louis-francois-bouchard]])
+- [AI Research OS Overview]([[wiki/overview]])
 - [Sources]([[wiki/sources/youtube-convierte-10994-notas]])
