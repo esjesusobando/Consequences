@@ -1,0 +1,173 @@
+/* ============================================================
+   Drilling Calculator — OperatingWindow Styles (V3)
+   Premium Triple Overlaid Bar System
+   ============================================================ */
+
+.operating-window-v3 {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 24px;
+  animation: slideUpOW 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  box-sizing: border-box;
+}
+
+.ow-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ow-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--sh-grey-400);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.ow-unit {
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+  background: var(--sh-grey-900);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.ow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ow-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ow-bar-row--highlight {
+  margin: 4px 0;
+}
+
+.ow-bar-label {
+  width: 30px;
+  font-size: 10px;
+  font-weight: 900;
+  color: var(--sh-grey-500);
+  text-align: right;
+}
+
+.ow-bar-label--ecd {
+  font-size: 12px;
+  text-shadow: 0 0 10px currentColor;
+}
+
+.ow-progress-container {
+  flex: 1;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  position: relative;
+  overflow: visible;
+}
+
+.ow-bar {
+  height: 100%;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ow-bar--fg {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.ow-bar--mw {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ow-bar--ecd {
+  z-index: 5;
+  height: 140%;
+  margin-top: -2%;
+}
+
+.ow-bar-glow {
+  position: absolute;
+  right: -2px;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0 15px currentColor;
+}
+
+.ow-bar-val {
+  position: absolute;
+  right: -40px;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--sh-grey-400);
+  font-family: var(--font-mono);
+}
+
+.ow-data-bubble {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  background: #000;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transform: translateX(50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.ow-bubble-val {
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  font-family: var(--font-mono);
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+}
+
+@keyframes slideUpOW {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Empty State Styles */
+.ow-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.ow-empty-text {
+  color: var(--sh-grey-500);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

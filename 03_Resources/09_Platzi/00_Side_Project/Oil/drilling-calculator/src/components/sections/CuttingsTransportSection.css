@@ -1,0 +1,57 @@
+/* ============================================================
+   Cuttings Transport Section - Responsive Results Grid
+   Vanilla CSS tokens only (no Tailwind utilities) - C-3
+   ============================================================ */
+
+.cuttings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: var(--sh-gap-card);
+  align-items: stretch;
+}
+
+/* Legend - threshold semantics (C-2 status colors) */
+.cuttings-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-control);
+  font-family: var(--font-mono);
+  font-size: var(--sh-font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.cuttings-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cuttings-legend__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.cuttings-legend__dot--safe {
+  background: var(--color-safe);
+  box-shadow: 0 0 8px var(--color-safe);
+}
+
+.cuttings-legend__dot--warning {
+  background: var(--color-warning);
+  box-shadow: 0 0 8px var(--color-warning);
+}
+
+.cuttings-legend__dot--critical {
+  background: var(--color-critical);
+  box-shadow: 0 0 8px var(--color-critical);
+}

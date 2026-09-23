@@ -1,0 +1,354 @@
+/* ============================================================
+   Drilling Calculator — Design Tokens v4
+   Style: SUPERHUMAN REMIX (Silicon Valley Grade)
+   Inspiración: Superhuman + TRIVI Neon ADN
+   ============================================================ */
+
+:root {
+  /* ─── Color System: LIGHT PREMIUM (Silicon Valley Grade) ────────── */
+  --color-bg-app: #fcfdfe; /* Blanco azulado muy sutil */
+  --color-surface: #ffffff;
+  --color-surface-glass: var(--color-text-secondary);
+  --color-surface-hover: var(--sh-grey-100);
+
+  --color-text-primary: #64748b; /* Gris medio (Más claro que el anterior) */
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+
+  /* High Contrast Accents (Vibrant personal-os) */
+  --sh-lima: #cbff6a; /* Lime oficial PersonalOS */
+  --sh-lima-dark: #a8d64b; /* Variante para contraste */
+  --sh-lima-text: #6a8d00;
+  --sh-azul: #00b4d8; /* Cyan oficial PersonalOS */
+  --sh-azul: #00b4d8;
+  --sh-azul-vibrant: #0ea5e9;
+  --sh-azul-light: var(--color-primary-alpha-10);
+
+  /* Blue palette (engineering accents — fixes invisible text/borders referencing undefined --sh-blue-*) */
+  --sh-blue-200: #bfdbfe;
+  --sh-blue-400: #60a5fa;
+  --sh-blue-500: #3b82f6;
+  --sh-blue-600: #2563eb;
+  --sh-blue-900: #1e3a8a;
+
+  --sh-verde: #22c55e;
+  --sh-verde-light: rgba(34, 197, 94, 0.1); /* Variante para contraste */
+
+  /* Engineering Standard Accents */
+  --color-amber: hsl(38, 100%, 55%);
+  --color-azure: hsl(210, 100%, 65%);
+  --color-coral: hsl(0, 85%, 65%);
+
+  /* Greys hierarchy (Softened) */
+  --sh-grey-50: #f8fafc;
+  --sh-grey-100: var(--sh-grey-100);
+  --sh-grey-200: #eef2f6;
+  --sh-grey-300: #e2e8f0;
+  --sh-grey-400: #94a3b8;
+  --sh-grey-500: #64748b;
+  --sh-grey-700: #64748b; /* Aclarado */
+  --sh-grey-800: #1e293b;
+  --sh-grey-900: #64748b; /* Aclarado para homologación total */
+
+  /* Accents & Gradients */
+  --color-primary-neon: var(--sh-lima);
+  --color-secondary-neon: var(--sh-azul);
+  --grad-vibrant: linear-gradient(
+    135deg,
+    var(--sh-azul-vibrant) 0%,
+    var(--sh-verde) 100%
+  );
+
+  /* Semantic */
+  --color-safe: #22c55e;
+  --color-warning: #f59e0b;
+  --color-critical: #ef4444;
+
+  /* Semantic Backgrounds & Borders */
+  --color-safe-bg: rgba(34, 197, 94, 0.1);
+  --color-warning-bg: rgba(245, 158, 11, 0.1);
+  --color-critical-bg: rgba(239, 68, 68, 0.1);
+
+  /* Primary (for glassmorphism & generic primary references) */
+  --color-primary: var(--sh-azul);
+  --color-primary-alpha-10: var(--color-primary-alpha-10);
+  --color-primary-alpha-20: rgba(0, 180, 216, 0.2);
+
+  /* Border system */
+  --color-border: var(--sh-grey-200);
+  --color-border-strong: var(--sh-grey-300);
+  --color-border-hover: var(--sh-azul);
+  --color-divider: var(--sh-grey-100);
+
+  /* Background variants */
+  --color-bg-card: var(--color-surface);
+
+  /* Text dim */
+  --color-text-dim: var(--sh-grey-400);
+  --color-text-tertiary: var(--sh-grey-500);
+
+  /* Semantic text aliases (for components using --text-*) */
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-tertiary: var(--color-text-muted);
+
+  /* RGB triplets (for rgba() usage) */
+  --sh-azul-rgb: 0, 180, 216;
+
+  /* ─── Geometría (Premium Soft Corners) ───────────────── */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-dashboard: 24px;
+  --radius-lg: 20px;
+  --radius-card: 16px;
+  --radius-control: 12px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+  --radius-full: 9999px;
+
+  /* ─── Glassmorphism tokens ─── */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: var(--color-border);
+  --glass-blur: blur(12px);
+  --gradient-card: linear-gradient(135deg, var(--color-surface) 0%, var(--sh-grey-50) 100%);
+
+  /* ─── Shadows (Deep Slate Volume) ──────────────── */
+  --shadow-premium:
+    var(--shadow-premium);
+  --shadow-vibrant:
+    0 20px 25px -5px rgba(0, 180, 216, 0.2),
+    0 4px 6px -4px rgba(203, 255, 106, 0.1);
+
+  /* ─── Typography ────────────────────────────────────── */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+
+  /* ─── Typography Standard Scaling (Homologación) ─── */
+  --sh-font-size-xs: 0.5rem;      /* 8px — labels, badges */
+  --sh-font-size-sm: 0.65rem;     /* 10-11px — small text, captions */
+  --sh-font-size-body: 0.85rem;   /* 12-14px — body text */
+  --sh-font-size-h3: 0.9rem;      /* 15-16px — section headers */
+  --sh-font-size-lg: 1rem;        /* 16px — emphasized text */
+  --sh-font-size-h2: 1.1rem;      /* 17-18px — card headers */
+  --sh-font-size-metric: 1.1rem;  /* metric displays */
+  --sh-font-weight-title: 700;
+  --sh-font-weight-body: 500;
+  --sh-letter-spacing-title: 0.05em;
+  --sh-letter-spacing-alert: 0.25em;
+
+  /* ─── Standard Spacing & Logic (deprecated — use --space-* tokens) ─── */
+
+  /* ─── Transitions ────────────────────────────────────── */
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+
+  /* ─── Blur ───────────────────────────────────────────── */
+  --blur-glass: blur(12px);
+  --blur-heavy: blur(24px);
+
+  /* ─── Shadows Extended ──────────────────────────────── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-glow-sm: 0 0 10px rgba(0, 180, 216, 0.3);
+  --shadow-glow-md: 0 0 20px rgba(0, 180, 216, 0.4);
+
+  /* ─── Space Scale ───────────────────────────────────── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Semantic spacing aliases */
+  --sh-gap-section: 1.5rem;
+  --sh-gap-card: 1rem;
+  --sh-padding-card: 1.5rem;
+
+  /* ─── Missing Token Fixes (Judgment Day) ──────────────── */
+  /* Grey 600 & 900 RGB */
+  --sh-grey-600: #475569;
+  --sh-grey-900-rgb: 15, 23, 42;
+
+  /* Lime variants */
+  --sh-lime-400: #a3e635;
+  --sh-lime-900: #365314;
+
+  /* Surface variants */
+  --surface-light: var(--sh-grey-50);
+  --surface-overlay: rgba(255, 255, 255, 0.95);
+
+  /* Border */
+  --border-subtle: var(--sh-grey-200);
+  --color-safe-border: var(--color-safe);
+
+  /* Text scale */
+  --text-xs: var(--sh-font-size-xs);
+  --text-base: var(--sh-font-size-body);
+
+  /* Font weights */
+  --font-main: var(--font-sans);
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Tracking */
+  --tracking-tight: -0.01em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+
+  /* Layout */
+  --header-height: 56px;
+  --max-width: 1200px;
+
+  /* Gradient */
+  --accent-gradient: var(--grad-vibrant);
+}
+
+/* ─── Dark Theme Tokens (applied via .theme-dark class) ─── */
+.theme-dark {
+  /* Color System: DARK PREMIUM */
+  --color-bg-app: #0a0a0f;
+  --color-surface: #11111a;
+  --color-surface-glass: rgba(17, 17, 26, 0.7);
+  --color-surface-hover: #1a1a2e;
+
+  --color-text-primary: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  --sh-lima: #cbff6a;
+  --sh-lima-dark: #a8d64b;
+  --sh-lima-text: #6a8d00;
+  --sh-azul: #00b4d8;
+  --sh-azul-vibrant: #0ea5e9;
+  --sh-azul-light: rgba(0, 180, 216, 0.15);
+
+  --sh-blue-200: #bfdbfe;
+  --sh-blue-400: #60a5fa;
+  --sh-blue-500: #3b82f6;
+  --sh-blue-600: #2563eb;
+  --sh-blue-900: #1e3a8a;
+
+  --sh-verde: #22c55e;
+  --sh-verde-light: rgba(34, 197, 94, 0.15);
+
+  --color-amber: hsl(38, 100%, 55%);
+  --color-azure: hsl(210, 100%, 65%);
+  --color-coral: hsl(0, 85%, 65%);
+
+  --sh-grey-50: #0a0a0f;
+  --sh-grey-100: #11111a;
+  --sh-grey-200: #1a1a2e;
+  --sh-grey-300: #2d2d44;
+  --sh-grey-400: #64748b;
+  --sh-grey-500: #94a3b8;
+  --sh-grey-600: #cbd5e1;
+  --sh-grey-700: #e2e8f0;
+  --sh-grey-800: var(--sh-grey-100);
+  --sh-grey-900: #f8fafc;
+
+  --color-primary-neon: var(--sh-lima);
+  --color-secondary-neon: var(--sh-azul);
+  --grad-vibrant: linear-gradient(
+    135deg,
+    var(--sh-azul-vibrant) 0%,
+    var(--sh-verde) 100%
+  );
+
+  --color-safe: #22c55e;
+  --color-warning: #f59e0b;
+  --color-critical: #ef4444;
+
+  --color-safe-bg: rgba(34, 197, 94, 0.15);
+  --color-warning-bg: rgba(245, 158, 11, 0.15);
+  --color-critical-bg: rgba(239, 68, 68, 0.15);
+
+  --color-primary: var(--sh-azul);
+  --color-primary-alpha-10: rgba(0, 180, 216, 0.15);
+  --color-primary-alpha-20: rgba(0, 180, 216, 0.25);
+
+  --color-border: var(--sh-grey-300);
+  --color-border-strong: var(--sh-grey-400);
+  --color-border-hover: var(--sh-azul);
+  --color-divider: var(--sh-grey-200);
+
+  --color-bg-card: var(--color-surface);
+
+  --color-text-dim: var(--sh-grey-500);
+  --color-text-tertiary: var(--sh-grey-400);
+
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-tertiary: var(--color-text-muted);
+
+  --sh-azul-rgb: 0, 180, 216;
+
+  --glass-bg: rgba(17, 17, 26, 0.05);
+  --glass-border: var(--color-border);
+  --glass-blur: blur(16px);
+  --gradient-card: linear-gradient(135deg, var(--color-surface) 0%, var(--sh-grey-100) 100%);
+
+  --shadow-premium:
+    0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  --shadow-vibrant:
+    0 20px 25px -5px rgba(0, 180, 216, 0.3),
+    0 4px 6px -4px rgba(203, 255, 106, 0.15);
+
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+
+  --blur-glass: blur(16px);
+  --blur-heavy: blur(32px);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 3px var(--color-surface-glass), 0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px -1px var(--color-surface-glass), 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+  --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-glow-sm: 0 0 10px rgba(0, 180, 216, 0.4);
+  --shadow-glow-md: 0 0 20px rgba(0, 180, 216, 0.5);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --sh-lime-400: #a3e635;
+  --sh-lime-900: #365314;
+  --sh-grey-600: #475569;
+  --sh-grey-900-rgb: 248, 250, 252;
+
+  --surface-light: var(--sh-grey-100);
+  --surface-overlay: rgba(17, 17, 26, 0.98);
+
+  --border-subtle: var(--sh-grey-200);
+  --color-safe-border: var(--color-safe);
+
+  --text-xs: var(--sh-font-size-xs);
+  --text-base: var(--sh-font-size-body);
+
+  --font-main: var(--font-sans);
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --tracking-tight: -0.01em;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+
+  --header-height: 56px;
+  --max-width: 1200px;
+
+  --accent-gradient: var(--grad-vibrant);
+}

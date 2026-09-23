@@ -1,0 +1,219 @@
+.wellbore-schematic-container {
+  background: var(--glass-bg, rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.1));
+  border-radius: 20px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--text-primary, #fff);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --primary: #5068be;
+  --secondary: #a3e635;
+  --risk-high: #ef4444;
+  --risk-med: #f59e0b;
+  --risk-low: #3b82f6;
+  --accent-gradient: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+}
+
+.wellbore-schematic-container.light-mode {
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --text-primary: #1d1d1f;
+  --sh-grey-400: #666;
+  --sh-grey-100: #eee;
+}
+
+.wellbore-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wellbore-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.status-badge {
+  background: var(--accent-gradient);
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.header-sub {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: var(--sh-grey-400);
+  font-family: var(--font-mono);
+}
+
+.wellbore-layout {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.wellbore-svg-v3 {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  min-height: 480px;
+  overflow: visible;
+}
+
+.pipe-segment.dp {
+  fill: var(--primary);
+}
+.pipe-segment.hwdp {
+  fill: url(#hwdp-grad);
+}
+.pipe-segment.dc {
+  fill: var(--secondary);
+}
+
+.bit-head {
+  fill: #a0dc61;
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 0.5;
+}
+
+.ruler-text {
+  font-size: 10px;
+  fill: var(--sh-grey-400);
+  font-family: var(--font-mono);
+}
+
+/* Legend & Decision Support */
+.engineering-legend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.legend-section h4 {
+  margin: 0 0 16px 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary);
+  opacity: 0.9;
+  font-weight: 800;
+}
+
+.l-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.l-box {
+  width: 12px;
+  height: 48px;
+  border-radius: 6px;
+}
+
+.l-box.dp {
+  background: #5068be;
+  box-shadow: 0 4px 12px rgba(80, 104, 190, 0.3);
+}
+.l-box.hwdp {
+  background: linear-gradient(180deg, #5068be, #a3e635);
+}
+.l-box.dc {
+  background: #a3e635;
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.3);
+}
+
+.l-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.l-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2e82b0;
+}
+
+.l-val {
+  font-size: 0.8rem;
+  color: var(--sh-grey-400);
+  font-family: var(--font-mono);
+}
+
+/* Metrics Section - High Visibility */
+.metrics {
+  background: rgba(95, 166, 221, 0.15);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(95, 166, 221, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.m-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4a5568;
+}
+
+.m-val {
+  font-size: 0.95rem;
+  font-weight: 900;
+  font-family: var(--font-mono);
+  color: var(--sh-grey-700);
+}
+
+.m-row.highlight {
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 2px dashed rgba(95, 166, 221, 0.2);
+}
+
+.m-row.highlight .m-val {
+  color: #a3e635;
+  font-size: 1.25rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.light-mode .m-label {
+  color: #5a6b8a;
+}
+.light-mode .m-val {
+  color: var(--sh-grey-500);
+}
+.light-mode .m-row.highlight .m-val {
+  color: #1a365d; /* Azul profundo para contraste máximo */
+  text-shadow: none;
+}

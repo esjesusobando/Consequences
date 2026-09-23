@@ -1,0 +1,55 @@
+# openspec/config.yaml — SDD configuration for drilling-calculator
+schema: spec-driven
+
+context: |
+  Tech stack: React 19 + TypeScript 5.9 (strict) + Vite 7 + Vitest 4
+  State: Zustand 5; 3D viz: Three.js / react-three-fiber / drei; charts: Recharts; icons: lucide-react
+  Styling: Vanilla CSS design tokens (src/styles/tokens.css, glassmorphism.css, global.css) — NO Tailwind
+  Architecture: layered — src/store (Zustand) / src/engine (pure calculation logic) / src/components (UI) / src/hooks / src/guards / src/utils
+  Domain: drilling engineering (rheology, hydraulics, pressures, volumetrics); API RP 13D, API RP 13B-1, Bourgoyne standards
+  Conventions: functional components, named exports, no `any`, interfaces over types (parent repo AGENTS.md)
+  Deploy: Vercel (vercel.json)
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Reference impacted engine modules (src/engine/*) explicitly
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+    - Use SI field units consistently; state unit conversions in scenarios
+  design:
+    - Keep calculation engines pure and side-effect free (no React imports in src/engine)
+    - Document architecture decisions with rationale
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+  apply:
+    guidelines:
+      - Follow existing code patterns (functional components, named exports)
+      - No `any` types; strict TypeScript must pass
+    tdd: true            # STRICT TDD MODE — RED-GREEN-REFACTOR
+    test_command: "npm test"
+  verify:
+    test_command: "npm test"
+    build_command: "npm run build"
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas
+
+testing:
+  runner: vitest
+  test_command: "npm test"
+  watch_command: "npm run test:watch"
+  environment: jsdom
+  setup_files:
+    - src/test/setup.ts
+  layers:
+    unit: true
+    integration: true
+    e2e: false
+  coverage: false
+  linter: "npm run lint"
+  type_checker: "npx tsc -b"
+  formatter: none
+  strict_tdd: true

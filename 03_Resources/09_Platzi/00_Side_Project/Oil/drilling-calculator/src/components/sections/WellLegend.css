@@ -1,0 +1,194 @@
+/* ============================================================
+   WellLegend — HTML legend overlay for the 3D anti-collision view
+   Uses shared design tokens (--sh-grey-*, --color-surface, radius).
+   ============================================================ */
+
+.well-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 240px;
+  max-width: 340px;
+  padding: 14px 16px;
+  border-radius: var(--radius-card);
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--sh-grey-200, #e2e8f0);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  font-size: var(--sh-font-size-body);
+}
+
+.well-legend__title {
+  font-size: var(--sh-font-size-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--sh-grey-500, #64748b);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--sh-grey-100, #f1f5f9);
+  margin-bottom: 6px;
+}
+
+.well-legend__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.well-legend__row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  transition: all 0.15s ease;
+  font-size: var(--sh-font-size-sm);
+}
+
+.well-legend__row:hover {
+  background: var(--sh-grey-50, #f8fafc);
+  border-color: var(--sh-grey-300, #cbd5e0);
+}
+
+.well-legend__row.selected {
+  border-color: var(--sh-azul, #00b4d8);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.well-legend__row.selected .well-legend__name {
+  font-weight: 700;
+}
+
+.well-legend__row.is-hidden .well-legend__name {
+  opacity: 0.45;
+  text-decoration: line-through;
+  color: var(--sh-grey-400, #94a3b8);
+}
+
+.well-legend__select {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: inherit;
+  cursor: pointer;
+  color: var(--text-primary, #1e293b);
+  font: inherit;
+  text-align: left;
+}
+
+.well-legend__swatch {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.well-legend__name {
+  flex: 1;
+  font-size: var(--sh-font-size-body);
+  color: var(--text-primary, #1e293b);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.well-legend__eye {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  flex-shrink: 0;
+}
+
+.well-legend__eye:hover {
+  transform: scale(1.15);
+  color: var(--sh-grey-800, #1e293b);
+  background: var(--sh-grey-100, #f1f5f9);
+}
+
+.well-legend__eye.is-hidden {
+  color: var(--sh-grey-300, #e2e8f0);
+}
+
+.well-legend__eye:hover[aria-label="Ocultar este pozo"] {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.well-legend__eye:hover[aria-label="Mostrar"] {
+  color: #aaa;
+  background: rgba(170, 170, 170, 0.05);
+}
+
+.risk-badge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  border-radius: var(--radius-md);
+  font-size: var(--sh-font-size-sm);
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Tooltip styles for legend hover */
+.well-legend__tooltip {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 8px);
+  min-width: 140px;
+  max-width: 200px;
+  padding: 6px 10px;
+  background: var(--color-surface, #ffffff);
+  border: 1px solid var(--sh-grey-200, #e2e8f0);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: var(--sh-font-size-sm);
+  z-index: 100;
+  line-height: 1.4;
+}
+
+.well-legend__tooltip-name {
+  display: block;
+  font-weight: 700;
+  font-size: var(--sh-font-size-body);
+  margin-bottom: 4px;
+  color: var(--text-primary, #1e293b);
+}
+
+.well-legend__tooltip-risk {
+  font-size: var(--sh-font-size-sm);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.well-legend__tooltip-risk .is-safe { color: #00e676; }
+.well-legend__tooltip-risk .is-caution { color: var(--color-warning); }
+.well-legend__tooltip-risk .is-critical { color: var(--color-critical); }
+.well-legend__tooltip-risk .is-monitor { color: #6b7280; }
+
+.theme-dark .well-legend {
+  background: rgba(15, 15, 25, 0.7);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary, #1e293b);
+}

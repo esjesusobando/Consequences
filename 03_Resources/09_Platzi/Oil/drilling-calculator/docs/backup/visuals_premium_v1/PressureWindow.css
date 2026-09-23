@@ -1,0 +1,158 @@
+.pressure-window-container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  margin: 1rem 0;
+  box-shadow:
+    0 8px 32px 0 rgba(0, 0, 0, 0.37),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  font-family: "Outfit", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.pressure-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.header-main h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: hsl(0, 85%, 65%); /* Coral Red */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
+.depth-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 4px;
+}
+
+.gradient-tag {
+  background: linear-gradient(
+    135deg,
+    hsla(180, 100%, 50%, 0.1),
+    hsla(210, 100%, 50%, 0.1)
+  );
+  border: 1px solid hsla(190, 100%, 50%, 0.2);
+  color: hsl(190, 100%, 70%);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pressure-svg {
+  width: 100%;
+  overflow: visible;
+  margin-bottom: 2.5rem;
+}
+
+.safe-zone {
+  stroke: rgba(191, 243, 51, 0.2);
+  stroke-width: 0.5;
+}
+
+.line-normal {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 1;
+  stroke-dasharray: 2 4;
+}
+
+.line-pore {
+  stroke: hsl(38, 100%, 55%); /* Amber */
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px hsla(38, 100%, 55%, 0.4));
+}
+
+.line-frac {
+  stroke: hsl(0, 85%, 60%); /* Coral Red */
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px hsla(0, 85%, 60%, 0.4));
+}
+
+.line-hydro {
+  stroke: hsl(210, 100%, 65%); /* Azure */
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.dot-hydro {
+  fill: #fff;
+  stroke: hsl(210, 100%, 65%);
+  stroke-width: 2;
+}
+
+.svg-label {
+  font-size: 4px;
+  fill: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.pressure-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+.metric-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.metric-item .m-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.metric-item .m-label {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 4px;
+}
+
+.metric-item.normal .m-val {
+  color: rgba(255, 255, 255, 0.6);
+}
+.metric-item.pore .m-val {
+  color: hsl(38, 100%, 55%);
+}
+.metric-item.hydro .m-val {
+  color: hsl(210, 100%, 65%);
+}
+.metric-item.frac .m-val {
+  color: hsl(0, 85%, 60%);
+}

@@ -1,0 +1,293 @@
+.bit-optimizer {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Borde sutil base */
+  overflow: hidden; /* Para contener el degradado superior */
+}
+
+/* ─── Superior Gradient (Power Light) ───────────────────── */
+.bit-optimizer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-azure) 30%,
+    var(--color-amber) 70%,
+    transparent 100%
+  );
+  opacity: 0.8;
+  box-shadow: 0 0 15px 2px rgba(0, 212, 255, 0.3);
+  z-index: 10;
+}
+
+.bit-optimizer .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* ─── Storytelling Info Icon ────────────────────────────── */
+.story-trigger {
+  position: relative;
+  cursor: help;
+}
+
+.info-icon {
+  color: var(--color-azure);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.story-trigger:hover .info-icon {
+  opacity: 1;
+}
+
+.story-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 280px;
+  background: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.story-trigger:hover .story-tooltip {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+.story-tooltip h5 {
+  color: var(--color-amber);
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.story-tooltip p {
+  font-size: 10px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* ─── Bit SVG Rendering ──────────────────────────────────── */
+.bit-visual-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.bit-svg {
+  filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.2));
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+}
+
+.bit-body {
+  fill: rgba(0, 0, 0, 0.3);
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 1.5;
+}
+
+.bit-center {
+  fill: rgba(255, 255, 255, 0.1);
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
+.jet-outer {
+  fill: var(--color-azure);
+  opacity: 0.3;
+}
+
+.jet-inner {
+  fill: var(--color-azure);
+  filter: drop-shadow(0 0 4px var(--color-azure));
+}
+
+.crossflow-stream {
+  fill: none;
+  stroke: #b45309; /* Color marrón más intenso (#cda077 era más claro) */
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 6, 8;
+  opacity: 0.95; /* Elevando la opacidad */
+  animation: flowLine 2s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(180, 83, 9, 0.7)); /* Glow marrón intenso */
+}
+
+@keyframes flowLine {
+  from {
+    stroke-dashoffset: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.crossflow-layer {
+  transition: opacity 0.5s ease;
+}
+
+.jet-label {
+  font-size: 12px; /* Mejor escala para 32px viewBox interno */
+  fill: #ffffff;
+  font-weight: 800;
+  text-anchor: middle;
+  pointer-events: none;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.8));
+}
+
+/* ─── Glow Effect ────────────────────────────────────────── */
+.bit-jet.is-active .jet-outer {
+  opacity: 0.8;
+  fill: var(--color-amber);
+  filter: blur(2px);
+  r: calc(attr(r) + 3);
+}
+
+.bit-jet.is-active .jet-inner {
+  fill: #ffffff;
+  filter: drop-shadow(0 0 10px var(--color-amber));
+}
+
+.bit-jet.is-active .jet-label {
+  fill: var(--color-amber);
+  font-size: 13px;
+  transform: translateY(2px);
+  filter: drop-shadow(0 0 5px rgba(251, 191, 36, 0.5));
+}
+
+/* ─── Metrics ───────────────────────────────────────────── */
+.bit-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Más espaciado (respiración) */
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* División elegante para fondo claro */
+}
+
+.metric-row .label {
+  color: var(--sh-grey-500, #64748b);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.metric-row .value {
+  color: var(--sh-grey-900, #0f172a);
+  font-size: 20px;
+  font-weight: 950; /* Elite Typography */
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.metric-row .value small {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--sh-grey-400, #94a3b8);
+  margin-left: 4px;
+}
+
+.metric-row.highlight .label {
+  color: #b45309; /* Amber oscuro para legibilidad */
+}
+
+.metric-row.highlight .value {
+  color: #d97706; /* Amber visible en Light Mode */
+  text-shadow: 0 0 15px rgba(217, 119, 6, 0.1);
+}
+
+.metric-row.highlight-alt .label {
+  color: rgba(255, 127, 80, 0.8);
+}
+
+.metric-row.highlight-alt .value {
+  color: var(--color-coral);
+  text-shadow: 0 0 15px rgba(255, 127, 80, 0.4);
+}
+
+/* ─── Efficiency Bar ───────────────────────────────────── */
+.bit-efficiency {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.efficiency-bar {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.efficiency-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-azure), var(--color-amber));
+  box-shadow: 0 0 12px var(--color-azure);
+  border-radius: 3px;
+  position: relative;
+}
+
+/* Efecto de brillo dinámico en la barra */
+.efficiency-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.efficiency-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--sh-grey-500, #64748b);
+  letter-spacing: 0.05em;
+}

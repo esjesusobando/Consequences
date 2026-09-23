@@ -1,0 +1,92 @@
+.zen-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(80, 91%, 57%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(221, 83%, 53%, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(80, 91%, 57%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(221, 83%, 53%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(221, 83%, 53%, 0.05) 0px, transparent 50%);
+  background-size: 200% 200%;
+  animation:
+    auroraFlow 15s ease infinite alternate,
+    fadeInZen 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+  z-index: 100;
+  overflow: hidden;
+}
+
+@keyframes auroraFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.zen-overlay__content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.zen-overlay__mantra {
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: #475569; /* Slate 600 - High legibility premium grey */
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.01em;
+  opacity: 0.95;
+  line-height: 1.2;
+}
+
+.zen-overlay__line {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #3b82f6,
+    #a3e635,
+    transparent
+  );
+  margin: 0 auto 2.5rem;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.zen-overlay__subtext {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #166534; /* Dark premium green for high contrast */
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); /* Mejor legibilidad */
+}
+
+@keyframes fadeInZen {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(28px);
+    transform: translateY(0);
+  }
+}

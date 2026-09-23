@@ -1,0 +1,5 @@
+/* ============================================================
+   Drilling Calculator — Entry Point Styles
+   All design tokens and resets are handled by global.css
+   ============================================================ */
+@import "./styles/global.css";

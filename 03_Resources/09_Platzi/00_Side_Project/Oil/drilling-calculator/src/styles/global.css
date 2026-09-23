@@ -1,0 +1,85 @@
+/* ============================================================
+   Drilling Calculator — Global Styles v3
+   PersonalOS · TRIVI Tech Aesthetic
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap");
+@import "./tokens.css";
+
+/* ─── Reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary); /* Brillo máximo en texto base */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ─── Typography ────────────────────────────────────────── */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* ─── Layout Components ─────────────────────────────────── */
+.trivi-card {
+  background: var(--color-surface);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-premium);
+  padding: var(--space-3);
+  border: 1px solid var(--glass-border);
+  transition: transform var(--duration-normal) var(--ease-premium);
+}
+
+.trivi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-vibrant);
+}
+
+/* ─── Custom Scrollbar ──────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sh-grey-200);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sh-grey-300);
+}
+
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}

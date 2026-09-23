@@ -1,0 +1,22 @@
+.no-scroll-zone {
+  max-height: calc(100vh - 200px);
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.no-scroll-zone:hover {
+  /* Opcional: permitir scroll solo si es estrictamente necesario y con hover */
+  overflow-y: auto !important;
+}
+
+.section-content {
+  padding: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  background: var(--sh-grey-100);
+  margin: 0.5rem 0;
+}

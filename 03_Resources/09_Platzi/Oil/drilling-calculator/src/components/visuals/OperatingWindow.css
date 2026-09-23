@@ -1,0 +1,277 @@
+/* ============================================================
+   Drilling Calculator — OperatingWindow Styles (V3)
+   Premium Triple Overlaid Bar System
+   ============================================================ */
+
+.operating-window-v3 {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 24px;
+  animation: slideUpOW 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Accent bar top ── */
+.ow-accent-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: linear-gradient(
+    90deg,
+    hsl(0, 84%, 60%) 0%,
+    hsl(80, 89%, 54%) 50%,
+    hsl(210, 100%, 60%) 100%
+  );
+  z-index: 10;
+}
+
+/* ── Header ── */
+.ow-header-row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-top: 4px;
+}
+.ow-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ow-title {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0;
+}
+.ow-subtitle {
+  font-size: 10px;
+  color: hsl(230, 100%, 67%);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  margin: 0;
+}
+
+.ow-unit {
+  font-size: 10px;
+  font-weight: 900;
+  color: white;
+  background: var(--sh-grey-900);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.ow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ow-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ow-bar-row--highlight {
+  margin: 4px 0;
+}
+
+.ow-bar-label {
+  width: 32px;
+  font-size: 11px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+
+.ow-bar-label--ecd {
+  font-size: 12px;
+  text-shadow: 0 0 10px currentColor;
+}
+
+.ow-progress-container {
+  flex: 1;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  position: relative;
+  overflow: visible;
+}
+
+.ow-bar {
+  height: 100%;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.ow-bar--fg {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.ow-bar--mw {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ow-bar--ecd {
+  z-index: 5;
+  height: 140%;
+  margin-top: -2%;
+}
+
+.ow-bar-glow {
+  position: absolute;
+  right: -2px;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 0 0 15px currentColor;
+}
+
+.ow-bar-val {
+  position: absolute;
+  right: -44px;
+  font-size: 11px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.ow-data-bubble {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  background: #000;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transform: translateX(50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.ow-bubble-val {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  font-family: var(--font-mono);
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideUpOW {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Empty State Styles */
+.ow-empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.ow-empty-text {
+  color: var(--sh-grey-500);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Legend premium ── */
+.ow-legend {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.ow-legend-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.ow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: default;
+}
+.ow-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ow-pill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ow-status-dot {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+.ow-status-dot.ok {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+.ow-status-dot.danger {
+  background: rgba(220, 38, 38, 0.8);
+  color: #fff;
+  animation: ow-blink 1s infinite;
+}
+@keyframes ow-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

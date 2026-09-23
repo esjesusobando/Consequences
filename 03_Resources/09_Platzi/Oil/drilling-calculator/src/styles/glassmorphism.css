@@ -1,0 +1,192 @@
+/* ============================================================
+   Drilling Calculator — Glassmorphism & Effects v2
+   PersonalOS · Vercel-Grade Premium Surfaces
+   ============================================================ */
+
+/* ─── Glass Panels ─────────────────────────────────────────── */
+.glass-panel {
+  background: var(--gradient-card);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-inset), var(--shadow-xs);
+  transition:
+    border-color var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.glass-panel:hover {
+  border-color: var(--color-border-strong);
+}
+
+.glass-panel-elevated {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(var(--blur-heavy));
+  -webkit-backdrop-filter: blur(var(--blur-heavy));
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-inset), var(--shadow-md);
+}
+
+/* ─── Glass Inputs ─────────────────────────────────────────── */
+.glass-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+}
+
+.glass-input:hover {
+  border-color: var(--color-border-hover);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow:
+    0 0 0 3px var(--color-primary-alpha-10),
+    var(--shadow-glow-sm);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.glass-input.invalid {
+  border-color: var(--color-critical);
+  box-shadow: 0 0 0 3px var(--color-critical-bg);
+}
+
+.glass-input.warning {
+  border-color: var(--color-warning);
+  box-shadow: 0 0 0 3px var(--color-warning-bg);
+}
+
+/* ─── Status Indicators ─────────────────────────────────── */
+.status-bar {
+  width: 3px;
+  border-radius: var(--radius-full);
+  transition: background-color var(--duration-normal) var(--ease-out);
+}
+
+.status-bar--safe {
+  background-color: var(--color-safe);
+}
+.status-bar--warning {
+  background-color: var(--color-warning);
+}
+.status-bar--critical {
+  background-color: var(--color-critical);
+}
+.status-bar--neutral {
+  background-color: var(--color-border-strong);
+}
+
+/* ─── Micro-Animations ──────────────────────────────────── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1200px;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 8px var(--color-primary-alpha-10);
+  }
+  50% {
+    box-shadow: 0 0 24px var(--color-primary-alpha-20);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInScale var(--duration-normal) var(--ease-out) forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s var(--ease-in-out) infinite;
+}
+
+.animate-glow {
+  animation: glowPulse 3s var(--ease-in-out) infinite;
+}
+
+/* ─── Staggered Children ──────────────────────────────────── */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeIn var(--duration-normal) var(--ease-out) forwards;
+}
+
+.stagger-children > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.stagger-children > *:nth-child(2) {
+  animation-delay: 50ms;
+}
+.stagger-children > *:nth-child(3) {
+  animation-delay: 100ms;
+}
+.stagger-children > *:nth-child(4) {
+  animation-delay: 150ms;
+}
+.stagger-children > *:nth-child(5) {
+  animation-delay: 200ms;
+}
+.stagger-children > *:nth-child(6) {
+  animation-delay: 250ms;
+}
+.stagger-children > *:nth-child(7) {
+  animation-delay: 300ms;
+}
+.stagger-children > *:nth-child(8) {
+  animation-delay: 350ms;
+}

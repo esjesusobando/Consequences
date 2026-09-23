@@ -1,0 +1,35 @@
+schema: spec-driven
+
+context: |
+  Tech stack: React 19, TypeScript 5.9, Vite 7.3, Zustand 5
+  Architecture: Pure calculation engine (src/engine/) + Zustand store + React UI
+  Testing: Vitest 4.1 (jsdom), @testing-library/react, jest-dom
+  Style: ESLint 9 flat config, strict TS, no formatter
+  Deploy: Vercel, dist output
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+  apply:
+    guidelines:
+      - Follow existing code patterns
+      - No `any` types allowed
+      - Functional components only
+      - Named exports preferred
+    tdd: true
+    test_command: "vitest run"
+  verify:
+    test_command: "vitest run"
+    build_command: "tsc -b && vite build"
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas

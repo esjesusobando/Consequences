@@ -1,0 +1,357 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]: ●
+          - text: Drilling Engine
+        - button "Jetro Zen" [ref=e9] [cursor=pointer]:
+          - img [ref=e10]
+          - generic [ref=e15]: Jetro Zen
+      - paragraph [ref=e16]: Análisis en Tiempo Real v4.0
+    - generic [ref=e17]:
+      - button "Geometría del Pozo V1V2" [expanded] [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]:
+          - img [ref=e21]
+          - heading "Geometría del Pozo" [level=2] [ref=e27]
+        - generic [ref=e28]:
+          - generic [ref=e29]: V1V2
+          - img [ref=e30]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: Profundidad Medida (MD)
+            - generic [ref=e37]: ft
+          - spinbutton [ref=e38]: "8000"
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: Profundidad Vertical (TVD)
+            - generic [ref=e42]: ft
+          - spinbutton [ref=e43]: "7800"
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e46]: Diámetro del Hoyo
+            - generic [ref=e47]: in
+          - spinbutton [ref=e48]: "12.25"
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: OD Tubería de Perforación
+            - generic [ref=e52]: in
+          - spinbutton [ref=e53]: "5"
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: ID Tubería de Perforación
+            - generic [ref=e57]: in
+          - spinbutton [ref=e58]: "4.276"
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Longitud de Tubería
+            - generic [ref=e62]: ft
+          - spinbutton [ref=e63]: "7200"
+    - generic [ref=e64]:
+      - button "Formación Geológica V1V2" [expanded] [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]:
+          - img [ref=e68]
+          - heading "Formación Geológica" [level=2] [ref=e72]
+        - generic [ref=e73]:
+          - generic [ref=e74]: V1V2
+          - img [ref=e75]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: Gradiente de Poro
+            - generic [ref=e82]: psi/ft
+          - spinbutton [ref=e83]: "0.52"
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]: Gradiente de Fractura
+            - generic [ref=e87]: psi/ft
+          - spinbutton [ref=e88]: "0.85"
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - generic [ref=e91]: Gradiente Normal
+            - generic [ref=e92]: psi/ft
+          - spinbutton [ref=e93]: "0.465"
+    - generic [ref=e94]:
+      - button "Propiedades del Lodo V1V2" [expanded] [ref=e95] [cursor=pointer]:
+        - generic [ref=e96]:
+          - img [ref=e98]
+          - heading "Propiedades del Lodo" [level=2] [ref=e101]
+        - generic [ref=e102]:
+          - generic [ref=e103]: V1V2
+          - img [ref=e104]
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: Densidad del Lodo
+            - generic [ref=e111]: ppg
+          - spinbutton [ref=e112]: "10.5"
+        - generic [ref=e113]: Reología (FANN 35)
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e117]: L600
+            - spinbutton [ref=e118]: "65"
+          - generic [ref=e119]:
+            - generic [ref=e121]: L300
+            - spinbutton [ref=e122]: "42"
+          - generic [ref=e123]:
+            - generic [ref=e125]: L200
+            - spinbutton [ref=e126]: "35"
+          - generic [ref=e127]:
+            - generic [ref=e129]: L100
+            - spinbutton [ref=e130]: "25"
+          - generic [ref=e131]:
+            - generic [ref=e133]: L6
+            - spinbutton [ref=e134]: "8"
+          - generic [ref=e135]:
+            - generic [ref=e137]: L3
+            - spinbutton [ref=e138]: "7"
+        - generic [ref=e139]: Fuerza de Gel
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - generic [ref=e143]: 10 seg
+            - spinbutton [ref=e144]: "7"
+          - generic [ref=e145]:
+            - generic [ref=e147]: 10 min
+            - spinbutton [ref=e148]: "12"
+    - generic [ref=e149]:
+      - button "Configuración de Bombas V1V2" [expanded] [ref=e150] [cursor=pointer]:
+        - generic [ref=e151]:
+          - img [ref=e153]
+          - heading "Configuración de Bombas" [level=2] [ref=e155]
+        - generic [ref=e156]:
+          - generic [ref=e157]: V1V2
+          - img [ref=e158]
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - button "TRIPLEX" [ref=e163]
+          - button "DUPLEX" [ref=e164]
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]: Diámetro de Camisa (Liner)
+            - generic [ref=e168]: in
+          - spinbutton [ref=e169]: "6.5"
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - generic [ref=e172]: Longitud de Carrera
+            - generic [ref=e173]: in
+          - spinbutton [ref=e174]: "12"
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e177]: Emboladas Por Minuto
+            - generic [ref=e178]: SPM
+          - spinbutton [ref=e179]: "85"
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - generic [ref=e182]: Eficiencia
+            - generic [ref=e183]: "%"
+          - spinbutton [ref=e184]: "90"
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]: Presión de Standpipe
+            - generic [ref=e188]: psi
+          - spinbutton [ref=e189]: "2850"
+  - main [ref=e190]:
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - generic [ref=e194]:
+          - generic [ref=e195]: Ventana Operativa (Triple Barra)
+          - generic [ref=e196]: ppg
+        - generic [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]: FG
+            - generic [ref=e202]: "16.35"
+          - generic [ref=e203]:
+            - generic [ref=e204]: ECD
+            - generic [ref=e206]:
+              - generic: "10.65"
+          - generic [ref=e208]:
+            - generic [ref=e209]: MW
+            - generic [ref=e212]: "10.50"
+      - generic [ref=e213]:
+        - heading "Distribución de Volumen" [level=4] [ref=e214]
+        - generic [ref=e215]:
+          - img [ref=e216]
+          - generic [ref=e221]:
+            - generic [ref=e222]: "1087"
+            - generic [ref=e223]:
+              - text: BBL
+              - text: TOTALES
+        - generic [ref=e224]:
+          - generic [ref=e225]: Sarta
+          - generic [ref=e227]: Anular
+      - generic [ref=e229]:
+        - generic [ref=e230]:
+          - heading "Esquema de Geometría" [level=3] [ref=e231]
+          - generic [ref=e232]: 8000 ft MD
+        - img [ref=e233]:
+          - generic [ref=e240]: "0"
+          - generic [ref=e241]: 8444 ft
+        - generic [ref=e242]:
+          - generic [ref=e243]: DP
+          - generic [ref=e245]: HWDP
+          - generic [ref=e247]: DC
+    - generic [ref=e249]:
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - img [ref=e252]
+          - heading "Volumetría" [level=3] [ref=e261]
+        - generic [ref=e262]:
+          - generic [ref=e264]:
+            - text: Volumen Total Sistema
+            - generic [ref=e265]:
+              - text: "1087.33"
+              - generic [ref=e266]: bbl
+          - generic [ref=e268]:
+            - text: Volumen Int. TP
+            - generic [ref=e269]:
+              - text: "127.89"
+              - generic [ref=e270]: bbl
+          - generic [ref=e272]:
+            - text: Volumen Int. DC
+            - generic [ref=e273]:
+              - text: "3.84"
+              - generic [ref=e274]: bbl
+          - generic [ref=e276]:
+            - text: Anular TP
+            - generic [ref=e277]:
+              - text: "874.73"
+              - generic [ref=e278]: bbl
+          - generic [ref=e280]:
+            - text: Anular DC
+            - generic [ref=e281]:
+              - text: "41.80"
+              - generic [ref=e282]: bbl
+          - generic [ref=e284]:
+            - text: Vol. Interior Total
+            - generic [ref=e285]:
+              - text: "134.35"
+              - generic [ref=e286]: bbl
+          - generic [ref=e288]:
+            - text: Vol. Anular Total
+            - generic [ref=e289]:
+              - text: "952.98"
+              - generic [ref=e290]: bbl
+        - generic [ref=e291]:
+          - text: "Capacidad del Hoyo:"
+          - generic [ref=e292]: 0.1458 bbl/ft
+      - generic [ref=e293]:
+        - generic [ref=e294]:
+          - img [ref=e295]
+          - heading "Presiones de Fondo" [level=3] [ref=e297]
+        - generic [ref=e298]:
+          - generic [ref=e300]:
+            - text: P. Hidrostática
+            - generic [ref=e301]:
+              - text: "4258.80"
+              - generic [ref=e302]: psi
+          - generic [ref=e304]:
+            - text: Gradiente Lodo
+            - generic [ref=e305]:
+              - text: "0.546"
+              - generic [ref=e306]: psi/ft
+          - generic [ref=e308]:
+            - text: P. de Poro
+            - generic [ref=e309]:
+              - text: "4056.00"
+              - generic [ref=e310]: psi
+          - generic [ref=e312]:
+            - text: P. de Fractura
+            - generic [ref=e313]:
+              - text: "6630.00"
+              - generic [ref=e314]: psi
+          - generic [ref=e316]:
+            - text: Sobrebalance
+            - generic [ref=e317]:
+              - text: "202.80"
+              - generic [ref=e318]: psi
+        - generic [ref=e319]:
+          - text: "Ventana Operativa (MW):"
+          - generic [ref=e320]: 10.00 — 16.35 ppg
+      - generic [ref=e321]:
+        - generic [ref=e322]:
+          - img [ref=e323]
+          - heading "Circulación" [level=3] [ref=e326]
+        - generic [ref=e327]:
+          - generic [ref=e329]:
+            - text: Superficie a Barrena
+            - generic [ref=e330]:
+              - text: "299.35"
+              - generic [ref=e331]: min
+          - generic [ref=e333]:
+            - text: Emboladas a Barrena
+            - generic [ref=e334]:
+              - text: "25445"
+              - generic [ref=e335]: stks
+          - generic [ref=e337]:
+            - text: Fondo Arriba (B.U.)
+            - generic [ref=e338]:
+              - text: "2123.38"
+              - generic [ref=e339]: min
+          - generic [ref=e341]:
+            - text: Emboladas (B.U.)
+            - generic [ref=e342]:
+              - text: "180488"
+              - generic [ref=e343]: stks
+          - generic [ref=e345]:
+            - text: Circulación Completa
+            - generic [ref=e346]:
+              - text: "2422.74"
+              - generic [ref=e347]: min
+          - generic [ref=e349]:
+            - text: Emboladas Totales
+            - generic [ref=e350]:
+              - text: "205933"
+              - generic [ref=e351]: stks
+        - generic [ref=e352]:
+          - text: "Gasto de Bomba:"
+          - generic [ref=e353]: 0.1109 bbl/stk
+      - generic [ref=e354]:
+        - generic [ref=e355]:
+          - img [ref=e356]
+          - heading "Hidráulica" [level=3] [ref=e358]
+        - generic [ref=e359]:
+          - generic [ref=e361]:
+            - text: ECD
+            - generic [ref=e362]:
+              - text: "10.65"
+              - generic [ref=e363]: ppg
+          - generic [ref=e365]:
+            - text: Pérdida Presión Total
+            - generic [ref=e366]:
+              - text: "954.30"
+              - generic [ref=e367]: psi
+          - generic [ref=e369]:
+            - text: Pérdida en Barrena
+            - generic [ref=e370]:
+              - text: "1.87"
+              - generic [ref=e371]: psi
+          - generic [ref=e373]:
+            - text: HSI
+            - generic [ref=e374]:
+              - text: "0.00"
+              - generic [ref=e375]: hp/in²
+          - generic [ref=e377]:
+            - text: Fuerza de Impacto
+            - generic [ref=e378]:
+              - text: "48.38"
+              - generic [ref=e379]: lbf
+  - generic [ref=e380]:
+    - heading "Alertas Operativas (2)" [level=3] [ref=e381]
+    - generic [ref=e382]:
+      - generic [ref=e383]:
+        - img [ref=e384]
+        - generic [ref=e386]:
+          - generic [ref=e387]: "Velocidad anular baja: 4 ft/min"
+          - generic [ref=e388]: "— Mínimo recomendado: 120 ft/min para limpieza de hoyo eficiente."
+        - generic [ref=e389]: Hidráulica
+      - generic [ref=e390]:
+        - img [ref=e391]
+        - generic [ref=e393]:
+          - generic [ref=e394]: "HHP/in² sub-óptimo: 0.00"
+          - generic [ref=e395]: "— Objetivo: 2.0 – 3.0 HHP/in² para máxima limpieza de la barrena."
+        - generic [ref=e396]: Hidráulica
+    - generic [ref=e397]:
+      - heading "Margen de Seguridad" [level=4] [ref=e399]
+      - generic [ref=e400]: +2371 psi
+      - paragraph [ref=e401]: Sobrebalance Estático @ TD

@@ -1,0 +1,812 @@
+/* Jetro AI Chat — Premium Cyber-Light Styles */
+
+:root {
+  /* Minimalismo funcional (Estilo Dieter Rams) */
+  --jetro-theme-bg: #f5f5f7; /* Blanco "Apple" sólido */
+  --jetro-theme-surface: #ffffff;
+  --jetro-theme-text: #1d1d1f;
+  --jetro-theme-text-secondary: #86868b;
+  --jetro-theme-border: rgba(0, 0, 0, 0.1);
+  --jetro-theme-glow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --jetro-cyan: #0071e3; /* Azul funcional sólido */
+  --jetro-alert-orange: #ff9f0a; /* Naranja Alerta Rams */
+  --jetro-critical-red: #ff3b30;
+  --jetro-glass-saturate: saturate(100%);
+  --jetro-glass-blur: blur(0px); /* Menos glass, más solidez */
+}
+
+.jetro-container.dark {
+  --jetro-theme-bg: #1a1a1a;
+  --jetro-theme-surface: #2d2d2d;
+  --jetro-theme-text: #f5f5f7;
+  --jetro-theme-text-secondary: #a1a1a6;
+  --jetro-theme-border: rgba(255, 255, 255, 0.1);
+  --jetro-theme-glow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.jetro-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2000; /* Elevado para estar sobre el header (1000) */
+  font-family: "Outfit", "Inter", sans-serif;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  /* Asegurar que no quede oculto por el padding lateral de la app */
+  margin-right: 24px;
+}
+
+/* --- Floating Trigger Button (Subtle Circle) --- */
+.jetro-trigger {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: var(--jetro-glass-blur) var(--jetro-glass-saturate);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  color: #1e293b;
+  z-index: 1;
+}
+
+.jetro-trigger svg {
+  position: relative;
+  z-index: 2;
+}
+
+.jetro-trigger:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: rgba(255, 255, 255, 0.6);
+  border-color: var(--jetro-cyan);
+  color: #1e3a8a; /* blue-900 — máximo contraste sobre blanco */
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+  z-index: 1;
+}
+
+.jetro-trigger-text {
+  display: none;
+}
+
+/* Pulso como anillo exterior */
+.jetro-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--jetro-cyan);
+  opacity: 0;
+  z-index: 0;
+  animation: pulse 2.5s infinite;
+}
+
+.jetro-pulse.pulse-orange {
+  border-color: var(--jetro-alert-orange);
+  animation: pulse-orange 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-orange {
+  0% {
+    transform: scale(1);
+    border-width: 4px;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    border-width: 1px;
+    opacity: 0;
+  }
+}
+
+/* --- Chat Window (Glassmorphism Apple/Raycast) --- */
+.jetro-window {
+  width: 380px;
+  height: 580px;
+  background: var(--jetro-theme-bg);
+  border: 1px solid var(--jetro-theme-border);
+  border-radius: 12px; /* Más Rams, menos Apple */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--jetro-theme-glow);
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+/* Borde Electroluminiscente (Top highlight) */
+.jetro-window::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  z-index: 2;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* --- Header --- */
+.jetro-header {
+  padding: 1.2rem 1.5rem;
+  background: var(--jetro-theme-surface);
+  border-bottom: 1px solid var(--jetro-theme-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.jetro-header-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.jetro-avatar {
+  width: 40px;
+  height: 40px;
+  background: rgba(163, 230, 53, 0.08);
+  border: 1px solid rgba(163, 230, 53, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--jetro-cyan);
+  position: relative;
+  box-shadow: inset 0 0 10px rgba(163, 230, 53, 0.1);
+}
+
+.sparkle-icon {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.jetro-title h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--jetro-theme-text);
+  letter-spacing: -0.02em;
+}
+
+.jetro-status {
+  font-size: 0.75rem;
+  color: var(--jetro-theme-text-secondary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.jetro-status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.header-btn {
+  background: var(--jetro-theme-surface);
+  border: 1px solid var(--jetro-theme-border);
+  color: var(--jetro-theme-text-secondary);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.header-btn:hover {
+  background: var(--jetro-cyan);
+  color: white;
+  border-color: var(--jetro-cyan);
+  box-shadow: 0 0 15px rgba(163, 230, 53, 0.2);
+}
+
+/* --- Messages --- */
+.jetro-messages {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.jetro-messages::-webkit-scrollbar {
+  width: 5px;
+}
+
+.jetro-messages::-webkit-scrollbar-thumb {
+  background: var(--jetro-theme-border);
+  border-radius: 10px;
+}
+
+.message-wrapper {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  animation: messageFade 0.3s ease-out forwards;
+}
+
+@keyframes messageFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-wrapper.assistant {
+  align-self: flex-start;
+}
+
+.message-wrapper.user {
+  align-self: flex-end;
+}
+
+.message-bubble {
+  padding: 0.85rem 1.25rem;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.assistant .message-bubble {
+  background: var(--jetro-theme-surface);
+  color: var(--jetro-theme-text);
+  border-bottom-left-radius: 4px;
+  border: 1px solid var(--jetro-theme-border);
+}
+
+.user .message-bubble {
+  background: linear-gradient(135deg, var(--jetro-cyan), hsl(217, 90%, 35%));
+  color: white;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.message-time {
+  font-size: 0.7rem;
+  color: var(--jetro-theme-text-secondary);
+  margin-top: 6px;
+  padding: 0 6px;
+  font-weight: 500;
+}
+
+.user .message-time {
+  text-align: right;
+}
+
+/* --- Input Area --- */
+.jetro-input-area {
+  padding: 1.25rem 1.5rem 1.75rem;
+  border-top: 1px solid var(--jetro-theme-border);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: var(--jetro-theme-surface);
+  position: relative;
+}
+
+.jetro-input-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.jetro-input-area input {
+  width: 100%;
+  background: var(--jetro-theme-bg);
+  border: 1px solid var(--jetro-theme-border);
+  border-radius: 14px;
+  padding: 0.85rem 1.2rem;
+  padding-left: 1rem;
+  color: var(--jetro-theme-text);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.jetro-input-area input:focus {
+  border-color: var(--jetro-cyan);
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.1),
+    inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.jetro-input-area input::placeholder {
+  color: var(--jetro-theme-text-secondary);
+  opacity: 0.6;
+}
+
+.send-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--jetro-cyan);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.send-btn:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+}
+
+.send-btn:disabled {
+  background: var(--jetro-theme-border);
+  color: var(--jetro-theme-text-secondary);
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+/* --- Smart Suggestions Menu --- */
+.suggestions-trigger {
+  background: transparent;
+  border: none;
+  color: var(--jetro-cyan);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.suggestions-trigger:hover {
+  background: rgba(59, 130, 246, 0.08);
+  transform: rotate(15deg);
+  filter: drop-shadow(0 0 5px var(--jetro-cyan));
+}
+
+.jetro-smart-menu {
+  position: absolute;
+  bottom: 100%;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: var(--jetro-theme-bg);
+  backdrop-filter: var(--jetro-glass-blur);
+  border: 1px solid var(--jetro-theme-border);
+  border-radius: 16px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow:
+    0 -10px 30px rgba(0, 0, 0, 0.2),
+    var(--jetro-theme-glow);
+  animation: menuPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 20;
+}
+
+@keyframes menuPop {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.suggestion-item {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--jetro-theme-text);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.suggestion-item:hover {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: rgba(59, 130, 246, 0.2);
+  color: var(--jetro-cyan);
+  padding-left: 1.25rem;
+}
+
+/* Modals / Outside Click Layer */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+}
+
+/* --- Multi-Provider Settings Panel --- */
+.jetro-settings-panel {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.settings-header h4 {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.close-settings {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.close-settings:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settings-body label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+}
+
+.settings-body select,
+.settings-body input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.settings-body select:focus,
+.settings-body input:focus {
+  border-color: var(--jetro-theme-primary);
+}
+
+.settings-body small {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.7rem;
+}
+
+/* --- Attachments Preview --- */
+.jetro-attachments-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+.attachment-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: #fff;
+  position: relative;
+}
+
+.attachment-img-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+}
+
+.attachment-name {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-att {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.remove-att:hover {
+  color: #ef4444;
+}
+
+/* --- Top Controls (Settings & Sparkles) --- */
+/* Ya no se usa tras unificar los botones en el panel principal */
+
+.icon-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover,
+.icon-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- Multimodal Input Area --- */
+.jetro-input-wrapper.custom-multimodal {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.jetro-input-wrapper.custom-multimodal .icon-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.jetro-input-wrapper.custom-multimodal .icon-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.jetro-input-wrapper.custom-multimodal input[type="text"] {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0 12px;
+  color: var(--jetro-theme-text);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.jetro-input-wrapper.custom-multimodal input[type="text"].listening-active {
+  color: #ef4444;
+}
+
+/* Mic animation */
+@keyframes pulseRed {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.icon-btn.mic-btn.pulsing-red {
+  color: #ef4444;
+  animation: pulseRed 1.5s infinite;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Ajustes visuales de modo claro para inputs y settings */
+.jetro-container.light .settings-header,
+.jetro-container.light .settings-body label,
+.jetro-container.light .attachment-chip,
+.jetro-container.light .icon-btn,
+.jetro-container.light .jetro-input-wrapper.custom-multimodal .icon-btn {
+  color: #1e293b;
+}
+
+.jetro-container.light .settings-body select,
+.jetro-container.light .settings-body input,
+.jetro-container.light
+  .jetro-input-wrapper.custom-multimodal
+  input[type="text"] {
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.jetro-container.light .attachment-chip {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.jetro-container.light .jetro-input-wrapper.custom-multimodal {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.jetro-container.light .icon-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #0f172a;
+}
+
+/* --- Actionable AI ("Hazlo") Cards --- */
+.jetro-action-card {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.jetro-container.light .jetro-action-card {
+  background: var(--jetro-theme-surface);
+  border-color: var(--jetro-theme-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.action-header {
+  padding: 0.5rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--jetro-cyan);
+  background: rgba(0, 113, 227, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.jetro-container.light .action-header {
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.action-list {
+  padding: 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  padding: 4px 0;
+}
+
+.action-store {
+  color: var(--jetro-theme-text-secondary);
+  font-family: monospace;
+}
+
+.action-value {
+  color: var(--jetro-theme-text);
+}
+
+.apply-action-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--jetro-cyan);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.apply-action-btn:hover:not(:disabled) {
+  background: #005bb5;
+}
+
+.apply-action-btn:disabled.applied {
+  background: #10b981;
+  cursor: default;
+  color: white;
+}
