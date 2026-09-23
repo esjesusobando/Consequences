@@ -7,7 +7,7 @@ Diagramas y visualizaciones creadas con Excalidraw.
 | # | Documento | Descripción |
 |---|-----------|-------------|
 | 01 | Excalidraw.md | Diagrama principal |
-| 02 | Index.md | Este índice |
+| 02 | Index.md | Índice de diagramas |
 
 ---
 

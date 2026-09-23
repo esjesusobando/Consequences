@@ -6,12 +6,12 @@ Cursos de Platzi organizados y numerados.
 
 | # | Documento | Descripción |
 |---|-----------|-------------|
-| 01 | Claude_Code.md | Claude Code fundamentals |
+| 01 | Claude_Code.md | Fundamentos de Claude Code |
 | 02 | Contex_Engineering.md | Context Engineering |
-| 03 | Code_Review_con_AI.md | Code Review with AI |
-| 04 | Fundamentos_de_Testing.md | Testing fundamentals |
-| 05 | Estrategias_de_Modelos.md | Model strategies |
-| 06 | Diverse_Interests_10_Years.md | YouTube transcript on diverse interests |
+| 03 | Code_Review_con_AI.md | Code Review con AI |
+| 04 | Fundamentos_de_Testing.md | Fundamentos de Testing |
+| 05 | Estrategias_de_Modelos.md | Estrategias de Modelos |
+| 06 | Diverse_Interests_10_Years.md | Transcript YouTube: intereses diversos 10 años |
 
 ---
 

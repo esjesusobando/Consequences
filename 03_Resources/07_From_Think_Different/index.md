@@ -1,11 +1,11 @@
-# 07_From_Think_Different — Contenido Migrado desde Think_Different
+# 07_From_Think_Different — Índice Principal
 
-14 archivos migrados desde el repositorio Think_Different.
+14 archivos migrados desde Think_Different.
 
 ## Estructura
 
-| # | Archivo | Descripción |
-|---|---------|-------------|
+| # | Documento | Descripción |
+|---|-----------|-------------|
 | 01 | Firecrawl_AI_Web_Scraping.md | Firecrawl scraping |
 | 02 | Chris_Orwig_Style_Guide.md | Guía de estilo Chris Orwig |
 | 03 | MCP_Security_Audit.md | Auditoría de seguridad MCP |
@@ -18,11 +18,11 @@
 | 10 | Skills_TOP_Rankings.md | Ranking de Skills |
 | 11 | Token_Optimization.md | Optimización de tokens |
 | 12 | Think_Different_OS_JOURNAL.md | Journal del OS |
-| 13 | index.md | Índice principal |
+| 13 | index.md | Este índice |
 
 ## Subdirectorios
 
-- `2026-07-28_LA_Preparandose_para_el_exito_Jason_Liu/` — Contenido de la charla
+- `2026-07-28_LA_Preparandose_para_el_exito_Jason_Liu/` — Contenido de la charla (01_ a 09_)
 - `_transcripts/` — Transcripts de YouTube
 
 ---
