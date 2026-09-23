@@ -207,6 +207,9 @@
   },
   "active": "1f6834ba265367bd",
   "lastOpenFiles": [
+    "03_Resources/01_AI_Research_OS/wiki/renders/marp/ai-research-os.md",
+    "03_Resources/01_AI_Research_OS/wiki/renders/marp",
+    "03_Resources/01_AI_Research_OS/wiki/renders",
     "03_Resources/01_AI_Research_OS/log.md",
     "03_Resources/01_AI_Research_OS/lint-missing-comparisons.json",
     "03_Resources/01_AI_Research_OS/wiki/entities/sed95D20x",
@@ -216,8 +219,6 @@
     "03_Resources/01_AI_Research_OS/wiki/concepts/sedzjUXTZ",
     "03_Resources/01_AI_Research_OS/wiki/comparisons/sedOLJqOR",
     "03_Resources/01_AI_Research_OS/sedRJ2b82",
-    "03_Resources/01_AI_Research_OS/lint-missing-hubs.json",
-    "03_Resources/01_AI_Research_OS/lint-broken-links.json",
     "03_Resources/01_AI_Research_OS/wiki/open-questions.md",
     "03_Resources/01_AI_Research_OS/wiki/comparisons/v1-vs-v2-vs-v3.md",
     "03_Resources/01_AI_Research_OS/wiki/entities/obsidian.md",
@@ -251,7 +252,6 @@
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities/neo4j.md",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities/claude-code.md",
     "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/graphrag.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/ontology.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/knowledge-graph.md"
+    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/ontology.md"
   ]
 }
