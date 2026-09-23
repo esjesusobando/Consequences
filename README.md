@@ -1,462 +1,51 @@
-# Oband_Os - Second Brain
+# Consequences — Personal OS
 
-> **Knowledge Layer** - El cerebro que lee, conecta y navega.
-> **Think_Different** es el **Executable Layer** - las manos que ejecutan.
+> **Sistema Operativo Personal** — Segundo Cerebro digital.
+> Versión: 1.0.0 | Actualizado: 2026-09-23
 
-## 🎯 Metodología Base Principal: LLM Wiki + AI Research OS
+## Estructura del Vault
 
-> "Tú guardas → Yo organizo → Tú consultas"
+| # | Carpeta | Descripción |
+|---|---------|-------------|
+| 00 | Backups_Os | Backup completo del sistema OS |
+| 00 | Inbox | Bandeja de entrada — archivos pendientes de procesar |
+| 01 | Projects | Proyectos activos |
+| 02 | Areas | Áreas de conocimiento (Shared_Org, Content, Marketing, etc.) |
+| 03 | Resources | Recursos de investigación y referencias |
+| 04 | Archive | Archivo histórico (Context_Memory, Sessions, Obsidian_Pre_Backup) |
+| 05 | Daily | Notas diarias organizadas por fecha |
+| 06 | Process | Procesos internos (LLM_Wiki, Schema) |
+| 07 | Platzi | Cursos y formación de Platzi |
+| 08 | Templates | Plantillas de documentos reutilizables |
+| 09 | Excalidraw | Diagramas y visualizaciones |
 
-### Arquitectura de Tres Capas (AI Research OS)
+## Convenciones de Naming
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    METODOLOGÍA BASE                         │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  1. RAW CONTENT (inmutable)                                │
-│     └── 00_Inbox/                                 │
-│         ├── Artículos web                                  │
-│         ├── Videos (transcripts)                           │
-│         ├── Papers                                        │
-│         └── Notas personales                              │
-│                                                             │
-│  2. INDEX (catálogo)                                       │
-│     └── 06_Process/01_LLM_Wiki/index.md                   │
-│         ├── Metadata de cada fuente                       │
-│         ├── Resúmenes ejecutivos                          │
-│         └── Referencias cruzadas                          │
-│                                                             │
-│  3. WIKI LAYER (derivados LLM)                            │
-│     └── 06_Process/01_LLM_Wiki/                           │
-│         ├── Entities (personas, herramientas)              │
-│         ├── Concepts (ideías, patrones)                   │
-│         ├── Comparisons (diferencias)                     │
-│         ├── Notes (derivadas de preguntas)                │
-│         └── Open Questions (gaps)                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+- **PascalCase con guiones bajos**: `01_Nombre_Del_Archivo.md`
+- **Numeración secuencial**: `01_`, `02_`, `03_`... hasta `99_`
+- **Carpetas con 2 dígitos**: `00_`, `01_`, `02_`... `12_`
+- **Index files**: `index.md` o `02_Index.md` dentro de subcarpetas
 
-### Operaciones
+## Reglas
 
-| Operación | Input | Output | Frequencia |
-|-----------|-------|--------|------------|
-| **Ingest** | Source en 01_Raw/ | Páginas wiki + index actualizado | Cuando guardas algo |
-| **Query** | Pregunta | Respuesta con citas + nuevas páginas | Cuando consultas |
-| **Lint** | Petición | Salud del wiki (contradicciones, orphans) | Mantenimiento |
+1. Todo archivo y carpeta debe tener numeración secuencial
+2. PascalCase con guiones bajos entre palabras
+3. Los índices (`index.md`) mantienen su posición
+4. Los directorios de sistema (`_transcripts`, `wiki`, `raw`) se numeran
 
-### Flujo de Trabajo
+## Componentes Principales
 
-```
-TÚ GUARDAS                    YO ORGANIZO                   TÚ CONSULTAS
-    │                              │                              │
-    ▼                              ▼                              ▼
-┌─────────┐                  ┌─────────┐                  ┌─────────┐
-│ 01_Raw/ │ ──── ingest ───► │  Wiki   │ ◄──── query ──── │  Tú     │
-│ (fuentes)│                  │ (páginas)│                  │(pregunta)│
-└─────────┘                  └─────────┘                  └─────────┘
-                                  │
-                                  ▼
-                            ┌─────────┐
-                            │  Index  │
-                            │(catálogo)│
-                            └─────────┘
-```
+### 06_Process/01_LLM_Wiki/
+Motor de conocimiento con 12 páginas numeradas:
+- `01_AI_Research_OS.md` → `12_Log.md`
+- `index.md`, `index.yaml`
 
-### Archivos Clave
+### 02_Areas/
+12 áreas de conocimiento con subestructura numerada.
 
-| Archivo | Propósito | Lectura |
-|---------|-----------|---------|
-| `06_Process/02_Schema/CLAUDE.md` | Schema y reglas | Primero |
-| `06_Process/01_LLM_Wiki/index.md` | Catálogo de contenido | Antes de cada query |
-| `06_Process/01_LLM_Wiki/log.md` | Registro cronológico | Para historial |
-| `00_Inbox/` | Fuentes crudas | Para ingest |
-
-### Para Empezar
-
-1. **Leer schema**: `06_Process/02_Schema/CLAUDE.md`
-2. **Guardar source**: En `00_Inbox/`
-3. **Decir "ingest"**: Al LLM con el nombre del archivo
-4. **El LLM organiza**: Crea páginas, actualiza index, registra en log
-5. **Consultar**: Hacer preguntas al LLM sobre el wiki
-
-## Web Clipper
-
-### Instalación
-1. Ve a Chrome Web Store / Firefox Add-ons
-2. Busca "Obsidian Web Clipper"
-3. Instala la extensión
-4. Configura:
-   - **Vault URL:** `obsidian://open?vault=Consequences`
-   - **Default folder:** `00_Inbox/`
-
-### Uso
-1. Ve al artículo que quieres guardar
-2. Haz clic en el ícono del Web Clipper
-3. Selecciona "Clip to Obsidian"
-4. El artículo se guardará en `00_Inbox/`
-5. Abre OpenCode/Claude y di "ingest [nombre del archivo]"
-
-### Atajos de teclado
-- `Ctrl+Shift+C` - Clippear selección
-- `Ctrl+Shift+F` - Clippear página completa
+### 04_Archive/Context_Memory/
+21 archivos de contexto numerados `01_` a `21_`.
 
 ---
 
-## 🔄 Sincronización OS ↔ Obsidian
-
-| OS (Think_Different) | Obsidian (Now_Invictus/00_Consequences/Consequences) | Estado |
-|----------------------|------------------------------------------------------|--------|
-| `01_Personal_Os/02_Knowledge/06_Research/` | `06_Process/01_LLM_Wiki/` | ✅ **SYNCED** (2026-08-29) |
-| `PLAN_3D_Anticolision.md` | `03_Resources/` (si existe) | 🔄 PENDING |
-
-> **Nota:** La sincronización es manual por ahora. El protocolo automático Think_Different ↔ Oband_Os fue eliminado durante la reorganización. Ver `sync_oband_think_different.py` en archivo.
-
-## 📚 Metodologías Adicionales
-
-Además de la **Metodología Base Principal** (LLM Wiki + AI Research OS), el vault integra otras metodologías complementarias:
-
-### 1. AI Research OS (Paul Iusztin)
-- **Ubicación:** `03_Resources/`
-- **Enfoque:** Sistema de investigación personal con three-layer architecture
-- **Componentes:** Raw → Index → Wiki
-- **Repo:** https://github.com/Pauliusztin/ai-research-os-workshop
-- **Ver también:** `06_Process/01_LLM_Wiki/AI_Research_OS.md`
-
-### 2. Steph Ango Method
-- **Enfoque:** Sistema de aprendizaje basado en hábitos
-- **Ubicación:** Integrado en `05_Daily/` y `03_Resources/`
-- **Principio:** Consistencia > intensidad
-
-### 3. Research Skills (Obsidian Integration)
-- **Ubicación:** `03_Resources/`
-- **Skills activos:**
-  - `research:research` — Investigación profunda con wiki
-  - `research:distill` — Extraer fuentes usadas
-  - `research:lint` — Health check del research dir
-  - `research:render` — Generar múltiples formatos
-  - `research:readwise` — Acceder a highlights
-  - `research:nlm` — Interactuar con NotebookLM
-  - `research:obsidian` — Gestionar notas de Obsidian
-
-### 4. Categories/MOC (Map of Content)
-- **Ubicación:** `03_Resources/04_Playground/`
-- **Enfoque:** Hubs transversales que agrupan notas por categorías sin duplicar
-- **Hubs:** OS, Conocimiento, Investigación, Dirección
-- **Principio:** Una nota vive en UNA carpeta, puede pertenecer a VARIAS categorías
-
-### 5. Zinking Tone (Content Voice)
-- **Ubicación:** `02_Areas/01_Content/`
-- **Enfoque:** Tono de voz para contenido en español
-- **Archivo:** `00_Zinking_Tone.md`
-
-### 6. Engram Sync
-- **Enfoque:** Sincronización de learnings entre vault y Engram
-- **Protocolo:** `mem_save` / `mem_search` para persistencia cross-session
-
----
-
-### 🔄 Relación entre Metodologías
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    METODOLOGÍA BASE                          │
-│              LLM Wiki + AI Research OS                       │
-│   (Tú guardas → Yo organizo → Tú consultas)                 │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │
-│  │ AI Research  │  │ Research    │  │ Categories/MOC  │   │
-│  │ OS (Iusztin) │  │ Skills      │  │ (Hubs)          │   │
-│  └──────┬──────┘  └──────┬──────┘  └────────┬────────┘   │
-│         │                │                    │             │
-│         ▼                ▼                    ▼             │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │              03_Resources/                          │   │
-│  │  ├── 01_Knowledge/  ← Aprendizajes + Convenciones │   │
-│  │  ├── 02_Research/   ← Proyectos de research       │   │
-│  │  ├── 03_Archive/    ← Completado                  │   │
-│  │  └── 04_Playground/ ← Hubs + Sandbox              │   │
-│  └─────────────────────────────────────────────────────┘   │
-│                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │
-│  │ Steph Ango   │  │ Zinking     │  │ Engram Sync     │   │
-│  │ (Hábitos)    │  │ (Voz)       │  │ (Persistencia)  │   │
-│  └─────────────┘  └─────────────┘  └─────────────────┘   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## Estructura (9 carpetas — PARA numerado)
-
-```
-00_Backups_Os/       ← Backups del sistema
-├── README.md
-└── Winter_Is_Coming/  ← Backup de 00_Winter_is_Coming
-    ├── AGENTS.md
-    ├── BACKLOG.md
-    ├── GOALS.md
-    ├── 00_Iron_Man_Gen.md
-    ├── 01_Inventario_Total.md
-    ├── Skills/
-    └── 00_Complemento_Leer/
-00_Inbox/            ← Todo entra aquí (Raw + Inbox + Attachments)
-├── 2026-08-02-convierte-10994-notas-en-memoria.md
-├── Karpathy_LLM_Wiki_Gist.md
-├── WEB_CLIPPER_SETUP.md
-└── index.md
-01_Projects/         ← Proyectos activos con deadline
-02_Areas/            ← Áreas permanentes (Knowledge, Content, Books...)
-├── 00_Shared_Org/
-├── 01_Content/
-├── 09_Marketing/
-├── Aprendizajes/
-├── Books/
-├── Conventions/
-├── Courses/
-├── Patterns/
-├── Post_Mortems/
-├── Practice/
-├── Referencias/
-└── Sesiones/
-03_Resources/        ← Referencia, Research, Playground
-├── 01_AI_Research_OS/
-├── 02_Coding_Agent_Architectures/
-├── 03_Custom_URLs/
-├── 04_Deep_Research_Example/
-├── 04_Playground/    ← Hubs + Sandbox
-├── 05_Migracion_Segundo_Cerebro/
-├── 06_From_Think_Different/
-├── 07_Graph_Engineering/
-├── index.md
-└── MIGRATION_NOTE.md
-04_Archive/          ← Completado + Backup Pre-Migración
-├── Context_Memory/
-├── Projects/
-├── Sessions/
-├── Obsidian_Pre_Backup/  ← Respaldo completo antes de migración PARA
-│   ├── README_Obsidian_Pre_Migration.md
-│   ├── index.md
-│   ├── index.yaml
-│   ├── Log.md
-│   └── PLAN_MIGRACION_PAR.md
-└── index.md
-05_Daily/            ← Notas diarias (conecta Projects + Areas)
-├── 2026-07/
-├── 2026-08/
-├── 2026-09/
-├── 2026-09-21/
-├── index.md
-└── Notas.md
-06_Process/          ← Motor LLM Wiki + Schema
-├── 01_LLM_Wiki/    ← Wiki (páginas generadas por LLM) — 14 pages
-│   ├── index.md
-│   ├── index.yaml
-│   ├── Log.md
-│   ├── AI_Research_OS.md
-│   └── ... (14 pages)
-├── 02_Schema/      ← Reglas CLAUDE.md
-└── index.md
-07_Platzi/           ← Cursos Platzi (sin cambios)
-07_Templates/        ← Plantillas
-└── 01_*.md ... 05_*.md (10 templates)
-08_Excalidraw/       ← Diagramas
-├── Excalidraw.md
-└── index.md
-```
-
-## Convenciones
-
-- **Pascal_Case** para todas las carpetas
-- **Max 4 subcarpetas** por carpeta
-- **Enumeración** en cada nivel (01_, 02_, etc.)
-- **Guion bajo** entre palabras
-
-## Principles
-
-1. **One file, one place** - No duplicates
-2. **Link, don't copy** - Use wikilinks
-3. **Daily notes are ephemeral** - Move learnings to Knowledge/
-4. **Templates enforce structure** - Use them always
-5. **Think_Different executes** - This brain only reads
-6. **Engram syncs** - Learnings persist across sessions
-
-## Sync Protocol
-
-### Principio de Filtrado
-
-Solo se sincroniza información que **sume, sea vital e importante**. Ruido, contenido de baja relevancia y datos no esenciales **no** cruzan la frontera del segundo cerebro.
-
-### Engram ↔ Consequences
-
-```bash
-# Guardar learning desde Consequences a Engram (solo lo vital)
-mem_save title="[learning]" type="learning" content="[content]"
-
-# Buscar learnings en Engram
-mem_search query="[query]"
-```
-
-> **Nota:** El protocolo de sincronización Think_Different ↔ Oband_Os (`01_OS/Operations/Scripts/sync_oband_think_different.py`) fue eliminado durante la reorganización a 6 carpetas. El repositorio Think_Different tiene objetos git corruptos y requiere re-clonación antes de cualquier sync futuro.
-
----
-
-## 🚀 Cómo Usar Cada Metodología (Triggers)
-
-### 1. LLM Wiki + AI Research OS (Metodología Base)
-
-**Trigger:** `"ingest [nombre del archivo]"`
-
-```
-TÚ → Guardas source en 00_Inbox/
-     → Dices "ingest [nombre]"
-YO   → Leo el source, creo/actualizo páginas wiki
-     → Actualizo index.md y log.md
-TÚ   → Consultas haciendo preguntas
-```
-
-**Triggers disponibles:**
-- `ingest [source]` — Agregar nueva fuente al wiki
-- `query [pregunta]` — Consultar el wiki
-- `lint` — Revisar salud del wiki
-- `status` — Ver estado del wiki
-
----
-
-### 2. AI Research OS (Paul Iusztin)
-
-**Trigger:** `"research [tema]"`
-
-```
-TÚ → Dices "research [tema]"
-YO   → Ejecuto deep research algorithm
-     → Creo raw files, index, wiki pages
-TÚ   → Consultas el wiki resultante
-```
-
-**Triggers disponibles:**
-- `research [tema]` — Investigación profunda
-- `research [tema] light` — Research rápido (1 round, 3 queries)
-- `research [tema] fast` — Research medio (2 rounds)
-- `research [tema] deep` — Research exhaustivo (múltiples rounds)
-
----
-
-### 3. Steph Ango Method
-
-**Trigger:** `"daily"` o `"hábito [nombre]"`
-
-```
-TÚ → Dices "daily" al inicio del día
-YO   → Creo/actualizo nota diaria en 05_Daily/
-     → Registro hábitos y metas del día
-TÚ   → Al final del día, dices "review daily"
-```
-
-**Triggers disponibles:**
-- `daily` — Crear/actualizar nota diaria
-- `hábito [nombre]` — Registrar hábito específico
-- `review daily` — Revisar nota diaria
-- `meta [meta]` — Registrar meta del día
-
----
-
-### 4. Research Skills (Obsidian Integration)
-
-**Trigger:** `research:command`
-
-```
-TÚ → Dices "research:research [tema]"
-YO   → Ejecuto el skill de research
-     → Creo directorio de research
-     → Ingreso fuentes
-     → Genero research.md
-```
-
-**Triggers disponibles:**
-| Trigger | Acción |
-|---------|--------|
-| `research:research [tema]` | Investigación profunda con wiki |
-| `research:distill [dir]` | Extraer fuentes usadas |
-| `research:lint [dir]` | Health check del research dir |
-| `research:render [dir]` | Generar múltiples formatos |
-| `research:readwise` | Acceder a highlights |
-| `research:nlm` | Interactuar con NotebookLM |
-| `research:obsidian` | Gestionar notas de Obsidian |
-
----
-
-### 5. Categories/MOC (Map of Content)
-
-**Trigger:** `"categorizar [nota] en [categoría]"`
-
-```
-TÚ → Dices "categorizar [nota] en [categoría]"
-YO   → Agrego la propiedad categories a la nota
-     → Actualizo el hub correspondiente
-TÚ   → Navegas por hubs en 03_Resources/04_Playground/
-```
-
-**Triggers disponibles:**
-- `categorizar [nota] en [categoría]` — Agregar categoría a nota
-- `hub [categoría]` — Ver todas las notas de una categoría
-- `moc` — Ver Map of Content completo
-
----
-
-### 6. Zinking Tone (Content Voice)
-
-**Trigger:** `"zinking [texto]"`
-
-```
-TÚ → Dices "zinking [texto]"
-YO   → Aplico el tono Zinking al texto
-     → Humanizo, empatico, estratégico
-```
-
-**Triggers disponibles:**
-- `zinking [texto]` — Transformar texto con tono Zinking
-- `voz [tipo]` — Ver ejemplos de voz (blog, email, linkedin)
-- `tone [texto]` — Ajustar tono de texto
-
----
-
-### 7. Engram Sync
-
-**Trigger:** `"mem_save"` o `"mem_search"`
-
-```
-TÚ → Dices "mem_save" con contenido
-YO   → Guardo en Engram con metadata
-TÚ   → Dices "mem_search [query]"
-     → Busco en la memoria persistente
-```
-
-**Triggers disponibles:**
-| Trigger | Acción |
-|---------|--------|
-| `mem_save [title] [content]` | Guardar en memoria persistente |
-| `mem_search [query]` | Buscar en memoria |
-| `mem_context` | Ver contexto reciente |
-| `mem_session_summary` | Resumen de sesión |
-
----
-
-### 🔄 Flujo Completo Recomendado
-
-```
-1. GUARDAR → 00_Inbox/
-2. INGEST  → "ingest [nombre]"
-3. RESEARCH → "research [tema]" (opcional)
-4. CONSULTAR → Hacer preguntas al wiki
-5. CATEGORIZAR → "categorizar [nota] en [categoría]"
-6. PERSISTIR → "mem_save" para learnings clave
-7. REVISAR → "lint" para mantener salud del wiki
-```
-
----
-
-*Oband_Os v3.0 — Metodologías Organizadas — 2026-08-02*
+*Generado automáticamente — 2026-09-23*
