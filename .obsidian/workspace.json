@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "00_Inbox/01_Convierte_10994_Notas_en_Memoria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "01_Convierte_10994_Notas_en_Memoria"
             }
           }
         ],
@@ -211,6 +211,8 @@
   },
   "active": "1f6834ba265367bd",
   "lastOpenFiles": [
+    "README.md",
+    "03_Resources/07_From_Think_Different/index.md",
     "03_Resources/09_Platzi/README.md",
     "03_Resources/09_Platzi/06_Diverse_Interests_10_Years.md",
     "03_Resources/11_Excalidraw/README.md",
@@ -235,8 +237,6 @@
     "04_Archive/README.md",
     "03_Resources/03_README.md",
     "01_Projects/README.md",
-    "00_Inbox/README.md",
-    "02_Areas/02_Marketing/index.md",
     "04_Archive/00_Backups_Os/Winter_Is_Coming/00_Complemento_Leer/05_Merge_Agents.py",
     "04_Archive/00_Backups_Os/Root/04_Excalidraw_Log.log",
     "04_Archive/00_Backups_Os/Winter_Is_Coming/05_Skills",
