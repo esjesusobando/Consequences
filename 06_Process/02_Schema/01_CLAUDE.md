@@ -5,7 +5,7 @@
 ## Estructura del Vault
 
 ```
-01_Capture/           ← Lo que entra
+00_Inbox/           ← Lo que entra
 ├── 01_Raw/           ← Fuentes RAW (tú las guardas aquí)
 ├── 02_Inbox/         ← Cosas por procesar
 └── 03_Attachments/   ← Medios (imágenes, PDFs)
@@ -35,7 +35,7 @@
 
 ### 1. INGEST (Tú guardas → Yo organizo)
 ```
-Tú: Guardas artículo en 01_Capture/01_Raw/archivo.md
+Tú: Guardas artículo en 00_Inbox/01_Raw/archivo.md
 Tú: Dices "ingest archivo.md"
 Yo: Leo → Creo páginas en 02_Process/01_LLM_Wiki/ → Actualizo index.md → Registro en log.md
 ```
@@ -54,7 +54,7 @@ Yo: Busco problemas → Te doy reporte → Arreglo si quieres
 
 ## Reglas
 
-1. **NUNCA modificar 01_Capture/01_Raw/** - Solo lectura
+1. **NUNCA modificar 00_Inbox/01_Raw/** - Solo lectura
 2. **SIEMPRE actualizar index.md** después de cada cambio
 3. **SIEMPRE registrar en log.md** después de cada operación
 4. **USAR frontmatter YAML** en todas las páginas

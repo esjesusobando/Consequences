@@ -77,7 +77,7 @@
 |------|-------------|-----------|--------|
 | **Vault Sync** | Sincronización bidireccional `Consequences` ↔ `Now_Invictus` | Alta | 📝 PENDIENTE |
 | **CLAUDE.md Schema** | Verificar `06_Process/02_Schema/CLAUDE.md` actualizado | Media | ✅ OPERATIVO |
-| **Web Clipper Config** | URL `obsidian://open?vault=Consequences` + Default folder `01_Capture/01_Raw` | Baja | ✅ CONFIGURADO |
+| **Web Clipper Config** | URL `obsidian://open?vault=Consequences` + Default folder `00_Inbox/01_Raw` | Baja | ✅ CONFIGURADO |
 | **Research Skills Validation** | Verificar que todos los `research:*` skills funcionen correctamente | Media | 📝 PENDIENTE |
 | **Daily Note 2026-09-22** | Crear nota diaria de hoy en `04_Daily/2026-09/2026-09-22.md` | Alta | ✅ CREADO |
 
@@ -125,7 +125,7 @@ Consequences/
 ## 🔄 Flujo de Trabajo Recomendado
 
 ```
-1. GUARDAR → 01_Capture/01_Raw/
+1. GUARDAR → 00_Inbox/01_Raw/
 2. INGEST  → "ingest [nombre]"
 3. RESEARCH → "research [tema]" (opcional)
 4. CONSULTAR → Hacer preguntas al wiki
