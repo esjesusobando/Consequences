@@ -14,7 +14,7 @@ Directorio principal de recursos, referencias y materiales de investigación.
 | 06 | Migracion_Segundo_Cerebro | Plan de migración al segundo cerebro |
 | 07 | From_Think_Different | 14 archivos migrados desde Think_Different |
 | 08 | Graph_Engineering | Ingeniería de grafos de conocimiento |
-| 09 | Platzi | 5 cursos numerados |
+| 09 | Platzi | 6 archivos numerados (5 cursos + transcript) |
 | 10 | Templates | 10 plantillas numeradas |
 | 11 | Excalidraw | Diagramas y visualizaciones |
 | 12 | README | Este README |
