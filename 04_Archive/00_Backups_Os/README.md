@@ -1,14 +1,15 @@
 # 00_Backups_Os — Backup del Sistema
 
 > Backup completo del sistema OS.
+> Ubicación: `04_Archive/00_Backups_Os/`
 > Actualizado: 2026-09-23
 
 ## Estructura
 
 | Carpeta | Descripción |
 |---------|-------------|
-| Root/ | Capa ejecutable (9 archivos numerados) |
-| Winter_Is_Coming/ | Capa de conocimiento (4 archivos + 00_Complemento_Leer + 05_Skills) |
+| Root/ | Capa ejecutable (01_ a 09_) |
+| Winter_Is_Coming/ | Capa de conocimiento (00_ a 05_) |
 
 ## Root/ — 01 a 09
 
@@ -28,7 +29,7 @@
 
 | # | Archivo/Carpeta | Descripción |
 |---|-----------------|-------------|
-| 00 | Complemento_Leer/ | Complemento de lectura |
+| 00 | Complemento_Leer/ | Complemento de lectura (01_ a 07_) |
 | 00 | Iron_Man_Gen.md | Generador Iron Man |
 | 01 | Inventario_Total.md | Inventario total |
 | 02 | BACKLOG_Oband_Os.md | Backlog Oband OS |
@@ -38,4 +39,4 @@
 
 ---
 
-*Backup actualizado: 2026-09-23*
+*Ubicado en 04_Archive/00_Backups_Os/ — 2026-09-23*
