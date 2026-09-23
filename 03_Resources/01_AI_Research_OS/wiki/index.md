@@ -54,3 +54,12 @@ categories: [03_Resources, AI Research OS]
 **Source**: [YouTube — Turn 10,994 Notes Into Memory](https://www.youtube.com/watch?v=ZRM_TfEZcIo)
 **Created**: 2026-09-23
 **Total pages**: 12
+
+---
+
+## Renders
+
+| Format | File | Description |
+|--------|------|-------------|
+| Marp | [renders/marp/ai-research-os.md](renders/marp/ai-research-os.md) | 13-slide deck summarizing AI Research OS workshop |
+
