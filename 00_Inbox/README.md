@@ -1,6 +1,6 @@
-# 00_Inbox — Índice Principal
+# 00_Inbox — Bandeja de Entrada
 
-Bandeja de entrada — archivos pendientes de procesar.
+Archivos pendientes de procesar o clasificar.
 
 ## Contenido
 
