@@ -1,6 +1,6 @@
 # 07_From_Think_Different — Contenido Migrado desde Think_Different
 
-14 archivos migrados desde el repositorio Think_Different.
+14 archivos .md en disco (12 numerados 01-08 + 10-13, gap 09 preservado + index.md + este README) + 2 subdirectorios, verificados 2026-09-26.
 
 ## Estructura
 
@@ -27,4 +27,4 @@
 
 ---
 
-*Actualizado: 2026-09-23*
+*Actualizado: 2026-09-26 (conteo real en disco; gap 09 documentado, no renombrado)*
