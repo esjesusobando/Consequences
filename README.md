@@ -50,4 +50,49 @@ Motor de conocimiento con 12 páginas numeradas: `01_AI_Research_OS.md` → `12_
 
 ---
 
-*Generado automáticamente — 2026-09-23*
+## 🧠 Metodología — Segundo Cerebro (Tiago Forte · PARA)
+
+Este vault es el **segundo cerebro**. La estructura de carpetas sigue **PARA**
+(*Projects, Areas, Resources, Archives*), no un árbol por temas.
+
+| Carpeta | Quadrant PARA | Qué va ahí | Revisión |
+|---------|---------------|-----------|----------|
+| `00 - Inbox` | **Captura** | Todo lo entrante sin clasificar. **Captura primero, clasifica después.** | Diario |
+| `01 - Projects` | **P** — Projects | Trabajo con deadline y resultado verificable. Requiere GOALS + BACKLOG. | Semanal |
+| `02 - Areas` | **A** — Areas | Responsabilidad continua sin fecha de fin. Se mantiene viva. | Trimestral |
+| `03 - Resources` | **R** — Resources | Conocimiento evergreen de interés. Se consulta, no se trabaja. | Cuando reaparece |
+| `04 - Archive` | **Archive** | Proyectos completados o material muerto. **Se archiva, nunca se borra.** | Trimestral |
+| `05 - Daily` | **Daily** | Una nota por día: `05_Daily/YYYY-MM/YYYY-MM-DD.md` | Diario |
+| `06 - Process` | Sistema | Procesos internos del OS (LLM Wiki, schemas) | Cuando cambia |
+
+### Reglas de captura (Forte)
+
+1. **Captura sin fricción.** Si dudás entre Projects y Areas, va a Inbox. Clasificar es una decisión posterior, no un requisito para guardar.
+2. **Una nota, una idea.** Si necesitás dos títulos, son dos notas.
+3. **Progressive summarization:** captura cruda → resaltado → resumen → nota sintetizada. Cada carpeta de `03_Resources` tiene su `index.md` como mapa del resumen.
+4. **Nada se borra.** Se archiva en `04 - Archive`. Esto preserva el contexto histórico de decisiones.
+5. **Projects → Archive es un viaje de ida.** Un proyecto terminado se mueve completo, no se dejan partes.
+
+### Reglas de documentación para agentes (IA)
+
+- **No dupliques contenido.** Si la nota vive en el vault, en Engram guardás solo el puntero (`topic_key`), no el texto.
+- **Naming:** PascalCase con guiones bajos, numeración secuencial (`01_`, `02_`...). Sin excepciones.
+- **Toda nota nueva lleva `index.md` actualizado** si la carpeta tiene índice.
+- **Research = evidencia.** Nada entra a `03 - Resources` sin fuente primaria citada (URL) y sin pasar el health check.
+- **Antes de commit** en este repo: actualizar los READMEs de las carpetas tocadas.
+- **Repo separado del código.** Código y workflows viven en `Think_Different`; el vault es solo conocimiento, decisiones y documentación.
+
+### Configuración Daily Notes
+
+```json
+{
+  "format": "YYYY-MM-DD",
+  "folder": "05_Daily/YYYY-MM",
+  "template": "03_Resources/10_Templates/03_Daily.md"
+}
+```
+
+---
+
+*Actualizado: 2026-09-26 — Metodología PARA + reglas de captura agregadas.*
+*Estructura verificada 2026-09-26. Generado automáticamente — 2026-09-23*
