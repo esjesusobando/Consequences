@@ -1,5 +1,5 @@
 {
   "format": "YYYY-MM-DD",
-  "folder": "05_Daily/YYYY-MM",
-  "template": "00_Inbox/index.md"
+  "folder": "05  -  Daily/YYYY-MM",
+  "template": "03  -  Resources/10_Templates/03_Daily.md"
 }
