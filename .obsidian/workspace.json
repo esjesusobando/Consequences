@@ -20,17 +20,35 @@
             }
           },
           {
-            "id": "1f6834ba265367bd",
+            "id": "9178bafe841fe3f4",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "02  -  Areas/03_Aprendizajes/01_Molly_Graham_AI_Transition_LinkedIn.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_Molly_Graham_AI_Transition_LinkedIn"
+            }
+          },
+          {
+            "id": "3533e13c9be1e2af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04  -  Archive/00_Backups_Os/README 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README 1"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -205,53 +223,53 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "1f6834ba265367bd",
+  "active": "86ad89d17fa482d6",
   "lastOpenFiles": [
-    "03_Resources/01_AI_Research_OS/wiki/renders/marp/ai-research-os.md",
-    "03_Resources/01_AI_Research_OS/wiki/renders/marp",
-    "03_Resources/01_AI_Research_OS/wiki/renders",
-    "03_Resources/01_AI_Research_OS/log.md",
-    "03_Resources/01_AI_Research_OS/lint-missing-comparisons.json",
-    "03_Resources/01_AI_Research_OS/wiki/entities/sed95D20x",
-    "03_Resources/01_AI_Research_OS/wiki/entities/sed8c4HCA",
-    "03_Resources/01_AI_Research_OS/wiki/concepts/sed4f2Ssw",
-    "03_Resources/01_AI_Research_OS/wiki/comparisons/sedjoVfeF",
-    "03_Resources/01_AI_Research_OS/wiki/concepts/sedzjUXTZ",
-    "03_Resources/01_AI_Research_OS/wiki/comparisons/sedOLJqOR",
-    "03_Resources/01_AI_Research_OS/sedRJ2b82",
-    "03_Resources/01_AI_Research_OS/wiki/open-questions.md",
-    "03_Resources/01_AI_Research_OS/wiki/comparisons/v1-vs-v2-vs-v3.md",
-    "03_Resources/01_AI_Research_OS/wiki/entities/obsidian.md",
-    "03_Resources/01_AI_Research_OS/wiki/entities/louis-francois-bouchard.md",
-    "03_Resources/01_AI_Research_OS/wiki/entities/paul-iusztin.md",
-    "03_Resources/01_AI_Research_OS/wiki/concepts/memory-management.md",
-    "03_Resources/01_AI_Research_OS/wiki/concepts/context-engineering.md",
-    "03_Resources/01_AI_Research_OS/wiki/concepts/research-os.md",
-    "03_Resources/01_AI_Research_OS/wiki/concepts/three-layer-architecture.md",
-    "03_Resources/01_AI_Research_OS/wiki/sources/youtube-convierte-10994-notas.md",
-    "03_Resources/01_AI_Research_OS/wiki/synthesis.md",
-    "03_Resources/01_AI_Research_OS/wiki/overview.md",
-    "RESEARCH_OS_INTEGRATION.md",
-    "03_Resources/01_AI_Research_OS/INTEGRATION_PLAN.md",
-    "03_Resources/01_AI_Research_OS/DEPENDENCIES.md",
-    "03_Resources/01_AI_Research_OS/README_workshop.md",
-    "03_Resources/01_AI_Research_OS/media/six_block_pipeline.png",
-    "03_Resources/01_AI_Research_OS/media/index_retrieval.png",
-    "03_Resources/01_AI_Research_OS/media/wiki_grows.png",
-    "03_Resources/01_AI_Research_OS/media/questions_derivatives.png",
-    "03_Resources/01_AI_Research_OS/media/query_drilldown.png",
-    "03_Resources/01_AI_Research_OS/media/project_scoped_wiki.png",
-    "03_Resources/01_AI_Research_OS/media/para_snapshot.png",
-    "03_Resources/01_AI_Research_OS/media/example_3_obsidian.png",
-    "03_Resources/01_AI_Research_OS/media/example_2_obsidian.png",
-    "03_Resources/01_AI_Research_OS/media/example_1_obsidian.png",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources/web-inside-neo4js-agent-memory.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources/web-from-vibe-coding-to-real-engineering-team.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/sources/web-building-agentic-graphrag-systems.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities/mcp.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities/neo4j.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/entities/claude-code.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/graphrag.md",
-    "03_Resources/01_AI_Research_OS/example_3_ingest_links/research-custom-urls/wiki/concepts/ontology.md"
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1/WellboreSchematic.tsx",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1/WellboreSchematic.css",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1/PressureWindow.tsx",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1/PressureWindow.css",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1/OperatingWindow.tsx",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1/OperatingWindow.css",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-redesign/v5-2-pressure-formation-standard.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-bugs/ui-density-optimization-react-css.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-bugs/truncamiento-labels-secciones.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-bugs/refinamiento-estetico-electro-rams.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-bugs/react-input-controlled-focus-buffer.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-bugs/glassmorphism-contrast-fix.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/logic-errors/resolucion-nan-hidraulica-reologia.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/logic-errors/react-hooks-purity-date-now.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/logic-errors/motor-reologia-hidraulica-mu-eff-correction.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/logic-errors/armor-layer-engine-blindaje.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/test-failures/vitest-worker-pool-timeout-jsdom-heavy.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/runtime-errors/blank-screen-invalid-imports.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/best-practices/survey-station-markers-pattern.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/best-practices/anti-collision-professional-features.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/logic-engines/herschel-bulkley-integration.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/best-practices/anti-collision-3d-review-fixes.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/build-errors/drilling-results-export-fix.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/build-errors/typescript-stabilization-drilling-calc.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ai-integrations/jetro-ai-chat-assistant.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/todos/013-pending-p3-av-field-comment-clarification.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/todos/012-pending-p2-shear-rate-units-documentation.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/todos/011-pending-p2-pressure-loss-chart-homologation.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/backup/visuals_premium_v1",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/knowledge_base/oil_brain_standards.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/todos/review-resolution-plan.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/todos/008-pending-p3-store-orchestrator-refactor.md",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-bugs",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/ui-redesign",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/logic-errors",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/solutions/test-failures",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/torque_drag_gradient_check.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/jetro_reactivated.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/jetro_opened.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/jetro_fixed_verification.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/jetro_evolution_verification.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/jetro_evolution_final_check.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/media/jetro_alert_pulse_check.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/img/wellbore_schematic_preview.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/img/wellbore_schematic_final.png",
+    "01_Projects/00_Think_Labs/00_Side_Project/Oil/drilling-calculator/docs/img/verify_render.png"
   ]
 }

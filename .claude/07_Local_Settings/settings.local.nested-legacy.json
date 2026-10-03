@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tail -n 500 ~/.claude/history.jsonl)",
+      "Bash(mv ~/.claude/history.jsonl.tmp ~/.claude/history.jsonl)"
+    ]
+  }
+}

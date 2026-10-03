@@ -1,0 +1,122 @@
+---
+source: 'C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\00_Core\01_Rules\RULES_INDEX.md'
+sync_source: "C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\00_Core\01_Rules\RULES_INDEX.md"
+sync_date: "2026-08-01T00:55:49.158103"
+sync_updated: true---
+
+# 📋 Índice de Reglas — PersonalOS v5.1.2+ (SOTA)
+
+**Versión:** 5.1.2+
+**Última actualización:** 2026-07-23
+**Ubicación:** `01_Personal_Os/00_Core/01_Rules/`
+**Framework:** Anthropic SOTA 2026 + PersonalOS v5.1.2+
+
+---
+
+## 📂 Estructura del Workspace (v5.1.2+)
+
+```
+Think_Different/
+├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
+├── 01_Personal_Os/         # El Sistema Operativo
+│   ├── 00_Core/01_Rules/  # ← AQUÍ: 18 reglas .mdc
+│   └── ...
+├── 02_Playground/         # Zona de pruebas
+└── 03_Resultado/          # Outputs de proyectos
+```
+```
+
+---
+
+## 🚀 MEJORES PRÁCTICAS SOTA ANTHROPIC 2026
+
+> **Referencia:** Paper de Thariq (Claude Code Team @ Anthropic)
+
+### Las 7 Prácticas Fundamentales
+
+| #                                            | Práctica                                                           | Descripción                                                                               |
+|---------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 1                                            | **CLAUDE.md**                                                      | Memoria de proyecto - cerebro permanente                                                  |
+| 2                                            | **Plan then Execute**                                              | Planificar ANTES de ejecutar código                                                       |
+| 3                                            | **Custom Tools**                                                   | Comandos slash + MCP para automatización                                                  |
+| 4                                            | **Git Workflows**                                                  | Ramas seguras + worktrees para trabajo paralelo                                           |
+| 5                                            | **Specific Prompting**                                             | Prompts con archivos, URLs, imágenes específicas                                          |
+| 6                                            | **Context Management**                                             | Sub-agentes + /clear entre tareas                                                         |
+| 7                                            | **Headless Mode + Hooks**                                          | Automatización CI/CD                                                                      |
+
+### Las 9 Categorías de Skills (Anthropic)
+
+| #                                            | Categoría                                                        | Equivalente                                                     | Ejemplo                                                       |
+|---------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------|
+| 1                                            | Library / API Reference                                          | El menú                                                         | nextjs-15, react-19                                           |
+| 2                                            | Product Verification                                             | Control de calidad                                              | pr-review, testing                                            |
+| 3                                            | Data Fetching                                                    | Abastecimiento                                                  | analytics-tracking                                            |
+| 4                                            | Business Process                                                 | Manual de servicio                                              | sdd-workflow                                                  |
+| 5                                            | Code Scaffolding                                                 | Cocina preparativa                                              | skill-creator                                                 |
+| 6                                            | Code Quality                                                     | Checklist del chef                                              | security-review                                               |
+| 7                                            | CI/CD                                                            | Delivery                                                        | devops scripts                                                |
+| 8                                            | Runbooks                                                         | Simulacro de incendios                                          | systematic-debugging                                          |
+| 9                                            | Infrastructure Ops                                               | Gerente de equipos                                              | mcp-client                                                    |
+
+---
+
+## 🔘 Reglas Activas (18 archivos .mdc)
+
+| #                              | Regla                                                                                   | Nombre                                                 | Función                                                                      |
+|-------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
+| 00                             | `00_Core_Protocol.mdc`                                          | **Protocolo Core**                                     | Protocolo obligatorio de inicio + SOTA Anthropic                             |
+| 01                             | `01_Pilares_Sistema.mdc`                                      | **Pilares del Sistema**                                | 12 Leyes Maestras + ADN del sistema                                          |
+| 02                             | `02_Motor_Agent.mdc`                                              | **Motor Agente**                                       | Estándares de ingeniería, Premium UI, Armor Layer                            |
+| 03                             | `03_Protocolos_Ejecucion.mdc`                            | **Protocolos de Ejecución**                            | Gestión de tareas, observabilidad, AIPM                                      |
+| 04                             | `04_Observabilidad.mdc`                                        | **Observabilidad**                                     | Métricas de salud del sistema y logs                                         |
+| 05                             | `05_Reporting.mdc`                                                  | **Reporting Elite**                                    | Estándares de reporte de alta calidad                                        |
+| 06                             | `06_Contexto_Gestion.mdc`                                    | **Gestión de Contexto**                                | Ventana de contexto, sub-agentes, compaction                                 |
+| 07                             | `07_Docs_Guias.mdc`                                                | **Docs y Guías**                                       | Estándares de documentación, workflows                                       |
+| 08                             | `08_Token_Economy.mdc`                                          | **Token Economy**                                      | 10 leyes para extender Claude Code hasta 10x                                 |
+| 09                             | `09_Agent_Teams_Protocol.mdc`                            | **Agent Teams Protocol**                               | Multi-agente: boot, delegación, Super Campeones                              |
+| 10                             | `10_Git_Directions.mdc`                                        | **Git Directions**                                     | URLs de repos y remotes actualizados                                         |
+| 11                             | `11_Minimax.mdc`                                                      | **Minimax**                                            | Configuración e integración con Minimax                                      |
+| 12                             | `12_Audit_OS_Integrity.mdc`                                | **Integridad y Auditoría OS**                          | Auditoría no destructiva, preservación histórica y verificación estructural  |
+| 13                             | `13_HTML_Visualization.mdc`                                | **Visualización HTML**                                 | Toda salida del sistema debe incluir visualización HTML                      |
+| 14                             | `14_Graphify.mdc`                                                    | **Graphify**                                           | Graphify — Indexación y consulta del grafo de conocimiento del proyecto       |
+| 15                             | `15_Script_Version_Validation.mdc`                   | **Script Version Validation**                          | Validación de versiones de scripts contra HUBs y skills                        |
+| 16                             | `16_Meta_Skill_Improvement.mdc`                         | **Meta-Skill Improvement Loop**                        | Cada skill invocada activa análisis de patrones y detección de áreas de oportunidad |
+| 17                             | `17_Agentic_Methodology.mdc`                               | **Agentic Methodology**                                | SIEMPRE leer antes de trabajo agente — deterministic, ratcheting, sub-agents |
+
+---
+
+## 🗂️ Skills System (Referencia v4.0)
+
+**Ubicación:** `01_Personal_Os/00_Core/02_Tools/02_Skills/`
+
+### 11 Áreas Funcionales
+
+| Área                                                   | Contenido                                                                   |
+|-------------------------------------------------------|----------------------------------------------------------------------------|
+| **00_Compound_Engineering**                            | Core CE + Avengers + Spider                                                 |
+| **00_System_Core**                                     | Stack base OS + System Guardian                                             |
+| **10_Skill_Auditor**                                   | Auditor de skills                                                           |
+| **01_Creacion_Contenidos**                             | Brand, YouTube, SEO, Carousel                                               |
+| **02_Diseno_Ui_Ux**                                    | UI/UX, Huashu, Dumbledor, Taste, Design SOTA                                |
+| **03_Video_Media**                                     | Video Intel, James Cameron (Remotion)                                       |
+| **04_Automatizacion**                                  | N8N, Firecrawl, GWS Client                                                  |
+| **05_Workflows**                                       | Agent Teams Lite, PM, Orchestrator                                          |
+| **06_Tools**                                           | Skill Creator, Testing, DevOps, Data Analyst                                |
+| **07_Personal_Os**                                     | Hillary, Life OS, Rituales                                                  |
+| **08_Invictus_Web**                                    | Playwright, Superpowers, Browser Automation                                 |
+| **Open Design** (external)                             | 62 skills + 138 design systems (en 05_Archive)                              |
+
+### Sistema de Calidad
+
+| Herramienta                                  | Propósito                                                                 |
+|---------------------------------------------|--------------------------------------------------------------------------|
+| **Skill Auditor**                            | Audita skills contra estándares Anthropic                                 |
+| **Skill Creator**                            | Genera scaffolding automáticamente                                        |
+| **Scoring**                                  | 90%+ = Excellent, 70-89% = Good, <50% = Failed                            |
+
+---
+
+_Total Reglas activas: 18 (.mdc files)_
+_Total Skills: 397 (per latest Context_Memory)_
+_Framework: Anthropic SOTA 2026 + PersonalOS v5.1.2+_
+_Open Design: 62 skills + 138 design systems integrados_

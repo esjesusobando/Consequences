@@ -1,0 +1,298 @@
+[
+  {
+    "timestamp": "2026-04-11T20:39:58.116172",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-12T20:12:03.138183",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T12:22:00.657743",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-14T16:50:41.424296",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-15T02:59:24.103445",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-15T07:53:28.709398",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-15T21:24:27.729298",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T08:19:16.562487",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-16T12:14:40.519449",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-17T09:38:27.022280",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-17T23:56:24.908770",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T00:06:53.798057",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T00:08:13.336015",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T00:20:36.905501",
+    "data": {
+      "event": "subagent_stop",
+      "status": "success"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T00:38:16.889078",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T04:07:15.456205",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T04:07:59.844820",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T04:08:11.410036",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T04:13:58.106571",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T04:26:02.697330",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T04:48:07.173805",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T10:51:38.449899",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T10:52:24.316207",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T10:52:29.367388",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T11:01:39.365139",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-18T11:01:43.788244",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T20:35:05.522756",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T20:36:21.975563",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-19T20:36:34.743437",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T00:48:00.436199",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T01:04:35.870623",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T01:04:53.070084",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T01:05:51.909966",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T01:19:59.906307",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T01:30:49.689895",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T07:13:32.198112",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T07:51:57.439817",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T08:19:48.652756",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-24T14:47:43.717332",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T01:53:05.114372",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T02:12:44.154736",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T06:30:19.630613",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T07:00:12.618540",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-25T14:01:12.459837",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-26T19:14:49.525186",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-28T09:41:02.623848",
+    "data": {
+      "event": "subagent_stop"
+    }
+  },
+  {
+    "timestamp": "2026-04-28T17:54:09.821002",
+    "data": {
+      "event": "subagent_stop"
+    }
+  }
+]

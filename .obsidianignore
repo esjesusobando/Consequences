@@ -1,0 +1,5 @@
+01  -  Projects/00_Think_Labs/Oil/drilling-calculator/graphify-out/
+node_modules/
+**/node_modules/**
+**/graphify-out/**
+.git/

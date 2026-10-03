@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Skill - Editorial UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmbone: '#F7F6F3',
+                        offblack: '#111111',
+                        mutedredtext: '#9F2F2D',
+                        mutedredbg: '#FDEBEC',
+                        bordergray: '#EAEAEA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #F7F6F3; color: #111111; line-height: 1.6; }
+        .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    </style>
+</head>
+<body class="py-24 px-8 md:px-0">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-16 border-b border-bordergray pb-8">
+            <div class="inline-block px-3 py-1 bg-mutedredbg text-mutedredtext text-xs uppercase tracking-widest rounded-full mb-6 font-bold">Billing Cycle: Active</div>
+            <h1 class="text-4xl font-serif tracking-tight mb-2">Corporate Account Ledger.</h1>
+            <p class="text-gray-500">Documentary overview of real-time transactions & liabilities.</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-bordergray bg-white rounded-xl overflow-hidden">
+            <div class="p-10 border-b md:border-b-0 md:border-r border-bordergray flex flex-col justify-between">
+                <span class="text-sm text-gray-500 mb-6">Current Liability</span>
+                <span class="mono text-5xl">$24,930.00</span>
+            </div>
+            <div class="p-10 flex flex-col justify-between">
+                <span class="text-sm text-gray-500 mb-6">Next Invoice Date</span>
+                <span class="text-2xl font-serif">October 14th, 2026</span>
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <h2 class="text-sm uppercase tracking-widest text-gray-400 mb-8 border-b border-bordergray pb-4">Recent Transactions</h2>
+            <ul class="space-y-0">
+                <li class="py-4 border-b border-bordergray flex justify-between items-center hover:bg-white hover:px-4 transition-all -mx-4 px-4 rounded-md">
+                    <div>
+                        <p class="font-medium">Acquisition of Cloud Assets</p>
+                        <p class="text-xs text-gray-400">ID: <span class="mono">TX-9981A</span></p>
+                    </div>
+                    <span class="mono text-red-700">-$450.00</span>
+                </li>
+                <li class="py-4 border-b border-bordergray flex justify-between items-center hover:bg-white hover:px-4 transition-all -mx-4 px-4 rounded-md">
+                    <div>
+                        <p class="font-medium">Infrastructure API Subsidy</p>
+                        <p class="text-xs text-gray-400">ID: <span class="mono">TX-8822B</span></p>
+                    </div>
+                    <span class="mono text-mutedredtext">-$1,200.00</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

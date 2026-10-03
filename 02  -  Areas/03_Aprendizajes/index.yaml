@@ -1,0 +1,83 @@
+topic: Molly Graham AI Transition Analysis
+input_summary: Analysis of Molly Graham's talk on grief, burnout and the AI organizational transition, mapped against PARA methodology and compound engineering principles
+total_sources: 3
+total_wiki_pages: 2  # Spanish post + English post (separate files)
+
+sources:
+  - title: Molly Graham - The grief, burnout, and opportunity hiding inside the AI transition (YouTube transcript)
+    origin: youtube
+    original_path: youtube://5-96FyJFiCA
+    source_url: https://www.youtube.com/watch?v=5-96FyJFiCA
+    relevance_score: 1.0
+    tags:
+      - grief
+      - burnout
+      - AI transition
+      - LEGO metaphor
+      - zentaur
+    summary: |
+      YouTube transcript of Molly Graham on WorkLife podcast discussing grief, burnout and AI transition. Key themes: selective LEGO delegation, burnout data (44%→55%), grief as natural part of change, zentaur vs reverse zentaur dynamics, learning vs knowing principle.
+
+  - title: 01_Molly_Graham_AI_Transition_LinkedIn.md (Spanish)
+    origin: vault
+    original_path: 02  -  Areas/03_Aprendizajes/01_Molly_Graham_AI_Transition_LinkedIn.md
+    relevance_score: 1.0
+    tags:
+      - spanish
+      - linkedin post
+      - summary
+    summary: |
+      Spanish version of the LinkedIn post analyzing Molly Graham's talk, connecting insights to compound engineering and PARA methodologies.
+
+  - title: 01_Molly_Graham_AI_Transition_LinkedIn_EN.md (English)
+    origin: vault
+    original_path: 02  -  Areas/03_Aprendizajes/01_Molly_Graham_AI_Transition_LinkedIn_EN.md
+    relevance_score: 1.0
+    tags:
+      - english
+      - linkedin post
+      - summary
+    summary: |
+      English version of the LinkedIn post analyzing Molly Graham's talk, connecting insights to compound engineering and PARA methodologies.
+
+categories:
+  - knowledge
+  - ai-transition
+  - burnout
+  - grief
+  - leadership
+  - compound-engineering
+
+tags:
+  - molly-graham
+  - lego-metaphor
+  - burnout
+  - grief
+  - zentaur
+  - paraproject
+  - compound-engineering
+  - spanish
+  - english
+
+relationships:
+  - target: 02  -  Areas/03_Aprendizajes/01_Molly_Graham_AI_Transition_LinkedIn.md
+    type: spanish_version
+    description: Spanish localization of the LinkedIn post
+  - target: 02  -  Areas/03_Aprendizajes/01_Molly_Graham_AI_Transition_LinkedIn_EN.md
+    type: english_version
+    description: English localization of the LinkedIn post
+  - target: PARA methodology (00_Consequences/Consequences/README.md)
+    type: methodology_connection
+    description: Mapped to PARA Second Brain methodology - connects to Inbox→Projects→Areas→Archive zones
+  - target: Compound Engineering philosophy (05_Learning/Compound_Engine/README.md)
+    type: methodology_connection
+    description: Mapped to Compound Engineering principle - "each unit makes subsequent units easier"
+  - target: 00_Consequences/Consequences/03  -  Resources/03_Molly_Graham_Compound_Mapping.md
+    type: compound_mapping
+    description: Maps Molly Graham insights to compound engineering principles
+
+wiki_pages:
+  - path: 02  -  Areas/03_Aprendizajes/index.md
+    type: hub
+    title: Learning Area — Molly Graham AI Transition Analysis
+    description: Hub file referencing all Molly Graham related materials in the learning area
